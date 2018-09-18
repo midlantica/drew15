@@ -18,8 +18,10 @@
     "@vue/cli-plugin-pwa": "^3.0.3",
     "@vue/cli-service": "^3.0.3",
     "@vue/eslint-config-standard": "^3.0.3",
+    "eslint-plugin-html": "^4.0.5",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
+    "vue-carousel": "^0.13.1",
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
@@ -42,7 +44,7 @@
     }
   },
   "browserslist": [
-    "> 1%",
+    "> 10%",
     "last 2 versions",
     "not ie <= 8"
   ]

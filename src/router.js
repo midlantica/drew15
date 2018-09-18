@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import Home from './pages/index.vue'
+// import Extras from './pages/Extras.vue'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -12,12 +14,24 @@ export default new Router({
       component: Home
     },
     {
-      path: '/about',
-      name: 'about',
+      path: '/Extras',
+      name: 'extras',
       // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
+      // this generates a separate chunk (Extras.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      component: () => import(/* webpackChunkName: "Extras" */ './pages/Extras.vue')
+    },
+    {
+      path: '*',
+      redirect: Home
+    },
+    {
+      path: '/NotFound',
+      component: Home
+    },
+    {
+      path: '/404',
+      redirect: Home
     }
   ]
 })

@@ -1,0 +1,56 @@
+// @import '~/node_modules/compass-mixins/';
+// @import '~/assets/css/_colors.scss';
+// @import './utilities/__utilities_base.scss';
+// @import '~/assets/css/fonts/veneer/veneer.css';
+// @import '~/assets/css/fonts/American_typewriter/american_typewriter/american_typewriter.css';
+
+// BREAKPOINTS
+$XLargeScreen: 1200px;
+$LargeScreen:  1024px;
+$MidScreen:    768px;
+$MidScreenSm:  700px;
+$SmallScreen:  480px;
+$XSmallScreen: 320px;
+
+// FONTS
+$base-font-size   :1rem;
+$base-line-height :1.7em;
+$font             :"Helvetica Neue", Arial, sans-serif;
+$font-head        :"VeneerTwo", Helvetica, Arial, sans-serif;
+$font-subhead     :"Veneer", Helvetica, Arial, sans-serif;
+$font-copy        :"AmericanTypewriterStd-Med", Helvetica, Arial, sans-serif;
+
+// ############################
+
+html, html a {
+  -webkit-font-smoothing: antialiased;
+  // Adjust font size
+  -webkit-text-size-adjust: 100%;
+  // Font varient
+  // font-variant-ligatures: none;
+  // -webkit-font-variant-ligatures: none;
+  // Smoothing
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  // text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: $base-font-size;
+  background: #333;
+  margin: 0;
+}
+
+// link colors (normal, hover, active, visited, focus)
+a {
+  @include link-colors(
+    $blue-dark,  // normal
+    $accent,     // hover
+    $blue-mid,   // active
+    $grey,       // visited
+    $blue-dark   // focus
+  );
+}

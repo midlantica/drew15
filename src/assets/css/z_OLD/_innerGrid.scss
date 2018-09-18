@@ -1,0 +1,28 @@
+// .content {
+//   display: grid;  // <-- CONTENT GRID
+//   grid-template-columns: repeat(2, 1fr);
+//   margin-top: .75em;
+//   margin-bottom: .5em;
+
+//   @media (max-width: 800px) {
+//     grid-template-columns: 1fr;
+//   }
+
+//   &:nth-child(1) {
+//     padding-right: .5em;
+//     padding-left: 1em;
+
+//     @media screen and (max-width: 1040px) {
+//       //
+//     }
+//   }
+//   &:nth-child(2) {
+//     padding-left: .5em;
+//     padding-right: 1.3em;
+
+//     @media screen and (max-width: 1040px) {
+//       padding: 0 1em;
+//     }
+//   }
+
+// }
