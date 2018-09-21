@@ -10,7 +10,7 @@
 
   .quoteBlock {
     background: darken($accent-red, 10);
-    margin-bottom: .5em;
+    // margin-bottom: .5em;
     padding: .75em 2em 1em;
     @include shadow;
     // @include clearfix;

@@ -2,7 +2,7 @@
   <div class="content">
     <div class="flexContainer">
 
-      <h1 class="headDiv">
+      <h1>
          <router-link to="/"> &lt;&lt; </router-link>&nbsp;Portfolio Extras
       </h1>
 
@@ -54,24 +54,44 @@
   </div>
 </template>
 
-<style lang="scss">
+<script>
+  export default {
+    name: 'Extras',
+    metaInfo: {
+      // if no subcomponents specify a metaInfo.title, this title will be used
+      // title: 'Drew Harper',
+      // all titles will be injected into this template
+      titleTemplate: '%s - Extras!',
+      bodyAttrs: {
+        class: 'bourbon'
+      }
+    }
+  }
+</script>
+
+<style lang="scss" scoped>
   @import '../assets/css/main.scss';
 
   .content {
+    grid-template-columns: repeat(1, 1fr);
     background: url(../assets/img/bg/graphy_2.png) repeat;
     box-shadow: 3px 5px 4px transparentize(black, 0.8),
                 3px 3px 5px transparentize(black, 0.2);
+    // padding-top: 1em;
+    // padding-bottom: 0.75em;
   }
 
   .flexContainer {
-    width: 90%;
-    margin: 0 auto 1em;
+    width: 100%;
+    margin: 0 auto 0em;
   }
 
   h1 {
     font-size: 2.2em;
     text-align: center;
-    width: 100%;
+    // width: 100%;
+    margin: 0;
+    padding: .5em 0;
     // grid-area: center-block;
     a {
       text-decoration: none;
@@ -87,7 +107,7 @@
     // transition: flex-basis 1s ease-in-out;
     // margin-left: -1em;
     // margin-top: -1em;
-    padding: 0 -2em;
+    padding: 0 4em;
     // @media only screen and (max-width: 800px) {
     //   // width: 100%;
     // }
@@ -99,18 +119,32 @@
       text-align: center;
       align-items: center;
       text-decoration: none;
-      margin: 0 2em;
+      margin: 0em 1em;
       // margin-top: 1em;
       // transition: flex-basis 1s ease-in-out;
-      &:last-child {
-        margin: 0 2em;
-        padding: 0;
+
+      // &:last-child {
+        // margin: 0 0 2em;
+        // padding: 0;
         // border:2px solid red;
-      }
+      // }
+
+      // &:nth-child(even) {
+      //   margin-right: 4em;
+      //   // background: blue;
+      //   // border: 10px red solid;
+      // }
+
+      // &:nth-child(odd) {
+      //   margin-left: 4em;
+      //   // background: green
+      //   // border: 10px red solid;
+      // }
 
       img.portThumbs {
         // width: calc(100% * (1/2));
-        width: 270px;
+        width: 400px;
+        // width: 270px;
         height: auto;
         // height: 170px;
         margin: 1em auto 0;

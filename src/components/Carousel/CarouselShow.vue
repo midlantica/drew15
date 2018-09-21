@@ -118,7 +118,7 @@
   @import '../../assets/css/main.scss';
 
   .VueCarousel.druCarousel {
-    margin-top: .5em;
+    margin-top: 0em;
     margin-bottom: .75em;
     // width: calc(100%) !important;
     // width: calc(100% / 79);
@@ -141,12 +141,19 @@
       background: lightgrey;
       // border: 10px red solid;
       min-height: 363px;
+      // margin-bottom: -2px !important;
       @include shadow;
       @include clearfix;
 
       @media (min-width: 0px) and (max-width: 796px) {
         min-height: 200px;
       }
+
+      .VueCarousel-inner {
+          margin-bottom: -2px;
+
+      }
+
     }
 
     img {

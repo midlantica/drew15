@@ -68,7 +68,7 @@
     grid-column-gap: 0em;
     // grid-column-gap: 1.5em;
     // background: beige;
-    margin-bottom: .5em;
+    // margin-bottom: .5em;
     transition: .25s ease-in;
 
 

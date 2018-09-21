@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <main>
 
     <section>
       <HeadAndCopy/>
@@ -12,7 +12,7 @@
       <Quotes/>
     </section>
 
-  </div>
+  </main>
 </template>
 
 <script>
@@ -34,21 +34,31 @@
       About,
       Skills,
       Quotes
+    },
+    name: 'Home',
+    metaInfo: {
+      // if no subcomponents specify a metaInfo.title, this title will be used
+      title: 'Drew Harper',
+      // all titles will be injected into this template
+      titleTemplate: '%s - UI/UX Designer, Graphic Designer!',
+      bodyAttrs: {
+        class: 'bourbon'
+      }
     }
   }
 </script>
 
-<style lang="scss">
-    @import '../assets/css/main.scss';
+<style lang="scss" scoped>
+  @import '../assets/css/main.scss';
 
-  .content {
+  main {
     display: grid;  // <-- CONTENT GRID
     grid-template-columns: repeat(2, 1fr);
     background: url(../assets/img/bg/graphy_2.png) repeat;
     box-shadow: 3px 5px 4px transparentize(black, 0.8),
                 3px 3px 5px transparentize(black, 0.2);
-    padding-top: .5em;
-    padding-bottom: .5em;
+    padding-top: 1em;
+    padding-bottom: .75em;
     //
     @media (max-width: 1024px) {
       grid-template-columns: 1fr;
@@ -60,7 +70,7 @@
         padding: 0 1em;
 
         @media screen and (min-width: 1024px) {
-          padding: 0em .5em 0em 1em;
+          padding: 0em 1em 0em 1em;
         }
       }
       &:nth-child(2) {

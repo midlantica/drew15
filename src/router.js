@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './pages/index.vue'
+import Meta from 'vue-meta'
 // import Extras from './pages/Extras.vue'
 
 Vue.use(Router)
+Vue.use(Meta)
 
 export default new Router({
   mode: 'history',

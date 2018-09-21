@@ -1,35 +1,35 @@
 <template>
+  <div class="wrapper">
 
-  <div id="app">
-    <div class="grid">
+    <Tabs/>
 
-      <div></div>
+    <header>
+      <Navvy/>
+    </header>
 
-      <main>
-        <header>
-          <Navvy/>
-        </header>
+    <router-view/>
 
-        <router-view/>
+    <footer>
+      <Navvy/>
+    </footer>
 
-        <footer>
-          <Navvy/>
-        </footer>
-
-      </main>
-
-      <div></div>
-
-    </div>
   </div>
-
 </template>
 
 <script>
   import Navvy from '@/components/Navvy'
+  import Tabs from '@/components/Tabs'
   export default {
     components: {
-      Navvy
+      Navvy,
+      Tabs
+    },
+    name: 'App',
+    metaInfo: {
+      // if no subcomponents specify a metaInfo.title, this title will be used
+      title: 'Drew Harper',
+      // all titles will be injected into this template
+      titleTemplate: '%s - UI/UX Designer, Graphic Designer'
     }
   }
 </script>
@@ -37,48 +37,30 @@
 <style lang="scss">
   @import '@/assets/css/main.scss';
 
-  #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    // text-align: center;
-    // color: #2c3e50;
-    // margin-top: 60px;
-  }
+  // .page-enter-active,
+  // .page-leave-active {
+  //   transition: opacity .5s;
+  // }
+  // .page-enter,
+  // .page-leave-to {
+  //   opacity: 0;
+  // }
 
   header,
   footer {
     color: $ivory;
     background: url(/img/bg/bg_bag_dk.jpg) repeat;
-    // @include shadow;
-    z-index: 10;
-    box-shadow: 0px 0px 6px 1px black;
-
+    // z-index: 10;
+    position: relative;
+    @include shadow;
+    // box-shadow: 0px 0px 6px 1px black;
   }
 
-  .grid {
-    display: grid;
-    // COLUMNS ||  ||  ||
-    grid-template-columns:
-      minmax(0, 1fr) // 1st Coloumn
-      repeat(1, minmax(auto, 1024px)) // Second Column
-      minmax(0, 1fr); // Third Column
-    grid-gap: 0em;
-    // @include shadow;
-
-    > main {
-      display: grid;
-      // ROWS
-      grid-template-rows: 1fr auto 1fr;
-      background: white; // ivory
-      @include shadow;
-
-      header,
-      footer {
-        // background-color: #aaa;
-        // padding: 1em;
-      }
-    }
+  .wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    background: white; // ivory
+    @include shadow;
   }
 
 </style>

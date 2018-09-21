@@ -71,7 +71,7 @@
     font-size: 4em;
     font-weight: normal;
     letter-spacing: .06em;
-    font-family: $font-head;
+    font-family: $font-subhead;
     @include text-shadow(rgba(black, 1) 4px 0px 3px);
     transition: .25s ease-in;
     //
@@ -101,7 +101,7 @@
 
     @media (max-width: $breakTwo) {
       // justify-content: center;
-      flex-grow: 1;
+      flex-grow: 0;
       text-align: center;
       align-self: center;
 
@@ -116,8 +116,8 @@
       }
     }
 
-    @media (max-width: $breakTwo) {
-      //
+    @media (max-width: $breakOne) {
+      flex-grow: 0;
     }
 
     h2 {
