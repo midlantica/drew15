@@ -18,18 +18,18 @@
 </template>
 
 <script>
-  import iconUiux from '@/components/Icons/icon-uiux'
-  import iconHtml5 from '@/components/Icons/icon-html5'
-  import iconCss3 from '@/components/Icons/icon-css3'
-  import iconJs from '@/components/Icons/icon-js'
-  import iconSketch from '@/components/Icons/icon-sketch'
-  import iconSass from '@/components/Icons/icon-sass'
-  import iconVue from '@/components/Icons/icon-vue'
-  import iconSvg from '@/components/Icons/icon-svg'
-  import iconTerminal from '@/components/Icons/icon-terminal'
-  import iconNode from '@/components/Icons/icon-node'
-  import iconWebpack from '@/components/Icons/icon-webpack'
-  import iconAxure from '@/components/Icons/icon-axure'
+  import iconUiux from '../components/Icons/icon-uiux'
+  import iconHtml5 from '../components/Icons/icon-html5'
+  import iconCss3 from '../components/Icons/icon-css3'
+  import iconJs from '../components/Icons/icon-js'
+  import iconSketch from '../components/Icons/icon-sketch'
+  import iconSass from '../components/Icons/icon-sass'
+  import iconVue from '../components/Icons/icon-vue'
+  import iconSvg from '../components/Icons/icon-svg'
+  import iconTerminal from '../components/Icons/icon-terminal'
+  import iconNode from '../components/Icons/icon-node'
+  import iconWebpack from '../components/Icons/icon-webpack'
+  import iconAxure from '../components/Icons/icon-axure'
   export default {
     components: {
       iconUiux,

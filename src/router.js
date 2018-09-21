@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './pages/index.vue'
+import Home from './template-bourbon/pages/index.vue'
 import Meta from 'vue-meta'
 // import Extras from './pages/Extras.vue'
 
@@ -21,8 +21,11 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (Extras.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "Extras" */ './pages/Extras.vue')
+      component: () => import(/* webpackChunkName: "Extras" */ './template-bourbon/pages/Extras.vue')
     },
+    // REDIRECTS ########
+    // REDIRECTS ########
+    // REDIRECTS ########
     {
       path: '*',
       redirect: Home

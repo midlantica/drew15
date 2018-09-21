@@ -16,15 +16,15 @@
 </template>
 
 <script>
-  import HeadAndCopy from '@/components/HeadAndCopy'
-  import About from '@/components/About'
-  import Skills from '@/components/Skills'
+  import HeadAndCopy from '../components/HeadAndCopy'
+  import About from '../components/About'
+  import Skills from '../components/Skills'
   // import Quotes from '@/components/Quotes/QuotesVueCarousel'
   // import Quotes from '@/components/Quotes/QuotesVueSwiper'
   // import Quotes from '@/components/Quotes/QuotesSiema'
   // import Quotes from '@/components/Quotes/QuotesVueAgile'
-  import Quotes from '@/components/Quotes/QuoteBasic'
-  const CarouselShow = () => import('@/components/Carousel/CarouselShow')
+  import Quotes from '../components/Quotes/QuoteBasic'
+  const CarouselShow = () => import('../components/Carousel/CarouselShow')
 
   export default {
     layout: 'default',
