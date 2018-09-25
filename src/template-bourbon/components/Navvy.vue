@@ -19,7 +19,8 @@
 <style lang="scss" scoped>
 
   // @import '../assets/css/_colors.scss';
-  @import '../assets/css/main.scss';
+  @import '@/assets/css/main.scss';
+  @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
   $outRed: rgba(221, 9, 22, .3);
   $outBlue: rgba(92, 201, 245, .3);
@@ -72,7 +73,8 @@
     font-weight: normal;
     letter-spacing: .06em;
     font-family: $font-subhead;
-    @include text-shadow(rgba(black, 1) 4px 0px 3px);
+    text-shadow: 4px 0px 3px $black;
+    text-shadow: 4px 0px 3px $black;
     transition: .25s ease-in;
     //
     width: auto;
@@ -123,7 +125,7 @@
     h2 {
       font-size: 1.7em;
       letter-spacing: .03em;
-      @include text-shadow(rgba(black, 1) 3px 0px 3px);
+      text-shadow: 3px 0px 3px $black;
 
       &:nth-child(1) {
         //
@@ -162,7 +164,7 @@
     margin-bottom: 4px;
     z-index: 10;
     // border: 1px solid $outBlue;
-    @include text-shadow(rgba(black, 1) 3px 0px 1px);
+    text-shadow: 3px 0px 1px $black;
     transition: .25s ease-in;
 
     @media (max-width: $breakOne) {
