@@ -6,18 +6,19 @@
 </template>
 
 <style lang="scss" scoped>
-  // @import '@/assets/css/main.scss';
+  @import '@/assets/css/main.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
   .about {
     margin-bottom: .75em;
-    background-image: url('../assets/img/bg/bg_bag_y.png');
-    background-repeat: repeat;
+    background: $groovy-yellow;
     // width: calc(100%);
     // width: 500px;
     @include shadow;
     @include clearfix;
-    @include font-smoothing(off);
+    @include font-smoothing(on);
+    margin: 1em 1em 1em;
+    border-radius: .5em;
 
     .flag {
       width: 104px;
@@ -33,7 +34,7 @@
     p {
       color: lighten($grey, 15);
       font-size: .8em;
-      font-weight: bold;
+      font-weight: 400;
       margin: 1em 1em 0.7em 10.7em;
       padding: 0.9em 0 0 0;
       @include font-smoothing(on);

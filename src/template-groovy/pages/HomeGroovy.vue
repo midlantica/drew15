@@ -30,7 +30,7 @@
 
 <script>
   import NavvyHead from '../components/NavvyHead'
-  import Navvy from '../components/Navvy'
+  // import Navvy from '../components/Navvy'
   import HeadAndCopy from '../components/HeadAndCopy'
   import About from '../components/About'
   import Skills from '../components/Skills'
@@ -49,8 +49,7 @@
       CarouselShow,
       About,
       Skills,
-      Quotes,
-      Navvy,
+      Quotes
     },
     name: 'HomeGroovy',
     metaInfo: {
@@ -69,33 +68,37 @@
   @import '@/assets/css/main.scss';
   @import '@/template-groovy/assets/css/groovy-main.scss';
 
+  $LargeScreen: 1024px;
+
   .mainGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 7fr 6fr;
     grid-template-rows: auto auto auto auto;
-    //                  1-2 2-3  3-4 4-5
+    //                  1-2  2-3  3-4  4-5
     grid-auto-flow: column;
     background: $groovy-yellow-pale;
 
-    @media (min-width: 1024px) {
-      grid-template-columns: 1fr;
-    }
+    // @media (max-width: $LargeScreen) {
+    //   // grid-template-columns: 1fr !important;
+    // }
 
   }
 
   header {
     grid-column: 1 / 4;
-    // grid-row: 1 / 2;
+    grid-row: 1;
     color: $ivory;
     background: $groovy-red;
-    height: 200px;
-    // position: relative;
-    // z-index: 0;
+    height: 175px;
+
+    @media (max-width: $LargeScreen) {
+      grid-row: 1;
+    }
   }
 
   footer {
     grid-column: 1 / 4;
-    grid-row-end: -1;
+    grid-row: -1;
     // grid-row: 4;
     height: 250px;
     color: $ivory;
@@ -113,35 +116,53 @@
       $groovy-orange 75%,
       // 75% - 100%
       $groovy-red 75%,
-      $groovy-red 100%),
+      $groovy-red 100%
+    );
+
+    @media (max-width: $LargeScreen) {
+      // grid-column: span 1;
+      grid-row: -1;
+    }
   }
 
-  > section {
-    //
-    &:nth-child(1) {
-      // grid-column-start: span 1;
-      grid-column: 1 / 2;
-      // padding: 0 1em;
+  section:nth-of-type(1) {
+    // grid-column-start: span 1;
+    grid-column: 1 / 2;
+    // padding: 0 1em;
 
-      // @media screen and (min-width: 1024px) {
-      //   padding: 0em 1em 0em 1em;
-      // }
+    // @media screen and (min-width: 1024px) {
+    //   padding: 0em 1em 0em 1em;
+    // }
+
+    @media (max-width: 768px) {
+      grid-column: 1 / 4;
     }
-    &:nth-child(2) {
-      // grid-column-end: span 1;
-      grid-column: 2 / 3;
-      // padding: 0 1em;
+  }
 
-      // @media screen and (min-width: 1024px) {
-      //   padding: 0em 1em 0em .5em;
-      // }
+  section:nth-of-type(2) {
+    // grid-column-end: span 1;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    z-index: 10;
+    // padding: 0 1em;
+
+    // @media screen and (min-width: 1024px) {
+    //   padding: 0em 1em 0em .5em;
+    // }
+
+    @media (max-width: 768px) {
+      grid-column: 1 / 4;
+      grid-row: 3;
     }
-
   }
 
   .skillsGrid {
     grid-column: 1 / 4;
     grid-row: 3;
+
+    @media (max-width: $LargeScreen) {
+      grid-row: 4;
+    }
   }
 
 </style>

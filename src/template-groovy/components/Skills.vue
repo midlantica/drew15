@@ -54,7 +54,7 @@
 
   .skillsGrid {
     display: grid;
-    width: 100%;
+    width: 95%;
     flex-wrap: wrap;
     // justify-content: stretch;
     // justify-content: space-around;
@@ -62,7 +62,7 @@
     justify-content: space-between;
     justify-items: center;
     //
-    margin: .5em auto 0;
+    margin: .5em auto 1em;
     align-items: center;
     grid-template-columns: repeat(12, minmax(auto, auto));
     grid-row-gap: 0em;
@@ -119,6 +119,12 @@
 
     .icon {
       // margin: auto;
+    }
+
+    svg {
+      width: 70px;
+      // height: 26px;
+      // scale
     }
   }
 

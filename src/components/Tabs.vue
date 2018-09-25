@@ -22,6 +22,11 @@
     text-align: center;
     font-size: .7em;
     background: #333;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    // display: relative;
 
     a {
       flex-grow: 1;

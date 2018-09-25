@@ -10,20 +10,20 @@
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
   p {
-    font-family: $font-copy !important;
-    font-size: calc(0.8rem + .75vw);
-    // font-size: 0.9rem;
+    font-family: $font-copy;
     color: $grey;
-    margin: 1em 0em .5em .725em;
+    font-size: 1rem;
+    // font-weight: bold;
     line-height: calc(2.3em + .5vw);
-    // line-height: 2.6em;
+    margin: 2.4em 1.5em .5em 2.5em;
+    line-height: 3.2em;
     letter-spacing: 0.06em;
 
-    @media screen and (min-width: 1024px) {
-      font-size: 0.9rem;
-      line-height: 2.6em;
-      // line-height: calc(1.9em + .6vw);
-    }
+    // @media screen and (min-width: 1024px) {
+    //   font-size: 1.1rem;
+    //   line-height: 3.2em;
+    //   // line-height: calc(1.9em + .6vw);
+    // }
   }
 
 </style>
