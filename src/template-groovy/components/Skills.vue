@@ -50,7 +50,10 @@
 
 <style lang="scss" scoped>
   // @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  @import '@/template-groovy/assets/css/groovy-main.scss';
+
+  $BreakOne: 1024px;
+  $BreakTwo: 860px;
 
   .skillsGrid {
     display: grid;
@@ -84,21 +87,22 @@
     //   // background: lightblue;
     // }
 
-    @media (min-device-width: 768px)
-    and (max-device-width: 1024px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    {
-      grid-template-columns: repeat(6, minmax(auto, auto));
-      // justify-content: center;
-      // grid-row-gap: 1.5em;
-      // grid-column-gap: 0em;
-      // grid-column-gap: 0em;
-      // background: rgba(246, 128, 97, .5); // pale orange
+    // @media (min-device-width: 768px)
+    //    and (max-device-width: 1024px)
+    //    and (-webkit-min-device-pixel-ratio: 2)
+    // {
+    //   grid-template-columns: repeat(6, minmax(auto, auto));
+    //   // justify-content: center;
+    //   // grid-row-gap: 1.5em;
+    //   // grid-column-gap: 0em;
+    //   // grid-column-gap: 0em;
+    //   // background: rgba(246, 128, 97, .5); // pale orange
 
-    }
+    // }
 
-    @media (min-width: 414px) and (max-width: 736)
+    @media (min-width: 485px) and (max-width: $BreakTwo)
     {
+      width: 95%;
       grid-template-columns: repeat(6, minmax(auto, auto));
       // grid-column-gap: 0em;
       // grid-row-gap: .75em;
@@ -106,14 +110,15 @@
       // background: aqua;
     }
 
-    @media (min-width: 0px) and (max-width: 414px)
+    @media (min-width: 0px) and (max-width: 484px)
     {
       grid-template-columns: repeat(3, minmax(auto, auto));
       // grid-row-gap: 1.5em;
       // grid-column-gap: 5em;
       // background: yellow;
       grid-row-gap: .75em;
-      justify-content: space-between;
+      justify-content: space-around;
+      // justify-content: space-between;
       justify-items: center;
     }
 

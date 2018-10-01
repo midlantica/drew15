@@ -114,7 +114,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   // @import '@/assets/css/main.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
@@ -128,14 +128,14 @@
     // width: 488px;
     background: lightgrey;
     // border: 10px red solid;
-    min-height: 363px;
+    min-height: 270px;
     box-shadow: 2px 2px 3px $black;
     // position: relative;
     // top: -210px;
     // z-index: 10;
 
     @media (min-width: 0px) and (max-width: 796px) {
-      min-height: 200px;
+      min-height: 195px;
     }
 
     .VueCarousel-wrapper {
@@ -145,13 +145,13 @@
       // width: 488px;
       background: lightgrey;
       // border: 10px red solid;
-      min-height: 363px;
+      min-height: 270px;
       // margin-bottom: -2px !important;
       @include shadow;
       @include clearfix;
 
       @media (min-width: 0px) and (max-width: 796px) {
-        min-height: 200px;
+        min-height: 195px;
       }
 
       .VueCarousel-inner {

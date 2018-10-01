@@ -3,8 +3,10 @@
     <div class="groovyCircle">
       <router-link to="/Groovy/Extras" class="drewhead"/>
     </div>
-    <div>
-      <h1><a href="/">DREW HARPER</a></h1>
+    <div class="headyStuff">
+      <a href="/" class="DHHead">
+        <DHGroovyHead />
+      </a>
       <h2>UI/UX DESIGNER & FRONT END DEV</h2>
       <section class="contact">
         <p>
@@ -19,39 +21,22 @@
   </nav>
 </template>
 
+<script>
+  import DHGroovyHead from '@/template-groovy/components/DrewHarperGroovyHead'
+  export default {
+    components: {
+      DHGroovyHead
+    }
+  }
+</script>
+
 <style lang="scss" scoped>
   // @import '@/assets/css/_colors.scss';
   @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  @import '@/template-groovy/assets/css/groovy-main.scss';
 
   $breakOne: 840px;
   $breakTwo: 630px;
-
-  a {
-    color: $ivory;
-    text-decoration: none;
-
-    &:link {
-      color: $ivory;
-      text-decoration: none;
-    }
-
-    &:hover {
-      color: $accent !important;
-    }
-  }
-
-  h1, h2, h3, h4, h5, p {
-    line-height: 1em;
-    margin: 0;
-    padding: 0;
-    color: $ivory !important;
-
-    a {
-      color: $ivory !important;
-      text-decoration: none;
-    }
-  }
 
   nav {
     // display: flex;
@@ -61,50 +46,90 @@
     // align-items: center;
     padding: .5em 1.25em;
 
-  }
-
-  .groovyCircle {
-    width: 210px;
-    height: 210px;
-    box-shadow: 8px 6px 0px rgba(37, 37, 37, .25);
-    border-radius: 10em;
-    position: relative;
-    top: -2em;
-    left: -4em;
-    float: left;
-    clip-path: polygon(21% 0%, 100% 0%, 110% 50%, 100% 100%, 21% 110%);
-
-    // top: 1em;
-    background-image: radial-gradient(
-      // 0 - 25%
-      $groovy-aqua 0%,
-      $groovy-aqua 35%,
-      // 25% - 50%
-      $groovy-yellow 35%,
-      $groovy-yellow 47%,
-      // 50% - 75%
-      $groovy-orange 47%,
-      $groovy-orange 59%,
-      // 75% - 100%
-      $groovy-red 59%,
-      $groovy-red 100%
-    );
-
-    a.drewhead {
-      background-image: url(../assets/img/drew_head.png);
-      background-repeat: no-repeat;
-      width: 73px;
-      height: 89px;
-      display: block;
+    .groovyCircle {
+      width: 210px;
+      height: 210px;
+      box-shadow: 8px 6px 0px rgba(37, 37, 37, .25);
+      border-radius: 10em;
       position: relative;
-      top: 3.8em;
-      left: 4em;
-      scale: 1.2;
-      // grid-column: 1 / 2;
-      // grid-row: 1 / 2;
+      top: -2em;
+      left: -4em;
+      float: left;
+      z-index: 5;
+      //
+      background-image: radial-gradient(
+        // 0 - 25%
+        $groovy-aqua 0%,
+        $groovy-aqua 35%,
+        // 25% - 50%
+        $groovy-yellow 35%,
+        $groovy-yellow 47%,
+        // 50% - 75%
+        $groovy-orange 47%,
+        $groovy-orange 59%,
+        // 75% - 100%
+        $groovy-red 59%,
+        $groovy-red 100%
+      );
+      clip-path: polygon(
+        21% 0%, 100% 0%, 110% 50%,
+        100% 100%, 21% 110%
+      );
+
+      a.drewhead {
+        background-image: url(../assets/img/drew_head.png);
+        background-repeat: no-repeat;
+        width: 73px;
+        height: 89px;
+        display: block;
+        position: relative;
+        top: 3.8em;
+        left: 4em;
+        scale: 1.2;
+      }
+    }
+
+    .headyStuff {
+      // display: block;
+      width: 360px;
+      position: relative;
+      left: -3em;
+      float: left;
+      margin: 1em 0em 0em 0em;
+      // width: auto;
+      // border: 2px dashed blue;
+
+      .DHHead {
+        width: 100%;
+      }
+
+      a {
+        color: $ivory;
+        text-decoration: none;
+
+        &:link {
+          color: $ivory;
+          text-decoration: none;
+        }
+
+        &:hover {
+          color: $accent !important;
+        }
+      }
+
+      h1, h2, h3, h4, h5, p {
+        line-height: 1em;
+        margin: 0;
+        padding: 0;
+        color: $ivory !important;
+
+        a {
+          color: $ivory !important;
+          text-decoration: none;
+        }
+      }
     }
   }
-
 
   h1 {
     font-size: 5.1em;

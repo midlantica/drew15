@@ -33,7 +33,7 @@
 
     p {
       color: lighten($grey, 15);
-      font-size: .8em;
+      font-size: .9em;
       font-weight: 400;
       margin: 1em 1em 0.7em 10.7em;
       padding: 0.9em 0 0 0;
