@@ -4,9 +4,7 @@
       <router-link to="/Groovy/Extras" class="drewhead"/>
     </div>
     <div class="headyStuff">
-      <a href="/" class="DHHead">
-        <DHGroovyHead />
-      </a>
+      <a href="/" class="DHHead"><DHGroovyHead /></a>
       <h2>UI/UX DESIGNER & FRONT END DEV</h2>
       <section class="contact">
         <p>
@@ -91,16 +89,51 @@
 
     .headyStuff {
       // display: block;
-      width: 360px;
+      // width: 36%;
       position: relative;
       left: -3em;
       float: left;
-      margin: 1em 0em 0em 0em;
+      margin: 1.5em -3em 0em 0em;
       // width: auto;
       // border: 2px dashed blue;
 
+      @media (min-width: $breakOne) {
+        width: 37%;
+        margin-top: 1.5em;
+        // background: aqua;
+      }
+
+      @media (max-width: 1000px) {
+        width: 50vw;
+        margin-top: 1em;
+        // background: lightgreen;
+      }
+
+      @media (max-width: 850px) {
+        // width: 50vw;
+        margin-top: 1.5em;
+        // background: orange;
+      }
+
+      @media (max-width: 700px) {
+        // width: 50vw;
+        margin-top: 2em;
+        // background: orange;
+      }
+
+      @media (max-width: 650px) {
+        margin-top: 2.5em;
+        // background: orange;
+      }
+
+      @media (max-width: 600px) {
+        width: 50vw;
+        margin-top: 3em;
+        // background: orange;
+      }
+
       .DHHead {
-        width: 100%;
+        // width: auto;
       }
 
       a {
@@ -128,116 +161,55 @@
           text-decoration: none;
         }
       }
-    }
-  }
 
-  h1 {
-    font-size: 5.1em;
-    font-weight: normal;
-    letter-spacing: -.001em;
-    font-family: $font-subhead;
-    // text-shadow: 4px 0px 3px $black;
-    // transition: .25s ease-in;
-    //
-    // width: auto;
-    // flex-grow: 0;
-
-    // @media (max-width: $breakOne) {
-    //   flex-grow: 0;
-    //   text-align: right;
-    // }
-
-    // @media (max-width: $breakTwo) {
-    //   flex-grow: 0;
-    //   text-align: center;
-    // }
-
-  }
-
-
-  h2 {
-    font-family: $font-copy;
-    font-size: 1.2em;
-    letter-spacing: .03em;
-    margin: 0.1em 0 .25em;
-    // text-shadow: 3px 0px 3px $black;
-
-    // @media (max-width: $breakTwo) {
-    //   display: inline-block;
-    //   font-size: 1.85em !important;
-    //   margin-top: -3px;
-
-    //   &:nth-child(1) {
-    //     //
-    //   }
-
-    //   &:nth-child(2) {
-    //     margin-left: .25em !important;
-    //   }
-    // }
-
-  }
-
-
-  section.contact {
-    // text-transform: uppercase;
-    // margin-top: 0.3em;
-    // margin-left: 1em;
-    // margin-bottom: 4px;
-    // z-index: 10;
-    // border: 1px solid $outBlue;
-    // text-shadow: 3px 0px 1px $black;
-    // transition: .25s ease-in;
-
-    // @media (max-width: $breakOne) {
-    //   margin-left: 0;
-    // }
-
-    // @media (max-width: $breakTwo) {
-    //   margin-top: 0.4em;
-    // }
-
-    p {
-      font-family: $font-copy;
-      letter-spacing: 0.05em;
-      font-size: .95em;
-      text-transform: none;
-
-      a {
-        //
+      h1 {
+        font-size: 5.1em;
+        font-weight: normal;
+        letter-spacing: -.001em;
+        font-family: $font-subhead;
       }
 
-      // @media (max-width: $breakOne) {
-      //   justify-content: center;
-      //   font-size: 1.27em !important;
-      //   letter-spacing: .1em !important;
-      //   margin-top: -.3em;
+      h2 {
+        font-size: 1.075em;
+        font-family: $font-copy;
+        margin: 0.1em 0 .25em;
+        line-height: 1.8em;
+        letter-spacing: 0.041em;
 
-      //   &:nth-child(1) {
-      //     float: left;
-      //     clear: left;
-      //     margin-right: .5em;
-      //   }
+        @media (max-width: 1000px) {
+          font-size: 2.47vw;
+          // background: lightgreen;
+        }
 
-      //   &:nth-child(2) {
-      //     float: left;
-      //   }
-      // }
+        @media (max-width: 600px) {
+          font-size: 2.25vw;
+          // background: orange;
+        }
+      }
 
-      // @media (max-width: $breakTwo) {
-      //   font-size: .87em !important;
-      //   letter-spacing: 0.09em !important;
+      section.contact {
+        //
+        p {
+          font-family: $font-copy;
+          font-size: .925em;
+          letter-spacing: 0.0em;
+          text-transform: none;
+          line-height: 0.7em;
 
-      //   &:nth-child(1) {
-      //     // color: lightgrey;
-      //   }
+          @media (max-width: 1000px) {
+            font-size: 2.125vw;
+            line-height: 0.5em;
+            // background: lightgreen;
+          }
 
-      //   &:nth-child(2) {
-      //     // color: lightgrey;
-      //   }
-      // }
-
+          @media (max-width: 600px) {
+            font-size: 2.125vw;
+            // background: orange;
+          }
+        }
+      }
     }
+
   }
 
 </style>
