@@ -8,6 +8,7 @@
 <style lang="scss" scoped>
   // @import '@/assets/css/main.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  @import '@/template-bourbon/assets/css/fonts/AmericanTypewriter/AmericanTypewriter.css';
 
   .about {
     margin-bottom: .75em;
@@ -32,6 +33,7 @@
 
     p {
       color: lighten($grey, 15);
+      // color: red;
       font-size: .8em;
       font-weight: bold;
       margin: 1em 1em 0.7em 10.7em;

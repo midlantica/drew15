@@ -61,7 +61,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   @import '@/assets/css/main.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
