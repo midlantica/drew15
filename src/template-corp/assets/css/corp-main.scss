@@ -1,18 +1,12 @@
-// VENDORS
-// @import '@/assets/css/vendor/compassMixins/_compass.scss';
-@import '@/assets/css/utilities/__utilities_base.scss';
-
-// SETTINGS
-@import '@/template-bourbon/assets/css/_colors.scss';
-// @import '/utilities/__utilities_base.scss';
-
-// FONTS
-// @import '@/template-bourbon/assets/css/fonts/veneer/veneer.css';
-// @import '@/template-bourbon/assets/css/fonts/American_typewriter/american_typewriter/american_typewriter.css';
-
 // BASE
 @import '@/template-corp/assets/css/_base.scss';
+
+// SETTINGS
+@import '@/template-corp/assets/css/_colors.scss';
 
 // TYPOGRAPHY
 @import '@/template-corp/assets/css/_typography.scss';
 
+// .wrapper {
+//   background: url(/img/bg/concrete_seamless.png) repeat !important;
+// }

@@ -115,38 +115,22 @@
 </script>
 
 <style lang="scss">
-  // @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  @import '@/template-groovy/assets/css/groovy-main.scss';
 
   .VueCarousel.druCarousel {
-    margin: 1em 1em .75em;
-    // margin-top: 0em;
-    // margin-bottom: .75em;
-    // width: 48%;
-    // width: calc(100%) !important;
-    // width: calc(100% / 79);
-    // width: 488px;
+    margin: .75em auto 1em !important;
     background: lightgrey;
-    // border: 10px red solid;
-    min-height: 270px;
+    min-height: 330px;
     box-shadow: 2px 2px 3px $black;
-    // position: relative;
-    // top: -210px;
-    // z-index: 10;
 
     @media (min-width: 0px) and (max-width: 796px) {
       min-height: 195px;
     }
 
     .VueCarousel-wrapper {
-       margin-top: .5em;
-      // width: calc(100%) !important;
-      // width: calc(100% / 79);
-      // width: 488px;
+      margin: .75em auto 1em !important;
       background: lightgrey;
-      // border: 10px red solid;
-      min-height: 270px;
-      // margin-bottom: -2px !important;
+      min-height: 330px;
       @include shadow;
       @include clearfix;
 

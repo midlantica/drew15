@@ -1,56 +1,56 @@
 <template>
   <div class="skillsGrid">
-    <iconUiux class="icon uiux" />
-    <iconHtml5 class="icon html5" />
-    <iconCss3 class="icon css3" />
-    <iconJs class="icon js" />
+    <iconUiuxBlue class="icon uiux" />
+    <iconHtml5Blue class="icon html5" />
+    <iconCss3Blue class="icon css3" />
+    <iconJsBlue class="icon js" />
 
-    <iconSketch class="icon sketch" />
-    <iconSass class="icon sass" />
-    <iconVue class="icon vue" />
-    <iconSvg class="icon svg" />
+    <iconSketchBlue class="icon sketch" />
+    <iconSassBlue class="icon sass" />
+    <iconVueBlue class="icon vue" />
+    <iconSvgBlue class="icon svg" />
 
-    <iconTerminal class="icon terminal" />
-    <iconNode class="icon node" />
-    <iconWebpack class="icon webpack" />
-    <iconAxure class="icon axure" />
+    <iconTerminalBlue class="icon terminal" />
+    <iconNodeBlue class="icon node" />
+    <iconWebpackBlue class="icon webpack" />
+    <iconAxureBlue class="icon axure" />
   </div>
 </template>
 
 <script>
-  import iconUiux from '@/components/Icons/icon-uiux'
-  import iconHtml5 from '@/components/Icons/icon-html5'
-  import iconCss3 from '@/components/Icons/icon-css3'
-  import iconJs from '@/components/Icons/icon-js'
-  import iconSketch from '@/components/Icons/icon-sketch'
-  import iconSass from '@/components/Icons/icon-sass'
-  import iconVue from '@/components/Icons/icon-vue'
-  import iconSvg from '@/components/Icons/icon-svg'
-  import iconTerminal from '@/components/Icons/icon-terminal'
-  import iconNode from '@/components/Icons/icon-node'
-  import iconWebpack from '@/components/Icons/icon-webpack'
-  import iconAxure from '@/components/Icons/icon-axure'
+  import iconUiuxBlue from '@/template-corp/components/Icons/icon-uiux'
+  import iconHtml5Blue from '@/template-corp/components/Icons/icon-html5'
+  import iconCss3Blue from '@/template-corp/components/Icons/icon-css3'
+  import iconJsBlue from '@/template-corp/components/Icons/icon-js'
+  import iconSketchBlue from '@/template-corp/components/Icons/icon-sketch'
+  import iconSassBlue from '@/template-corp/components/Icons/icon-sass'
+  import iconVueBlue from '@/template-corp/components/Icons/icon-vue'
+  import iconSvgBlue from '@/template-corp/components/Icons/icon-svg'
+  import iconTerminalBlue from '@/template-corp/components/Icons/icon-terminal'
+  import iconNodeBlue from '@/template-corp/components/Icons/icon-node'
+  import iconWebpackBlue from '@/template-corp/components/Icons/icon-webpack'
+  import iconAxureBlue from '@/template-corp/components/Icons/icon-axure'
   export default {
     components: {
-      iconUiux,
-      iconHtml5,
-      iconCss3,
-      iconJs,
-      iconSketch,
-      iconSass,
-      iconVue,
-      iconSvg,
-      iconTerminal,
-      iconNode,
-      iconWebpack,
-      iconAxure
+      iconUiuxBlue,
+      iconHtml5Blue,
+      iconCss3Blue,
+      iconJsBlue,
+      iconSketchBlue,
+      iconSassBlue,
+      iconVueBlue,
+      iconSvgBlue,
+      iconTerminalBlue,
+      iconNodeBlue,
+      iconWebpackBlue,
+      iconAxureBlue
     }
   }
 </script>
 
 <style lang="scss" scoped>
   // @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  @import '@/template-corp/assets/css/corp-main.scss';
 
   .skillsGrid {
     display: grid;
@@ -62,14 +62,14 @@
     justify-content: space-between;
     justify-items: center;
     //
-    margin: .5em auto 0;
+    margin: 0em auto 0;
     align-items: center;
-    grid-template-columns: repeat(4, minmax(auto, auto));
-    grid-row-gap: 2.5em;
+    grid-template-columns: repeat(6, minmax(auto, auto));
+    grid-row-gap: 0.15em;
     grid-column-gap: 0em;
     // grid-column-gap: 1.5em;
     // background: beige;
-    // margin-bottom: .5em;
+    margin-bottom: .75em;
     transition: .25s ease-in;
 
 
@@ -78,7 +78,7 @@
     {
       grid-template-columns: repeat(6, minmax(auto, auto));
       grid-column-gap: 2.5em;
-      grid-row-gap: 1em;
+      grid-row-gap: .0em;
       // justify-content: stretch;
       // grid-column-gap: 0em;
       // background: lightblue;
@@ -102,8 +102,8 @@
       grid-template-columns: repeat(4, minmax(auto, auto));
       grid-row-gap: 1.5em;
       // grid-column-gap: 0em;
-      grid-row-gap: .75em;
-      grid-row-gap: 1.25em;
+      // grid-row-gap: .75em;
+      grid-row-gap: 1em;
       // background: aqua;
     }
 

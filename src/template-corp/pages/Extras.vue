@@ -70,11 +70,12 @@
 </script>
 
 <style lang="scss" scoped>
-  @import '../assets/css/corp-main.scss';
+  @import '@/assets/css/main.scss';
+  @import '@/template-corp/assets/css/corp-main.scss';
 
   .content {
     grid-template-columns: repeat(1, 1fr);
-    background: url(../assets/img/bg/graphy_2.png) repeat;
+    background: url(../assets/img/bg/linen.png) repeat;
     box-shadow: 3px 5px 4px transparentize(black, 0.8),
                 3px 3px 5px transparentize(black, 0.2);
     // padding-top: 1em;

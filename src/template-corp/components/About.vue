@@ -7,21 +7,25 @@
 
 <style lang="scss" scoped>
   // @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  @import '@/template-corp/assets/css/corp-main.scss';
 
   .about {
     margin-bottom: .75em;
-    background-image: url('../assets/img/bg/bg_bag_y.png');
-    background-repeat: repeat;
+    // background-image: url('../assets/img/bg/bg_bag_y.png');
+    // background-repeat: repeat;
     // width: calc(100%);
     // width: 500px;
-    @include shadow;
+    // @include shadow;
+    // border-shadow: background: #FFFFFF;
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.29);
+    background: white;
     @include clearfix;
-    @include font-smoothing(off);
+    // @include font-smoothing(off);
+    // margin-bottom: 1em;
 
     .flag {
-      width: 104px;
-      height: 59px;
+      width: 124px;
+      height: 74px;
       margin: 1em ;
       float: left;
       clear: left;
@@ -31,12 +35,12 @@
     }
 
     p {
+      font-size: 0.8em;
+      font-weight: 400;
       color: lighten($grey, 15);
-      font-size: .8em;
-      font-weight: bold;
-      margin: 1em 1em 0.7em 10.7em;
+      margin: 1em 1em 0.7em 8.5em;
       padding: 0.9em 0 0 0;
-      @include font-smoothing(on);
+      // @include font-smoothing(on);
     }
   }
 

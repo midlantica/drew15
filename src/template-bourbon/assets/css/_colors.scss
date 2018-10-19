@@ -11,3 +11,14 @@ $paleyellow: rgba(255,255,191,0.6);
 $accent-red: #C02C19;
 $white:      white;
 $black:     black;
+
+// link colors (normal, hover, active, visited, focus)
+a {
+  @include link-colors(
+    $blue-dark,  // normal
+    $accent,     // hover
+    $blue-mid,   // active
+    $grey,       // visited
+    $blue-dark   // focus
+  );
+}

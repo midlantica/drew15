@@ -6,9 +6,10 @@
 </template>
 
 <style lang="scss" scoped>
-  // @import '@/assets/css/main.scss';
+  @import '@/assets/css/main.scss';
+  @import '@/template-bourbon/assets/css/_colors.scss';
+  // @import '@/template-bourbon/assets/css/_fonts.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
-  @import '@/template-bourbon/assets/css/fonts/AmericanTypewriter/AmericanTypewriter.css';
 
   .about {
     margin-bottom: .75em;

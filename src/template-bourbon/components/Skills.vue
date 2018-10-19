@@ -50,8 +50,9 @@
 
 <style lang="scss" scoped>
   @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
-
+  // @import '@/template-bourbon/assets/css/_fonts.scss';
+  // @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  
   .skillsGrid {
     display: grid;
     width: 100%;

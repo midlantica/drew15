@@ -5,9 +5,17 @@
 // @import 'vendor/compassMixins/utilities/links/_link-colors.scss';
 
 // SETTINGS
-@import 'utilities/__utilities_base.scss';
 @import '_colors.scss';
+@import 'utilities/_Autilities_base.scss';
 // FONTS
 // @import '/fonts/veneer/veneer.css';
 // @import '/fonts/American_typewriter/american_typewriter/american_typewriter.css';
 
+
+// BREAKPOINTS
+$XLargeScreen: 1200px;
+$LargeScreen:  1024px;
+$MidScreen:    768px;
+$MidScreenSm:  700px;
+$SmallScreen:  480px;
+$XSmallScreen: 320px;

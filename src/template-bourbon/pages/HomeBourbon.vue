@@ -27,14 +27,13 @@
 </template>
 
 <script>
+  import '@/template-bourbon/assets/css/fonts/Veneer/Veneer.css'
+  import '@/template-bourbon/assets/css/fonts/AmericanTypewriter/AmericanTypewriter.css'
+
   import Navvy from '../components/Navvy'
   import HeadAndCopy from '../components/HeadAndCopy'
   import About from '../components/About'
   import Skills from '../components/Skills'
-  // import Quotes from '@/components/Quotes/QuotesVueCarousel'
-  // import Quotes from '@/components/Quotes/QuotesVueSwiper'
-  // import Quotes from '@/components/Quotes/QuotesSiema'
-  // import Quotes from '@/components/Quotes/QuotesVueAgile'
   import Quotes from '../components/Quotes/QuoteBasic'
   const CarouselShow = () => import('../components/Carousel/CarouselShow')
 
@@ -63,6 +62,8 @@
 
 <style lang="scss">
   @import '@/assets/css/main.scss';
+  // @import '@/assets/css/utilities/_Autilities_base.scss';
+  // @import '@/template-bourbon/assets/css/_fonts.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
   header,

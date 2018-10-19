@@ -14,12 +14,11 @@
       <section>
         <CarouselShow/>
         <About/>
-        <Quotes/>
       </section>
     </main>
 
     <footer>
-      <Navvy/>
+      <Quotes/>
     </footer>
 
   </div>
@@ -27,14 +26,14 @@
 </template>
 
 <script>
+  import '@/template-corp/assets/css/fonts/Roboto/Roboto.css'
+  // import '@/template-corp/assets/css/fonts/BodoniXT/BodoniXT.css'
+  import '@/template-corp/assets/css/fonts/cormorantGaramond/cormorantGaramond.css'
+
   import Navvy from '../components/Navvy'
   import HeadAndCopy from '../components/HeadAndCopy'
   import About from '../components/About'
   import Skills from '../components/Skills'
-  // import Quotes from '@/components/Quotes/QuotesVueCarousel'
-  // import Quotes from '@/components/Quotes/QuotesVueSwiper'
-  // import Quotes from '@/components/Quotes/QuotesSiema'
-  // import Quotes from '@/components/Quotes/QuotesVueAgile'
   import Quotes from '../components/Quotes/QuoteBasic'
   const CarouselShow = () => import('../components/Carousel/CarouselShow')
 
@@ -56,7 +55,10 @@
       titleTemplate: '%s - UI/UX Designer, Graphic Designer!',
       bodyAttrs: {
         class: 'corp'
-      }
+      },
+      style: [
+        { cssText: 'body { background: url(/img/bg/tile_patt_01.jpg) repeat !important; }', type: 'text/css' }
+      ]
     }
   }
 </script>
@@ -65,25 +67,33 @@
   @import '@/assets/css/main.scss';
   @import '@/template-corp/assets/css/corp-main.scss';
 
+  .wrapper {
+    // background: url(/template-corp/assets/img/bg/linen.png) repeat !important;
+    // background: url(/img/bg/linen.png) repeat !important;
+    // background: url(/img/bg/concrete_seamless.png) repeat !important;
+  }
+
   header,
   footer {
     color: $ivory;
-    background: navy;
+    // background: none !important;
     // background: url(/img/bg/bg_bag_dk.jpg) repeat;
     // z-index: 10;
-    position: relative;
-    @include shadow;
-    // box-shadow: 0px 0px 6px 1px black;
+    // position: relative;
+    box-shadow: none !important;
+    background: url(/img/bg/white_paper_patt-01.jpg) repeat !important;
+    // background: url(/img/bg/linen.png) repeat !important;
   }
 
   main {
     display: grid;  // <-- CONTENT GRID
     grid-template-columns: repeat(2, 1fr);
-    background: url(../assets/img/bg/graphy_2.png) repeat;
-    box-shadow: 3px 5px 4px transparentize(black, 0.8),
-                3px 3px 5px transparentize(black, 0.2);
+    background: none !important;
+    box-shadow: none !important;
     padding-top: 1em;
     padding-bottom: .75em;
+    background: url(/img/bg/white_paper_patt-01.jpg) repeat !important;
+    // background: url(../assets/img/bg/linen.png) repeat !important;
     //
     @media (max-width: 1024px) {
       grid-template-columns: 1fr;

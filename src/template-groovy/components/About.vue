@@ -17,7 +17,7 @@
     @include shadow;
     @include clearfix;
     @include font-smoothing(on);
-    margin: 1em 1em 1em;
+    margin: 0em auto 1em;
     border-radius: .5em;
 
     .flag {

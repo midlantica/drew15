@@ -1,24 +1,12 @@
-// @import '~/node_modules/compass-mixins/';
-// @import '_colors.scss';
-// @import './utilities/__utilities_base.scss';
-@import '@/template-bourbon/assets/css/fonts/Veneer/Veneer.css';
-@import '@/template-bourbon/assets/css/fonts/AmericanTypewriter/AmericanTypewriter.css';
-
-// BREAKPOINTS
-$XLargeScreen: 1200px;
-$LargeScreen:  1024px;
-$MidScreen:    768px;
-$MidScreenSm:  700px;
-$SmallScreen:  480px;
-$XSmallScreen: 320px;
+@import '@/assets/css/utilities/_Autilities_base.scss';
 
 // FONTS
 $base-font-size   :1rem;
 $base-line-height :1.7em;
-$font             :"Helvetica Neue", Arial, sans-serif;
+$font             :"Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-head        :"VeneerTwo", Helvetica, Arial, sans-serif;
 $font-subhead     :"Veneer", Helvetica, Arial, sans-serif;
-$font-copy        :"AmericanTypewriterStd-Med", Helvetica, Arial, sans-serif;
+$font-copy        :"AmericanTypewriterStd-Med", Helvetica, Times, serif;
 
 // ############################
 
@@ -32,19 +20,10 @@ html, html a {
 }
 
 body {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: $base-font-size;
   background: #333;
   margin: 0;
 }
 
-// link colors (normal, hover, active, visited, focus)
-a {
-  @include link-colors(
-    $blue-dark,  // normal
-    $accent,     // hover
-    $blue-mid,   // active
-    $grey,       // visited
-    $blue-dark   // focus
-  );
-}
+

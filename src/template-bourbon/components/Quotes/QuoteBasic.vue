@@ -5,8 +5,9 @@
   </div>
 </template>
 
-<style lang="scss">
-  // @import '@/assets/css/main.scss';
+<style lang="scss" scoped>
+  @import '@/assets/css/main.scss';
+  // @import '@/template-bourbon/assets/css/_fonts.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
   .quoteBlock {

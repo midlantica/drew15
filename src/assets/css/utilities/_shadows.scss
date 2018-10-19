@@ -8,6 +8,6 @@
 }
 
 @mixin no-shadow {
-  text-shadow: 0px 0px 0px;
-  filter: none;
+  text-shadow: 0px 0px 0px !important;
+  filter: none !important;
 }

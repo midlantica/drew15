@@ -115,12 +115,13 @@
 </script>
 
 <style lang="scss">
-  // @import '@/assets/css/main.scss';
+  @import '@/assets/css/main.scss';
+  // @import '@/template-bourbon/assets/css/_fonts.scss';
+  @import '@/template-bourbon/assets/css/_base.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
   .VueCarousel.druCarousel {
-    margin-top: 0em;
-    margin-bottom: .75em;
+    margin: 0em auto 1em !important;
     // width: calc(100%) !important;
     // width: calc(100% / 79);
     // width: 488px;
@@ -135,7 +136,7 @@
     }
 
     .VueCarousel-wrapper {
-       margin-top: .5em;
+      margin-top: .5em;
       // width: calc(100%) !important;
       // width: calc(100% / 79);
       // width: 488px;

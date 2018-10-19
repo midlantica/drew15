@@ -1,40 +1,31 @@
 <template>
   <div class="quoteBlock">
-    <p>&ldquo;Everything should be made as simple as possible, but not simpler.&rdquo;</p>
-    <cite>&ndash; Albert Einstein</cite>
+    <p>&ldquo;Everything should be made as simple as possible, but not simpler.&rdquo; &ndash; Albert Einstein</p>
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
   // @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  @import '@/template-corp/assets/css/corp-main.scss';
 
   .quoteBlock {
-    background: darken($accent-red, 10);
+    background: $blue-dark;
     // margin-bottom: .5em;
-    padding: .75em 2em 1em;
+    padding: .5em 2em .6em;
     @include shadow;
     // @include clearfix;
     text-align: center;
 
     p {
-      font-size: 0.8em;
-      color: $ivory !important;
+      font-family: cormorantGaramond-Regular;
+      font-size: 1.15em;
+      color: $ivory;
       text-align: center;
-      letter-spacing: .08em;
+      letter-spacing: .09em;
+      // word-spacing: .1em;
       font-weight: bold;
       @include font-smoothing(on);
     }
 
-    cite {
-      font-family: $font-copy;
-      font-size: .7em;
-      color: $ivory;
-      font-style: italic;
-      margin: 0 4em 0 0;
-      display: block;
-      text-align: right;
-      letter-spacing: .08em;
-    }
   }
 </style>

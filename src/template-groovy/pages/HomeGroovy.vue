@@ -157,7 +157,7 @@
     grid-column: 2 / 3;
     grid-row: 1 / 3;
     z-index: 10;
-    // padding: 0 1em;
+    padding: 0 1em;
 
     @media (max-width: $BreakOne) {
       // padding: 0em 1em 0em .5em;
