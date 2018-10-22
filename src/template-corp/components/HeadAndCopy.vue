@@ -23,6 +23,7 @@
     // grid-column: 2 / 3;
     // grid-row: 1 / 2;
     transition: .25s ease-in;
+    text-align: center;
 
     .cappy {
       color: $accent-red;

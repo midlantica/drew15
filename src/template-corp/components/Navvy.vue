@@ -127,14 +127,17 @@
 
     @media (max-width: $breakOne) {
       margin-left: 0;
+      flex-direction: row;
+      margin-top: 1.5em; 
     }
 
     @media (max-width: $breakTwo) {
       margin-top: 0.4em;
+      margin-top: 2em; 
     }
 
     @media (max-width: $breakThree) {
-      margin-top: 0em;
+      margin-top: 2em;
       transition: .25s ease-in;
     }
 
@@ -152,18 +155,28 @@
       @media (max-width: $breakOne) {
         justify-content: center;
         font-size: 1.27em !important;
-        letter-spacing: .1em !important;
-        margin-top: -.3em;
+        letter-spacing: .01em !important;
+
+        &:nth-child(1) {
+          text-align: right;
+          margin: 0 0.25em;
+        }
+
+        &:nth-child(2) {
+          text-align: left;
+          margin: 0 0.25em;
+        }
+
       }
 
       @media (max-width: $breakTwo) {
-        font-size: .87em !important;
+        font-size: 1.2em !important;
         letter-spacing: 0.09em !important;
       }
 
       @media (max-width: $breakThree) {
         justify-content: center;
-        font-size: 1.04em !important;
+        // font-size: 1.34em !important;
         letter-spacing: 0.09em !important;
         line-height: 1.25em;
         margin-bottom: -4px;

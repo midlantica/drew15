@@ -57,7 +57,8 @@
         class: 'corp'
       },
       style: [
-        { cssText: 'body { background: url(/img/bg/tile_patt_01.jpg) repeat !important; }', type: 'text/css' }
+        { cssText: 'html { background: url(img/bg/black-parch-bg.jpg ) !important; }', type: 'text/css' },
+        { cssText: 'body { background: transparent !important }', type: 'text/css' }
       ]
     }
   }
