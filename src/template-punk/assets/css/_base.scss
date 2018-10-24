@@ -15,10 +15,13 @@ $XSmallScreen: 320px;
 // FONTS
 $base-font-size   :1rem;
 $base-line-height :1.7em;
-$font             :"Helvetica Neue", Arial, sans-serif;
-$font-head        :"Helvetica Neue", Arial, sans-serif;
-$font-subhead     :"Helvetica Neue", Arial, sans-serif;
-$font-copy        :"Helvetica Neue", Arial, sans-serif;
+$font-light       :"RobotoLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $font-med         :"cormorantGaramond-Regular", "Times New Roman", Times, serif;
+$font             :"Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-head        :"RobotoBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-subhead     :"RobotoBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-copy        :"AmericanTypewriterStd-Med", Helvetica, Times, serif;
+$bodoni           :"BodoniXT", "Times New Roman", Times, serif;
 
 // ############################
 
@@ -34,7 +37,7 @@ html, html a {
 body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   font-size: $base-font-size;
-  background: #333;
+  // background: #333;
   margin: 0;
 }
 

@@ -23,12 +23,63 @@
 
 <style lang="scss">
   @import '@/assets/css/main.scss';
+  
+  $breakOne: 840px;
+  $breakTwo: 630px;
+  $breakThree: 430px;
 
   .wrapper {
     max-width: 1024px;
     margin: 0 auto;
-    background: white; // ivory
-    @include shadow;
+    // background: white; // ivory
+    // @include shadow;
+  }
+
+  // #############################
+  // BOURBON
+  .bourbon {
+    // background: initial;
+    background: #111;
+    // background: url(/img/bg/bricks-bg-02.jpg) repeat;
+
+    .wrapper {
+      background: url(./template-bourbon/assets/img/bg/graphy_2.png) repeat !important;
+      // background: url(/img/bg/Drew-punk-back.jpg) repeat;
+      background-size: 110% 100%;
+      // background-image: url(/img/bg/check-patt.png);
+      
+      @media (max-width: $breakOne) {
+        background-size: 110% 50% !important;
+      }
+
+      //
+      header, footer {
+        background: url(./template-bourbon/assets/img/bg/bg_bag_dk.jpg) repeat;
+      }
+    }
+  }
+
+  // #############################
+  // PUNK
+  .punk {
+    // background: initial;
+    background: #111;
+    // background: url(/img/bg/bricks-bg-02.jpg) repeat;
+
+    .wrapper {
+      background: url(/img/bg/Drew-punk-back.jpg) repeat;
+      background-size: 110% 100%;
+      // background-image: url(/img/bg/check-patt.png);
+      
+      @media (max-width: $breakOne) {
+        background-size: 110% 50% !important;
+      }
+
+      //
+      header {
+        background: initial !important;
+      }
+    }
   }
 
 </style>

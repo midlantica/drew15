@@ -26,17 +26,12 @@
 </template>
 
 <script>
-  import NavvyHead from '../components/NavvyHead'
-  // import Navvy from '../components/Navvy'
-  import HeadAndCopy from '../components/HeadAndCopy'
-  import About from '../components/About'
-  import Skills from '../components/Skills'
-  // import Quotes from '@/components/Quotes/QuotesVueCarousel'
-  // import Quotes from '@/components/Quotes/QuotesVueSwiper'
-  // import Quotes from '@/components/Quotes/QuotesSiema'
-  // import Quotes from '@/components/Quotes/QuotesVueAgile'
-  import Quotes from '../components/Quotes/QuoteBasic'
+  const NavvyHead = () => import('../components/NavvyHead')
+  const HeadAndCopy = () => import('../components/HeadAndCopy')
+  const Skills = () => import('../components/Skills')
+  const About = () => import('../components/About')
   const CarouselShow = () => import('../components/Carousel/CarouselShow')
+  const Quotes = () => import('../components/Quotes/QuoteBasic')
 
   export default {
     layout: 'default',

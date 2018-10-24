@@ -80,6 +80,7 @@
     // width: 72px;
     // height: 88px;
     // display: block;
+
   }
 
   h1 {
@@ -94,18 +95,26 @@
     padding-left: 1.2rem; 
     flex-grow: 1;
 
+    a:hover {
+      color: initial !important;
+      // background: orange !important;
+      // border-bottom: 2px dashed transparentize(navy, .75);
+    }
+
     @media (max-width: $breakOne) {
+      font-size: 4.5em;
       flex-grow: 0;
       text-align: right;
     }
 
     @media (max-width: $breakTwo) {
+      font-size: 3.5em;
       flex-grow: 0;
       text-align: center;
     }
 
     @media (max-width: $breakThree) {
-      font-size: 2.75em;
+      font-size: 2.5em;
       margin-bottom: -9px;
     }
   }
@@ -133,16 +142,25 @@
 
     @media (max-width: $breakTwo) {
       margin-top: 0.4em;
-      margin-top: 2em; 
+      margin-top: 1.5em; 
+      flex-direction: row;
     }
 
     @media (max-width: $breakThree) {
-      margin-top: 2em;
+      margin-top: 1em;
       transition: .25s ease-in;
+      flex-direction: row;
+    }
+
+    @media (max-width: 520px) {
+      margin-top: 1em;
+      transition: .25s ease-in;
+      flex-direction: column;
     }
 
     p {
-      font-family: $font-head;
+      font-family: $font;
+      font-weight: 300;
       font-size: 1.3em;
       letter-spacing: .01em;
       align-items: center;

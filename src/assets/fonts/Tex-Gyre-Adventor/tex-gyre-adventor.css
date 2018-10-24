@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'tex-gyre-adventor-regular';
+  src: url('tex-gyre-adventor-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'tex-gyre-adventor-italic';
+  src: url('tex-gyre-adventor-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'tex-gyre-adventor-bold';
+  src: url('tex-gyre-adventor-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'tex-gyre-adventor-bold-italic';
+  src: url('tex-gyre-adventor-bold-italic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+

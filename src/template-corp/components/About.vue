@@ -35,8 +35,10 @@
     }
 
     p {
+      font-family: Poppins;
       font-size: 0.8em;
-      font-weight: 400;
+      letter-spacing: 0.02em;
+      font-weight: 300;
       color: lighten($grey, 15);
       margin: 1em 1em 0.7em 8.5em;
       padding: 0.9em 0 0 0;

@@ -8,35 +8,33 @@
     <main>
       <section>
         <HeadAndCopy/>
-        <Skills/>
       </section>
 
       <section>
         <CarouselShow/>
         <About/>
-        <Quotes/>
+        <!-- <Quotes/> -->
       </section>
+
     </main>
 
-    <footer>
-      <Navvy/>
-    </footer>
+    <Skills/>
 
   </div>
 
 </template>
 
 <script>
-  import Navvy from '../components/Navvy'
-  import HeadAndCopy from '../components/HeadAndCopy'
-  import About from '../components/About'
-  import Skills from '../components/Skills'
-  // import Quotes from '@/components/Quotes/QuotesVueCarousel'
-  // import Quotes from '@/components/Quotes/QuotesVueSwiper'
-  // import Quotes from '@/components/Quotes/QuotesSiema'
-  // import Quotes from '@/components/Quotes/QuotesVueAgile'
-  import Quotes from '../components/Quotes/QuoteBasic'
+  import '@/assets/fonts/Roboto/Roboto.css'
+  import '@/assets/fonts/AmericanTypewriter/AmericanTypewriter.css'
+  import '@/assets/fonts/BodoniXT/BodoniXT.css'
+
+  const Navvy = () => import('../components/Navvy')
+  const HeadAndCopy = () => import('../components/HeadAndCopy')
+  const Skills = () => import('../components/Skills')
   const CarouselShow = () => import('../components/Carousel/CarouselShow')
+  const About = () => import('../components/About')
+  const Quotes = () => import('../components/Quotes/QuoteBasic')
 
   export default {
     layout: 'default',
@@ -56,34 +54,36 @@
       titleTemplate: '%s - UI/UX Designer, Graphic Designer!',
       bodyAttrs: {
         class: 'punk'
-      }
+      },
+      style: [
+        { cssText: '', type: 'text/css' }
+      ]
     }
   }
 </script>
 
 <style lang="scss" scoped>
+  @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
   @import '@/assets/css/main.scss';
   @import '@/template-punk/assets/css/punk-main.scss';
 
   header,
   footer {
     color: $ivory;
-    background: magenta;
-    // background: url(/img/bg/bg_bag_dk.jpg) repeat;
-    // z-index: 10;
-    position: relative;
-    @include shadow;
-    // box-shadow: 0px 0px 6px 1px black;
+    // background: magenta;
+    background: initial !important;
+    box-shadow: none;
   }
 
   main {
     display: grid;  // <-- CONTENT GRID
     grid-template-columns: repeat(2, 1fr);
-    background: url(../assets/img/bg/graphy_2.png) repeat;
-    box-shadow: 3px 5px 4px transparentize(black, 0.8),
-                3px 3px 5px transparentize(black, 0.2);
+    background: transparent;
+    // box-shadow: 3px 5px 4px transparentize(black, 0.8),
+    //             3px 3px 5px transparentize(black, 0.2);
     padding-top: 1em;
     padding-bottom: .75em;
+    box-shadow: none;
     //
     @media (max-width: 1024px) {
       grid-template-columns: 1fr;

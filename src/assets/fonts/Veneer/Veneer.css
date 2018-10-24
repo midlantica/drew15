@@ -1,0 +1,45 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3654788, 2018-10-12T16:00:52-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Veneer by Yellow Design Studio
+ * URL: https://www.myfonts.com/fonts/yellow-design/veneer/regular/
+ * 
+ * Webfont: VeneerThree by Yellow Design Studio
+ * URL: https://www.myfonts.com/fonts/yellow-design/veneer/three/
+ * 
+ * Webfont: VeneerTwo by Yellow Design Studio
+ * URL: https://www.myfonts.com/fonts/yellow-design/veneer/two/
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3654788
+ * Licensed pageviews: 25,000
+ * Webfonts copyright: Copyright (c) 2012 by Yellow Design Studio. All rights reserved.
+ * 
+ * © 2018 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/37c484");
+
+@font-face {
+  font-family: 'Veneer';
+  src: url('webfonts/37C484_0_0.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'VeneerThree';
+  src: url('webfonts/37C484_1_0.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'VeneerTwo';
+  src: url('webfonts/37C484_2_0.woff') format('woff');
+}
+

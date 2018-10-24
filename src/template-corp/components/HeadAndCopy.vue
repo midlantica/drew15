@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2><span class="cappy">ui/ux</span> designer + <span class="cappy">front-end</span> dev</h2>
+    <h2><span class="cappy">ui/ux</span> designer + <span class="cappy">front&#8209end</span>&nbsp;dev</h2>
     <p>Whether it’s a prototype, a responsive website, a wireframe, an interactive PDF, a new mobile app UI, a quick skin job, a few more buttons, a dialog box, filling up a bucket, or getting in the trenches with  HTML 5 and CSS 3, I can deliver. I don’t let ‘design’ get in the way. Oh and I’m a coder groupie&nbsp;<big>😃</big>
     </p>
 
@@ -11,8 +11,13 @@
   // @import '@/assets/css/main.scss';
   @import '@/template-corp/assets/css/corp-main.scss';
 
+  $breakOne: 840px;
+  $breakTwo: 630px;
+  $breakThree: 430px;
+
   h2 {
-    font-family: $font-subhead;
+    font-family: $font;
+    font-weight: 300;
     color: transparentize($blue-dark, .15);
     text-transform: lowercase;
     font-size: 1.8em;
@@ -25,8 +30,20 @@
     transition: .25s ease-in;
     text-align: center;
 
+    @media (max-width: $breakTwo) {
+      // font-size: 1em;
+      // line-height: 2.935em;
+      margin: 0em;
+    }
+
+    @media (max-width: $breakThree) {
+      // font-size: 1em;
+      line-height: 1em;
+      margin: 0em;
+    }
+
     .cappy {
-      color: $accent-red;
+      color: darken($accent-red, 5);
       font-size: 0.85em;
       font-family: cormorantGaramond-Bold;
       text-transform: uppercase;
@@ -36,14 +53,21 @@
 
   p {
     color: $black;
-    font-family: $font-light !important;
-    font-size: 1.2em;
+    font-family: $font !important;
+    font-weight: 300;
+    font-size: 1em;
     // font-size: calc(1rem + .2vw);
-    line-height: 2.335em;
-    margin: 1.1em 0em 1.25em .725em;
+    line-height: 2.935em;
+    margin: 1.1em 2.5em 1.25em 1.5em;
     // line-height: 2.6em;
     letter-spacing: 0.06em;
     // word-spacing: .1em;
+
+    @media (max-width: $breakOne) {
+      font-size: 1em;
+      line-height: 2.935em;
+      margin: 1em 1em;
+    }
   }
 
 </style>

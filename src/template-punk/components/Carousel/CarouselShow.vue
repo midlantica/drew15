@@ -1,25 +1,27 @@
 <template>
-  <carousel class="druCarousel"
-    :perPage="1"
-    :navigationEnabled="true"
-    :paginationEnabled="false"
-    :autoplay="true"
-    :autoplayTimeout="2500"
-    :autoplayHoverPause="true"
-    :loop="true"
-    :navigationClickTargetSize="0"
-    navigationNextLabel="<div class='navvy rightnav'>▶︎</div>"
-    navigationPrevLabel="<div class='navvy leftnav'>◀︎</div>"
-  >
-    <slide
-      v-for="(image, index) in images"
-      v-bind:image="image"
-      v-bind:index="index"
-      v-bind:key="image.id"
+  <div class="carouselBg">
+    <carousel class="druCarousel"
+      :perPage="1"
+      :navigationEnabled="true"
+      :paginationEnabled="false"
+      :autoplay="true"
+      :autoplayTimeout="2500"
+      :autoplayHoverPause="true"
+      :loop="true"
+      :navigationClickTargetSize="0"
+      navigationNextLabel="<div class='navvy rightnav'>▶︎</div>"
+      navigationPrevLabel="<div class='navvy leftnav'>◀︎</div>"
     >
-      <img :src="image" :alt="image.slice(18,-4)">
-    </slide>
-  </carousel>
+      <slide
+        v-for="(image, index) in images"
+        v-bind:image="image"
+        v-bind:index="index"
+        v-bind:key="image.id"
+      >
+        <img :src="image" :alt="image.slice(18,-4)">
+      </slide>
+    </carousel>
+  </div>
 </template>
 
 <script>
@@ -114,20 +116,36 @@
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   // @import '@/assets/css/main.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
+  .carouselBg {
+    position: relative;
+    // top: 20px;
+    border-bottom: 400px solid black;
+    border-left: 10px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 0px solid transparent;
+    // height: 100px;
+    width: 500px;
+    transform: rotate(179deg);
+    // background: black;
+  }
+
   .VueCarousel.druCarousel {
+    position: absolute;
+    transform: rotate(181deg);
     margin: 1em auto 1.5em !important;
     // width: calc(100%) !important;
     // width: calc(100% / 79);
     // width: 488px;
     background: lightgrey;
     // border: 10px red solid;
-    min-height: 363px;
+    min-height: 330px;
     // @include shadow;
     // @include clearfix;
+    z-index: 10;
 
     @media (min-width: 0px) and (max-width: 796px) {
       min-height: 200px;
@@ -140,7 +158,7 @@
       // width: 488px;
       background: lightgrey;
       // border: 10px red solid;
-      min-height: 363px;
+      min-height: 330px;
       // margin-bottom: -2px !important;
       @include shadow;
       @include clearfix;

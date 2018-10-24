@@ -73,18 +73,18 @@
     transition: .25s ease-in;
 
 
-    @media (min-width: 736px) and
+    @media (min-width: 682px) and
       (max-width: 1024px)
     {
       grid-template-columns: repeat(6, minmax(auto, auto));
-      grid-column-gap: 2.5em;
+      // grid-column-gap: 2.5em;
       grid-row-gap: .0em;
       // justify-content: stretch;
       // grid-column-gap: 0em;
       // background: lightblue;
     }
 
-    @media (min-device-width: 768px)
+    @media (min-device-width: 682px)
     and (max-device-width: 1024px)
     and (-webkit-min-device-pixel-ratio: 2)
     {
@@ -97,7 +97,7 @@
 
     }
 
-    @media (min-width: 414px) and (max-width: 736)
+    @media (min-width: 414px) and (max-width: 682px)
     {
       grid-template-columns: repeat(4, minmax(auto, auto));
       grid-row-gap: 1.5em;

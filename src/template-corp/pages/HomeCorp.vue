@@ -30,12 +30,12 @@
   // import '@/template-corp/assets/css/fonts/BodoniXT/BodoniXT.css'
   import '@/template-corp/assets/css/fonts/cormorantGaramond/cormorantGaramond.css'
 
-  import Navvy from '../components/Navvy'
-  import HeadAndCopy from '../components/HeadAndCopy'
-  import About from '../components/About'
-  import Skills from '../components/Skills'
-  import Quotes from '../components/Quotes/QuoteBasic'
+  const Navvy = () => import('../components/Navvy')
+  const HeadAndCopy = () => import('../components/HeadAndCopy')
+  const Skills = () => import('../components/Skills')
   const CarouselShow = () => import('../components/Carousel/CarouselShow')
+  const About = () => import('../components/About')
+  const Quotes = () => import('../components/Quotes/QuoteBasic')
 
   export default {
     layout: 'default',
@@ -65,6 +65,7 @@
 </script>
 
 <style lang="scss" scoped>
+  @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
   @import '@/assets/css/main.scss';
   @import '@/template-corp/assets/css/corp-main.scss';
 

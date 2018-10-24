@@ -69,19 +69,14 @@
   header,
   footer {
     color: $ivory;
-    // background: $groovy-red;
-    background: url(/img/bg/bg_bag_dk.jpg) repeat;
-    // z-index: 10;
     position: relative;
     @include shadow;
-    // box-shadow: 0px 0px 6px 1px black;
   }
 
   main {
     display: grid;  // <-- CONTENT GRID
     grid-template-columns: repeat(2, 1fr);
     // grid-template-rows: 1fr 1fr 1fr;
-    background: url(../assets/img/bg/graphy_2.png) repeat;
     box-shadow: 3px 5px 4px transparentize(black, 0.8),
                 3px 3px 5px transparentize(black, 0.2);
     padding-top: 1em;

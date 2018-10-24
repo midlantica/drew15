@@ -144,6 +144,7 @@
       // border: 10px red solid;
       min-height: 363px;
       // margin-bottom: -2px !important;
+      margin-bottom: 1em;
       @include shadow;
       @include clearfix;
 
