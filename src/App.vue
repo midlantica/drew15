@@ -43,13 +43,13 @@
     // background: url(/img/bg/bricks-bg-02.jpg) repeat;
 
     .wrapper {
-      background: url(./template-bourbon/assets/img/bg/graphy_2.png) repeat !important;
+      background: url(./template-bourbon/assets/img/bg/graphy_2.png) repeat;
       // background: url(/img/bg/Drew-punk-back.jpg) repeat;
       background-size: 110% 100%;
       // background-image: url(/img/bg/check-patt.png);
       
       @media (max-width: $breakOne) {
-        background-size: 110% 50% !important;
+        background-size: 110% 50%;
       }
 
       //
@@ -63,16 +63,16 @@
   // PUNK
   .punk {
     // background: initial;
-    background: #111;
+    background: #222;
     // background: url(/img/bg/bricks-bg-02.jpg) repeat;
 
     .wrapper {
-      background: url(/img/bg/Drew-punk-back.jpg) repeat;
+      background: url(/img/bg/Drew-punk-back.jpg) repeat center center fixed;
       background-size: 110% 100%;
       // background-image: url(/img/bg/check-patt.png);
       
       @media (max-width: $breakOne) {
-        background-size: 110% 50% !important;
+        background-size: 110% 50% center center fixed;
       }
 
       //

@@ -1,13 +1,15 @@
 <template>
   <nav>
-    <!-- <p class='email'><a href="mailto:druharper@gmail.com">druharper@gmail.com</a></p> -->
-    <mastDrew class="svgArt mastDrew" />
-    <mastHarper class="svgArt mastHarper" />
-    <a class="DrewHead" href="/Extras">&nbsp;</a>
-   <!--  <p class='resume'>Resume: 
+    <p class='email'><a href="mailto:druharper@gmail.com">druharper@gmail.com</a></p>
+    <div class="mastMain">
+      <mastDrew class="svgArt mastDrew" />
+      <mastHarper class="svgArt mastHarper" />
+      <a class="DrewHead" href="/Extras">&nbsp;</a>
+    </div>
+    <p class='resume'>Resume: 
       <a href="img/resume/drew_harper_resume_portfolio.pdf">Large</a>/
       <a href="img/resume/drew_harper_resume_portfolio_short.docx">Small</a>
-    </p> -->
+    </p>
   </nav>
 </template>
 
@@ -36,118 +38,174 @@
 
   nav {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    padding: .5em 1em;
-    flex-grow: 0;
-    width: 100%;
+    flex-direction: column;
+    align-content: center;
     // align-items: center;
-    // align-items: stretch;
+    padding: .5em 1em;
+
+    @media (max-width: $breakOne) {
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      // width: 50%;
+      // margin: 0 auto;
+    }
+    
     
     p.email {
       font-size: 1.5em;
+      color: $ivory;
       letter-spacing: 0.03em;
       text-shadow: 1px 1px 2px black;
       font-family: BodoniXT, "Times New Roman", Times, serif;
       text-transform: lowercase;
-      flex-grow: 1;
       align-self: flex-end;
-      align-content: flex-end;
-      text-align: right;
       transform: rotate(-1deg);
-      padding-top: .5em;
-      // display: block;
-      // float: right;
-    }
+      margin-top: -0.4em;
 
-    // ###############################
-    // ###############################
-
-    svg {
-      height: 19vh;
-      .svgArt {
-        // width: 50%;
-        // height: 150px;
-
-        .mastDrew {
-          // display: block;
-          // width: 30%;
-          flex-basis: 33vw;
-          // height: 19vh;
-          // background: url(../assets/img/MastDrew.svg) no-repeat top left;
-          // background-size: contain;
-          // flex-grow: 0;
-          align-items: flex-start;
-          align-content: flex-start;
-          align-self: flex-start;
-          transform: rotate(1deg);
-          // position: relative;
-          // top: -1.4em;
-          // float: left;
-          // order: 1;
-        }
-
-        .mastHarper {
-          // display: block;
-          // width: 50%;
-          flex-basis: 50vw;
-          // height: 19vh;
-          // background: url(../assets/img/MastHarper.svg) no-repeat top left;
-          // background-size: contain;
-          // flex-grow: 0;
-          align-items: flex-start;
-          align-content: flex-start;
-          align-self: flex-start;
-          transform: rotate(1deg);
-          // position: relative;
-          // top: -1.4em;
-          // float: left;
-          // margin-left: 1em;
-          // order: 2;
-        }
-      }
-
-    }
-
-    a.DrewHead {
-      // display: block;
-      // width: 220px;
-      flex-basis: 133px;
-      height: 150px;
-      background: url(../assets/img/drew_head_punk.png) no-repeat center;
-      background-size: contain;
-      // float: right;
-      align-items: flex-end;
-      align-content: flex-end;
-      flex-grow: 0;
-      align-self: flex-end;
-      position: relative;
-      top: -0.7em;
-      margin-left: 1em;
-      // order: 3;
-    }
-
-    // ###############################
-    // ###############################
-
-    p.resume {
-      font-size: 1.5em;
-      letter-spacing: 0.03em;
-      text-shadow: 1px 1px 2px black;
-      font-family: BodoniXT, "Times New Roman", Times, serif;
-      flex-grow: 1;
-      align-self: flex-end;
-      align-content: flex-end;
-      text-align: right;
-      transform: rotate(1deg);
-      position: relative;
-      top: -0.8em;
-      //
       a {
-        // text-align: right;
-        margin: 0 .25em;
+        color: $ivory;
+        letter-spacing: 0.05em;
+        font-size: .9em;
       }
+
+      @media (max-width: $breakOne) {
+        align-self: center;
+      }
+    }
+
+    // ###############################
+    // ###############################
+
+    .mastMain {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: no-wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin-top: -1em;
+      //
+
+      @media (max-width: $breakOne) {
+        // flex-grow: 1;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 70%;
+      }
+      
+      @media (max-width: $breakTwo) {
+        // flex-grow: 1;
+        // flex-wrap: wrap;
+        // justify-content: center;
+        // align-content: center;
+        // align-items: center;
+        width: 100%;
+      }
+      
+      .svgArt {
+        //
+      }
+
+      .svgArt.mastDrew {
+          width: 32vw;
+          // height: 12vw;
+          transform: rotate(1deg);
+          margin-top: -1.5em;
+          order: 1;
+
+          @media (max-width: $breakOne) {
+            width: 45vw;
+            // height: 17vh;
+            margin-top: 1em;
+            order: 1;
+          }
+
+          @media (max-width: $breakTwo) {
+            width: 60vw;
+            // height: 17vh;
+            // margin-top: 1em;
+            // order: 1;
+          }
+        }
+      }
+
+      .svgArt.mastHarper {
+        width: 48vw;
+        // height: 20vh;
+        transform: rotate(1deg);
+        margin-top: -0.6em;
+        order: 2;
+
+        @media (max-width: $breakOne) {
+          order: 3;
+          width: 86vw;
+          // height: 20vh;
+          // margin-top: -1.5em;
+          flex-grow: 1;
+        }
+      }
+
+      a.DrewHead {
+        display: block;
+        min-width: 114px;
+        height: 132px;
+        background: url(../assets/img/drew_head_punk.png) no-repeat center;
+        background-size: cover;
+        margin-left: 1em;
+        margin-top: 0.5em;
+        order: 3;
+        // flex-grow: 1;
+
+        @media (max-width: $breakOne) {
+          min-width: 106px;
+          height: 120px;
+          order: 2;
+        }
+
+        @media (max-width: $breakTwo) {
+          min-width: 96px;
+          height: 110px;
+        }
+
+        @media (max-width: $breakThree) {
+          // min-width: 70px;
+          // height: 82px;
+        }
+
+      }
+    }
+    
+
+    // ###############################
+    // ###############################
+
+  p.resume {
+    font-size: 1.5em;
+    letter-spacing: 0.03em;
+    text-shadow: 1px 1px 2px black;
+    font-family: BodoniXT, "Times New Roman", Times, serif;
+    // text-align: right;
+    transform: rotate(1deg);
+    // position: relative;
+    // top: -0.8em;
+    align-self: flex-end;
+    // align-content: flex-end;
+    // flex-grow: 1;
+    margin-top: -0.6em;
+    //
+    a {
+      // text-align: right;
+      color: $ivory;
+      margin: 0 .25em;
+    }
+
+    @media (max-width: $breakOne) {
+      font-size: 1.25em;
+      letter-spacing: .05em;
+      align-self: center;
     }
   }
 

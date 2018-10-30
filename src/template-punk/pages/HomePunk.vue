@@ -63,9 +63,14 @@
 </script>
 
 <style lang="scss" scoped>
-  @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+  @import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i');
+  // @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
   @import '@/assets/css/main.scss';
   @import '@/template-punk/assets/css/punk-main.scss';
+
+  $breakOne: 840px;
+  $breakTwo: 630px;
+  $breakThree: 430px;
 
   header,
   footer {
@@ -81,11 +86,12 @@
     background: transparent;
     // box-shadow: 3px 5px 4px transparentize(black, 0.8),
     //             3px 3px 5px transparentize(black, 0.2);
-    padding-top: 1em;
-    padding-bottom: .75em;
+    // padding-top: 1em;
+    // padding-bottom: .75em;
+    padding: 0;
     box-shadow: none;
     //
-    @media (max-width: 1024px) {
+    @media (max-width: $breakOne) {
       grid-template-columns: 1fr;
     }
 
@@ -94,14 +100,16 @@
       &:nth-child(1) {
         padding: 0 1em;
 
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: $breakOne) {
           padding: 0em 1em 0em 1em;
+          margin-bottom: 1em;
         }
       }
+
       &:nth-child(2) {
         padding: 0 1em;
 
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: $breakOne) {
           padding: 0em 1em 0em .5em;
         }
       }

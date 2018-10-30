@@ -13,7 +13,7 @@
   
   .blackBg {
     // background: black;
-    transform: rotate(2deg);
+    transform: rotate(1.5deg);
     background: url(/img/bg/check-patt.png) repeat;
     background-size: 40px 40px;
 
