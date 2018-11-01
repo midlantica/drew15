@@ -1,9 +1,13 @@
 <template>
   <nav>
 
-    <router-link to="/Corp/Extras" id="drewheadBox" class='drewhead' />
+    <router-link to="/Corp/Extras" class='drewhead' />
 
-    <h1><router-link to="/Corp">Drew Harper</router-link></h1>
+    <!-- <h1><router-link to="/Corp">Drew Harper</router-link></h1> -->
+
+    <router-link to="/Corp">
+      <drewHarper class="drewHarper" />
+    </router-link>
 
     <section class="contact">
       <p class='resume'>Resume:
@@ -15,6 +19,17 @@
 
   </nav>
 </template>
+
+<script>
+  import drewHarper from '@/template-corp/components/navvyArt/drewHarper'
+  import uiux from '@/template-corp/components/navvyArt/uiux'
+  export default {
+    components: {
+      drewHarper,
+      uiux
+    }
+  }
+</script>
 
 <style lang="scss" scoped>
   @import '@/assets/css/main.scss';
@@ -55,31 +70,58 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
     padding: 2em 2em 0;
+    // justify-content: space-between;
+    justify-content: center;
 
     @media (max-width: $breakOne) {
       justify-content: center;
     }
   }
 
-  #drewheadBox {
+  .drewHarper {
+    height: 83px;
+    margin: 1.3em 0 0 1em;
+    
+    @media (max-width: $breakOne) {
+      height: 60px;
+      margin-left: .75em;
+    }
+
+    @media (max-width: $breakTwo) {
+      height: 42px;
+      margin-left: .75em;
+    }
+  }
+
+  // #drewheadBox {
+  //   background: white;
+  //   width: 100px;
+  //   height: 100px;
+  //   box-shadow: 3px 3px 6px 0 rgba(0,0,0,0.29);
+  // }
+
+  a.drewhead {
     background: white;
+    background-image: url(../assets/img/drew_head.png) !important;
     width: 100px;
     height: 100px;
     box-shadow: 3px 3px 6px 0 rgba(0,0,0,0.29);
-
-  }
-
-  a.drewhead {
-    background-image: url(../assets/img/drew_head.png) !important;
     background-repeat: no-repeat !important;
     background-position: -7px -23px !important;
     background-size: 97% !important;
+    filter: hue-rotate(210deg);
     // width: 72px;
     // height: 88px;
     // display: block;
+
+    @media (max-width: $breakTwo) {
+      width: 80px;
+      height: 80px;
+      background-position: -4px -18px !important;
+      background-size: 97% !important;
+    }
 
   }
 
@@ -188,7 +230,7 @@
       }
 
       @media (max-width: $breakTwo) {
-        font-size: 1.2em !important;
+        font-size: 1em !important;
         letter-spacing: 0.09em !important;
       }
 

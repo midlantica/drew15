@@ -121,7 +121,7 @@
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
   .VueCarousel.druCarousel {
-    margin: 0em auto 1em !important;
+    margin: 0em auto 0em !important;
     // width: calc(100%) !important;
     // width: calc(100% / 79);
     // width: 488px;

@@ -39,9 +39,10 @@
       font-size: 0.8em;
       letter-spacing: 0.02em;
       font-weight: 300;
-      color: lighten($grey, 15);
+      color: #666899;
+      // color: lighten($grey, 15);
       margin: 1em 1em 0.7em 8.5em;
-      padding: 0.9em 0 0 0;
+      padding: 0.9em 0 0 3.7em;
       // @include font-smoothing(on);
     }
   }

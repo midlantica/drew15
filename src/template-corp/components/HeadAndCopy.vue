@@ -1,11 +1,21 @@
 <template>
-  <div>
-    <h2><span class="cappy">ui/ux</span> designer + <span class="cappy">front&#8209end</span>&nbsp;dev</h2>
+  <div class="wrap">
+    <uiux class="uiux" />
+    <!-- <h2><span class="cappy">ui/ux</span> designer + <span class="cappy">front&#8209end</span>&nbsp;dev</h2> -->
     <p>Whether it’s a prototype, a responsive website, a wireframe, an interactive PDF, a new mobile app UI, a quick skin job, a few more buttons, a dialog box, filling up a bucket, or getting in the trenches with  HTML 5 and CSS 3, I can deliver. I don’t let ‘design’ get in the way. Oh and I’m a coder groupie&nbsp;<big>😃</big>
     </p>
 
   </div>
 </template>
+
+<script>
+  import uiux from '@/template-corp/components/navvyArt/uiux'
+  export default {
+    components: {
+      uiux
+    }
+  }
+</script>
 
 <style lang="scss" scoped>
   // @import '@/assets/css/main.scss';
@@ -14,6 +24,29 @@
   $breakOne: 840px;
   $breakTwo: 630px;
   $breakThree: 430px;
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .uiux {
+    height: 37px;
+    margin: 0.7em 0 -0.3em 1.3em;
+    
+    @media (max-width: $breakOne) {
+      height: 30px;
+      align-self: center;
+      margin-top: 0.6em;
+      margin-left: .75em;
+    }
+
+    @media (max-width: $breakTwo) {
+      height: 28px;
+      margin-left: .75em;
+    }
+  }
 
   h2 {
     font-family: $font;

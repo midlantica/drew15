@@ -31,7 +31,7 @@
     transform: rotate(-1deg);
 
     @media (max-width: $breakOne) {
-      margin-top: initial;
+      // margin-top: 0em;
       margin-bottom: 1em;
     }
   }

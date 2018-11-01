@@ -45,7 +45,7 @@
     .wrapper {
       background: url(./template-bourbon/assets/img/bg/graphy_2.png) repeat;
       // background: url(/img/bg/Drew-punk-back.jpg) repeat;
-      background-size: 110% 100%;
+      // background-size: 110% 100%;
       // background-image: url(/img/bg/check-patt.png);
       
       @media (max-width: $breakOne) {
@@ -64,22 +64,61 @@
   .punk {
     // background: initial;
     background: #222;
-    // background: url(/img/bg/bricks-bg-02.jpg) repeat;
+    // background: url(/img/bg/bricks-bg-01.jpg) repeat;
 
     .wrapper {
-      background: url(/img/bg/Drew-punk-back.jpg) repeat center center fixed;
-      background-size: 110% 100%;
-      // background-image: url(/img/bg/check-patt.png);
-      
+      background: 
+        url(/img/bg/circles.svg), 
+        url(/img/bg/Drew-punk-back.jpg); 
+      background-repeat: 
+        repeat-y,
+        repeat-y;
+      background-size: 
+        100% 600%,
+        100% 100%;
+      background-position: 
+        center center, 
+        center center;
+
       @media (max-width: $breakOne) {
-        background-size: 110% 50% center center fixed;
+        background-size: 
+          100% 600%, 
+          130% 90%;
+        background-position: 
+          center center, 
+          -3em 0em;
+      }
+
+      @media (max-width: $breakTwo) {
+        background-size: 
+          100% 600%,
+          120% 100%;
+        background-position: 
+          center center, 
+          -3em 11em;
+      }
+
+      @media (max-width: $breakTwo) {
+        background-size: 
+          100% 600%,
+          250% 70%;
+        background-position: 
+          center center, 
+          -3em 3em;
       }
 
       //
       header {
-        background: initial !important;
+        // background: initial !important;
       }
     }
   }
 
 </style>
+
+
+
+
+
+
+

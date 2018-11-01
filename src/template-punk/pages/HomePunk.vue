@@ -100,7 +100,7 @@
       &:nth-child(1) {
         padding: 0 1em;
 
-        @media screen and (min-width: $breakOne) {
+        @media (min-width: $breakOne) {
           padding: 0em 1em 0em 1em;
           margin-bottom: 1em;
         }
@@ -109,7 +109,7 @@
       &:nth-child(2) {
         padding: 0 1em;
 
-        @media screen and (min-width: $breakOne) {
+        @media (min-width: $breakOne) {
           padding: 0em 1em 0em .5em;
         }
       }

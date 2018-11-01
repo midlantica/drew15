@@ -1,5 +1,6 @@
 <template>
   <nav>
+    <div class="greenBar">&nbsp;</div>
     <p class='email'><a href="mailto:druharper@gmail.com">druharper@gmail.com</a></p>
     <div class="mastMain">
       <mastDrew class="svgArt mastDrew" />
@@ -51,6 +52,18 @@
       // margin: 0 auto;
     }
     
+    .greenBar {
+      display: block;
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5em;
+      filter: saturate(2.5);
+      background: rgba(0, 128, 0, 0.25);
+      // background: transparentize(green, .5);
+    }
     
     p.email {
       font-size: 1.5em;
@@ -85,6 +98,7 @@
       align-items: center;
       align-content: center;
       margin-top: -1em;
+      z-index: 2;
       //
 
       @media (max-width: $breakOne) {
@@ -154,7 +168,7 @@
         height: 132px;
         background: url(../assets/img/drew_head_punk.png) no-repeat center;
         background-size: cover;
-        margin-left: 1em;
+        margin-left: .5em;
         margin-top: 0.5em;
         order: 3;
         // flex-grow: 1;

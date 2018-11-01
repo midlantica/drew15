@@ -130,6 +130,7 @@
     min-height: 330px;
     @include shadow;
     @include clearfix;
+    margin: 0 !important;
     // z-index: 10;
 
     @media (min-width: 0px) and (max-width: 796px) {
