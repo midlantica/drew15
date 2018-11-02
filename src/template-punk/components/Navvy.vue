@@ -1,16 +1,20 @@
 <template>
   <nav>
+    
     <div class="greenBar">&nbsp;</div>
     <p class='email'><a href="mailto:druharper@gmail.com">druharper@gmail.com</a></p>
+
     <div class="mastMain">
       <mastDrew class="svgArt mastDrew" />
       <mastHarper class="svgArt mastHarper" />
       <a class="DrewHead" href="/Extras">&nbsp;</a>
     </div>
+
     <p class='resume'>Resume: 
       <a href="img/resume/drew_harper_resume_portfolio.pdf">Large</a>/
       <a href="img/resume/drew_harper_resume_portfolio_short.docx">Small</a>
     </p>
+
   </nav>
 </template>
 

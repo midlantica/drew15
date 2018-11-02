@@ -118,8 +118,12 @@
   // @import '@/assets/css/main.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
+  $breakOne: 840px;
+  $breakTwo: 630px;
+  $breakThree: 430px;
+
   .VueCarousel.druCarousel {
-    margin: 1em auto 1.5em !important;
+    margin: -9.4em auto 1.5em !important;
     // width: calc(100%) !important;
     // width: calc(100% / 79);
     // width: 488px;
@@ -128,6 +132,11 @@
     min-height: 363px;
     // @include shadow;
     // @include clearfix;
+
+    @media ($breakOne) {
+      min-height: initial;
+      margin: 0em auto 1.5em !important;
+    }
 
     @media (min-width: 0px) and (max-width: 796px) {
       min-height: 200px;
@@ -145,7 +154,7 @@
       @include shadow;
       @include clearfix;
 
-      @media (min-width: 0px) and (max-width: 796px) {
+      @media ($breakOne) {
         min-height: 200px;
       }
 

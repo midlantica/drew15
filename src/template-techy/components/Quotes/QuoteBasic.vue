@@ -7,7 +7,7 @@
 
 <style lang="scss">
   // @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  @import '@/template-techy/assets/css/techy-main.scss';
 
   .quoteBlock {
     background: darken($accent-red, 10);

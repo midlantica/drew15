@@ -12,7 +12,6 @@
     <div class="cols">
       <CarouselShow/>
       <About/>
-      <!-- <Quotes/> -->
     </div>
 
     <Skills/>
@@ -71,10 +70,6 @@
     grid-auto-flow: column;
     background: $groovy-yellow-pale;
 
-    // @media (max-width: $BreakOne) {
-    //   // grid-template-columns: 1fr !important;
-    // }
-
   }
 
   header {
@@ -84,10 +79,6 @@
     background: $groovy-red;
     height: 175px;
 
-    // @media (max-width: $BreakOne) {
-    //   grid-row: 1;
-    // }
-
   }
 
   footer {
@@ -96,8 +87,6 @@
     // grid-row: 4;
     height: 160px;
     color: $ivory;
-    // position: relative;
-    // z-index: 0;
     background: linear-gradient(
       // 0 - 25%
       $groovy-aqua 0%,
@@ -126,14 +115,9 @@
   }
 
   .cols:nth-of-type(1) {
-    // grid-column-start: span 1;
     grid-column: 1 / 2;
     grid-row: 2;
-    // padding: 0 1em;
 
-    // @media screen and (min-width: 1024px) {
-    //   padding: 0em 1em 0em 1em;
-    // }
 
     @media (max-width: $BreakOne) {
       grid-column: 1 / 2;
@@ -148,24 +132,19 @@
   }
 
   .cols:nth-of-type(2) {
-    // grid-column-end: span 1;
     grid-column: 2 / 3;
     grid-row: 1 / 3;
     z-index: 10;
     padding: 0 1em;
 
     @media (max-width: $BreakOne) {
-      // padding: 0em 1em 0em .5em;
       grid-column: 2 / 3;
       grid-row: 2;
-      // z-index: 10;
     }
 
     @media (max-width: $BreakTwo) {
-      // padding: 0em 1em 0em .5em;
       grid-column: 1 / 4;
       grid-row: 3;
-      // z-index: 10;
     }
 
 

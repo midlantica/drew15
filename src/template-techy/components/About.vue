@@ -1,42 +1,47 @@
 <template>
   <div class="about">
-    <img class="flag">
+    <!-- <div class="flag"></div> -->
+    <img class="flag" src="../assets/img/british_american_flag.png" alt="">
     <p>I’m half-English/half-American, worked in Advertising most my life, switched to web in late ’90s. Travelled the world, enjoy reading history, love NFL, Rugby, Footy.</p>
   </div>
 </template>
 
 <style lang="scss" scoped>
   // @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  @import '@/template-techy/assets/css/techy-main.scss';
 
   .about {
-    margin-bottom: .75em;
-    background-image: url('../assets/img/bg/bg_bag_y.png');
-    background-repeat: repeat;
-    // width: calc(100%);
-    // width: 500px;
-    @include shadow;
-    @include clearfix;
-    @include font-smoothing(off);
+    background: lighten($mango, 30);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    padding: 0.5em 0.5em;
+    margin-bottom: .5em;
 
     .flag {
-      width: 104px;
-      height: 59px;
-      margin: 1em ;
-      float: left;
-      clear: left;
+      display: block;
+      // margin: 1em ;
       background: url('../assets/img/british_american_flag.png');
-      background-repeat: none;
-      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 315px;
+      // max-width: 315px;
+      height: 60px;
+      border: none;
+      flex-grow: 0;
+      margin: 0 1em 0 .5em;
     }
 
     p {
       color: lighten($grey, 15);
-      font-size: .8em;
-      font-weight: bold;
-      margin: 1em 1em 0.7em 10.7em;
-      padding: 0.9em 0 0 0;
-      @include font-smoothing(on);
+      font-size: .85em;
+      line-height: 1.6em;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      flex-grow: 1;
     }
   }
 

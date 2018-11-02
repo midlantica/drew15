@@ -1,25 +1,23 @@
 <template>
 
-  <div>
+  <div class="mainGrid">
     <header>
       <Navvy/>
     </header>
 
-    <main>
-      <section>
-        <HeadAndCopy/>
-        <Skills/>
-      </section>
+    <div class="cols">
+      <HeadAndCopy/>
+    </div>
 
-      <section>
-        <CarouselShow/>
-        <About/>
-        <Quotes/>
-      </section>
-    </main>
+     <div class="cols">
+      <CarouselShow/>
+      <About/>
+    </div>
+
+    <Skills/>
 
     <footer>
-      <Navvy/>
+      <Footy/>
     </footer>
 
   </div>
@@ -27,12 +25,14 @@
 </template>
 
 <script>
+  // import '../assets/css/fonts/connection/connection.css'
   const Navvy = () => import('../components/Navvy')
   const HeadAndCopy = () => import('../components/HeadAndCopy')
   const Skills = () => import('../components/Skills')
   const CarouselShow = () => import('../components/Carousel/CarouselShow')
   const About = () => import('../components/About')
   const Quotes = () => import('../components/Quotes/QuoteBasic')
+  const Footy = () => import('../components/Footy')
 
   export default {
     layout: 'default',
@@ -42,7 +42,8 @@
       CarouselShow,
       About,
       Skills,
-      Quotes
+      Quotes,
+      Footy
     },
     name: 'HomeTechy',
     metaInfo: {
@@ -58,52 +59,99 @@
 </script>
 
 <style lang="scss" scoped>
+  @import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800');
+  @import '../assets/css/fonts/connection/connection.css';
   @import '@/assets/css/main.scss';
   @import '@/template-techy/assets/css/techy-main.scss';
 
-  header,
-  footer {
-    color: $ivory;
-    background: royalblue;
-    // background: url(/img/bg/bg_bag_dk.jpg) repeat;
-    // z-index: 10;
-    position: relative;
-    @include shadow;
-    // box-shadow: 0px 0px 6px 1px black;
+  $breakOne: 840px;
+  $breakTwo: 630px;
+  $breakThree: 430px;
+
+  .mainGrid {
+    display: grid;
+    grid-template-columns: 7fr 6fr;
+    grid-template-rows: auto auto auto auto;
+    //                  1-2  2-3  3-4  4-5
+    grid-auto-flow: column;
+    background: $ivory;
+
   }
 
-  main {
-    display: grid;  // <-- CONTENT GRID
-    grid-template-columns: repeat(2, 1fr);
-    background: url(../assets/img/bg/graphy_2.png) repeat;
-    box-shadow: 3px 5px 4px transparentize(black, 0.8),
-                3px 3px 5px transparentize(black, 0.2);
-    padding-top: 1em;
-    padding-bottom: .75em;
-    //
-    @media (max-width: 1024px) {
-      grid-template-columns: 1fr;
+  header {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    color: $ivory;
+    background: $groovy-red;
+    // height: 175px;
+    background: $mango;
+    box-shadow: none;
+  }
+
+  footer {
+    grid-column: 1 / -1;
+    grid-row: -1;
+    color: $ivory;
+    background: $mango;
+    box-shadow: none;
+
+    @media (max-width: $breakOne) {
+      // grid-column: span 1;
+      // grid-row: -1;
     }
 
-    > section {
-      //
-      &:nth-child(1) {
-        padding: 0 1em;
-
-        @media screen and (min-width: 1024px) {
-          padding: 0em 1em 0em 1em;
-        }
-      }
-      &:nth-child(2) {
-        padding: 0 1em;
-
-        @media screen and (min-width: 1024px) {
-          padding: 0em 1em 0em .5em;
-        }
-      }
-
+    @media (max-width: $breakTwo) {
+      // grid-column: span 1;
+      // grid-row: -1;
     }
 
+  }
+
+  .cols:nth-of-type(1) {
+    grid-column: 1 / 2;
+    grid-row: 2;
+
+
+    @media (max-width: $breakOne) {
+      grid-column: 1 / 3;
+      grid-row: 2;
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-column: 1 / 3;
+      grid-row: 2;
+    }
+
+  }
+
+  .cols:nth-of-type(2) {
+    grid-column: 2 / -1;
+    grid-row: 2;
+    z-index: 10;
+    padding: 0 1em;
+
+    @media (max-width: $breakOne) {
+      grid-column: 1 / 3;
+      grid-row: 3;
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-column: 1 / 3;
+      grid-row: 3;
+    }
+  }
+
+  .skillsGrid {
+    grid-column: 1 / -1;
+    grid-row: 3;
+
+    @media (max-width: $breakOne) {
+      grid-row: 4;
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-row: 5;
+    }
   }
 
 </style>

@@ -25,7 +25,7 @@
 </template>
 
 <script>
-  import '@/assets/fonts/Roboto/Roboto.css'
+  // import '@/assets/fonts/Roboto/Roboto.css'
   import '@/assets/fonts/AmericanTypewriter/AmericanTypewriter.css'
   import '@/assets/fonts/BodoniXT/BodoniXT.css'
 
