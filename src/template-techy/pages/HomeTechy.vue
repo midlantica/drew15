@@ -5,15 +5,9 @@
       <Navvy/>
     </header>
 
-    <div class="cols">
-      <HeadAndCopy/>
-    </div>
-
-     <div class="cols">
-      <CarouselShow/>
-      <About/>
-    </div>
-
+    <HeadAndCopy/>
+    <CarouselShow/>
+    <About/>
     <Skills/>
 
     <footer>
@@ -71,11 +65,11 @@
   .mainGrid {
     display: grid;
     grid-template-columns: 7fr 6fr;
-    grid-template-rows: auto auto auto auto;
+    // grid-template-rows: auto auto auto auto;
     //                  1-2  2-3  3-4  4-5
-    grid-auto-flow: column;
+    // grid-auto-flow: row dense;
+    grid-gap: 1em;
     background: $ivory;
-
   }
 
   header {
@@ -83,34 +77,13 @@
     grid-row: 1;
     color: $ivory;
     background: $groovy-red;
-    // height: 175px;
     background: $mango;
     box-shadow: none;
   }
 
-  footer {
-    grid-column: 1 / -1;
-    grid-row: -1;
-    color: $ivory;
-    background: $mango;
-    box-shadow: none;
-
-    @media (max-width: $breakOne) {
-      // grid-column: span 1;
-      // grid-row: -1;
-    }
-
-    @media (max-width: $breakTwo) {
-      // grid-column: span 1;
-      // grid-row: -1;
-    }
-
-  }
-
-  .cols:nth-of-type(1) {
+  .copyArea {
     grid-column: 1 / 2;
-    grid-row: 2;
-
+    grid-row: 2 / 4;
 
     @media (max-width: $breakOne) {
       grid-column: 1 / 3;
@@ -121,36 +94,74 @@
       grid-column: 1 / 3;
       grid-row: 2;
     }
-
   }
 
-  .cols:nth-of-type(2) {
-    grid-column: 2 / -1;
+  .slides {
+    grid-column: 2 / 3;
     grid-row: 2;
     z-index: 10;
-    padding: 0 1em;
+    // padding: 1em;
+    margin: -11em 1em 0 0;
 
     @media (max-width: $breakOne) {
       grid-column: 1 / 3;
       grid-row: 3;
+      margin: 0 1em;
     }
 
     @media (max-width: $breakTwo) {
       grid-column: 1 / 3;
       grid-row: 3;
+      margin: 0 1em;
+    }
+  }
+
+  .about {
+    grid-column: 2 / 3;
+    grid-row: 3;
+    margin: 0 1em 0 0;
+
+    @media (max-width: $breakOne) {
+      grid-column: 1 / 3;
+      grid-row: 5;
+      margin: 0 1em;
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-column: 1 / 3;
+      grid-row: 5;
+      margin: 0 1em;
     }
   }
 
   .skillsGrid {
     grid-column: 1 / -1;
-    grid-row: 3;
+    grid-row: 4;
 
     @media (max-width: $breakOne) {
       grid-row: 4;
     }
 
     @media (max-width: $breakTwo) {
-      grid-row: 5;
+      grid-row: 4;
+    }
+  }
+
+  footer {
+    grid-column: 1 / -1;
+    grid-row: 5;
+    color: $ivory;
+    background: $mango;
+    box-shadow: none;
+
+    @media (max-width: $breakOne) {
+      grid-column: 1 / -1;
+      grid-row: 6;
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-column: 1 / -1;
+      grid-row: 6;
     }
   }
 

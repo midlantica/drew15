@@ -10,6 +10,10 @@
   // @import '@/assets/css/main.scss';
   @import '@/template-techy/assets/css/techy-main.scss';
 
+  $breakOne: 840px;
+  $breakTwo: 630px;
+  $breakThree: 430px;
+
   .about {
     background: lighten($mango, 30);
     display: flex;
@@ -18,8 +22,16 @@
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-    padding: 0.5em 0.5em;
-    margin-bottom: .5em;
+    padding: .5em 1em .5em .75em;
+    margin-top: -1em;
+    
+    @media (max-width: $breakOne) {
+      margin-top: initial;
+    }
+
+    @media (max-width: $breakTwo) {
+      margin-top: initial;
+    }
 
     .flag {
       display: block;
@@ -32,16 +44,16 @@
       height: 60px;
       border: none;
       flex-grow: 0;
-      margin: 0 1em 0 .5em;
+      margin: 1em 1em 1em .5em;
     }
 
     p {
       color: lighten($grey, 15);
-      font-size: .85em;
-      line-height: 1.6em;
+      font-size: 0.95em;
+      line-height: 1.4em;
       font-weight: 500;
       letter-spacing: 0.05em;
-      flex-grow: 1;
+      // flex-grow: 1;
     }
   }
 

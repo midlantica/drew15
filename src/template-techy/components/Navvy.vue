@@ -1,23 +1,17 @@
 <template>
   <nav>
-
     <div class="mastMain">
-
-      <router-link class="drewHeadPic" to="/Techy/Extras" />
-      
       <div class="masty">
         <div class="">
+          <router-link class="drewHeadPic" to="/Techy/Extras" />
           <mastDrew class="svgArt mastDrew" />
           <mastHarper class="svgArt mastHarper" />
         </div>
-
         <div class="jobDesc clearfix">
           <h2>ui/ux designer +</h2>
           <h2>front&nbsp;end&nbsp;dev</h2>
         </div>
-
       </div>
-
       <div class="bar">
         <div class="contact">
           <p class='email'><a href="mailto:druharper@gmail.com">druharper@gmail.com</a></p>
@@ -26,9 +20,7 @@
           </p>
         </div>
       </div>
-
     </div>
-
   </nav>
 </template>
 
@@ -54,11 +46,16 @@
   $breakThree: 430px;
 
   nav {
-    // display: flex;
-    // flex-direction: column;
-    // flex-wrap: no-wrap;
-    // justify-content: space-between;
-    // align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-grow: 1;
     // padding: .5em 1.25em;
 
     @media (max-width: $breakOne) {
@@ -69,6 +66,7 @@
   }
   
   nav .mastMain {
+    width: 100%;
     // display: grid;
     // grid-auto-flow: column;
     // grid-gap: 1em;
@@ -105,8 +103,8 @@
       }
 
       @media (max-width: $breakTwo) {
-        width: 96px;
-        height: 110px;
+        width: 89px;
+        height: 103px;
       }
 
       @media (max-width: $breakThree) {
@@ -116,23 +114,21 @@
     }
 
     .masty {
-      // grid-column: 2 / 3;
-      // grid-row: 1 / 2;
-      // display: flex;
-      // flex-wrap: wrap;
+      //
       @include clearfix;    
 
       .svgArt {
         height: 5.5em;
-        margin: 2em 0 0em;
+        margin: 2em 0 0em 1em;
         display: block;
         float: left;
+        flex-grow: 1;   
       }
 
       .mastDrew {
         // width: 17em;
         // height: 12vw;
-        // margin-top: -1.5em;    
+        // margin-top: -1.5em; 
 
         @media (max-width: $breakOne) {
           // width: 45vw;
@@ -162,6 +158,15 @@
           // height: 20vh;
           // margin-top: -1.5em;
           margin-left: 0;
+          margin-top: 0;
+        }
+
+        @media (max-width: $breakTwo) {
+          // width: 86vw;
+          // height: 20vh;
+          // margin-top: -1.5em;
+          margin-left: 0;
+          margin-top: 0;
         }
       }
       
@@ -177,7 +182,7 @@
     // @include clearfix;
 
     @media (max-width: $breakOne) {
-      //
+      margin: 1em 0em;
     }
 
     @media (max-width: $breakTwo) {

@@ -57,15 +57,15 @@
 
   .skillsGrid {
     display: grid;
-    width: 95%;
+    width: 98%;
     flex-wrap: wrap;
     // justify-content: stretch;
     // justify-content: space-around;
     // justify-content: space-between;
-    justify-content: space-between;
-    justify-items: center;
+    // justify-content: space-between;
+    // justify-items: center;
     //
-    margin: .5em auto 1em;
+    margin: 0 auto;
     align-items: center;
     grid-template-columns: repeat(12, minmax(auto, auto));
     grid-row-gap: 0em;
@@ -76,30 +76,6 @@
     transition: .25s ease-in;
 
 
-    // @media (min-width: 736px) and
-    //   (max-width: 1024px)
-    // {
-    //   grid-template-columns: repeat(12, minmax(auto, auto));
-    //   grid-column-gap: 0em;
-    //   grid-row-gap: 0em;
-    //   // justify-content: stretch;
-    //   // grid-column-gap: 0em;
-    //   // background: lightblue;
-    // }
-
-    // @media (min-device-width: 768px)
-    //    and (max-device-width: 1024px)
-    //    and (-webkit-min-device-pixel-ratio: 2)
-    // {
-    //   grid-template-columns: repeat(6, minmax(auto, auto));
-    //   // justify-content: center;
-    //   // grid-row-gap: 1.5em;
-    //   // grid-column-gap: 0em;
-    //   // grid-column-gap: 0em;
-    //   // background: rgba(246, 128, 97, .5); // pale orange
-
-    // }
-
     @media (min-width: 485px) and (max-width: $BreakTwo)
     {
       width: 95%;
@@ -107,7 +83,9 @@
       // grid-column-gap: 0em;
       // grid-row-gap: .75em;
       grid-row-gap: 1.25em;
+      justify-items: center;
       // background: aqua;
+      margin-top: -0.9em;
     }
 
     @media (min-width: 0px) and (max-width: 484px)
@@ -116,10 +94,12 @@
       // grid-row-gap: 1.5em;
       // grid-column-gap: 5em;
       // background: yellow;
+      grid-column-gap: 0em;
       grid-row-gap: .75em;
-      justify-content: space-around;
-      // justify-content: space-between;
       justify-items: center;
+      // justify-content: space-around;
+      // justify-content: space-between;
+      // justify-items: center;
     }
 
     .icon {

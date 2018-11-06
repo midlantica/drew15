@@ -1,25 +1,27 @@
 <template>
-  <carousel class="druCarousel"
-    :perPage="1"
-    :navigationEnabled="true"
-    :paginationEnabled="false"
-    :autoplay="true"
-    :autoplayTimeout="2500"
-    :autoplayHoverPause="true"
-    :loop="true"
-    :navigationClickTargetSize="0"
-    navigationNextLabel="<div class='navvy rightnav'>▶︎</div>"
-    navigationPrevLabel="<div class='navvy leftnav'>◀︎</div>"
-  >
-    <slide
-      v-for="(image, index) in images"
-      v-bind:image="image"
-      v-bind:index="index"
-      v-bind:key="image.id"
+  <div class="slides">
+    <carousel class="druCarousel"
+      :perPage="1"
+      :navigationEnabled="true"
+      :paginationEnabled="false"
+      :autoplay="true"
+      :autoplayTimeout="2500"
+      :autoplayHoverPause="true"
+      :loop="true"
+      :navigationClickTargetSize="0"
+      navigationNextLabel="<div class='navvy rightnav'>▶︎</div>"
+      navigationPrevLabel="<div class='navvy leftnav'>◀︎</div>"
     >
-      <img :src="image" :alt="image.slice(18,-4)">
-    </slide>
-  </carousel>
+      <slide
+        v-for="(image, index) in images"
+        v-bind:image="image"
+        v-bind:index="index"
+        v-bind:key="image.id"
+      >
+        <img :src="image" :alt="image.slice(18,-4)">
+      </slide>
+    </carousel>
+  </div>
 </template>
 
 <script>
@@ -122,36 +124,43 @@
   $breakTwo: 630px;
   $breakThree: 430px;
 
-  .VueCarousel.druCarousel {
-    margin: -9.4em auto 1.5em !important;
+  .druCarousel {
+    margin: 1em auto !important;
     // width: calc(100%) !important;
     // width: calc(100% / 79);
     // width: 488px;
     background: lightgrey;
     // border: 10px red solid;
-    min-height: 363px;
+    min-height: 336px;
     // @include shadow;
     // @include clearfix;
+    padding: 0em;
 
-    @media ($breakOne) {
+
+    // @media (max-width: 1024px) {
+    //   min-height: initial;
+    //   margin: 0em auto 1em !important;
+    // }
+
+    @media (max-width: $breakOne) {
       min-height: initial;
-      margin: 0em auto 1.5em !important;
     }
 
-    @media (min-width: 0px) and (max-width: 796px) {
-      min-height: 200px;
-    }
+    // @media (min-width: 0px) and (max-width: 796px) {
+    //   min-height: 200px;
+    // }
 
     .VueCarousel-wrapper {
-       margin-top: .5em;
+      margin-top: .5em;
       // width: calc(100%) !important;
       // width: calc(100% / 79);
       // width: 488px;
       background: lightgrey;
       // border: 10px red solid;
-      min-height: 363px;
+      min-height: 336px;
       // margin-bottom: -2px !important;
-      @include shadow;
+      // @include shadow;
+      border: 1px solid grey;
       @include clearfix;
 
       @media ($breakOne) {
@@ -159,8 +168,7 @@
       }
 
       .VueCarousel-inner {
-          margin-bottom: -2px;
-
+        margin-bottom: -2px;
       }
 
     }
