@@ -85,7 +85,8 @@
   }
 
   p {
-    color: $black;
+    // color: transparentize($blue-dark, .0);
+    color: transparentize($blue-dark, .25);
     font-family: $font !important;
     font-weight: 300;
     font-size: 1em;

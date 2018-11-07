@@ -120,23 +120,23 @@
   .VueCarousel.druCarousel {
     margin: 0em auto 2.3em !important;
     background: lightgrey;
-    min-height: 330px !important;
+    // min-height: 330px !important;
 
     @media (min-width: 0px) and (max-width: 796px) {
-      min-height: 200px !important;
-      margin-bottom: 1em !important;
+      // min-height: 200px !important;
+      // margin-bottom: 1em !important;
     }
 
     .VueCarousel-wrapper {
       margin: 0em auto 0em;
       background: lightgrey;
-      min-height: 330px;
+      // min-height: 330px;
       @include shadow;
-      @include clearfix;
+      // @include clearfix;
 
       @media (min-width: 0px) and (max-width: 796px) {
         min-height: 200px;
-        margin-bottom: 0em;
+        // margin-bottom: 0em;
       }
 
       .VueCarousel-inner {

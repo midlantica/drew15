@@ -1,17 +1,21 @@
 <template>
   <nav>
     <div class="mastMain">
+
       <div class="masty">
-        <div class="">
+
+        <div class="DHmast">
           <router-link class="drewHeadPic" to="/Techy/Extras" />
           <mastDrew class="svgArt mastDrew" />
           <mastHarper class="svgArt mastHarper" />
         </div>
+
         <div class="jobDesc clearfix">
           <h2>ui/ux designer +</h2>
           <h2>front&nbsp;end&nbsp;dev</h2>
         </div>
       </div>
+
       <div class="bar">
         <div class="contact">
           <p class='email'><a href="mailto:druharper@gmail.com">druharper@gmail.com</a></p>
@@ -20,6 +24,7 @@
           </p>
         </div>
       </div>
+
     </div>
   </nav>
 </template>
@@ -41,6 +46,7 @@
   // @import '@/assets/css/main.scss';
   @import '@/template-techy/assets/css/techy-main.scss';
 
+  $break1000: 1000px;
   $breakOne: 840px;
   $breakTwo: 630px;
   $breakThree: 430px;
@@ -86,87 +92,160 @@
       // width: 100%;
     }
  
-    a.drewHeadPic {
-      display: block;
-      float: left;
-      clear: left;
-      width: 120px;
-      height: 150px;
-      padding: 1em 1em 0em 1em;
-      background: url(/img/drew_head.png) no-repeat center;
-      background-size: contain;
-      margin: 1em 1em 1em 1em;
-
-      @media (max-width: $breakOne) {
-        width: 106px;
-        height: 120px;
-      }
-
-      @media (max-width: $breakTwo) {
-        width: 89px;
-        height: 103px;
-      }
-
-      @media (max-width: $breakThree) {
-        width: 70px;
-        height: 82px;
-      }
-    }
 
     .masty {
-      //
-      @include clearfix;    
+      // @include clearfix;    
 
-      .svgArt {
-        height: 5.5em;
-        margin: 2em 0 0em 1em;
-        display: block;
-        float: left;
-        flex-grow: 1;   
-      }
+      .DHmast {
+        display: grid;
+        grid-template-columns: 2fr 4fr 7fr;
+        // grid-template-rows: auto;
+        grid-gap: 1em;
+        align-items: center;
+        margin: 0 auto;
+        //
 
-      .mastDrew {
-        // width: 17em;
-        // height: 12vw;
-        // margin-top: -1.5em; 
+        @media (max-width: $break1000) {
+          grid-template-columns: auto auto;
+          justify-content: center;
+          justify-items: center;
+          grid-gap: .5em;
+        }
 
         @media (max-width: $breakOne) {
-          // width: 45vw;
-          // height: 17vh;
-          // margin-top: 1em;
-        }
+          //
+        } 
 
         @media (max-width: $breakTwo) {
-          // width: 60vw;
-          // height: 17vh;
-          // margin-top: 1em;
-          // order: 1;
-        }
-      }
-
-      .mastHarper {
-        // width: 24em;
-        // height: 20vh;
-        // transform: rotate(1deg);
-        // margin-top: -0.6em;
-        margin-left: 2em;
-        display: initial;
-        float: initial;
-
-        @media (max-width: $breakOne) {
-          // width: 86vw;
-          // height: 20vh;
-          // margin-top: -1.5em;
-          margin-left: 0;
-          margin-top: 0;
+          //
         }
 
-        @media (max-width: $breakTwo) {
-          // width: 86vw;
+        @media (max-width: $breakThree) {
+          //
+        }
+
+        ////
+        a.drewHeadPic {
+          // display: block;
+          // float: left;
+          // clear: left;
+          width: 120px;
+          height: 150px;
+          padding: 1em 1em 0em 1em;
+          background: url(/img/drew_head.png) no-repeat center;
+          background-size: contain;
+          margin: 1em 0em 0em 0em;
+          grid-column: 1 / 2;
+          grid-row: 1 / 3;
+          justify-self: end;
+
+          @media (max-width: $break1000) {
+            width: 106px;
+            height: 120px;
+            // float: left;
+            // display: block;
+            // clear: left;
+            grid-column: 1 / 2;
+            grid-row: 1 / 1;
+            justify-self: right;
+            // display: block;
+            // clear: left;
+          }
+
+          @media (max-width: $breakTwo) {
+            width: 89px;
+            height: 103px;
+          }
+
+          @media (max-width: $breakThree) {
+            width: 70px;
+            height: 82px;
+          }
+        }
+        
+        .svgArt {
+          height: 5.9em;
+          // margin: 2em 0 0em 1em;
+          // display: block;
+          // float: left;
+          // flex-grow: 1;
+
+          @media (max-width: $break1000) {
+            height: 11.5vw;
+          }
+          @media (max-width: $breakOne) {
+            height: 15vw;
+          }
+          @media (max-width: $breakTwo) {
+            height: 18vw;
+          }
+          @media (max-width: $breakThree) {
+            height: 19vw;
+          }
+
+
+
+        }
+
+        .mastDrew {
+          // width: 17em;
+          // height: 12vw;
+          // margin-top: -1.5em; 
+          grid-column: 2 / 3; 
+          grid-row: 1 / 3;
+
+          @media (max-width: $break1000) {
+            grid-column: 2 / 3 ; 
+            grid-row: 1 / 1;
+            align-self: end;
+            margin-bottom: -1em;
+            // justify-self: center;
+            // display: block;
+          }
+
+          @media (max-width: $breakOne) {
+            // width: 45vw;
+            // height: 17vh;
+            // margin-top: 1em;
+          }
+
+          @media (max-width: $breakTwo) {
+            // width: 60vw;
+            // height: 17vh;
+            // margin-top: 1em;
+            // order: 1;
+          }
+        }
+
+        .mastHarper {
+          // width: 24em;
           // height: 20vh;
-          // margin-top: -1.5em;
-          margin-left: 0;
-          margin-top: 0;
+          // transform: rotate(1deg);
+          // margin-top: -0.6em;
+          // margin-left: 2em;
+          display: initial;
+          // float: initial;
+          grid-column: 3 / 4; 
+          grid-row: 1 / 3;
+
+          @media (max-width: $break1000) {
+            grid-column: 1 / 3; 
+            grid-row: 2 / 3;
+          }
+
+          @media (max-width: $breakOne) {
+            // width: 45vw;
+            // height: 17vh;
+            // margin-top: 1em;
+          }
+
+          @media (max-width: $breakTwo) {
+            // width: 86vw;
+            // height: 20vh;
+            // margin-top: -1.5em;
+            margin-left: 0;
+            margin-top: 0;
+          }
         }
       }
       
@@ -174,12 +253,16 @@
 
   }
 
-
   nav .jobDesc {
-    margin: 0em 0em 1em 11em;
+    margin: -2em 0em 1em 12em;
     text-align: center;
     // margin-top: -1em;
     // @include clearfix;
+
+    @media (max-width: $break1000) {
+      margin: 1em 0em;
+      text-align: center;
+    }
 
     @media (max-width: $breakOne) {
       margin: 1em 0em;
@@ -213,6 +296,20 @@
 
       &:nth-child(2) {
         // font-size: 1.75em;
+      }
+
+      @media (max-width: $break1000) {
+        display: inline;
+        font-size: 1.85em !important;
+        margin-top: -3px;
+
+        &:nth-child(1) {
+          //
+        }
+
+        &:nth-child(2) {
+          margin-left: .25em !important;
+        }
       }
 
       @media (max-width: $breakOne) {

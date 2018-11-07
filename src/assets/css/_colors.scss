@@ -24,3 +24,10 @@ $groovy-yellow: #ffdd4b;
 $groovy-orange: #ff9f00;
 $groovy-red:    #FF1A22;
 $groovy-yellow-pale: lighten($groovy-yellow, 30);
+
+
+$groovy-aqua-dk:        darken(#99f1ec, 10);
+$groovy-yellow-dk:      darken(#ffdd4b, 15);
+$groovy-orange-dk:      darken(#ff9f00, 05);
+$groovy-red-dk:         darken(#FF1A22, 10);
+$groovy-yellow-pale-dk: lighten($groovy-yellow, 00);

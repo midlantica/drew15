@@ -55,11 +55,11 @@
       titleTemplate: '%s - UI/UX Designer, Graphic Designer!',
       bodyAttrs: {
         class: 'corp'
-      },
-      style: [
-        { cssText: 'html { background: url(img/bg/black-parch-bg.jpg ) !important; }', type: 'text/css' },
-        { cssText: 'body { background: transparent !important }', type: 'text/css' }
-      ]
+      }
+      // style: [
+      //   { cssText: 'html { background: url(img/bg/black-parch-bg.jpg ) !important; }', type: 'text/css' },
+      //   { cssText: 'body { background: transparent !important }', type: 'text/css' }
+      // ]
     }
   }
 </script>

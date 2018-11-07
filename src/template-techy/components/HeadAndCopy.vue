@@ -38,7 +38,8 @@
     font-family: $font-copy !important;
     font-size: 1.2rem !important;
     line-height: 2.5em !important;
-    color: $grey;
+    // color: $grey;
+    color: transparentize($blueTech, .0);
     letter-spacing: 0.06em;
 
     @media (max-width: $breakOne) {

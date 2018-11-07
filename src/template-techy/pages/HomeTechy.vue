@@ -57,7 +57,7 @@
   @import '../assets/css/fonts/connection/connection.css';
   @import '@/assets/css/main.scss';
   @import '@/template-techy/assets/css/techy-main.scss';
-
+  $break1000: 1000px;
   $breakOne: 840px;
   $breakTwo: 630px;
   $breakThree: 430px;
@@ -85,6 +85,11 @@
     grid-column: 1 / 2;
     grid-row: 2 / 4;
 
+    @media (max-width: $break1000) {
+      grid-column: 1 / 3;
+      grid-row: 2;
+    }
+
     @media (max-width: $breakOne) {
       grid-column: 1 / 3;
       grid-row: 2;
@@ -102,6 +107,12 @@
     z-index: 10;
     // padding: 1em;
     margin: -11em 1em 0 0;
+
+    @media (max-width: $break1000) {
+      grid-column: 1 / 3;
+      grid-row: 3;
+      margin: 0 1em;
+    }
 
     @media (max-width: $breakOne) {
       grid-column: 1 / 3;
@@ -121,6 +132,12 @@
     grid-row: 3;
     margin: 0 1em 0 0;
 
+    @media (max-width: $break1000) {
+      grid-column: 1 / 3;
+      grid-row: 5;
+      margin: 0 1em;
+    }
+
     @media (max-width: $breakOne) {
       grid-column: 1 / 3;
       grid-row: 5;
@@ -138,6 +155,10 @@
     grid-column: 1 / -1;
     grid-row: 4;
 
+    @media (max-width: $break1000) {
+      grid-row: 4;
+    }
+
     @media (max-width: $breakOne) {
       grid-row: 4;
     }
@@ -153,6 +174,11 @@
     color: $ivory;
     background: $mango;
     box-shadow: none;
+
+    @media (max-width: $break1000) {
+      grid-column: 1 / -1;
+      grid-row: 6;
+    }
 
     @media (max-width: $breakOne) {
       grid-column: 1 / -1;

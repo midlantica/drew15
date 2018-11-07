@@ -127,12 +127,12 @@
     // width: 488px;
     background: lightgrey;
     // border: 10px red solid;
-    min-height: 363px;
+    // min-height: 363px;
     // @include shadow;
     // @include clearfix;
 
     @media (min-width: 0px) and (max-width: 796px) {
-      min-height: 200px;
+      // min-height: 200px;
     }
 
     .VueCarousel-wrapper {
@@ -142,19 +142,18 @@
       // width: 488px;
       background: lightgrey;
       // border: 10px red solid;
-      min-height: 363px;
+      // min-height: 363px;
       // margin-bottom: -2px !important;
-      margin-bottom: 1em;
+      // margin-bottom: 1em;
       @include shadow;
-      @include clearfix;
+      // @include clearfix;
 
       @media (min-width: 0px) and (max-width: 796px) {
-        min-height: 200px;
+        // min-height: 200px;
       }
 
       .VueCarousel-inner {
-          margin-bottom: -2px;
-
+        margin-bottom: -2px;
       }
 
     }

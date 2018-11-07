@@ -39,7 +39,7 @@
   // BOURBON
   .bourbon {
     // background: initial;
-    background: #111;
+    background: #222;
     // background: url(/img/bg/bricks-bg-02.jpg) repeat;
 
     .wrapper {
@@ -59,13 +59,52 @@
     }
   }
 
+  // #############################
+  // GROOVY
+  .groovy {
+    // background: initial;
+    background: #333;
+    // background: url(/img/bg/bricks-bg-02.jpg) repeat;
+
+    .wrapper {
+      // background: url(/img/bg/Drew-punk-back.jpg) repeat;
+      // background-size: 110% 100%;
+      // background-image: url(/img/bg/check-patt.png);
+      
+      @media (max-width: $breakOne) {
+        // background-size: 110% 50%;
+      }
+
+      //
+      header, footer {
+        // background: url(./template-bourbon/assets/img/bg/bg_bag_dk.jpg) repeat;
+      }
+    }
+  }
+
   
   // #############################
   // TECHY
   .techy {
-    background: darken(#423BA0, 30);
+    background: darken(#423BA0, 35);
     .wrapper { 
       //
+    }
+  }
+
+  // #############################
+  // CORP
+  .corp {
+    background: #222;
+    background: url(/img/bg/black-parch-bg-1.jpg) repeat;
+
+    .wrapper {
+      // background: url(/img/bg/Drew-punk-back.jpg) repeat;
+
+      //
+      header, footer {
+        // background: url(./template-bourbon/assets/img/bg/bg_bag_dk.jpg) repeat;
+      }
     }
   }
 

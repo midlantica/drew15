@@ -120,6 +120,7 @@
   // @import '@/assets/css/main.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
+  $break1000: 1000px;
   $breakOne: 840px;
   $breakTwo: 630px;
   $breakThree: 430px;
@@ -131,7 +132,7 @@
     // width: 488px;
     background: lightgrey;
     // border: 10px red solid;
-    min-height: 336px;
+    // min-height: 336px;
     // @include shadow;
     // @include clearfix;
     padding: 0em;
@@ -157,14 +158,15 @@
       // width: 488px;
       background: lightgrey;
       // border: 10px red solid;
-      min-height: 336px;
+      // min-height: 336px;
       // margin-bottom: -2px !important;
       // @include shadow;
       border: 1px solid grey;
-      @include clearfix;
+      // @include clearfix;
+      @include shadow;
 
       @media ($breakOne) {
-        min-height: 200px;
+        // min-height: 200px;
       }
 
       .VueCarousel-inner {
