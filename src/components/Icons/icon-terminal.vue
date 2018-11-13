@@ -1,5 +1,5 @@
 <template>
-  <svg width="88" height="60" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 88 60" xmlns="http://www.w3.org/2000/svg">
   <title>Command Line</title>
   <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Artboard-Copy" transform="translate(-21.000000, -202.000000)" fill-rule="nonzero">
@@ -23,8 +23,8 @@
   // @import '~/assets/css/_colors.scss';
 
   svg {
-    width: 88px;
-    height: 60px;
+    // width: 88px;
+    // height: 60px;
 
   }
 

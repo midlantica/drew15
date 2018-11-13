@@ -65,7 +65,7 @@
     justify-content: space-between;
     justify-items: center;
     //
-    margin: .5em auto 1em;
+    margin: 0.25em auto 1em;
     align-items: center;
     grid-template-columns: repeat(12, minmax(auto, auto));
     grid-row-gap: 0em;
@@ -100,7 +100,7 @@
 
     // }
 
-    @media (min-width: 485px) and (max-width: $BreakTwo)
+    @media (min-width: 485px) and (max-width: $BreakOne)
     {
       width: 95%;
       grid-template-columns: repeat(6, minmax(auto, auto));
@@ -127,8 +127,8 @@
     }
 
     svg {
-      width: 70px;
-      // height: 26px;
+      width: 80px;
+      height: 60px;
       // scale
     }
   }

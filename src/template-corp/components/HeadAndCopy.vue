@@ -32,18 +32,18 @@
   }
 
   .uiux {
-    height: 37px;
+    height: 35px;
     margin: 0.7em 0 -0.3em 1.3em;
     
     @media (max-width: $breakOne) {
-      height: 30px;
+      height: 28px;
       align-self: center;
       margin-top: 0.6em;
       margin-left: .75em;
     }
 
     @media (max-width: $breakTwo) {
-      height: 28px;
+      height: 22px;
       margin-left: .75em;
     }
   }

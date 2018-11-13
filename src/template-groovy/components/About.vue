@@ -19,6 +19,7 @@
     @include font-smoothing(on);
     margin: 0em auto 1em;
     border-radius: .5em;
+    box-shadow: 6px 6px 0px transparentize($black, .75);
 
     .flag {
       width: 104px;

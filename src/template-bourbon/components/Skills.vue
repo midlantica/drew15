@@ -98,7 +98,7 @@
 
     }
 
-    @media (min-width: 414px) and (max-width: 736)
+    @media (min-width: 414px) and (max-width: 736px)
     {
       grid-template-columns: repeat(4, minmax(auto, auto));
       grid-row-gap: 1.5em;
@@ -138,6 +138,13 @@
 
     .icon {
       // margin: auto;
+
+      //
+    }
+
+    svg {
+      width: 88px;
+      height: 60px;
     }
   }
 

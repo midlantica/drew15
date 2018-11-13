@@ -118,21 +118,26 @@
   @import '@/template-groovy/assets/css/groovy-main.scss';
 
   .VueCarousel.druCarousel {
-    margin: .75em auto 1em !important;
+    margin: .75em 0.25em 1em 0em !important;
     background: lightgrey;
     // min-height: 330px;
     // box-shadow: 2px 2px 3px $black;
+    // box-shadow: 6px 6px 0px transparentize($black, .75);
+    // border-radius: 5px;
+    border: 1px solid transparentize($black, .95);
 
     @media (min-width: 0px) and (max-width: 796px) {
       // min-height: 195px;
     }
 
     .VueCarousel-wrapper {
-      margin: .75em auto 1em !important;
+      // margin: .75em auto 1em !important;
       background: lightgrey;
       // min-height: 330px;
-      @include shadow;
+      // @include shadow;
       // @include clearfix;
+      // box-shadow: 6px 6px 0px transparentize($black, .75);
+      // border-radius: 4px;
 
       @media (min-width: 0px) and (max-width: 796px) {
         // min-height: 195px;

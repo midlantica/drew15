@@ -82,7 +82,7 @@
     // margin-bottom: .5em;
     transition: .25s ease-in;
     // background: red;
-    background: transparentize(green, 0.75);
+    background: transparentize(green, 0.80);
 
     // @media (min-width: 736px) and
     //   (max-width: 1024px)
@@ -108,7 +108,7 @@
 
     // }
 
-    @media (min-width: 485px) and (max-width: $BreakTwo)
+    @media (min-width: 485px) and (max-width: $BreakOne)
     {
       width: 95%;
       grid-template-columns: repeat(6, minmax(auto, auto));
@@ -135,7 +135,7 @@
     }
 
     svg {
-      width: 70px;
+      width: 80px;
       // height: 26px;
       // scale
     }

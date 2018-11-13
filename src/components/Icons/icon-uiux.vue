@@ -1,5 +1,5 @@
 <template>
-  <svg height="60" width="88" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <svg viewBox="0 0 88 60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>UI/UX Design</title>
       <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Actual" transform="translate(-21.000000, -16.000000)">
@@ -24,8 +24,8 @@
   // @import '~/assets/css/_colors.scss';
 
   svg {
-    width: 88px;
-    height: 60px;
+    // width: 88px;
+    // height: 60px;
 
     .letterUI {
       fill: RGB(68, 82, 141);

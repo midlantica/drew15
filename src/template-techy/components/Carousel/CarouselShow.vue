@@ -163,7 +163,8 @@
       // @include shadow;
       border: 1px solid grey;
       // @include clearfix;
-      @include shadow;
+      // @include shadow;
+      box-shadow: none;
 
       @media ($breakOne) {
         // min-height: 200px;

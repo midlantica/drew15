@@ -12,7 +12,7 @@
 
   $breakOne: 840px;
   $breakTwo: 630px;
-  $breakThree: 430px;
+  $breakThree: 530px;
 
   .about {
     background: lighten($mango, 30);
@@ -23,7 +23,7 @@
     align-items: center;
     align-content: center;
     padding: .5em 1em .5em .75em;
-    margin-top: -1em;
+    // margin-top: -1em;
     
     @media (max-width: $breakOne) {
       margin-top: initial;

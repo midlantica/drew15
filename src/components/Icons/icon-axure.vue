@@ -1,5 +1,5 @@
 <template>
-  <svg height="60" width="88" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 88 60" xmlns="http://www.w3.org/2000/svg">
     <title>Axure</title>
     <g fill="none" fill-rule="evenodd">
     <path d="M31.143 10.4v39.21h-3.247a4 4 0 0 1-4-4V14.4a4 4 0 0 1 4-4zm3.04 0h25.923a4 4 0 0 1 4 4v31.21a4 4 0 0 1-4 4H34.182z" fill="#c660e2"/>
@@ -16,8 +16,8 @@
   // @import '~/assets/css/_colors.scss';
 
   svg {
-    width: 88px;
-    height: 60px;
+    // width: 88px;
+    // height: 60px;
 
   }
 
