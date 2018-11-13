@@ -85,7 +85,7 @@
       grid-row-gap: 1.25em;
       justify-items: center;
       // background: aqua;
-      margin-top: -0.9em;
+      margin: 0 auto;
     }
 
     @media (min-width: 0px) and (max-width: 484px)
@@ -100,6 +100,7 @@
       // justify-content: space-around;
       // justify-content: space-between;
       // justify-items: center;
+      margin: 0 auto;
     }
 
     .icon {
@@ -107,9 +108,19 @@
     }
 
     svg {
-      width: 70px;
-      // height: 26px;
-      // scale
+      width: 83px;
+      height: 62px;
+
+      @media (min-width: 485px) and (max-width: $BreakTwo) {
+        width: 70px;
+        height: 68px;
+      }
+
+      @media (min-width: 0px) and (max-width: 484px) {
+        width: 72px;
+        height: 51px;
+      }
+
     }
   }
 

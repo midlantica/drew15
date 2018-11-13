@@ -75,15 +75,16 @@
       );
 
       a.drewhead {
-        background-image: url(../assets/img/drew_head.png);
+        background-image: url(/img/drew_mug.png);
         background-repeat: no-repeat;
-        width: 73px;
-        height: 89px;
+        background-size: cover;
+        width: 98px;
+        height: 119px;
         display: block;
         position: relative;
-        top: 3.8em;
-        left: 4em;
-        scale: 1.2;
+        top: 2.8em;
+        left: 3.5em;
+        // background-position: 0px 0px;
       }
     }
 

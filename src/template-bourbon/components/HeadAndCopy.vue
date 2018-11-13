@@ -27,11 +27,15 @@
     // @include clearfix;
 
     a.drewhead {
-      background-image: url(../assets/img/drew_head.png);
+      background-image: url(/img/drew_mug_red.png);
       background-repeat: no-repeat;
-      width: 72px;
-      height: 88px;
+      background-size: cover;
+      width: 78px;
+      height: 94px;
       display: block;
+      margin: 0 auto;
+      // filter: grayscale(100%);
+      // filter:hue-rotate(360deg);
       grid-column: 1 / 2;
       grid-row: 1 / 2;
     }

@@ -130,10 +130,17 @@
           // float: left;
           // clear: left;
           width: 120px;
-          height: 150px;
+          height: 144px;
           padding: 1em 1em 0em 1em;
-          background: url(/img/drew_head.png) no-repeat center;
-          background-size: contain;
+          background-image: url(/img/drew_mug_pix.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          // width: 98px;
+          // height: 119px;
+          // display: block;
+          // position: relative;
+          // top: 2.8em;
+          // left: 3.5em;
           margin: 1em 0em 0em 0em;
           grid-column: 1 / 2;
           grid-row: 1 / 3;
@@ -141,7 +148,7 @@
 
           @media (max-width: $break1000) {
             width: 106px;
-            height: 120px;
+            height: 127px;
             // float: left;
             // display: block;
             // clear: left;
@@ -154,12 +161,12 @@
 
           @media (max-width: $breakTwo) {
             width: 89px;
-            height: 103px;
+            height: 107px;
           }
 
           @media (max-width: $breakThree) {
             width: 70px;
-            height: 82px;
+            height: 86px;
           }
         }
         

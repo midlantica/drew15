@@ -111,7 +111,7 @@
         justify-content: center;
         align-content: center;
         align-items: center;
-        width: 70%;
+        width: 80%;
       }
       
       @media (max-width: $breakTwo) {
@@ -135,14 +135,14 @@
           order: 1;
 
           @media (max-width: $breakOne) {
-            width: 45vw;
+            width: 49vw;
             // height: 17vh;
             margin-top: 1em;
             order: 1;
           }
 
           @media (max-width: $breakTwo) {
-            width: 60vw;
+            width: 55vw;
             // height: 17vh;
             // margin-top: 1em;
             // order: 1;
@@ -159,38 +159,57 @@
 
         @media (max-width: $breakOne) {
           order: 3;
-          width: 86vw;
+          width: 49vw;
           // height: 20vh;
           // margin-top: -1.5em;
           flex-grow: 1;
         }
+
+        @media (max-width: $breakOne) {
+          order: 3;
+          width: 38vw;
+          // height: 20vh;
+          // margin-top: -1.5em;
+          flex-grow: 1;
+        }
+
       }
 
       a.DrewHead {
         display: block;
-        min-width: 114px;
-        height: 132px;
-        background: url(../assets/img/drew_head_punk.png) no-repeat center;
-        background-size: cover;
-        margin-left: .5em;
-        margin-top: 0.5em;
+        // min-width: 114px;
+        // height: 132px;
+        background-image: url(/img/drew_mug_punk.png);
+        filter:hue-rotate(360deg);
+        //
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 158px;
+        height: 139px;
+        text-decoration: none;
+        // display: block;
+        // position: relative;
+        // top: 2.8em;
+        // left: 3.5em;
+        // margin-left: .5em;
+        // margin-top: 0.5em;
         order: 3;
         // flex-grow: 1;
 
         @media (max-width: $breakOne) {
-          min-width: 106px;
-          height: 120px;
+          width: 116px;
+          height: 126px;
           order: 2;
         }
 
         @media (max-width: $breakTwo) {
-          min-width: 96px;
-          height: 110px;
+          width: 98px;
+          height: 117px;
         }
 
         @media (max-width: $breakThree) {
-          // min-width: 70px;
-          // height: 82px;
+          width: 75px;
+          height: 82px;
         }
 
       }

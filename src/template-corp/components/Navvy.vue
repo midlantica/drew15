@@ -103,14 +103,16 @@
   // }
 
   a.drewhead {
-    background: white;
-    background-image: url(../assets/img/drew_head.png) !important;
+    background: #C00000;
+    background-image: url(/img/drew_mug_red.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100px;
     height: 100px;
-    box-shadow: 3px 3px 6px 0 rgba(0,0,0,0.29);
-    background-repeat: no-repeat !important;
-    background-position: -7px -23px !important;
-    background-size: 97% !important;
+    background-position: -55px -67px;
+    box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.25);
+    background-repeat: no-repeat;
+    background-size: 151%;
     filter: hue-rotate(210deg);
     // width: 72px;
     // height: 88px;
@@ -119,8 +121,8 @@
     @media (max-width: $breakTwo) {
       width: 80px;
       height: 80px;
-      background-position: -4px -18px !important;
-      background-size: 97% !important;
+      background-position: -40px -50px !important;
+      background-size: 145% !important;
     }
 
   }

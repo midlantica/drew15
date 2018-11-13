@@ -49,7 +49,7 @@
       // background-image: url(/img/bg/check-patt.png);
       
       @media (max-width: $breakOne) {
-        background-size: 110% 50%;
+        // background-size: 110% 50%;
       }
 
       //
