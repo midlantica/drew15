@@ -16,8 +16,8 @@ $XSmallScreen: 320px;
 $base-font-size   :1rem;
 $base-line-height :1.7em;
 $font             :Dosis, "Helvetica Neue", Arial, sans-serif;
-$font-head        :connectionBold, "Helvetica Neue", Arial, sans-serif;
-$font-subhead     :connectionBold, "Helvetica Neue", Arial, sans-serif;
+$font-head        :Dosis, "Helvetica Neue", Arial, sans-serif;
+$font-subhead     :Dosis, "Helvetica Neue", Arial, sans-serif;
 $font-copy        :Dosis, "Helvetica Neue", Arial, sans-serif;
 
 // ############################
@@ -32,7 +32,7 @@ html, html a {
 }
 
 body {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: $font !important;
   font-size: $base-font-size;
   background: #333;
   margin: 0;

@@ -23,6 +23,7 @@
 
 <style lang="scss">
   @import '@/assets/css/main.scss';
+  @import 'assets/css/vendor/html5Boilerplate.css';
   
   $breakOne: 840px;
   $breakTwo: 630px;

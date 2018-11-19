@@ -17,7 +17,7 @@
     text-align: center;
 
     p {
-      font-family: cormorantGaramond-Regular;
+      font-family: $font-head !important;
       font-size: 1.15em;
       color: $ivory;
       text-align: center;

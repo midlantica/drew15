@@ -179,7 +179,7 @@
     }
 
     p {
-      font-family: $font-subhead;
+      font-family: $font-subhead !important;
       letter-spacing: .09em;
 
       &:nth-child(1) {

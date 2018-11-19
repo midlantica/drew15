@@ -6,7 +6,9 @@
     </header>
 
     <HeadAndCopy/>
-    <CarouselShow/>
+    <div class="slides">
+      <CarouselShow/>
+    </div class="slides">  
     <About/>
     <Skills/>
 
@@ -20,13 +22,14 @@
 
 <script>
   // import '../assets/css/fonts/connection/connection.css'
-  const Navvy = () => import('../components/Navvy')
-  const HeadAndCopy = () => import('../components/HeadAndCopy')
-  const Skills = () => import('../components/Skills')
-  const CarouselShow = () => import('../components/Carousel/CarouselShow')
-  const About = () => import('../components/About')
-  const Quotes = () => import('../components/Quotes/QuoteBasic')
-  const Footy = () => import('../components/Footy')
+
+  import Navvy from '../components/Navvy'
+  import HeadAndCopy from '../components/HeadAndCopy'
+  import Skills from '../components/Skills'
+  import About from '@/components/About'
+  import Quotes from '../components/Quotes/QuoteBasic'
+  import Footy from '../components/Footy'
+  import CarouselShow from '@/components/Carousel/CarouselShow'
 
   export default {
     layout: 'default',
@@ -47,17 +50,22 @@
       titleTemplate: '%s - UI/UX Designer, Graphic Designer!',
       bodyAttrs: {
         class: 'techy'
-      }
+      },
+      style: [
+        { cssText: 'body.techy .VueCarousel.druCarousel { border: 2px solid #423BA0; min-height: 21vh; }', type: 'text/css' },
+        { cssText: '.about p { font-family: Dosis, "Helvetica Neue", Arial, sans-serif !important; }', type: 'text/css' }
+      ]
     }
   }
 </script>
 
 <style lang="scss" scoped>
   @import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800');
-  @import '../assets/css/fonts/connection/connection.css';
+  // @import '../assets/css/fonts/connection/connection.css';
   @import '@/assets/css/main.scss';
   @import '@/template-techy/assets/css/techy-main.scss';
-  $break1000: 1000px;
+
+  $breakThou: 1024px;
   $breakOne: 840px;
   $breakTwo: 630px;
   $breakThree: 430px;
@@ -65,9 +73,6 @@
   .mainGrid {
     display: grid;
     grid-template-columns: 7fr 6fr;
-    // grid-template-rows: auto auto auto auto;
-    //                  1-2  2-3  3-4  4-5
-    // grid-auto-flow: row dense;
     grid-gap: 1em;
     background: $ivory;
   }
@@ -85,7 +90,7 @@
     grid-column: 1 / 2;
     grid-row: 2 / 4;
 
-    @media (max-width: $break1000) {
+    @media (max-width: $breakThou) {
       grid-column: 1 / 3;
       grid-row: 2;
     }
@@ -105,10 +110,9 @@
     grid-column: 2 / 3;
     grid-row: 2;
     z-index: 10;
-    // padding: 1em;
-    margin: -11em 1em 0 0;
+    margin: -10em 1em 0 0;
 
-    @media (max-width: $break1000) {
+    @media (max-width: $breakThou) {
       grid-column: 1 / 3;
       grid-row: 3;
       margin: 0 1em;
@@ -132,7 +136,7 @@
     grid-row: 3;
     margin: 0 1em 0 0;
 
-    @media (max-width: $break1000) {
+    @media (max-width: $breakThou) {
       grid-column: 1 / 3;
       grid-row: 5;
       margin: 0 1em;
@@ -155,7 +159,7 @@
     grid-column: 1 / -1;
     grid-row: 4;
 
-    @media (max-width: $break1000) {
+    @media (max-width: $breakThou) {
       grid-row: 4;
     }
 
@@ -175,7 +179,7 @@
     background: $mango;
     box-shadow: none;
 
-    @media (max-width: $break1000) {
+    @media (max-width: $breakThou) {
       grid-column: 1 / -1;
       grid-row: 6;
     }

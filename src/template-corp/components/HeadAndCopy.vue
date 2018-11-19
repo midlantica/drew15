@@ -86,13 +86,13 @@
 
   p {
     // color: transparentize($blue-dark, .0);
-    color: transparentize($blue-dark, .25);
-    font-family: $font !important;
-    font-weight: 300;
-    font-size: 1em;
+    color: transparentize($blue-dark, .0);
+    font-family: $font-copy;
+    font-weight: 100;
+    font-size: 1.1em;
     // font-size: calc(1rem + .2vw);
-    line-height: 2.935em;
-    margin: 1.1em 2.5em 1.25em 1.5em;
+    line-height: 2.635em;
+    margin: 1.1em 2.5em 1em 1.5em;
     // line-height: 2.6em;
     letter-spacing: 0.06em;
     // word-spacing: .1em;

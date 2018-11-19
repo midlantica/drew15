@@ -27,15 +27,14 @@
 
 <script>
   import '@/template-corp/assets/css/fonts/Roboto/Roboto.css'
-  // import '@/template-corp/assets/css/fonts/BodoniXT/BodoniXT.css'
   import '@/template-corp/assets/css/fonts/cormorantGaramond/cormorantGaramond.css'
 
-  const Navvy = () => import('../components/Navvy')
-  const HeadAndCopy = () => import('../components/HeadAndCopy')
-  const Skills = () => import('../components/Skills')
-  const CarouselShow = () => import('../components/Carousel/CarouselShow')
-  const About = () => import('../components/About')
-  const Quotes = () => import('../components/Quotes/QuoteBasic')
+  import Navvy from '../components/Navvy'
+  import HeadAndCopy from '../components/HeadAndCopy'
+  import Skills from '../components/Skills'
+  import About from '@/components/About'
+  import Quotes from '../components/Quotes/QuoteBasic'
+  import CarouselShow from '@/components/Carousel/CarouselShow'
 
   export default {
     layout: 'default',
@@ -55,11 +54,10 @@
       titleTemplate: '%s - UI/UX Designer, Graphic Designer!',
       bodyAttrs: {
         class: 'corp'
-      }
-      // style: [
-      //   { cssText: 'html { background: url(img/bg/black-parch-bg.jpg ) !important; }', type: 'text/css' },
-      //   { cssText: 'body { background: transparent !important }', type: 'text/css' }
-      // ]
+      },
+      style: [
+        { cssText: 'body.corp .VueCarousel.druCarousel { box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.29); min-height: 21vh; }', type: 'text/css' }
+      ]
     }
   }
 </script>
@@ -70,9 +68,7 @@
   @import '@/template-corp/assets/css/corp-main.scss';
 
   .wrapper {
-    // background: url(/template-corp/assets/img/bg/linen.png) repeat !important;
-    // background: url(/img/bg/linen.png) repeat !important;
-    // background: url(/img/bg/concrete_seamless.png) repeat !important;
+    //
   }
 
   header,
@@ -114,7 +110,7 @@
         padding: 0 1em;
 
         @media screen and (min-width: 1024px) {
-          padding: 0em 1em 0em .5em;
+          padding: 1.15em 1em 0em .5em;
         }
       }
 

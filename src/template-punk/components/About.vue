@@ -9,7 +9,7 @@
 
 <style lang="scss" scoped>
   // @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  @import '@/template-punk/assets/css/punk-main.scss';
   
   .blackBg {
     // background: black;
@@ -35,15 +35,17 @@
         margin: 1em ;
         float: left;
         clear: left;
-        background: url(../assets/img/british_american_flag.png);
+        background: url(/img/brit-amer_flag.svg);
         background-repeat: none;
         background-size: cover;
       }
 
       p {
+        font-family: $font;
+        // font-family: AmericanTypewriter;
         color: white;
         font-size: .8em;
-        font-weight: bold;
+        // font-weight: bold;
         margin: 1em 1em 0.7em 10.7em;
         padding: 0.9em 0 0 0;
         letter-spacing: .075em;

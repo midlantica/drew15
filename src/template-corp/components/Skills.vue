@@ -73,12 +73,11 @@
     transition: .25s ease-in;
 
 
-    @media (min-width: 682px) and
-      (max-width: 1024px)
+    @media (min-width: 682px) and (max-width: 1024px)
     {
       grid-template-columns: repeat(6, minmax(auto, auto));
       // grid-column-gap: 2.5em;
-      grid-row-gap: .0em;
+      grid-row-gap: .5em;
       // justify-content: stretch;
       // grid-column-gap: 0em;
       // background: lightblue;

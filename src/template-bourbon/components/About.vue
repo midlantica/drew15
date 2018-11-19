@@ -15,11 +15,8 @@
     margin-bottom: .75em;
     background-image: url('../assets/img/bg/bg_bag_y.png');
     background-repeat: repeat;
-    // width: calc(100%);
-    // width: 500px;
     @include shadow;
     @include clearfix;
-    @include font-smoothing(off);
 
     .flag {
       width: 104px;
@@ -27,7 +24,7 @@
       margin: 1em ;
       float: left;
       clear: left;
-      background: url('../assets/img/british_american_flag.png');
+      background: url('/img/brit_amer_flag_bourbon.svg');
       background-repeat: none;
       background-size: cover;
     }

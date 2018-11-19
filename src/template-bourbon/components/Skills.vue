@@ -63,16 +63,16 @@
     justify-content: space-between;
     justify-items: center;
     //
-    margin: .5em auto 0;
+    // margin: .5em auto 0;
     align-items: center;
     grid-template-columns: repeat(4, minmax(auto, auto));
-    grid-row-gap: 2.5em;
+    grid-row-gap: 2em;
     grid-column-gap: 0em;
     // grid-column-gap: 1.5em;
     // background: beige;
     // margin-bottom: .5em;
     transition: .25s ease-in;
-
+    margin-bottom: 1em;
 
     @media (min-width: 736px) and
       (max-width: 1024px)

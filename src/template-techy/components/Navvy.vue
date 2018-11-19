@@ -10,7 +10,7 @@
           <mastHarper class="svgArt mastHarper" />
         </div>
 
-        <div class="jobDesc clearfix">
+        <div class="jobDesc">
           <h2>ui/ux designer +</h2>
           <h2>front&nbsp;end&nbsp;dev</h2>
         </div>
@@ -46,7 +46,7 @@
   // @import '@/assets/css/main.scss';
   @import '@/template-techy/assets/css/techy-main.scss';
 
-  $break1000: 1000px;
+  $breakThou: 1024px;
   $breakOne: 840px;
   $breakTwo: 630px;
   $breakThree: 430px;
@@ -105,7 +105,7 @@
         margin: 0 auto;
         //
 
-        @media (max-width: $break1000) {
+        @media (max-width: $breakThou) {
           grid-template-columns: auto auto;
           justify-content: center;
           justify-items: center;
@@ -132,9 +132,10 @@
           width: 120px;
           height: 144px;
           padding: 1em 1em 0em 1em;
-          background-image: url(/img/drew_mug_pix.png);
+          background-image: url(/img/drew_mug_blue.png);
           background-repeat: no-repeat;
           background-size: cover;
+          // filter:hue-rotate(180deg);
           // width: 98px;
           // height: 119px;
           // display: block;
@@ -146,7 +147,7 @@
           grid-row: 1 / 3;
           justify-self: end;
 
-          @media (max-width: $break1000) {
+          @media (max-width: $breakThou) {
             width: 106px;
             height: 127px;
             // float: left;
@@ -177,7 +178,7 @@
           // float: left;
           // flex-grow: 1;
 
-          @media (max-width: $break1000) {
+          @media (max-width: $breakThou) {
             height: 11.5vw;
           }
           @media (max-width: $breakOne) {
@@ -201,7 +202,7 @@
           grid-column: 2 / 3; 
           grid-row: 1 / 3;
 
-          @media (max-width: $break1000) {
+          @media (max-width: $breakThou) {
             grid-column: 2 / 3 ; 
             grid-row: 1 / 1;
             align-self: end;
@@ -235,7 +236,7 @@
           grid-column: 3 / 4; 
           grid-row: 1 / 3;
 
-          @media (max-width: $break1000) {
+          @media (max-width: $breakThou) {
             grid-column: 1 / 3; 
             grid-row: 2 / 3;
           }
@@ -266,7 +267,7 @@
     // margin-top: -1em;
     // @include clearfix;
 
-    @media (max-width: $break1000) {
+    @media (max-width: $breakThou) {
       margin: 1em 0em;
       text-align: center;
     }
@@ -305,7 +306,7 @@
         // font-size: 1.75em;
       }
 
-      @media (max-width: $break1000) {
+      @media (max-width: $breakThou) {
         display: inline;
         font-size: 1.85em !important;
         margin-top: -3px;
@@ -350,7 +351,7 @@
     //
 
     .contact {
-      font-family: Dosis;
+      // font-family: Dosis;
       font-weight: 400;
       color: $ivory;
       // text-transform: uppercase;

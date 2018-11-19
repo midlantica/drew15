@@ -13,12 +13,15 @@
       <section>
         <CarouselShow/>
         <About/>
-        <!-- <Quotes/> -->
       </section>
 
     </main>
 
     <Skills/>
+
+    <footer>
+      <Quotes/>
+    </footer>
 
   </div>
 
@@ -29,12 +32,12 @@
   import '@/assets/fonts/AmericanTypewriter/AmericanTypewriter.css'
   import '@/assets/fonts/BodoniXT/BodoniXT.css'
 
-  const Navvy = () => import('../components/Navvy')
-  const HeadAndCopy = () => import('../components/HeadAndCopy')
-  const Skills = () => import('../components/Skills')
-  const CarouselShow = () => import('../components/Carousel/CarouselShow')
-  const About = () => import('../components/About')
-  const Quotes = () => import('../components/Quotes/QuoteBasic')
+  import Navvy from '../components/Navvy'
+  import HeadAndCopy from '../components/HeadAndCopy'
+  import Skills from '../components/Skills'
+  import About from '@/components/About'
+  import Quotes from '../components/Quotes/QuoteBasic'
+  import CarouselShow from '@/components/Carousel/CarouselShow'
 
   export default {
     layout: 'default',
@@ -56,15 +59,14 @@
         class: 'punk'
       },
       style: [
-        { cssText: '', type: 'text/css' }
+        { cssText: 'body.punk .VueCarousel.druCarousel { box-shadow: 0px 0px 0px 4px #333; min-height: 21vh; }', type: 'text/css' }
       ]
     }
   }
 </script>
 
 <style lang="scss" scoped>
-  @import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i');
-  // @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+  @import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i');  
   @import '@/assets/css/main.scss';
   @import '@/template-punk/assets/css/punk-main.scss';
 
@@ -75,7 +77,6 @@
   header,
   footer {
     color: $ivory;
-    // background: magenta;
     background: initial !important;
     box-shadow: none;
   }
@@ -84,10 +85,6 @@
     display: grid;  // <-- CONTENT GRID
     grid-template-columns: repeat(2, 1fr);
     background: transparent;
-    // box-shadow: 3px 5px 4px transparentize(black, 0.8),
-    //             3px 3px 5px transparentize(black, 0.2);
-    // padding-top: 1em;
-    // padding-bottom: .75em;
     padding: 0;
     box-shadow: none;
     //

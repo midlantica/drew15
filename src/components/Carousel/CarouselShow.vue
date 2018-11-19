@@ -119,43 +119,15 @@
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
   .VueCarousel.druCarousel {
-    // position: absolute;
-    // transform: rotate(181deg);
-    // margin: 1em auto 1.5em !important;
-    // width: calc(100%) !important;
-    // width: calc(100% / 79);
-    // width: 488px;
     background: lightgrey;
-    // border: 10px red solid;
-    // min-height: 330px;
-    // @include shadow;
-    // @include clearfix;
-    // margin: 0 !important;
-    // z-index: 10;
-
-    @media (min-width: 0px) and (max-width: 796px) {
-      // min-height: 200px;
-    }
+    border: 1px solid transparentize($black, .85);
+    margin-bottom: 1em;
 
     .VueCarousel-wrapper {
-       // margin-top: .5em;
-      // width: calc(100%) !important;
-      // width: calc(100% / 79);
-      // width: 488px;
       background: lightgrey;
-      // border: 10px red solid;
-      // min-height: 330px;
-      // margin-bottom: -2px !important;
-      // @include shadow;
-      // @include clearfix;
-
-      @media (min-width: 0px) and (max-width: 796px) {
-        // min-height: 200px;
-      }
 
       .VueCarousel-inner {
-          margin-bottom: -2px;
-
+        margin-bottom: -2px;
       }
 
     }

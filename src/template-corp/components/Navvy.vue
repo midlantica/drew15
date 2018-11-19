@@ -128,7 +128,7 @@
   }
 
   h1 {
-    font-family: $font-head;
+    font-family: $font-copy !important;
     font-size: 5.5em;
     // font-weight: normal;
     letter-spacing: -.025em;
@@ -203,8 +203,8 @@
     }
 
     p {
-      font-family: $font;
-      font-weight: 300;
+      font-family: $font-copy !important;
+      font-weight: 100;
       font-size: 1.3em;
       letter-spacing: .01em;
       align-items: center;

@@ -30,9 +30,9 @@
 </script>
 
 <style lang="scss" scoped>
-  // @import '../assets/css/_colors.scss';
+  @import '../assets/css/_colors.scss';
   // @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  @import '@/template-punk/assets/css/punk-main.scss';
 
   $outRed: rgba(221, 9, 22, .3);
   $outBlue: rgba(92, 201, 245, .3);
@@ -70,11 +70,11 @@
     }
     
     p.email {
+      font-family: $font;
       font-size: 1.5em;
       color: $ivory;
       letter-spacing: 0.03em;
       text-shadow: 1px 1px 2px black;
-      font-family: BodoniXT, "Times New Roman", Times, serif;
       text-transform: lowercase;
       align-self: flex-end;
       transform: rotate(-1deg);
@@ -223,7 +223,7 @@
     font-size: 1.5em;
     letter-spacing: 0.03em;
     text-shadow: 1px 1px 2px black;
-    font-family: BodoniXT, "Times New Roman", Times, serif;
+    font-family: $font;
     // text-align: right;
     transform: rotate(1deg);
     // position: relative;

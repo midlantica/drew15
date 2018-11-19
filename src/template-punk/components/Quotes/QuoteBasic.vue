@@ -6,14 +6,16 @@
 </template>
 
 <style lang="scss">
+  @import '../../assets/css/_colors.scss';
   // @import '@/assets/css/main.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
   .quoteBlock {
-    background: darken($accent-red, 10);
+    background: rgba(7, 97, 7, 0.79);
+    // background: transparentize($purple, .35);
     // margin-bottom: .5em;
-    padding: .75em 2em 1em;
-    @include shadow;
+    padding: 1em 2em 1em;
+    // @include shadow;
     // @include clearfix;
     text-align: center;
 
@@ -23,7 +25,6 @@
       text-align: center;
       letter-spacing: .08em;
       font-weight: bold;
-      @include font-smoothing(on);
     }
 
     cite {

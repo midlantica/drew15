@@ -17,13 +17,12 @@
       v-bind:index="index"
       v-bind:key="image.id"
     >
-      <img :src="image" :alt="image.slice(18,-4)">
+      <img :src="image" :alt="image.slice(25,-4)">
     </slide>
   </carousel>
 </template>
 
 <script>
-  // IN PLUGINS <<<
   import { Carousel, Slide } from 'vue-carousel'
   export default {
     components: {
@@ -36,7 +35,7 @@
       }
     },
     mounted () {
-      const imgPath = 'img/portfolio/jpg/'
+      const imgPath = 'public/img/portfolio/jpg/'
       setTimeout(() => {
         this.images = [
           imgPath + 'CivicInc_Bridge_01.jpg',
@@ -115,49 +114,21 @@
 </script>
 
 <style lang="scss">
-  // @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  @import '~/assets/css/_base.scss';
 
   .VueCarousel.druCarousel {
-    // position: absolute;
-    // transform: rotate(181deg);
-    // margin: 1em auto 1.5em !important;
+    margin-top: .5em;
     // width: calc(100%) !important;
     // width: calc(100% / 79);
     // width: 488px;
     background: lightgrey;
     // border: 10px red solid;
-    // min-height: 330px;
-    // @include shadow;
-    // @include clearfix;
-    // margin: 0 !important;
-    // z-index: 10;
+    min-height: 363px;
+    @include shadow;
+    @include clearfix;
 
     @media (min-width: 0px) and (max-width: 796px) {
-      // min-height: 200px;
-    }
-
-    .VueCarousel-wrapper {
-       // margin-top: .5em;
-      // width: calc(100%) !important;
-      // width: calc(100% / 79);
-      // width: 488px;
-      background: lightgrey;
-      // border: 10px red solid;
-      // min-height: 330px;
-      // margin-bottom: -2px !important;
-      // @include shadow;
-      // @include clearfix;
-
-      @media (min-width: 0px) and (max-width: 796px) {
-        // min-height: 200px;
-      }
-
-      .VueCarousel-inner {
-          margin-bottom: -2px;
-
-      }
-
+      min-height: 200px;
     }
 
     img {
@@ -196,3 +167,4 @@
   }
 
 </style>
+

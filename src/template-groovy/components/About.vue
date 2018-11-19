@@ -8,6 +8,11 @@
 <style lang="scss" scoped>
   @import '@/assets/css/main.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  
+  $breakThou: 1024px;
+  $breakOne: 840px;
+  $breakTwo: 630px;
+  $breakThree: 530px;
 
   .about {
     margin-bottom: .75em;
@@ -19,7 +24,7 @@
     @include font-smoothing(on);
     margin: 0em auto 1em;
     border-radius: .5em;
-    box-shadow: 6px 6px 0px transparentize($black, .75);
+    box-shadow: 0px 6px 0px transparentize($black, .75);
 
     .flag {
       width: 104px;
@@ -27,7 +32,7 @@
       margin: 1em ;
       float: left;
       clear: left;
-      background: url('../assets/img/british_american_flag.png');
+      background: url('/img/brit-amer_flag.svg');
       background-repeat: none;
       background-size: cover;
     }
@@ -38,7 +43,23 @@
       font-weight: 400;
       margin: 1em 1em 0.7em 10.7em;
       padding: 0.9em 0 0 0;
-      @include font-smoothing(on);
+
+      @media (max-width: $breakThou) {
+        //
+      }
+
+      @media (max-width: $breakOne) {
+        //
+      }
+
+      @media (max-width: $breakTwo) {
+        //
+      }
+
+      @media (max-width: $breakThree) {
+        //
+      }
+
     }
   }
 
