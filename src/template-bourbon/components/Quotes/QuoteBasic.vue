@@ -1,7 +1,9 @@
 <template>
   <div class="quoteBlock">
-    <p>&ldquo;Everything should be made as simple as possible, but not simpler.&rdquo;</p>
-    <cite>&ndash; Albert Einstein</cite>
+    <div class="quotePad">
+      <p>&ldquo;Everything should be made as simple as possible, but not simpler.&rdquo;</p>
+      <cite>&ndash; Albert Einstein</cite>
+    </div>
   </div>
 </template>
 
@@ -13,18 +15,27 @@
   .quoteBlock {
     background: darken($accent-red, 10);
     // margin-bottom: .5em;
-    padding: .75em 2em 1em;
-    @include shadow;
+    // padding: .75em 2em 1em;
     // @include clearfix;
-    text-align: center;
+    // text-align: center;
+    display: flex;
+    justify-content: center;
+    // align-content: center;
+    align-items: center;
+    @include shadow;
+
+    .quotePad {
+      padding: 0.0em 2em 0em;
+    }
 
     p {
-      font-size: 0.8em;
+      font-size: 0.85em;
       color: $ivory !important;
-      text-align: center;
+      // text-align: center;
       letter-spacing: .08em;
       font-weight: bold;
-      @include font-smoothing(on);
+      line-height: 1.5em;
+      // @include font-smoothing(on);
     }
 
     cite {
@@ -32,7 +43,7 @@
       font-size: .7em;
       color: $ivory;
       font-style: italic;
-      margin: 0 4em 0 0;
+      // margin: 0 4em 0 0;
       display: block;
       text-align: right;
       letter-spacing: .08em;

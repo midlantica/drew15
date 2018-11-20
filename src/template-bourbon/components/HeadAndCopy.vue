@@ -56,17 +56,17 @@
 
   p {
     font-family: $font-copy !important;
-    font-size: calc(0.8rem + .75vw);
+    font-size: calc(0.95rem + .75vw);
     // font-size: 0.9rem;
     color: $grey;
-    margin: 1em 0em .5em .725em;
-    line-height: calc(2.3em + .5vw);
+    margin: 1em 1em 0em 1em;
+    line-height: calc(2.4em + .5vw);
     // line-height: 2.6em;
     letter-spacing: 0.06em;
 
     @media screen and (min-width: 1024px) {
-      font-size: 0.9rem;
-      line-height: 2.6em;
+      font-size: 0.95rem;
+      line-height: 2.7em;
       // line-height: calc(1.9em + .6vw);
     }
   }

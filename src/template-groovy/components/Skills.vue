@@ -57,15 +57,15 @@
 
   .skillsGrid {
     display: grid;
-    width: 95%;
-    flex-wrap: wrap;
+    // width: 100%;
+    // flex-wrap: wrap;
     // justify-content: stretch;
     // justify-content: space-around;
     // justify-content: space-between;
     justify-content: space-between;
     justify-items: center;
     //
-    margin: 0.25em auto 1em;
+    // margin: 0.25em auto 1em;
     align-items: center;
     grid-template-columns: repeat(12, minmax(auto, auto));
     grid-row-gap: 0em;
@@ -74,6 +74,7 @@
     // background: beige;
     // margin-bottom: .5em;
     transition: .25s ease-in;
+    margin: 0 -1em 0 0em;
 
 
     // @media (min-width: 736px) and
@@ -102,12 +103,13 @@
 
     @media (min-width: 485px) and (max-width: $BreakOne)
     {
-      width: 95%;
+      // width: 95%;
       grid-template-columns: repeat(6, minmax(auto, auto));
       // grid-column-gap: 0em;
       // grid-row-gap: .75em;
       grid-row-gap: 1.25em;
       // background: aqua;
+      margin: 0em 0em 0em;
     }
 
     @media (min-width: 0px) and (max-width: 484px)
@@ -130,6 +132,12 @@
       width: 80px;
       height: 60px;
       // scale
+
+      @media (min-width: 485px) and (max-width: $BreakOne)
+      {
+        // width: 146px;
+        // height: 60px;
+      }
     }
   }
 

@@ -1,20 +1,25 @@
 <template>
 
   <div>
+
     <header>
       <Navvy/>
     </header>
 
-    <main>
-      <section>
-        <HeadAndCopy/>
-        <Skills/>
-      </section>
+    <main class="mainGrid">
 
-      <section>
+      <div class="copyArea">
+        <HeadAndCopy/>
+      </div>
+
+      <div class="slides">
         <CarouselShow/>
-        <About/>
-      </section>
+      </div>
+
+      <About/>
+
+      <Skills/>
+
     </main>
 
     <footer>
@@ -67,55 +72,152 @@
   @import '@/assets/css/main.scss';
   @import '@/template-corp/assets/css/corp-main.scss';
 
-  .wrapper {
-    //
+  $breakThou: 1024px;
+  $breakOne: 840px;
+  $breakTwo: 630px;
+  $breakThree: 530px;
+
+  .about {
+    background: white;
+    font-size: .95em;
   }
 
   header,
   footer {
     color: $ivory;
-    // background: none !important;
-    // background: url(/img/bg/bg_bag_dk.jpg) repeat;
-    // z-index: 10;
-    // position: relative;
     box-shadow: none !important;
     background: url(/img/bg/white_paper_patt-01.jpg) repeat !important;
-    // background: url(/img/bg/linen.png) repeat !important;
   }
 
-  main {
-    display: grid;  // <-- CONTENT GRID
+  .mainGrid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background: none !important;
-    box-shadow: none !important;
-    padding-top: 1em;
-    padding-bottom: .75em;
-    background: url(/img/bg/white_paper_patt-01.jpg) repeat !important;
-    // background: url(../assets/img/bg/linen.png) repeat !important;
-    //
-    @media (max-width: 1024px) {
+    grid-gap: 1em;
+    // grid-row-gap: 1em;
+    margin: 1em 1em;
+    // background: none !important;
+    // box-shadow: none !important;
+
+    @media (max-width: $breakThou) {
       grid-template-columns: 1fr;
+      grid-gap: 0em;
+      grid-row-gap: 1em;
+      // grid-column: 1 / 3;
+      // grid-row: 1;
     }
 
-    > section {
+    @media (max-width: $breakOne) {
       //
-      &:nth-child(1) {
-        padding: 0 1em;
-
-        @media screen and (min-width: 1024px) {
-          padding: 0em 1em 0em 1em;
-        }
-      }
-      &:nth-child(2) {
-        padding: 0 1em;
-
-        @media screen and (min-width: 1024px) {
-          padding: 1.15em 1em 0em .5em;
-        }
-      }
-
     }
 
+    @media (max-width: $breakTwo) {
+      //
+    }
+  }
+
+  .copyArea {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+
+    @media (max-width: $breakThou) {
+      grid-column: 1 / 3;
+      grid-row: 1;
+      margin-bottom: -1em;
+    }
+
+    @media (max-width: $breakOne) {
+      grid-column: 1 / 3;
+      grid-row: 1;
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-column: 1 / 3;
+      grid-row: 1;
+    }
+  }
+  
+  .slides {
+    grid-column: 2 / 3;
+    grid-row: 1;
+
+    @media (max-width: $breakThou) {
+      grid-column: 1 / 3;
+      grid-row: 3;
+      margin-top: initial;
+    }
+
+    @media (max-width: $breakOne) {
+      grid-column: 1 / 3;
+      grid-row: 3;
+      margin-top: initial;
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-column: 1 / 3;
+      grid-row: 3;
+      margin-top: initial;
+    }
+  }
+
+  .skillsGrid {
+    grid-column: 1 / 2;
+    grid-row: 2;
+    // align-items: center;
+    // margin: 0 auto 1em;
+
+    @media (max-width: $breakThou) {
+      grid-row: 2;
+    }
+
+    @media (max-width: $breakOne) {
+      grid-row: 2;
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-row: 2;
+    }
+  }
+
+  .about {
+    grid-column: 2 / 3;
+    grid-row: 2;
+
+    @media (max-width: $breakThou) {
+      grid-column: 1 / 3;
+      grid-row: 4;
+    }
+
+    @media (max-width: $breakOne) {
+      grid-column: 1 / 3;
+      grid-row: 4;
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-column: 1 / 3;
+      grid-row: 4;
+    }
+  }
+
+  .quoteBlock {
+    grid-column: 2 / 3;
+    grid-row: 3;
+
+    @media (max-width: $breakThou) {
+      grid-column: 1 / 3;
+      grid-row: 5;
+    }
+
+    @media (max-width: $breakOne) {
+      grid-column: 1 / 3;
+      grid-row: 5;
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-column: 1 / 3;
+      grid-row: 5;
+    }
   }
 
 </style>
+
+

@@ -72,7 +72,7 @@
     // background: beige;
     // margin-bottom: .5em;
     transition: .25s ease-in;
-    margin-bottom: 1em;
+    // margin-bottom: 1em;
 
     @media (min-width: 736px) and
       (max-width: 1024px)

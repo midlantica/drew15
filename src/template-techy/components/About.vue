@@ -15,7 +15,7 @@
   $breakThree: 530px;
 
   .about {
-    background: lighten($mango, 30);
+    background: $mango;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;

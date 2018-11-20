@@ -24,7 +24,8 @@
     @include font-smoothing(on);
     margin: 0em auto 1em;
     border-radius: .5em;
-    box-shadow: 0px 6px 0px transparentize($black, .75);
+    box-shadow: 0px 6px 0px transparentize($black, .75) !important;
+    // box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.25);
 
     .flag {
       width: 104px;
@@ -39,13 +40,13 @@
 
     p {
       color: lighten($grey, 15);
-      font-size: .9em;
+      font-size: .85em;
       font-weight: 400;
       margin: 1em 1em 0.7em 10.7em;
       padding: 0.9em 0 0 0;
 
       @media (max-width: $breakThou) {
-        //
+        margin: 0em 1em;
       }
 
       @media (max-width: $breakOne) {

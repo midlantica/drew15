@@ -121,7 +121,7 @@
   .VueCarousel.druCarousel {
     background: lightgrey;
     border: 1px solid transparentize($black, .85);
-    margin-bottom: 1em;
+    // margin-bottom: 1em;
 
     .VueCarousel-wrapper {
       background: lightgrey;

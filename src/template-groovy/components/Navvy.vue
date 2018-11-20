@@ -28,12 +28,12 @@
   $breakTwo: 630px;
 
   nav {
-    display: grid;
-    grid-template-columns: 88px auto;
-    grid-template-rows: auto;
-    grid-column-gap: 6px;
-    justify-items: start;
-    align-items: center;
+    // display: grid;
+    // grid-template-columns: 88px auto;
+    // grid-template-rows: auto;
+    // grid-column-gap: 6px;
+    // justify-items: start;
+    // align-items: center;
     // @include clearfix;
 
     a.drewhead {

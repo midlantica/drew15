@@ -17,9 +17,9 @@
   p {
     font-family: $font-copy;
     color: $grey;
-    font-size: 1rem;
+    font-size: 0.95rem;
     // font-weight: bold;
-    margin: 2em 2em 0.5em 3em;
+    margin: 0em 2.5em 0em 2em;
     line-height: calc(1.25em + 2vw);
     // line-height: 3.2em;
     letter-spacing: 0.04em;
@@ -37,7 +37,8 @@
     }
 
     @media (max-width: $breakThou) {
-      margin: 2.25em 1.5em 0.5em;
+      // margin: 2.25em 1.5em 0.5em;
+      margin: 0 1em;
       //
     }
 

@@ -1,21 +1,27 @@
 <template>
 
   <div>
+  
     <header>
       <Navvy/>
     </header>
 
-    <main>
-      <section>
+    <main class="mainGrid">
+      
+      <div class="copyArea">
         <HeadAndCopy/>
-        <Skills/>
-      </section>
+      </div>
 
-      <section>
+      <Skills/>
+
+      <div class="slides">
         <CarouselShow/>
-        <About/>
-        <Quotes/>
-      </section>
+      </div>
+
+      <About/>
+
+      <Quotes/>
+
     </main>
 
     <footer>
@@ -57,14 +63,13 @@
         class: 'bourbon'
       },
       style: [
-        { cssText: '.VueCarousel.druCarousel { box-shadow: 0 0 4px black, 0 3px 5px rgba(0, 0, 0, 0); min-height: 21vh; }', type: 'text/css' },
-        { cssText: '.about { box-shadow: 0 0 4px black, 0 3px 5px rgba(0, 0, 0, 0); }', type: 'text/css' }
+        { cssText: '.VueCarousel.druCarousel { box-shadow: 0 0 4px black, 0 3px 5px rgba(0, 0, 0, 0); min-height: 21vh; }', type: 'text/css' }
       ]
     }
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   @import '@/assets/css/main.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
@@ -73,66 +78,139 @@
   $breakTwo: 630px;
   $breakThree: 530px;
 
-  header,
+  header, 
   footer {
-    color: $ivory;
-    position: relative;
     @include shadow;
   }
 
-  main {
-    display: grid;  // <-- CONTENT GRID
+  .mainGrid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    box-shadow: 3px 5px 4px transparentize(black, 0.8),
-                3px 3px 5px transparentize(black, 0.2);
-    padding-top: 1em;
-    padding-bottom: .75em;
-    //
+    grid-gap: 1em;
+    margin: 1em 1em;
+
     @media (max-width: $breakThou) {
       grid-template-columns: 1fr;
-    }
-
-    > section {
-      //
-      &:nth-child(1) {
-        padding: 0 1em;
-
-        @media screen and (min-width: $breakThou) {
-          padding: 0em 1em 0em 1em;
-        }
-      }
-      &:nth-child(2) {
-        padding: 0 1em;
-
-        @media screen and (min-width: $breakThou) {
-          padding: 0em 1em 0em .5em;
-        }
-      }
-
-    }
-
-  }
-
-  .about p {
-    font-size: 0.8em;
-    font-family: "AmericanTypewriterStd-Med", Helvetica, Times, serif !important;
-    // color: red;
-
-    @media (max-width: $breakThou) {
-      font-size: 1.7vw;
+      grid-gap: 0em;
+      grid-row-gap: 1em;
+      // grid-column: 1 / 3;
+      // grid-row: 1;
     }
 
     @media (max-width: $breakOne) {
-      font-size: 2.05vw;
+      //
     }
 
     @media (max-width: $breakTwo) {
-      font-size: 2.35vw;
+      //
+    }
+  }
+
+  .copyArea {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+
+    @media (max-width: $breakThou) {
+      grid-column: 1 / 3;
+      grid-row: 1;
     }
 
-    @media (max-width: $breakThree) {
-      font-size: 2.85vw;
+    @media (max-width: $breakOne) {
+      grid-column: 1 / 3;
+      grid-row: 1;
     }
+
+    @media (max-width: $breakTwo) {
+      grid-column: 1 / 3;
+      grid-row: 1;
+    }
+  }
+  
+  .slides {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    // z-index: 10;
+
+    @media (max-width: $breakThou) {
+      grid-column: 1 / 3;
+      grid-row: 3;
+    }
+
+    @media (max-width: $breakOne) {
+      grid-column: 1 / 3;
+      grid-row: 3;
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-column: 1 / 3;
+      grid-row: 3;
+    }
+  }
+
+  .skillsGrid {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+
+    @media (max-width: $breakThou) {
+      grid-row: 2;
+    }
+
+    @media (max-width: $breakOne) {
+      grid-row: 2;
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-row: 2;
+    }
+  }
+
+  .about {
+    grid-column: 2 / 3;
+    grid-row: 2;
+
+    @media (max-width: $breakThou) {
+      grid-column: 1 / 3;
+      grid-row: 4;
+    }
+
+    @media (max-width: $breakOne) {
+      grid-column: 1 / 3;
+      grid-row: 4;
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-column: 1 / 3;
+      grid-row: 4;
+    }
+  }
+
+  .quoteBlock {
+    grid-column: 2 / 3;
+    grid-row: 3;
+
+    @media (max-width: $breakThou) {
+      grid-column: 1 / 3;
+      grid-row: 5;
+    }
+
+    @media (max-width: $breakOne) {
+      grid-column: 1 / 3;
+      grid-row: 5;
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-column: 1 / 3;
+      grid-row: 5;
+    }
+  }
+
+  .about {
+    grid-column: 2 / 3;
+
+    @media (max-width: $breakThou) {
+      grid-column: 1 / 3;
+    }
+
   }
 
 </style>

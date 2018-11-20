@@ -97,9 +97,10 @@
   // CORP
   .corp {
     background: #222;
-    background: url(/img/bg/black-parch-bg-1.jpg) repeat;
 
     .wrapper {
+      // background: url(/img/bg/black-parch-bg-1.jpg) repeat;
+      background: url(/img/bg/white_paper_patt-01.jpg) repeat;
       // background: url(/img/bg/Drew-punk-back.jpg) repeat;
 
       //

@@ -1,6 +1,7 @@
 <template>
 
   <div>
+    
     <header>
       <Navvy/>
     </header>

@@ -1,23 +1,33 @@
 <template>
 
-  <div class="mainGrid">
+  <div>
+    
     <header>
       <Navvy/>
     </header>
 
-    <HeadAndCopy/>
-    <div class="slides">
-      <CarouselShow/>
-    </div class="slides">  
-    <About/>
-    <Skills/>
+    <main class="mainGrid">
+
+      <div class="copyArea">
+        <HeadAndCopy/>
+      </div>
+
+      <div class="slides">
+        <CarouselShow/>
+      </div class="slides">
+
+      <About/>
+
+      <Skills/>
+
+    </main>
 
     <footer>
       <Footy/>
     </footer>
 
   </div>
-
+  
 </template>
 
 <script>
@@ -53,6 +63,7 @@
       },
       style: [
         { cssText: 'body.techy .VueCarousel.druCarousel { border: 2px solid #423BA0; min-height: 21vh; }', type: 'text/css' },
+        { cssText: '.about { background: #FFE268 !important; box-shadow: none !important; }', type: 'text/css' },
         { cssText: '.about p { font-family: Dosis, "Helvetica Neue", Arial, sans-serif !important; }', type: 'text/css' }
       ]
     }
@@ -92,17 +103,17 @@
 
     @media (max-width: $breakThou) {
       grid-column: 1 / 3;
-      grid-row: 2;
+      grid-row: 1;
     }
 
     @media (max-width: $breakOne) {
       grid-column: 1 / 3;
-      grid-row: 2;
+      grid-row: 1;
     }
 
     @media (max-width: $breakTwo) {
       grid-column: 1 / 3;
-      grid-row: 2;
+      grid-row: 1;
     }
   }
 
@@ -139,19 +150,19 @@
     @media (max-width: $breakThou) {
       grid-column: 1 / 3;
       grid-row: 5;
-      margin: 0 1em;
+      margin: 0 1em 1em;
     }
 
     @media (max-width: $breakOne) {
       grid-column: 1 / 3;
       grid-row: 5;
-      margin: 0 1em;
+      margin: 0 1em 1em;
     }
 
     @media (max-width: $breakTwo) {
       grid-column: 1 / 3;
       grid-row: 5;
-      margin: 0 1em;
+      margin: 0 1em 1em;
     }
   }
 

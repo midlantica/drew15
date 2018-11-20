@@ -71,7 +71,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    padding: 2em 2em 0;
+    padding: 1.5em 2em 1em;
     // justify-content: space-between;
     justify-content: center;
 

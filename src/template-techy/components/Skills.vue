@@ -57,7 +57,7 @@
 
   .skillsGrid {
     display: grid;
-    width: 98%;
+    width: 100%;
     flex-wrap: wrap;
     // justify-content: stretch;
     // justify-content: space-around;
@@ -74,9 +74,9 @@
     // background: beige;
     // margin-bottom: .5em;
     transition: .25s ease-in;
-    margin: 0 auto;
+    margin: 0.3em auto 1em;
 
-    @media (min-width: 726px) and (max-width: 1072px)
+    @media (min-width: 726px) and (max-width: 1024px)
     {
       grid-template-columns: repeat(6, minmax(auto, auto));
       grid-column-gap: 2.5em;
@@ -84,6 +84,7 @@
       // justify-content: stretch;
       // grid-column-gap: 0em;
       // background: lightblue;
+      margin: 0.3em auto 0em;
     }
 
     @media (min-device-width: 768px)

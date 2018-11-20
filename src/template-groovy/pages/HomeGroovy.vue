@@ -1,23 +1,29 @@
 <template>
 
-  <div class="mainGrid">
+  <div>
+    
     <header>
       <NavvyHead/>
     </header>
 
-    <div class="cols">
-      <HeadAndCopy/>
-    </div>
+    <main class="mainGrid">
 
-    <div class="cols">
-      <CarouselShow/>
+      <div class="copyArea">
+        <HeadAndCopy/>
+      </div>
+
+      <div class="slides">
+        <CarouselShow/>
+      </div>
+
       <About/>
-    </div>
 
-    <Skills/>
+      <Skills/>
+
+    </main>
 
     <footer>
-      <!-- <Navvy/> -->
+      <!-- <Quotes/> -->
     </footer>
 
   </div>
@@ -53,7 +59,7 @@
       },
       style: [
         { cssText: 'body.groovy .VueCarousel.druCarousel { box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.25); min-height: 21vh; }', type: 'text/css' },
-        { cssText: '.about { font-size: 1.1em !important; box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.25); }', type: 'text/css' }
+        { cssText: '.wrapper { background: #fffae4; }', type: 'text/css' }
       ]
     }
   }
@@ -71,26 +77,48 @@
   $breakThree: 530px;
 
   .mainGrid {
+    // width: 100%;
     display: grid;
     grid-template-columns: 7fr 6fr;
-    grid-template-rows: auto auto auto auto;
-    //                  1-2  2-3  3-4  4-5
-    grid-auto-flow: column;
-    background: $groovy-yellow-pale;
+    // grid-gap: 1em;
+    grid-row-gap: 1em;
+    // grid-template-rows: auto auto auto auto;
+    // grid-auto-flow: column;
+    margin: 0em 0em 1em;
+    width: 96.5%;
+    position: relative;
+    /* top: 0em; */
+    left: 1em;
 
+    @media (max-width: $breakThou) {
+      grid-template-columns: 1fr;
+      grid-gap: 0em;
+      grid-row-gap: 1em;
+      // grid-column: 1 / 3;
+      // grid-row: 1;
+    }
+
+    @media (max-width: $breakOne) {
+      //
+    }
+
+    @media (max-width: $breakTwo) {
+      //
+    }
   }
 
   header {
-    grid-column: 1 / 4;
-    grid-row: 1;
+    // grid-column: 1 / 4;
+    // grid-row: 1;
     color: $ivory;
     background: $groovy-red;
     height: 175px;
+    @include clearfix;
   }
 
   footer {
-    grid-column: 1 / 4;
-    grid-row: -1;
+    // grid-column: 1 / 4;
+    // grid-row: -1;
     // grid-row: 4;
     height: 160px;
     color: $ivory;
@@ -111,93 +139,123 @@
 
     @media (max-width: $breakThou) {
       // grid-column: span 1;
-      grid-row: 5;
+      // grid-row: 5;
     }
 
     @media (max-width: $break860) {
       // grid-column: span 1;
-      grid-row: 6;
+      // grid-row: 6;
     }
 
   }
 
-  .cols:nth-of-type(1) {
+  .about {
+    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.25);
+    background: $groovy-yellow;
+    border-radius: .75em;
+  }
+
+  .copyArea {
     grid-column: 1 / 2;
-    grid-row: 2;
-
-
-    @media (max-width: $breakThou) {
-      grid-column: 1 / 2;
-      grid-row: 2;
-    }
-
-    @media (max-width: $break860) {
-      grid-column: 1 / 4;
-      grid-row: 2;
-    }
-
-  }
-
-  .cols:nth-of-type(2) {
-    grid-column: 2 / 3;
     grid-row: 1 / 3;
-    z-index: 10;
-    padding: 1em 1em 0;
 
     @media (max-width: $breakThou) {
-      grid-column: 2 / 3;
-      grid-row: 2;
+      grid-column: 1 / 3;
+      grid-row: 1;
     }
 
-    @media (max-width: $break860) {
-      grid-column: 1 / 4;
+    @media (max-width: $breakOne) {
+      grid-column: 1 / 3;
+      grid-row: 1;
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-column: 1 / 3;
+      grid-row: 1;
+    }
+  }
+  
+  .slides {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    z-index: 10;
+    margin-top: -12em;
+
+    @media (max-width: $breakThou) {
+      grid-column: 1 / 3;
       grid-row: 3;
+      margin-top: initial;
     }
 
+    @media (max-width: $breakOne) {
+      grid-column: 1 / 3;
+      grid-row: 3;
+      margin-top: initial;
+    }
 
+    @media (max-width: $breakTwo) {
+      grid-column: 1 / 3;
+      grid-row: 3;
+      margin-top: initial;
+    }
   }
 
   .skillsGrid {
-    grid-column: 1 / 4;
+    grid-column: 1 / -1;
     grid-row: 3;
+    // align-items: center;
+    // margin: 0 auto 1em;
 
     @media (max-width: $breakThou) {
+      grid-row: 2;
+    }
+
+    @media (max-width: $breakOne) {
+      grid-row: 2;
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-row: 2;
+    }
+  }
+
+  .about {
+    grid-column: 2 / 3;
+    grid-row: 2;
+
+    @media (max-width: $breakThou) {
+      grid-column: 1 / 3;
       grid-row: 4;
     }
 
-    @media (max-width: $break860) {
-      grid-row: 5;
+    @media (max-width: $breakOne) {
+      grid-column: 1 / 3;
+      grid-row: 4;
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-column: 1 / 3;
+      grid-row: 4;
     }
   }
 
-  body.groovy .VueCarousel.druCarousel { 
-    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.25); 
-    min-height: 21vh;
-  }
+  .quoteBlock {
+    grid-column: 2 / 3;
+    grid-row: 3;
 
-  body.groovy .about {
-    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.25); 
-    
-    p {
-      font-size: 0.85em !important;
-      font-family: "AmericanTypewriterStd-Med", Helvetica, Times, serif !important;
-      // color: red !important;
+    @media (max-width: $breakThou) {
+      grid-column: 1 / 3;
+      grid-row: 5;
+    }
 
-      @media (max-width: $breakThou) {
-        font-size: 1.34vw !important;
-      }
+    @media (max-width: $breakOne) {
+      grid-column: 1 / 3;
+      grid-row: 5;
+    }
 
-      @media (max-width: $breakOne) {
-        font-size: 2.05vw !important;
-      }
-
-      @media (max-width: $breakTwo) {
-        font-size: 2.35vw !important;
-      }
-
-      @media (max-width: $breakThree) {
-        font-size: 2.85vw !important;
-      }
+    @media (max-width: $breakTwo) {
+      grid-column: 1 / 3;
+      grid-row: 5;
     }
   }
 
