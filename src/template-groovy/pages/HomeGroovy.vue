@@ -58,7 +58,6 @@
         class: 'groovy'
       },
       style: [
-        { cssText: 'body.groovy .VueCarousel.druCarousel { box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.25); min-height: 21vh; }', type: 'text/css' },
         { cssText: '.wrapper { background: #fffae4; }', type: 'text/css' }
       ]
     }

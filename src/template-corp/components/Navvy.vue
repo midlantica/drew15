@@ -172,7 +172,6 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    //
     margin-top: 0.2em;
     // z-index: 10;
     // text-shadow: 3px 0px 1px $black;
@@ -188,12 +187,14 @@
       margin-top: 0.4em;
       margin-top: 1.5em; 
       flex-direction: row;
+      // color: red !important;
     }
 
     @media (max-width: $breakThree) {
       margin-top: 1em;
       transition: .25s ease-in;
       flex-direction: row;
+      // color: red !important;
     }
 
     @media (max-width: 520px) {
@@ -211,6 +212,17 @@
       text-align: center;
       line-height: 1.25em;
       flex-grow: 1;
+      // color: red !important;
+
+      a {
+        // color: lighten($blue-dark, 10) !important;
+        border-bottom: 1px dotted lighten($blue-dark, 20);
+
+        &:hover {
+          color: darken($accent-red, 20) !important;
+          border-bottom: 1px dotted darken($accent-red, 20);
+        }
+      }
       // text-transform: uppercase;
       // text-transform: capitalize;
 
@@ -232,8 +244,8 @@
       }
 
       @media (max-width: $breakTwo) {
-        font-size: 1em !important;
-        letter-spacing: 0.09em !important;
+        font-size: 1.25em !important;
+        letter-spacing: 0.03em !important;
       }
 
       @media (max-width: $breakThree) {

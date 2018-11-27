@@ -36,7 +36,7 @@
 
     p {
       font-family: $font-light !important;
-      font-size: 0.8em;
+      font-size: 0.95em !important;
       letter-spacing: 0.02em;
       font-weight: 300;
       color: #666899;

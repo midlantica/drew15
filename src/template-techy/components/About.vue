@@ -66,32 +66,32 @@
 
     }
 
-    p {
-      font-family: $font !important;
-      color: lighten($grey, 15);
-      font-size: .85em;
-      line-height: 1.5em;
-      font-weight: 500;
-      letter-spacing: 0.05em;
-      flex-grow: 1;
+    // p {
+    //   font-family: $font !important;
+    //   color: lighten($grey, 15);
+    //   font-size: .85em;
+    //   line-height: 1.5em;
+    //   font-weight: 500;
+    //   letter-spacing: 0.05em;
+    //   flex-grow: 1;
 
-      @media (max-width: $breakThou) {
-        font-size: 2vw;
-      }
+    //   @media (max-width: $breakThou) {
+    //     font-size: 2vw;
+    //   }
 
-      @media (max-width: $breakOne) {
-        font-size: 2.25vw;
-      }
+    //   @media (max-width: $breakOne) {
+    //     font-size: 2.25vw;
+    //   }
 
-      @media (max-width: $breakTwo) {
-        font-size: 2.75vw;
-      }
+    //   @media (max-width: $breakTwo) {
+    //     font-size: 2.75vw;
+    //   }
 
-      @media (max-width: $breakThree) {
-        font-size: 3.25vw;
-      }
+    //   @media (max-width: $breakThree) {
+    //     font-size: 3.25vw;
+    //   }
 
-    }
+    // }
 
   }
 

@@ -63,7 +63,7 @@
         class: 'bourbon'
       },
       style: [
-        { cssText: '.VueCarousel.druCarousel { box-shadow: 0 0 4px black, 0 3px 5px rgba(0, 0, 0, 0); min-height: 21vh; }', type: 'text/css' }
+        { cssText: '.VueCarousel.druCarousel { min-height: ; }', type: 'text/css' }
       ]
     }
   }

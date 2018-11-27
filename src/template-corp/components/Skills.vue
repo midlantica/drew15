@@ -62,7 +62,7 @@
     justify-content: space-between;
     justify-items: center;
     //
-    margin: 0em auto 0;
+    // margin: 0em auto 0;
     align-items: center;
     grid-template-columns: repeat(6, minmax(auto, auto));
     grid-row-gap: 0.15em;
@@ -70,10 +70,18 @@
     // grid-column-gap: 1.5em;
     // background: beige;
     // margin-bottom: .75em;
-    transition: .25s ease-in;
+    // transition: .25s ease-in;
+    margin: 0 !important;
+
+    @media (max-width: 1024px) and 
+    (min-width: 726px) 
+    {
+      margin: 0 !important;
+    }
 
 
-    @media (min-width: 682px) and (max-width: 1024px)
+    @media (min-width: 682px) and 
+    (max-width: 1024px)
     {
       grid-template-columns: repeat(6, minmax(auto, auto));
       // grid-column-gap: 2.5em;
@@ -81,11 +89,12 @@
       // justify-content: stretch;
       // grid-column-gap: 0em;
       // background: lightblue;
+      margin: 0 !important;
     }
 
-    @media (min-device-width: 682px)
-    and (max-device-width: 1024px)
-    and (-webkit-min-device-pixel-ratio: 2)
+    @media (min-device-width: 682px) and 
+    (max-device-width: 1024px) and 
+    (-webkit-min-device-pixel-ratio: 2)
     {
       grid-template-columns: repeat(6, minmax(auto, auto));
       // justify-content: center;
@@ -93,10 +102,11 @@
       // grid-column-gap: 0em;
       // grid-column-gap: 0em;
       // background: rgba(246, 128, 97, .5); // pale orange
-
+      margin: 0 !important;
     }
 
-    @media (min-width: 414px) and (max-width: 682px)
+    @media (min-width: 414px) and 
+    (max-width: 682px)
     {
       grid-template-columns: repeat(4, minmax(auto, auto));
       grid-row-gap: 1.5em;
@@ -104,9 +114,11 @@
       // grid-row-gap: .75em;
       grid-row-gap: 1em;
       // background: aqua;
+      margin: 0 !important;
     }
 
-    @media (min-width: 0px) and (max-width: 414px)
+    @media (min-width: 0px) and 
+    (max-width: 414px)
     {
       grid-template-columns: repeat(3, minmax(auto, auto));
       // grid-row-gap: 1.5em;
@@ -115,6 +127,7 @@
       grid-row-gap: .75em;
       justify-content: space-between;
       justify-items: center;
+      margin: 0 !important;
     }
 
     // @media (max-width: 310px)

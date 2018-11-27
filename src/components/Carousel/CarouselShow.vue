@@ -39,6 +39,8 @@
       const imgPath = 'img/portfolio/jpg/'
       setTimeout(() => {
         this.images = [
+          imgPath + 'TN-DOC_01.jpg',
+          imgPath + 'TN-DOC_02.jpg',
           imgPath + 'CivicInc_Bridge_01.jpg',
           imgPath + 'CivicInc_Bridge_02.jpg',
           imgPath + 'CivicInc_Bridge_03.jpg',
@@ -105,7 +107,7 @@
           imgPath + 'newsletter_hero1.jpg',
           imgPath + 'newsletter_hero2.jpg',
           imgPath + 'prisonride_home.jpg',
-          imgPath + 'prisonride_profile.jpg',
+          // imgPath + 'prisonride_profile.jpg',
           imgPath + 'valentina_website.jpg',
           imgPath + 'celebrity_cruise_lines.jpg'
         ]
@@ -118,10 +120,71 @@
   // @import '@/assets/css/main.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
+  $breakThou: 1024px;
+  $breakOne: 840px;
+  $breakTwo: 630px;
+  $breakThree: 430px;
+
+  // BOURBON BACKGROUND
+  body.bourbon .VueCarousel.druCarousel {
+    background: darken($grey, 5);
+    box-shadow: 0 0 4px black, 0 3px 5px rgba(0, 0, 0, 0);
+    
+    @media (min-width: $breakThou) {
+      height: 358px;
+      min-height: 358px;
+    }
+  }
+
+  // GROOVY BACKGROUND
+  body.groovy .VueCarousel.druCarousel {
+    background: darken($grey, 5);
+    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.25);
+    
+    @media (min-width: $breakThou) {
+      height: 333px;
+      min-height: 333px;
+    }
+  }
+
+  // TECHY BACKGROUND
+  body.techy .VueCarousel.druCarousel {
+    background: darken($grey, 5);
+    border: 4px solid #423BA0;
+    
+    @media (min-width: $breakThou) {
+      height: 325px;
+      min-height: 325px;
+    }
+  }
+
+  // CORP BACKGROUND
+  body.corp .VueCarousel.druCarousel {
+    background: darken($grey, 5);
+    
+    @media (min-width: $breakThou) {
+      height: 329px;
+      min-height: 329px;
+    }
+  }
+
+  // PUNK BACKGROUND
+  body.punk .VueCarousel.druCarousel {
+    background: darken($grey, 5);
+    margin-bottom: 1em ;
+    
+    @media (min-width: $breakThou) {
+      height: 360px;
+      min-height: 360px;
+    }
+  }
+
+
   .VueCarousel.druCarousel {
     background: lightgrey;
     border: 1px solid transparentize($black, .85);
     // margin-bottom: 1em;
+
 
     .VueCarousel-wrapper {
       background: lightgrey;
@@ -133,7 +196,7 @@
     }
 
     img {
-      width: calc(100%);
+      width: calc(100%) !important;
       height: auto;
       background-size: cover;
       margin: 0px;

@@ -37,7 +37,7 @@
   import HeadAndCopy from '../components/HeadAndCopy'
   import Skills from '../components/Skills'
   import About from '@/components/About'
-  import Quotes from '../components/Quotes/QuoteBasic'
+  // import Quotes from '../components/Quotes/QuoteBasic'
   import CarouselShow from '@/components/Carousel/CarouselShow'
 
   export default {
@@ -47,8 +47,8 @@
       HeadAndCopy,
       CarouselShow,
       About,
-      Skills,
-      Quotes
+      Skills
+      // Quotes
     },
     name: 'HomePunk',
     metaInfo: {
@@ -60,7 +60,8 @@
         class: 'punk'
       },
       style: [
-        { cssText: 'body.punk .VueCarousel.druCarousel { box-shadow: 0px 0px 0px 4px #333; min-height: 21vh; }', type: 'text/css' }
+        { cssText: 'body.punk .VueCarousel.druCarousel { box-shadow: 0px 0px 0px 4px #333; min-height: 21vh; }', type: 'text/css' },
+        { cssText: '.about p { font-family: Poppins, "Helvetica Neue", Arial, sans-serif !important; font-size: .9em !important; }', type: 'text/css' }
       ]
     }
   }

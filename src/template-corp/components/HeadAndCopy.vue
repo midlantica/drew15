@@ -49,7 +49,7 @@
   }
 
   h2 {
-    font-family: $font;
+    font-family: $font-head;
     font-weight: 300;
     color: transparentize($blue-dark, .15);
     text-transform: lowercase;
@@ -86,21 +86,22 @@
 
   p {
     // color: transparentize($blue-dark, .0);
+    font-family: cormorantGaramond-Semi-Bold, "Times New Roman", Times, serif !important;
     color: transparentize($blue-dark, .0);
     font-family: $font-copy;
     font-weight: 100;
-    font-size: 1.1em;
+    font-size: 1.15em;
     // font-size: calc(1rem + .2vw);
-    line-height: 2.635em;
-    margin: 1.1em 2.5em 1em 1.5em;
+    line-height: 2.5em;
+    margin: 1.1em 2.25em 1em 1.5em;
     // line-height: 2.6em;
     letter-spacing: 0.06em;
     // word-spacing: .1em;
 
     @media (max-width: $breakOne) {
-      font-size: 1em;
-      line-height: 2.935em;
-      margin: 1em 1em;
+      font-size: 1.2em;
+      line-height: 2.75em;
+      margin: 1em .75em;
     }
   }
 

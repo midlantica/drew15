@@ -62,7 +62,6 @@
         class: 'techy'
       },
       style: [
-        { cssText: 'body.techy .VueCarousel.druCarousel { border: 2px solid #423BA0; min-height: 21vh; }', type: 'text/css' },
         { cssText: '.about { background: #FFE268 !important; box-shadow: none !important; }', type: 'text/css' },
         { cssText: '.about p { font-family: Dosis, "Helvetica Neue", Arial, sans-serif !important; }', type: 'text/css' }
       ]

@@ -1,6 +1,5 @@
 <template>
   <div class="tabs">
-    <!-- <a href="bourbon" class="bourbon">Bourbon</a> -->
     <router-link to="Bourbon" class="bourbon">Bourbon</router-link>
     <router-link to="Groovy" class="groovy">Groovy</router-link>
     <router-link to="Techy" class="techy">Techy</router-link>
