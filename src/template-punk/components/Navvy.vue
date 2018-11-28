@@ -58,12 +58,16 @@
     
     .greenBar {
       display: block;
+      width: 1024px;
+      max-width: 1024px;
       z-index: 0;
       position: absolute;
       top: 0;
-      left: 0;
-      width: 100%;
+      left: 50%;
       height: 5em;
+      align-self: center;
+      transform: translate(-50%, 0%);
+      //
       filter: saturate(2.5);
       background: rgba(0, 128, 0, 0.25);
       // background: transparentize(green, .5);

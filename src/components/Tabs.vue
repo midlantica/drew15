@@ -43,6 +43,7 @@
 
       &:hover {
         color: transparentize($ivory, 0);
+        transition: .2s ease-in;
       }
 
     }
@@ -76,7 +77,7 @@
     // );
 
     &:hover {
-      color: $ivory;
+      color: $black;
       text-shadow: 0px 0px 1px black;
       // border-bottom: 1px solid $ivory;
       background: linear-gradient(
@@ -135,8 +136,8 @@
     > a.groovy {
       background: #333;
       &:hover {
-        color: $ivory;
-        text-shadow: 0px 0px 1px black;
+        color: $black;
+        // text-shadow: 0px 0px 1px black;
         background: darken(#ff3940, 30);
         background: linear-gradient(
           // 0 - 10%

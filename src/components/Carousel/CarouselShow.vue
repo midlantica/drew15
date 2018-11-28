@@ -4,7 +4,7 @@
     :navigationEnabled="true"
     :paginationEnabled="false"
     :autoplay="true"
-    :autoplayTimeout="2500"
+    :autoplayTimeout="3000"
     :autoplayHoverPause="true"
     :loop="true"
     :navigationClickTargetSize="0"
@@ -39,6 +39,7 @@
       const imgPath = 'img/portfolio/jpg/'
       setTimeout(() => {
         this.images = [
+          imgPath + 'base.jpg',
           imgPath + 'TN-DOC_01.jpg',
           imgPath + 'TN-DOC_02.jpg',
           imgPath + 'CivicInc_Bridge_01.jpg',
@@ -171,7 +172,7 @@
   // PUNK BACKGROUND
   body.punk .VueCarousel.druCarousel {
     background: darken($grey, 5);
-    margin-bottom: 1em ;
+    margin-bottom: 1em;
     
     @media (min-width: $breakThou) {
       height: 360px;
@@ -181,13 +182,13 @@
 
 
   .VueCarousel.druCarousel {
-    background: lightgrey;
+    background: darken($grey, 5);
     border: 1px solid transparentize($black, .85);
     // margin-bottom: 1em;
 
 
     .VueCarousel-wrapper {
-      background: lightgrey;
+      // background: lightgrey;
 
       .VueCarousel-inner {
         margin-bottom: -2px;

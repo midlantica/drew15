@@ -27,7 +27,7 @@
     // position: relative;
     // top: 210px;
     margin-top: 12em;
-    background: transparentize(white, .52);
+    // background: transparentize(white, .52);
     transform: rotate(-1deg);
 
     @media (max-width: $breakOne) {
@@ -41,18 +41,19 @@
   }
 
   h2 {
-    color: white;
+    color: $black;
     font-size: 1.5em;
     font-family: Poppins !important;
     font-weight: 400;
     font-style: normal;
     letter-spacing: .02em;
-    transform: rotate(1deg);
-    display: block;
+    transform: rotate(-1.25deg);
+    display: inline-block;
     text-transform: lowercase;
     position: relative;
-    top: -0.6em;
-    left: 1.1em;
+    top: -0.3em;
+    left: 1em;
+    background: #FBC83F;
 
     @media (max-width: $breakTwo) {
       display: inline-block;
@@ -76,14 +77,15 @@
     font-size: calc(0.8rem + .75vw);
     // font-size: 0.9rem;
     color: $grey;
-    margin: 1em 2em 0em;
+    margin: 1em 1em 0em;
     line-height: calc(2.2em + .5vw);
     // line-height: 2.6em;
     letter-spacing: 0.05em;
     // text-shadow: 0px 0px 0px;
-    display: block;
+    display: inline-block;
     position: relative;
     top: -1.1em;
+    background: #FBC83F;
     // left: 0.8em;
 
     @media (min-width: $breakOne) {

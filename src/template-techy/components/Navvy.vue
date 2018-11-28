@@ -18,7 +18,9 @@
 
       <div class="bar">
         <div class="contact">
-          <p class='email'><a href="mailto:druharper@gmail.com">druharper@gmail.com</a></p>
+          <p class='email'>
+            <a href="mailto:druharper@gmail.com">druharper@gmail.com</a>
+          </p>
           <p class='resume'>Resume: 
             <a href="img/resume/drew_harper_resume_portfolio.pdf">Lg</a>/<a href="img/resume/drew_harper_resume_portfolio_short.docx">Sm</a>
           </p>
@@ -100,7 +102,7 @@
         display: grid;
         grid-template-columns: 2fr 4fr 7fr;
         // grid-template-rows: auto;
-        grid-gap: 1em;
+        grid-gap: 2em;
         align-items: center;
         margin: 0 auto;
         //
@@ -191,10 +193,7 @@
             height: 19vw;
           }
 
-
-
         }
-
         .mastDrew {
           // width: 17em;
           // height: 12vw;
@@ -255,6 +254,7 @@
             margin-top: 0;
           }
         }
+
       }
       
     }

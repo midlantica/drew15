@@ -47,13 +47,13 @@
     @media (max-width: $breakThou) {
       font-size: 0.9rem;
       line-height: 2.6em;
-      margin: 1.5em 2em 0;
+      margin: 1.5em 1.5em 0;
     }
 
     @media (max-width: $breakOne) {
       font-size: 0.9rem;
       line-height: 2.6em;
-      margin: 1.5em 2em 0;
+      margin: 1.5em 1.5em 0;
     }
 
     @media (max-width: $breakTwo) {

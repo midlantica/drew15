@@ -21,7 +21,7 @@
     <Skills/>
 
     <footer>
-      <Quotes/>
+      <!-- <Quotes/> -->
     </footer>
 
   </div>
