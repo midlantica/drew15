@@ -178,7 +178,7 @@
     grid-column: 2 / 3;
     grid-row: 1;
     z-index: 10;
-    margin-top: -12em;
+    margin-top: -10em;
 
     @media (max-width: $breakThou) {
       grid-column: 1 / 3;

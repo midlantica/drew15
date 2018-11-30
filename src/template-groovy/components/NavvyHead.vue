@@ -1,19 +1,19 @@
 <template>
   <nav>
 
-    <div class="groovyCircle">
-      <router-link to="/Groovy/Extras" class="drewhead"/>
-    </div>
+    <div class="gridMast">
 
-    <div class="headyStuff">
+      <div class="groovyCircle">
+        <router-link to="/Groovy/Extras" class="drewhead"/>
+      </div>
 
-      <a href="/" class="DHmast">
+      <a href="/" class="drewHarperSVG">
         <mastDrew class="svgArt mastDrew" />
         <mastHarper class="svgArt mastHarper" />
       </a>
-
+     
       <div class="jobDesc">
-        <h2>ui/ux designer + front&nbsp;end&nbsp;dev</h2>
+        <h2>ui/ux designer + front&#8209;end&nbsp;dev</h2>
       </div>
 
       <div class="contact">
@@ -57,150 +57,138 @@
     // flex-wrap: wrap;
     // justify-content: center;
     // align-items: center;
-    padding: .5em 1.25em;
+    // padding: .5em 1.25em;
   }
 
-  nav .groovyCircle {
-    width: 210px;
-    height: 210px;
-    box-shadow: 8px 6px 0px rgba(37, 37, 37, .25);
-    border-radius: 10em;
-    position: relative;
-    top: -2em;
-    left: -4em;
-    float: left;
-    z-index: 5;
-    //
-    background-image: radial-gradient(
-      // 0 - 25%
-      $groovy-aqua 0%,
-      $groovy-aqua 35%,
-      // 25% - 50%
-      $groovy-yellow 35%,
-      $groovy-yellow 47%,
-      // 50% - 75%
-      $groovy-orange 47%,
-      $groovy-orange 59%,
-      // 75% - 100%
-      $groovy-red 59%,
-      $groovy-red 100%
-    );
-    clip-path: polygon(
-      21% 0%, 100% 0%, 110% 50%,
-      100% 100%, 21% 110%
-    );
-
-    a.drewhead {
-      background-image: url(/img/drew_mug.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 98px;
-      height: 119px;
-      display: block;
-      position: relative;
-      top: 2.8em;
-      left: 3.5em;
-      // background-position: 0px 0px;
-    }
-  }
-
-  nav .headyStuff {
-    // display: block;
-    width: 36%;
-    position: relative;
-    left: -3em;
-    float: left;
-    margin: 1.5em -3em 0em 0em;
-    // width: auto;
+  nav .gridMast {
+    display: grid;
+    width: 53%;
+    grid-template-columns: auto auto;
+    // grid-template-columns: 1fr 8fr;
+    // grid-template-rows: 2fr 1fr 1fr;
+    grid-column-gap: 1em;
+    // grid-row-gap: 1em;
+    // justify-content: left;
+    // align-self: end;
+    // align-items: center;
+    // margin: 0 auto;
     // border: 2px dashed blue;
+    margin-bottom: 1em;
 
     @media (max-width: $breakThou) {
-      position: initial;
-      float: initial;
-      left: 0em;
-      justify-content: center;
-      width: 80% !important;
-      // float: initial;
-      // width: 100%;
-      // margin-top: 1em;
+      width: 100%;
+      grid-template-columns: 2fr 5fr 4fr;
       // background: aqua;
-      grid-column-gap: 1em;
+      // grid-column-gap: 1em;
+      // margin-left: -16em;
     }
 
     @media (max-width: $breakOne) {
-      position: initial;
-      float: initial;
-      left: 0em;
-      justify-content: left;
-      width: 100% !important;
-      // float: initial;
-      // width: 100%;
-      // margin-top: 1em;
-      // background: aqua;
-    }
-
-    // @media (max-width: 1000px) {
-    //   // width: 50vw;
-    //   width: 80%;
-    //   margin-top: 1em;
-    //   // background: lightgreen;
-    // }
-
-    @media (max-width: $breakOne) {
+      grid-template-columns: 1fr 3fr;
       // width: 50vw;
-      width: 80%;
-      margin-top: 1.5em;
+      // width: 100%;
+      margin-top: 0em;
       // background: orange;
+      // margin-left: -50em;
+      // border: 1px green solid;
+      // width: 80%;
+      // margin-left: 9em;
     }
-
-    // @media (max-width: 700px) {
-    //   // width: 50vw;
-    //   width: 80%;
-    //   margin-top: 2em;
-    //   // background: orange;
-    // }
 
     @media (max-width: $breakTwo) {
-      margin-top: 2.5em;
-      width: 80%;
+      margin-top: .5em;
+      // width: 80%;
       // background: orange;
     }
 
-    // @media (max-width: 600px) {
-    //   // width: 50vw;
-    //   width: 80%;
-    //   margin-top: 3em;
-    //   // background: orange;
-    // }
-
-    .DHmast {
-      display: grid;
-      grid-template-columns: 4fr 6fr;
-      // grid-template-rows: auto;
-      // grid-gap: 1em;
-      align-items: center;
-      margin: 0 auto;
-      grid-column-gap: 1.5em;
+    .groovyCircle {
+      width: 210px;
+      height: 210px;
+      box-shadow: 8px 6px 0px rgba(37, 37, 37, .25);
+      border-radius: 10em;
+      position: relative;
+      top: -2em;
+      left: -2.7em;
+      z-index: 5;
+      grid-row: 1 / 3;
+      margin-right: -3em;
+      margin-bottom: -5.3em;
       //
+      background-image: radial-gradient(
+        // 0 - 25%
+        $groovy-aqua 0%,
+        $groovy-aqua 35%,
+        // 25% - 50%
+        $groovy-yellow 35%,
+        $groovy-yellow 47%,
+        // 50% - 75%
+        $groovy-orange 47%,
+        $groovy-orange 59%,
+        // 75% - 100%
+        $groovy-red 59%,
+        $groovy-red 100%
+      );
+      clip-path: polygon(
+        21% 0%, 100% 0%, 110% 50%,
+        100% 100%, 21% 110%
+      );
 
       @media (max-width: $breakThou) {
-        grid-template-columns: auto;
-        justify-content: center;
-        justify-items: center;
-        grid-gap: 1em;
-        // grid-column-gap: 1.5em;
+        margin-bottom: -2.4em;
+        margin-right: -2em;
       }
 
       @media (max-width: $breakOne) {
-        //
+        margin-bottom: -4.9em;
+        margin-right: -2em;
+      }
+
+      a.drewhead {
+        background-image: url(/img/drew_mug.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 98px;
+        height: 119px;
+        display: block;
+        position: relative;
+        top: 2.8em;
+        left: 3.5em;
+        // background-position: 0px 0px;
+      }
+    }
+
+    .drewHarperSVG {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      // justify-content: flex-start;
+      // align-items: center;
+      align-items: flex-end;
+      // align-content: center;
+      // align-content: flex-start;
+      flex-grow: 1;
+
+      @media (max-width: $breakThou) {
+        // grid-template-columns: auto;
+        // justify-content: left;
+        // justify-items: center;
+        // grid-gap: 1em;
+        // grid-column-gap: 1.5em;
+        grid-row: 1 / 3; 
+      }
+
+      @media (max-width: $breakOne) {
+        grid-row: 1; 
+        align-self: self-end;
       } 
 
       @media (max-width: $breakTwo) {
-        //
+        grid-row: 1;
+        grid-column: 2 / 3;
       }
 
       @media (max-width: $breakThree) {
-        //
+        grid-row: 1;
       }
 
       .svgArt {
@@ -211,46 +199,35 @@
         // flex-grow: 1;
 
         @media (max-width: $breakThou) {
-          height: 8vw;
+          height: 6vw;
+          align-self: center;
         }
         @media (max-width: $breakOne) {
-          height: 8vw;
+          // height: 6.8vw;
+          height: 7.6vw;
+
         }
         @media (max-width: $breakTwo) {
-          height: 11vw;
+          height: 6vw;
         }
         @media (max-width: $breakThree) {
-          height: 12vw;
+          height: 7vw;
         }
 
       }
       .mastDrew {
-        // width: 17em;
-        // height: 12vw;
-        // margin-top: -1.5em; 
-        grid-column: 1 / 2; 
-        // grid-row: 1 / 3;
+        margin-right: 1em;
 
         @media (max-width: $breakThou) {
-          grid-column: 1 / 2 ; 
-          // grid-row: 1 / 1;
-          // align-self: end;
-          // margin-bottom: -1em;
-          // justify-self: center;
-          // display: block;
+          //
         }
 
         @media (max-width: $breakOne) {
-          // width: 45vw;
-          // height: 17vh;
-          // margin-top: 1em;
+          //
         }
 
         @media (max-width: $breakTwo) {
-          // width: 60vw;
-          // height: 17vh;
-          // margin-top: 1em;
-          // order: 1;
+          //
         }
       }
 
@@ -260,17 +237,19 @@
         // transform: rotate(1deg);
         // margin-top: -0.6em;
         // margin-left: 2em;
-        display: initial;
+        // display: initial;
         // float: initial;
-        grid-column: 2 / 3; 
+        // grid-column: 2 / 3; 
         // grid-row: 1 / 3;
 
         @media (max-width: $breakThou) {
-          grid-column: 3 / 4; 
+          // grid-column: 3 / 4; 
           // grid-row: 2 / 3;
         }
 
         @media (max-width: $breakOne) {
+          // grid-column: 1 / 3; 
+          // grid-row: 2;
           // width: 45vw;
           // height: 17vh;
           // margin-top: 1em;
@@ -280,8 +259,8 @@
           // width: 86vw;
           // height: 20vh;
           // margin-top: -1.5em;
-          margin-left: 0;
-          margin-top: 0;
+          // margin-left: 0;
+          // margin-top: 0;
         }
       }
 
@@ -289,12 +268,107 @@
 
   }
 
-  nav .headyStuff .contact {
-    background: none;
+  nav .gridMast .jobDesc {
+    grid-column: 2 / 3;
+    align-self: center;
+    font-size: 1.0em;
 
     @media (max-width: $breakThou) {
-      margin: 0 auto;
+      margin: 1em 0em;
       text-align: center;
+      grid-column: 3 / 4;
+      grid-row: 1;
+      align-self: self-end;
+    }
+
+    @media (max-width: $breakOne) {
+      margin: 0em 0em;
+      grid-row: 2;
+      grid-column: 2 / 3;
+      align-self: center;
+    }
+
+    @media (max-width: $breakTwo) {
+      //
+
+      &:nth-child(1) {
+        //
+      }
+
+      &:nth-child(2) {
+        //
+      }
+    }
+
+    h2 {
+      margin: 0;
+      font-family: Dosis;
+      font-weight: 400;
+      color: $ivory;
+      text-transform: lowercase;
+      font-size: 1.45em;
+      line-height: 0.5em;
+      letter-spacing: .03em;
+
+      &:nth-child(1) {
+        //
+      }
+
+      &:nth-child(2) {
+        // font-size: 1.75em;
+      }
+
+      @media (max-width: $breakThou) {
+        font-size: 2.2vw;
+        // margin-top: -3px;
+        line-height: 0;
+
+        &:nth-child(1) {
+          //
+        }
+
+        &:nth-child(2) {
+          margin-left: .25em !important;
+        }
+      }
+
+      @media (max-width: $breakOne) {
+        font-size: 1.35em;
+        line-height: 1.2em;
+
+        &:nth-child(1) {
+          //
+        }
+
+        &:nth-child(2) {
+          margin-left: .25em !important;
+        }
+      }
+
+      @media (max-width: $breakTwo) {
+        // font-size: 1.25em !important;
+      }
+
+    }
+  }
+
+
+  nav .gridMast .contact {
+    grid-column: 2 / 3;
+    align-self: start;
+    font-size: 1.0em;
+
+    @media (max-width: $breakThou) {
+      // margin: 0 auto;
+      text-align: start;
+      grid-column: 3 / 4;
+      grid-row: 2;
+      align-self: self-start;
+    }
+
+    @media (max-width: $breakOne) {
+      grid-row: 3;
+      grid-column: 2 / 3;
     }
 
     p {
@@ -330,7 +404,7 @@
       }
 
       @media (max-width: $breakThou) {
-        font-size: 2.125vw;
+        font-size: 1.79vw;
         line-height: 0.5em;
         text-align: center;
         margin: 0 auto;
@@ -338,94 +412,19 @@
       }
 
       @media (max-width: $breakOne) {
-        font-size: 2.125vw;
+        font-size: 2.3vw;
         text-align: center;
         margin: 0 auto;
         // background: orange;
+
+      &:nth-child(2) {
+        margin: 0em;
+      }
+
       }
     }
   }
 
-  nav .jobDesc {
-    margin: 1em 0em;
-    // margin: -2em 0em 1em 12em;
-    text-align: center;
-    // margin-top: -1em;
-    // @include clearfix;
-
-    @media (max-width: $breakThou) {
-      margin: 1em 0em;
-      text-align: center;
-    }
-
-    @media (max-width: $breakOne) {
-      margin: 1em 0em;
-    }
-
-    @media (max-width: $breakTwo) {
-      //
-
-      &:nth-child(1) {
-        //
-      }
-
-      &:nth-child(2) {
-        //
-      }
-    }
-
-    h2 {
-      margin: 0;
-      font-family: Dosis;
-      font-weight: 400;
-      color: $ivory;
-      text-transform: lowercase;
-      font-size: 1.45em;
-      line-height: 0.5em;
-      letter-spacing: .03em;
-
-      &:nth-child(1) {
-        //
-      }
-
-      &:nth-child(2) {
-        // font-size: 1.75em;
-      }
-
-      @media (max-width: $breakThou) {
-        display: inline;
-        font-size: 1.85em !important;
-        margin-top: -3px;
-
-        &:nth-child(1) {
-          //
-        }
-
-        &:nth-child(2) {
-          margin-left: .25em !important;
-        }
-      }
-
-      @media (max-width: $breakOne) {
-        display: inline;
-        font-size: 1.85em !important;
-        margin-top: -3px;
-
-        &:nth-child(1) {
-          //
-        }
-
-        &:nth-child(2) {
-          margin-left: .25em !important;
-        }
-      }
-
-      @media (max-width: $breakTwo) {
-        // font-size: 1.25em !important;
-      }
-
-    }
-  }
 
 
 
