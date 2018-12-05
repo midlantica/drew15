@@ -36,28 +36,33 @@
   // }
 
   p {
-    font-family: $font-copy !important;
-    font-size: 1.2rem !important;
-    line-height: 2.5em !important;
+    font-family: $font-copy;
+    font-size: 1.2rem;
+    line-height: 2.5em;
     // color: $grey;
     color: transparentize($blueTech, .0);
     letter-spacing: 0.06em;
     margin: .25em 2.25em 0em;
 
     @media (max-width: $breakThou) {
-      font-size: 0.9rem;
-      line-height: 2.6em;
-      margin: 1.5em 1.5em 0;
+      font-size: 1.3rem;
+      line-height: 2.2em;
+      margin: 1em 1.5em 0;
+      letter-spacing: 0.05em;
     }
 
     @media (max-width: $breakOne) {
-      font-size: 0.9rem;
-      line-height: 2.6em;
-      margin: 1.5em 1.5em 0;
+      // font-size: 1rem;
+      // line-height: 2.2em;
+      // margin: 1.5em .5em 0;
+      // letter-spacing: 0.00em;
     }
 
     @media (max-width: $breakTwo) {
-      //
+      font-size: 1.2rem;
+      line-height: 2em;
+      margin: 1em 1.25em 0;
+      letter-spacing: 0.01em;
     }
   }
 

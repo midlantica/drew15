@@ -49,59 +49,23 @@
 </script>
 
 <style lang="scss" scoped>
-  // @import '@/assets/css/main.scss';
+  @import '@/assets/css/main.scss';
   @import '@/template-groovy/assets/css/groovy-main.scss';
-
-  $BreakOne: 1024px;
-  $BreakTwo: 860px;
 
   .skillsGrid {
     display: grid;
-    // width: 100%;
-    // flex-wrap: wrap;
-    // justify-content: stretch;
-    // justify-content: space-around;
-    // justify-content: space-between;
+    width: 100%;
     justify-content: space-between;
     justify-items: center;
     //
-    // margin: 0.25em auto 1em;
     align-items: center;
     grid-template-columns: repeat(12, minmax(auto, auto));
     grid-row-gap: 0em;
     grid-column-gap: 0em;
-    // grid-column-gap: 1.5em;
-    // background: beige;
-    // margin-bottom: .5em;
     transition: .25s ease-in;
     margin: 0 -1em 0 0em;
 
-
-    // @media (min-width: 736px) and
-    //   (max-width: 1024px)
-    // {
-    //   grid-template-columns: repeat(12, minmax(auto, auto));
-    //   grid-column-gap: 0em;
-    //   grid-row-gap: 0em;
-    //   // justify-content: stretch;
-    //   // grid-column-gap: 0em;
-    //   // background: lightblue;
-    // }
-
-    // @media (min-device-width: 768px)
-    //    and (max-device-width: 1024px)
-    //    and (-webkit-min-device-pixel-ratio: 2)
-    // {
-    //   grid-template-columns: repeat(6, minmax(auto, auto));
-    //   // justify-content: center;
-    //   // grid-row-gap: 1.5em;
-    //   // grid-column-gap: 0em;
-    //   // grid-column-gap: 0em;
-    //   // background: rgba(246, 128, 97, .5); // pale orange
-
-    // }
-
-    @media (min-width: 485px) and (max-width: $BreakOne)
+    @media (min-width: 485px) and (max-width: $breakOne)
     {
       // width: 95%;
       grid-template-columns: repeat(6, minmax(auto, auto));
@@ -133,7 +97,7 @@
       height: 60px;
       // scale
 
-      @media (min-width: 485px) and (max-width: $BreakOne)
+      @media (min-width: 485px) and (max-width: $breakOne)
       {
         // width: 146px;
         // height: 60px;

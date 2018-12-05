@@ -23,6 +23,7 @@
 </template>
 
 <script>
+  // import Spinner from '../img/spinners/AndroidLoading.gif'
   // IN PLUGINS <<<
   import { Carousel, Slide } from 'vue-carousel'
   export default {
@@ -118,13 +119,8 @@
 </script>
 
 <style lang="scss">
-  // @import '@/assets/css/main.scss';
+  @import '@/assets/css/main.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
-
-  $breakThou: 1024px;
-  $breakOne: 840px;
-  $breakTwo: 630px;
-  $breakThree: 430px;
 
   // BOURBON BACKGROUND
   body.bourbon .VueCarousel.druCarousel {
@@ -143,8 +139,8 @@
     box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.25);
     
     @media (min-width: $breakThou) {
-      height: 333px;
-      min-height: 333px;
+      height: 336px;
+      min-height: 336px;
     }
   }
 

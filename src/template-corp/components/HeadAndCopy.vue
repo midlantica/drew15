@@ -99,9 +99,17 @@
     // word-spacing: .1em;
 
     @media (max-width: $breakOne) {
-      font-size: 1.2em;
-      line-height: 2.75em;
-      margin: 1em .75em;
+      font-size: 1.3em;
+      line-height: 2.25em;
+      margin: 1em .5em;
+      letter-spacing: 0.05em;
+    }
+
+    @media (max-width: $breakTwo) {
+      font-size: 1.3em;
+      line-height: 1.95em;
+      margin: 1em .5em;
+      letter-spacing: 0.02em;
     }
   }
 

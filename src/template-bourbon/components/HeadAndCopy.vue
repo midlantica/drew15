@@ -17,6 +17,11 @@
   // @import '@/template-bourbon/assets/css/_fonts.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
+  $breakThou: 1024px;
+  $breakOne: 840px;
+  $breakTwo: 630px;
+  $breakThree: 430px;
+
   .headBlock {
     display: grid;
     grid-template-columns: 88px auto;
@@ -56,15 +61,15 @@
 
   p {
     font-family: $font-copy !important;
-    font-size: calc(0.95rem + .75vw);
+    font-size: calc(0.85rem + .75vw);
     // font-size: 0.9rem;
     color: $grey;
-    margin: 1em 1em 0em 1em;
-    line-height: calc(2.4em + .5vw);
+    margin: 1em 0.5em 0em;
+    line-height: calc(2.2em + .5vw);
     // line-height: 2.6em;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.03em;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $breakThou) {
       font-size: 0.95rem;
       line-height: 2.7em;
       // line-height: calc(1.9em + .6vw);

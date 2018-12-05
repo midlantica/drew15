@@ -25,6 +25,7 @@
   @import '@/assets/css/main.scss';
   @import 'assets/css/vendor/html5Boilerplate.css';
   
+  $breakThou: 1024px;
   $breakOne: 840px;
   $breakTwo: 630px;
   $breakThree: 430px;
@@ -53,11 +54,36 @@
         // background-size: 110% 50%;
       }
 
+
       //
       header, footer {
         background: url(./template-bourbon/assets/img/bg/bg_bag_dk.jpg) repeat;
       }
+
     }
+
+    .aboutBox > p { 
+      font-family: "AmericanTypewriterStd-Med" !important;
+      font-size: 0.85em !important;
+
+      @media (max-width: $breakThou) {
+        font-size: 1.65vw !important;
+        // color: red;
+      }
+
+      @media (max-width: $breakOne) {
+        font-size: 1.85vw !important;
+      }
+
+      @media (max-width: $breakTwo) {
+        font-size: 2.5vw !important;
+      }
+
+      @media (max-width: $breakThree) {
+        font-size: 3.0vw !important;
+      }
+    }
+
   }
 
   // #############################

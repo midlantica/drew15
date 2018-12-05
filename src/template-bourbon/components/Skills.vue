@@ -119,22 +119,22 @@
       justify-items: center;
     }
 
-    // @media (max-width: 310px)
-    // {
-    //   grid-template-columns: repeat(2, minmax(auto, auto));
-    //   // grid-row-gap: 0.75em;
-    //   // grid-column-gap: 0em;
-    //   // background: orange;
-    //   grid-row-gap: .75em;
-    // }
+    @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 660px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    {
+      padding: 0;
+      // margin: 0 auto;
+      // background: red;
+      margin-top: .5em;
+      margin-bottom: .5em;
 
-    // @media (max-width: 210px)
-    // {
-    //   grid-template-columns: repeat(1, minmax(auto, auto));
-    //   // grid-row-gap: 0.5em;
-    //   // grid-column-gap: 0em;
-    //   // background: red;
-    // }
+      svg {
+        // background: orange;
+        margin: 0em .75em ;
+      }
+    }
 
     .icon {
       // margin: auto;

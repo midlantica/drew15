@@ -62,8 +62,7 @@
 
   nav .gridMast {
     display: grid;
-    width: 53%;
-    grid-template-columns: auto auto;
+    grid-template-columns: 175px auto;
     // grid-template-columns: 1fr 8fr;
     // grid-template-rows: 2fr 1fr 1fr;
     grid-column-gap: 1em;
@@ -76,18 +75,18 @@
     margin-bottom: 1em;
 
     @media (max-width: $breakThou) {
-      width: 100%;
-      grid-template-columns: 2fr 5fr 4fr;
+      // width: 100%;
+      grid-template-columns: 175px auto auto;
       // background: aqua;
       // grid-column-gap: 1em;
       // margin-left: -16em;
     }
 
     @media (max-width: $breakOne) {
-      grid-template-columns: 1fr 3fr;
+      grid-template-columns: 175px auto;
       // width: 50vw;
       // width: 100%;
-      margin-top: 0em;
+      // margin-top: 0em;
       // background: orange;
       // margin-left: -50em;
       // border: 1px green solid;
@@ -96,10 +95,23 @@
     }
 
     @media (max-width: $breakTwo) {
-      margin-top: .5em;
+      grid-column-gap: .5em;
+      // margin-top: .5em;
       // width: 80%;
       // background: orange;
     }
+
+    @media (max-width: $breakThree) {
+      grid-template-columns: 117px auto;
+      //
+    }
+
+    @media (max-width: $breakFour) {
+      // grid-template-columns: 115px auto;
+      // grid-column-gap: .25em;
+      //
+    }
+
 
     .groovyCircle {
       width: 210px;
@@ -134,13 +146,30 @@
       );
 
       @media (max-width: $breakThou) {
-        margin-bottom: -2.4em;
+        margin-bottom: -4.4em;
         margin-right: -2em;
       }
 
       @media (max-width: $breakOne) {
-        margin-bottom: -4.9em;
-        margin-right: -2em;
+        margin-bottom: -5.9em;
+        margin-right: -2.8em;
+      }
+
+      @media (max-width: $breakThree) {
+        width: 160px;
+        height: 160px;
+        top: -2.1em;
+        left: -2.9em;
+        box-shadow: 4px 5px 0px rgba(37, 37, 37, .25);
+      }
+
+      @media (max-width: $breakFour) {
+        // width: 160px;
+        // height: 160px;
+        // top: -2.1em;
+        // left: -2.9em;
+        // // background: purple !important;
+        // box-shadow: 5px 3px 0px rgba(37, 37, 37, .25);
       }
 
       a.drewhead {
@@ -154,6 +183,29 @@
         top: 2.8em;
         left: 3.5em;
         // background-position: 0px 0px;
+
+        @media (max-width: $breakOne) {
+          // width: 83px;
+          // height: 100px;
+          // top: 1.9em;
+          // left: 2.6em;
+        }
+
+        @media (max-width: $breakThree) {
+          width: 76px;
+          height: 90px;
+          top: 2.7em;
+          left: 3.2em;
+        }
+
+
+        @media (max-width: $breakFour) {
+          width: 73px;
+          height: 87px;
+          top: 2.6em;
+          left: 3.2em;
+        }
+
       }
     }
 
@@ -174,7 +226,11 @@
         // justify-items: center;
         // grid-gap: 1em;
         // grid-column-gap: 1.5em;
-        grid-row: 1 / 3; 
+        grid-column: 2 / 3; 
+        grid-row: 1;
+        align-self: self-end;
+        margin-bottom: 0.3em;
+        margin-top: 1em;
       }
 
       @media (max-width: $breakOne) {
@@ -188,6 +244,7 @@
       }
 
       @media (max-width: $breakThree) {
+        grid-column: 2;
         grid-row: 1;
       }
 
@@ -204,14 +261,20 @@
         }
         @media (max-width: $breakOne) {
           // height: 6.8vw;
-          height: 7.6vw;
+          height: 7.9vw;
 
         }
         @media (max-width: $breakTwo) {
-          height: 6vw;
+          // height: 6vw;
         }
         @media (max-width: $breakThree) {
-          height: 7vw;
+          // height: 14.3vw;
+          margin: .5em 0 0em;
+          height: 7.9vw;
+        }
+
+        @media (max-width: $breakFour) {
+          margin: 0.2em 0 0em;
         }
 
       }
@@ -228,6 +291,10 @@
 
         @media (max-width: $breakTwo) {
           //
+        }
+
+        @media (max-width: $breakThree) {
+          margin-right: 0.5em;
         }
       }
 
@@ -276,9 +343,9 @@
     @media (max-width: $breakThou) {
       margin: 1em 0em;
       text-align: center;
-      grid-column: 3 / 4;
-      grid-row: 1;
-      align-self: self-end;
+      grid-column: 2;
+      grid-row: 2;
+      align-self: self-start;
     }
 
     @media (max-width: $breakOne) {
@@ -319,7 +386,7 @@
       }
 
       @media (max-width: $breakThou) {
-        font-size: 2.2vw;
+        font-size: 2.85vw;
         // margin-top: -3px;
         line-height: 0;
 
@@ -333,20 +400,25 @@
       }
 
       @media (max-width: $breakOne) {
-        font-size: 1.35em;
-        line-height: 1.2em;
+        font-size: 3.72vw;
+        line-height: 1.1em;
 
         &:nth-child(1) {
           //
         }
 
         &:nth-child(2) {
-          margin-left: .25em !important;
+          // margin-left: .25em !important;
         }
       }
 
       @media (max-width: $breakTwo) {
-        // font-size: 1.25em !important;
+        // font-size: 3.1vw;
+      }
+
+      @media (max-width: $breakThree) {
+        line-height: 1.5em;
+        font-size: 3.7vw;
       }
 
     }
@@ -361,14 +433,22 @@
     @media (max-width: $breakThou) {
       // margin: 0 auto;
       text-align: start;
-      grid-column: 3 / 4;
-      grid-row: 2;
-      align-self: self-start;
+      grid-column: 3;
+      grid-row: 1 / 3;
+      -ms-flex-item-align: self-start;
+      align-self: center;
     }
 
     @media (max-width: $breakOne) {
       grid-row: 3;
       grid-column: 2 / 3;
+    }
+
+    @media (max-width: $breakTwo) {
+      // grid-row: 3;
+      // grid-column: 2 / 3;
+      align-content: flex-start;
+      align-self: flex-start;
     }
 
     p {
@@ -407,21 +487,42 @@
         font-size: 1.79vw;
         line-height: 0.5em;
         text-align: center;
-        margin: 0 auto;
+        font-size: 2vw;
+        line-height: 1.4em;
+        text-align: left;
+        display: inline-block;
+        // margin: 0 auto;
         // background: lightgreen;
+        float: left;
+        clear: left;
+
+        &:nth-child(1) {
+          //
+        }
+
+        &:nth-child(2) {
+          margin-left: 0;
+        }
       }
 
       @media (max-width: $breakOne) {
-        font-size: 2.3vw;
+        font-size: 3.05vw;
         text-align: center;
         margin: 0 auto;
         // background: orange;
+        float: initial;
+        clear: initial;
 
-      &:nth-child(2) {
-        margin: 0em;
+        &:nth-child(2) {
+          margin-left: .5em !important;
+        }
+
       }
 
+      @media (max-width: $breakThree) {
+        font-size: 3.0vw;
       }
+
     }
   }
 

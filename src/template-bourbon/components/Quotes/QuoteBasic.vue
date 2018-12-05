@@ -25,28 +25,36 @@
     @include shadow;
 
     .quotePad {
-      padding: 0.0em 2em 0em;
+      // padding: 0.0em 2em 0em;
     }
 
     p {
-      font-size: 0.85em;
+      font-size: 3.2vw;
       color: $ivory !important;
       // text-align: center;
-      letter-spacing: .08em;
+      letter-spacing: .02em;
       font-weight: bold;
       line-height: 1.5em;
       // @include font-smoothing(on);
+
+      @media only screen 
+      and (min-device-width: 375px) 
+      and (max-device-width: 660px)
+      and (-webkit-min-device-pixel-ratio: 2)
+      {
+        //
+      }
     }
 
     cite {
       font-family: $font-copy;
-      font-size: .7em;
+      font-size: 3.2vw;
       color: $ivory;
       font-style: italic;
       // margin: 0 4em 0 0;
       display: block;
       text-align: right;
-      letter-spacing: .08em;
+      letter-spacing: .02em;
     }
   }
 </style>

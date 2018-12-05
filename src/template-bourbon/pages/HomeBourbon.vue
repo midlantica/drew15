@@ -76,7 +76,7 @@
   $breakThou: 1024px;
   $breakOne: 840px;
   $breakTwo: 630px;
-  $breakThree: 530px;
+  $breakThree: 430px;
 
   header, 
   footer {
@@ -104,6 +104,13 @@
     @media (max-width: $breakTwo) {
       //
     }
+
+    // @media only screen 
+    //   and (min-device-width: 375px) 
+    //   and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    //     background: red;
+    // }
+
   }
 
   .copyArea {
@@ -162,6 +169,7 @@
     @media (max-width: $breakTwo) {
       grid-row: 2;
     }
+
   }
 
   .about {
@@ -182,6 +190,7 @@
       grid-column: 1 / 3;
       grid-row: 4;
     }
+
   }
 
   .quoteBlock {
@@ -204,13 +213,13 @@
     }
   }
 
-  .about {
-    grid-column: 2 / 3;
+  // .about {
+  //   grid-column: 2 / 3;
 
-    @media (max-width: $breakThou) {
-      grid-column: 1 / 3;
-    }
+  //   @media (max-width: $breakThou) {
+  //     grid-column: 1 / 3;
+  //   }
 
-  }
+  // }
 
 </style>

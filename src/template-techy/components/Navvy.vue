@@ -134,7 +134,8 @@
           width: 120px;
           height: 144px;
           padding: 1em 1em 0em 1em;
-          background-image: url(/img/drew_mug_blue.png);
+          background-image: url(/img/drew_mug_dig.png);
+          // background-image: url(/img/drew_mug_blue.png);
           background-repeat: no-repeat;
           background-size: cover;
           // filter:hue-rotate(180deg);
@@ -294,7 +295,7 @@
       font-weight: 400;
       color: $blueTech;
       text-transform: lowercase;
-      font-size: 2em;
+      font-size: 2.3vw;
       line-height: 1.1em;
       letter-spacing: .03em;
 
@@ -308,7 +309,7 @@
 
       @media (max-width: $breakThou) {
         display: inline;
-        font-size: 1.85em !important;
+        font-size: 3.3vw;
         margin-top: -3px;
 
         &:nth-child(1) {
@@ -322,7 +323,7 @@
 
       @media (max-width: $breakOne) {
         display: inline;
-        font-size: 1.85em !important;
+        font-size: 4.7vw;
         margin-top: -3px;
 
         &:nth-child(1) {
@@ -335,7 +336,7 @@
       }
 
       @media (max-width: $breakTwo) {
-        // font-size: 1.25em !important;
+        font-size: 5.8vw;
       }
 
     }
@@ -343,7 +344,7 @@
 
   nav .bar {
     // width: 100%;
-    padding: 1em;
+    padding: 0.5vh 1em;
     background: $blueTech;
     color: $ivory;
     grid-column: 1 / 3;
@@ -355,10 +356,10 @@
       font-weight: 400;
       color: $ivory;
       // text-transform: uppercase;
-      margin-top: 0.2em;
-      margin-left: 1em;
-      margin-bottom: 4px;
-      line-height: 1.25em;
+      // margin-top: 0.2em;
+      // margin-left: 1em;
+      // margin-bottom: 4px;
+      // line-height: 1.25em;
       //
       display: flex;
       flex-direction: row;
@@ -367,11 +368,11 @@
       align-items: center;
       align-content: center;
       flex-grow: 1;
-      width: 45%;
+      width: 50%;
 
       @media (max-width: 1024px) {
         width: 100%;
-        margin-left: 0;
+        // margin-left: 0;
       }
 
       @media (max-width: $breakOne) {
@@ -387,16 +388,17 @@
       }
 
       p {
-        color: $ivory !important;
+        color: transparentize($ivory, .1) !important;
         font-family: $font;
         font-weight: 500;
         letter-spacing: .09em;
         color: $blueTech;
         font-size: 1.3em;
         line-height: 2.5em;
+        margin-left: 0.5em;
         
         > a {
-          color: $ivory !important;
+          color: transparentize($ivory, .1);
           text-decoration: none;
 
           &:hover {
@@ -409,24 +411,25 @@
         }
 
         &:nth-child(2) {
-          margin-left: .5em;
+          // margin-left: .5em;
         }
 
         @media (max-width: $breakOne) {
           justify-content: center;
-          font-size: 1.27em !important;
+          font-size: 1.2em !important;
           letter-spacing: .1em !important;
           // background: red;
           // margin-top: -.3em;
 
           &:nth-child(1) {
-            float: left;
-            clear: left;
-            margin-right: .5em;
+            // float: left;
+            // clear: left;
+            // margin-right: .5em;
           }
 
           &:nth-child(2) {
-            float: left;
+            // float: left;
+
           }
         }
 
@@ -441,29 +444,30 @@
 
           &:nth-child(2) {
             // color: lightgrey;
+            // margin-left: 0.5em;
           }
         }
 
         @media (max-width: $breakThree) {
           justify-content: center;
-          font-size: 1.25em !important;
-          letter-spacing: 0.09em !important;
-          line-height: 1.25em;
+          font-size: 1.1em !important;
+          letter-spacing: 0.07em !important;
+          line-height: 2em;
           // margin-bottom: -4px;
           text-align: center;
           // background: red;
 
           &:nth-child(1) {
-            float: initial;
-            clear: initial;
-            margin-right: 0em;
+            // float: initial;
+            // clear: initial;
+            // margin-right: 0em;
           }
 
           &:nth-child(2) {
-            float: initial;
-            font-size: 1.25em !important;
-            line-height: 1.6em;
-            margin-left: 0 !important;
+            // float: initial;
+            // font-size: 1.25em !important;
+            // line-height: 1.6em;
+            
           }
         }
 

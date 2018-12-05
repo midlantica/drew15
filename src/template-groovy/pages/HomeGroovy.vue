@@ -9,11 +9,11 @@
     <main class="mainGrid">
 
       <div class="copyArea">
-        <HeadAndCopy/>
+        <HeadAndCopy />
       </div>
 
       <div class="slides">
-        <CarouselShow/>
+        <CarouselShow />
       </div>
 
       <About/>
@@ -23,7 +23,7 @@
     </main>
 
     <footer>
-      <!-- <Quotes/> -->
+      <Footer />
     </footer>
 
   </div>
@@ -36,6 +36,7 @@
   import Skills from '../components/Skills'
   import About from '@/components/About'
   import Quotes from '../components/Quotes/QuoteBasic'
+  import Footer from '../components/Footer'
   import CarouselShow from '@/components/Carousel/CarouselShow'
 
   export default {
@@ -43,10 +44,11 @@
     components: {
       NavvyHead,
       HeadAndCopy,
-      CarouselShow,
       About,
       Skills,
-      Quotes
+      Quotes,
+      Footer,
+      CarouselShow
     },
     name: 'HomeGroovy',
     metaInfo: {
@@ -83,18 +85,21 @@
     grid-row-gap: 1em;
     // grid-template-rows: auto auto auto auto;
     // grid-auto-flow: column;
-    margin: 0em 0em 1em;
-    width: 96.5%;
-    position: relative;
+    // margin: 0em 0em 0.5em;
+    // width: 96.5%;
+    // position: relative;
     /* top: 0em; */
-    left: 1em;
+    // left: 1em;
+    // margin-top: 1em;
+    margin: 0em 1em 0.5em;
 
     @media (max-width: $breakThou) {
       grid-template-columns: 1fr;
       grid-gap: 0em;
       grid-row-gap: 1em;
-      // grid-column: 1 / 3;
-      // grid-row: 1;
+      // margin-top: 2.5em;
+      margin: 0em 1em 1em;
+      // background: red;
     }
 
     @media (max-width: $breakOne) {
@@ -104,6 +109,15 @@
     @media (max-width: $breakTwo) {
       //
     }
+
+    @media (max-width: $breakThree) {
+      //
+    }
+
+    @media (max-width: $breakFour) {
+      //
+    }
+
   }
 
   header {
@@ -111,7 +125,7 @@
     // grid-row: 1;
     color: $ivory;
     background: $groovy-red;
-    height: 175px;
+    // height: 175px;
     @include clearfix;
   }
 
@@ -178,7 +192,7 @@
     grid-column: 2 / 3;
     grid-row: 1;
     z-index: 10;
-    margin-top: -10em;
+    margin-top: -9.3em;
 
     @media (max-width: $breakThou) {
       grid-column: 1 / 3;

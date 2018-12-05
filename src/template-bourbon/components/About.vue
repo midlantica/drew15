@@ -30,6 +30,7 @@
     }
 
     p {
+      font-family: $font;
       color: lighten($grey, 15);
       // color: red;
       font-size: .8em;
