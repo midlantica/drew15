@@ -63,7 +63,7 @@
         class: 'bourbon'
       },
       style: [
-        { cssText: '.VueCarousel.druCarousel { min-height: ; }', type: 'text/css' }
+        // { cssText: '.about p { font-family: AmericanTypewriterStd-Med; }', type: 'text/css' }
       ]
     }
   }
@@ -191,6 +191,16 @@
       grid-row: 4;
     }
 
+    @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 660px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    {
+      margin-top: .25em;
+      margin-bottom: .5em;
+      grid-row-gap: 0em;
+    }
+
   }
 
   .quoteBlock {
@@ -212,14 +222,5 @@
       grid-row: 5;
     }
   }
-
-  // .about {
-  //   grid-column: 2 / 3;
-
-  //   @media (max-width: $breakThou) {
-  //     grid-column: 1 / 3;
-  //   }
-
-  // }
 
 </style>

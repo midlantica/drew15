@@ -54,17 +54,15 @@
         // background-size: 110% 50%;
       }
 
-
-      //
       header, footer {
         background: url(./template-bourbon/assets/img/bg/bg_bag_dk.jpg) repeat;
       }
 
     }
 
-    .aboutBox > p { 
+    .about > p { 
       font-family: "AmericanTypewriterStd-Med" !important;
-      font-size: 0.85em !important;
+      font-size: 0.8em !important;
 
       @media (max-width: $breakThou) {
         font-size: 1.65vw !important;
@@ -117,6 +115,17 @@
     .wrapper { 
       //
     }
+
+    .copyArea {
+      //
+      section {
+        //
+        p {
+          // background: purple;
+        }
+      }
+    }
+
   }
 
   // #############################
@@ -132,6 +141,28 @@
       //
       header, footer {
         // background: url(./template-bourbon/assets/img/bg/bg_bag_dk.jpg) repeat;
+      }
+    }
+
+    .about > p { 
+      // font-family: "AmericanTypewriterStd-Med" !important;
+      font-size: 0.85em !important;
+
+      @media (max-width: $breakThou) {
+        font-size: 1.65vw !important;
+        // color: red;
+      }
+
+      @media (max-width: $breakOne) {
+        font-size: 1.85vw !important;
+      }
+
+      @media (max-width: $breakTwo) {
+        font-size: 2.5vw !important;
+      }
+
+      @media (max-width: $breakThree) {
+        font-size: 3.0vw !important;
       }
     }
   }
@@ -187,6 +218,28 @@
       //
       header {
         // background: initial !important;
+      }
+    }
+
+    .about > p { 
+      // font-family: "AmericanTypewriterStd-Med" !important;
+      font-size: 0.8em !important;
+
+      @media (max-width: $breakThou) {
+        font-size: 1.65vw !important;
+        // color: red;
+      }
+
+      @media (max-width: $breakOne) {
+        font-size: 1.85vw !important;
+      }
+
+      @media (max-width: $breakTwo) {
+        font-size: 2.5vw !important;
+      }
+
+      @media (max-width: $breakThree) {
+        font-size: 3.0vw !important;
       }
     }
   }

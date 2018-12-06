@@ -53,7 +53,7 @@
     // -->>
     // MIN -- MIN -- MIN -- MIN -- MIN
     @media (min-width: $breakThou) {
-      line-height: 3.2em;
+      line-height: 3.3em;
     }
 
     @media (max-width: $breakThou) {

@@ -9,7 +9,6 @@
 
 <style lang="scss" scoped>
   @import '@/assets/css/main.scss';
-  // @import '@/template-bourbon/assets/css/_fonts.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
   .quoteBlock {
@@ -24,37 +23,72 @@
     align-items: center;
     @include shadow;
 
+    @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 660px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    {
+      // display: block;
+      clear: both;
+      margin-top: .5em;
+      margin-bottom: .5em;
+      grid-row-gap: 0em;
+    }
+
     .quotePad {
       // padding: 0.0em 2em 0em;
     }
 
     p {
-      font-size: 3.2vw;
+      font-size: 0.9em;
       color: $ivory !important;
       // text-align: center;
-      letter-spacing: .02em;
+      letter-spacing: .05em;
       font-weight: bold;
       line-height: 1.5em;
       // @include font-smoothing(on);
 
       @media only screen 
-      and (min-device-width: 375px) 
-      and (max-device-width: 660px)
-      and (-webkit-min-device-pixel-ratio: 2)
+      and (min-device-width: 700px) 
+      and (max-device-width: $breakThou)
       {
-        //
+        font-size: 1.9vw;
       }
+
+      @media only screen 
+      and (min-device-width: 0px) 
+      and (max-device-width: 700px)
+      {
+        font-size: 3vw;
+      }
+
     }
 
     cite {
       font-family: $font-copy;
-      font-size: 3.2vw;
+      font-size: 0.9em;
       color: $ivory;
       font-style: italic;
       // margin: 0 4em 0 0;
       display: block;
       text-align: right;
       letter-spacing: .02em;
+
+      @media only screen 
+      and (min-device-width: 700px) 
+      and (max-device-width: $breakThou)
+      {
+        font-size: 1.9vw;
+      }
+
+      @media only screen 
+      and (min-device-width: 0px) 
+      and (max-device-width: 700px)
+      {
+        font-size: 3vw;
+      }
+
+
     }
   }
 </style>

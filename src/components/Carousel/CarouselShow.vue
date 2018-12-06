@@ -181,7 +181,22 @@
     background: darken($grey, 5);
     border: 1px solid transparentize($black, .85);
     // margin-bottom: 1em;
+    display: block;
+    clear: both;
+    margin-top: .25em;
+    margin-bottom: .5em;
 
+    @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 660px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    {
+      display: block;
+      clear: both;
+      margin-top: .25em;
+      margin-bottom: .5em;
+      grid-row-gap: 0em;
+    }
 
     .VueCarousel-wrapper {
       // background: lightgrey;

@@ -58,7 +58,8 @@
     
     .greenBar {
       display: block;
-      width: 1024px;
+      // width: 1024px;
+      width: 100%;
       max-width: 1024px;
       z-index: 0;
       position: absolute;

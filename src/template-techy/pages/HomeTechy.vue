@@ -94,6 +94,7 @@
     background: $groovy-red;
     background: $mango;
     box-shadow: none;
+    margin-bottom: -1.2em;
   }
 
   .copyArea {
@@ -120,7 +121,7 @@
     grid-column: 2 / 3;
     grid-row: 2;
     z-index: 10;
-    margin: -10em 1em 0 0;
+    margin: -8.5em 1em 0 0;
 
     @media (max-width: $breakThou) {
       grid-column: 1 / 3;

@@ -131,10 +131,28 @@
       margin-bottom: .5em;
 
       svg {
-        // background: orange;
-        margin: 0em .75em ;
+        // background: orange !important;
+        margin: 0em .75em;
       }
+
     }
+
+    @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 660px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape)
+    {
+      margin: 0.5em 1em 0;
+
+      svg {
+        // background: orange;
+        margin: 0em 2.2em;
+        // background: red !important;
+      }        
+    }
+
+    
 
     .icon {
       // margin: auto;
