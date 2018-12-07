@@ -153,6 +153,8 @@
       height: 325px;
       min-height: 325px;
     }
+
+    
   }
 
   // CORP BACKGROUND
@@ -185,6 +187,7 @@
     clear: both;
     margin-top: .25em;
     margin-bottom: .5em;
+    @include clearfix;
 
     @media only screen 
     and (min-device-width: 375px) 

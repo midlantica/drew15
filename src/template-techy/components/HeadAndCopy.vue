@@ -73,7 +73,7 @@
       // font-size: 1.2rem;
       // line-height: 2.4em;
       // margin: 1em 1em 0;
-      padding: 0 1em;
+      // padding: 0 1em;
       // background: red;
     }
 
@@ -85,6 +85,7 @@
       margin: 1em 0em 0em;
       // padding-bottom: 1em;
       font-size: 1.35em;
+      padding: 0em 1em 0em;
       // background: purple;
     }
 

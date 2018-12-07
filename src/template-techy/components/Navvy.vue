@@ -96,15 +96,19 @@
  
 
     .masty {
-      // @include clearfix;    
+      // @include clearfix;
+      margin: 0 auto;
+      text-align: center;
 
       .DHmast {
+        display: block;
         display: grid;
         grid-template-columns: 2fr 4fr 7fr;
         // grid-template-rows: auto;
         grid-gap: 2em;
         align-items: center;
         margin: 0 auto;
+        padding-top: 1em;
         //
 
         @media (max-width: $breakThou) {
@@ -123,6 +127,16 @@
         }
 
         @media (max-width: $breakThree) {
+          //
+        }
+
+        @media only screen and (max-device-width: 667px) 
+        and (-webkit-device-pixel-ratio: 2)
+        {
+          padding-top: 1em;
+          // padding-left: 2.5em;
+          // margin-left: 1em;
+          border: 1px solid red; 
           //
         }
 
@@ -157,7 +171,7 @@
             // display: block;
             // clear: left;
             grid-column: 1 / 2;
-            grid-row: 1 / 1;
+            grid-row: 1 / 2;
             justify-self: right;
             // display: block;
             // clear: left;
@@ -172,6 +186,20 @@
             width: 70px;
             height: 86px;
           }
+  
+          @media only screen and (max-device-width: 667px) 
+          and (-webkit-device-pixel-ratio: 2)
+          {
+            border: 1px solid green; 
+            margin-right: .5em;
+            margin-left: 1em;
+            width: 74px !important;
+            // width: 160% !important;
+            height: 86px !important;
+            // height: 179% !important;
+            //
+          }
+
         }
         
         .svgArt {
