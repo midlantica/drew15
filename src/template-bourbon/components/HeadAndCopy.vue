@@ -3,10 +3,16 @@
 
     <div class="headBlock">
       <router-link to="Bourbon/Extras" class='drewhead' />
-      <h1>Don’t let design get in the way of communication</h1>
+      <h1>
+        <!-- <div v-for="data in myJson">{{ drewHead }}</div> -->
+        <div v-for="data in $options.myJson">{{drewHead}}</div>
+      </h1>
+      <!-- <h1>Don’t let design get in the way of communication</h1> -->
     </div>
 
-    <p>Whether it’s a prototype, a responsive website, a wireframe, an interactive PDF, a new mobile app UI, a quick skin job, a few more buttons, a dialog box, filling up a bucket, or getting in the trenches with  HTML 5 and CSS 3, I can deliver. I don’t let ‘design’ get in the way. Oh and I’m a coder groupie&nbsp;<big>😃</big>
+    <p>
+      <!-- <div v-for="data in myJson">{{ drewCopy }}</div> -->
+      <div v-for="data in $options.myJson">{{drewCopy}}</div>
     </p>
 
   </div>
@@ -15,11 +21,6 @@
 <style lang="scss" scoped>
   @import '@/assets/css/main.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
-
-  // $breakThou: 1024px;
-  // $breakOne: 840px;
-  // $breakTwo: 630px;
-  // $breakThree: 430px;
 
   .headBlock {
     display: block;
