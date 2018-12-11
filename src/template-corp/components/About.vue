@@ -10,7 +10,7 @@
   @import '@/template-corp/assets/css/corp-main.scss';
 
   .about {
-    margin-bottom: .75em;
+    // margin-bottom: .75em;
     // background-image: url('../assets/img/bg/bg_bag_y.png');
     // background-repeat: repeat;
     // width: calc(100%);

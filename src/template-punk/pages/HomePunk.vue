@@ -6,23 +6,25 @@
       <Navvy/>
     </header>
 
-    <main>
-      <section>
-        <HeadAndCopy/>
-      </section>
+    <main class="mainGrid">
 
-      <section>
+      <div class="copyArea">
+        <HeadAndCopy/>
+      </div>
+
+      <div class="slides">
         <CarouselShow/>
-        <About/>
-      </section>
+      </div>
+
+      <About/>
+
+      <Skills/>
 
     </main>
 
-    <Skills/>
-
-    <footer>
+    <!-- <footer> -->
       <!-- <Quotes/> -->
-    </footer>
+    <!-- </footer> -->
 
   </div>
 
@@ -68,13 +70,15 @@
 </script>
 
 <style lang="scss" scoped>
+  @import '@/assets/css/main.scss';
   @import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i');  
   @import '@/assets/css/main.scss';
   @import '@/template-punk/assets/css/punk-main.scss';
 
-  $breakOne: 840px;
-  $breakTwo: 630px;
-  $breakThree: 430px;
+  // $breakThou: 1024px;
+  // $breakOne: 840px;
+  // $breakTwo: 630px;
+  // $breakThree: 430px;
 
   header,
   footer {
@@ -83,36 +87,139 @@
     box-shadow: none;
   }
 
-  main {
+  .mainGrid {
     display: grid;  // <-- CONTENT GRID
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5em;
     background: transparent;
-    padding: 0;
+    padding: 0em 1em;
     box-shadow: none;
     //
-    @media (max-width: $breakOne) {
+    @media (max-width: $breakThou) {
       grid-template-columns: 1fr;
+      grid-gap: 0em;
+      grid-row-gap: 0.5em;
+      // grid-column: 1 / 3;
+      // grid-row: 1;
     }
 
-    > section {
+    @media (max-width: $breakOne) {
       //
-      &:nth-child(1) {
-        padding: 0 1em;
+    }
 
-        @media (min-width: $breakOne) {
-          padding: 0em 1em 0em 1em;
-          margin-bottom: 1em;
-        }
-      }
+    @media (max-width: $breakTwo) {
+      //
+    }
 
-      &:nth-child(2) {
-        padding: 0 1em;
+  }
 
-        @media (min-width: $breakOne) {
-          padding: 0em 1em 0em .5em;
-        }
-      }
+  .copyArea {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
 
+    @media (max-width: $breakThou) {
+      grid-column: 1 / 3;
+      grid-row: 1;
+    }
+
+    @media (max-width: $breakOne) {
+      grid-column: 1 / 3;
+      grid-row: 1;
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-column: 1 / 3;
+      grid-row: 1;
+    }
+  }
+  
+  .slides {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    // z-index: 10;
+
+    @media (max-width: $breakThou) {
+      grid-column: 1 / 3;
+      grid-row: 3;
+    }
+
+    @media (max-width: $breakOne) {
+      grid-column: 1 / 3;
+      grid-row: 3;
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-column: 1 / 3;
+      grid-row: 3;
+    }
+  }
+
+  .about {
+    grid-column: 2 / 3;
+    grid-row: 2;
+
+    @media (max-width: $breakThou) {
+      grid-column: 1 / 3;
+      grid-row: 5;
+      margin-bottom: 1em;
+    }
+
+    @media (max-width: $breakOne) {
+      grid-column: 1 / 3;
+      grid-row: 5;
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-column: 1 / 3;
+      grid-row: 5;
+    }
+
+    @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 660px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    {
+      margin-top: .25em;
+      margin-bottom: .5em;
+      grid-row-gap: 0em;
+    }
+
+  }
+
+  .quoteBlock {
+    grid-column: 2 / 3;
+    grid-row: 3;
+
+    @media (max-width: $breakThou) {
+      grid-column: 1 / 3;
+      grid-row: 5;
+    }
+
+    @media (max-width: $breakOne) {
+      grid-column: 1 / 3;
+      grid-row: 5;
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-column: 1 / 3;
+      grid-row: 5;
+    }
+  }
+
+  .skillsGrid {
+    grid-column: 1 / 3;
+    grid-row: 3;
+
+    @media (max-width: $breakThou) {
+      grid-row: 4;
+    }
+
+    @media (max-width: $breakOne) {
+      grid-row: 4;
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-row: 4;
     }
 
   }

@@ -87,18 +87,18 @@
   }
 
   header {
-    grid-column: 1 / -1;
-    grid-row: 1;
+    // grid-column: 1 / -1;
+    // grid-row: 1;
     color: $ivory;
     background: $groovy-red;
     background: $mango;
     box-shadow: none;
-    margin-bottom: -1.2em;
+    // margin-bottom: -1.2em;
   }
 
   .copyArea {
     grid-column: 1 / 2;
-    grid-row: 2 / 4;
+    grid-row: 1 / 3;
 
     @media (max-width: $breakThou) {
       grid-column: 1 / 3;
@@ -118,90 +118,90 @@
 
   .slides {
     grid-column: 2 / 3;
-    grid-row: 2;
+    grid-row: 1 / 2;
     z-index: 10;
     margin: -8.5em 1em 0 0;
 
     @media (max-width: $breakThou) {
       grid-column: 1 / 3;
-      grid-row: 3;
+      grid-row: 2;
       margin: 0 1em;
     }
 
     @media (max-width: $breakOne) {
       grid-column: 1 / 3;
-      grid-row: 3;
+      grid-row: 2;
       margin: 0 1em;
     }
 
     @media (max-width: $breakTwo) {
       grid-column: 1 / 3;
-      grid-row: 3;
+      grid-row: 2;
       margin: 0 1em;
     }
   }
 
   .about {
     grid-column: 2 / 3;
-    grid-row: 3;
+    grid-row: 2;
     margin: 0 1em 0 0;
 
     @media (max-width: $breakThou) {
       grid-column: 1 / 3;
-      grid-row: 5;
+      grid-row: 4;
       margin: 0 1em 1em;
     }
 
     @media (max-width: $breakOne) {
       grid-column: 1 / 3;
-      grid-row: 5;
+      grid-row: 4;
       margin: 0 1em 1em;
     }
 
     @media (max-width: $breakTwo) {
       grid-column: 1 / 3;
-      grid-row: 5;
+      grid-row: 4;
       margin: 0 1em 1em;
     }
   }
 
   .skillsGrid {
     grid-column: 1 / -1;
-    grid-row: 4;
+    grid-row: 3 / 4;
 
     @media (max-width: $breakThou) {
-      grid-row: 4;
+      grid-row: 3;
     }
 
     @media (max-width: $breakOne) {
-      grid-row: 4;
+      grid-row: 3;
     }
 
     @media (max-width: $breakTwo) {
-      grid-row: 4;
+      grid-row: 3;
     }
   }
 
   footer {
-    grid-column: 1 / -1;
-    grid-row: 5;
+    // grid-column: 1 / -1;
+    // grid-row: 5;
     color: $ivory;
     background: $mango;
     box-shadow: none;
 
     @media (max-width: $breakThou) {
-      grid-column: 1 / -1;
-      grid-row: 6;
+      // grid-column: 1 / -1;
+      // grid-row: 6;
     }
 
     @media (max-width: $breakOne) {
-      grid-column: 1 / -1;
-      grid-row: 6;
+      // grid-column: 1 / -1;
+      // grid-row: 6;
     }
 
     @media (max-width: $breakTwo) {
-      grid-column: 1 / -1;
-      grid-row: 6;
+      // grid-column: 1 / -1;
+      // grid-row: 6;
     }
   }
 

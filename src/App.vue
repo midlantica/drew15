@@ -8,7 +8,7 @@
 <script>
   // import Vue from 'vue'
   import Tabs from '@/components/Tabs.vue'
-  import MY_JSON from './data.json'
+  import MY_JSON from './assets/data.json'
   export default {
     myJson: MY_JSON,
     components: {

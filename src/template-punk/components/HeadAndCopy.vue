@@ -26,13 +26,13 @@
     // display: block;
     // position: relative;
     // top: 210px;
-    margin-top: 12em;
+    margin-top: 11em;
     // background: transparentize(white, .52);
     transform: rotate(-1deg);
 
     @media (max-width: $breakOne) {
       // margin-top: 0em;
-      margin-bottom: 1em;
+      margin-bottom: 0em;
     }
   }
 
@@ -54,6 +54,8 @@
     top: -0.3em;
     left: 1em;
     background: #FBC83F;
+    padding: 0.4em 1.2em;
+
 
     @media (max-width: $breakTwo) {
       display: inline-block;
@@ -77,7 +79,6 @@
     font-size: calc(0.8rem + .75vw);
     // font-size: 0.9rem;
     color: $grey;
-    margin: 1em 1em 0em;
     line-height: calc(2.2em + .5vw);
     // line-height: 2.6em;
     letter-spacing: 0.05em;
@@ -87,6 +88,8 @@
     top: -1.1em;
     background: #FBC83F;
     // left: 0.8em;
+    padding: 0em 1em;
+    margin: 1em 1em 0em;
 
     @media (min-width: $breakOne) {
       font-size: 0.875rem;

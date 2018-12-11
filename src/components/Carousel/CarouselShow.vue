@@ -170,7 +170,7 @@
   // PUNK BACKGROUND
   body.punk .VueCarousel.druCarousel {
     background: darken($grey, 5);
-    margin-bottom: 1em;
+    // margin-bottom: 1em;
     
     @media (min-width: $breakThou) {
       height: 360px;
@@ -186,7 +186,7 @@
     display: block;
     clear: both;
     margin-top: .25em;
-    margin-bottom: .5em;
+    // margin-bottom: .5em;
     @include clearfix;
 
     @media only screen 
@@ -197,7 +197,7 @@
       display: block;
       clear: both;
       margin-top: .25em;
-      margin-bottom: .5em;
+      // margin-bottom: .5em;
       grid-row-gap: 0em;
     }
 

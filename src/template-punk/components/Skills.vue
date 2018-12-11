@@ -1,21 +1,19 @@
 <template>
-  <div class="rotaterWrap">
-    <div class="skillsGrid">
-      <iconUiux class="icon uiux" />
-      <iconHtml5 class="icon html5" />
-      <iconCss3 class="icon css3" />
-      <iconJs class="icon js" />
+  <div class="skillsGrid">
+    <iconUiux class="icon uiux" />
+    <iconHtml5 class="icon html5" />
+    <iconCss3 class="icon css3" />
+    <iconJs class="icon js" />
 
-      <iconSketch class="icon sketch" />
-      <iconSass class="icon sass" />
-      <iconVue class="icon vue" />
-      <iconSvg class="icon svg" />
+    <iconSketch class="icon sketch" />
+    <iconSass class="icon sass" />
+    <iconVue class="icon vue" />
+    <iconSvg class="icon svg" />
 
-      <iconTerminal class="icon terminal" />
-      <iconNode class="icon node" />
-      <iconWebpack class="icon webpack" />
-      <iconAxure class="icon axure" />
-    </div>
+    <iconTerminal class="icon terminal" />
+    <iconNode class="icon node" />
+    <iconWebpack class="icon webpack" />
+    <iconAxure class="icon axure" />
   </div>
 </template>
 
@@ -57,12 +55,9 @@
   $BreakOne: 1024px;
   $BreakTwo: 860px;
 
-  .rotaterWrap {
-    background: transparentize(black, 0.25);
-  }
-
   .skillsGrid {
-    transform: rotate(-1deg);
+    // background: transparentize(black, 0.5);
+    transform: rotate(-0.5deg);
     display: grid;
     // width: 100%;
     flex-wrap: wrap;
@@ -82,7 +77,7 @@
     // margin-bottom: .5em;
     transition: .25s ease-in;
     // background: red;
-    background: transparentize(green, 0.80);
+    background: transparentize(green, 0.50);
 
     // @media (min-width: 736px) and
     //   (max-width: 1024px)

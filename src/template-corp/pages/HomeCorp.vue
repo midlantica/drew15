@@ -62,7 +62,7 @@
       },
       style: [
         { cssText: 'body.corp .VueCarousel.druCarousel { box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.29); min-height: 21vh; }', type: 'text/css' },
-        { cssText: '.about { margin: 0.7em 0em 0.5em !important; }', type: 'text/css' },
+        { cssText: '.about {  }', type: 'text/css' },
         { cssText: '.about p { font-family: "Questrial", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }', type: 'text/css' },
         { cssText: '.skillsgrid { margin: 0 !important; }', type: 'text/css' }
       ]
@@ -83,6 +83,11 @@
   .about {
     background: white;
     font-size: .95em;
+    // margin-bottom: 0.5em;
+
+    @media (max-width: $breakThou) {
+      margin-bottom: .5em;
+    }
   }
 
   header,

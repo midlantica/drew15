@@ -29,6 +29,10 @@
       @include clearfix;
       // @include font-smoothing(off);
 
+       @media (max-width: $breakThou) {
+        margin-bottom: .5em;
+      }
+
       .flag {
         width: 104px;
         height: 59px;

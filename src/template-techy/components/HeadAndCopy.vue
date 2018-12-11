@@ -40,7 +40,7 @@
     // color: $grey;
     color: transparentize($blueTech, .0);
     letter-spacing: 0.06em;
-    margin: .25em 2.25em 0em;
+    margin: 1em 2.25em 0em;
     // background: purple;
 
     @media (max-width: $breakThou) {
