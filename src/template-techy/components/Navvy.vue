@@ -136,7 +136,7 @@
           padding-top: 1em;
           // padding-left: 2.5em;
           // margin-left: 1em;
-          border: 1px solid red; 
+          // border: 1px solid red; 
           //
         }
 
@@ -163,6 +163,7 @@
           grid-column: 1 / 2;
           grid-row: 1 / 3;
           justify-self: end;
+          // border: 10px solid blue;
 
           @media (max-width: $breakThou) {
             width: 106px;
@@ -190,13 +191,13 @@
           @media only screen and (max-device-width: 667px) 
           and (-webkit-device-pixel-ratio: 2)
           {
-            border: 1px solid green; 
             margin-right: .5em;
             margin-left: 1em;
             width: 74px !important;
             // width: 160% !important;
             height: 86px !important;
             // height: 179% !important;
+            // border: 10px solid green; 
             //
           }
 

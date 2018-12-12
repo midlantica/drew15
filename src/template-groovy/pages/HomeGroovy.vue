@@ -72,10 +72,10 @@
 
   $break860: 860px;
   //
-  $breakThou: 1024px;
-  $breakOne: 840px;
-  $breakTwo: 630px;
-  $breakThree: 530px;
+  // $breakThou: 1024px;
+  // $breakOne: 840px;
+  // $breakTwo: 630px;
+  // $breakThree: 530px;
 
   .mainGrid {
     // width: 100%;

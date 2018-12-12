@@ -126,10 +126,14 @@
   body.bourbon .VueCarousel.druCarousel {
     background: darken($grey, 5);
     box-shadow: 0 0 4px black, 0 3px 5px rgba(0, 0, 0, 0);
+    min-height: 359px;
     
-    @media (min-width: $breakThou) {
-      height: 358px;
-      min-height: 358px;
+    @media (min-width: $breakThree) {
+      min-height: 339px;
+    }
+
+    @media (max-width: 462px) {
+      min-height: 289px;
     }
   }
 
@@ -137,10 +141,14 @@
   body.groovy .VueCarousel.druCarousel {
     background: darken($grey, 5);
     box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.25);
+    min-height: 336px;
     
-    @media (min-width: $breakThou) {
-      height: 336px;
+    @media (min-width: $breakThree) {
       min-height: 336px;
+    }
+
+    @media (max-width: 462px) {
+      min-height: 289px;
     }
   }
 
@@ -148,22 +156,33 @@
   body.techy .VueCarousel.druCarousel {
     background: darken($grey, 5);
     border: 4px solid #423BA0;
-    
-    @media (min-width: $breakThou) {
-      height: 325px;
-      min-height: 325px;
+    min-height: 324px;
+
+    @media (min-width: $breakThree) {
+      min-height: 285px;
     }
 
+    @media (min-width: $breakTwo) {
+      min-height: 324px;
+    }
     
+    @media (min-width: 0px) 
+    and (max-width: 405px) {
+      min-height: 285px;
+    }
   }
 
   // CORP BACKGROUND
   body.corp .VueCarousel.druCarousel {
     background: darken($grey, 5);
+    min-height: 329px;
     
-    @media (min-width: $breakThou) {
-      height: 329px;
-      min-height: 329px;
+    @media (min-width: $breakThree) {
+      min-height: 336px;
+    }
+
+    @media (max-width: 462px) {
+      min-height: 289px;
     }
   }
 
@@ -171,20 +190,22 @@
   body.punk .VueCarousel.druCarousel {
     background: darken($grey, 5);
     // margin-bottom: 1em;
+    min-height: 360px;
     
-    @media (min-width: $breakThou) {
-      height: 360px;
-      min-height: 360px;
+    @media (min-width: $breakThree) {
+      min-height: 336px;
+    }
+
+    @media (max-width: 462px) {
+      min-height: 289px;
     }
   }
-
 
   .VueCarousel.druCarousel {
     background: darken($grey, 5);
     border: 1px solid transparentize($black, .85);
     // margin-bottom: 1em;
     display: block;
-    clear: both;
     margin-top: .25em;
     // margin-bottom: .5em;
     @include clearfix;
@@ -195,10 +216,25 @@
     and (-webkit-min-device-pixel-ratio: 2)
     {
       display: block;
-      clear: both;
       margin-top: .25em;
       // margin-bottom: .5em;
       grid-row-gap: 0em;
+      @include clearfix;
+    }
+
+    // IPAD LANDSCAPE
+    @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) 
+    and (orientation: landscape) 
+    {
+      display: block;
+      margin-top: .25em;
+      // margin-bottom: .5em;
+      grid-row-gap: 0em;
+      @include clearfix;
+      background: purple;
+      // border: 2px solid red;
     }
 
     .VueCarousel-wrapper {

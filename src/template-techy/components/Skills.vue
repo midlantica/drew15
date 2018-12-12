@@ -76,7 +76,38 @@
     transition: .25s ease-in;
     margin: 0em auto 1em;
 
-    @media (min-width: 726px) and (max-width: 1024px)
+    // IPAD PRO LANDSCAPE
+    @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px) 
+    and (orientation: landscape) 
+    and (-webkit-min-device-pixel-ratio: 1.5) 
+    {
+      display: grid;
+      width: 100%;
+      flex-wrap: wrap;
+      // justify-content: stretch;
+      // justify-content: space-around;
+      // justify-content: space-between;
+      justify-content: space-between;
+      justify-items: center;
+      //
+      // margin: .5em auto 0;
+      align-items: center;
+      grid-template-columns: repeat(12, minmax(auto, auto));
+      grid-row-gap: 2.5em;
+      grid-column-gap: 0em;
+      // grid-column-gap: 1.5em;
+      // background: beige;
+      // margin-bottom: .5em;
+      transition: .25s ease-in;
+      margin: 0em auto 1em;
+      // background: red;
+      // border: 10px solid green;
+    }
+
+    @media (min-width: 726px) 
+    and (max-width: 1024px)
     {
       grid-template-columns: repeat(6, minmax(auto, auto));
       grid-column-gap: 2.5em;
@@ -100,7 +131,8 @@
       margin: 0em auto 0em;
     }
 
-    @media (min-width: 377px) and (max-width: 726px)
+    @media (min-width: 377px) 
+    and (max-width: 726px)
     {
       grid-template-columns: repeat(4, minmax(auto, auto));
       // grid-column-gap: 0em;
@@ -109,7 +141,8 @@
       margin: 0em auto 0em;
     }
 
-    @media (min-width: 0px) and (max-width: 377px)
+    @media (min-width: 0px) 
+    and (max-width: 377px)
     {
       grid-template-columns: repeat(3, minmax(auto, auto));
       // grid-row-gap: 1.5em;

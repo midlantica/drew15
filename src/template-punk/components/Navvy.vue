@@ -5,9 +5,11 @@
     <p class='email'><a href="mailto:druharper@gmail.com">druharper@gmail.com</a></p>
 
     <div class="mastMain">
-      <mastDrew class="svgArt mastDrew" />
-      <mastHarper class="svgArt mastHarper" />
-      <a class="DrewHead" href="/Extras">&nbsp;</a>
+      <a href="/Punk">
+        <mastDrew class="svgArt mastDrew" />
+        <mastHarper class="svgArt mastHarper" />
+      </a>
+      <a class="DrewHead" href="Punk/Extras">&nbsp;</a>
     </div>
 
     <p class='resume'>Resume: 
@@ -128,35 +130,34 @@
         width: 100%;
       }
       
-      .svgArt {
+      a .svgArt {
         //
       }
 
-      .svgArt.mastDrew {
-          width: 32vw;
-          // height: 12vw;
-          transform: rotate(1deg);
-          margin-top: -1.5em;
+      a .svgArt.mastDrew {
+        width: 20.4vw;
+        // height: 12vw;
+        transform: rotate(1deg);
+        margin-top: -1.5em;
+        order: 1;
+
+        @media (max-width: $breakOne) {
+          width: 49vw;
+          // height: 17vh;
+          margin-top: 1em;
           order: 1;
+        }
 
-          @media (max-width: $breakOne) {
-            width: 49vw;
-            // height: 17vh;
-            margin-top: 1em;
-            order: 1;
-          }
-
-          @media (max-width: $breakTwo) {
-            width: 55vw;
-            // height: 17vh;
-            // margin-top: 1em;
-            // order: 1;
-          }
+        @media (max-width: $breakTwo) {
+          width: 55vw;
+          // height: 17vh;
+          // margin-top: 1em;
+          // order: 1;
         }
       }
 
-      .svgArt.mastHarper {
-        width: 48vw;
+      a .svgArt.mastHarper {
+        width: 32.4vw;
         // height: 20vh;
         transform: rotate(1deg);
         margin-top: -0.6em;
@@ -170,9 +171,9 @@
           flex-grow: 1;
         }
 
-        @media (max-width: $breakOne) {
+        @media (max-width: $breakTwo) {
           order: 3;
-          width: 38vw;
+          width: 64vw;
           // height: 20vh;
           // margin-top: -1.5em;
           flex-grow: 1;
@@ -189,7 +190,7 @@
         //
         background-repeat: no-repeat;
         background-size: contain;
-        width: 158px;
+        width: 128px;
         height: 139px;
         text-decoration: none;
         // display: block;
@@ -219,7 +220,6 @@
 
       }
     }
-    
 
     // ###############################
     // ###############################
@@ -250,6 +250,6 @@
       align-self: center;
     }
   }
-
+}
 
 </style>

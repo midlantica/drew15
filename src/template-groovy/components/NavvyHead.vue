@@ -173,7 +173,7 @@
       }
 
       a.drewhead {
-        background-image: url(/img/drew_mug.png);
+        background-image: url(/img/drew_mug_sepia.png);
         background-repeat: no-repeat;
         background-size: cover;
         width: 98px;

@@ -74,16 +74,45 @@
   @import '@/assets/css/main.scss';
   @import '@/template-techy/assets/css/techy-main.scss';
 
-  $breakThou: 1024px;
-  $breakOne: 840px;
-  $breakTwo: 630px;
-  $breakThree: 430px;
+  // $breakThou: 1024px;
+  // $breakOne: 840px;
+  // $breakTwo: 630px;
+  // $breakThree: 430px;
 
   .mainGrid {
     display: grid;
     grid-template-columns: 7fr 6fr;
     grid-gap: 1em;
     background: $ivory;
+
+    @media (min-width: $breakThou)
+    and (min-device-width : 768px) 
+    { 
+      grid-template-columns: 7fr 6fr;
+    }
+
+
+    // IPAD LANDSCAPE
+    @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) 
+    and (orientation: landscape) {
+      grid-template-columns: 1fr;
+      // background: red;
+      // border: 10px solid green;
+    }
+
+    // IPAD PRO LANDSCAPE
+    @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px) 
+    and (orientation: landscape) 
+    and (-webkit-min-device-pixel-ratio: 1.5) 
+    {
+      // grid-template-columns: 1fr;
+      // background: red;
+      // border: 10px solid green;
+    }
   }
 
   header {
@@ -100,6 +129,30 @@
     grid-column: 1 / 2;
     grid-row: 1 / 3;
 
+    // IPAD LANDSCAPE
+    @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) 
+    and (orientation: landscape) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+      // background: red;
+      // border: 10px solid green;
+    }
+
+    // IPAD PRO LANDSCAPE
+    @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px) 
+    and (orientation: landscape) 
+    and (-webkit-min-device-pixel-ratio: 1.5) 
+    {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+      // background: red;
+      // border: 10px solid green;
+    }
+
     @media (max-width: $breakThou) {
       grid-column: 1 / 3;
       grid-row: 1;
@@ -114,6 +167,7 @@
       grid-column: 1 / 3;
       grid-row: 1;
     }
+
   }
 
   .slides {
@@ -121,6 +175,34 @@
     grid-row: 1 / 2;
     z-index: 10;
     margin: -8.5em 1em 0 0;
+
+    // IPAD LANDSCAPE
+    @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) 
+    and (orientation: landscape) {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      z-index: 10;
+      margin: -8.5em 1em 0 0;
+      // background: red;
+      // border: 10px solid green;
+    }
+
+    // IPAD PRO LANDSCAPE
+    @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px) 
+    and (orientation: landscape) 
+    and (-webkit-min-device-pixel-ratio: 1.5) 
+    {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      z-index: 10;
+      margin: -8.5em 1em 0 0;
+      // background: red;
+      // border: 10px solid green;
+    }
 
     @media (max-width: $breakThou) {
       grid-column: 1 / 3;
@@ -146,6 +228,32 @@
     grid-row: 2;
     margin: 0 1em 0 0;
 
+    // IPAD LANDSCAPE
+    @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) 
+    and (orientation: landscape) {
+      grid-column: 2 / 3;
+      grid-row: 2;
+      margin: 0 1em 0 0;
+      // background: red;
+      // border: 10px solid green;
+    }
+
+    // IPAD PRO LANDSCAPE
+    @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px) 
+    and (orientation: landscape) 
+    and (-webkit-min-device-pixel-ratio: 1.5) 
+    {
+      grid-column: 2 / 3;
+      grid-row: 2;
+      margin: 0 1em 0 0;
+      // background: red;
+      // border: 10px solid green;
+    }
+
     @media (max-width: $breakThou) {
       grid-column: 1 / 3;
       grid-row: 4;
@@ -168,6 +276,32 @@
   .skillsGrid {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
+    // background: red;
+    // border: 10px solid green;
+
+    // IPAD LANDSCAPE
+    @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) 
+    and (orientation: landscape) {
+      grid-column: 1 / -1;
+      grid-row: 3 / 4;
+      // background: red;
+      // border: 10px solid green;
+    }
+
+    // IPAD PRO LANDSCAPE
+    @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px) 
+    and (orientation: landscape) 
+    and (-webkit-min-device-pixel-ratio: 1.5) 
+    {
+      grid-column: 1 / -1;
+      grid-row: 3 / 4;
+      // background: red;
+      // border: 10px solid green;
+    }
 
     @media (max-width: $breakThou) {
       grid-row: 3;

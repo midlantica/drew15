@@ -67,7 +67,7 @@
     justify-content: space-between;
     justify-items: center;
     //
-    margin: .5em auto 1em;
+    margin: .5em auto 0em;
     align-items: center;
     grid-template-columns: repeat(12, minmax(auto, auto));
     grid-row-gap: 0em;
@@ -77,7 +77,7 @@
     // margin-bottom: .5em;
     transition: .25s ease-in;
     // background: red;
-    background: transparentize(green, 0.50);
+    background: transparentize(green, 0.35);
 
     // @media (min-width: 736px) and
     //   (max-width: 1024px)
@@ -105,7 +105,7 @@
 
     @media (min-width: 485px) and (max-width: $BreakOne)
     {
-      width: 95%;
+      width: 100%;
       grid-template-columns: repeat(6, minmax(auto, auto));
       // grid-column-gap: 0em;
       // grid-row-gap: .75em;
@@ -115,7 +115,8 @@
 
     @media (min-width: 0px) and (max-width: 484px)
     {
-      grid-template-columns: repeat(3, minmax(auto, auto));
+      width: 100%;
+      grid-template-columns: repeat(4, minmax(auto, auto));
       // grid-row-gap: 1.5em;
       // grid-column-gap: 5em;
       // background: yellow;
@@ -138,8 +139,8 @@
       // background: red;
 
       svg {
+        margin: 0em 1em ;
         // background: orange;
-        margin: 0em 1.4em ;
 
       }
     }

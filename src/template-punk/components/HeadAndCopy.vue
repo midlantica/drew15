@@ -42,7 +42,7 @@
 
   h2 {
     color: $black;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-family: Poppins !important;
     font-weight: 400;
     font-style: normal;
@@ -59,7 +59,7 @@
 
     @media (max-width: $breakTwo) {
       display: inline-block;
-      font-size: 1.5em !important;
+      font-size: 1.3em !important;
       // margin-top: -3px;
     }
 

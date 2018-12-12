@@ -93,8 +93,8 @@
     }
 
     svg {
-      width: 80px;
-      height: 60px;
+      width: 70px;
+      height: 50px;
       // scale
 
       @media (min-width: 485px) and (max-width: $breakOne)

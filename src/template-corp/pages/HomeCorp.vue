@@ -31,9 +31,6 @@
 </template>
 
 <script>
-  import '@/template-corp/assets/css/fonts/Roboto/Roboto.css'
-  import '@/template-corp/assets/css/fonts/cormorantGaramond/cormorantGaramond.css'
-
   import Navvy from '../components/Navvy'
   import HeadAndCopy from '../components/HeadAndCopy'
   import Skills from '../components/Skills'
@@ -61,7 +58,7 @@
         class: 'corp'
       },
       style: [
-        { cssText: 'body.corp .VueCarousel.druCarousel { box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.29); min-height: 21vh; }', type: 'text/css' },
+        { cssText: 'body.corp .VueCarousel.druCarousel { box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.29);  }', type: 'text/css' },
         { cssText: '.about {  }', type: 'text/css' },
         { cssText: '.about p { font-family: "Questrial", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }', type: 'text/css' },
         { cssText: '.skillsgrid { margin: 0 !important; }', type: 'text/css' }
@@ -75,10 +72,10 @@
   @import '@/assets/css/main.scss';
   @import '@/template-corp/assets/css/corp-main.scss';
 
-  $breakThou: 1024px;
-  $breakOne: 840px;
-  $breakTwo: 630px;
-  $breakThree: 530px;
+  // $breakThou: 1024px;
+  // $breakOne: 840px;
+  // $breakTwo: 630px;
+  // $breakThree: 530px;
 
   .about {
     background: white;
