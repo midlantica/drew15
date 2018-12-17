@@ -7,6 +7,8 @@
     <div class="mastMain">
       <a href="/Punk">
         <mastDrew class="svgArt mastDrew" />
+      </a>
+      <a href="/Punk">
         <mastHarper class="svgArt mastHarper" />
       </a>
       <a class="DrewHead" href="Punk/Extras">&nbsp;</a>
@@ -32,16 +34,11 @@
 </script>
 
 <style lang="scss" scoped>
-  @import '../assets/css/_colors.scss';
-  // @import '@/assets/css/main.scss';
+  @import '@/assets/css/main.scss';
   @import '@/template-punk/assets/css/punk-main.scss';
 
   $outRed: rgba(221, 9, 22, .3);
   $outBlue: rgba(92, 201, 245, .3);
-
-  $breakOne: 840px;
-  $breakTwo: 630px;
-  $breakThree: 430px;
 
   nav {
     display: flex;
@@ -110,79 +107,186 @@
       align-content: center;
       margin-top: -1em;
       z-index: 2;
+      width: 100%;
       //
 
-      @media (max-width: $breakOne) {
-        // flex-grow: 1;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        width: 80%;
-      }
-      
-      @media (max-width: $breakTwo) {
-        // flex-grow: 1;
-        // flex-wrap: wrap;
-        // justify-content: center;
-        // align-content: center;
-        // align-items: center;
-        width: 100%;
-      }
-      
-      a .svgArt {
+      @media (max-width: $breakThou) {
         //
       }
 
-      a .svgArt.mastDrew {
-        width: 20.4vw;
+      @media (max-width: $breakOne) {
+        flex-wrap: wrap;
+      }
+
+      @media (max-width: $breakTwo) {
+        //
+      }
+
+      @media (max-width: $breakThree) {
+        //
+      }
+      
+      a {
+        //
+
+        &:nth-child(1) {
+          width: 60vw;
+          // background: red;
+
+          @media (max-width: $breakThou) {
+            order: 1;
+          }
+
+          @media (max-width: $breakOne) {
+            order: 1;
+            width: 47vw;
+            margin-bottom: -1.5em;
+          }
+
+          @media (max-width: $breakTwo) {
+            order: 1;
+            width: 59vw;
+            // flex-grow: 0;
+          }
+
+          @media (max-width: $breakThree) {
+            width: 63vw;
+            order: 1;
+          }
+        }
+
+        &:nth-child(2) {
+          width: 80vw;
+          // background: green;
+
+          @media (max-width: $breakThou) {
+            order: 1;
+          }
+
+          @media (max-width: $breakOne) {
+            order: 3;
+            width: 68vw;
+          }
+
+          @media (max-width: $breakTwo) {
+            width: 88vw;
+            order: 3;
+          }
+
+          @media (max-width: $breakThree) {
+            order: 3;
+            width: 92vw;
+          }
+        }
+
+        &:nth-child(3) {
+          // width: 130px;
+          // height: 150px;
+          // background: blue;
+
+          @media (max-width: $breakThou) {
+            order: 3;
+          }
+
+          @media (max-width: $breakOne) {
+            order: 2;
+          }
+
+          @media (max-width: $breakTwo) {
+            order: 2;
+          }
+
+          @media (max-width: $breakThree) {
+           order: 2;
+          }
+        }
+
+      }
+  
+      a.svg.svgArt.mastDrew {
+        // display: block;
+        width: 200px;
+        width: 170px;
         // height: 12vw;
-        transform: rotate(1deg);
-        margin-top: -1.5em;
-        order: 1;
+        // transform: rotate(1deg);
+        // margin-top: -1.5em;
+        // order: 1;
+
+        @media (max-width: $breakThou) {
+          // width: 34vw;
+          // height: 17vh;
+          // margin-top: 1em;
+          // order: 1;
+        }
 
         @media (max-width: $breakOne) {
-          width: 49vw;
-          // height: 17vh;
-          margin-top: 1em;
-          order: 1;
+          // width: 130px;
+          // height: 140px;
+          // margin-top: 1em;
+          // order: 1;
         }
 
         @media (max-width: $breakTwo) {
-          width: 55vw;
+          // width: 55vw;
+          // height: 17vh;
+          // margin-top: 1em;
+          // order: 1;
+        }
+
+        @media (max-width: $breakThree) {
+          // width: 55vw;
           // height: 17vh;
           // margin-top: 1em;
           // order: 1;
         }
       }
 
-      a .svgArt.mastHarper {
-        width: 32.4vw;
+      a.svg.svgArt.mastHarper {
+        // display: block;
+        // width: 480px;
+        // width: 32.4vw;
         // height: 20vh;
-        transform: rotate(1deg);
-        margin-top: -0.6em;
-        order: 2;
+        // transform: rotate(1deg);
+        // margin-top: -0.6em;
+        // margin-left: 1em;
+        // order: 2;
 
-        @media (max-width: $breakOne) {
-          order: 3;
-          width: 49vw;
+        @media (max-width: $breakThou) {
+          // order: 2;
+          // width: 46vw;
           // height: 20vh;
           // margin-top: -1.5em;
-          flex-grow: 1;
+          // flex-grow: 1;
+        }
+
+        @media (max-width: $breakOne) {
+          // order: 3;
+          // width: 68vw;
+          // height: 20vh;
+          // margin-top: -1.5em;
+          // flex-grow: 1;
         }
 
         @media (max-width: $breakTwo) {
-          order: 3;
-          width: 64vw;
+          // order: 3;
+          // width: 64vw;
           // height: 20vh;
           // margin-top: -1.5em;
-          flex-grow: 1;
+          // flex-grow: 1;
+        }
+
+        @media (max-width: $breakThree) {
+          // order: 3;
+          // width: 64vw;
+          // height: 20vh;
+          // margin-top: -1.5em;
+          // flex-grow: 1;
         }
 
       }
 
       a.DrewHead {
-        display: block;
+        // display: block;
         // min-width: 114px;
         // height: 132px;
         background-image: url(/img/drew_mug_punk.png);
@@ -190,8 +294,8 @@
         //
         background-repeat: no-repeat;
         background-size: contain;
-        width: 128px;
-        height: 139px;
+        width: 240px;
+        height: 120px;
         text-decoration: none;
         // display: block;
         // position: relative;
@@ -199,24 +303,28 @@
         // left: 3.5em;
         // margin-left: .5em;
         // margin-top: 0.5em;
-        order: 3;
+        // order: 3;
         // flex-grow: 1;
 
         @media (max-width: $breakOne) {
-          width: 116px;
-          height: 126px;
-          order: 2;
+          width: 122px;
+          height: 122px;
+          margin-top: 1em;
+          // order: 2;
         }
 
         @media (max-width: $breakTwo) {
-          width: 98px;
-          height: 117px;
+          width: 122px;
+          height: 135px;
+          margin-top: .5em;
         }
 
         @media (max-width: $breakThree) {
-          width: 75px;
-          height: 82px;
+          width: 82px;
+          height: 93px;
+          // order: 2;
         }
+
 
       }
     }

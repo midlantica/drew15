@@ -43,6 +43,7 @@
     // width: 129px;
     // height: 76px;
     // margin-right: 1em;
+    flex-basis: 70%;
 
     @media (max-width: $breakThou) {
       // width: calc(30%);
@@ -88,8 +89,6 @@
     background: url('/img/brit_amer_flag.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    width: 129px;
-    height: 76px;
     margin-right: 1em;
     background-position-y: center;
     //
@@ -100,6 +99,10 @@
     // max-width: 100px;
     // max-height: 60px;
     // margin-right: 1em; 
+    // width: 129px;
+    // height: 76px;
+    width: 100px;
+    height: 60px;
 
     @media (max-width: $breakThou) {
       // width: calc(30%);

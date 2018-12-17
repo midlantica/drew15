@@ -126,10 +126,10 @@
   body.bourbon .VueCarousel.druCarousel {
     background: darken($grey, 5);
     box-shadow: 0 0 4px black, 0 3px 5px rgba(0, 0, 0, 0);
-    min-height: 359px;
+    min-height: 358px;
     
     @media (min-width: $breakThree) {
-      min-height: 339px;
+      min-height: 358px;
     }
 
     @media (max-width: 462px) {
@@ -159,7 +159,7 @@
     min-height: 324px;
 
     @media (min-width: $breakThree) {
-      min-height: 285px;
+      min-height: 324px;
     }
 
     @media (min-width: $breakTwo) {
@@ -178,7 +178,7 @@
     min-height: 329px;
     
     @media (min-width: $breakThree) {
-      min-height: 336px;
+      min-height: 329px;
     }
 
     @media (max-width: 462px) {
@@ -193,7 +193,7 @@
     min-height: 360px;
     
     @media (min-width: $breakThree) {
-      min-height: 336px;
+      min-height: 360px;
     }
 
     @media (max-width: 462px) {

@@ -65,27 +65,28 @@
     transition: .25s ease-in;
     margin: 0 -1em 0 0em;
 
-    @media (min-width: 485px) and (max-width: $breakOne)
+    @media (min-width: $breakThou)
     {
-      // width: 95%;
-      grid-template-columns: repeat(6, minmax(auto, auto));
-      // grid-column-gap: 0em;
-      // grid-row-gap: .75em;
-      grid-row-gap: 1.25em;
-      // background: aqua;
+      grid-template-columns: repeat(12, minmax(auto, auto));
       margin: 0em 0em 0em;
     }
 
-    @media (min-width: 0px) and (max-width: 484px)
-    {
-      grid-template-columns: repeat(3, minmax(auto, auto));
-      // grid-row-gap: 1.5em;
-      // grid-column-gap: 5em;
-      // background: yellow;
-      grid-row-gap: .75em;
-      justify-content: space-around;
-      // justify-content: space-between;
-      justify-items: center;
+    @media (max-width: $breakThou) {
+      grid-template-columns: repeat(6, minmax(auto, auto));
+      grid-row-gap: 1.25em;
+    }
+
+    @media (max-width: $breakOne) {
+      //
+    }
+
+    @media (max-width: $breakTwo) {
+      grid-template-columns: repeat(4, minmax(auto, auto));
+      grid-row-gap: 1.25em;
+    }
+
+    @media (max-width: $breakThree) {
+      //
     }
 
     .icon {
@@ -93,14 +94,25 @@
     }
 
     svg {
-      width: 70px;
-      height: 50px;
+      width: 84px;
+      height: 56px;
       // scale
 
-      @media (min-width: 485px) and (max-width: $breakOne)
-      {
-        // width: 146px;
-        // height: 60px;
+      @media (max-width: $breakThou) {
+        //
+      }
+
+      @media (max-width: $breakOne) {
+        //
+      }
+
+      @media (max-width: $breakTwo) {
+        width: 84px;
+        height: 56px;
+      }
+
+      @media (max-width: $breakThree) {
+        //
       }
     }
   }
