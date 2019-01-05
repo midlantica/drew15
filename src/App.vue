@@ -27,11 +27,8 @@
 <style lang="scss">
   @import '@/assets/css/main.scss';
   @import 'assets/css/vendor/html5Boilerplate.css';
-  
-  $breakThou: 1024px;
-  $breakOne: 840px;
-  $breakTwo: 630px;
-  $breakThree: 430px;
+
+  $backer: #fffae4;
 
   .wrapper {
     max-width: 1024px;
@@ -64,24 +61,24 @@
     }
 
     .about > p { 
-      font-family: "AmericanTypewriterStd-Med" !important;
-      font-size: 0.8em !important;
+      font-family: "AmericanTypewriterStd-Med";
+      font-size: 1em;
 
       @media (max-width: $breakThou) {
-        font-size: 1.65vw !important;
+        font-size: 1.65vw;
         // color: red;
       }
 
       @media (max-width: $breakOne) {
-        font-size: 1.85vw !important;
+        font-size: 1.85vw;
       }
 
       @media (max-width: $breakTwo) {
-        font-size: 2.5vw !important;
+        font-size: 2.5vw;
       }
 
       @media (max-width: $breakThree) {
-        font-size: 3.0vw !important;
+        font-size: 3.0vw;
       }
     }
 
@@ -98,7 +95,13 @@
       // background: url(/img/bg/Drew-punk-back.jpg) repeat;
       // background-size: 110% 100%;
       // background-image: url(/img/bg/check-patt.png);
-      
+      // background: #fffae4;
+      background: linear-gradient(
+        lighten($backer, 10) 0%,
+        darken($backer, 05) 85%,
+        darken($backer, 15) 100%
+      );
+
       @media (max-width: $breakOne) {
         // background-size: 110% 50%;
       }
@@ -128,7 +131,6 @@
         }
       }
     }
-
   }
 
   // #############################
@@ -148,24 +150,24 @@
     }
 
     .about > p { 
-      // font-family: "AmericanTypewriterStd-Med" !important;
-      font-size: 0.85em !important;
+      // font-family: "AmericanTypewriterStd-Med";
+      font-size: 1em;
 
       @media (max-width: $breakThou) {
-        font-size: 1.65vw !important;
+        font-size: 1.65vw;
         // color: red;
       }
 
       @media (max-width: $breakOne) {
-        font-size: 1.85vw !important;
+        font-size: 1.85vw;
       }
 
       @media (max-width: $breakTwo) {
-        font-size: 2.5vw !important;
+        font-size: 2.5vw;
       }
 
       @media (max-width: $breakThree) {
-        font-size: 3.0vw !important;
+        font-size: 3.0vw;
       }
     }
   }
@@ -178,6 +180,7 @@
     // background: url(/img/bg/bricks-bg-01.jpg) repeat;
 
     .wrapper {
+      width: 100%;
       background: 
         url(/img/bg/circles.svg), 
         url(/img/bg/Drew-punk-back.jpg); 

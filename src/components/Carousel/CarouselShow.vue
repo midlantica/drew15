@@ -126,14 +126,15 @@
   body.bourbon .VueCarousel.druCarousel {
     background: darken($grey, 5);
     box-shadow: 0 0 4px black, 0 3px 5px rgba(0, 0, 0, 0);
-    min-height: 358px;
+    // min-height: 358px;
     
-    @media (min-width: $breakThree) {
-      min-height: 358px;
+    @media (min-width: $breakTwo) {
+      // min-height: 358px;
     }
 
     @media (max-width: 462px) {
-      min-height: 289px;
+      min-height: initial;
+      // min-height: 289px;
     }
   }
 
@@ -148,7 +149,8 @@
     }
 
     @media (max-width: 462px) {
-      min-height: 289px;
+      min-height: initial;
+      // min-height: 289px;
     }
   }
 
@@ -159,16 +161,16 @@
     min-height: 324px;
 
     @media (min-width: $breakThree) {
-      min-height: 324px;
+      // min-height: 324px;
     }
 
     @media (min-width: $breakTwo) {
-      min-height: 324px;
+      // min-height: 324px;
     }
     
     @media (min-width: 0px) 
     and (max-width: 405px) {
-      min-height: 285px;
+      min-height: initial;
     }
   }
 
@@ -182,7 +184,7 @@
     }
 
     @media (max-width: 462px) {
-      min-height: 289px;
+      min-height: initial;
     }
   }
 
@@ -197,7 +199,7 @@
     }
 
     @media (max-width: 462px) {
-      min-height: 289px;
+      min-height: initial;
     }
   }
 
@@ -233,7 +235,7 @@
       // margin-bottom: .5em;
       grid-row-gap: 0em;
       @include clearfix;
-      background: purple;
+      // background: purple;
       // border: 2px solid red;
     }
 

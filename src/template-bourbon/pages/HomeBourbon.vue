@@ -73,11 +73,6 @@
   @import '@/assets/css/main.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
-  // $breakThou: 1024px;
-  // $breakOne: 840px;
-  // $breakTwo: 630px;
-  // $breakThree: 430px;
-
   header, 
   footer {
     @include shadow;
@@ -93,8 +88,6 @@
       grid-template-columns: 1fr;
       grid-gap: 0em;
       grid-row-gap: 1em;
-      // grid-column: 1 / 3;
-      // grid-row: 1;
     }
 
     @media (max-width: $breakOne) {
@@ -104,12 +97,6 @@
     @media (max-width: $breakTwo) {
       //
     }
-
-    // @media only screen 
-    //   and (min-device-width: 375px) 
-    //   and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-    //     background: red;
-    // }
 
   }
 
@@ -136,7 +123,6 @@
   .slides {
     grid-column: 2 / 3;
     grid-row: 1;
-    // z-index: 10;
 
     @media (max-width: $breakThou) {
       grid-column: 1 / 3;
@@ -191,6 +177,10 @@
       grid-row: 4;
     }
 
+    @media (max-width: $breakThree) {
+      margin: 0;
+    }
+
     @media only screen 
     and (min-device-width: 375px) 
     and (max-device-width: 660px)
@@ -221,6 +211,11 @@
       grid-column: 1 / 3;
       grid-row: 5;
     }
+
+    @media (max-width: $breakThree) {
+      margin: 0;
+    }
+    
   }
 
 </style>

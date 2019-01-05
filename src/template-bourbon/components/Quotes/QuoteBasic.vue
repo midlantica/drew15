@@ -52,14 +52,16 @@
       and (min-device-width: 700px) 
       and (max-device-width: $breakThou)
       {
-        font-size: 1.9vw;
+        // font-size: 1.5vw;
+        font-size: 0.9em;
       }
 
       @media only screen 
       and (min-device-width: 0px) 
       and (max-device-width: 700px)
       {
-        font-size: 3vw;
+        // font-size: .9vw;
+        font-size: 0.9em;
       }
 
     }
@@ -78,14 +80,16 @@
       and (min-device-width: 700px) 
       and (max-device-width: $breakThou)
       {
-        font-size: 1.9vw;
+        // font-size: 1.5vw;
+        font-size: 0.9em;
       }
 
       @media only screen 
       and (min-device-width: 0px) 
       and (max-device-width: 700px)
       {
-        font-size: 3vw;
+        // font-size: 3vw;
+        font-size: 0.9em;
       }
 
 

@@ -23,9 +23,13 @@
     align-items: center;
     align-content: center;
     align-self: center;
-    //
     @include shadow;
     @include clearfix;
+
+    @media (max-width: $breakFour) 
+    {
+      flex-direction: column;
+    }
   }
 
   .flagBox {
@@ -43,7 +47,7 @@
     // width: 129px;
     // height: 76px;
     // margin-right: 1em;
-    flex-basis: 70%;
+    flex-basis: auto;
 
     @media (max-width: $breakThou) {
       // width: calc(30%);
@@ -72,14 +76,18 @@
     and (max-device-width: 660px)
     and (-webkit-min-device-pixel-ratio: 2)
     {
-      display: block;
-      float: left;
-      clear: left;
+      // display: block;
+      // float: left;
+      // clear: left;
       // background: purple;
       //
       // border: 2px solid red;
-      width: 550px;
+      // width: 550px;
       // height: auto;
+    }
+
+    @media (max-width: $breakFour) {
+      margin-bottom: .5em;
     }
 
   }
@@ -96,11 +104,6 @@
     align-items: center;
     justify-content: center;
     align-self: center;
-    // max-width: 100px;
-    // max-height: 60px;
-    // margin-right: 1em; 
-    // width: 129px;
-    // height: 76px;
     width: 100px;
     height: 60px;
 
@@ -135,8 +138,8 @@
       // clear: left;
       // background: purple;
       // border: 2px solid red;
-      width: 105px;
-      height: 53px;
+      // width: 105px;
+      // height: 53px;
     }
 
   }
@@ -144,7 +147,7 @@
   p {
     display: block;
     color: lighten($grey, 15);
-    font-size: .9em;
+    font-size: 1em;
     line-height: 1.4em;
     letter-spacing: 0.05em;
     //
@@ -152,6 +155,11 @@
     align-items: center;
     justify-content: center;
     align-self: center;
+    text-align: left;
+
+    @media (max-width: $breakFour) {
+      text-align: center;
+    }
   }
 
   

@@ -50,8 +50,7 @@
 
 <style lang="scss" scoped>
   @import '@/assets/css/main.scss';
-  // @import '@/template-bourbon/assets/css/_fonts.scss';
-  // @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  @import '@/template-bourbon/assets/css/bourbon-main.scss';
   
   .skillsGrid {
     display: grid;
@@ -60,14 +59,14 @@
     // justify-content: stretch;
     // justify-content: space-around;
     // justify-content: space-between;
-    justify-content: space-between;
+    justify-content: space-around;
     justify-items: center;
     //
     // margin: .5em auto 0;
     align-items: center;
     grid-template-columns: repeat(4, minmax(auto, auto));
-    grid-row-gap: 2em;
-    grid-column-gap: 0em;
+    grid-row-gap: 0.5em;
+    // grid-column-gap: 0em;
     // grid-column-gap: 1.5em;
     // background: beige;
     // margin-bottom: .5em;
@@ -78,7 +77,7 @@
       (max-width: 1024px)
     {
       grid-template-columns: repeat(6, minmax(auto, auto));
-      grid-column-gap: 2.5em;
+      // grid-column-gap: 2.5em;
       grid-row-gap: 1em;
       // justify-content: stretch;
       // grid-column-gap: 0em;

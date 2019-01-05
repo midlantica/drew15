@@ -41,9 +41,29 @@
       width: 226px;
       height: 165px;
       display: block;
-      position: relative;
-      top: -0.6em;
-      left: 1em;
+      position: relative;      
+      top: -0.3em;
+      left: 0.7em;
+
+      @media (max-width: $breakThree) {
+        width: 186px;
+        height: 135px;
+        top: 1em;
+        left: -1em;
+      }
+      
+      // IPHONE 6,7,8
+      @media only screen 
+      and (min-device-width: 375px) 
+      and (max-device-width: 667px)
+      { 
+        width: 186px;
+        height: 135px;
+        top: 1em;
+        left: -1em;
+        // background: red;
+        // border: 10px green solid;
+      }
     }
 
     .starWars {
@@ -57,6 +77,25 @@
       top: -182px;
       right: 0em;
       float: right;
+
+      @media (max-width: $breakThree) {
+        width: 120px;
+        height: 177px;
+        top: -152px;
+        right: 0em;
+      }
+      
+      // IPHONE 6,7,8
+      // @media only screen 
+      // and (min-device-width: 375px) 
+      // and (max-device-width: 667px)
+      // { 
+      //   width: 120px;
+      //   height: 177px;
+      //   top: -152px;
+      //   right: 0em;
+      // }
+
     }
 
 

@@ -49,32 +49,26 @@
 </script>
 
 <style lang="scss" scoped>
-  // @import '@/assets/css/main.scss';
+  @import '@/assets/css/main.scss';
   @import '@/template-techy/assets/css/techy-main.scss';
-
-  $BreakOne: 1024px;
-  $BreakTwo: 932px;
 
   .skillsGrid {
     display: grid;
     width: 100%;
     flex-wrap: wrap;
-    // justify-content: stretch;
-    // justify-content: space-around;
-    // justify-content: space-between;
-    justify-content: space-between;
+    justify-content: space-around;
     justify-items: center;
     //
-    // margin: .5em auto 0;
     align-items: center;
     grid-template-columns: repeat(12, minmax(auto, auto));
     grid-row-gap: 2.5em;
     grid-column-gap: 0em;
-    // grid-column-gap: 1.5em;
-    // background: beige;
-    // margin-bottom: .5em;
-    transition: .25s ease-in;
-    margin: 0em auto 1em;
+
+    @media (max-width: $breakThou)
+    and (min-width: $breakOne)
+    {
+      grid-template-columns: repeat(12, minmax(auto, auto));
+    }
 
     // IPAD PRO LANDSCAPE
     @media only screen 
@@ -86,24 +80,13 @@
       display: grid;
       width: 100%;
       flex-wrap: wrap;
-      // justify-content: stretch;
-      // justify-content: space-around;
-      // justify-content: space-between;
-      justify-content: space-between;
+      justify-content: space-around;
       justify-items: center;
       //
-      // margin: .5em auto 0;
       align-items: center;
       grid-template-columns: repeat(12, minmax(auto, auto));
       grid-row-gap: 2.5em;
-      grid-column-gap: 0em;
-      // grid-column-gap: 1.5em;
-      // background: beige;
-      // margin-bottom: .5em;
-      transition: .25s ease-in;
-      margin: 0em auto 1em;
-      // background: red;
-      // border: 10px solid green;
+      // margin: 0em auto;
     }
 
     @media (min-width: 726px) 
@@ -112,10 +95,7 @@
       grid-template-columns: repeat(6, minmax(auto, auto));
       grid-column-gap: 2.5em;
       grid-row-gap: 1em;
-      // justify-content: stretch;
-      // grid-column-gap: 0em;
-      // background: lightblue;
-      margin: 0em auto 0em;
+      // margin: 0em auto;
     }
 
     @media (min-device-width: 768px)
@@ -123,35 +103,25 @@
     and (-webkit-min-device-pixel-ratio: 2)
     {
       grid-template-columns: repeat(6, minmax(auto, auto));
-      // justify-content: center;
-      // grid-row-gap: 1.5em;
-      // grid-column-gap: 0em;
-      // grid-column-gap: 0em;
-      // background: rgba(246, 128, 97, .5); // pale orange
-      margin: 0em auto 0em;
+      margin: 0em auto;
     }
 
     @media (min-width: 377px) 
     and (max-width: 726px)
     {
       grid-template-columns: repeat(4, minmax(auto, auto));
-      // grid-column-gap: 0em;
       grid-row-gap: 1.25em;
-      // background: aqua;
-      margin: 0em auto 0em;
+      // margin: 0em auto;
     }
 
     @media (min-width: 0px) 
     and (max-width: 377px)
     {
       grid-template-columns: repeat(3, minmax(auto, auto));
-      // grid-row-gap: 1.5em;
-      // grid-column-gap: 5em;
-      // background: yellow;
       grid-row-gap: .75em;
-      justify-content: space-between;
+      justify-content: space-around;
       justify-items: center;
-      margin: 0em auto 0em;
+      // margin: 0em auto;
     }
 
     @media only screen 
@@ -160,15 +130,12 @@
     and (-webkit-min-device-pixel-ratio: 2)
     {
       padding: 0;
-      // margin: 0 auto;
-      // background: red;
       margin-top: .5em;
       padding-bottom: .5em;
       // background: red;
 
       svg {
-        // background: orange;
-        margin: 0em 1.2em ;
+        //
 
       }
     }
@@ -179,18 +146,17 @@
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: landscape)
     {
-      margin: -0.5em 0em 0em;
+      margin-top: -0.5em;
       padding-bottom: .5em;
       // background: orange;
 
       svg {
-        margin: 0em 0.8em;
-        // background: red !important;
+        // 
       }        
     }
     
     .icon {
-      // margin: auto;
+      // 
 
       //
     }

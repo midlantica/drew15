@@ -15,12 +15,8 @@
 </template>
 
 <style lang="scss" scoped>
-  // @import '@/assets/css/main.scss';
+  @import '@/assets/css/main.scss';
   @import '@/template-punk/assets/css/punk-main.scss';
-
-  $breakOne: 840px;
-  $breakTwo: 630px;
-  $breakThree: 430px;
 
   .copyGrid {
     // display: block;
@@ -64,7 +60,7 @@
     }
 
     @media (max-width: $breakThree) {
-      font-size: 1.2em !important;
+      font-size: 1.05em !important;
       line-height: 2em;
     }
 

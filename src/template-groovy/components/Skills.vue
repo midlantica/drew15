@@ -55,7 +55,7 @@
   .skillsGrid {
     display: grid;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     justify-items: center;
     //
     align-items: center;
@@ -86,7 +86,8 @@
     }
 
     @media (max-width: $breakThree) {
-      //
+      grid-template-columns: repeat(3, minmax(auto, auto));
+      grid-row-gap: 1.25em;
     }
 
     .icon {

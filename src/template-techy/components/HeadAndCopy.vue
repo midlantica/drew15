@@ -11,14 +11,15 @@
   
   section {
     // margin-top: 1em;
-    padding-top: 0em;
+    // padding-top: 0em;
+    margin-bottom: 0.5em;
 
     @media only screen 
     and (min-device-width: 375px) 
     and (max-device-width: 660px)
     and (-webkit-min-device-pixel-ratio: 2)
     {
-      padding-top: 1em;
+      // padding-top: 1em;
       // padding-bottom: 1em;
       // background: red;
     }
@@ -37,11 +38,20 @@
     font-family: $font-copy;
     font-size: 1.2rem;
     line-height: 2.6em;
+    // color: red;
     // color: $grey;
     color: transparentize($blueTech, .0);
     letter-spacing: 0.06em;
     margin: 1em 2.25em 0em;
     // background: purple;
+
+    @media (min-width: $breakThou)
+    and (-webkit-min-device-pixel-ratio: 2) 
+    { 
+      font-size: 1.2rem;
+      line-height: 2.6em;
+    }
+
 
     @media (max-width: $breakThou) {
       font-size: 1.3rem;
@@ -70,7 +80,7 @@
     @media (max-width: $breakTwo) 
     and (-webkit-min-device-pixel-ratio: 2) 
     {
-      // font-size: 1.2rem;
+      font-size: 1.15rem;
       // line-height: 2.4em;
       // margin: 1em 1em 0;
       // padding: 0 1em;
@@ -82,9 +92,9 @@
     and (max-device-width: 660px)
     and (-webkit-min-device-pixel-ratio: 2)
     {
-      margin: 1em 0em 0em;
+      margin: 0.5em 0em 0em;
       // padding-bottom: 1em;
-      font-size: 1.35em;
+      font-size: 1.18em;
       padding: 0em 1em 0em;
       // background: purple;
     }

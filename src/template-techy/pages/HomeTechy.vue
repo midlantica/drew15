@@ -74,16 +74,13 @@
   @import '@/assets/css/main.scss';
   @import '@/template-techy/assets/css/techy-main.scss';
 
-  // $breakThou: 1024px;
-  // $breakOne: 840px;
-  // $breakTwo: 630px;
-  // $breakThree: 430px;
-
   .mainGrid {
     display: grid;
     grid-template-columns: 7fr 6fr;
-    grid-gap: 1em;
+    grid-row-gap: 1em;
     background: $ivory;
+    padding: 0 1em 1em;
+    // width: 100%;
 
     @media (min-width: $breakThou)
     and (min-device-width : 768px) 
@@ -91,15 +88,19 @@
       grid-template-columns: 7fr 6fr;
     }
 
+    @media (max-width: $breakThou)
+    { 
+      grid-template-columns: 1fr;
+    }
+
 
     // IPAD LANDSCAPE
     @media only screen 
     and (min-device-width : 768px) 
     and (max-device-width : 1024px) 
-    and (orientation: landscape) {
+    and (orientation: landscape) 
+    {
       grid-template-columns: 1fr;
-      // background: red;
-      // border: 10px solid green;
     }
 
     // IPAD PRO LANDSCAPE
@@ -109,7 +110,7 @@
     and (orientation: landscape) 
     and (-webkit-min-device-pixel-ratio: 1.5) 
     {
-      // grid-template-columns: 1fr;
+      grid-template-columns: 7fr 6fr;
       // background: red;
       // border: 10px solid green;
     }
@@ -133,7 +134,8 @@
     @media only screen 
     and (min-device-width : 768px) 
     and (max-device-width : 1024px) 
-    and (orientation: landscape) {
+    and (orientation: landscape) 
+    {
       grid-column: 1 / 2;
       grid-row: 1 / 3;
       // background: red;
@@ -153,17 +155,20 @@
       // border: 10px solid green;
     }
 
-    @media (max-width: $breakThou) {
+    @media (max-width: $breakThou) 
+    {
       grid-column: 1 / 3;
       grid-row: 1;
     }
 
-    @media (max-width: $breakOne) {
+    @media (max-width: $breakOne) 
+    {
       grid-column: 1 / 3;
       grid-row: 1;
     }
 
-    @media (max-width: $breakTwo) {
+    @media (max-width: $breakTwo) 
+    {
       grid-column: 1 / 3;
       grid-row: 1;
     }
@@ -174,17 +179,17 @@
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     z-index: 10;
-    margin: -8.5em 1em 0 0;
+    margin-top: -8.5em;
 
     // IPAD LANDSCAPE
     @media only screen 
     and (min-device-width : 768px) 
     and (max-device-width : 1024px) 
-    and (orientation: landscape) {
+    and (orientation: landscape) 
+    {
       grid-column: 2 / 3;
       grid-row: 1 / 2;
       z-index: 10;
-      margin: -8.5em 1em 0 0;
       // background: red;
       // border: 10px solid green;
     }
@@ -199,43 +204,47 @@
       grid-column: 2 / 3;
       grid-row: 1 / 2;
       z-index: 10;
-      margin: -8.5em 1em 0 0;
       // background: red;
       // border: 10px solid green;
     }
 
-    @media (max-width: $breakThou) {
+    @media (max-width: $breakThou) 
+    {
       grid-column: 1 / 3;
       grid-row: 2;
-      margin: 0 1em;
+      margin-top: 0;
+      // margin: 0 1em;
     }
 
-    @media (max-width: $breakOne) {
+    @media (max-width: $breakOne) 
+    {
       grid-column: 1 / 3;
       grid-row: 2;
-      margin: 0 1em;
+      // margin: 0 1em;
     }
 
-    @media (max-width: $breakTwo) {
+    @media (max-width: $breakTwo) 
+    {
       grid-column: 1 / 3;
       grid-row: 2;
-      margin: 0 1em;
+      // margin: 0 1em;
     }
   }
 
   .about {
     grid-column: 2 / 3;
     grid-row: 2;
-    margin: 0 1em 0 0;
+    // margin: 0 1em 0 0;
 
     // IPAD LANDSCAPE
     @media only screen 
     and (min-device-width : 768px) 
     and (max-device-width : 1024px) 
-    and (orientation: landscape) {
+    and (orientation: landscape) 
+    {
       grid-column: 2 / 3;
       grid-row: 2;
-      margin: 0 1em 0 0;
+      // margin: 0 1em 0 0;
       // background: red;
       // border: 10px solid green;
     }
@@ -249,27 +258,30 @@
     {
       grid-column: 2 / 3;
       grid-row: 2;
-      margin: 0 1em 0 0;
+      // margin: 0 1em 0 0;
       // background: red;
       // border: 10px solid green;
     }
 
-    @media (max-width: $breakThou) {
+    @media (max-width: $breakThou) 
+    {
       grid-column: 1 / 3;
       grid-row: 4;
-      margin: 0 1em 1em;
+      // margin: 0 1em 1em;
     }
 
-    @media (max-width: $breakOne) {
+    @media (max-width: $breakOne) 
+    {
       grid-column: 1 / 3;
       grid-row: 4;
-      margin: 0 1em 1em;
+      // margin: 0 1em 1em;
     }
 
-    @media (max-width: $breakTwo) {
+    @media (max-width: $breakTwo) 
+    {
       grid-column: 1 / 3;
       grid-row: 4;
-      margin: 0 1em 1em;
+      // margin: 0 1em 1em;
     }
   }
 
@@ -303,15 +315,18 @@
       // border: 10px solid green;
     }
 
-    @media (max-width: $breakThou) {
+    @media (max-width: $breakThou) 
+    {
       grid-row: 3;
     }
 
-    @media (max-width: $breakOne) {
+    @media (max-width: $breakOne) 
+    {
       grid-row: 3;
     }
 
-    @media (max-width: $breakTwo) {
+    @media (max-width: $breakTwo) 
+    {
       grid-row: 3;
     }
   }
@@ -323,17 +338,20 @@
     background: $mango;
     box-shadow: none;
 
-    @media (max-width: $breakThou) {
+    @media (max-width: $breakThou) 
+    {
       // grid-column: 1 / -1;
       // grid-row: 6;
     }
 
-    @media (max-width: $breakOne) {
+    @media (max-width: $breakOne) 
+    {
       // grid-column: 1 / -1;
       // grid-row: 6;
     }
 
-    @media (max-width: $breakTwo) {
+    @media (max-width: $breakTwo) 
+    {
       // grid-column: 1 / -1;
       // grid-row: 6;
     }

@@ -60,7 +60,7 @@
         class: 'groovy'
       },
       style: [
-        { cssText: '.wrapper { background: #fffae4; }', type: 'text/css' }
+        // { cssText: '.wrapper { background: #fffae4; }', type: 'text/css' }
       ]
     }
   }

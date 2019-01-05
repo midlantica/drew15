@@ -193,9 +193,9 @@
           {
             margin-right: .5em;
             margin-left: 1em;
-            width: 74px !important;
+            width: 89px !important;
             // width: 160% !important;
-            height: 86px !important;
+            height: 107px !important;
             // height: 179% !important;
             // border: 10px solid green; 
             //

@@ -56,27 +56,17 @@
     display: grid;
     width: 100%;
     flex-wrap: wrap;
-    // justify-content: stretch;
-    // justify-content: space-around;
-    // justify-content: space-between;
-    justify-content: space-between;
+    justify-content: space-around;
     justify-items: center;
     //
-    // margin: 0em auto 0;
     align-items: center;
     grid-template-columns: repeat(6, minmax(auto, auto));
-    grid-row-gap: 0.15em;
-    grid-column-gap: 0em;
-    // grid-column-gap: 1.5em;
-    // background: beige;
-    // margin-bottom: .75em;
-    // transition: .25s ease-in;
-    margin: 0 !important;
+    grid-row-gap: .5em;
 
     @media (max-width: 1024px) and 
     (min-width: 726px) 
     {
-      margin: 0 !important;
+      // margin: 0 !important;
     }
 
 
@@ -84,12 +74,7 @@
     (max-width: 1024px)
     {
       grid-template-columns: repeat(6, minmax(auto, auto));
-      // grid-column-gap: 2.5em;
       grid-row-gap: .5em;
-      // justify-content: stretch;
-      // grid-column-gap: 0em;
-      // background: lightblue;
-      margin: 0 !important;
     }
 
     @media (min-device-width: 682px) and 
@@ -97,37 +82,20 @@
     (-webkit-min-device-pixel-ratio: 2)
     {
       grid-template-columns: repeat(6, minmax(auto, auto));
-      // justify-content: center;
-      // grid-row-gap: 1.5em;
-      // grid-column-gap: 0em;
-      // grid-column-gap: 0em;
-      // background: rgba(246, 128, 97, .5); // pale orange
-      margin: 0 !important;
     }
 
     @media (min-width: 414px) and 
     (max-width: 682px)
     {
       grid-template-columns: repeat(4, minmax(auto, auto));
-      grid-row-gap: 1.5em;
-      // grid-column-gap: 0em;
-      // grid-row-gap: .75em;
       grid-row-gap: 1em;
-      // background: aqua;
-      margin: 0 !important;
     }
 
     @media (min-width: 0px) and 
     (max-width: 414px)
     {
       grid-template-columns: repeat(3, minmax(auto, auto));
-      // grid-row-gap: 1.5em;
-      // grid-column-gap: 5em;
-      // background: yellow;
       grid-row-gap: .75em;
-      justify-content: space-between;
-      justify-items: center;
-      margin: 0 !important;
     }
 
     @media only screen 
@@ -136,15 +104,11 @@
     and (-webkit-min-device-pixel-ratio: 2)
     {
       padding: 0;
-      // margin: 0 auto;
-      // background: red;
       margin-top: .5em;
       margin-bottom: .5em;
-      // background: red;
 
       svg {
-        // background: orange;
-        margin: 0em 0.8em ;
+        // margin: 0em 0.8em ;
 
       }
     }
@@ -155,12 +119,10 @@
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: landscape)
     {
-      margin: 0.5em 1em 0em;
-      // background: orange;
+      // margin: 0.5em 1em 0em;
 
       svg {
-        margin: 0em 0.55em;
-        // background: red !important;
+        // margin: 0em 0.55em;
       }        
     }
 

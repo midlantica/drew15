@@ -59,8 +59,7 @@
       },
       style: [
         { cssText: 'body.corp .VueCarousel.druCarousel { box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.29);  }', type: 'text/css' },
-        { cssText: '.about {  }', type: 'text/css' },
-        { cssText: '.about p { font-family: "Questrial", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }', type: 'text/css' },
+        { cssText: '.about p { font-family: "cormorantGaramond-Regular", "Times New Roman", Times, serif; !important; font-size: 1em; }', type: 'text/css' },
         { cssText: '.skillsgrid { margin: 0 !important; }', type: 'text/css' }
       ]
     }
@@ -105,7 +104,7 @@
 
     @media (max-width: $breakThou) {
       grid-template-columns: 1fr;
-      grid-gap: 0em;
+      // grid-gap: 0em;
       grid-row-gap: 1em;
       // grid-column: 1 / 3;
       // grid-row: 1;
