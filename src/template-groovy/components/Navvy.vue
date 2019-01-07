@@ -18,14 +18,14 @@
 
 <style lang="scss" scoped>
   // @import '@/assets/css/_colors.scss';
-  // @import '@/assets/css/main.scss';
+  @import '@/assets/css/main.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
   $outRed: rgba(221, 9, 22, .3);
   $outBlue: rgba(92, 201, 245, .3);
 
-  $breakOne: 840px;
-  $breakTwo: 630px;
+  // $breakOne: 840px;
+  // $breakTwo: 630px;
 
   nav {
     // display: grid;

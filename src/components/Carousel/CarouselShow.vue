@@ -129,7 +129,7 @@
     // min-height: 358px;
     
     @media (min-width: $breakTwo) {
-      // min-height: 358px;
+      min-height: 358px;
     }
 
     @media (max-width: 462px) {

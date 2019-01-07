@@ -5,13 +5,13 @@
     <p class='email'><a href="mailto:druharper@gmail.com">druharper@gmail.com</a></p>
 
     <div class="mastMain">
-      <a href="/Punk">
+      <router-link to="/Punk">
         <mastDrew class="svgArt mastDrew" />
-      </a>
-      <a href="/Punk">
+      </router-link>
+      <router-link to="/Punk">
         <mastHarper class="svgArt mastHarper" />
-      </a>
-      <a class="DrewHead" href="Punk/Extras">&nbsp;</a>
+      </router-link>
+      <router-link to="Punk/Extras" class="DrewHead">&nbsp;</router-link>
     </div>
 
     <p class='resume'>Resume: 

@@ -29,6 +29,7 @@
   @import 'assets/css/vendor/html5Boilerplate.css';
 
   $backer: #fffae4;
+  $backBlack: #1f1f1f;
 
   .wrapper {
     max-width: 1024px;
@@ -41,7 +42,7 @@
   // BOURBON
   .bourbon {
     // background: initial;
-    background: #222;
+    background: $backBlack;
     // background: url(/img/bg/bricks-bg-02.jpg) repeat;
 
     .wrapper {
@@ -88,7 +89,7 @@
   // GROOVY
   .groovy {
     // background: initial;
-    background: #333;
+    background: $backBlack;
     // background: url(/img/bg/bricks-bg-02.jpg) repeat;
 
     .wrapper {
@@ -117,7 +118,8 @@
   // #############################
   // TECHY
   .techy {
-    background: darken(#423BA0, 35);
+    background: $backBlack;
+
     .wrapper { 
       //
     }
@@ -136,7 +138,7 @@
   // #############################
   // CORP
   .corp {
-    background: #222;
+    background: $backBlack;
 
     .wrapper {
       // background: url(/img/bg/black-parch-bg-1.jpg) repeat;
@@ -150,7 +152,7 @@
     }
 
     .about > p { 
-      // font-family: "AmericanTypewriterStd-Med";
+      font-family: cormorantGaramond-Semi-Bold, "Times New Roman", Times, serif !important;
       font-size: 1em;
 
       @media (max-width: $breakThou) {
@@ -176,7 +178,7 @@
   // PUNK
   .punk {
     // background: initial;
-    background: #222;
+    background: $backBlack;
     // background: url(/img/bg/bricks-bg-01.jpg) repeat;
 
     .wrapper {

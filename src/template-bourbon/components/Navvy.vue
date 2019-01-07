@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <h1><a href="/">DREW HARPER</a></h1>
+    <h1><router-link to="/">DREW HARPER</router-link></h1>
     <section class="jobDesc">
       <h2>UI/UX DESIGNER</h2>
       <h2>FRONT&nbsp;END&nbsp;DEV</h2>
@@ -121,7 +121,7 @@
     }
 
     h2 {
-      font-size: 1.7em;
+      font-size: 1.6em;
       letter-spacing: .03em;
       text-shadow: 3px 0px 3px $black;
 
@@ -130,7 +130,8 @@
       }
 
       &:nth-child(2) {
-        font-size: 1.75em;
+        font-size: 1.65em;
+        margin-bottom: 0.1em;
       }
 
       @media (max-width: $breakTwo) {

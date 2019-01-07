@@ -5,9 +5,13 @@
       <div class="masty">
 
         <div class="DHmast">
-          <router-link class="drewHeadPic" to="/Techy/Extras" />
-          <mastDrew class="svgArt mastDrew" />
-          <mastHarper class="svgArt mastHarper" />
+          <router-link to="/Techy/Extras" class="drewHeadPic" />
+          <router-link to="/Techy" class="svgArt mastDrew" >
+            <mastDrew />
+          </router-link>
+          <router-link to="/Techy" class="svgArt mastHarper">
+            <mastHarper />
+          </router-link>
         </div>
 
         <div class="jobDesc">
@@ -45,13 +49,8 @@
 <style lang="scss" scoped>
 
   // @import '../assets/css/_colors.scss';
-  // @import '@/assets/css/main.scss';
+  @import '@/assets/css/main.scss';
   @import '@/template-techy/assets/css/techy-main.scss';
-
-  $breakThou: 1024px;
-  $breakOne: 840px;
-  $breakTwo: 630px;
-  $breakThree: 430px;
 
   nav {
     width: 100%;
@@ -101,7 +100,7 @@
       text-align: center;
 
       .DHmast {
-        display: block;
+        // display: block;
         display: grid;
         grid-template-columns: 2fr 4fr 7fr;
         // grid-template-rows: auto;
@@ -134,140 +133,108 @@
         and (-webkit-device-pixel-ratio: 2)
         {
           padding-top: 1em;
-          // padding-left: 2.5em;
-          // margin-left: 1em;
-          // border: 1px solid red; 
-          //
         }
 
         ////
         a.drewHeadPic {
-          // display: block;
-          // float: left;
-          // clear: left;
           width: 120px;
           height: 144px;
           padding: 1em 1em 0em 1em;
           background-image: url(/img/drew_mug_dig.png);
-          // background-image: url(/img/drew_mug_blue.png);
           background-repeat: no-repeat;
           background-size: cover;
-          // filter:hue-rotate(180deg);
-          // width: 98px;
-          // height: 119px;
-          // display: block;
-          // position: relative;
-          // top: 2.8em;
-          // left: 3.5em;
           margin: 1em 0em 0em 0em;
           grid-column: 1 / 2;
           grid-row: 1 / 3;
           justify-self: end;
-          // border: 10px solid blue;
 
           @media (max-width: $breakThou) {
             width: 106px;
             height: 127px;
-            // float: left;
-            // display: block;
-            // clear: left;
             grid-column: 1 / 2;
             grid-row: 1 / 2;
             justify-self: right;
-            // display: block;
-            // clear: left;
           }
 
           @media (max-width: $breakTwo) {
-            width: 89px;
-            height: 107px;
+            width: 74px;
+            height: 87px;
           }
 
           @media (max-width: $breakThree) {
-            width: 70px;
-            height: 86px;
+            // width: 70px;
+            width: 55px;
+            // height: 86px;
+            height: 66px;
           }
   
-          @media only screen and (max-device-width: 667px) 
+          @media (max-device-width: 667px) 
           and (-webkit-device-pixel-ratio: 2)
           {
-            margin-right: .5em;
+            margin-right: 1em;
             margin-left: 1em;
             width: 89px !important;
-            // width: 160% !important;
             height: 107px !important;
-            // height: 179% !important;
-            // border: 10px solid green; 
-            //
           }
+
+          @media (max-width: $breakFour) {
+            width: 55px !important;
+            height: 66px !important;
+          }
+
+
 
         }
         
-        .svgArt {
+        a.svgArt {
           height: 5.9em;
-          // margin: 2em 0 0em 1em;
-          // display: block;
-          // float: left;
-          // flex-grow: 1;
 
           @media (max-width: $breakThou) {
             height: 11.5vw;
           }
           @media (max-width: $breakOne) {
-            height: 15vw;
+            height: 14vw;
           }
           @media (max-width: $breakTwo) {
-            height: 18vw;
+            height: 14vw;
           }
           @media (max-width: $breakThree) {
-            height: 19vw;
+            height: 14vw;
           }
-
         }
-        .mastDrew {
-          // width: 17em;
-          // height: 12vw;
-          // margin-top: -1.5em; 
+
+        a.mastDrew {
           grid-column: 2 / 3; 
           grid-row: 1 / 3;
+          width: 19em;
 
           @media (max-width: $breakThou) {
             grid-column: 2 / 3 ; 
             grid-row: 1 / 1;
             align-self: end;
             margin-bottom: -1em;
-            // justify-self: center;
-            // display: block;
+            width: 40vw;
           }
 
           @media (max-width: $breakOne) {
-            // width: 45vw;
-            // height: 17vh;
-            // margin-top: 1em;
+            // 
           }
 
           @media (max-width: $breakTwo) {
-            // width: 60vw;
-            // height: 17vh;
-            // margin-top: 1em;
-            // order: 1;
+            // 
           }
         }
 
-        .mastHarper {
-          // width: 24em;
-          // height: 20vh;
-          // transform: rotate(1deg);
-          // margin-top: -0.6em;
-          // margin-left: 2em;
+        a.mastHarper {
           display: initial;
-          // float: initial;
           grid-column: 3 / 4; 
           grid-row: 1 / 3;
+          width: 25.3em;
 
           @media (max-width: $breakThou) {
             grid-column: 1 / 3; 
             grid-row: 2 / 3;
+            width: 50vw;
           }
 
           @media (max-width: $breakOne) {

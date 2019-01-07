@@ -66,7 +66,7 @@
     grid-row-gap: 0em;
     grid-column-gap: 0em;
     transition: .25s ease-in;
-    background: transparentize(green, 0.35);
+    background: transparentize(green, 0.50);
 
     @media (min-width: $breakThou)
     {

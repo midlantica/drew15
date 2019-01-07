@@ -7,10 +7,10 @@
         <router-link to="/Groovy/Extras" class="drewhead"/>
       </div>
 
-      <a href="/" class="drewHarperSVG">
+      <router-link to="/Groovy" class="drewHarperSVG">
         <mastDrew class="svgArt mastDrew" />
         <mastHarper class="svgArt mastHarper" />
-      </a>
+      </router-link>
      
       <div class="jobDesc">
         <h2>ui/ux designer + front&#8209;end&nbsp;dev</h2>
@@ -45,11 +45,6 @@
   // @import '@/assets/css/_colors.scss';
   @import '@/assets/css/main.scss';
   @import '@/template-groovy/assets/css/groovy-main.scss';
-
-  $breakThou: 1024px;
-  $breakOne: 840px;
-  $breakTwo: 630px;
-  $breakThree: 430px;
 
   nav {
     // display: flex;

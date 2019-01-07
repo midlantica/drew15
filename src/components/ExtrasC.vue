@@ -47,6 +47,11 @@
           <center><p>Mobile Lottery interface, interactive pdf</p></center>
         </a>
 
+        <a href="/img/portfolio/extras/JPay_Extras.pdf" target="_BLANK">
+          <img class="portThumbs" src="/img/portfolio/extras/JPay_Extras@2x.png">
+          <center><p>JPay Extras: Web, Mobile, Corp ID, Print Ads, Newslatters, <br>Brochures, Package Design, PDF forms, Kiosk Design, Murals</p></center>
+        </a>
+
       </div>
 
     </div>
