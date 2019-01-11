@@ -291,7 +291,7 @@
       font-weight: 400;
       color: $blueTech;
       text-transform: lowercase;
-      font-size: 2.3vw;
+      font-size: 2em;
       line-height: 1.1em;
       letter-spacing: .03em;
 

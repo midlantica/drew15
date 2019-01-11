@@ -123,6 +123,8 @@
   .slides {
     grid-column: 2 / 3;
     grid-row: 1;
+    // width: calc(100% / 2 - 100px);
+
 
     @media (max-width: $breakThou) {
       grid-column: 1 / 3;

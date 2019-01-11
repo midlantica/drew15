@@ -13,27 +13,27 @@
     background: $mango;
 
     p {
-      font-size: 1.4vw;
+      font-size: 1.2em;
       color: $blueTech;
       text-align: center;
       padding: .5em;
       letter-spacing: 0.02em;
 
       @media (max-width: $breakThou) {
-        font-size: 2vw;
+        font-size: 1.25em;
       }
 
       @media (max-width: $breakOne) {
-        font-size: 2.4vw;
+        font-size: 1.25em;
       }
 
       @media (max-width: $breakTwo) {
-        font-size: 3vw;
+        font-size: 1.25em;
       }
 
       @media (max-width: $breakThree) {
-        font-size: 4.2vw;
-        line-height: 1.4em;
+        font-size: 1.25em;
+        line-height: 1.25em;
       }
     }
   }

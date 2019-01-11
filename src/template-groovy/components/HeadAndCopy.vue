@@ -40,7 +40,7 @@
     font-size: 0.95rem;
     // font-weight: bold;
     margin: 0em 2.5em 0em 2em;
-    line-height: calc(1.25em + 2vw);
+    line-height: 2em;
     // line-height: 3.2em;
     letter-spacing: 0.04em;
 
@@ -53,7 +53,7 @@
     // -->>
     // MIN -- MIN -- MIN -- MIN -- MIN
     @media (min-width: $breakThou) {
-      line-height: 3.3em;
+      line-height: 3.6em;
     }
 
     @media (max-width: $breakThou) {
