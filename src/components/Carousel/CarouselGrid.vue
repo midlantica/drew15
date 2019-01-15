@@ -1,37 +1,37 @@
 <template>
   <div class="miniGallery">
 
-    <a @click.stop="selectedView = 'Uiux'">
+    <a @click="$emit('selectedView') = 'Uiux'">
       <div class="box">
         <p>UI/UX Design</p>
       </div>
     </a>
 
-    <a @click.stop="selectedView = 'Mobile'">
+    <a @click="$emit('selectedView') = 'Mobile'">
       <div class="box">
         <p>Mobile</p>
       </div>
     </a>
 
-    <a @click.stop="selectedView = 'Kiosk'">
+    <a @click="$emit('selectedView') = 'Kiosk'">
       <div class="box">
         <p>Kiosk</p>
       </div>
     </a>
 
-    <a @click.stop="selectedView = 'Graphics'">
+    <a @click="$emit('selectedView') = 'Graphics'">
       <div class="box">
         <p>Graphics</p>
       </div>
     </a>
 
-    <a @click.stop="selectedView = 'Print'">
+    <a @click="$emit('selectedView') = 'Print'">
       <div class="box">
         <p>Print</p>
       </div>
     </a>
 
-    <a @click.stop="selectedView = 'Misc'">
+    <a @click="$emit('selectedView') = 'Misc'">
       <div class="box">
         <p>Misc.</p>
       </div>

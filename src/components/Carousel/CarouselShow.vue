@@ -1,6 +1,7 @@
 <template>
   <div class="projectBox">
-    <p class="projectHead"><a @click.stop="selectedView = 'CarouselGrid'"> << </a>Projects</p>
+    <a class="carouselArrow" @click.stop="selectedView = 'Carousel'">◀︎ BACK</a>
+    <p class="projectHead">Projects - {{ selectedView }} </p>
 
     <component :is="selectedView">
     
@@ -51,7 +52,7 @@
 </template>
 
 <script>
-  // import CarouselGrid from '@/components/Carousel/CarouselGrid'
+  // import Carousel from '@/components/Carousel/Carousel'
   import Uiux from '@/components/Carousel/01_uiux'
   const Mobile = () => import('@/components/Carousel/02_mobile')
   const Kiosk = () => import('@/components/Carousel/03_kiosk')
@@ -71,7 +72,13 @@
     },
     data () {
       return {
-        selectedView: 'CarouselGrid'
+        selectedView: 'Carousel',
+        uiux: 'UI/UX',
+        mobile: 'Mobile',
+        kiosk: 'Kiosk',
+        graphics: 'Graphics',
+        print: 'Print',
+        misc: 'Misc.'
       }
     }
   }
@@ -88,13 +95,115 @@
     border-radius: .25em;
     @include clearfix;
   }
+  
+  body.bourbon .projectBox,
+  body.corp .projectBox {
+    @include shadow;
+  }
+
+  body.groovy .projectBox {
+    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  body.punk .projectBox {
+    @include shadow;
+    // box-shadow: none;
+  }
+
+  // ########################
+  // ########################
+  // ########################
+
+  body.bourbon .projectHead,
+  body.bourbon .box p
+  {
+    font-family: Dosis, "Helvetica Neue", Arial, sans-serif !important;
+  }
+
+  body.bourbon .box {
+    height: 173px;
+  }
+  
+  //////////
+
+  body.groovy .projectHead,
+  body.groovy .box p
+  {
+    font-family: Dosis, "Helvetica Neue", Arial, sans-serif !important;
+  }
+
+  body.groovy .box {
+    height: 163px !important;
+  }
+  
+  //////////
+  
+  body.techy .projectHead,
+  body.techy .box p
+  {
+    font-family: Dosis, "Helvetica Neue", Arial, sans-serif !important;
+  }
+
+  body.techy .box {
+    height: 163px !important;
+  }
+  
+  //////////
+  
+  body.corp .projectHead,
+  body.corp .box p
+  {
+    font-family: cormorantGaramond-Semi-Bold, "Times New Roman", Times, serif !important;
+    letter-spacing: 0.05em;
+  }
+
+  body.corp .box {
+    height: 160px !important;
+  }
+  
+  //////////
+  
+  body.punk .projectHead,
+  body.punk .box p
+  {
+    font-family: Poppins, "Helvetica Neue", Arial, sans-serif !important;
+  }
+  
+  body.punk .box {
+    height: 173px !important;
+  }
+  
+  //////////
+
+
+
 
   .projectHead {
+    font-size: .9em;
     text-align: center;
     text-transform: uppercase;
+    margin-right: 3.5em;
 
     a {
       cursor: pointer;
+    }
+  }
+
+  .carouselArrow {
+    font-size: 0.8em;
+    display: block;
+    float: left;
+    clear: left;
+    border: 1px solid lightgrey;
+    border-radius: .25em;
+    background: transparentize(white, .5);
+    cursor: pointer;
+    padding: 0.1em .5em 0.1em .25em;
+    margin: 0.1em 0em 0;
+
+    &:hover {
+      color: white;
+      background: grey;
     }
   }
 
@@ -105,8 +214,8 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    //
-    // background: lighten(lightgrey, 10);
+    // transition-property: background-color;
+    transition-duration: 1s;
 
     a {
       flex-grow: 1;
@@ -134,7 +243,7 @@
         text-align: center;
         box-shadow: 1px 1px 0 -1px rgba(0,0,0,0.50);
         margin: .25em .25em;
-        height: 160px;
+        height: 173px;
         box-shadow: 0px 2px 2px -3px black;
         background: lighten(lightgrey, 15);
 
@@ -150,7 +259,7 @@
 
         p {
           width: 100%;
-          font-size: 1em;
+          font-size: .85em;
           text-transform: uppercase;
           color: $grey;
           text-align: center;

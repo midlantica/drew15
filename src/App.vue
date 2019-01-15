@@ -63,7 +63,7 @@
 
     .about > p { 
       font-family: "AmericanTypewriterStd-Med";
-      font-size: 1em;
+      font-size: .85em;
 
       @media (max-width: $breakThou) {
         font-size: 1.65vw;
@@ -111,6 +111,10 @@
       header, footer {
         // background: url(./template-bourbon/assets/img/bg/bg_bag_dk.jpg) repeat;
       }
+    }
+
+    .about > p { 
+      font-size: .9em !important;
     }
   }
 

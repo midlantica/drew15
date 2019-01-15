@@ -41,7 +41,8 @@
   import About from '@/components/About'
   import Skills from '../components/Skills'
   import Quotes from '../components/Quotes/QuoteBasic'
-  const CarouselShow = () => import('@/components/Carousel/CarouselShow')
+  import CarouselShow from '@/components/Carousel/CarouselShow'
+  // const CarouselShow = () => import('@/components/Carousel/CarouselShow')
 
   export default {
     layout: 'default',

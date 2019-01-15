@@ -33,7 +33,7 @@
       font-family: $font;
       color: lighten($grey, 15);
       // color: red;
-      font-size: .8em;
+      font-size: .85em !important;
       font-weight: bold;
       margin: 1em 1em 0.7em 10.7em;
       padding: 0.9em 0 0 0;
