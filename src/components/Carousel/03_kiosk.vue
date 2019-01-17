@@ -42,16 +42,16 @@
         this.images = [
           'img/portfolio/base.jpg',
           imgPath + 'inmate_kiosk.jpg',
-          imgPath + 'inmate_kiosk_UI_home.jpg',
-          imgPath + 'inmate_kiosk_UI_home_signed_in.jpg',
-          imgPath + 'inmate_kiosk_UI_buy_jp3.jpg',
-          imgPath + 'inmate_kiosk_UI_music.jpg',
-          imgPath + 'inmate_kiosk_UI_music_songs_list.jpg',
-          imgPath + 'inmate_kiosk_UI_email_inbox.jpg',
-          imgPath + 'inmate_kiosk_UI_email_pic.jpg',
-          imgPath + 'inmate_kiosk_UI_email_read.jpg',
-          imgPath + 'inmate_kiosk_UI_buys.jpg',
-          imgPath + 'inmate_kiosk_UI_manage.jpg'
+          imgPath + 'inmate_kiosk_ui_home.jpg',
+          imgPath + 'inmate_kiosk_ui_home_signed_in.jpg',
+          imgPath + 'inmate_kiosk_ui_buy_jp3.jpg',
+          imgPath + 'inmate_kiosk_ui_music.jpg',
+          imgPath + 'inmate_kiosk_ui_music_songs_list.jpg',
+          imgPath + 'inmate_kiosk_ui_email_inbox.jpg',
+          imgPath + 'inmate_kiosk_ui_email_pic.jpg',
+          imgPath + 'inmate_kiosk_ui_email_read.jpg',
+          imgPath + 'inmate_kiosk_ui_buys.jpg',
+          imgPath + 'inmate_kiosk_ui_manage.jpg'
         ]
       }, 0)
     }

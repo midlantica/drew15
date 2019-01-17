@@ -8,37 +8,37 @@
       <div class="miniGallery">
 
         <a @click.stop="selectedView = 'Uiux'">
-          <div class="box">
+          <div class="box Uiux">
             <p>UI/UX Design</p>
           </div>
         </a>
 
         <a @click.stop="selectedView = 'Mobile'">
-          <div class="box">
+          <div class="box Mobile">
             <p>Mobile</p>
           </div>
         </a>
 
         <a @click.stop="selectedView = 'Kiosk'">
-          <div class="box">
+          <div class="box Kiosk">
             <p>Kiosk</p>
           </div>
         </a>
 
         <a @click.stop="selectedView = 'Graphics'">
-          <div class="box">
+          <div class="box Graphics">
             <p>Graphics</p>
           </div>
         </a>
 
         <a @click.stop="selectedView = 'Print'">
-          <div class="box">
+          <div class="box Print">
             <p>Print</p>
           </div>
         </a>
 
         <a @click.stop="selectedView = 'Misc'">
-          <div class="box">
+          <div class="box Misc">
             <p>Misc.</p>
           </div>
         </a>
@@ -246,9 +246,12 @@
         height: 173px;
         box-shadow: 0px 2px 2px -3px black;
         background: lighten(lightgrey, 15);
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
 
         @media (max-width: $breakThou) {
-          height: 10vh;
+          height: 10vh !important;
         }
 
         &:hover {
@@ -257,6 +260,151 @@
           box-shadow: 0px 2px 2px -1px grey;
         }
 
+        &.Uiux {
+          background: url(/img/carousel/car-icon-uiux.svg) no-repeat center center;
+          background-color: lighten(lightgrey, 15);
+          background-size: 75% 75%;
+          background-position: center 8px; 
+          border: 1px solid transparentize(grey, .5);
+
+          &:hover {
+            background: url(/img/carousel/car-icon-uiux.svg) no-repeat center center;
+            background-color: lighten(lightgrey, 10);
+            // transition-property: background-color;
+            transition-duration: .5s;
+            // background-color: lighten(lightgrey, 25);
+            background-size: 75% 75%;
+            background-position: center 0px; 
+            border: 1px solid transparentize(grey, .5);
+            box-shadow: 0px 2px 2px -1px grey;
+          }
+
+          @media (max-width: $breakThou) {
+            background-position: center 2px;
+          }
+        }
+
+        &.Mobile {
+          background: url(/img/carousel/car-icon-mobile.svg) no-repeat center center;
+          background-color: lighten(lightgrey, 15);
+          background-size: 75% 75%;
+          background-position: center 8px; 
+          border: 1px solid transparentize(grey, .5);
+
+          &:hover {
+            background: url(/img/carousel/car-icon-mobile.svg) no-repeat center center;
+            background-color: lighten(lightgrey, 10);
+            // transition-property: background-color;
+            transition-duration: .5s;
+            // background-color: lighten(lightgrey, 25);
+            background-size: 75% 75%;
+            background-position: center 0px; 
+            border: 1px solid transparentize(grey, .5);
+            box-shadow: 0px 2px 2px -1px grey;
+          }
+
+          @media (max-width: $breakThou) {
+            background-position: center 2px;
+          }
+        }
+
+        &.Kiosk {
+          background: url(/img/carousel/car-icon-kiosk.svg) no-repeat center center;
+          background-color: lighten(lightgrey, 15);
+          background-size: 75% 75%;
+          background-position: center 8px; 
+          border: 1px solid transparentize(grey, .5);
+
+          &:hover {
+            background: url(/img/carousel/car-icon-kiosk.svg) no-repeat center center;
+            background-color: lighten(lightgrey, 10);
+            // transition-property: background-color;
+            transition-duration: .5s;
+            // background-color: lighten(lightgrey, 25);
+            background-size: 75% 75%;
+            background-position: center 0px; 
+            border: 1px solid transparentize(grey, .5);
+            box-shadow: 0px 2px 2px -1px grey;
+          }
+
+          @media (max-width: $breakThou) {
+            background-position: center 2px;
+          }
+        }
+
+        &.Graphics {
+          background: url(/img/carousel/car-icon-graphics.svg) no-repeat center center;
+          background-color: lighten(lightgrey, 15);
+          background-size: 75% 75%;
+          background-position: center 8px; 
+          border: 1px solid transparentize(grey, .5);
+
+          &:hover {
+            background: url(/img/carousel/car-icon-graphics.svg) no-repeat center center;
+            background-color: lighten(lightgrey, 10);
+            // transition-property: background-color;
+            transition-duration: .5s;
+            // background-color: lighten(lightgrey, 25);
+            background-size: 75% 75%;
+            background-position: center 0px; 
+            border: 1px solid transparentize(grey, .5);
+            box-shadow: 0px 2px 2px -1px grey;
+          }
+
+          @media (max-width: $breakThou) {
+            background-position: center 2px;
+          }
+        }
+
+        &.Print {
+          background: url(/img/carousel/car-icon-print.svg) no-repeat center center;
+          background-color: lighten(lightgrey, 15);
+          background-size: 75% 75%;
+          background-position: center 8px; 
+          border: 1px solid transparentize(grey, .5);
+
+          &:hover {
+            background: url(/img/carousel/car-icon-print.svg) no-repeat center center;
+            background-color: lighten(lightgrey, 10);
+            // transition-property: background-color;
+            transition-duration: .5s;
+            // background-color: lighten(lightgrey, 25);
+            background-size: 75% 75%;
+            background-position: center 0px; 
+            border: 1px solid transparentize(grey, .5);
+            box-shadow: 0px 2px 2px -1px grey;
+          }
+
+          @media (max-width: $breakThou) {
+            background-position: center 2px;
+          }
+        }
+
+        &.Misc {
+          background: url(/img/carousel/car-icon-misc.svg) no-repeat center center;
+          background-color: lighten(lightgrey, 15);
+          background-size: 75% 75%;
+          background-position: center 8px; 
+          border: 1px solid transparentize(grey, .5);
+
+          &:hover {
+            background: url(/img/carousel/car-icon-misc.svg) no-repeat center center;
+            background-color: lighten(lightgrey, 10);
+            // transition-property: background-color;
+            transition-duration: .5s;
+            // background-color: lighten(lightgrey, 25);
+            background-size: 75% 75%;
+            background-position: center 0px; 
+            border: 1px solid transparentize(grey, .5);
+            box-shadow: 0px 2px 2px -1px grey;
+          }
+
+          @media (max-width: $breakThou) {
+            background-position: center 2px;
+          }
+        }
+
+
         p {
           width: 100%;
           font-size: .85em;
@@ -264,10 +412,16 @@
           color: $grey;
           text-align: center;
           letter-spacing: 0.05em;
+          margin-bottom: 1.5em;
 
           &:hover {
             color: $ivory;
           }
+
+          @media (max-width: $breakThou) {
+            margin-bottom: 0em;
+          }
+
         }
       }
     }
