@@ -121,7 +121,7 @@
   }
 
   body.bourbon .box {
-    height: 173px;
+    height: 169.5px;
   }
   
   //////////
@@ -133,7 +133,7 @@
   }
 
   body.groovy .box {
-    height: 163px !important;
+    height: 158.5px !important;
   }
   
   //////////
@@ -145,7 +145,7 @@
   }
 
   body.techy .box {
-    height: 163px !important;
+    height: 159px !important;
   }
   
   //////////
@@ -158,7 +158,7 @@
   }
 
   body.corp .box {
-    height: 160px !important;
+    height: 154.5px !important;
   }
   
   //////////
@@ -170,7 +170,7 @@
   }
   
   body.punk .box {
-    height: 173px !important;
+    height: 171px !important;
   }
   
   //////////
@@ -243,7 +243,7 @@
         text-align: center;
         box-shadow: 1px 1px 0 -1px rgba(0,0,0,0.50);
         margin: .25em .25em;
-        height: 173px;
+        height: 169.5px;
         box-shadow: 0px 2px 2px -3px black;
         background: lighten(lightgrey, 15);
         display: flex;

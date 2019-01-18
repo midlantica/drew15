@@ -23,8 +23,6 @@
 </template>
 
 <script>
-  // import Spinner from '../img/spinners/AndroidLoading.gif'
-  // IN PLUGINS <<<
   import { Carousel, Slide } from 'vue-carousel'
   export default {
     components: {
@@ -56,7 +54,6 @@
 
 <style lang="scss">
   @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/punk-main.scss';
   @import '@/assets/css/_template-carousel.scss';
 
 </style>
