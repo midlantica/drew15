@@ -46,7 +46,8 @@
           imgPath + 'email/jpay_email.jpg',
           imgPath + 'mural/atlanta_tree_pro_truck.jpg',
           imgPath + 'mural/jpay_mural.jpg',
-          imgPath + 'packaging/jp3_package.jpg'
+          imgPath + 'packaging/jp3_package.jpg',
+          imgPath + 'JP3_many.jpg'
         ]
       }, 0)
     }
@@ -55,7 +56,7 @@
 
 <style lang="scss">
   @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  @import '@/template-bourbon/assets/css/punk-main.scss';
   @import '@/assets/css/_template-carousel.scss';
 
 </style>
