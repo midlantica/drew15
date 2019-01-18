@@ -40,7 +40,7 @@
   import HeadAndCopy from '../components/HeadAndCopy'
   import About from '@/components/About'
   import Skills from '../components/Skills'
-  import Quotes from '../components/Quotes/QuoteBasic'
+  import Quotes from '../components/Quote'
   import CarouselShow from '@/components/Carousel/CarouselShow'
   // const CarouselShow = () => import('@/components/Carousel/CarouselShow')
 

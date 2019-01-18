@@ -8,9 +8,9 @@
     <section class="contact">
       <p class='email'><a href="mailto:druharper@gmail.com">DRUHARPER@GMAIL.COM</a></p>
       <p class='resume'>Resume: Word
-        <a href="img/resume/drew_harper_resume_portfolio_short.docx">Small</a>/
-        <a href="img/resume/drew_harper_resume_portfolio.docx">Big</a> or
-        <a href="img/resume/drew_harper_resume_portfolio.pdf">PDF</a>
+        <a href="resume/drew_harper_resume_portfolio_short.docx">Small</a>/
+        <a href="resume/drew_harper_resume_portfolio.docx">Big</a> or
+        <a href="resume/drew_harper_resume_portfolio.pdf">PDF</a>
       </p>
     </section>
   </nav>
@@ -22,10 +22,6 @@
 
   $outRed: rgba(221, 9, 22, .3);
   $outBlue: rgba(92, 201, 245, .3);
-
-  $breakOne: 840px;
-  $breakTwo: 630px;
-  $breakThree: 430px;
 
   a {
     color: $ivory;
@@ -246,6 +242,5 @@
 
     }
   }
-
 
 </style>

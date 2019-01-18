@@ -35,7 +35,7 @@
   import HeadAndCopy from '../components/HeadAndCopy'
   import Skills from '../components/Skills'
   import About from '@/components/About'
-  import Quotes from '../components/Quotes/QuoteBasic'
+  import Quotes from '../components/Quote'
   import Footer from '../components/Footer'
   import CarouselShow from '@/components/Carousel/CarouselShow'
 
@@ -69,13 +69,6 @@
 <style lang="scss" scoped>
   @import '@/assets/css/main.scss';
   @import '@/template-groovy/assets/css/groovy-main.scss';
-
-  $break860: 860px;
-  //
-  // $breakThou: 1024px;
-  // $breakOne: 840px;
-  // $breakTwo: 630px;
-  // $breakThree: 530px;
 
   .mainGrid {
     // width: 100%;
@@ -153,11 +146,6 @@
     @media (max-width: $breakThou) {
       // grid-column: span 1;
       // grid-row: 5;
-    }
-
-    @media (max-width: $break860) {
-      // grid-column: span 1;
-      // grid-row: 6;
     }
 
   }

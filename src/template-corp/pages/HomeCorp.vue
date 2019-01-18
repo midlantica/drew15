@@ -35,7 +35,7 @@
   import HeadAndCopy from '../components/HeadAndCopy'
   import Skills from '../components/Skills'
   import About from '@/components/About'
-  import Quotes from '../components/Quotes/QuoteBasic'
+  import Quotes from '../components/Quote'
   import CarouselShow from '@/components/Carousel/CarouselShow'
 
   export default {
@@ -70,11 +70,6 @@
   @import url('https://fonts.googleapis.com/css?family=Questrial');
   @import '@/assets/css/main.scss';
   @import '@/template-corp/assets/css/corp-main.scss';
-
-  // $breakThou: 1024px;
-  // $breakOne: 840px;
-  // $breakTwo: 630px;
-  // $breakThree: 530px;
 
   .about {
     background: white;

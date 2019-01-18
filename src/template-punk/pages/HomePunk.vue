@@ -74,11 +74,6 @@
   @import '@/assets/css/main.scss';
   @import '@/template-punk/assets/css/punk-main.scss';
 
-  // $breakThou: 1024px;
-  // $breakOne: 840px;
-  // $breakTwo: 630px;
-  // $breakThree: 430px;
-
   header,
   footer {
     color: $ivory;

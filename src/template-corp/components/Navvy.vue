@@ -11,8 +11,8 @@
 
     <section class="contact">
       <p class='resume'>Resume:
-        <a href="img/resume/drew_harper_resume_portfolio.docx">Word</a> or
-        <a href="img/resume/drew_harper_resume_portfolio.pdf">PDF</a>
+        <a href="resume/drew_harper_resume_portfolio.docx">Word</a> or
+        <a href="resume/drew_harper_resume_portfolio.pdf">PDF</a>
       </p>
       <p class='email'><a href="mailto:druharper@gmail.com">druharper@gmail.com</a></p>
     </section>
@@ -34,10 +34,6 @@
 <style lang="scss" scoped>
   @import '@/assets/css/main.scss';
   @import '@/template-corp/assets/css/corp-main.scss';
-
-  $breakOne: 840px;
-  $breakTwo: 630px;
-  $breakThree: 430px;
 
   a {
     color: $ivory;
