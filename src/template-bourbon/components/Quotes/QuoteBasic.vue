@@ -21,6 +21,8 @@
     justify-content: center;
     // align-content: center;
     align-items: center;
+    padding: .75em 2em 1em;
+    text-align: center;
     @include shadow;
 
     @media only screen 
@@ -37,6 +39,7 @@
 
     .quotePad {
       // padding: 0.0em 2em 0em;
+      text-align: center !important;
     }
 
     p {
@@ -46,6 +49,7 @@
       letter-spacing: .05em;
       font-weight: bold;
       line-height: 1.5em;
+      text-align: center;
       // @include font-smoothing(on);
 
       @media only screen 

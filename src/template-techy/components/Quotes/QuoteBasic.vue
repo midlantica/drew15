@@ -5,7 +5,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
   // @import '@/assets/css/main.scss';
   @import '@/template-techy/assets/css/techy-main.scss';
 

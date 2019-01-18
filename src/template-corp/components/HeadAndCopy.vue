@@ -1,10 +1,7 @@
 <template>
   <div class="wrap">
     <uiux class="uiux" />
-    <!-- <h2><span class="cappy">ui/ux</span> designer + <span class="cappy">front&#8209end</span>&nbsp;dev</h2> -->
-    <p>Whether it’s a prototype, a responsive website, a wireframe, an interactive PDF, a new mobile app UI, a quick skin job, a few more buttons, a dialog box, filling up a bucket, or getting in the trenches with  HTML 5 and CSS 3, I can deliver. I don’t let ‘design’ get in the way. Oh and I’m a coder groupie&nbsp;<big>😃</big>
-    </p>
-
+    <p>{{ this.$root.druCopy }}</p>
   </div>
 </template>
 

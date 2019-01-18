@@ -57,7 +57,7 @@
     display: grid;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     justify-items: center;
     //
     margin: .5em auto 0em;
@@ -88,7 +88,7 @@
       width: 100%;
       grid-template-columns: repeat(6, minmax(auto, auto));
       grid-row-gap: .75em;
-      justify-content: space-around;
+      // justify-content: space-between;
       justify-items: center;
     }
 
@@ -97,7 +97,7 @@
       width: 100%;
       grid-template-columns: repeat(4, minmax(auto, auto));
       grid-row-gap: .75em;
-      justify-content: space-around;
+      // justify-content: space-between;
       justify-items: center;
     }
 
@@ -106,7 +106,7 @@
       width: 100%;
       grid-template-columns: repeat(3, minmax(auto, auto));
       grid-row-gap: .75em;
-      justify-content: space-around;
+      // justify-content: space-between;
       justify-items: center;
     }
 

@@ -2,7 +2,6 @@
   <div class="footer">
     <div class="car"></div>
     <div class="starWars"></div>
-    
   </div>
 </template>
 

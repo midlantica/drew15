@@ -59,7 +59,7 @@
     // justify-content: stretch;
     // justify-content: space-around;
     // justify-content: space-between;
-    justify-content: space-around;
+    justify-content: space-between;
     justify-items: center;
     //
     // margin: .5em auto 0;
@@ -114,7 +114,7 @@
       // grid-column-gap: 5em;
       // background: yellow;
       grid-row-gap: .75em;
-      justify-content: space-between;
+      // justify-content: space-between;
       justify-items: center;
     }
 

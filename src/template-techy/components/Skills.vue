@@ -80,7 +80,7 @@
       display: grid;
       width: 100%;
       flex-wrap: wrap;
-      justify-content: space-around;
+      // justify-content: space-between;
       justify-items: center;
       //
       align-items: center;

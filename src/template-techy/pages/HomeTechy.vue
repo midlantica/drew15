@@ -31,7 +31,6 @@
 </template>
 
 <script>
-  // import '../assets/css/fonts/connection/connection.css'
   import Navvy from '../components/Navvy'
   import HeadAndCopy from '../components/HeadAndCopy'
   import Skills from '../components/Skills'

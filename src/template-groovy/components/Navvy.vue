@@ -2,7 +2,7 @@
   <nav>
     <h1><a href="/">DREW HARPER</a></h1>
     <section class="jobDesc">
-      <h2>UI/UX DESIGNER</h2>
+      <h2>{{ this.$root.uiuxDesigner }}</h2>
       <h2>FRONT&nbsp;END&nbsp;DEV</h2>
     </section>
     <section class="contact">
