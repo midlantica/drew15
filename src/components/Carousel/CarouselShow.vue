@@ -154,7 +154,7 @@
   body.corp .box p
   {
     font-family: cormorantGaramond-Semi-Bold, "Times New Roman", Times, serif !important;
-    letter-spacing: 0.05em;
+    letter-spacing: 0em;
   }
 
   body.corp .box {

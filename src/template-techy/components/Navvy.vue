@@ -151,6 +151,7 @@
             height: 127px;
             grid-column: 1 / 2;
             grid-row: 1 / 2;
+            margin: 0 .5em 0 0;
             justify-self: right;
           }
 
@@ -164,20 +165,24 @@
             width: 55px;
             // height: 86px;
             height: 66px;
+            margin: 0;
           }
   
           @media (max-device-width: 667px) 
           and (-webkit-device-pixel-ratio: 2)
           {
-            margin-right: 1em;
-            margin-left: 1em;
-            width: 89px !important;
-            height: 107px !important;
+            margin-right: 0.5em;
+            margin-left: 0em;
+            width: 65px !important;
+            height: 77px !important;
+            margin: 0em;
+            // background: red;
           }
 
           @media (max-width: $breakFour) {
             width: 55px !important;
             height: 66px !important;
+            margin: 0em;
           }
 
 
@@ -221,6 +226,11 @@
           @media (max-width: $breakTwo) {
             // 
           }
+
+          @media (max-width: $breakThree) {
+            margin-bottom: 0em;
+            width: 56vw;
+          }
         }
 
         a.mastHarper {
@@ -247,6 +257,11 @@
             // margin-top: -1.5em;
             margin-left: 0;
             margin-top: 0;
+          }
+
+          @media (max-width: $breakThree) {
+            // margin-bottom: 0em;
+            width: 77vw;
           }
         }
 
