@@ -1,59 +1,52 @@
 <template>
-  <div class="fadeBack">
+  <div class="projectBox">
+    <a class="carouselArrow" @click.stop="selectedView = 'Carousel'">◀︎ BACK</a>
+    <p class="projectHead">Projects - {{ selectedView }} </p>
 
-    <div class="projectBox">
+    <component :is="selectedView">
+    
+      <div class="miniGallery">
 
-      <div class="projectMast">
-        <button class="carouselArrow" @click.stop="selectedView = 'Carousel'">◀︎ BACK</button>
-        <p class="projectHead">Projects - {{ selectedView }} </p>
-        <button class="expander" href="#"></button>
+        <a @click.stop="selectedView = 'Uiux'">
+          <div class="box Uiux">
+            <p>UI/UX Design</p>
+          </div>
+        </a>
+
+        <a @click.stop="selectedView = 'Mobile'">
+          <div class="box Mobile">
+            <p>Mobile</p>
+          </div>
+        </a>
+
+        <a @click.stop="selectedView = 'Kiosk'">
+          <div class="box Kiosk">
+            <p>Kiosk</p>
+          </div>
+        </a>
+
+        <a @click.stop="selectedView = 'Graphics'">
+          <div class="box Graphics">
+            <p>Graphics</p>
+          </div>
+        </a>
+
+        <a @click.stop="selectedView = 'Print'">
+          <div class="box Print">
+            <p>Print</p>
+          </div>
+        </a>
+
+        <a @click.stop="selectedView = 'Misc'">
+          <div class="box Misc">
+            <p>Misc.</p>
+          </div>
+        </a>
+
       </div>
 
-      <component :is="selectedView">
-      
-        <div class="miniGallery">
-
-          <a @click.stop="selectedView = 'Uiux'">
-            <div class="box Uiux">
-              <p>UI/UX Design</p>
-            </div>
-          </a>
-
-          <a @click.stop="selectedView = 'Mobile'">
-            <div class="box Mobile">
-              <p>Mobile</p>
-            </div>
-          </a>
-
-          <a @click.stop="selectedView = 'Kiosk'">
-            <div class="box Kiosk">
-              <p>Kiosk</p>
-            </div>
-          </a>
-
-          <a @click.stop="selectedView = 'Graphics'">
-            <div class="box Graphics">
-              <p>Graphics</p>
-            </div>
-          </a>
-
-          <a @click.stop="selectedView = 'Print'">
-            <div class="box Print">
-              <p>Print</p>
-            </div>
-          </a>
-
-          <a @click.stop="selectedView = 'Misc'">
-            <div class="box Misc">
-              <p>Misc.</p>
-            </div>
-          </a>
-
-        </div>
-
-      </component>
-      
-    </div>
+    </component>
+    
   </div>
 
 </template>
@@ -94,12 +87,6 @@
 <style lang="scss" scoped>
   @import '@/assets/css/main.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
-
-  .fadeBack {
-    background: transparentize(black, .85);
-    
-    // padding: 1em;
-  }
 
   .projectBox {
     padding: 0.2em .3em;
@@ -191,75 +178,34 @@
 
 
 
+  .projectHead {
+    font-size: .9em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 3.5em;
 
-  .projectMast {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    // flex-grow: 1;
-    padding: .2em 0.2em 0;
-
-    .carouselArrow {
-      font-size: 0.8em;
-      display: block;
-      // float: left;
-      // clear: left;
-      border: 1px solid lightgrey;
-      border-radius: .25em;
-      background: transparentize(white, .5);
+    a {
       cursor: pointer;
-      // padding: 0.3em 0.7em;
-      margin-left: 0 0 0 0.2em;
-      align-self: flex-start;
-      height: 2em;
-
-      &:hover, &:focus {
-        color: white;
-        background: grey;
-        outline: none;
-      }
-
-      &:focus {
-        outline: none;
-      }
     }
-
-    .projectHead {
-      font-size: .9em;
-      text-align: center;
-      text-transform: uppercase;
-      margin-right: 3.5em;
-      align-self: center;
-      cursor: default;
-    }
-
-    .expander {
-      display: inline-block;
-      align-self: flex-end;
-      height: 2em;
-      width: 2em;
-      border-radius: .25em;
-      background: white;
-      margin-bottom: .1em;
-      box-shadow: 1px 1px 2px -1px black;
-
-      &:hover {
-        cursor: pointer;
-        // color: white;
-        background: grey;
-        border: 1px solid grey;
-        box-shadow: none;
-      }
-
-      &:focus {
-        outline: none;
-      }
-    }
-
   }
 
+  .carouselArrow {
+    font-size: 0.8em;
+    display: block;
+    float: left;
+    clear: left;
+    border: 1px solid lightgrey;
+    border-radius: .25em;
+    background: transparentize(white, .5);
+    cursor: pointer;
+    padding: 0.1em .5em 0.1em .25em;
+    margin: 0.1em 0em 0;
+
+    &:hover {
+      color: white;
+      background: grey;
+    }
+  }
 
   .miniGallery {
     display: flex;
