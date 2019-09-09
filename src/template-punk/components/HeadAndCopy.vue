@@ -64,38 +64,50 @@
 
   }
 
+  // CHANGE BACKGROUND FROM YELLOW TO HIGHLIGHTING
   p {
     font-family: Poppins !important;
     font-weight: 400;
     font-style: italic;
     // font-family: $font-copy !important;
     // font-weight: bold;
-    font-size: calc(0.8rem + .75vw);
+    // font-size: calc(0.8rem + .75vw);
+    font-size: 1em;
     // font-size: 0.9rem;
     color: $grey;
-    line-height: calc(2.2em + .5vw);
+    line-height: calc(2.2em + .3vw);
     // line-height: 2.6em;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.045em;
     // text-shadow: 0px 0px 0px;
     display: inline-block;
     position: relative;
-    top: -1.1em;
+    // top: -1.1em;
+    top: 0em;
     background: #FBC83F;
     // left: 0.8em;
     padding: 0em 1em;
     margin: 1em 1em 0em;
+    //
+    /////////
+    // HIGHLIGHTING EFFECT
+    background: linear-gradient(180deg, #fbc83f 100%, #fbc83f 100%);
+    display: inline;
+    padding: 1em .5em;
+    // line-height: 3em;
 
     @media (min-width: $breakOne) {
-      font-size: 0.875rem;
+      // font-size: 0.875rem;
       // line-height: 2.75em;
       line-height: calc(2.1em + .6vw);
       // margin-bottom: 1em;
+      // background: green;
     }
 
     @media (min-width: 1010px) {
-      font-size: 0.9rem;
+      // font-size: 1rem;
       // line-height: 2.7em;
-      line-height: calc(2.3em + .6vw);
+      line-height: calc(2.4em + 0.3vw);
+      // background: red;
     }
 
   }

@@ -294,7 +294,8 @@
         //
         background-repeat: no-repeat;
         background-size: contain;
-        width: 240px;
+        // width: 240px;
+        width: 18vw;
         height: 120px;
         text-decoration: none;
         // display: block;
@@ -305,11 +306,13 @@
         // margin-top: 0.5em;
         // order: 3;
         // flex-grow: 1;
+        // background: green !important; 
 
         @media (max-width: $breakOne) {
           width: 122px;
           height: 122px;
           margin-top: 1em;
+          // background: red !important; 
           // order: 2;
         }
 
@@ -317,11 +320,13 @@
           width: 122px;
           height: 135px;
           margin-top: .5em;
+          // background: blue !important; 
         }
 
         @media (max-width: $breakThree) {
           width: 82px;
           height: 93px;
+          // background: purple !important; 
           // order: 2;
         }
 

@@ -62,6 +62,7 @@
 
   export default {
     layout: 'default',
+    name: 'CarouselShow',
     components: {
       Uiux,
       Mobile,
@@ -107,6 +108,7 @@
 
   body.punk .projectBox {
     @include shadow;
+    margin-top: 0.5em;
     // box-shadow: none;
   }
 

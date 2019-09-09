@@ -7,7 +7,7 @@ module.exports = {
     sourceType: 'module'
   },
   env: {
-    browser: true,
+    browser: true
   },
   // https://github.com/standard/standard/blob/master/docs/RULES-en.md
   extends: 'standard',
@@ -20,7 +20,7 @@ module.exports = {
     // allow paren-less arrow functions
     'arrow-parens': 0,
     // INDENT DEFAULT AT 2 SPACES
-    "indent": ["error", 2],
+    'indent': ['error', 2],
     // allow async-await
     'generator-star-spacing': 0,
     // allow debugger during development

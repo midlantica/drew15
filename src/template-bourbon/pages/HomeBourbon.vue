@@ -46,6 +46,7 @@
 
   export default {
     layout: 'default',
+    name: 'HomeBourbon',
     components: {
       Navvy,
       HeadAndCopy,
@@ -54,7 +55,6 @@
       Skills,
       Quotes
     },
-    name: 'HomeBourbon',
     metaInfo: {
       // if no subcomponents specify a metaInfo.title, this title will be used
       title: 'Drew Harper',
