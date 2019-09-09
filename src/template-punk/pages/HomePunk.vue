@@ -32,7 +32,7 @@
 
 <script>
   // import '@/assets/fonts/Roboto/Roboto.css'
-  import '@/assets/fonts/AmericanTypewriter/AmericanTypewriter.css'
+  // import '@/assets/fonts/AmericanTypewriter/AmericanTypewriter.css'
 
   import Navvy from '../components/Navvy'
   import HeadAndCopy from '../components/HeadAndCopy'
