@@ -24,7 +24,7 @@
     metaInfo: {
       titleTemplate: '%s - Extras!',
       bodyAttrs: {
-        class: 'corp'
+        class: 'corp extras'
       }
     },
     components: {

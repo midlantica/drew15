@@ -82,6 +82,17 @@
       }
     }
 
+    &.extras .flexContainer {
+      //
+      h1 {
+        // font-family: Times !important;
+        font-size: 1.75em;
+        // color: lighten(black, 20);
+        padding-top: 1em;
+        // text-transform: capitalize;
+      }
+    }
+
   }
 
   // #############################
@@ -115,6 +126,16 @@
     .about > p { 
       font-size: .9em !important;
     }
+
+    &.extras .flexContainer  {
+      //
+      h1 {
+        font-family: Helvetica !important;
+        font-size: 1.5em;
+        color: lighten(black, 30);
+        margin-top: .5em;
+      }
+    }
   }
 
   
@@ -134,6 +155,16 @@
         p {
           // background: purple;
         }
+      }
+    }
+
+    &.extras .flexContainer  {
+      //
+      h1 {
+        font-family: Helvetica !important;
+        font-size: 1.5em;
+        color: lighten(black, 30);
+        padding-top: 1em;
       }
     }
   }
@@ -173,6 +204,17 @@
 
       @media (max-width: $breakThree) {
         font-size: 3.0vw;
+      }
+    }
+
+    &.extras .flexContainer  {
+      //
+      h1 {
+        font-family: Times !important;
+        font-size: 1.5em;
+        color: lighten(black, 20);
+        margin-top: .5em;
+        text-transform: capitalize;
       }
     }
   }
@@ -251,6 +293,17 @@
 
       @media (max-width: $breakThree) {
         font-size: 3.0vw !important;
+      }
+    }
+
+    &.extras .flexContainer  {
+      //
+      h1 {
+        font-family: Helvetica !important;
+        font-size: 1.5em;
+        color: lighten(black, 20);
+        padding-top: 1em;
+        text-transform: capitalize;
       }
     }
   }

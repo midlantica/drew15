@@ -26,7 +26,7 @@
     metaInfo: {
       titleTemplate: '%s - Extras!',
       bodyAttrs: {
-        class: 'techy'
+        class: 'techy extras'
       }
     },
     components: {

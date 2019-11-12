@@ -25,7 +25,7 @@
       // all titles will be injected into this template
       titleTemplate: '%s - Extras!',
       bodyAttrs: {
-        class: 'bourbon'
+        class: 'bourbon extras'
       }
     },
     components: {

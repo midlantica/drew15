@@ -27,7 +27,7 @@
       // all titles will be injected into this template
       titleTemplate: '%s - Extras!',
       bodyAttrs: {
-        class: 'groovy'
+        class: 'groovy extras'
       },
       style: [
         { cssText: '.wrapper { background: #fffae4; }', type: 'text/css' }

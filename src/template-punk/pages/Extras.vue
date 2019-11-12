@@ -26,7 +26,7 @@
       // all titles will be injected into this template
       titleTemplate: '%s - Extras!',
       bodyAttrs: {
-        class: 'punk'
+        class: 'punk extras'
       }
     },
     components: {
