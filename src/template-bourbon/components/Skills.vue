@@ -13,7 +13,7 @@
     <iconTerminal class="icon terminal" />
     <iconNode class="icon node" />
     <iconWebpack class="icon webpack" />
-    <iconAxure class="icon axure" />
+    <iconChelsea class="icon chelsea" />
   </div>
 </template>
 
@@ -29,7 +29,7 @@
   import iconTerminal from '@/components/Icons/icon-terminal'
   import iconNode from '@/components/Icons/icon-node'
   import iconWebpack from '@/components/Icons/icon-webpack'
-  import iconAxure from '@/components/Icons/icon-axure'
+  import iconChelsea from '@/components/Icons/icon-chelsea'
   export default {
     components: {
       iconUiux,
@@ -43,7 +43,7 @@
       iconTerminal,
       iconNode,
       iconWebpack,
-      iconAxure
+      iconChelsea
     }
   }
 </script>

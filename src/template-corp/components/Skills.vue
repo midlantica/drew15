@@ -13,7 +13,7 @@
     <iconTerminalBlue class="icon terminal" />
     <iconNodeBlue class="icon node" />
     <iconWebpackBlue class="icon webpack" />
-    <iconAxureBlue class="icon axure" />
+    <iconChelseaBlue class="icon chelsea" />
   </div>
 </template>
 
@@ -29,7 +29,7 @@
   import iconTerminalBlue from '@/template-corp/components/Icons/icon-terminal'
   import iconNodeBlue from '@/template-corp/components/Icons/icon-node'
   import iconWebpackBlue from '@/template-corp/components/Icons/icon-webpack'
-  import iconAxureBlue from '@/template-corp/components/Icons/icon-axure'
+  import iconChelseaBlue from '@/template-corp/components/Icons/icon-chelsea'
   export default {
     components: {
       iconUiuxBlue,
@@ -43,7 +43,7 @@
       iconTerminalBlue,
       iconNodeBlue,
       iconWebpackBlue,
-      iconAxureBlue
+      iconChelseaBlue
     }
   }
 </script>
