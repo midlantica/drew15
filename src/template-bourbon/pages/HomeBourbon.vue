@@ -33,8 +33,8 @@
 </template>
 
 <script>
-  import '@/template-bourbon/assets/css/fonts/Veneer/Veneer.css'
-  import '@/template-bourbon/assets/css/fonts/AmericanTypewriter/AmericanTypewriter.css'
+  // import '@/template-bourbon/assets/css/fonts/Veneer/Veneer.css'
+  // import '@/template-bourbon/assets/css/fonts/AmericanTypewriter/AmericanTypewriter.css'
 
   import Navvy from '../components/Navvy'
   import HeadAndCopy from '../components/HeadAndCopy'
