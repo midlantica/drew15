@@ -1,6 +1,9 @@
 <template>
   <div class="projectBox">
-    <a class="carouselArrow" @click.stop="selectedView = 'Carousel'">◀︎ BACK</a>
+    <a class="carouselArrow" 
+      @click.stop="selectedView = 'Carousel'">
+        ◀︎ BACK
+    </a>
     <p class="projectHead">Projects - {{ selectedView }} </p>
 
     <component :is="selectedView">

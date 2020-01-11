@@ -5,8 +5,8 @@
 // @import 'vendor/compassMixins/utilities/links/_link-colors.scss';
 
 // SETTINGS
-@import '_colors.scss';
-@import 'utilities/_Autilities_base.scss';
+@forward '_colors.scss';
+@forward 'utilities/_Autilities_base.scss';
 // FONTS
 // @import '/fonts/veneer/veneer.css';
 // @import '/fonts/American_typewriter/american_typewriter/american_typewriter.css';
