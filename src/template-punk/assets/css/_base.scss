@@ -25,12 +25,12 @@ body {
 }
 
 // link colors (normal, hover, active, visited, focus)
-a {
-  @include link-colors(
-    $blue-dark,  // normal
-    $accent,     // hover
-    $blue-mid,   // active
-    $grey,       // visited
-    $blue-dark   // focus
-  );
-}
+// a {
+//   @include link-colors(
+//     $blue-dark,  // normal
+//     $accent,     // hover
+//     $blue-mid,   // active
+//     $grey,       // visited
+//     $blue-dark   // focus
+//   );
+// }

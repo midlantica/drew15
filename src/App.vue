@@ -24,6 +24,7 @@
 </script>
 
 <style lang="scss">
+  @import '@/assets/css/_colors.scss';
   @import '@/assets/css/main.scss';
   @import 'assets/css/vendor/html5Boilerplate.css';
 
@@ -49,7 +50,7 @@
       // background: url(/img/bg/Drew-punk-back.jpg) repeat;
       // background-size: 110% 100%;
       // background-image: url(/img/bg/check-patt.png);
-      
+
       @media (max-width: $breakOne) {
         // background-size: 110% 50%;
       }
@@ -60,7 +61,7 @@
 
     }
 
-    .about > p { 
+    .about > p {
       font-family: "AmericanTypewriterStd-Med";
       font-size: .85em;
 
@@ -123,7 +124,7 @@
       }
     }
 
-    .about > p { 
+    .about > p {
       font-size: .9em !important;
     }
 
@@ -138,13 +139,13 @@
     }
   }
 
-  
+
   // #############################
   // TECHY
   .techy {
     background: $backBlack;
 
-    .wrapper { 
+    .wrapper {
       //
     }
 
@@ -185,7 +186,7 @@
       }
     }
 
-    .about > p { 
+    .about > p {
       font-family: cormorantGaramond-Semi-Bold, "Times New Roman", Times, serif !important;
       font-size: 1em;
 
@@ -228,43 +229,43 @@
 
     .wrapper {
       width: 100%;
-      background: 
-        url(/img/bg/circles.svg), 
-        url(/img/bg/Drew-punk-back.jpg); 
-      background-repeat: 
+      background:
+        url(/img/bg/circles.svg),
+        url(/img/bg/Drew-punk-back.jpg);
+      background-repeat:
         repeat-y,
         repeat-y;
-      background-size: 
+      background-size:
         100% 600%,
         100% 100%;
-      background-position: 
-        center center, 
+      background-position:
+        center center,
         center center;
 
       @media (max-width: $breakOne) {
-        background-size: 
-          100% 600%, 
+        background-size:
+          100% 600%,
           130% 90%;
-        background-position: 
-          center center, 
+        background-position:
+          center center,
           -3em 0em;
       }
 
       @media (max-width: $breakTwo) {
-        background-size: 
+        background-size:
           100% 600%,
           120% 100%;
-        background-position: 
-          center center, 
+        background-position:
+          center center,
           -3em 11em;
       }
 
       @media (max-width: $breakTwo) {
-        background-size: 
+        background-size:
           100% 600%,
           250% 70%;
-        background-position: 
-          center center, 
+        background-position:
+          center center,
           -3em 3em;
       }
 
@@ -274,7 +275,7 @@
       }
     }
 
-    .about > p { 
+    .about > p {
       // font-family: "AmericanTypewriterStd-Med" !important;
       font-size: 0.8em !important;
 

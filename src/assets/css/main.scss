@@ -5,6 +5,7 @@
 // @import 'vendor/compassMixins/utilities/links/_link-colors.scss';
 
 // SETTINGS
+// @forward 'utilities/_linkedColors.scss';
 @forward '_colors.scss';
 @forward 'utilities/_Autilities_base.scss';
 // FONTS
