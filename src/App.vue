@@ -24,9 +24,9 @@
 </script>
 
 <style lang="scss">
-  @import '@/assets/css/_colors.scss';
-  @import '@/assets/css/main.scss';
-  @import 'assets/css/vendor/html5Boilerplate.css';
+  // @import '@/assets/css/_colors.scss';
+  // @import '@/assets/css/main.scss';
+  // @import 'assets/css/vendor/html5Boilerplate.css';
 
   $backer: #fffae4;
   $backBlack: #1f1f1f;
