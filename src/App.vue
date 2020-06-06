@@ -24,9 +24,14 @@
 </script>
 
 <style lang="scss">
-  // @import '@/assets/css/_colors.scss';
-  // @import '@/assets/css/main.scss';
-  // @import 'assets/css/vendor/html5Boilerplate.css';
+  @import '@/assets/css/utilities/_Autilities_base.scss';
+  // @import '@/assets/css/vendor/html5Boilerplate.css';
+
+  $breakThou: 1024px;
+  $breakOne: 840px;
+  $breakTwo: 630px;
+  $breakThree: 430px;
+  $breakFour: 320px;
 
   $backer: #fffae4;
   $backBlack: #1f1f1f;
@@ -310,10 +315,3 @@
   }
 
 </style>
-
-
-
-
-
-
-
