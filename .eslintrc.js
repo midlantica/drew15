@@ -1,29 +1,31 @@
+/* eslint-disable no-undef */
 module.exports = {
+  root: true,
   env: {
     browser: true,
-    es6: true,
+    es6: true
   },
   extends: [
     'eslint:recommended',
     'plugin:vue/essential',
-    'plugin:prettier/recommended',
+    'plugin:prettier/recommended'
   ],
   globals: {
     Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
+    SharedArrayBuffer: 'readonly'
   },
   parserOptions: {
     ecmaVersion: 11,
     sourceType: 'module',
     ecmaFeatures: {
-      globalReturn: false,
+      globalReturn: false
       // impliedStrict: false,
-    },
+    }
   },
-  plugins: ['vue', 'html'],
+  plugins: ['vue', 'html', 'prettier'],
   rules: {
     // allow paren-less arrow functions
-    'arrow-parens': 0,
+    'arrow-parens': 'avoid',
     // INDENT DEFAULT AT 2 SPACES
     'vue/html-quotes': ['error', 'single', { avoidEscape: false }],
     // indent: ['error', 2],
@@ -32,6 +34,6 @@ module.exports = {
     quotes: ['error', 'single'],
     // allow debugger during development
     // 'prettier/prettier': ['error', { singleQuote: true, parser: 'flow' }],
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-  },
-};
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
+  }
+}
