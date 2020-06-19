@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="headBlock">
-      <router-link to="Bourbon/Extras" class="drewhead" />
+    <div class='headBlock'>
+      <router-link to='Bourbon/Extras' class='drewhead' />
       <h1>{{ this.$root.druHead }}</h1>
     </div>
 
@@ -14,7 +14,7 @@
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
   .headBlock {
-    display: block;
+    // display: block;
     display: grid;
     grid-template-columns: 88px auto;
     grid-template-rows: auto;

@@ -1,6 +1,5 @@
 module.exports = {
   singleQuote: true,
-  jsxBracketSameLine: true,
   parser: 'flow',
   bracketSpacing: true,
   vueIndentScriptAndStyle: false,

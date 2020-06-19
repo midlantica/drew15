@@ -18,7 +18,6 @@ module.exports = {
     ecmaFeatures: {
       globalReturn: false,
       impliedStrict: false,
-      jsx: true,
     },
   },
   plugins: ['vue', 'html'],
