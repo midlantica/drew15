@@ -17,7 +17,7 @@ module.exports = {
     sourceType: 'module',
     ecmaFeatures: {
       globalReturn: false,
-      impliedStrict: false,
+      // impliedStrict: false,
     },
   },
   plugins: ['vue', 'html'],
@@ -31,7 +31,7 @@ module.exports = {
     'generator-star-spacing': 0,
     quotes: ['error', 'single'],
     // allow debugger during development
-    'prettier/prettier': ['error', { singleQuote: true, parser: 'flow' }],
+    // 'prettier/prettier': ['error', { singleQuote: true, parser: 'flow' }],
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
   },
 };
