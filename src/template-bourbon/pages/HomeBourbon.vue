@@ -3,17 +3,23 @@
     <header>
       <Navvy />
     </header>
+
     <main class="mainGrid">
       <div class="copyArea">
         <HeadAndCopy />
       </div>
+
       <Skills />
+
       <div class="slides">
         <CarouselShow />
       </div>
+
       <About />
+
       <Quotes />
     </main>
+
     <footer>
       <Navvy />
     </footer>
@@ -23,7 +29,6 @@
 <script>
   // import '@/template-bourbon/assets/css/fonts/Veneer/Veneer.css'
   // import '@/template-bourbon/assets/css/fonts/AmericanTypewriter/AmericanTypewriter.css'
-
   import Navvy from "../components/Navvy"
   import HeadAndCopy from "../components/HeadAndCopy"
   import About from "@/components/About"
