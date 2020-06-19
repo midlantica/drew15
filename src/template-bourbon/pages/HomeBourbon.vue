@@ -3,23 +3,17 @@
     <header>
       <Navvy />
     </header>
-
     <main class="mainGrid">
       <div class="copyArea">
         <HeadAndCopy />
       </div>
-
       <Skills />
-
       <div class="slides">
         <CarouselShow />
       </div>
-
       <About />
-
       <Quotes />
     </main>
-
     <footer>
       <Navvy />
     </footer>
@@ -30,43 +24,43 @@
   // import '@/template-bourbon/assets/css/fonts/Veneer/Veneer.css'
   // import '@/template-bourbon/assets/css/fonts/AmericanTypewriter/AmericanTypewriter.css'
 
-  import Navvy from '../components/Navvy';
-  import HeadAndCopy from '../components/HeadAndCopy';
-  import About from '@/components/About';
-  import Skills from '../components/Skills';
-  import Quotes from '../components/Quote';
-  import CarouselShow from '@/components/Carousel/CarouselShow';
+  import Navvy from "../components/Navvy"
+  import HeadAndCopy from "../components/HeadAndCopy"
+  import About from "@/components/About"
+  import Skills from "../components/Skills"
+  import Quotes from "../components/Quote"
+  import CarouselShow from "@/components/Carousel/CarouselShow"
   // const CarouselShow = () => import('@/components/Carousel/CarouselShow')
 
   export default {
-    layout: 'default',
-    name: 'HomeBourbon',
+    layout: "default",
+    name: "HomeBourbon",
     components: {
       Navvy,
       HeadAndCopy,
       CarouselShow,
       About,
       Skills,
-      Quotes
+      Quotes,
     },
     metaInfo: {
       // if no subcomponents specify a metaInfo.title, this title will be used
-      title: 'Drew Harper',
+      title: "Drew Harper",
       // all titles will be injected into this template
-      titleTemplate: '%s - UI/UX Designer, Graphic Designer!',
+      titleTemplate: "%s - UI/UX Designer, Graphic Designer!",
       bodyAttrs: {
-        class: 'bourbon'
+        class: "bourbon",
       },
       style: [
         // { cssText: '.about p { font-family: AmericanTypewriterStd-Med; }', type: 'text/css' }
-      ]
-    }
-  };
+      ],
+    },
+  }
 </script>
 
 <style lang="scss" scoped>
-  @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  @import "@/assets/css/main.scss";
+  @import "@/template-bourbon/assets/css/bourbon-main.scss";
 
   header,
   footer {
