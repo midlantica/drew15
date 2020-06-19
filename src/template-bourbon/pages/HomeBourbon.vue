@@ -64,8 +64,8 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "@/assets/css/main.scss";
-  @import "@/template-bourbon/assets/css/bourbon-main.scss";
+  @import '@/assets/css/main.scss';
+  @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
   header,
   footer {
