@@ -29,12 +29,12 @@ module.exports = {
     // INDENT DEFAULT AT 2 SPACES
     'vue/html-quotes': ['error', 'single', { avoidEscape: false }],
     // indent: ['error', 2],
-    'vue/script-indent': ['error', 2, { baseIndent: 1 }],
+    // 'vue/script-indent': ['error', 2, { baseIndent: 1 }],
     'generator-star-spacing': 0,
     // quotes: [2, 'single', 'avoid-escape'],
-    'quotes': [1,'single'],
+    quotes: ['error', 'single'],
     // allow debugger during development
     // 'prettier/prettier': ['error', { singleQuote: true, parser: 'flow' }],
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
   },
-}
+};

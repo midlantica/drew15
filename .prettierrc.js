@@ -6,9 +6,9 @@ module.exports = {
   trailingComma: 'es5',
   editorconfig: false,
   vueIndentScriptAndStyle: false,
-  'vetur.format.defaultFormatterOptions': {
-    prettier: {
-      singleQuote: true,
-    },
-  },
+  // 'vetur.format.defaultFormatterOptions': {
+  //   prettier: {
+  //     singleQuote: true,
+  //   },
+  // },
 };
