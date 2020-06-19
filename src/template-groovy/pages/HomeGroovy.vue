@@ -4,12 +4,12 @@
       <NavvyHead />
     </header>
 
-    <main class="mainGrid">
-      <div class="copyArea">
+    <main class='mainGrid'>
+      <div class='copyArea'>
         <HeadAndCopy />
       </div>
 
-      <div class="slides">
+      <div class='slides'>
         <CarouselShow />
       </div>
 
@@ -60,7 +60,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang='scss' scoped>
   @import '@/assets/css/main.scss';
   @import '@/template-groovy/assets/css/groovy-main.scss';
 

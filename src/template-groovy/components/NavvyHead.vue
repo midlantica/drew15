@@ -1,32 +1,30 @@
 <template>
   <nav>
-
-    <div class="gridMast">
-
-      <div class="groovyCircle">
-        <router-link to="/Groovy/Extras" class="drewhead"/>
+    <div class='gridMast'>
+      <div class='groovyCircle'>
+        <router-link to='/Groovy/Extras' class='drewhead' />
       </div>
 
-      <router-link to="/Groovy" class="drewHarperSVG">
-        <mastDrew class="svgArt mastDrew" />
-        <mastHarper class="svgArt mastHarper" />
+      <router-link to='/Groovy' class='drewHarperSVG'>
+        <mastDrew class='svgArt mastDrew' />
+        <mastHarper class='svgArt mastHarper' />
       </router-link>
-     
-      <div class="jobDesc">
+
+      <div class='jobDesc'>
         <h2>ui/ux designer + front&#8209;end&nbsp;dev</h2>
       </div>
 
-      <div class="contact">
+      <div class='contact'>
         <p class='email'>
-          <a href="mailto:druharper@gmail.com">druharper@gmail.com</a>
+          <a href='mailto:druharper@gmail.com'>druharper@gmail.com</a>
         </p>
-        <p class='resume'>Resume: 
-          <a href="resume/drew_harper_resume_portfolio.pdf">Lg</a>/<a href="resume/drew_harper_resume_portfolio_short.docx">Sm</a>
+        <p class='resume'>
+          Resume:
+          <a href='resume/drew_harper_resume_portfolio.pdf'>Lg</a>/
+          <a href='resume/drew_harper_resume_portfolio_short.docx'>Sm</a>
         </p>
       </div>
-
     </div>
-
   </nav>
 </template>
 
@@ -41,7 +39,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang='scss' scoped>
   // @import '@/assets/css/_colors.scss';
   @import '@/assets/css/main.scss';
   @import '@/template-groovy/assets/css/groovy-main.scss';
@@ -90,7 +88,7 @@
     }
 
     @media (max-width: $breakTwo) {
-      grid-column-gap: .5em;
+      grid-column-gap: 0.5em;
       // margin-top: .5em;
       // width: 80%;
       // background: orange;
@@ -107,11 +105,10 @@
       //
     }
 
-
     .groovyCircle {
       width: 210px;
       height: 210px;
-      box-shadow: 8px 6px 0px rgba(37, 37, 37, .25);
+      box-shadow: 8px 6px 0px rgba(37, 37, 37, 0.25);
       border-radius: 10em;
       position: relative;
       top: -2em;
@@ -123,22 +120,19 @@
       //
       background-image: radial-gradient(
         // 0 - 25%
-        $groovy-aqua 0%,
+          $groovy-aqua 0%,
         $groovy-aqua 35%,
         // 25% - 50%
-        $groovy-yellow 35%,
+          $groovy-yellow 35%,
         $groovy-yellow 47%,
         // 50% - 75%
-        $groovy-orange 47%,
+          $groovy-orange 47%,
         $groovy-orange 59%,
         // 75% - 100%
-        $groovy-red 59%,
+          $groovy-red 59%,
         $groovy-red 100%
       );
-      clip-path: polygon(
-        21% 0%, 100% 0%, 110% 50%,
-        100% 100%, 21% 110%
-      );
+      clip-path: polygon(21% 0%, 100% 0%, 110% 50%, 100% 100%, 21% 110%);
 
       @media (max-width: $breakThou) {
         margin-bottom: -4.4em;
@@ -155,7 +149,7 @@
         height: 160px;
         top: -2.1em;
         left: -2.9em;
-        box-shadow: 4px 5px 0px rgba(37, 37, 37, .25);
+        box-shadow: 4px 5px 0px rgba(37, 37, 37, 0.25);
       }
 
       @media (max-width: $breakFour) {
@@ -193,14 +187,12 @@
           left: 3.2em;
         }
 
-
         @media (max-width: $breakFour) {
           width: 73px;
           height: 87px;
           top: 2.6em;
           left: 3.2em;
         }
-
       }
     }
 
@@ -221,7 +213,7 @@
         // justify-items: center;
         // grid-gap: 1em;
         // grid-column-gap: 1.5em;
-        grid-column: 2 / 3; 
+        grid-column: 2 / 3;
         grid-row: 1;
         align-self: self-end;
         margin-bottom: 0.3em;
@@ -229,9 +221,9 @@
       }
 
       @media (max-width: $breakOne) {
-        grid-row: 1; 
+        grid-row: 1;
         align-self: self-end;
-      } 
+      }
 
       @media (max-width: $breakTwo) {
         grid-row: 1;
@@ -257,21 +249,19 @@
         @media (max-width: $breakOne) {
           // height: 6.8vw;
           height: 7.9vw;
-
         }
         @media (max-width: $breakTwo) {
           // height: 6vw;
         }
         @media (max-width: $breakThree) {
           // height: 14.3vw;
-          margin: .5em 0 0em;
+          margin: 0.5em 0 0em;
           height: 7.9vw;
         }
 
         @media (max-width: $breakFour) {
           margin: 0.2em 0 0em;
         }
-
       }
       .mastDrew {
         margin-right: 1em;
@@ -301,16 +291,16 @@
         // margin-left: 2em;
         // display: initial;
         // float: initial;
-        // grid-column: 2 / 3; 
+        // grid-column: 2 / 3;
         // grid-row: 1 / 3;
 
         @media (max-width: $breakThou) {
-          // grid-column: 3 / 4; 
+          // grid-column: 3 / 4;
           // grid-row: 2 / 3;
         }
 
         @media (max-width: $breakOne) {
-          // grid-column: 1 / 3; 
+          // grid-column: 1 / 3;
           // grid-row: 2;
           // width: 45vw;
           // height: 17vh;
@@ -325,15 +315,13 @@
           // margin-top: 0;
         }
       }
-
     }
-
   }
 
   nav .gridMast .jobDesc {
     grid-column: 2 / 3;
     align-self: center;
-    font-size: 1.0em;
+    font-size: 1em;
 
     @media (max-width: $breakThou) {
       margin: 1em 0em;
@@ -370,7 +358,7 @@
       text-transform: lowercase;
       font-size: 1.45em;
       line-height: 0.5em;
-      letter-spacing: .03em;
+      letter-spacing: 0.03em;
 
       &:nth-child(1) {
         //
@@ -390,7 +378,7 @@
         }
 
         &:nth-child(2) {
-          margin-left: .25em !important;
+          margin-left: 0.25em !important;
         }
       }
 
@@ -415,15 +403,13 @@
         line-height: 1.5em;
         font-size: 3.7vw;
       }
-
     }
   }
-
 
   nav .gridMast .contact {
     grid-column: 2 / 3;
     align-self: start;
-    font-size: 1.0em;
+    font-size: 1em;
 
     @media (max-width: $breakThou) {
       // margin: 0 auto;
@@ -450,7 +436,7 @@
       display: inline-block;
       font-family: $font-copy;
       font-size: 1.17em;
-      letter-spacing: 0.0em;
+      letter-spacing: 0em;
       text-transform: none;
       line-height: 0.7em;
       text-align: center;
@@ -509,20 +495,13 @@
         clear: initial;
 
         &:nth-child(2) {
-          margin-left: .5em !important;
+          margin-left: 0.5em !important;
         }
-
       }
 
       @media (max-width: $breakThree) {
-        font-size: 3.0vw;
+        font-size: 3vw;
       }
-
     }
   }
-
-
-
-
-
 </style>

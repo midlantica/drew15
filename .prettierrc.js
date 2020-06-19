@@ -3,12 +3,12 @@ module.exports = {
   parser: 'flow',
   bracketSpacing: true,
   semi: false,
-  trailingComma: 'none',
-  editorconfig: true,
+  trailingComma: 'es5',
+  editorconfig: false,
   vueIndentScriptAndStyle: false,
   'vetur.format.defaultFormatterOptions': {
     prettier: {
-      singleQuote: true
-    }
-  }
-}
+      singleQuote: true,
+    },
+  },
+};

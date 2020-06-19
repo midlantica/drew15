@@ -2,7 +2,7 @@
   <nav>
     <router-link to="/Corp/Extras" class="drewhead" />
 
-    <!-- <h1><router-link to="/Corp">Drew Harper</router-link></h1> -->
+    <!-- <h1><router-link to='/Corp'>Drew Harper</router-link></h1> -->
 
     <router-link to="/Corp">
       <drewHarper class="drewHarper" />
@@ -32,7 +32,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang='scss' scoped>
   @import '@/assets/css/main.scss';
   @import '@/template-corp/assets/css/corp-main.scss';
 
@@ -107,8 +107,8 @@
   a.drewhead {
     background: #c00000;
     background-image: url(/img/drew_mug_red.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-repeat: no-repeat;
+    // background-size: cover;
     width: 100px;
     height: 100px;
     background-position: -55px -67px;
