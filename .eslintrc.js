@@ -6,8 +6,8 @@ module.exports = {
     es6: true
   },
   extends: [
-    'plugin:vue/essential',
     'plugin:prettier/recommended',
+    'plugin:vue/essential',
     'eslint:recommended'
   ],
   globals: {
@@ -27,7 +27,7 @@ module.exports = {
     // allow paren-less arrow functions
     'arrow-parens': 1,
     // INDENT DEFAULT AT 2 SPACES
-    'vue/html-quotes': ['error', 'single', { avoidEscape: false }],
+    // 'vue/html-quotes': ['error', 'single', { avoidEscape: false }],
     // indent: ['error', 2],
     'vue/script-indent': ['error', 2, { baseIndent: 1 }],
     'generator-star-spacing': 0,

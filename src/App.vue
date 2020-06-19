@@ -1,5 +1,5 @@
 <template>
-  <div class='wrapper'>
+  <div class="wrapper">
     <Tabs />
     <router-view />
   </div>
@@ -23,7 +23,7 @@
   }
 </script>
 
-<style lang="scss">
+<style lang='scss'>
   @import '@/assets/css/main.scss';
 
   $backer: #fffae4;
@@ -254,7 +254,7 @@
     }
 
     .about > p {
-      // font-family: "AmericanTypewriterStd-Med" !important;
+      // font-family: 'AmericanTypewriterStd-Med' !important;
       font-size: 0.8em !important;
 
       @media (max-width: $breakThou) {

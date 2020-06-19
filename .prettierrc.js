@@ -4,6 +4,7 @@ module.exports = {
   bracketSpacing: true,
   semi: false,
   trailingComma: 'none',
+  editorconfig: true,
   vueIndentScriptAndStyle: false,
   'vetur.format.defaultFormatterOptions': {
     prettier: {
