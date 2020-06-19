@@ -1,14 +1,15 @@
 module.exports = {
   singleQuote: true,
   parser: 'flow',
+  parser: 'vue',
   bracketSpacing: true,
   semi: false,
   trailingComma: 'es5',
   editorconfig: false,
   vueIndentScriptAndStyle: false,
-  // 'vetur.format.defaultFormatterOptions': {
-  //   prettier: {
-  //     singleQuote: true,
-  //   },
-  // },
-};
+  bracketSpacing: true,
+  jsxBracketSameLine: true,
+  arrowParens: 'always',
+  vueIndentScriptAndStyle: true,
+  quoteProps: 'as-needed',
+}
