@@ -1,21 +1,21 @@
 <template>
   <nav>
     <h1>
-      <router-link to="/">DREW HARPER</router-link>
+      <router-link to='/'>DREW HARPER</router-link>
     </h1>
-    <section class="jobDesc">
+    <section class='jobDesc'>
       <h2>{{ this.$root.uiuxDesigner }}</h2>
       <h2>FRONT&nbsp;END&nbsp;DEV</h2>
     </section>
-    <section class="contact">
-      <p class="email">
-        <a href="mailto:druharper@gmail.com">DRUHARPER@GMAIL.COM</a>
+    <section class='contact'>
+      <p class='email'>
+        <a href='mailto:druharper@gmail.com'>DRUHARPER@GMAIL.COM</a>
       </p>
-      <p class="resume">
+      <p class='resume'>
         Resume: Word
-        <a href="resume/drew_harper_resume_portfolio_short.docx">Small</a>/
-        <a href="resume/drew_harper_resume_portfolio.docx">Big</a> or
-        <a href="resume/drew_harper_resume_portfolio.pdf">PDF</a>
+        <a href='resume/drew_harper_resume_portfolio_short.docx'>Small</a>/
+        <a href='resume/drew_harper_resume_portfolio.docx'>Big</a> or
+        <a href='resume/drew_harper_resume_portfolio.pdf'>PDF</a>
       </p>
     </section>
   </nav>
@@ -77,7 +77,6 @@
     font-weight: normal;
     letter-spacing: 0.06em;
     font-family: $font-subhead;
-    text-shadow: 4px 0px 3px $black;
     text-shadow: 4px 0px 3px $black;
     transition: 0.25s ease-in;
     //
