@@ -23,6 +23,7 @@
     "babel-preset-latest": "^6.24.1",
     "css-loader": "^1.0.1",
     "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-html": "^6.0.2",
     "eslint-plugin-vue": "^6.2.2",
     "fibers": "^4.0.3",

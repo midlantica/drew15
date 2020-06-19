@@ -22,8 +22,8 @@
 </template>
 
 <style lang="scss" scoped>
-  @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  @import "@/assets/css/main.scss";
+  @import "@/template-bourbon/assets/css/bourbon-main.scss";
 
   $outRed: rgba(221, 9, 22, 0.3);
   $outBlue: rgba(92, 201, 245, 0.3);

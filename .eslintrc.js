@@ -3,41 +3,36 @@ module.exports = {
     browser: true,
     es6: true,
   },
-  extends: ["eslint:recommended", "plugin:vue/essential"],
+  extends: [
+    'eslint:recommended',
+    'plugin:vue/essential',
+    'plugin:prettier/recommended',
+  ],
   globals: {
-    Atomics: "readonly",
-    SharedArrayBuffer: "readonly",
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
   },
   parserOptions: {
     ecmaVersion: 11,
-    sourceType: "module",
+    sourceType: 'module',
     ecmaFeatures: {
       globalReturn: false,
       impliedStrict: false,
       jsx: true,
     },
   },
-  plugins: ["vue", "html"],
+  plugins: ['vue', 'html'],
   rules: {
     // allow paren-less arrow functions
-    "arrow-parens": 0,
+    'arrow-parens': 0,
     // INDENT DEFAULT AT 2 SPACES
-    "vue/html-quotes": [1],
-    indent: ["error", 2],
-    "vue/script-indent": ["error", 4, { baseIndent: 1 }],
-    // "vue": {
-    // 	"script-indent": [
-    // 		"error",
-    // 		"tab",
-    // 		{
-    // 			"baseIndent": 1
-    // 		}
-    // 	]
-    // },
-    // allow async-await
-    "generator-star-spacing": 0,
-    quotes: ["error", "single"],
+    'vue/html-quotes': ['error', 'single', { avoidEscape: false }],
+    // indent: ['error', 2],
+    'vue/script-indent': ['error', 2, { baseIndent: 1 }],
+    'generator-star-spacing': 0,
+    quotes: ['error', 'single'],
     // allow debugger during development
-    "no-debugger": process.env.NODE_ENV === "production" ? 2 : 0,
+    'prettier/prettier': ['error', { singleQuote: true, parser: 'flow' }],
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
   },
-}
+};

@@ -55,15 +55,15 @@
         class: 'bourbon',
       },
       style: [
-        // { cssText: '.about p { font-family: AmericanTypewriterStd-Med; }', type: 'text/css' }
+      // { cssText: '.about p { font-family: AmericanTypewriterStd-Med; }', type: 'text/css' }
       ],
     },
   }
 </script>
 
 <style lang='scss' scoped>
-  @import "@/assets/css/main.scss";
-  @import "@/template-bourbon/assets/css/bourbon-main.scss";
+  @import '@/assets/css/main.scss';
+  @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
   header,
   footer {
