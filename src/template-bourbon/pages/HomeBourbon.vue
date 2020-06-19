@@ -1,47 +1,41 @@
 <template>
-
   <div>
-  
     <header>
-      <Navvy/>
+      <Navvy />
     </header>
 
     <main class="mainGrid">
-      
       <div class="copyArea">
-        <HeadAndCopy/>
+        <HeadAndCopy />
       </div>
 
-      <Skills/>
+      <Skills />
 
       <div class="slides">
-        <CarouselShow/>
+        <CarouselShow />
       </div>
 
-      <About/>
+      <About />
 
-      <Quotes/>
-
+      <Quotes />
     </main>
 
     <footer>
-      <Navvy/>
+      <Navvy />
     </footer>
-
   </div>
-
 </template>
 
 <script>
   // import '@/template-bourbon/assets/css/fonts/Veneer/Veneer.css'
   // import '@/template-bourbon/assets/css/fonts/AmericanTypewriter/AmericanTypewriter.css'
 
-  import Navvy from '../components/Navvy'
-  import HeadAndCopy from '../components/HeadAndCopy'
-  import About from '@/components/About'
-  import Skills from '../components/Skills'
-  import Quotes from '../components/Quote'
-  import CarouselShow from '@/components/Carousel/CarouselShow'
+  import Navvy from '../components/Navvy';
+  import HeadAndCopy from '../components/HeadAndCopy';
+  import About from '@/components/About';
+  import Skills from '../components/Skills';
+  import Quotes from '../components/Quote';
+  import CarouselShow from '@/components/Carousel/CarouselShow';
   // const CarouselShow = () => import('@/components/Carousel/CarouselShow')
 
   export default {
@@ -67,14 +61,14 @@
         // { cssText: '.about p { font-family: AmericanTypewriterStd-Med; }', type: 'text/css' }
       ]
     }
-  }
+  };
 </script>
 
 <style lang="scss" scoped>
   @import '@/assets/css/main.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
-  header, 
+  header,
   footer {
     @include shadow;
   }
@@ -98,7 +92,6 @@
     @media (max-width: $breakTwo) {
       //
     }
-
   }
 
   .copyArea {
@@ -120,12 +113,11 @@
       grid-row: 1;
     }
   }
-  
+
   .slides {
     grid-column: 2 / 3;
     grid-row: 1;
     // width: calc(100% / 2 - 100px);
-
 
     @media (max-width: $breakThou) {
       grid-column: 1 / 3;
@@ -158,7 +150,6 @@
     @media (max-width: $breakTwo) {
       grid-row: 2;
     }
-
   }
 
   .about {
@@ -184,16 +175,11 @@
       margin: 0;
     }
 
-    @media only screen 
-    and (min-device-width: 375px) 
-    and (max-device-width: 660px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    {
-      margin-top: .25em;
-      margin-bottom: .5em;
+    @media only screen and (min-device-width: 375px) and (max-device-width: 660px) and (-webkit-min-device-pixel-ratio: 2) {
+      margin-top: 0.25em;
+      margin-bottom: 0.5em;
       grid-row-gap: 0em;
     }
-
   }
 
   .quoteBlock {
@@ -218,7 +204,5 @@
     @media (max-width: $breakThree) {
       margin: 0;
     }
-    
   }
-
 </style>

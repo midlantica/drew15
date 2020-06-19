@@ -17,6 +17,7 @@ module.exports = {
     // allow paren-less arrow functions
     "arrow-parens": 0,
     // INDENT DEFAULT AT 2 SPACES
+    "vue/script-indent": ["error", 4, { "baseIndent": 1 }],
     indent: ["error", 2],
     // allow async-await
     "generator-star-spacing": 0,

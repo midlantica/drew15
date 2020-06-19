@@ -1,30 +1,30 @@
 <template>
   <div class="wrapper">
-    <Tabs/>
-    <router-view/>
+    <Tabs />
+    <router-view />
   </div>
 </template>
 
 <script>
-  import Tabs from '@/components/Tabs.vue'
+  import Tabs from "@/components/Tabs.vue"
   // import MY_JSON from './assets/data.json'
   export default {
     // myJson: MY_JSON,
     components: {
-      Tabs
+      Tabs,
     },
-    name: 'App',
+    name: "App",
     metaInfo: {
       // if no subcomponents specify a metaInfo.title, this title will be used
-      title: 'Drew Harper',
+      title: "Drew Harper",
       // all titles will be injected into this template
-      titleTemplate: '%s - UI/UX Designer, Graphic Designer'
-    }
+      titleTemplate: "%s - UI/UX Designer, Graphic Designer",
+    },
   }
 </script>
 
 <style lang="scss">
-  @import '@/assets/css/main.scss';
+  @import "@/assets/css/main.scss";
 
   $backer: #fffae4;
   $backBlack: #1f1f1f;
@@ -53,15 +53,15 @@
         // background-size: 110% 50%;
       }
 
-      header, footer {
+      header,
+      footer {
         background: url(./template-bourbon/assets/img/bg/bg_bag_dk.jpg) repeat;
       }
-
     }
 
     .about > p {
       font-family: "AmericanTypewriterStd-Med";
-      font-size: .85em;
+      font-size: 0.85em;
 
       @media (max-width: $breakThou) {
         font-size: 1.65vw;
@@ -77,7 +77,7 @@
       }
 
       @media (max-width: $breakThree) {
-        font-size: 3.0vw;
+        font-size: 3vw;
       }
     }
 
@@ -91,7 +91,6 @@
         // text-transform: capitalize;
       }
     }
-
   }
 
   // #############################
@@ -117,26 +116,26 @@
       }
 
       //
-      header, footer {
+      header,
+      footer {
         // background: url(./template-bourbon/assets/img/bg/bg_bag_dk.jpg) repeat;
       }
     }
 
     .about > p {
-      font-size: .9em !important;
+      font-size: 0.9em !important;
     }
 
-    &.extras .flexContainer  {
+    &.extras .flexContainer {
       //
       h1 {
         font-family: Helvetica !important;
         font-size: 1.5em;
         color: lighten(black, 30);
-        margin-top: .5em;
+        margin-top: 0.5em;
       }
     }
   }
-
 
   // #############################
   // TECHY
@@ -157,7 +156,7 @@
       }
     }
 
-    &.extras .flexContainer  {
+    &.extras .flexContainer {
       //
       h1 {
         font-family: Helvetica !important;
@@ -179,7 +178,8 @@
       // background: url(/img/bg/Drew-punk-back.jpg) repeat;
 
       //
-      header, footer {
+      header,
+      footer {
         // background: url(./template-bourbon/assets/img/bg/bg_bag_dk.jpg) repeat;
       }
     }
@@ -202,17 +202,17 @@
       }
 
       @media (max-width: $breakThree) {
-        font-size: 3.0vw;
+        font-size: 3vw;
       }
     }
 
-    &.extras .flexContainer  {
+    &.extras .flexContainer {
       //
       h1 {
         font-family: Times !important;
         font-size: 1.5em;
         color: lighten(black, 20);
-        margin-top: .5em;
+        margin-top: 0.5em;
         text-transform: capitalize;
       }
     }
@@ -227,44 +227,24 @@
 
     .wrapper {
       width: 100%;
-      background:
-        url(/img/bg/circles.svg),
-        url(/img/bg/Drew-punk-back.jpg);
-      background-repeat:
-        repeat-y,
-        repeat-y;
-      background-size:
-        100% 600%,
-        100% 100%;
-      background-position:
-        center center,
-        center center;
+      background: url(/img/bg/circles.svg), url(/img/bg/Drew-punk-back.jpg);
+      background-repeat: repeat-y, repeat-y;
+      background-size: 100% 600%, 100% 100%;
+      background-position: center center, center center;
 
       @media (max-width: $breakOne) {
-        background-size:
-          100% 600%,
-          130% 90%;
-        background-position:
-          center center,
-          -3em 0em;
+        background-size: 100% 600%, 130% 90%;
+        background-position: center center, -3em 0em;
       }
 
       @media (max-width: $breakTwo) {
-        background-size:
-          100% 600%,
-          120% 100%;
-        background-position:
-          center center,
-          -3em 11em;
+        background-size: 100% 600%, 120% 100%;
+        background-position: center center, -3em 11em;
       }
 
       @media (max-width: $breakTwo) {
-        background-size:
-          100% 600%,
-          250% 70%;
-        background-position:
-          center center,
-          -3em 3em;
+        background-size: 100% 600%, 250% 70%;
+        background-position: center center, -3em 3em;
       }
 
       //
@@ -291,11 +271,11 @@
       }
 
       @media (max-width: $breakThree) {
-        font-size: 3.0vw !important;
+        font-size: 3vw !important;
       }
     }
 
-    &.extras .flexContainer  {
+    &.extras .flexContainer {
       //
       h1 {
         font-family: Helvetica !important;
@@ -306,5 +286,4 @@
       }
     }
   }
-
 </style>
