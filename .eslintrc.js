@@ -11,8 +11,13 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 11,
     sourceType: 'module',
+    ecmaFeatures: {
+      globalReturn: false,
+      impliedStrict: false,
+      jsx: true,
+    },
   },
-  plugins: ['vue'],
+  plugins: ['vue', 'html'],
   rules: {
     // allow paren-less arrow functions
     'arrow-parens': 0,
@@ -22,6 +27,7 @@ module.exports = {
     indent: ['error', 2],
     // allow async-await
     'generator-star-spacing': 0,
+    quotes: ['error', 'single'],
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
   },

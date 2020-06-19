@@ -7,6 +7,8 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.10.2",
+    "browserslist": "^4.12.0",
     "core-js": "^3.6.5",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.10",
@@ -17,6 +19,8 @@
     "@vue/cli-plugin-babel": "^4.4.4",
     "@vue/cli-plugin-pwa": "^4.4.4",
     "@vue/cli-service": "^4.4.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-latest": "^6.24.1",
     "css-loader": "^1.0.1",
     "eslint": "^7.2.0",
     "eslint-plugin-vue": "^6.2.2",
@@ -35,9 +39,15 @@
       "autoprefixer": {}
     }
   },
-  "browserslist": [
-    "> 10%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+  "browserslist": {
+    "development": [
+      "last 2 versions"
+    ],
+    "production": [
+      "defaults",
+      "> 85%",
+      "last 2 versions",
+      "not ie <= 10"
+    ]
+  }
 }
