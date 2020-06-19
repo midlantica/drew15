@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <div class="flagBox">
-      <div class="flag">&nbsp;</div>      
+      <div class="flag">&nbsp;</div>
     </div>
     <p>{{ this.$root.aboutCopy }}</p>
   </div>
@@ -10,11 +10,11 @@
 <style lang="scss" scoped>
   @import '@/assets/css/main.scss';
   // @import '@/template-techy/assets/css/techy-main.scss';
-  
+
   .about {
-    background: #FBF3BB; 
+    background: #fbf3bb;
     padding: 0.8em 1.1em 0.8em 1.1em;
-    display: block; 
+    // display: block;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -26,17 +26,16 @@
     @include shadow;
     @include clearfix;
 
-    @media (max-width: $breakFour) 
-    {
+    @media (max-width: $breakFour) {
       flex-direction: column;
     }
   }
 
   .flagBox {
-    display: block; 
+    // display: block;
     display: flex;
     flex-direction: column;
-    // 
+    //
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -71,11 +70,7 @@
       // background: red;
     }
 
-    @media only screen 
-    and (min-device-width: 375px) 
-    and (max-device-width: 660px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    {
+    @media only screen and (min-device-width: 375px) and (max-device-width: 660px) and (-webkit-min-device-pixel-ratio: 2) {
       // display: block;
       // float: left;
       // clear: left;
@@ -87,9 +82,8 @@
     }
 
     @media (max-width: $breakFour) {
-      margin-bottom: .5em;
+      margin-bottom: 0.5em;
     }
-
   }
 
   .flag {
@@ -128,11 +122,7 @@
       // height: 84px;
     }
 
-    @media only screen 
-    and (min-device-width: 375px) 
-    and (max-device-width: 660px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    {
+    @media only screen and (min-device-width: 375px) and (max-device-width: 660px) and (-webkit-min-device-pixel-ratio: 2) {
       // display: block;
       // float: left;
       // clear: left;
@@ -141,7 +131,6 @@
       // width: 105px;
       // height: 53px;
     }
-
   }
 
   p {
@@ -161,9 +150,6 @@
       text-align: center;
     }
   }
-
-  
-
 </style>
 
 

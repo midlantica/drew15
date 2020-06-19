@@ -1,16 +1,14 @@
 <template>
   <div>
-
     <header>
-      <Navvy/>
+      <Navvy />
     </header>
 
-    <ExtrasC/>
+    <ExtrasC />
 
     <footer>
-      <Navvy/>
+      <Navvy />
     </footer>
-
   </div>
 </template>
 
@@ -38,5 +36,4 @@
 <style lang="scss">
   @use '@/assets/css/main.scss';
   @use '@/template-bourbon/assets/css/bourbon-main.scss';
-
 </style>

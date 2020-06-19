@@ -1,16 +1,14 @@
 <template>
   <div>
-
     <header>
-      <Navvy/>
+      <Navvy />
     </header>
 
-    <ExtrasC/>
-    
+    <ExtrasC />
+
     <footer>
-      <Quotes/>
+      <Quotes />
     </footer>
-    
   </div>
 </template>
 
@@ -39,5 +37,4 @@
   @import url('https://fonts.googleapis.com/css?family=Questrial');
   @import '@/assets/css/main.scss';
   @import '@/template-corp/assets/css/corp-main.scss';
-
 </style>

@@ -3,25 +3,26 @@ module.exports = {
     browser: true,
     es6: true,
   },
-  extends: ["eslint:recommended", "plugin:vue/essential"],
+  extends: ['eslint:recommended', 'plugin:vue/essential'],
   globals: {
-    Atomics: "readonly",
-    SharedArrayBuffer: "readonly",
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
   },
   parserOptions: {
     ecmaVersion: 11,
-    sourceType: "module",
+    sourceType: 'module',
   },
-  plugins: ["vue"],
+  plugins: ['vue'],
   rules: {
     // allow paren-less arrow functions
-    "arrow-parens": 0,
+    'arrow-parens': 0,
     // INDENT DEFAULT AT 2 SPACES
-    "vue/script-indent": ["error", 4, { "baseIndent": 1 }],
-    indent: ["error", 2],
+    'vue/html-quotes': ['single'],
+    'vue/script-indent': ['error', 4, { baseIndent: 1 }],
+    indent: ['error', 2],
     // allow async-await
-    "generator-star-spacing": 0,
+    'generator-star-spacing': 0,
     // allow debugger during development
-    "no-debugger": process.env.NODE_ENV === "production" ? 2 : 0,
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
   },
-}
+};

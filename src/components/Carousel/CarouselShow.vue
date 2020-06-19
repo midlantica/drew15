@@ -1,15 +1,10 @@
 <template>
   <div class="projectBox">
-    <a class="carouselArrow" 
-      @click.stop="selectedView = 'Carousel'">
-        ◀︎ BACK
-    </a>
-    <p class="projectHead">Projects - {{ selectedView }} </p>
+    <a class="carouselArrow" @click.stop="selectedView = 'Carousel'">◀︎ BACK</a>
+    <p class="projectHead">Projects - {{ selectedView }}</p>
 
     <component :is="selectedView">
-    
       <div class="miniGallery">
-
         <a @click.stop="selectedView = 'Uiux'">
           <div class="box Uiux">
             <p>UI/UX Design</p>
@@ -45,13 +40,9 @@
             <p>Misc.</p>
           </div>
         </a>
-
       </div>
-
     </component>
-    
   </div>
-
 </template>
 
 <script>
@@ -93,13 +84,13 @@
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
   .projectBox {
-    padding: 0.2em .3em;
+    padding: 0.2em 0.3em;
     background: lighten(lightgrey, 10);
     box-shadow: 0px 2px 2px -3px black;
-    border-radius: .25em;
+    border-radius: 0.25em;
     @include clearfix;
   }
-  
+
   body.bourbon .projectBox,
   body.corp .projectBox {
     @include shadow;
@@ -120,71 +111,63 @@
   // ########################
 
   body.bourbon .projectHead,
-  body.bourbon .box p
-  {
-    font-family: Dosis, "Helvetica Neue", Arial, sans-serif !important;
+  body.bourbon .box p {
+    font-family: Dosis, 'Helvetica Neue', Arial, sans-serif !important;
   }
 
   body.bourbon .box {
     height: 169.5px;
   }
-  
+
   //////////
 
   body.groovy .projectHead,
-  body.groovy .box p
-  {
-    font-family: Dosis, "Helvetica Neue", Arial, sans-serif !important;
+  body.groovy .box p {
+    font-family: Dosis, 'Helvetica Neue', Arial, sans-serif !important;
   }
 
   body.groovy .box {
     height: 158.5px !important;
   }
-  
+
   //////////
-  
+
   body.techy .projectHead,
-  body.techy .box p
-  {
-    font-family: Dosis, "Helvetica Neue", Arial, sans-serif !important;
+  body.techy .box p {
+    font-family: Dosis, 'Helvetica Neue', Arial, sans-serif !important;
   }
 
   body.techy .box {
     height: 159px !important;
   }
-  
+
   //////////
-  
+
   body.corp .projectHead,
-  body.corp .box p
-  {
-    font-family: cormorantGaramond-Semi-Bold, "Times New Roman", Times, serif !important;
+  body.corp .box p {
+    font-family: cormorantGaramond-Semi-Bold, 'Times New Roman', Times, serif !important;
     letter-spacing: 0em;
   }
 
   body.corp .box {
     height: 154.5px !important;
   }
-  
+
   //////////
-  
+
   body.punk .projectHead,
-  body.punk .box p
-  {
-    font-family: Poppins, "Helvetica Neue", Arial, sans-serif !important;
+  body.punk .box p {
+    font-family: Poppins, 'Helvetica Neue', Arial, sans-serif !important;
   }
-  
+
   body.punk .box {
     height: 171px !important;
   }
-  
+
   //////////
 
-
-
-
   .projectHead {
-    font-size: .9em;
+    font-size: 0.9em;
     text-align: center;
     text-transform: uppercase;
     margin-right: 3.5em;
@@ -200,10 +183,10 @@
     float: left;
     clear: left;
     border: 1px solid lightgrey;
-    border-radius: .25em;
-    background: transparentize(white, .5);
+    border-radius: 0.25em;
+    background: transparentize(white, 0.5);
     cursor: pointer;
-    padding: 0.1em .5em 0.1em .25em;
+    padding: 0.1em 0.5em 0.1em 0.25em;
     margin: 0.1em 0em 0;
 
     &:hover {
@@ -246,8 +229,8 @@
         justify-content: center;
         flex-direction: column;
         text-align: center;
-        box-shadow: 1px 1px 0 -1px rgba(0,0,0,0.50);
-        margin: .25em .25em;
+        box-shadow: 1px 1px 0 -1px rgba(0, 0, 0, 0.5);
+        margin: 0.25em 0.25em;
         height: 169.5px;
         box-shadow: 0px 2px 2px -3px black;
         background: lighten(lightgrey, 15);
@@ -261,7 +244,7 @@
 
         &:hover {
           background: lighten(grey, 25);
-          transition-duration: .5s;
+          transition-duration: 0.5s;
           box-shadow: 0px 2px 2px -1px grey;
         }
 
@@ -269,18 +252,19 @@
           background: url(/img/carousel/car-icon-uiux.svg) no-repeat center center;
           background-color: lighten(lightgrey, 15);
           background-size: 75% 75%;
-          background-position: center 8px; 
-          border: 1px solid transparentize(grey, .5);
+          background-position: center 8px;
+          border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
-            background: url(/img/carousel/car-icon-uiux.svg) no-repeat center center;
+            background: url(/img/carousel/car-icon-uiux.svg) no-repeat center
+              center;
             background-color: lighten(lightgrey, 10);
             // transition-property: background-color;
-            transition-duration: .5s;
+            transition-duration: 0.5s;
             // background-color: lighten(lightgrey, 25);
             background-size: 75% 75%;
-            background-position: center 0px; 
-            border: 1px solid transparentize(grey, .5);
+            background-position: center 0px;
+            border: 1px solid transparentize(grey, 0.5);
             box-shadow: 0px 2px 2px -1px grey;
           }
 
@@ -290,21 +274,23 @@
         }
 
         &.Mobile {
-          background: url(/img/carousel/car-icon-mobile.svg) no-repeat center center;
+          background: url(/img/carousel/car-icon-mobile.svg) no-repeat center
+            center;
           background-color: lighten(lightgrey, 15);
           background-size: 75% 75%;
-          background-position: center 8px; 
-          border: 1px solid transparentize(grey, .5);
+          background-position: center 8px;
+          border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
-            background: url(/img/carousel/car-icon-mobile.svg) no-repeat center center;
+            background: url(/img/carousel/car-icon-mobile.svg) no-repeat center
+              center;
             background-color: lighten(lightgrey, 10);
             // transition-property: background-color;
-            transition-duration: .5s;
+            transition-duration: 0.5s;
             // background-color: lighten(lightgrey, 25);
             background-size: 75% 75%;
-            background-position: center 0px; 
-            border: 1px solid transparentize(grey, .5);
+            background-position: center 0px;
+            border: 1px solid transparentize(grey, 0.5);
             box-shadow: 0px 2px 2px -1px grey;
           }
 
@@ -314,21 +300,23 @@
         }
 
         &.Kiosk {
-          background: url(/img/carousel/car-icon-kiosk.svg) no-repeat center center;
+          background: url(/img/carousel/car-icon-kiosk.svg) no-repeat center
+            center;
           background-color: lighten(lightgrey, 15);
           background-size: 75% 75%;
-          background-position: center 8px; 
-          border: 1px solid transparentize(grey, .5);
+          background-position: center 8px;
+          border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
-            background: url(/img/carousel/car-icon-kiosk.svg) no-repeat center center;
+            background: url(/img/carousel/car-icon-kiosk.svg) no-repeat center
+              center;
             background-color: lighten(lightgrey, 10);
             // transition-property: background-color;
-            transition-duration: .5s;
+            transition-duration: 0.5s;
             // background-color: lighten(lightgrey, 25);
             background-size: 75% 75%;
-            background-position: center 0px; 
-            border: 1px solid transparentize(grey, .5);
+            background-position: center 0px;
+            border: 1px solid transparentize(grey, 0.5);
             box-shadow: 0px 2px 2px -1px grey;
           }
 
@@ -338,21 +326,23 @@
         }
 
         &.Graphics {
-          background: url(/img/carousel/car-icon-graphics.svg) no-repeat center center;
+          background: url(/img/carousel/car-icon-graphics.svg) no-repeat center
+            center;
           background-color: lighten(lightgrey, 15);
           background-size: 75% 75%;
-          background-position: center 8px; 
-          border: 1px solid transparentize(grey, .5);
+          background-position: center 8px;
+          border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
-            background: url(/img/carousel/car-icon-graphics.svg) no-repeat center center;
+            background: url(/img/carousel/car-icon-graphics.svg) no-repeat center
+              center;
             background-color: lighten(lightgrey, 10);
             // transition-property: background-color;
-            transition-duration: .5s;
+            transition-duration: 0.5s;
             // background-color: lighten(lightgrey, 25);
             background-size: 75% 75%;
-            background-position: center 0px; 
-            border: 1px solid transparentize(grey, .5);
+            background-position: center 0px;
+            border: 1px solid transparentize(grey, 0.5);
             box-shadow: 0px 2px 2px -1px grey;
           }
 
@@ -362,21 +352,23 @@
         }
 
         &.Print {
-          background: url(/img/carousel/car-icon-print.svg) no-repeat center center;
+          background: url(/img/carousel/car-icon-print.svg) no-repeat center
+            center;
           background-color: lighten(lightgrey, 15);
           background-size: 75% 75%;
-          background-position: center 8px; 
-          border: 1px solid transparentize(grey, .5);
+          background-position: center 8px;
+          border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
-            background: url(/img/carousel/car-icon-print.svg) no-repeat center center;
+            background: url(/img/carousel/car-icon-print.svg) no-repeat center
+              center;
             background-color: lighten(lightgrey, 10);
             // transition-property: background-color;
-            transition-duration: .5s;
+            transition-duration: 0.5s;
             // background-color: lighten(lightgrey, 25);
             background-size: 75% 75%;
-            background-position: center 0px; 
-            border: 1px solid transparentize(grey, .5);
+            background-position: center 0px;
+            border: 1px solid transparentize(grey, 0.5);
             box-shadow: 0px 2px 2px -1px grey;
           }
 
@@ -389,18 +381,19 @@
           background: url(/img/carousel/car-icon-misc.svg) no-repeat center center;
           background-color: lighten(lightgrey, 15);
           background-size: 75% 75%;
-          background-position: center 8px; 
-          border: 1px solid transparentize(grey, .5);
+          background-position: center 8px;
+          border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
-            background: url(/img/carousel/car-icon-misc.svg) no-repeat center center;
+            background: url(/img/carousel/car-icon-misc.svg) no-repeat center
+              center;
             background-color: lighten(lightgrey, 10);
             // transition-property: background-color;
-            transition-duration: .5s;
+            transition-duration: 0.5s;
             // background-color: lighten(lightgrey, 25);
             background-size: 75% 75%;
-            background-position: center 0px; 
-            border: 1px solid transparentize(grey, .5);
+            background-position: center 0px;
+            border: 1px solid transparentize(grey, 0.5);
             box-shadow: 0px 2px 2px -1px grey;
           }
 
@@ -409,10 +402,9 @@
           }
         }
 
-
         p {
           width: 100%;
-          font-size: .85em;
+          font-size: 0.85em;
           text-transform: uppercase;
           color: $grey;
           text-align: center;
@@ -426,11 +418,9 @@
           @media (max-width: $breakThou) {
             margin-bottom: 0em;
           }
-
         }
       }
     }
-
   }
 </style>
 

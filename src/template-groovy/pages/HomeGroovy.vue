@@ -1,13 +1,10 @@
 <template>
-
   <div>
-    
     <header>
-      <NavvyHead/>
+      <NavvyHead />
     </header>
 
     <main class="mainGrid">
-
       <div class="copyArea">
         <HeadAndCopy />
       </div>
@@ -16,18 +13,15 @@
         <CarouselShow />
       </div>
 
-      <About/>
+      <About />
 
-      <Skills/>
-
+      <Skills />
     </main>
 
     <footer>
       <Footer />
     </footer>
-
   </div>
-
 </template>
 
 <script>
@@ -110,7 +104,6 @@
     @media (max-width: $breakFour) {
       //
     }
-
   }
 
   header {
@@ -130,16 +123,16 @@
     color: $ivory;
     background: linear-gradient(
       // 0 - 25%
-      $groovy-aqua 0%,
+        $groovy-aqua 0%,
       $groovy-aqua 25%,
       // 25% - 50%
-      $groovy-yellow 25%,
+        $groovy-yellow 25%,
       $groovy-yellow 50%,
       // 50% - 75%
-      $groovy-orange 50%,
+        $groovy-orange 50%,
       $groovy-orange 75%,
       // 75% - 100%
-      $groovy-red 75%,
+        $groovy-red 75%,
       $groovy-red 100%
     );
 
@@ -147,13 +140,12 @@
       // grid-column: span 1;
       // grid-row: 5;
     }
-
   }
 
   .about {
     box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.25);
     background: $groovy-yellow;
-    border-radius: .75em;
+    border-radius: 0.75em;
   }
 
   .copyArea {
@@ -175,7 +167,7 @@
       grid-row: 1;
     }
   }
-  
+
   .slides {
     grid-column: 2 / 3;
     grid-row: 1;
@@ -259,5 +251,4 @@
       grid-row: 5;
     }
   }
-
 </style>

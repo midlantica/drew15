@@ -1,33 +1,27 @@
 <template>
-
   <div>
-    
     <header>
-      <Navvy/>
+      <Navvy />
     </header>
 
     <main class="mainGrid">
-
       <div class="copyArea">
-        <HeadAndCopy/>
+        <HeadAndCopy />
       </div>
 
       <div class="slides">
-        <CarouselShow/>
+        <CarouselShow />
       </div>
 
-      <About/>
+      <About />
 
-      <Skills/>
-
+      <Skills />
     </main>
 
     <!-- <footer> -->
-      <!-- <Quotes/> -->
+    <!-- <Quotes/> -->
     <!-- </footer> -->
-
   </div>
-
 </template>
 
 <script>
@@ -70,7 +64,7 @@
 
 <style lang="scss" scoped>
   @import '@/assets/css/main.scss';
-  @import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i');  
+  @import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i');
   @import '@/assets/css/main.scss';
   @import '@/template-punk/assets/css/punk-main.scss';
 
@@ -82,7 +76,7 @@
   }
 
   .mainGrid {
-    display: grid;  // <-- CONTENT GRID
+    display: grid; // <-- CONTENT GRID
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0.5em;
     background: transparent;
@@ -104,7 +98,6 @@
     @media (max-width: $breakTwo) {
       //
     }
-
   }
 
   .copyArea {
@@ -126,7 +119,7 @@
       grid-row: 1;
     }
   }
-  
+
   .slides {
     grid-column: 2 / 3;
     grid-row: 1;
@@ -168,16 +161,11 @@
       grid-row: 5;
     }
 
-    @media only screen 
-    and (min-device-width: 375px) 
-    and (max-device-width: 660px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    {
-      margin-top: .25em;
-      margin-bottom: .5em;
+    @media only screen and (min-device-width: 375px) and (max-device-width: 660px) and (-webkit-min-device-pixel-ratio: 2) {
+      margin-top: 0.25em;
+      margin-bottom: 0.5em;
       grid-row-gap: 0em;
     }
-
   }
 
   .quoteBlock {
@@ -215,7 +203,5 @@
     @media (max-width: $breakTwo) {
       grid-row: 4;
     }
-
   }
-
 </style>

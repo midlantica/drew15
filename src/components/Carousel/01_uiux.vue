@@ -1,5 +1,6 @@
 <template>
-  <carousel class="druCarousel"
+  <carousel
+    class="druCarousel"
     :perPage="1"
     :navigationEnabled="true"
     :paginationEnabled="false"
@@ -18,7 +19,7 @@
       v-bind:key="image.id"
       data-name="MySlideName"
     >
-      <img :src="image" :alt="image.slice(18,-4)">
+      <img :src="image" :alt="image.slice(18,-4)" />
     </slide>
   </carousel>
 </template>
@@ -72,5 +73,4 @@
   @import '@/assets/css/main.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
   @import '@/assets/css/_template-carousel.scss';
-
 </style>

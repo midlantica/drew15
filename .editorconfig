@@ -1,4 +1,6 @@
 root = true
+[*]
+quote_type = single
 
 [*]
 charset = utf-8

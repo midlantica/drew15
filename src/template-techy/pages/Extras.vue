@@ -1,18 +1,16 @@
 <template>
   <div>
-
     <header>
-      <Navvy/>
+      <Navvy />
     </header>
 
     <div class="backer">
-      <ExtrasC/>
+      <ExtrasC />
     </div>
 
     <footer>
-      <Footy/>
+      <Footy />
     </footer>
-
   </div>
 </template>
 
@@ -62,11 +60,9 @@
   .flexContainer {
     background: #fffff1;
   }
-  
+
   .backer {
     width: 100%;
     background: #fffff1;
   }
-
-
 </style>

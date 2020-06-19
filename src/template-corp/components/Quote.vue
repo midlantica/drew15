@@ -11,7 +11,7 @@
   .quoteBlock {
     background: $blue-dark;
     // margin-bottom: .5em;
-    padding: .5em 2em .6em;
+    padding: 0.5em 2em 0.6em;
     @include shadow;
     // @include clearfix;
     text-align: center;
@@ -21,11 +21,10 @@
       font-size: 1.15em;
       color: $ivory;
       text-align: center;
-      letter-spacing: .09em;
+      letter-spacing: 0.09em;
       // word-spacing: .1em;
       font-weight: bold;
       @include font-smoothing(on);
     }
-
   }
 </style>

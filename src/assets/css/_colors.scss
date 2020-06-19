@@ -1,36 +1,34 @@
 // COLORS
 
 // Generics
-$grey:       #333;
-$ivory:      rgba(255,253,244,1);
-$white:      white;
-$black:      black;
+$grey: #333;
+$ivory: rgba(255, 253, 244, 1);
+$white: white;
+$black: black;
 
 // Bourbon
-$bourbon:    #52090a;
-$blue-dark:  rgba(70,100,110,1);
-$blue-mid:   rgba(91,125,150,1);
-$blue-light: rgba(143,169,194,1);
-$accent:     rgba(236,180,105,1.0);
+$bourbon: #52090a;
+$blue-dark: rgba(70, 100, 110, 1);
+$blue-mid: rgba(91, 125, 150, 1);
+$blue-light: rgba(143, 169, 194, 1);
+$accent: rgba(236, 180, 105, 1);
 // $accent:     orange;
-$orange:     rgba(227,66,52,1.0);
-$paleyellow: rgba(255,255,191,0.6);
-$accent-red: #C02C19;
-
+$orange: rgba(227, 66, 52, 1);
+$paleyellow: rgba(255, 255, 191, 0.6);
+$accent-red: #c02c19;
 
 // Groovy
-$groovy-aqua:   #99f1ec;
+$groovy-aqua: #99f1ec;
 $groovy-yellow: #ffdd4b;
 $groovy-orange: #ff9f00;
-$groovy-red:    #FF1A22;
+$groovy-red: #ff1a22;
 $groovy-yellow-pale: lighten($groovy-yellow, 30);
 
-
-$groovy-aqua-dk:        darken(#99f1ec, 10);
-$groovy-yellow-dk:      darken(#ffdd4b, 15);
-$groovy-orange-dk:      darken(#ff9f00, 05);
-$groovy-red-dk:         darken(#FF1A22, 10);
+$groovy-aqua-dk: darken(#99f1ec, 10);
+$groovy-yellow-dk: darken(#ffdd4b, 15);
+$groovy-orange-dk: darken(#ff9f00, 05);
+$groovy-red-dk: darken(#ff1a22, 10);
 $groovy-yellow-pale-dk: lighten($groovy-yellow, 00);
 
-$mango:      #FFC600;
-$blueTech:   #423BA0;
+$mango: #ffc600;
+$blueTech: #423ba0;

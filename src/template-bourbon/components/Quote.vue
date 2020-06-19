@@ -21,19 +21,15 @@
     justify-content: center;
     // align-content: center;
     align-items: center;
-    padding: .75em 2em 1em;
+    padding: 0.75em 2em 1em;
     text-align: center;
     @include shadow;
 
-    @media only screen 
-    and (min-device-width: 375px) 
-    and (max-device-width: 660px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    {
+    @media only screen and (min-device-width: 375px) and (max-device-width: 660px) and (-webkit-min-device-pixel-ratio: 2) {
       // display: block;
       clear: both;
-      margin-top: .5em;
-      margin-bottom: .5em;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
       grid-row-gap: 0em;
     }
 
@@ -46,28 +42,21 @@
       font-size: 0.9em;
       color: $ivory !important;
       // text-align: center;
-      letter-spacing: .05em;
+      letter-spacing: 0.05em;
       font-weight: bold;
       line-height: 1.5em;
       text-align: center;
       // @include font-smoothing(on);
 
-      @media only screen 
-      and (min-device-width: 700px) 
-      and (max-device-width: $breakThou)
-      {
+      @media only screen and (min-device-width: 700px) and (max-device-width: $breakThou) {
         // font-size: 1.5vw;
         font-size: 0.9em;
       }
 
-      @media only screen 
-      and (min-device-width: 0px) 
-      and (max-device-width: 700px)
-      {
+      @media only screen and (min-device-width: 0px) and (max-device-width: 700px) {
         // font-size: .9vw;
         font-size: 0.9em;
       }
-
     }
 
     cite {
@@ -78,25 +67,17 @@
       // margin: 0 4em 0 0;
       display: block;
       text-align: right;
-      letter-spacing: .02em;
+      letter-spacing: 0.02em;
 
-      @media only screen 
-      and (min-device-width: 700px) 
-      and (max-device-width: $breakThou)
-      {
+      @media only screen and (min-device-width: 700px) and (max-device-width: $breakThou) {
         // font-size: 1.5vw;
         font-size: 0.9em;
       }
 
-      @media only screen 
-      and (min-device-width: 0px) 
-      and (max-device-width: 700px)
-      {
+      @media only screen and (min-device-width: 0px) and (max-device-width: 700px) {
         // font-size: 3vw;
         font-size: 0.9em;
       }
-
-
     }
   }
 </style>

@@ -24,7 +24,7 @@
 </script>
 
 <style lang="scss">
-  @import "@/assets/css/main.scss";
+  @import '@/assets/css/main.scss';
 
   $backer: #fffae4;
   $backBlack: #1f1f1f;
@@ -60,7 +60,7 @@
     }
 
     .about > p {
-      font-family: "AmericanTypewriterStd-Med";
+      font-family: 'AmericanTypewriterStd-Med';
       font-size: 0.85em;
 
       @media (max-width: $breakThou) {
@@ -185,7 +185,7 @@
     }
 
     .about > p {
-      font-family: cormorantGaramond-Semi-Bold, "Times New Roman", Times, serif !important;
+      font-family: cormorantGaramond-Semi-Bold, 'Times New Roman', Times, serif !important;
       font-size: 1em;
 
       @media (max-width: $breakThou) {

@@ -1,33 +1,27 @@
 <template>
-
   <div>
-
     <header>
-      <Navvy/>
+      <Navvy />
     </header>
 
     <main class="mainGrid">
-
       <div class="copyArea">
-        <HeadAndCopy/>
+        <HeadAndCopy />
       </div>
 
       <div class="slides">
-        <CarouselShow/>
+        <CarouselShow />
       </div>
 
-      <About/>
+      <About />
 
-      <Skills/>
-
+      <Skills />
     </main>
 
     <footer>
-      <Quotes/>
+      <Quotes />
     </footer>
-
   </div>
-
 </template>
 
 <script>
@@ -73,11 +67,11 @@
 
   .about {
     background: white;
-    font-size: .95em;
+    font-size: 0.95em;
     // margin-bottom: 0.5em;
 
     @media (max-width: $breakThou) {
-      margin-bottom: .5em;
+      margin-bottom: 0.5em;
     }
   }
 
@@ -134,7 +128,7 @@
       grid-row: 1;
     }
   }
-  
+
   .slides {
     grid-column: 2 / 3;
     grid-row: 1;
@@ -216,7 +210,6 @@
       grid-row: 5;
     }
   }
-
 </style>
 
 

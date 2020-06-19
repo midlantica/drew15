@@ -1,13 +1,18 @@
 <template>
   <nav>
-    <h1><router-link to="/">DREW HARPER</router-link></h1>
+    <h1>
+      <router-link to="/">DREW HARPER</router-link>
+    </h1>
     <section class="jobDesc">
       <h2>{{ this.$root.uiuxDesigner }}</h2>
       <h2>FRONT&nbsp;END&nbsp;DEV</h2>
     </section>
     <section class="contact">
-      <p class='email'><a href="mailto:druharper@gmail.com">DRUHARPER@GMAIL.COM</a></p>
-      <p class='resume'>Resume: Word
+      <p class="email">
+        <a href="mailto:druharper@gmail.com">DRUHARPER@GMAIL.COM</a>
+      </p>
+      <p class="resume">
+        Resume: Word
         <a href="resume/drew_harper_resume_portfolio_short.docx">Small</a>/
         <a href="resume/drew_harper_resume_portfolio.docx">Big</a> or
         <a href="resume/drew_harper_resume_portfolio.pdf">PDF</a>
@@ -20,8 +25,8 @@
   @import '@/assets/css/main.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
-  $outRed: rgba(221, 9, 22, .3);
-  $outBlue: rgba(92, 201, 245, .3);
+  $outRed: rgba(221, 9, 22, 0.3);
+  $outBlue: rgba(92, 201, 245, 0.3);
 
   a {
     color: $ivory;
@@ -37,7 +42,12 @@
     }
   }
 
-  h1,h2,h3,h4,h5,p {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
     line-height: 1em;
     margin: 0;
     padding: 0;
@@ -55,7 +65,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: .5em 1.25em;
+    padding: 0.5em 1.25em;
 
     @media (max-width: $breakOne) {
       justify-content: center;
@@ -65,11 +75,11 @@
   h1 {
     font-size: 4em;
     font-weight: normal;
-    letter-spacing: .06em;
+    letter-spacing: 0.06em;
     font-family: $font-subhead;
     text-shadow: 4px 0px 3px $black;
     text-shadow: 4px 0px 3px $black;
-    transition: .25s ease-in;
+    transition: 0.25s ease-in;
     //
     width: auto;
     flex-grow: 0;
@@ -93,7 +103,7 @@
   section.jobDesc {
     flex-grow: 1;
     margin-left: 1em;
-    transition: .25s ease-in;
+    transition: 0.25s ease-in;
 
     @media (max-width: $breakTwo) {
       // justify-content: center;
@@ -118,7 +128,7 @@
 
     h2 {
       font-size: 1.6em;
-      letter-spacing: .03em;
+      letter-spacing: 0.03em;
       text-shadow: 3px 0px 3px $black;
 
       &:nth-child(1) {
@@ -140,7 +150,7 @@
         }
 
         &:nth-child(2) {
-          margin-left: .25em !important;
+          margin-left: 0.25em !important;
         }
       }
 
@@ -148,7 +158,6 @@
         font-size: 1.25em !important;
         line-height: 2em;
       }
-
     }
   }
 
@@ -160,7 +169,7 @@
     z-index: 10;
     // border: 1px solid $outBlue;
     text-shadow: 3px 0px 1px $black;
-    transition: .25s ease-in;
+    transition: 0.25s ease-in;
 
     @media (max-width: $breakOne) {
       margin-left: 0;
@@ -172,12 +181,12 @@
 
     @media (max-width: $breakThree) {
       margin-top: 0em;
-      transition: .25s ease-in;
+      transition: 0.25s ease-in;
     }
 
     p {
       font-family: $font-subhead !important;
-      letter-spacing: .09em;
+      letter-spacing: 0.09em;
 
       &:nth-child(1) {
         font-size: 1.44em;
@@ -185,19 +194,19 @@
 
       &:nth-child(2) {
         font-size: 1.05em;
-        letter-spacing: .0725em;
+        letter-spacing: 0.0725em;
       }
 
       @media (max-width: $breakOne) {
         justify-content: center;
         font-size: 1.27em !important;
-        letter-spacing: .1em !important;
-        margin-top: -.3em;
+        letter-spacing: 0.1em !important;
+        margin-top: -0.3em;
 
         &:nth-child(1) {
           float: left;
           clear: left;
-          margin-right: .5em;
+          margin-right: 0.5em;
         }
 
         &:nth-child(2) {
@@ -206,7 +215,7 @@
       }
 
       @media (max-width: $breakTwo) {
-        font-size: .87em !important;
+        font-size: 0.87em !important;
         letter-spacing: 0.09em !important;
 
         &:nth-child(1) {
@@ -239,8 +248,6 @@
           margin-left: 0 !important;
         }
       }
-
     }
   }
-
 </style>

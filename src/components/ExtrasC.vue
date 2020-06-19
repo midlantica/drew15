@@ -1,67 +1,82 @@
 <template>
   <div>
-
     <div class="flexContainer">
-
       <h1>Portfolio Extras</h1>
 
       <div class="flex">
-
         <a href="/img/portfolio/extras/serviceRequestV1.png" target="_BLANK">
-          <img class="portThumbs" src="/img/portfolio/extras/service-request@2x.png">
-          <center><p>A Service Request page</p></center>
+          <img class="portThumbs" src="/img/portfolio/extras/service-request@2x.png" />
+          <center>
+            <p>A Service Request page</p>
+          </center>
         </a>
 
         <a href="/img/portfolio/extras/jpay_com_ui_email_v64.pdf" target="_BLANK">
-          <img class="portThumbs" src="/img/portfolio/extras/jpay-email@2x.png">
-          <center><p>JPay.com multipage PDF</p></center>
+          <img class="portThumbs" src="/img/portfolio/extras/jpay-email@2x.png" />
+          <center>
+            <p>JPay.com multipage PDF</p>
+          </center>
         </a>
 
         <a href="/img/portfolio/extras/JP4_ui_v4.pdf" target="_BLANK">
-          <img class="portThumbs" src="/img/portfolio/extras/jp4-device-music@2x.png">
-          <center><p>Multi-page JPay Mobile interface pdf</p></center>
+          <img class="portThumbs" src="/img/portfolio/extras/jp4-device-music@2x.png" />
+          <center>
+            <p>Multi-page JPay Mobile interface pdf</p>
+          </center>
         </a>
 
         <a href="/img/portfolio/extras/Bridge_Program.png" target="_BLANK">
-          <img class="portThumbs" src="/img/portfolio/extras/bridge-analysis@2x.png">
-          <center><p>Bridge Admin Business Analysis</p></center>
+          <img class="portThumbs" src="/img/portfolio/extras/bridge-analysis@2x.png" />
+          <center>
+            <p>Bridge Admin Business Analysis</p>
+          </center>
         </a>
 
         <a href="/img/portfolio/extras/Axure-Bridge-Info-TDOT.png" target="_BLANK">
-          <img class="portThumbs" src="/img/portfolio/extras/axure-bridge@2x.png">
-          <center><p>Civic Inc - Axure Wireframe</p></center>
+          <img class="portThumbs" src="/img/portfolio/extras/axure-bridge@2x.png" />
+          <center>
+            <p>Civic Inc - Axure Wireframe</p>
+          </center>
         </a>
 
         <a href="/img/portfolio/extras/jpay_kiosk_emessages_v18.pdf" target="_BLANK">
-        <img class="portThumbs" src="/img/portfolio/extras/jpay-kiosk-email@2x.png">
-          <center><p>JPay Kiosk Email screens</p></center>
+          <img class="portThumbs" src="/img/portfolio/extras/jpay-kiosk-email@2x.png" />
+          <center>
+            <p>JPay Kiosk Email screens</p>
+          </center>
         </a>
 
         <a href="/img/portfolio/extras/Jpay_kiosk_music_v18b.pdf" target="_BLANK">
-          <img class="portThumbs" src="/img/portfolio/extras/jpay-kiosk-music@2x.png">
-          <center><p>JPay Kiosk Music screens</p></center>
+          <img class="portThumbs" src="/img/portfolio/extras/jpay-kiosk-music@2x.png" />
+          <center>
+            <p>JPay Kiosk Music screens</p>
+          </center>
         </a>
 
         <a href="/img/portfolio/extras/mlotto_app.pdf" target="_BLANK">
-          <img class="portThumbs" src="/img/portfolio/extras/m-lotto-ui@2x.png">
-          <center><p>Mobile Lottery interface, interactive pdf</p></center>
+          <img class="portThumbs" src="/img/portfolio/extras/m-lotto-ui@2x.png" />
+          <center>
+            <p>Mobile Lottery interface, interactive pdf</p>
+          </center>
         </a>
 
         <a href="/img/portfolio/extras/JPay_Extras.pdf" target="_BLANK">
-          <img class="portThumbs" src="/img/portfolio/extras/JPay_Extras@2x.png">
-          <center><p>JPay Extras: Web, Mobile, Corp ID, Print Ads, Newslatters, <br>Brochures, Package Design, PDF forms, Kiosk Design, Murals</p></center>
+          <img class="portThumbs" src="/img/portfolio/extras/JPay_Extras@2x.png" />
+          <center>
+            <p>
+              JPay Extras: Web, Mobile, Corp ID, Print Ads, Newslatters,
+              <br />Brochures, Package Design, PDF forms, Kiosk Design, Murals
+            </p>
+          </center>
         </a>
-
       </div>
-
     </div>
-
   </div>
 </template>
 
 <style lang="scss" scoped>
   @import '@/assets/css/main.scss';
-  
+
   .flexContainer {
     width: 100%;
     margin: 0 auto 0em;
@@ -72,7 +87,7 @@
     text-align: center;
     // width: 100%;
     margin: 0;
-    padding: .5em 0;
+    padding: 0.5em 0;
     // grid-area: center-block;
     a {
       text-decoration: none;
@@ -105,9 +120,9 @@
       // transition: flex-basis 1s ease-in-out;
 
       // &:last-child {
-        // margin: 0 0 2em;
-        // padding: 0;
-        // border:2px solid red;
+      // margin: 0 0 2em;
+      // padding: 0;
+      // border:2px solid red;
       // }
 
       // &:nth-child(even) {
@@ -137,7 +152,6 @@
           border: 2px solid lighten($accent-red, 0);
           @include no-shadow;
         }
-
       }
 
       p {
@@ -147,7 +161,7 @@
         margin-bottom: 1em;
         margin-top: 0.5em;
         padding-bottom: 0;
-        font-size: .85em;
+        font-size: 0.85em;
         border-bottom: 1px solid transparent;
         @include clearfix;
         &:hover {
@@ -164,10 +178,7 @@
         cursor: pointer;
       }
     }
-
   }
-
-
 </style>
 
 

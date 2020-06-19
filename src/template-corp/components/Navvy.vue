@@ -1,7 +1,6 @@
 <template>
   <nav>
-
-    <router-link to="/Corp/Extras" class='drewhead' />
+    <router-link to="/Corp/Extras" class="drewhead" />
 
     <!-- <h1><router-link to="/Corp">Drew Harper</router-link></h1> -->
 
@@ -10,13 +9,15 @@
     </router-link>
 
     <section class="contact">
-      <p class='resume'>Resume:
+      <p class="resume">
+        Resume:
         <a href="resume/drew_harper_resume_portfolio.docx">Word</a> or
         <a href="resume/drew_harper_resume_portfolio.pdf">PDF</a>
       </p>
-      <p class='email'><a href="mailto:druharper@gmail.com">druharper@gmail.com</a></p>
+      <p class="email">
+        <a href="mailto:druharper@gmail.com">druharper@gmail.com</a>
+      </p>
     </section>
-
   </nav>
 </template>
 
@@ -49,7 +50,12 @@
     }
   }
 
-  h1,h2,h3,h4,h5,p {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
     line-height: 1em;
     margin: 0;
     padding: 0;
@@ -79,15 +85,15 @@
   .drewHarper {
     height: 83px;
     margin: 1.3em 0 0 1em;
-    
+
     @media (max-width: $breakOne) {
       height: 60px;
-      margin-left: .75em;
+      margin-left: 0.75em;
     }
 
     @media (max-width: $breakTwo) {
       height: 42px;
-      margin-left: .75em;
+      margin-left: 0.75em;
     }
   }
 
@@ -99,7 +105,7 @@
   // }
 
   a.drewhead {
-    background: #C00000;
+    background: #c00000;
     background-image: url(/img/drew_mug_red.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,19 +126,18 @@
       background-position: -40px -50px !important;
       background-size: 145% !important;
     }
-
   }
 
   h1 {
     font-family: $font-copy !important;
     font-size: 5.5em;
     // font-weight: normal;
-    letter-spacing: -.025em;
+    letter-spacing: -0.025em;
     // text-shadow: 4px 0px 3px $black;
-    transition: .25s ease-in;
+    transition: 0.25s ease-in;
     //
     width: auto;
-    padding-left: 1.2rem; 
+    padding-left: 1.2rem;
     flex-grow: 1;
 
     a:hover {
@@ -176,26 +181,26 @@
     @media (max-width: $breakOne) {
       margin-left: 0;
       flex-direction: row;
-      margin-top: 1.5em; 
+      margin-top: 1.5em;
     }
 
     @media (max-width: $breakTwo) {
       margin-top: 0.4em;
-      margin-top: 1.5em; 
+      margin-top: 1.5em;
       flex-direction: row;
       // color: red !important;
     }
 
     @media (max-width: $breakThree) {
       margin-top: 1em;
-      transition: .25s ease-in;
+      transition: 0.25s ease-in;
       flex-direction: row;
       // color: red !important;
     }
 
     @media (max-width: 520px) {
       margin-top: 1em;
-      transition: .25s ease-in;
+      transition: 0.25s ease-in;
       flex-direction: column;
     }
 
@@ -203,7 +208,7 @@
       font-family: $font-copy !important;
       font-weight: 100;
       font-size: 1.3em;
-      letter-spacing: .01em;
+      letter-spacing: 0.01em;
       align-items: center;
       text-align: center;
       line-height: 1.25em;
@@ -225,7 +230,7 @@
       @media (max-width: $breakOne) {
         justify-content: center;
         font-size: 1.27em !important;
-        letter-spacing: .01em !important;
+        letter-spacing: 0.01em !important;
 
         &:nth-child(1) {
           text-align: right;
@@ -236,7 +241,6 @@
           text-align: left;
           margin: 0 0.25em;
         }
-
       }
 
       @media (max-width: $breakTwo) {
@@ -252,8 +256,6 @@
         margin-bottom: -4px;
         text-align: center;
       }
-
     }
   }
-
 </style>

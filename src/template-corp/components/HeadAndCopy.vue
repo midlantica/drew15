@@ -31,33 +31,33 @@
   .uiux {
     height: 35px;
     margin: 0.7em 0 -0.3em 1.3em;
-    
+
     @media (max-width: $breakOne) {
       height: 28px;
       align-self: center;
       margin-top: 0.6em;
-      margin-left: .75em;
+      margin-left: 0.75em;
     }
 
     @media (max-width: $breakTwo) {
       height: 22px;
-      margin-left: .75em;
+      margin-left: 0.75em;
     }
   }
 
   h2 {
     font-family: $font-head;
     font-weight: 300;
-    color: transparentize($blue-dark, .15);
+    color: transparentize($blue-dark, 0.15);
     text-transform: lowercase;
     font-size: 1.8em;
     // font-size: calc(1.45rem + 0.5vw);
     // font-size: 1.8rem;
-    margin: .5em 0em 0em .5em;
+    margin: 0.5em 0em 0em 0.5em;
     padding: 0;
     // grid-column: 2 / 3;
     // grid-row: 1 / 2;
-    transition: .25s ease-in;
+    transition: 0.25s ease-in;
     text-align: center;
 
     @media (max-width: $breakTwo) {
@@ -78,13 +78,12 @@
       font-family: cormorantGaramond-Bold;
       text-transform: uppercase;
     }
-
   }
 
   p {
     // color: transparentize($blue-dark, .0);
-    font-family: cormorantGaramond-Semi-Bold, "Times New Roman", Times, serif !important;
-    color: transparentize($blue-dark, .0);
+    // font-family: cormorantGaramond-Semi-Bold, 'Times New Roman', Times, serif !important;
+    color: transparentize($blue-dark, 0);
     font-family: $font-copy;
     font-weight: 100;
     font-size: 1.15em;
@@ -98,16 +97,15 @@
     @media (max-width: $breakOne) {
       font-size: 1.3em;
       line-height: 2.25em;
-      margin: 1em .5em;
+      margin: 1em 0.5em;
       letter-spacing: 0.05em;
     }
 
     @media (max-width: $breakTwo) {
       font-size: 1.3em;
       line-height: 1.95em;
-      margin: 1em .5em;
+      margin: 1em 0.5em;
       letter-spacing: 0.02em;
     }
   }
-
 </style>

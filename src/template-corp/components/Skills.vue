@@ -61,74 +61,51 @@
     //
     align-items: center;
     grid-template-columns: repeat(6, minmax(auto, auto));
-    grid-row-gap: .5em;
+    grid-row-gap: 0.5em;
 
-    @media (max-width: 1024px) and 
-    (min-width: 726px) 
-    {
+    @media (max-width: 1024px) and (min-width: 726px) {
       // margin: 0 !important;
     }
 
-
-    @media (min-width: 682px) and 
-    (max-width: 1024px)
-    {
+    @media (min-width: 682px) and (max-width: 1024px) {
       grid-template-columns: repeat(6, minmax(auto, auto));
-      grid-row-gap: .5em;
+      grid-row-gap: 0.5em;
     }
 
-    @media (min-device-width: 682px) and 
-    (max-device-width: 1024px) and 
-    (-webkit-min-device-pixel-ratio: 2)
-    {
+    @media (min-device-width: 682px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
       grid-template-columns: repeat(6, minmax(auto, auto));
     }
 
-    @media (min-width: 414px) and 
-    (max-width: 682px)
-    {
+    @media (min-width: 414px) and (max-width: 682px) {
       grid-template-columns: repeat(4, minmax(auto, auto));
       grid-row-gap: 1em;
     }
 
-    @media (min-width: 0px) and 
-    (max-width: 414px)
-    {
+    @media (min-width: 0px) and (max-width: 414px) {
       grid-template-columns: repeat(3, minmax(auto, auto));
-      grid-row-gap: .75em;
+      grid-row-gap: 0.75em;
     }
 
-    @media only screen 
-    and (min-device-width: 375px) 
-    and (max-device-width: 660px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    {
+    @media only screen and (min-device-width: 375px) and (max-device-width: 660px) and (-webkit-min-device-pixel-ratio: 2) {
       padding: 0;
-      margin-top: .5em;
-      margin-bottom: .5em;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
 
       svg {
         // margin: 0em 0.8em ;
-
       }
     }
 
-    @media only screen 
-    and (min-device-width: 375px) 
-    and (max-device-width: 660px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: landscape)
-    {
+    @media only screen and (min-device-width: 375px) and (max-device-width: 660px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
       // margin: 0.5em 1em 0em;
 
       svg {
         // margin: 0em 0.55em;
-      }        
+      }
     }
 
     .icon {
       // margin: auto;
     }
   }
-
 </style>

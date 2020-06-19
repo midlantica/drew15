@@ -1,6 +1,5 @@
 <template>
   <div class="miniGallery">
-
     <a @click="$emit('selectedView') = 'Uiux'">
       <div class="box">
         <p>UI/UX Design</p>
@@ -36,7 +35,6 @@
         <p>Misc.</p>
       </div>
     </a>
-
   </div>
 </template>
 
@@ -45,10 +43,10 @@
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
   .projectBox {
-    padding: 0.2em .3em;
+    padding: 0.2em 0.3em;
     background: lighten(lightgrey, 10);
     box-shadow: 0px 2px 2px -3px black;
-    border-radius: .25em;
+    border-radius: 0.25em;
     @include clearfix;
   }
 
@@ -95,8 +93,8 @@
         justify-content: center;
         flex-direction: column;
         text-align: center;
-        box-shadow: 1px 1px 0 -1px rgba(0,0,0,0.50);
-        margin: .25em .25em;
+        box-shadow: 1px 1px 0 -1px rgba(0, 0, 0, 0.5);
+        margin: 0.25em 0.25em;
         height: 17vh;
         box-shadow: 0px 2px 2px -3px black;
         background: lighten(lightgrey, 15);
@@ -107,7 +105,7 @@
 
         &:hover {
           background: lighten(grey, 25);
-          transition-duration: .5s;
+          transition-duration: 0.5s;
           box-shadow: 0px 2px 2px -1px grey;
         }
 
@@ -125,8 +123,6 @@
         }
       }
     }
-
   }
-
 </style>
 
