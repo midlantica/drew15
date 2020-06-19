@@ -1,7 +1,7 @@
 <template>
-  <div class="about">
-    <div class="flagBox">
-      <div class="flag">&nbsp;</div>
+  <div class='about'>
+    <div class='flagBox'>
+      <div class='flag'>&nbsp;</div>
     </div>
     <p>{{ this.$root.aboutCopy }}</p>
   </div>

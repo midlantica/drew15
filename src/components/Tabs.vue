@@ -1,10 +1,10 @@
 <template>
-  <div class="tabs">
-    <router-link to="/Bourbon" class="bourbon">{{ this.$root.bourbon }}</router-link>
-    <router-link to="/Groovy" class="groovy">{{ this.$root.groovy }}</router-link>
-    <router-link to="/Techy" class="techy">{{ this.$root.techy }}</router-link>
-    <router-link to="/Corp" class="corp">{{ this.$root.corp }}</router-link>
-    <router-link to="/Punk" class="punk">{{ this.$root.punk }}</router-link>
+  <div class='tabs'>
+    <router-link to='/Bourbon' class='bourbon'>{{ this.$root.bourbon }}</router-link>
+    <router-link to='/Groovy' class='groovy'>{{ this.$root.groovy }}</router-link>
+    <router-link to='/Techy' class='techy'>{{ this.$root.techy }}</router-link>
+    <router-link to='/Corp' class='corp'>{{ this.$root.corp }}</router-link>
+    <router-link to='/Punk' class='punk'>{{ this.$root.punk }}</router-link>
   </div>
 </template>
 

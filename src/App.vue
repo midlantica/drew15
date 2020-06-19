@@ -1,24 +1,24 @@
 <template>
-  <div class="wrapper">
+  <div class='wrapper'>
     <Tabs />
     <router-view />
   </div>
 </template>
 
 <script>
-  import Tabs from "@/components/Tabs.vue"
+  import Tabs from '@/components/Tabs.vue'
   // import MY_JSON from './assets/data.json'
   export default {
     // myJson: MY_JSON,
     components: {
       Tabs,
     },
-    name: "App",
+    name: 'App',
     metaInfo: {
       // if no subcomponents specify a metaInfo.title, this title will be used
-      title: "Drew Harper",
+      title: 'Drew Harper',
       // all titles will be injected into this template
-      titleTemplate: "%s - UI/UX Designer, Graphic Designer",
+      titleTemplate: '%s - UI/UX Designer, Graphic Designer',
     },
   }
 </script>
