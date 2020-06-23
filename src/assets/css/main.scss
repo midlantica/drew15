@@ -8,3 +8,20 @@ $breakOne: 840px;
 $breakTwo: 630px;
 $breakThree: 430px;
 $breakFour: 320px;
+
+body {
+  margin: 0;
+}
+
+html, html a {
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  box-sizing: border-box;
+  // color: #222;
+  font-size: 1em;
+  // line-height: 1.4;
+}
+

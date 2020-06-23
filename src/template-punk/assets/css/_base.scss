@@ -9,28 +9,8 @@ $font-copy        :Poppins, Helvetica, Times, serif;
 
 // ############################
 
-html, html a {
-  -webkit-text-size-adjust: 100%;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
 body {
   font-family: $font;
   font-size: $base-font-size;
   margin: 0;
 }
-
-// link colors (normal, hover, active, visited, focus)
-// a {
-//   @include link-colors(
-//     $blue-dark,  // normal
-//     $accent,     // hover
-//     $blue-mid,   // active
-//     $grey,       // visited
-//     $blue-dark   // focus
-//   );
-// }

@@ -10,7 +10,6 @@
 </template>
 
 <style lang='scss' scoped>
-  @import '@/assets/css/main.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
   .headBlock {
@@ -21,7 +20,8 @@
     grid-column-gap: 6px;
     justify-items: start;
     align-items: center;
-    @include clearfix;
+    margin-right: 2rem;
+    // @include clearfix;
 
     a.drewhead {
       display: block;

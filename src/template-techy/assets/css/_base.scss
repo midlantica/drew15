@@ -22,29 +22,9 @@ $font-copy        :Dosis, "Helvetica Neue", Arial, sans-serif;
 
 // ############################
 
-html, html a {
-  -webkit-text-size-adjust: 100%;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
 body {
   font-family: $font !important;
   font-size: $base-font-size;
   background: #333;
   margin: 0;
 }
-
-// link colors (normal, hover, active, visited, focus)
-// a {
-//   @include link-colors(
-//     $blue-dark,  // normal
-//     $accent,     // hover
-//     $blue-mid,   // active
-//     $grey,       // visited
-//     $blue-dark   // focus
-//   );
-// }

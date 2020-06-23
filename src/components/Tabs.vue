@@ -27,6 +27,7 @@
     left: 0px;
     z-index: 10;
     width: 100.1%;
+    font-family: Helvetica,Arial,sans-serif;
     // display: relative;
 
     a {

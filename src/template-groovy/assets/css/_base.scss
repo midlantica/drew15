@@ -16,12 +16,6 @@ $font-copy        :"Helvetica Neue", Arial, sans-serif;
 
 // ############################
 
-html, html a {
-  -webkit-text-size-adjust: 100%;
-  text-rendering: optimizeLegibility;
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   font-size: $base-font-size;
