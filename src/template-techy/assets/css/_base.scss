@@ -25,6 +25,8 @@ $font-copy        :Dosis, "Helvetica Neue", Arial, sans-serif;
 html, html a {
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
   box-sizing: border-box;
 }
 
