@@ -46,7 +46,6 @@
       font-weight: bold;
       line-height: 1.5em;
       text-align: center;
-      // @include font-smoothing(on);
 
       @media only screen and (min-device-width: 700px) and (max-device-width: $breakThou) {
         // font-size: 1.5vw;

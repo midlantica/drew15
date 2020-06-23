@@ -8,6 +8,8 @@
 // $font-subhead     :"Veneer", Helvetica, Arial, sans-serif;
 // $font-copy        :"AmericanTypewriterStd-Med", Helvetica, Times, serif;
 
+// @import '/src/template-bourbon/assets/css/fonts/AmericanTypewriter/AmericanTypewriter.css';
+
 h1, h2, h3, h4, h5 {
   color: $accent-red;
   line-height: 1.1em;
@@ -19,7 +21,6 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
   font-family: $font-subhead !important;
   -moz-osx-font-smoothing: grayscale;   // Firefox
-  -webkit-font-smoothing:  antialiased; // WebKit
 }
 
 h2 {

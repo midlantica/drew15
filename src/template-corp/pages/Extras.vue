@@ -34,7 +34,8 @@
 </script>
 
 <style lang="scss" scoped>
-  @import url('https://fonts.googleapis.com/css?family=Questrial');
+  // @import '../assets/css/fonts/AmericanTypewriter/AmericanTypewriter.css';
+  // @import url('https://fonts.googleapis.com/css?family=Questrial');
   @import '@/assets/css/main.scss';
   @import '@/template-corp/assets/css/corp-main.scss';
 </style>

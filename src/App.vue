@@ -39,15 +39,10 @@
   // #############################
   // BOURBON
   .bourbon {
-    // background: initial;
     background: $backBlack;
-    // background: url(/img/bg/bricks-bg-02.jpg) repeat;
 
     .wrapper {
       background: url(./template-bourbon/assets/img/bg/graphy_2.png) repeat;
-      // background: url(/img/bg/Drew-punk-back.jpg) repeat;
-      // background-size: 110% 100%;
-      // background-image: url(/img/bg/check-patt.png);
 
       @media (max-width: $breakOne) {
         // background-size: 110% 50%;
@@ -84,11 +79,8 @@
     &.extras .flexContainer {
       //
       h1 {
-        // font-family: Times !important;
         font-size: 1.75em;
-        // color: lighten(black, 20);
         padding-top: 1em;
-        // text-transform: capitalize;
       }
     }
   }
@@ -96,15 +88,9 @@
   // #############################
   // GROOVY
   .groovy {
-    // background: initial;
     background: $backBlack;
-    // background: url(/img/bg/bricks-bg-02.jpg) repeat;
 
     .wrapper {
-      // background: url(/img/bg/Drew-punk-back.jpg) repeat;
-      // background-size: 110% 100%;
-      // background-image: url(/img/bg/check-patt.png);
-      // background: #fffae4;
       background: linear-gradient(
         lighten($backer, 10) 0%,
         darken($backer, 05) 85%,
@@ -118,7 +104,7 @@
       //
       header,
       footer {
-        // background: url(./template-bourbon/assets/img/bg/bg_bag_dk.jpg) repeat;
+        //
       }
     }
 

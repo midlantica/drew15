@@ -3,21 +3,6 @@
 // T = top, B = bottom, L = Left, R = Right
 // H = HALF => 0.5
 // Q = QUARTER => 0.25
-//
-// [class^="mar"] {
-//   background: #9cf;
-// }
-// [class^="pad"] {
-//   background: #f96;
-// }
-// MARGIN AUTOS
-.marLAuto   { margin-left:    auto !important; }
-.marRAuto   { margin-right:   auto !important; }
-.marLRAuto  { margin-left:    auto !important; margin-right: auto !important; }
-// PAD AUTOS
-.padLAuto   { padding-left:    auto !important; }
-.padRAuto   { padding-right:   auto !important; }
-.padLRAuto  { padding-left:    auto !important; padding-right: auto !important; }
 /**********************************************/
 /**********************************************/
 // PAD TO

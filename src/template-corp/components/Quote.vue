@@ -24,7 +24,6 @@
       letter-spacing: 0.09em;
       // word-spacing: .1em;
       font-weight: bold;
-      @include font-smoothing(on);
     }
   }
 </style>

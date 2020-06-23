@@ -62,6 +62,7 @@
 </script>
 
 <style lang='scss' scoped>
+  @import '../assets/css/fonts/AmericanTypewriter/AmericanTypewriter.css';
   @import '@/assets/css/main.scss';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
@@ -172,7 +173,10 @@
       margin: 0;
     }
 
-    @media only screen and (min-device-width: 375px) and (max-device-width: 660px) and (-webkit-min-device-pixel-ratio: 2) {
+    @media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 660px)
+    and (-webkit-min-device-pixel-ratio: 2) {
       margin-top: 0.25em;
       margin-bottom: 0.5em;
       grid-row-gap: 0em;
