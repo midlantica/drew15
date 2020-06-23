@@ -1,8 +1,16 @@
+/* prettier-ignore */
+// <!-- prettier-ignore-start -->
+
 // REMs
-// m = margin, p = padding
-// T = top, B = bottom, L = Left, R = Right
-// H = HALF => 0.5
-// Q = QUARTER => 0.25
+// m = margin,
+// p = padding
+// T = top,
+// B = bottom,
+// L = Left,
+// R = Right
+// H = Half => 0.5
+// Q = Quarter => 0.25
+
 /**********************************************/
 /**********************************************/
 // PAD TO
@@ -73,6 +81,10 @@
 /**********************************************/
 /**********************************************/
 // MARGIN
+// -> AUTOS
+.marLAuto   { margin-left:    auto !important; }
+.marRAuto   { margin-right:   auto !important; }
+.marLRAuto  { margin-left:    auto !important; margin-right: auto !important; }
 // -> TO 0 REM
 .mar0       { margin:         0rem !important; }
 .marL0      { margin-left:    0rem !important; }
@@ -180,3 +192,4 @@
 .marLRBal3  { margin-left:    3rem !important; margin-right: 3rem !important; }
 .marTBBal3  { margin-top:     3rem !important; margin-bottom: 3rem !important; }
 
+// <!-- prettier-ignore-end -->
