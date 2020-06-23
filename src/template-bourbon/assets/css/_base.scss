@@ -13,7 +13,9 @@ $font-copy        :"AmericanTypewriterStd-Med", Helvetica, Times, serif;
 html, html a {
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
   box-sizing: border-box;
 }
 
