@@ -57,7 +57,7 @@
       display: inline-block;
       font-family: $font-subhead;
       color: $accent-red;
-      font-size: calc(1.4rem + 0.5vw);
+      font-size: max(calc(1.7rem + 0.2vw));
       // font-size: 1.8rem;
       margin: 0.25em 0 0;
       padding: 0;
