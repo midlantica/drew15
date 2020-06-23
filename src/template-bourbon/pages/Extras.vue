@@ -34,6 +34,6 @@
 </script>
 
 <style lang="scss">
-  @use '@/assets/css/main.scss';
-  @use '@/template-bourbon/assets/css/bourbon-main.scss';
+  @import '@/assets/css/main.scss';
+  @import '@/template-bourbon/assets/css/bourbon-main.scss';
 </style>
