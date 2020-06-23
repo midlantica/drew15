@@ -1,9 +1,3 @@
-// @import '~/node_modules/compass-mixins/';
-// @import '_colors.scss';
-// @import './utilities/__utilities_base.scss';
-// @import '@/template-bourbon/assets/css/fonts/veneer/veneer.css';
-// @import '@/template-bourbon/assets/css/fonts/American_typewriter/american_typewriter/american_typewriter.css';
-
 // BREAKPOINTS
 $XLargeScreen: 1200px;
 $LargeScreen:  1024px;
@@ -33,19 +27,4 @@ body {
   font-size: $base-font-size;
   background: #333;
   margin: 0;
-}
-
-// link colors (normal, hover, active, visited, focus)
-// a {
-//   @include link-colors(
-//     $blue-dark,  // normal
-//     $accent,     // hover
-//     $blue-mid,   // active
-//     $grey,       // visited
-//     $blue-dark   // focus
-//   );
-// }
-
-:focus:not(:focus-visible) {
-  outline: none;
 }

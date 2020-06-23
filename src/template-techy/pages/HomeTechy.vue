@@ -27,7 +27,7 @@
 <script>
   import Navvy from '../components/Navvy'
   import HeadAndCopy from '../components/HeadAndCopy'
-  import Skills from '../components/Skills'
+  import Skills from '@/components/Skills'
   import About from '@/components/About'
   import Footy from '../components/Footy'
   import CarouselShow from '@/components/Carousel/CarouselShow'

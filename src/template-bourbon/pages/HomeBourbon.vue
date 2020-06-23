@@ -30,7 +30,7 @@
   import Navvy from '../components/Navvy'
   import HeadAndCopy from '../components/HeadAndCopy'
   import About from '@/components/About'
-  import Skills from '../components/Skills'
+  import Skills from '@/components/Skills'
   import Quotes from '../components/Quote'
   import CarouselShow from '@/components/Carousel/CarouselShow'
   // const CarouselShow = () => import('@/components/Carousel/CarouselShow')
@@ -63,8 +63,8 @@
 
 <style lang='scss' scoped>
   @import '../assets/css/fonts/AmericanTypewriter/AmericanTypewriter.css';
-  @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  // @import '@/assets/css/main.scss';
+  // @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
   header,
   footer {

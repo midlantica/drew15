@@ -66,6 +66,7 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    width: 100%;
     //
     // background: lighten(lightgrey, 10);
 

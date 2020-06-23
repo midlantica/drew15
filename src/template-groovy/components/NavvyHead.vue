@@ -132,6 +132,11 @@
           $groovy-red 59%,
         $groovy-red 100%
       );
+      // background-image: radial-gradient(
+      //   #99f1ec 0%, #99f1ec 35%,
+      //   #ffdd4b 35%, #ffdd4b 47%,
+      //   #ff9f00 47%, #ff9f00 59%,
+      //   #ff1a22 59%, #ff1a22 100%);
       clip-path: polygon(21% 0%, 100% 0%, 110% 50%, 100% 100%, 21% 110%);
 
       @media (max-width: $breakThou) {

@@ -10,7 +10,7 @@
     <iconVueBlue class="icon vue" />
     <iconSvgBlue class="icon svg" />
 
-    <iconTerminalBlue class="icon terminal" />
+    <iconVSCodeBlue class="icon vs-code" />
     <iconNodeBlue class="icon node" />
     <iconWebpackBlue class="icon webpack" />
     <iconChelseaBlue class="icon chelsea" />
@@ -26,7 +26,7 @@
   import iconSassBlue from '@/template-corp/components/Icons/icon-sass'
   import iconVueBlue from '@/template-corp/components/Icons/icon-vue'
   import iconSvgBlue from '@/template-corp/components/Icons/icon-svg'
-  import iconTerminalBlue from '@/template-corp/components/Icons/icon-terminal'
+  import iconVSCodeBlue from '@/template-corp/components/Icons/icon-vs-code'
   import iconNodeBlue from '@/template-corp/components/Icons/icon-node'
   import iconWebpackBlue from '@/template-corp/components/Icons/icon-webpack'
   import iconChelseaBlue from '@/template-corp/components/Icons/icon-chelsea'
@@ -40,7 +40,7 @@
       iconSassBlue,
       iconVueBlue,
       iconSvgBlue,
-      iconTerminalBlue,
+      iconVSCodeBlue,
       iconNodeBlue,
       iconWebpackBlue,
       iconChelseaBlue

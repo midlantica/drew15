@@ -204,6 +204,7 @@
     align-content: center;
     // transition-property: background-color;
     transition-duration: 1s;
+    width: 100%;
 
     a {
       flex-grow: 1;
