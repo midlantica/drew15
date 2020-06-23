@@ -39,8 +39,9 @@
 </template>
 
 <style lang="scss" scoped>
-  @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  // @import '@/assets/css/main.scss';
+  // @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  @import '@/assets/css/_template-carousel.scss';
 
   .projectBox {
     padding: 0.2em 0.3em;
@@ -53,6 +54,7 @@
   .projectHead {
     text-align: center;
     text-transform: uppercase;
+    margin: 0 4rem;
 
     a {
       cursor: pointer;

@@ -203,37 +203,10 @@
       justify-items: center;
     }
 
-    // @media only screen
-    // and (min-device-width: 375px)
-    // and (max-device-width: 660px)
-    // and (-webkit-min-device-pixel-ratio: 2)
-    // {
-    //   padding: 0;
-    //   margin-top: .5em;
-    //   margin-bottom: .5em;
-
-    //   svg {
-    //     //
-    //   }
-    // }
-
-    // @media only screen
-    // and (min-device-width: 375px)
-    // and (max-device-width: 660px)
-    // and (-webkit-min-device-pixel-ratio: 2)
-    // and (orientation: landscape)
-    // {
-    //   margin: 0.5em 0em 0em;
-    //   // background: orange;
-
-    //   svg {
-    //     //
-    //   }
-    // }
-
     svg {
       width: 80px;
     }
+
   }
 
   .techy .skillsGrid {

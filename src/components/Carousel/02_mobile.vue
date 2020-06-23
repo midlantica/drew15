@@ -69,7 +69,5 @@
 </script>
 
 <style lang="scss">
-  @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
   @import '@/assets/css/_template-carousel.scss';
 </style>

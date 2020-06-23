@@ -80,8 +80,8 @@
 </script>
 
 <style lang="scss" scoped>
-  @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  // @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  @import '@/assets/css/_template-carousel.scss';
 
   .projectBox {
     padding: 0.2em 0.3em;
@@ -106,8 +106,6 @@
     // box-shadow: none;
   }
 
-  // ########################
-  // ########################
   // ########################
 
   body.bourbon .projectHead,
@@ -171,6 +169,7 @@
     text-align: center;
     text-transform: uppercase;
     margin-right: 3.5em;
+    margin: 0 4rem;
 
     a {
       cursor: pointer;
@@ -178,7 +177,7 @@
   }
 
   .carouselArrow {
-    font-size: 0.8em;
+    font-size: 0.75em;
     display: block;
     float: left;
     clear: left;
@@ -186,8 +185,9 @@
     border-radius: 0.25em;
     background: transparentize(white, 0.5);
     cursor: pointer;
-    padding: 0.1em 0.5em 0.1em 0.25em;
-    margin: 0.1em 0em 0;
+    padding: 0.2em 0.5em 0.1em 0.25em;
+    margin: 0.1em 0em 0 .2rem;
+    font-family: Helvetica, Arial, sans-serif;
 
     &:hover {
       color: white;
