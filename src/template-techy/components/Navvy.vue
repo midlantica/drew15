@@ -14,9 +14,9 @@
           </router-link>
         </div>
 
-        <div class="jobDesc">
+        <div class="jobDesc block text-align-left">
           <h2>ui/ux designer +</h2>
-          <h2>front&nbsp;end&nbsp;dev</h2>
+          <h2 class="marLH">front&nbsp;end&nbsp;dev</h2>
         </div>
       </div>
 
@@ -25,7 +25,7 @@
           <p class='email'>
             <a href="mailto:druharper@gmail.com">druharper@gmail.com</a>
           </p>
-          <p class='resume'>Resume: 
+          <p class='resume'>Resume:
             <a href="resume/drew_harper_resume_portfolio.pdf">Lg</a>/<a href="resume/drew_harper_resume_portfolio_short.docx">Sm</a>
           </p>
         </div>
@@ -55,8 +55,6 @@
     display: flex;
     flex-direction: column;
     flex-wrap: no-wrap;
-    justify-content: space-between;
-    align-items: center;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -67,9 +65,8 @@
       // justify-content: center;
     }
 
-
   }
-  
+
   nav .mastMain {
     width: 100%;
     // display: grid;
@@ -81,7 +78,7 @@
       // flex-grow: 1;
       // width: 70%;
     }
-    
+
     @media (max-width: $breakTwo) {
       // flex-grow: 1;
       // flex-wrap: wrap;
@@ -90,7 +87,7 @@
       // align-items: center;
       // width: 100%;
     }
- 
+
 
     .masty {
       // @include clearfix;
@@ -117,7 +114,7 @@
 
         @media (max-width: $breakOne) {
           //
-        } 
+        }
 
         @media (max-width: $breakTwo) {
           //
@@ -127,7 +124,7 @@
           //
         }
 
-        @media only screen and (max-device-width: 667px) 
+        @media only screen and (max-device-width: 667px)
         and (-webkit-device-pixel-ratio: 2)
         {
           padding-top: 1em;
@@ -141,7 +138,7 @@
           background-image: url(/img/drew_mug_dig.png);
           background-repeat: no-repeat;
           background-size: cover;
-          margin: 1em 0em 0em 0em;
+          // margin: 1em 0em 0em 0em;
           grid-column: 1 / 2;
           grid-row: 1 / 3;
           justify-self: end;
@@ -167,8 +164,8 @@
             height: 66px;
             margin: 0;
           }
-  
-          @media (max-device-width: 667px) 
+
+          @media (max-device-width: 667px)
           and (-webkit-device-pixel-ratio: 2)
           {
             margin-right: 0.5em;
@@ -188,7 +185,7 @@
 
 
         }
-        
+
         a.svgArt {
           height: 5.9em;
 
@@ -207,12 +204,12 @@
         }
 
         a.mastDrew {
-          grid-column: 2 / 3; 
+          grid-column: 2 / 3;
           grid-row: 1 / 3;
           width: 19em;
 
           @media (max-width: $breakThou) {
-            grid-column: 2 / 3 ; 
+            grid-column: 2 / 3 ;
             grid-row: 1 / 1;
             align-self: end;
             margin-bottom: -1em;
@@ -220,11 +217,11 @@
           }
 
           @media (max-width: $breakOne) {
-            // 
+            //
           }
 
           @media (max-width: $breakTwo) {
-            // 
+            //
           }
 
           @media (max-width: $breakThree) {
@@ -235,12 +232,12 @@
 
         a.mastHarper {
           display: initial;
-          grid-column: 3 / 4; 
+          grid-column: 3 / 4;
           grid-row: 1 / 3;
           width: 25.3em;
 
           @media (max-width: $breakThou) {
-            grid-column: 1 / 3; 
+            grid-column: 1 / 3;
             grid-row: 2 / 3;
             width: 50vw;
           }
@@ -266,14 +263,14 @@
         }
 
       }
-      
+
     }
 
   }
 
   nav .jobDesc {
     margin: -2em 0em 1em 12em;
-    text-align: center;
+    // text-align: center;
     // margin-top: -1em;
     // @include clearfix;
 
@@ -283,7 +280,7 @@
     }
 
     @media (max-width: $breakOne) {
-      margin: 1em 0em;
+      margin: 0rem 0rem 1rem;
     }
 
     @media (max-width: $breakTwo) {
@@ -304,9 +301,10 @@
       font-weight: 400;
       color: $blueTech;
       text-transform: lowercase;
-      font-size: 2em;
+      font-size: 1.7em;
       line-height: 1.1em;
       letter-spacing: .03em;
+      display: inline;
 
       &:nth-child(1) {
         //
@@ -405,7 +403,7 @@
         font-size: 1.3em;
         line-height: 2.5em;
         margin-left: 0.5em;
-        
+
         > a {
           color: transparentize($ivory, .1);
           text-decoration: none;
@@ -476,7 +474,7 @@
             // float: initial;
             // font-size: 1.25em !important;
             // line-height: 1.6em;
-            
+
           }
         }
 

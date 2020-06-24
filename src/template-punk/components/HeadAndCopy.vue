@@ -1,14 +1,8 @@
 <template>
   <div class="copyGrid">
-
-    <div class="headBlock">
-      <router-link to="/Punk/Extras" class='drewhead' />
-        <section class="jobDesc">
-          <h2>ui/ux designer front-end dev</h2>
-        </section>
-    </div>
+    <h2>ui/ux designer front-end dev</h2>
+    <h1>{{ this.$root.druHead }}</h1>
     <p>{{ this.$root.druCopy }}</p>
-
   </div>
 </template>
 
@@ -36,9 +30,9 @@
 
   h2 {
     color: $black;
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-family: Poppins !important;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     letter-spacing: .02em;
     transform: rotate(-1.25deg);
@@ -47,8 +41,8 @@
     position: relative;
     top: -0.3em;
     left: 1em;
-    background: #FBC83F;
-    padding: 0.4em 1.2em;
+    background: white;
+    padding: 0.4em 0em;
 
 
     @media (max-width: $breakTwo) {
@@ -62,6 +56,16 @@
       line-height: 2em;
     }
 
+  }
+
+  h1 {
+    // padding: 0.3rem;
+    background: hsla(0, 100%, 50%, 0.85);
+    color: white;
+    font-weight: 700;
+    padding: 0.4em 0em;
+    transform: rotate(1deg);
+    z-index: 10;
   }
 
   // CHANGE BACKGROUND FROM YELLOW TO HIGHLIGHTING
@@ -79,13 +83,11 @@
     // line-height: 2.6em;
     letter-spacing: 0.045em;
     // text-shadow: 0px 0px 0px;
-    display: inline-block;
     position: relative;
     // top: -1.1em;
     top: 0em;
     background: #FBC83F;
     // left: 0.8em;
-    padding: 0em 1em;
     margin: 1em 1em 0em;
     //
     /////////

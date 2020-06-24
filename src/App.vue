@@ -156,7 +156,7 @@
     }
 
     .about {
-      top: -0.5rem;
+      top: -1rem;
       position: relative;
 
       p {
