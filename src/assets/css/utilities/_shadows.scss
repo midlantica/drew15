@@ -11,3 +11,15 @@
   text-shadow: 0px 0px 0px !important;
   filter: none !important;
 }
+
+@mixin box-shadow($offsetX, $offsetY, $blur, $spread, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow: inset $offsetX $offsetY $blur $spread $color;
+    -moz-box-shadow: inset $offsetX $offsetY $blur $spread $color;
+    box-shadow: inset $offsetX $offsetY $blur $spread $color;
+  } @else {
+    -webkit-box-shadow: $offsetX $offsetY $blur $spread $color;
+    -moz-box-shadow: $offsetX $offsetY $blur $spread $color;
+    box-shadow: $offsetX $offsetY $blur $spread $color;
+  }
+}

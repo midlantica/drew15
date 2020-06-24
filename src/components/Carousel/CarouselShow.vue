@@ -91,10 +91,14 @@
     @include clearfix;
   }
 
-  body.bourbon .projectBox,
-  body.corp .projectBox {
+  body.bourbon .projectBox{
     @include shadow;
   }
+
+  body.corp .projectBox {
+    @include box-shadow(0px, 0px, 3px, -1px, hsla(0, 0%, 0%, 0.5))
+  }
+
 
   body.groovy .projectBox {
     box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.25);

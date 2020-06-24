@@ -7,8 +7,8 @@
 
 <style lang="scss" scoped>
   @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
-  
+  @import '@/template-groovy/assets/css/groovy-main.scss';
+
   $breakThou: 1024px;
   $breakOne: 840px;
   $breakTwo: 630px;
@@ -40,7 +40,7 @@
       width: 226px;
       height: 165px;
       display: block;
-      position: relative;      
+      position: relative;
       top: -0.3em;
       left: 0.7em;
 
@@ -50,12 +50,12 @@
         top: 1em;
         left: -1em;
       }
-      
+
       // IPHONE 6,7,8
-      @media only screen 
-      and (min-device-width: 375px) 
+      @media only screen
+      and (min-device-width: 375px)
       and (max-device-width: 667px)
-      { 
+      {
         width: 186px;
         height: 135px;
         top: 1em;
@@ -83,12 +83,12 @@
         top: -152px;
         right: 0em;
       }
-      
+
       // IPHONE 6,7,8
-      // @media only screen 
-      // and (min-device-width: 375px) 
+      // @media only screen
+      // and (min-device-width: 375px)
       // and (max-device-width: 667px)
-      // { 
+      // {
       //   width: 120px;
       //   height: 177px;
       //   top: -152px;

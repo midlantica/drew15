@@ -329,7 +329,7 @@
   .groovy .skillsGrid {
     display: grid;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     justify-items: center;
     //
     align-items: center;

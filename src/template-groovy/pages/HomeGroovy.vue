@@ -61,7 +61,7 @@
 </script>
 
 <style lang='scss' scoped>
-  @import '@/assets/css/main.scss';
+  // @import '@/assets/css/main.scss';
   @import '@/template-groovy/assets/css/groovy-main.scss';
 
   .mainGrid {
@@ -146,6 +146,8 @@
     box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.25);
     background: $groovy-yellow;
     border-radius: 0.75em;
+    font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    // line-height: 2.5rem !important;
   }
 
   .copyArea {

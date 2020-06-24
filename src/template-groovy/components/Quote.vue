@@ -6,8 +6,8 @@
 </template>
 
 <style lang="scss" scoped>
-  // @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  @import '@/assets/css/main.scss';
+  @import '@/template-groovy/assets/css/groovy-main.scss';
 
   .quoteBlock {
     background: darken($accent-red, 10);
@@ -18,15 +18,19 @@
     text-align: center;
 
     p {
+      font-family: $font-copy !important;
+      // font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
       font-size: 0.8em;
       color: $ivory !important;
       text-align: center;
       letter-spacing: .08em;
       font-weight: bold;
+      line-height: 2rem !important;
     }
 
     cite {
-      font-family: $font-copy;
+      font-family: $font-copy !important;
+      // font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
       font-size: .7em;
       color: $ivory;
       font-style: italic;

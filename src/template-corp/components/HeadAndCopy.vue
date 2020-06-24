@@ -1,17 +1,12 @@
 <template>
   <div class="wrap">
-    <uiux class="uiux" />
+    <h1>{{ this.$root.druHead }}</h1>
     <p>{{ this.$root.druCopy }}</p>
   </div>
 </template>
 
 <script>
-  import uiux from '@/template-corp/components/navvyArt/uiux'
-  export default {
-    components: {
-      uiux
-    }
-  }
+
 </script>
 
 <style lang="scss" scoped>
@@ -26,39 +21,23 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    margin: 0em 1em 1em;
   }
 
-  .uiux {
-    height: 35px;
-    margin: 0.7em 0 -0.3em 1.3em;
-
-    @media (max-width: $breakOne) {
-      height: 28px;
-      align-self: center;
-      margin-top: 0.6em;
-      margin-left: 0.75em;
-    }
-
-    @media (max-width: $breakTwo) {
-      height: 22px;
-      margin-left: 0.75em;
-    }
-  }
-
-  h2 {
+  h1 {
     font-family: $font-head;
-    font-weight: 300;
+    font-weight: bold;
     color: transparentize($blue-dark, 0.15);
-    text-transform: lowercase;
-    font-size: 1.8em;
+    text-transform: none;
+    font-size: 1.5em;
     // font-size: calc(1.45rem + 0.5vw);
     // font-size: 1.8rem;
-    margin: 0.5em 0em 0em 0.5em;
+    margin: 0em 0em 0em;
     padding: 0;
     // grid-column: 2 / 3;
     // grid-row: 1 / 2;
     transition: 0.25s ease-in;
-    text-align: center;
+    // text-align: center;
 
     @media (max-width: $breakTwo) {
       // font-size: 1em;
@@ -81,30 +60,22 @@
   }
 
   p {
-    // color: transparentize($blue-dark, .0);
-    // font-family: cormorantGaramond-Semi-Bold, 'Times New Roman', Times, serif !important;
-    color: transparentize($blue-dark, 0);
+    color: transparentize($black, 0.15);
     font-family: $font-copy;
     font-weight: 100;
     font-size: 1.15em;
-    // font-size: calc(1rem + .2vw);
     line-height: 2.5em;
-    margin: 1.1em 2.25em 1em 1.5em;
-    // line-height: 2.6em;
     letter-spacing: 0.06em;
-    // word-spacing: .1em;
 
     @media (max-width: $breakOne) {
       font-size: 1.3em;
       line-height: 2.25em;
-      margin: 1em 0.5em;
       letter-spacing: 0.05em;
     }
 
     @media (max-width: $breakTwo) {
       font-size: 1.3em;
       line-height: 1.95em;
-      margin: 1em 0.5em;
       letter-spacing: 0.02em;
     }
   }

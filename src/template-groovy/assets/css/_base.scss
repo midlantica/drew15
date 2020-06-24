@@ -9,15 +9,15 @@ $XSmallScreen: 320px;
 // FONTS
 $base-font-size   :1rem;
 $base-line-height :1.7em;
-$font             :"Helvetica Neue", Arial, sans-serif;
-$font-head        :"Helvetica Neue", Arial, sans-serif;
-$font-subhead     :"Helvetica Neue", Arial, sans-serif;
-$font-copy        :"Helvetica Neue", Arial, sans-serif;
+$font             :"Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+$font-head        :"Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+$font-subhead     :"Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+$font-copy        :"Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 
 // ############################
 
 body {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: $font;
   font-size: $base-font-size;
   background: #333;
   margin: 0;

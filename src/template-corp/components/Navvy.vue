@@ -1,23 +1,23 @@
 <template>
   <nav>
-    <router-link to="/Corp/Extras" class="drewhead" />
 
-    <!-- <h1><router-link to='/Corp'>Drew Harper</router-link></h1> -->
+    <section class="flexRowWrap w100">
+      <div class="flexColumnWrap flex-grow-1 align-content-center text-align-center">
+        <router-link to="/Corp" class="w100" >
+          <router-link to="/Corp/Extras" class="drewhead" />
+          <drewHarper class="drewHarper marTH" />
+          <div class="flexRow just-center marTH">
+            <uiux class="uiux" />
+          </div>
+        </router-link>
+      </div>
+      <section class="contact flexColumnWrap">
+        <p class="resume">Resume: <a href="resume/drew_harper_resume_portfolio.docx">Word</a> or <a href="resume/drew_harper_resume_portfolio.pdf">PDF</a>
+        </p>
+        <p class="email"><a href="mailto:druharper@gmail.com">druharper@gmail.com</a></p>
+      </section>
+    </section >
 
-    <router-link to="/Corp">
-      <drewHarper class="drewHarper" />
-    </router-link>
-
-    <section class="contact">
-      <p class="resume">
-        Resume:
-        <a href="resume/drew_harper_resume_portfolio.docx">Word</a> or
-        <a href="resume/drew_harper_resume_portfolio.pdf">PDF</a>
-      </p>
-      <p class="email">
-        <a href="mailto:druharper@gmail.com">druharper@gmail.com</a>
-      </p>
-    </section>
   </nav>
 </template>
 
@@ -35,6 +35,19 @@
 <style lang='scss' scoped>
   @import '@/assets/css/main.scss';
   @import '@/template-corp/assets/css/corp-main.scss';
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1.5em 2em 1em;
+    justify-content: space-between;
+
+    @media (max-width: $breakOne) {
+      justify-content: center;
+    }
+  }
 
   a {
     color: $ivory;
@@ -68,32 +81,20 @@
     }
   }
 
-  nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 1.5em 2em 1em;
-    // justify-content: space-between;
-    justify-content: center;
-
-    @media (max-width: $breakOne) {
-      justify-content: center;
-    }
-  }
 
   .drewHarper {
     height: 83px;
-    margin: 1.3em 0 0 1em;
+    margin: 0em 0 0 1rem;
 
     @media (max-width: $breakOne) {
-      height: 60px;
-      margin-left: 0.75em;
+      // height: 60px;
+      // margin-left: 0.75em;
     }
 
     @media (max-width: $breakTwo) {
-      height: 42px;
-      margin-left: 0.75em;
+      // height: 42px;
+      height: auto;
+      // margin-left: 0.75em;
     }
   }
 
@@ -105,6 +106,7 @@
   // }
 
   a.drewhead {
+    display: inline-block;
     background: #c00000;
     background-image: url(/img/drew_mug_red.png);
     // background-repeat: no-repeat;
@@ -130,15 +132,10 @@
 
   h1 {
     font-family: $font-copy !important;
-    font-size: 5.5em;
-    // font-weight: normal;
+    font-size: 1.5rem;
     letter-spacing: -0.025em;
-    // text-shadow: 4px 0px 3px $black;
     transition: 0.25s ease-in;
-    //
-    width: auto;
-    padding-left: 1.2rem;
-    flex-grow: 1;
+    font-weight: bold;
 
     a:hover {
       color: initial !important;
@@ -147,20 +144,38 @@
     }
 
     @media (max-width: $breakOne) {
-      font-size: 4.5em;
-      flex-grow: 0;
-      text-align: right;
+      // font-size: 4.5em;
+      // flex-grow: 0;
+      // text-align: right;
     }
 
     @media (max-width: $breakTwo) {
-      font-size: 3.5em;
-      flex-grow: 0;
-      text-align: center;
+      // font-size: 3.5em;
+      // flex-grow: 0;
+      // text-align: center;
     }
 
     @media (max-width: $breakThree) {
-      font-size: 2.5em;
-      margin-bottom: -9px;
+      // font-size: 2.5em;
+      // margin-bottom: -9px;
+    }
+  }
+
+  .uiux {
+    // height: 35px;
+    height: 4ch;
+    // margin: 0.7em 0 -0.3em 1.3em;
+
+    @media (max-width: $breakOne) {
+      // height: 3ch;
+      align-self: center;
+      // margin-top: 0.6em;
+      // margin-left: 0.75em;
+    }
+
+    @media (max-width: $breakTwo) {
+      height: 3ch;
+      // margin-left: 0.75em;
     }
   }
 
@@ -174,6 +189,7 @@
     align-items: center;
     align-content: center;
     margin-top: 0.2em;
+    align-self: center;
     // z-index: 10;
     // text-shadow: 3px 0px 1px $black;
     // transition: .25s ease-in;
@@ -181,12 +197,12 @@
     @media (max-width: $breakOne) {
       margin-left: 0;
       flex-direction: row;
-      margin-top: 1.5em;
+      margin-top: 1em;
     }
 
     @media (max-width: $breakTwo) {
       margin-top: 0.4em;
-      margin-top: 1.5em;
+      // margin-top: 1em;
       flex-direction: row;
       // color: red !important;
     }

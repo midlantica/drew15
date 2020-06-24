@@ -8,7 +8,7 @@
 </template>
 
 <style lang="scss" scoped>
-  @import '@/assets/css/main.scss';
+  // @import '@/assets/css/main.scss';
   // @import '@/template-techy/assets/css/techy-main.scss';
 
   .about {
@@ -148,6 +148,18 @@
 
     @media (max-width: $breakFour) {
       text-align: center;
+    }
+  }
+
+  .corp .about {
+    @include box-shadow(0px, 0px, 3px, -1px, hsla(0, 0%, 0%, 0.5));
+    border-radius: 2px;
+  }
+
+  .punk .about {
+    //
+    p {
+      margin: .25rem auto;
     }
   }
 </style>

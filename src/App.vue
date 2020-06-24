@@ -109,7 +109,10 @@
     }
 
     .about > p {
-      font-size: 0.9em !important;
+      font-size: 0.85rem !important;
+      font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+      line-height: 1.25rem;
+      margin: 0.25rem 0;
     }
 
     &.extras .flexContainer {
@@ -152,6 +155,20 @@
       }
     }
 
+    .about {
+      top: -0.5rem;
+      position: relative;
+
+      p {
+        margin: 0.5rem auto;
+      }
+    }
+
+    .skillsGrid {
+      top: -0.5rem;
+      position: relative;
+    }
+
   }
 
   // #############################
@@ -174,6 +191,7 @@
     .about > p {
       font-family: cormorantGaramond-Semi-Bold, 'Times New Roman', Times, serif !important;
       font-size: 1em;
+      margin: .25rem auto;
 
       @media (max-width: $breakThou) {
         font-size: 1.65vw;
@@ -203,6 +221,7 @@
         text-transform: capitalize;
       }
     }
+
   }
 
   // #############################
@@ -272,6 +291,5 @@
         text-transform: capitalize;
       }
     }
-
   }
 </style>

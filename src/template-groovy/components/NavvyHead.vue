@@ -40,7 +40,6 @@
 </script>
 
 <style lang='scss' scoped>
-  // @import '@/assets/css/_colors.scss';
   @import '@/assets/css/main.scss';
   @import '@/template-groovy/assets/css/groovy-main.scss';
 
