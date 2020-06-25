@@ -1,15 +1,7 @@
 // purgecss config - https://www.purgecss.com/configuration
 module.exports = {
   content: [
-    './src/**/*.vue',
-    './src/components/**/*.vue',
-    './src/template-bourbon/**/*.vue',
-    './src/template-corp/**/*.vue',
-    './src/template-groovy/**/*.vue',
-    './src/template-punk/**/*.vue',
-    './src/template-techy/**/*.vue',
-    './dist/index.html',
-    './dist/js/*.js'
+    'dist/index.html', '**/*.vue'
   ],
   css: [
     './dist/css/*.css'

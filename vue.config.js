@@ -3,15 +3,6 @@
 // And:
 // https://webpack.js.org/loaders/sass-loader/
 
-// const path = require('path')
-// const glob = require('glob')
-// // const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-// const PurgecssPlugin = require('purgecss-webpack-plugin')
-
-// const PATHS = {
-//   src: path.join(__dirname, 'dist/css')
-// }
-
 module.exports = {
   css: {
     loaderOptions: {
@@ -20,11 +11,4 @@ module.exports = {
       }
     }
   }
-  // configureWebpack: {
-  //   plugins: [
-  //     new PurgecssPlugin({
-  //       paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true })
-  //     })
-  //   ]
-  // }
 }
