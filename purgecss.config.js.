@@ -1,6 +1,0 @@
-// content: ['dist/index.html', 'dist/**/*.js', 'dist/**/*.html', 'dist/**/*.vue'],
-
-module.exports = {
-  content: ['dist/index.html', 'dist/**/*.js', 'dist/**/*.html'],
-  css: ['dist/css/**.*.css']
-}

@@ -16,6 +16,7 @@
     "vue-router": "^3.3.4"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
     "@vue/cli-plugin-babel": "^4.4.6",
     "@vue/cli-plugin-pwa": "^4.4.6",
     "@vue/cli-service": "^4.4.6",
@@ -31,6 +32,7 @@
     "fibers": "^4.0.3",
     "file-loader": "^2.0.0",
     "prettier": "2.0.5",
+    "purgecss": "^2.3.0",
     "sass": "^1.26.9",
     "sass-loader": "^8.0.2",
     "vue-carousel": "^0.13.1",
