@@ -1,9 +1,14 @@
 const purgecss = require('@fullhuman/postcss-purgecss')
+const plugins = []
 
-module.exports = {
-  plugins: [
+if (process.env.NODE_ENV === 'production') {
+  plugins.push(
     purgecss({
       css: ['./dist/css/**/*.css']
     })
-  ]
+  )
+}
+
+module.exports = {
+  plugins
 }

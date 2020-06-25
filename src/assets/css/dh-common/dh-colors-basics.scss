@@ -1,61 +1,61 @@
 /* basic colors from Bootstrap */
 .muted {
-  color: var(--muted);
+  color: $muted;
 }
 
 .primary {
-  color: var(--primary);
+  color: $primary;
 }
 
 .success {
-  color: var(--success);
+  color: $success;
 }
 
 .info {
-  color: var(--info);
+  color: $info;
 }
 
 .warning {
-  color: var(--warning);
+  color: $warning;
 }
 
 .danger {
-  color: var(--danger);
+  color: $danger;
 }
 
 .secondary {
-  color: var(--secondary);
+  color: $secondary;
 }
 
 /* backgrounds */
 .bg-primary {
-  background-color: var(--primary);
+  background-color: $primary;
 }
 
 .bg-success {
-  background-color: var(--success);
+  background-color: $success;
 }
 
 .bg-info {
-  background-color: var(--info);
+  background-color: $info;
 }
 
 .bg-warning {
-  background-color: var(--warning);
+  background-color: $warning;
 }
 
 .bg-danger {
-  background-color: var(--danger);
+  background-color: $danger;
 }
 
 .bg-secondary {
-  background-color: var(--secondary);
+  background-color: $secondary;
 }
 
 .bg-dark {
-  background-color: var(--dark);
+  background-color: $dark;
 }
 
 .bg-light {
-  background-color: var(--light);
+  background-color: $light;
 }
