@@ -151,6 +151,8 @@ body.punk .VueCarousel.druCarousel {
       }
       &.rightnav {
         transform: translateY(0%) translateX(-130%);
+        top: -1rem;
+        position: relative;
       }
     }
   }
