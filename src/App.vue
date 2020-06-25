@@ -13,6 +13,9 @@
     components: {
       Tabs,
     },
+    async mounted() {
+      const purgecss = await new PurgeCSS().purge('./purgecss.config.js')
+    },
     name: 'App',
     metaInfo: {
       // if no subcomponents specify a metaInfo.title, this title will be used

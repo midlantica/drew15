@@ -1,3 +1,4 @@
 module.exports = {
-  css: './dist/css/**.*.css'
+  content: ['index.html', '**/*.js', '**/*.html', '**/*.vue'],
+  css: ['dist/css/**/*.css']
 }
