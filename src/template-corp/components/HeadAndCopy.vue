@@ -42,13 +42,13 @@
     @media (max-width: $breakTwo) {
       // font-size: 1em;
       // line-height: 2.935em;
-      margin: 0em;
+      // margin: 0em;
     }
 
     @media (max-width: $breakThree) {
       // font-size: 1em;
-      line-height: 1em;
-      margin: 0em;
+      // line-height: 1.5rem;
+      // margin: 0em;
     }
 
     .cappy {
@@ -76,7 +76,6 @@
       column-gap: 2rem;
       column-rule: 1px dotted #ddd;
       text-justify: auto;
-      text-justify: auto;
       hyphens: auto;
     }
 
@@ -89,6 +88,7 @@
       column-rule: 1px solid grey;
       column-rule: 1px dotted #ddd;
       text-justify: auto;
+      hyphens: auto;
     }
 
     @media (max-width: 670px) {
@@ -99,12 +99,16 @@
       // column-gap: 1.5em;
       // column-rule: 1px dotted #ddd;
       // text-justify: distribute;
+      text-justify: auto;
+      hyphens: auto;
     }
 
     @media (max-width: $breakTwo) {
       // font-size: 1.4rem;
       // line-height: 2.25rem;
       // letter-spacing: 0.02rem;
+      text-justify: auto;
+      hyphens: auto;
     }
   }
 </style>
