@@ -21,9 +21,10 @@
       font-size: 1.15em;
       color: $ivory;
       text-align: center;
-      letter-spacing: 0.09em;
+      letter-spacing: -0.00rem;
       // word-spacing: .1em;
       font-weight: bold;
+      line-height: 1.6;
     }
   }
 </style>

@@ -118,15 +118,6 @@
       margin: 0.25rem 0;
     }
 
-    &.extras .flexContainer {
-      //
-      h1 {
-        font-family: Helvetica !important;
-        font-size: 1.5em;
-        color: lighten(black, 30);
-        margin-top: 0.5em;
-      }
-    }
   }
 
   // #############################
@@ -191,39 +182,7 @@
       }
     }
 
-    .about > p {
-      font-family: cormorantGaramond-Semi-Bold, 'Times New Roman', Times, serif !important;
-      font-size: 1em;
-      margin: .25rem auto;
 
-      @media (max-width: $breakThou) {
-        font-size: 1.65vw;
-        // color: red;
-      }
-
-      @media (max-width: $breakOne) {
-        font-size: 1.85vw;
-      }
-
-      @media (max-width: $breakTwo) {
-        font-size: 2.5vw;
-      }
-
-      @media (max-width: $breakThree) {
-        font-size: 3vw;
-      }
-    }
-
-    &.extras .flexContainer {
-      //
-      h1 {
-        font-family: Times !important;
-        font-size: 1.5em;
-        color: lighten(black, 20);
-        margin-top: 0.5em;
-        text-transform: capitalize;
-      }
-    }
 
   }
 

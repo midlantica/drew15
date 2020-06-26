@@ -96,7 +96,8 @@
   }
 
   body.corp .projectBox {
-    @include box-shadow(0px, 0px, 3px, -1px, hsla(0, 0%, 0%, 0.5))
+    @include box-shadow(0px, 0px, 3px, -1px, hsla(0, 0%, 0%, 0.5));
+    background: #d7e7f3;
   }
 
 
@@ -153,6 +154,10 @@
 
   body.corp .box {
     height: 154.5px !important;
+  }
+
+  body.corp .VueCarousel.druCarousel {
+    box-shadow: none;
   }
 
   //////////

@@ -152,8 +152,9 @@
   }
 
   .corp .about {
-    @include box-shadow(0px, 0px, 3px, -1px, hsla(0, 0%, 0%, 0.5));
+    @include box-shadow(0px, 0px, 3px, -1px, hsla(0, 14%, 22%, 0.5));
     border-radius: 2px;
+    font-family: Alegreya;
   }
 
   .punk .about {
@@ -162,6 +163,38 @@
       margin: .25rem auto;
     }
   }
+
+  .corp .about {
+    //
+    p {
+      font-family: Alegreya, 'Times New Roman', Times, serif !important;
+      font-size: 0.9rem;
+      letter-spacing: .001rem;
+      line-height: 1.4rem;
+      margin: 0;
+      font-weight: 500;
+
+      @media (max-width: $breakThou) {
+        // font-size: 1.65vw;
+        // color: red;
+      }
+
+      @media (max-width: $breakOne) {
+        // font-size: 1.85vw;
+      }
+
+      @media (max-width: $breakTwo) {
+        // font-size: 2.5vw;
+      }
+
+      @media (max-width: $breakThree) {
+        // font-size: 3vw;
+      }
+    }
+  }
+
+
+
 </style>
 
 

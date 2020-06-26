@@ -1,7 +1,7 @@
 <template>
   <div class="wrap">
-    <h1>{{ this.$root.druHead }}</h1>
-    <p>{{ this.$root.druCopy }}</p>
+    <h1 v-html="this.$root.druHead"></h1>
+    <p v-html="this.$root.druCopy"></p>
   </div>
 </template>
 
@@ -26,7 +26,7 @@
   h1 {
     font-family: $font-head;
     font-weight: bold;
-    color: transparentize($blue-dark, 0.15);
+    color: $blue-dark;
     text-transform: none;
     font-size: 1.5em;
     // font-size: calc(1.45rem + 0.5vw);
@@ -38,6 +38,7 @@
     // grid-row: 1 / 2;
     transition: 0.25s ease-in;
     // text-align: center;
+    letter-spacing: -0.01rem;
 
     @media (max-width: $breakTwo) {
       // font-size: 1em;
@@ -51,21 +52,22 @@
       // margin: 0em;
     }
 
-    .cappy {
-      color: darken($accent-red, 5);
-      font-size: 0.85em;
-      font-family: cormorantGaramond-Bold;
-      text-transform: uppercase;
-    }
+  }
+
+  p.smallCaps {
+    font-family: $font-caps;
+    font-variant: small-caps;
+    font-size: 75%;
+    font-weight: 500;
   }
 
   p {
     color: transparentize($black, 0.15);
     font-family: $font-copy;
-    font-weight: 100;
-    letter-spacing: -0.027rem;
+    font-weight: normal;
+    // letter-spacing: -0.027rem;
     text-align: justify;
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     line-height: 2.7rem;
 
     @media (max-width: $breakThou) {
@@ -73,8 +75,8 @@
       // line-height: 2.25rem;
       // letter-spacing: 0.05rem;
       columns: 2 200px;
-      column-gap: 2rem;
-      column-rule: 1px dotted #ddd;
+      column-gap: 3rem;
+      column-rule: 1px solid transparentize($grey, .75);
       text-justify: auto;
       hyphens: auto;
     }
@@ -84,9 +86,6 @@
       // line-height: 2.25rem;
       letter-spacing: 0.05rem;
       columns: 2 200px;
-      column-gap: 1.5rem;
-      column-rule: 1px solid grey;
-      column-rule: 1px dotted #ddd;
       text-justify: auto;
       hyphens: auto;
     }

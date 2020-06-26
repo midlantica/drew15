@@ -111,13 +111,15 @@
     background-image: url(/img/drew_mug_red.png);
     // background-repeat: no-repeat;
     // background-size: cover;
-    width: 100px;
-    height: 100px;
-    background-position: -55px -67px;
-    box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.25);
+    width: 80px;
+    height: 80px;
+    background-position: -39px -59px;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.15);
     background-repeat: no-repeat;
     background-size: 151%;
-    filter: hue-rotate(210deg);
+    filter: hue-rotate(210deg) grayscale(50%);
+    border-radius: 1px;
+    margin-bottom: .75rem;
     // width: 72px;
     // height: 88px;
     // display: block;
@@ -135,7 +137,7 @@
     font-size: 1.5rem;
     letter-spacing: -0.025em;
     transition: 0.25s ease-in;
-    font-weight: bold;
+    font-weight: medium;
 
     a:hover {
       color: initial !important;
@@ -222,13 +224,13 @@
 
     p {
       font-family: $font-copy !important;
-      font-weight: 100;
       font-size: 1.3em;
       letter-spacing: 0.01em;
       align-items: center;
       text-align: center;
       line-height: 1.25em;
       flex-grow: 1;
+      font-weight: 500;
       // color: red !important;
 
       a {
