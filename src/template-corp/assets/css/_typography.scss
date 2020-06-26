@@ -33,13 +33,16 @@ h5 {
 
 p {
   font-family: $font-copy !important;
-  font-size: $base-font-size;
+  // font-size: $base-font-size;
   // color: $blue-mid;
-  line-height: $base-line-height;
+  // line-height: $base-line-height;
   font-weight: normal;
   text-align: left;
   margin: 0;
   padding: 0;
+  font-size: 1.3em;
+  letter-spacing: -0.013em;
+  line-height: 2.1em;
 }
 
 ul {

@@ -1,14 +1,14 @@
-@forward '@/assets/css/utilities/_Autilities_base.scss';
+@import '@/assets/css/utilities/_Autilities_base.scss';
 
 // FONTS
 $base-font-size   :1rem;
-$base-line-height :1.7em;
+$base-line-height :1.5em;
 $font-light       :Questrial, "Helvetica Neue", Helvetica, Arial, sans-serif;
 // $font-med         :"cormorantGaramond-Regular", "Times New Roman", Times, serif;
-$font             :cormorantGaramond-Semi-Bold, "Times New Roman", Times, serif;
-$font-head        :cormorantGaramond-Regular, "Times New Roman", Times, serif;
-$font-subhead     :cormorantGaramond-Semi-Bold, "Times New Roman", Times, serif;
-$font-copy        :cormorantGaramond-Semi-Bold, "Times New Roman", Times, serif;
+$font             :TheanoModern-Regular, "Times New Roman", Times, serif;
+$font-head        :TheanoModern-Regular, "Times New Roman", Times, serif;
+$font-subhead     :TheanoModern-Regular, "Times New Roman", Times, serif;
+$font-copy        :TheanoModern-Regular, "Times New Roman", Times, serif;
 
 // ############################
 
