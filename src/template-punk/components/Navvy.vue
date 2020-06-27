@@ -1,6 +1,6 @@
 <template>
   <nav>
-    
+
     <div class="greenBar">&nbsp;</div>
     <p class='email'><a href="mailto:druharper@gmail.com">druharper@gmail.com</a></p>
 
@@ -14,7 +14,7 @@
       <router-link to="Punk/Extras" class="DrewHead">&nbsp;</router-link>
     </div>
 
-    <p class='resume'>Resume: 
+    <p class='resume'>Resume:
       <a href="resume/drew_harper_resume_portfolio.pdf">Large</a>/
       <a href="resume/drew_harper_resume_portfolio_short.docx">Small</a>
     </p>
@@ -54,7 +54,7 @@
       // width: 50%;
       // margin: 0 auto;
     }
-    
+
     .greenBar {
       display: block;
       // width: 1024px;
@@ -72,7 +72,7 @@
       background: rgba(0, 128, 0, 0.25);
       // background: transparentize(green, .5);
     }
-    
+
     p.email {
       font-family: $font;
       font-size: 1.5em;
@@ -125,7 +125,7 @@
       @media (max-width: $breakThree) {
         //
       }
-      
+
       a {
         //
 
@@ -202,7 +202,7 @@
         }
 
       }
-  
+
       a.svg.svgArt.mastDrew {
         // display: block;
         width: 200px;
@@ -306,13 +306,13 @@
         // margin-top: 0.5em;
         // order: 3;
         // flex-grow: 1;
-        // background: green !important; 
+        // background: green !important;
 
         @media (max-width: $breakOne) {
           width: 122px;
           height: 122px;
           margin-top: 1em;
-          // background: red !important; 
+          // background: red !important;
           // order: 2;
         }
 
@@ -320,13 +320,13 @@
           width: 122px;
           height: 135px;
           margin-top: .5em;
-          // background: blue !important; 
+          // background: blue !important;
         }
 
         @media (max-width: $breakThree) {
           width: 82px;
           height: 93px;
-          // background: purple !important; 
+          // background: purple !important;
           // order: 2;
         }
 

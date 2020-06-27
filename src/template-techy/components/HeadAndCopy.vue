@@ -1,7 +1,7 @@
 <template>
   <section class="marT2 marLR1H">
-    <h1>{{ this.$root.druHead }}</h1>
-    <p>{{ this.$root.druCopy }}</p>
+    <h1 v-html="this.$root.druHead"></h1>
+    <p v-html="this.$root.druCopy"></p>
   </section>
 </template>
 

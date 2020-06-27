@@ -23,7 +23,8 @@
       text-align: center;
       letter-spacing: -0.00rem;
       // word-spacing: .1em;
-      font-weight: bold;
+      font-weight: 500;
+      letter-spacing: 0.07rem;
       line-height: 1.6;
     }
   }

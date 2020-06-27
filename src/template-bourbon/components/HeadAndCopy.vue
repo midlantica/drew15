@@ -2,9 +2,9 @@
   <div class="marT1 marL1 marRH">
     <div class='headBlock'>
       <router-link to='Bourbon/Extras' class='drewhead' />
-      <h1>{{ this.$root.druHead }}</h1>
+      <h1 v-html="this.$root.druHead"></h1>
     </div>
-    <p>{{ this.$root.druCopy }}</p>
+    <p v-html="this.$root.druCopy"></p>
   </div>
 </template>
 

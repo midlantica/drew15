@@ -1,8 +1,8 @@
 <template>
   <div class="copyGrid">
     <h2>ui/ux designer front-end dev</h2>
-    <h1>{{ this.$root.druHead }}</h1>
-    <p>{{ this.$root.druCopy }}</p>
+    <h1 v-html="this.$root.druHead"></h1>
+    <p v-html="this.$root.druCopy"></p>
   </div>
 </template>
 

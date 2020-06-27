@@ -2,7 +2,7 @@
   <nav>
 
     <section class="flexRowWrap w100">
-      <div class="flexColumnWrap flex-grow-1 align-content-center text-align-center">
+      <div class="drewTop">
         <router-link to="/Corp" class="w100" >
           <router-link to="/Corp/Extras" class="drewhead" />
           <drewHarper class="drewHarper marTH" />
@@ -11,7 +11,7 @@
           </div>
         </router-link>
       </div>
-      <section class="contact flexColumnWrap">
+      <section class="contact">
         <p class="resume">Resume: <a href="resume/drew_harper_resume_portfolio.docx">Word</a> or <a href="resume/drew_harper_resume_portfolio.pdf">PDF</a>
         </p>
         <p class="email"><a href="mailto:druharper@gmail.com">druharper@gmail.com</a></p>
@@ -63,12 +63,7 @@
     }
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  p {
+  h1, h2, h3, h4, h5, p {
     line-height: 1em;
     margin: 0;
     padding: 0;
@@ -80,7 +75,6 @@
       text-decoration: none;
     }
   }
-
 
   .drewHarper {
     height: 83px;
@@ -97,13 +91,6 @@
       // margin-left: 0.75em;
     }
   }
-
-  // #drewheadBox {
-  //   background: white;
-  //   width: 100px;
-  //   height: 100px;
-  //   box-shadow: 3px 3px 6px 0 rgba(0,0,0,0.29);
-  // }
 
   a.drewhead {
     display: inline-block;
@@ -181,7 +168,21 @@
     }
   }
 
-  section.contact {
+  .drewTop {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1 !important;
+    align-content: center;
+    text-align: center;
+
+    @media (max-width: $breakThree) {
+      width: 100%;
+    }
+
+  }
+
+  .contact {
     flex-grow: 1;
     // width: 100%;
     display: flex;
@@ -224,30 +225,26 @@
 
     p {
       font-family: $font-copy !important;
-      font-size: 1.3em;
+      font-size: 1em;
       letter-spacing: 0.01em;
       align-items: center;
       text-align: center;
-      line-height: 1.25em;
+      line-height: 1.5em;
       flex-grow: 1;
       font-weight: 500;
-      // color: red !important;
+      text-transform: uppercase;
 
       a {
-        // color: lighten($blue-dark, 10) !important;
-        border-bottom: 1px dotted lighten($blue-dark, 20);
+        border-bottom: 2px dotted lighten($blue-dark, 20);
 
         &:hover {
           color: darken($accent-red, 20) !important;
-          border-bottom: 1px dotted darken($accent-red, 20);
+          border-bottom: 2px dotted darken($accent-red, 20);
         }
       }
-      // text-transform: uppercase;
-      // text-transform: capitalize;
 
       @media (max-width: $breakOne) {
         justify-content: center;
-        font-size: 1.27em !important;
         letter-spacing: 0.01em !important;
 
         &:nth-child(1) {
@@ -262,18 +259,34 @@
       }
 
       @media (max-width: $breakTwo) {
-        font-size: 1.25em !important;
         letter-spacing: 0.03em !important;
       }
 
       @media (max-width: $breakThree) {
         justify-content: center;
-        // font-size: 1.34em !important;
         letter-spacing: 0.09em !important;
         line-height: 1.25em;
         margin-bottom: -4px;
         text-align: center;
       }
+
+      &.resume,
+      &.email {
+        color: $blue-dark !important;
+        line-height: 1.5;
+
+        a {
+          color: $blue-dark !important;
+          border-bottom: 1px dotted $accent;
+
+          &:hover {
+            color: maroon !important;
+            border-bottom: 1px dotted hsla(0, 100%, 25%, 1);
+          }
+        }
+      }
+
     }
+
   }
 </style>

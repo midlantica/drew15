@@ -188,11 +188,11 @@
       letter-spacing: 0.09em;
 
       &:nth-child(1) {
-        font-size: 1.44em;
+        // font-size: 1.44em;
       }
 
       &:nth-child(2) {
-        font-size: 1.05em;
+        // font-size: 1.05em;
         letter-spacing: 0.0725em;
       }
 
