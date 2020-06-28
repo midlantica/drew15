@@ -64,7 +64,7 @@
     // margin: .5em auto 0;
     align-items: center;
     grid-template-columns: repeat(4, minmax(auto, auto));
-    grid-row-gap: 0.5em;
+    grid-row-gap: 0em;
     // grid-column-gap: 0em;
     // grid-column-gap: 1.5em;
     // background: beige;

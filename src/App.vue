@@ -35,8 +35,6 @@
   .wrapper {
     max-width: 1024px;
     margin: 0 auto;
-    // background: white; // ivory
-    // @include shadow;
   }
 
   // #############################
@@ -150,7 +148,7 @@
     }
 
     .about {
-      top: -1rem;
+      top: -.25rem;
       position: relative;
 
       p {

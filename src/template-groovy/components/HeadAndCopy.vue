@@ -38,59 +38,80 @@
     // font-family: $font-copy !important;
     font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     text-transform: initial;
-    font-size: 1.3rem;
-    line-height: 1.75rem;
-    font-weight: 500;
-    letter-spacing: 0.005rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.00rem;
+    margin-bottom:.5rem;
+
+    @media (min-width: $breakThou) {
+      // font-size: 1em;
+      // line-height: 2.935em;
+      // margin: 0em;
+      max-width: 26ch;
+    }
+
+    @media (max-width: $breakThou) {
+      // font-size: 1em;
+      // line-height: 2.935em;
+      // margin: 0em;
+      max-width: initial;
+    }
+
+    @media (max-width: $breakOne) {
+      // font-size: 1em;
+      // line-height: 2.935em;
+      // margin: 0em;
+      max-width: initial;
+    }
+
+    @media (max-width: $breakTwo) {
+      // font-size: 1em;
+      // line-height: 2.935em;
+      // margin: 0em;
+      max-width: 26ch;
+    }
+
+    @media (max-width: $breakThree) {
+      // font-size: 1em;
+      // line-height: 1.5rem;
+      // margin: 0em;
+      max-width: initial;
+    }
   }
 
   p {
     // font-family: $font-copy !important;
     font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     color: $grey;
-    // font-size: 0.95rem;
-    // font-weight: bold;
-    // margin: 0em 2.5em 0em 2em;
-    // line-height: 2.5rem;
-    // line-height: 3.2em;
-    // letter-spacing: 0.04em;
-    font-size: 1.15rem;
+    font-size: 1rem;
     letter-spacing: 0.009rem;
-    line-height: 2.4rem;
-
-    // @media screen and (min-width: 1024px) {
-    //   font-size: 1.1rem;
-    //   line-height: 3.2em;
-    //   // line-height: calc(1.9em + .6vw);
-    // }
-
-    // -->>
-    // MIN -- MIN -- MIN -- MIN -- MIN
-    @media (min-width: $breakThou) {
-      // line-height: 2.75em;
-    }
+    line-height: 2.25rem;
 
     @media (max-width: $breakThou) {
-      // margin: 2.25em 1.5em 0.5em;
-      // margin: 0 1em;
-      //
+      columns: 2 200px;
+      column-gap: 3rem;
+      column-rule: 2px dotted transparentize($orange, 0.5);
+      text-justify: auto;
+      hyphens: auto;
     }
 
     @media (max-width: $breakOne) {
-      // margin: 2.25em 1.5em 0.5em;
-      // font-size: 1rem;
-      // line-height: 2.25em;
+      letter-spacing: 0.05rem;
+      columns: 2 200px;
+    }
+
+    @media (max-width: 670px) {
+      columns: initial;
+      font-size: 1.05rem;
+      line-height: 2.4rem;
+      padding-left: 1.3rem;
+      border-left: 2px dotted transparentize($orange, 0.5);
+      margin-right: 0.5rem;
     }
 
     @media (max-width: $breakTwo) {
-      // font-size: 1rem;
-      // line-height: 2.75em;
-    }
-
-    @media (max-width: $breakThree) {
-      // font-size: .95rem;
-      line-height: calc(2em + 2vw);
-      // line-height: 2.5em;
+      //
     }
 
   }

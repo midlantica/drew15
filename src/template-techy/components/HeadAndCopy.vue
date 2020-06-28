@@ -1,5 +1,5 @@
 <template>
-  <section class="marT2 marLR1H">
+  <section class="marT1H marL1H marR2">
     <h1 v-html="this.$root.druHead"></h1>
     <p v-html="this.$root.druCopy"></p>
   </section>
@@ -39,30 +39,52 @@
     text-transform: initial;
     line-height: 2rem;
     color: $blueTech;
+
+    @media (min-width: $breakThou) {
+      max-width: 26ch;
+    }
+
+    @media (max-width: $breakThou) {
+      max-width: initial;
+    }
+
+    @media (max-width: $breakOne) {
+      max-width: initial;
+    }
+
+    @media (max-width: $breakTwo) {
+      max-width: 26ch;
+    }
+
+    @media (max-width: $breakThree) {
+      max-width: initial;
+    }
   }
 
   p {
     font-family: $font-copy;
-    font-size: 1.2rem;
-    line-height: 2.6em;
-    // color: $grey;
-    color: transparentize($blueTech, .0);
+    font-size: 1.125rem;
+    line-height: 2.7rem;
+    color: transparentize($blueTech, .2);
     letter-spacing: 0.06em;
 
     @media (min-width: $breakThou)
     and (-webkit-min-device-pixel-ratio: 2)
     {
-      font-size: 1.2rem;
-      line-height: 2.6em;
+      // font-size: 1.2rem;
+      // line-height: 2.6em;
     }
 
-
     @media (max-width: $breakThou) {
-      font-size: 1.3rem;
-      line-height: 2.3em;
-      // margin: 1em 1.5em 0;
+      font-size: 1.2rem;
+      line-height: 2.1em;
       letter-spacing: 0.05em;
-      // background: purple;
+      text-align: justify;
+      columns: 2 200px;
+      column-gap: 3rem;
+      text-justify: auto;
+      hyphens: auto;
+      column-rule: 2px dotted transparentize($blueTech, .5);
     }
 
     @media (max-width: $breakOne) {
@@ -71,6 +93,7 @@
       // margin: 1.5em .5em 0;
       // letter-spacing: 0.00em;
       // background: red;
+      columns: 2 200px;
     }
 
     @media (max-width: $breakTwo) {

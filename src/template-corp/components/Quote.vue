@@ -11,7 +11,7 @@
   .quoteBlock {
     background: $blue-dark;
     // margin-bottom: .5em;
-    padding: 0.5em 2em 0.6em;
+    padding: 1em 2em 1.2rem;
     @include shadow;
     // @include clearfix;
     text-align: center;

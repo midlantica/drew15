@@ -91,6 +91,10 @@
     @include clearfix;
   }
 
+  body.box {
+    height: 115px;
+  }
+
   body.bourbon .projectBox{
     @include shadow;
   }
@@ -108,7 +112,6 @@
   body.punk .projectBox {
     @include shadow;
     margin-top: 0.5em;
-    // box-shadow: none;
   }
 
   // ########################
@@ -119,7 +122,7 @@
   }
 
   body.bourbon .box {
-    height: 169.5px;
+    // height: 115px;
   }
 
   //////////
@@ -130,7 +133,7 @@
   }
 
   body.groovy .box {
-    height: 158.5px !important;
+    height: 136px !important;
   }
 
   //////////
@@ -141,7 +144,7 @@
   }
 
   body.techy .box {
-    height: 159px !important;
+    // height: 159px !important;
   }
 
   //////////
@@ -153,7 +156,7 @@
   }
 
   body.corp .box {
-    height: 154.5px !important;
+    // height: 154.5px !important;
   }
 
   body.corp .VueCarousel.druCarousel {
@@ -168,7 +171,7 @@
   }
 
   body.punk .box {
-    height: 171px !important;
+    // height: 171px !important;
   }
 
   //////////
@@ -235,13 +238,12 @@
       }
 
       .box {
-        display: flex;
-        justify-content: center;
+        // justify-content: center;
         flex-direction: column;
         text-align: center;
-        box-shadow: 1px 1px 0 -1px rgba(0, 0, 0, 0.5);
+        // box-shadow: 1px 1px 0 -1px rgba(0, 0, 0, 0.5);
         margin: 0.25em 0.25em;
-        height: 169.5px;
+        height: 115px;
         box-shadow: 0px 2px 2px -3px black;
         background: lighten(lightgrey, 15);
         display: flex;
@@ -262,7 +264,7 @@
           background: url(/img/carousel/car-icon-uiux.svg) no-repeat center center;
           background-color: lighten(lightgrey, 15);
           background-size: 75% 75%;
-          background-position: center 8px;
+          background-position: center 4px;
           border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
@@ -273,7 +275,7 @@
             transition-duration: 0.5s;
             // background-color: lighten(lightgrey, 25);
             background-size: 75% 75%;
-            background-position: center 0px;
+            background-position: center 2px;
             border: 1px solid transparentize(grey, 0.5);
             box-shadow: 0px 2px 2px -1px grey;
           }
@@ -288,7 +290,7 @@
             center;
           background-color: lighten(lightgrey, 15);
           background-size: 75% 75%;
-          background-position: center 8px;
+          background-position: center 4px;
           border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
@@ -299,7 +301,7 @@
             transition-duration: 0.5s;
             // background-color: lighten(lightgrey, 25);
             background-size: 75% 75%;
-            background-position: center 0px;
+            background-position: center 2px;
             border: 1px solid transparentize(grey, 0.5);
             box-shadow: 0px 2px 2px -1px grey;
           }
@@ -314,7 +316,7 @@
             center;
           background-color: lighten(lightgrey, 15);
           background-size: 75% 75%;
-          background-position: center 8px;
+          background-position: center 4px;
           border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
@@ -325,7 +327,7 @@
             transition-duration: 0.5s;
             // background-color: lighten(lightgrey, 25);
             background-size: 75% 75%;
-            background-position: center 0px;
+            background-position: center 2px;
             border: 1px solid transparentize(grey, 0.5);
             box-shadow: 0px 2px 2px -1px grey;
           }
@@ -340,7 +342,7 @@
             center;
           background-color: lighten(lightgrey, 15);
           background-size: 75% 75%;
-          background-position: center 8px;
+          background-position: center 4px;
           border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
@@ -351,7 +353,7 @@
             transition-duration: 0.5s;
             // background-color: lighten(lightgrey, 25);
             background-size: 75% 75%;
-            background-position: center 0px;
+            background-position: center 2px;
             border: 1px solid transparentize(grey, 0.5);
             box-shadow: 0px 2px 2px -1px grey;
           }
@@ -366,7 +368,7 @@
             center;
           background-color: lighten(lightgrey, 15);
           background-size: 75% 75%;
-          background-position: center 8px;
+          background-position: center 4px;
           border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
@@ -377,7 +379,7 @@
             transition-duration: 0.5s;
             // background-color: lighten(lightgrey, 25);
             background-size: 75% 75%;
-            background-position: center 0px;
+            background-position: center 2px;
             border: 1px solid transparentize(grey, 0.5);
             box-shadow: 0px 2px 2px -1px grey;
           }
@@ -391,7 +393,7 @@
           background: url(/img/carousel/car-icon-misc.svg) no-repeat center center;
           background-color: lighten(lightgrey, 15);
           background-size: 75% 75%;
-          background-position: center 8px;
+          background-position: center 4px;
           border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
@@ -402,7 +404,7 @@
             transition-duration: 0.5s;
             // background-color: lighten(lightgrey, 25);
             background-size: 75% 75%;
-            background-position: center 0px;
+            background-position: center 2px;
             border: 1px solid transparentize(grey, 0.5);
             box-shadow: 0px 2px 2px -1px grey;
           }
@@ -419,7 +421,7 @@
           color: $grey;
           text-align: center;
           letter-spacing: 0.05em;
-          margin-bottom: 1.5em;
+          margin-bottom: 0.5em;
 
           &:hover {
             color: $ivory;

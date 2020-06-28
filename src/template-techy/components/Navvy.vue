@@ -88,7 +88,6 @@
       // width: 100%;
     }
 
-
     .masty {
       // @include clearfix;
       margin: 0 auto;
@@ -269,7 +268,7 @@
   }
 
   nav .jobDesc {
-    margin: -2em 0em 1em 12em;
+    margin: -2em 0em 1em 11.1em;
     // text-align: center;
     // margin-top: -1em;
     // @include clearfix;

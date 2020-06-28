@@ -1,5 +1,5 @@
 <template>
-  <div class="marT1 marL1 marRH">
+  <div class="marT0 marL1 marRH">
     <div class='headBlock'>
       <router-link to='Bourbon/Extras' class='drewhead' />
       <h1 v-html="this.$root.druHead"></h1>
@@ -12,7 +12,6 @@
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
   .headBlock {
-    // display: block;
     display: grid;
     grid-template-columns: 88px auto;
     grid-template-rows: auto;
@@ -20,12 +19,11 @@
     justify-items: start;
     align-items: center;
     margin-right: 2rem;
-    // @include clearfix;
 
     a.drewhead {
-      display: block;
-      float: left;
-      clear: left;
+      // display: block;
+      // float: left;
+      // clear: left;
       margin-right: 1em;
       //
       background-image: url(/img/drew_mug_red.png);
@@ -33,22 +31,12 @@
       background-size: cover;
       width: 78px;
       height: 94px;
-      // margin: 0;
-      // filter: grayscale(100%);
-      // filter:hue-rotate(360deg);
       grid-column: 1 / 2;
       grid-row: 1 / 2;
-      // border: 1px solid red;
+      align-self: flex-start;
 
       @media only screen and (min-device-width: 375px) and (max-device-width: 660px) and (-webkit-min-device-pixel-ratio: 2) {
-        // display: block;
-        // float: left;
-        // clear: left;
-        // margin-right: 1em;
-        // background: purple;
-        // border: 2px solid red;
-        // width: 97px;
-        // height: 45px;
+        //
       }
     }
 
@@ -57,43 +45,54 @@
       font-family: $font-subhead;
       color: $accent-red;
       font-size: max(calc(1.7rem + 0.2vw));
-      // font-size: 1.8rem;
       margin: 0.25em 0 0;
       padding: 0;
       grid-column: 2 / 3;
       grid-row: 1 / 2;
-      // border: 1px solid red;
-      // transition: .25s ease-in;
+      align-self: center;
 
       @media only screen and (min-device-width: 375px) and (max-device-width: 660px) and (-webkit-min-device-pixel-ratio: 2) {
         margin-top: 1em;
         float: left;
         width: 72%;
-        // clear: left;
-        // margin-right: 1em;
-        // background: purple;
-        // border: 2px solid red;
-        // width: 97px;
-        // height: 45px;
       }
     }
   }
 
   p {
-    display: block;
     font-family: $font-copy !important;
-    font-size: calc(0.85rem + 0.75vw);
-    // font-size: 0.9rem;
+    font-size: 1rem;
+    line-height: 2rem;
     color: $grey;
-    margin: 1em 0.5em 0em;
-    line-height: calc(2.2em + 0.5vw);
-    // line-height: 2.6em;
-    letter-spacing: 0.03em;
+    margin: 0.5rem 0.5rem 0rem !important;
+    letter-spacing: 0.03rem;
 
-    @media screen and (min-width: $breakThou) {
-      font-size: 0.95rem;
-      line-height: 3em;
-      // line-height: calc(1.9em + .6vw);
+    @media (max-width: $breakThou) {
+      // font-size: 1rem;
+      columns: 2 200px;
+      line-height: 2.25rem !important;
+      column-gap: 3rem;
+      column-rule: 1px solid transparentize($accent-red, .75);
+      text-justify: auto;
+      hyphens: auto;
+    }
+
+    @media (max-width: $breakOne) {
+      letter-spacing: 0.05rem;
+      columns: 2 200px;
+      text-justify: auto;
+      hyphens: auto;
+    }
+
+    @media (max-width: 670px) {
+      columns: initial;
+      text-justify: auto;
+      hyphens: auto;
+    }
+
+    @media (max-width: $breakTwo) {
+      text-justify: auto;
+      hyphens: auto;
     }
   }
 </style>

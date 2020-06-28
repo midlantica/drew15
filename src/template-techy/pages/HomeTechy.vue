@@ -70,7 +70,7 @@
     grid-template-columns: 7fr 6fr;
     grid-row-gap: 1em;
     background: $ivory;
-    padding: 0 1em 1em;
+    padding: 0 1em 0.5em;
     // width: 100%;
 
     @media (min-width: $breakThou) and (min-device-width: 768px) {
@@ -144,7 +144,7 @@
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     z-index: 10;
-    margin-top: -6.5em;
+    margin-top: -5.5em;
 
     // IPAD LANDSCAPE
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {

@@ -54,7 +54,7 @@
       style: [
         { cssText: 'body.corp .VueCarousel.druCarousel { box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.29);  }', type: 'text/css' },
         { cssText: '.about p { font-family: "Alegreya", "Times New Roman", Times, serif; !important; font-size: 1em; }', type: 'text/css' },
-        { cssText: '.skillsgrid { margin: 0 !important; }', type: 'text/css' }
+        { cssText: '.skillsGrid { margin: 0 auto 0 .5rem !important; }', type: 'text/css' }
       ]
     }
   }
@@ -71,7 +71,7 @@
     // margin-bottom: 0.5em;
 
     @media (max-width: $breakThou) {
-      margin-bottom: 0.5em;
+      // margin-bottom: 0.5em;
     }
   }
 
@@ -85,18 +85,15 @@
   .mainGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1em;
-    // grid-row-gap: 1em;
-    margin: 1em 1em;
+    grid-gap: 1rem;
+    grid-row-gap: 1rem 1rem;
+    margin: 1rem 1rem;
     // background: none !important;
     // box-shadow: none !important;
 
     @media (max-width: $breakThou) {
       grid-template-columns: 1fr;
-      // grid-gap: 0em;
       grid-row-gap: 1em;
-      // grid-column: 1 / 3;
-      // grid-row: 1;
     }
 
     @media (max-width: $breakOne) {
@@ -155,8 +152,6 @@
   .skillsGrid {
     grid-column: 1 / 2;
     grid-row: 2;
-    // align-items: center;
-    // margin: 0 auto 1em;
 
     @media (max-width: $breakThou) {
       grid-row: 2;

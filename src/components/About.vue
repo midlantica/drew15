@@ -43,9 +43,6 @@
     //
     float: left;
     clear: left;
-    // width: 129px;
-    // height: 76px;
-    // margin-right: 1em;
     flex-basis: auto;
 
     @media (max-width: $breakThou) {
