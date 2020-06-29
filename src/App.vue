@@ -84,6 +84,15 @@
         padding-top: 1em;
       }
     }
+
+    .smallCaps {
+      // font-family: $font-caps;
+      font-variant: small-caps !important;
+      font-size: 90% !important;
+      letter-spacing: 0.05rem;
+      // color: red !important;
+      // font-weight: bold !important;
+    }
   }
 
   // #############################
@@ -107,6 +116,7 @@
       footer {
         //
       }
+
     }
 
     .about > p {
@@ -114,6 +124,15 @@
       font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
       line-height: 1.25rem;
       margin: 0.25rem 0;
+    }
+
+    .smallCaps {
+      // font-family: $font-caps;
+      font-variant: small-caps !important;
+      font-size: 87.5% !important;
+      letter-spacing: 0.05rem;
+      // color: red !important;
+      // font-weight: bold !important;
     }
 
   }
@@ -157,8 +176,17 @@
     }
 
     .skillsGrid {
-      top: -0.5rem;
-      position: relative;
+      // top: -0.5rem;
+      // position: relative;
+    }
+
+    .smallCaps {
+      // font-family: $font-caps;
+      font-variant: small-caps !important;
+      font-size: 87.5% !important;
+      letter-spacing: 0.05rem;
+      // color: red !important;
+      // font-weight: bold !important;
     }
 
   }
@@ -178,6 +206,15 @@
       footer {
         // background: url(./template-bourbon/assets/img/bg/bg_bag_dk.jpg) repeat;
       }
+    }
+
+    .smallCaps {
+      // font-family: $font-caps;
+      font-variant: small-caps !important;
+      font-size: 90% !important;
+      letter-spacing: 0.03rem;
+      // color: red !important;
+      // font-weight: bold !important;
     }
 
   }
@@ -248,6 +285,15 @@
         padding-top: 1em;
         text-transform: capitalize;
       }
+    }
+
+    .smallCaps {
+      // font-family: $font-caps;
+      font-variant: small-caps !important;
+      font-size: 95% !important;
+      letter-spacing: 0.05rem;
+      // color: red !important;
+      // font-weight: bold !important;
     }
   }
 </style>

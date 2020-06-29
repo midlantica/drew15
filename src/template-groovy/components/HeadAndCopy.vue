@@ -22,11 +22,11 @@
     }
 
     @media (max-width: $breakOne) {
-      margin: 2rem 2rem 0rem;
+      margin: 3rem 1.5rem 0rem;
     }
 
     @media (max-width: $breakTwo) {
-      margin: 2rem 1.5rem 0rem;
+      margin: 3rem 1rem 0rem;
     }
 
     @media (max-width: $breakThree) {
@@ -36,9 +36,9 @@
 
   h1 {
     // font-family: $font-copy !important;
-    font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-family: $font-head;
     text-transform: initial;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     line-height: 1.5rem;
     font-weight: 600;
     letter-spacing: 0.00rem;

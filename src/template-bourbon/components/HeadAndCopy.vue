@@ -18,7 +18,7 @@
     grid-column-gap: 6px;
     justify-items: start;
     align-items: center;
-    margin-right: 2rem;
+    // margin-right: 2rem;
 
     a.drewhead {
       // display: block;
@@ -44,27 +44,48 @@
       display: inline-block;
       font-family: $font-subhead;
       color: $accent-red;
-      font-size: max(calc(1.7rem + 0.2vw));
-      margin: 0.25em 0 0;
+      font-size: 1.7rem;
       padding: 0;
       grid-column: 2 / 3;
       grid-row: 1 / 2;
       align-self: center;
+      max-width: 30ch;
 
-      @media only screen and (min-device-width: 375px) and (max-device-width: 660px) and (-webkit-min-device-pixel-ratio: 2) {
-        margin-top: 1em;
-        float: left;
-        width: 72%;
+      @media (min-width: $breakThou) {
+        max-width: 30ch;
       }
+
+      @media (max-width: $breakOne) {
+        max-width: initial;
+        font-size: 1.65rem;
+      }
+
+      @media (max-width: $breakTwo) {
+        max-width: 30ch;
+        font-size: 1.5rem;
+      }
+
+      @media (max-width: $breakThree) {
+        //
+        font-size: 1.25rem;
+      }
+
     }
+  }
+
+  p.smallCaps {
+    // font-family: $font-caps;
+    font-variant: small-caps !important;
+    font-size: 185% !important;
+    // font-weight: 500;
   }
 
   p {
     font-family: $font-copy !important;
-    font-size: 1rem;
+    font-size: .95rem;
     line-height: 2rem;
     color: $grey;
-    margin: 0.5rem 0.5rem 0rem !important;
+    margin: 0.25rem 0.5rem 0rem !important;
     letter-spacing: 0.03rem;
 
     @media (max-width: $breakThou) {

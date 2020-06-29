@@ -12,20 +12,14 @@
 
   .quoteBlock {
     background: darken($accent-red, 10);
-    // margin-bottom: .5em;
-    // padding: .75em 2em 1em;
-    // @include clearfix;
-    // text-align: center;
     display: flex;
     justify-content: center;
-    // align-content: center;
     align-items: center;
     padding: 0.75em 2em 1em;
     text-align: center;
     @include shadow;
 
     @media only screen and (min-device-width: 375px) and (max-device-width: 660px) and (-webkit-min-device-pixel-ratio: 2) {
-      // display: block;
       clear: both;
       margin-top: 0.5em;
       margin-bottom: 0.5em;
@@ -33,26 +27,21 @@
     }
 
     .quotePad {
-      // padding: 0.0em 2em 0em;
       text-align: center !important;
     }
 
     p {
       font-size: 0.9em;
       color: $ivory !important;
-      // text-align: center;
       letter-spacing: 0.05em;
-      font-weight: bold;
       line-height: 1.5em;
       text-align: center;
 
       @media only screen and (min-device-width: 700px) and (max-device-width: $breakThou) {
-        // font-size: 1.5vw;
         font-size: 0.9em;
       }
 
       @media only screen and (min-device-width: 0px) and (max-device-width: 700px) {
-        // font-size: .9vw;
         font-size: 0.9em;
       }
     }

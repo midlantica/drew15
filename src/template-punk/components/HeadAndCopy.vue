@@ -70,7 +70,7 @@
     font-size: 1.4rem;
     background: hsla(0, 100%, 50%, 0.85);
     color: white;
-    font-weight: 700;
+    font-weight: 500;
     padding: 0 0em 0.1em 0.2rem;
     transform: rotate(1deg);
     z-index: 10;

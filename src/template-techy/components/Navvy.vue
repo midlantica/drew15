@@ -258,6 +258,7 @@
           @media (max-width: $breakThree) {
             // margin-bottom: 0em;
             width: 77vw;
+            height: 20vw;
           }
         }
 
@@ -329,7 +330,7 @@
 
       @media (max-width: $breakOne) {
         display: inline;
-        font-size: 4.7vw;
+        font-size: 3.7vw;
         margin-top: -3px;
 
         &:nth-child(1) {
@@ -394,11 +395,11 @@
       }
 
       p {
-        color: transparentize($ivory, .1) !important;
+        // color: transparentize($ivory, .1) !important;
         font-family: $font;
         font-weight: 500;
         letter-spacing: .09em;
-        color: $blueTech;
+        color: $ivory;
         font-size: 1.3em;
         line-height: 2.5em;
         margin-left: 0.5em;

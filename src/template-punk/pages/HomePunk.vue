@@ -78,15 +78,15 @@
   .mainGrid {
     display: grid; // <-- CONTENT GRID
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0.5em;
+    grid-gap: 0.5rem 1rem;
     background: transparent;
     padding: 0em 1em;
     box-shadow: none;
     //
     @media (max-width: $breakThou) {
       grid-template-columns: 1fr;
-      grid-gap: 0em;
-      grid-row-gap: 0.5em;
+      grid-gap: 0.25rem 0em;
+      // grid-row-gap: 0.25em;
       // grid-column: 1 / 3;
       // grid-row: 1;
     }
@@ -103,6 +103,10 @@
   .copyArea {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    // align-content: flex-end;
+    align-self: flex-end;
 
     @media (max-width: $breakThou) {
       grid-column: 1 / 3;

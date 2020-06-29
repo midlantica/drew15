@@ -23,7 +23,7 @@
     align-items: center;
     align-content: center;
     align-self: center;
-    @include shadow;
+    box-shadow: $bourbonShadow;
     @include clearfix;
 
     @media (max-width: $breakFour) {
@@ -133,7 +133,7 @@
   p {
     display: block;
     color: lighten($grey, 15);
-    font-size: 1em;
+    font-size: .9em;
     line-height: 1.4em;
     letter-spacing: 0.05em;
     //

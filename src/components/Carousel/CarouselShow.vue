@@ -83,10 +83,12 @@
   // @import '@/template-bourbon/assets/css/bourbon-main.scss';
   @import '@/assets/css/_template-carousel.scss';
 
+  // $bourbonShadow: 0px 1px 1px 0px hsla(0, 0%, 0%, 0.5);
+
   .projectBox {
     padding: 0.2em 0.3em;
     background: lighten(lightgrey, 10);
-    box-shadow: 0px 2px 2px -3px black;
+    // box-shadow: $bourbonShadow;
     border-radius: 0.25em;
     @include clearfix;
   }
@@ -96,7 +98,15 @@
   }
 
   body.bourbon .projectBox{
-    @include shadow;
+    @include box-shadow(0px, 1px, 1px, 0px, hsla(0, 0%, 0%, 0.5));
+  }
+
+  body.groovy .projectBox {
+    @include box-shadow(0px, 6px, 0px, 0px, hsla(0, 0%, 0%, 0.25));
+  }
+
+  body.techy .projectBox {
+    @include box-shadow(0px, 2px, 2px, -3px, hsla(0, 0%, 0%, 1));
   }
 
   body.corp .projectBox {
@@ -104,14 +114,8 @@
     background: #d7e7f3;
   }
 
-
-  body.groovy .projectBox {
-    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.25);
-  }
-
   body.punk .projectBox {
-    @include shadow;
-    margin-top: 0.5em;
+    @include box-shadow(0px, 1px, 1px, 0px, hsla(0, 0%, 0%, 0.5), false);
   }
 
   // ########################
@@ -159,8 +163,19 @@
     // height: 154.5px !important;
   }
 
+  body.corp .projectBox {
+    @include box-shadow(0px, 1px, 1px, 0px, hsla(0, 0%, 0%, 0.5), false);
+  }
+
   body.corp .VueCarousel.druCarousel {
     box-shadow: none;
+  }
+
+  body.corp .miniGallery a .box {
+    border: none;
+    &:hover {
+      border: none;
+    }
   }
 
   //////////
@@ -174,8 +189,7 @@
     // height: 171px !important;
   }
 
-  //////////
-
+  ///////
   .projectHead {
     font-size: 0.9em;
     text-align: center;

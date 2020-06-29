@@ -1,5 +1,5 @@
 <template>
-  <section class="marT1H marL1H marR2">
+  <section class="">
     <h1 v-html="this.$root.druHead"></h1>
     <p v-html="this.$root.druCopy"></p>
   </section>
@@ -10,27 +10,34 @@
   @import '@/template-techy/assets/css/techy-main.scss';
 
   section {
-    // margin-top: 1em;
-    // padding-top: 0em;
+    margin-top: 1em;
     margin-bottom: 0.5em;
 
-    @media only screen
-    and (min-device-width: 375px)
-    and (max-device-width: 660px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    {
-      // padding-top: 1em;
-      // padding-bottom: 1em;
-      // background: red;
+    @media (min-width: $breakThou) {
+      margin-top: 1.5rem;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
     }
 
-    @media only screen
-    and (min-device-width: 375px)
-    and (max-device-width: 660px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: landscape)
-    {
-      //
+    @media (max-width: $breakThou) {
+      margin-top: 1.5rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+
+    @media (max-width: $breakOne) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    @media (max-width: $breakTwo) {
+      // margin-left: .75rem;
+      // margin-right: .75rem;
+    }
+
+    @media (max-width: $breakThree) {
+      // margin-left: .25rem;
+      // margin-right: .25rem;
     }
   }
 
@@ -61,8 +68,15 @@
     }
   }
 
+  p.smallCaps {
+    // font-family: $font-caps;
+    font-variant: small-caps;
+    font-size: 80%;
+    // font-weight: 500;
+  }
+
   p {
-    font-family: $font-copy;
+    // font-family: $font-copy;
     font-size: 1.125rem;
     line-height: 2.7rem;
     color: transparentize($blueTech, .2);
@@ -122,7 +136,7 @@
       margin: 0.5em 0em 0em;
       // padding-bottom: 1em;
       font-size: 1.18em;
-      padding: 0em 1em 0em;
+      padding: 0em 0em 0em;
       // background: purple;
     }
 

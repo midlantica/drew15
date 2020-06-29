@@ -186,20 +186,24 @@
     p {
       font-family: $font-subhead !important;
       letter-spacing: 0.09em;
+      font-size: 1rem;
 
       &:nth-child(1) {
-        // font-size: 1.44em;
+        font-size: 1.36em;
+        // line-height: 1.5rem;
+        letter-spacing: 0.13rem;
       }
 
       &:nth-child(2) {
         // font-size: 1.05em;
-        letter-spacing: 0.0725em;
+        // line-height: 1.5rem;
+        letter-spacing: 0.075rem;
       }
 
       @media (max-width: $breakOne) {
         justify-content: center;
         font-size: 1.27em !important;
-        letter-spacing: 0.1em !important;
+        letter-spacing: 0.09em !important;
         margin-top: -0.3em;
 
         &:nth-child(1) {

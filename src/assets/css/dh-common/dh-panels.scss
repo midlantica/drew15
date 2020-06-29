@@ -18,7 +18,7 @@
 }
 
 .panel td {
-  color: gray-400;
+  color: $gray-400;
   font-size: 0.9em;
   font-weight: 100;
   margin: 0;
@@ -32,7 +32,7 @@
 }
 
 .panel td:first-of-type {
-  color: gray-400;
+  color: $gray-400;
 }
 
 .panel button {
