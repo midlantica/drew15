@@ -17,7 +17,8 @@
     align-items: center;
     padding: 0.75em 2em 1em;
     text-align: center;
-    @include shadow;
+    border-radius: 2px;
+    @include box-shadow(0px, 1px, 2px, 0px, hsla(0, 0%, 0%, 0.5));
 
     @media only screen and (min-device-width: 375px) and (max-device-width: 660px) and (-webkit-min-device-pixel-ratio: 2) {
       clear: both;

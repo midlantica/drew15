@@ -23,8 +23,8 @@
     align-items: center;
     align-content: center;
     align-self: center;
-    box-shadow: $bourbonShadow;
-    @include clearfix;
+    border-radius: 2px;
+    @include box-shadow(0px, 1px, 2px, 0px, hsla(0, 0%, 0%, 0.5));
 
     @media (max-width: $breakFour) {
       flex-direction: column;

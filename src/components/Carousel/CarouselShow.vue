@@ -97,8 +97,13 @@
     height: 115px;
   }
 
-  body.bourbon .projectBox{
+  body.bourbon .projectBox {
     @include box-shadow(0px, 1px, 1px, 0px, hsla(0, 0%, 0%, 0.5));
+    // background-image: url('../../template-bourbon/assets/img/_paper_bg_01.png');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // width: 78px;
+    // height: 94px;
   }
 
   body.groovy .projectBox {
