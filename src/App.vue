@@ -180,8 +180,6 @@
       }
     }
 
-
-
   }
 
   // #############################
@@ -195,11 +193,11 @@
       width: 100%;
       background: url(/img/bg/circles.svg), url(/img/bg/Drew-punk-back.jpg);
       background-repeat: repeat-y, repeat-y;
-      background-size: 100% 600%, 100% 100%;
+      background-size: 100% 640%, 100% 100%;
       background-position: center center, center center;
 
       @media (max-width: $breakOne) {
-        background-size: 100% 600%, 130% 90%;
+        background-size: 100% 640%, 130% 90%;
         background-position: center center, -3em 0em;
       }
 
