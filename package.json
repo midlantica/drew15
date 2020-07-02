@@ -26,7 +26,6 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-latest": "^6.24.1",
     "css-loader": "^1.0.1",
-    "cssnano": "^4.1.10",
     "eslint": "^7.3.1",
     "eslint-config-prettier": "^6.11.0",
     "eslint-loader": "^4.0.2",
@@ -35,7 +34,6 @@
     "eslint-plugin-vue": "^6.2.2",
     "fibers": "^4.0.3",
     "file-loader": "^2.0.0",
-    "mini-css-extract-plugin": "^0.9.0",
     "postcss-loader": "^3.0.0",
     "prettier": "2.0.5",
     "purgecss": "^2.3.0",
@@ -43,7 +41,7 @@
     "sass": "^1.26.9",
     "sass-loader": "^8.0.2",
     "vue-carousel": "^0.13.1",
-    "vue-template-compiler": "^2.6.10",
+    "vue-template-compiler": "^2.6.11",
     "webpack": "^4.43.0"
   },
   "browserslist": {
@@ -57,8 +55,5 @@
       "last 2 versions",
       "not ie <= 10"
     ]
-  },
-  "prettier": {
-    "singleQuote": true
   }
 }
