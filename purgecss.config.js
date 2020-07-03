@@ -1,10 +1,10 @@
 module.exports = {
   content: [
-    './src/index.html',
-    './src/**/*.vue',
-    './src/**/*.js'
+    './dist/index.html',
+    './dist/**/*.vue',
+    './dist/**/*.js'
   ],
   css: [
-    './assets/css/**/*.scss'
+    './dist/css/**/*.css'
   ]
 }

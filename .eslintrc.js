@@ -34,7 +34,7 @@ module.exports = {
     quotes: ['error', 'single', 'avoid-escape'],
     quotes: ['error', 'single'],
     semi: ['error', 'never'],
-    // 'prettier/prettier': ['error', { singleQuote: true, parser: 'flow' }],
+    'prettier/prettier': ['error', { singleQuote: true, parser: 'flow' }],
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
   },
 };

@@ -29,12 +29,12 @@ module.exports = {
         ]),
         extractors: [
           {
-            // extractor: class TailwindExtractor {
-            //   static extract(content) {
-            //     return content.match(/[A-z0-9-_:\/]+/g) || [];
-            //   }
-            // },
-            // extensions: ['html', 'vue', 'js'],
+            extractor: class {
+              static extract(content) {
+                return content.match(/[A-z0-9-_:\/]+/g) || [];
+              }
+            },
+            extensions: ['html', 'vue', 'js'],
           },
         ],
       })
