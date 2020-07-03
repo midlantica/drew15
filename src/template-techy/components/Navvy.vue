@@ -47,7 +47,7 @@
 </script>
 
 <style lang="scss" scoped>
-  @import '@/assets/css/main.scss';
+  // @import '@/assets/css/main.scss';
   @import '@/template-techy/assets/css/techy-main.scss';
 
   nav {
