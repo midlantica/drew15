@@ -5,9 +5,9 @@
 // https://webpack.js.org/loaders/sass-loader/
 // CSS source maps only work on Chrome
 
-const PurgecssPlugin = require('purgecss-webpack-plugin')
-const glob = require('glob-all')
-const path = require('path')
+// const PurgecssPlugin = require('purgecss-webpack-plugin')
+// const glob = require('glob-all')
+// const path = require('path')
 
 module.exports = {
   css: {

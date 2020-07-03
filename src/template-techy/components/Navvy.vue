@@ -59,45 +59,31 @@
     align-items: center;
     align-content: center;
     flex-grow: 1;
-    // padding: .5em 1.25em;
 
     @media (max-width: $breakOne) {
-      // justify-content: center;
+      //
     }
-
   }
 
   nav .mastMain {
     width: 100%;
-    // display: grid;
-    // grid-auto-flow: column;
-    // grid-gap: 1em;
     background: $mango;
 
     @media (max-width: $breakOne) {
-      // flex-grow: 1;
-      // width: 70%;
+      //
     }
 
     @media (max-width: $breakTwo) {
-      // flex-grow: 1;
-      // flex-wrap: wrap;
-      // justify-content: center;
-      // align-content: center;
-      // align-items: center;
-      // width: 100%;
+      //
     }
 
     .masty {
-      // @include clearfix;
       margin: 0 auto;
       text-align: center;
 
       .DHmast {
-        // display: block;
         display: grid;
         grid-template-columns: 2fr 4fr 7fr;
-        // grid-template-rows: auto;
         grid-gap: 2em;
         align-items: center;
         margin: 0 auto;
@@ -129,22 +115,20 @@
           padding-top: 1em;
         }
 
-        ////
         a.drewHeadPic {
-          width: 120px;
-          height: 144px;
+          width: 92px;
+          height: 109px;
           padding: 1em 1em 0em 1em;
           background-image: url(/img/drew_mug_dig.png);
           background-repeat: no-repeat;
           background-size: cover;
-          // margin: 1em 0em 0em 0em;
           grid-column: 1 / 2;
           grid-row: 1 / 3;
           justify-self: end;
 
           @media (max-width: $breakThou) {
-            width: 106px;
-            height: 127px;
+            width: 92px;
+            // height: 109px;
             grid-column: 1 / 2;
             grid-row: 1 / 2;
             margin: 0 .5em 0 0;
@@ -157,10 +141,8 @@
           }
 
           @media (max-width: $breakThree) {
-            // width: 70px;
-            width: 55px;
-            // height: 86px;
-            height: 66px;
+            width: 63px;
+            height: 74px;
             margin: 0;
           }
 
@@ -172,16 +154,13 @@
             width: 65px !important;
             height: 77px !important;
             margin: 0em;
-            // background: red;
           }
 
           @media (max-width: $breakFour) {
-            width: 55px !important;
-            height: 66px !important;
+            width: 39px !important;
+            height: 46px !important;
             margin: 0em;
           }
-
-
 
         }
 
@@ -242,34 +221,25 @@
           }
 
           @media (max-width: $breakOne) {
-            // width: 45vw;
-            // height: 17vh;
-            // margin-top: 1em;
+            //
           }
 
           @media (max-width: $breakTwo) {
-            // width: 86vw;
-            // height: 20vh;
-            // margin-top: -1.5em;
             margin-left: 0;
             margin-top: 0;
           }
 
           @media (max-width: $breakThree) {
-            // margin-bottom: 0em;
             width: 77vw;
             height: 20vw;
           }
         }
-
       }
-
     }
-
   }
 
   nav .jobDesc {
-    margin: -2em 0em 1em 11.1em;
+    margin: -1em 0em 1em 11.1em;
     // text-align: center;
     // margin-top: -1em;
     // @include clearfix;
@@ -311,7 +281,7 @@
       }
 
       &:nth-child(2) {
-        // font-size: 1.75em;
+        //
       }
 
       @media (max-width: $breakThou) {
@@ -345,29 +315,19 @@
       @media (max-width: $breakTwo) {
         font-size: 5.8vw;
       }
-
     }
   }
 
   nav .bar {
-    // width: 100%;
     padding: 0.5vh 1em;
     background: $blueTech;
     color: $ivory;
     grid-column: 1 / 3;
     grid-row: 3 / 4;
-    //
 
     .contact {
-      // font-family: Dosis;
       font-weight: 400;
       color: $ivory;
-      // text-transform: uppercase;
-      // margin-top: 0.2em;
-      // margin-left: 1em;
-      // margin-bottom: 4px;
-      // line-height: 1.25em;
-      //
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -379,7 +339,6 @@
 
       @media (max-width: 1024px) {
         width: 100%;
-        // margin-left: 0;
       }
 
       @media (max-width: $breakOne) {
@@ -395,7 +354,6 @@
       }
 
       p {
-        // color: transparentize($ivory, .1) !important;
         font-family: $font;
         font-weight: 500;
         letter-spacing: .09em;
@@ -418,40 +376,32 @@
         }
 
         &:nth-child(2) {
-          // margin-left: .5em;
+          //
         }
 
         @media (max-width: $breakOne) {
           justify-content: center;
           font-size: 1.2em !important;
           letter-spacing: .1em !important;
-          // background: red;
-          // margin-top: -.3em;
 
           &:nth-child(1) {
-            // float: left;
-            // clear: left;
-            // margin-right: .5em;
+            //
           }
 
           &:nth-child(2) {
-            // float: left;
-
+            //
           }
         }
 
         @media (max-width: $breakTwo) {
-          // font-size: .87em !important;
           letter-spacing: 0.09em !important;
-          // background: red;
 
           &:nth-child(1) {
-            // color: lightgrey;
+            //
           }
 
           &:nth-child(2) {
-            // color: lightgrey;
-            // margin-left: 0.5em;
+            //
           }
         }
 
@@ -460,24 +410,16 @@
           font-size: 1.1em !important;
           letter-spacing: 0.07em !important;
           line-height: 2em;
-          // margin-bottom: -4px;
           text-align: center;
-          // background: red;
 
           &:nth-child(1) {
-            // float: initial;
-            // clear: initial;
-            // margin-right: 0em;
+            //
           }
 
           &:nth-child(2) {
-            // float: initial;
-            // font-size: 1.25em !important;
-            // line-height: 1.6em;
-
+            //
           }
         }
-
       }
     }
   }
