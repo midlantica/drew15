@@ -14,7 +14,7 @@
       Tabs,
     },
     async mounted() {
-      const purgecss = await new PurgeCSS().purge('./purgecss.config.js')
+      const purgecss = await new PurgeCSS()
     },
     name: 'App',
     metaInfo: {
