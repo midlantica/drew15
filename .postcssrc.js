@@ -1,6 +1,8 @@
+const purgecss = require('@fullhuman/postcss-purgecss')
+
 module.exports = {
   plugins: [
-    require('@fullhuman/postcss-purgecss')({
+    purgecss({
       content: ['dist/index.html', '**/*.vue'],
       css: ['dist/css/**/*.css'],
       defaultExtractor (content) {
@@ -9,10 +11,8 @@ module.exports = {
       },
       whitelist: [],
       whitelistPatterns: [
-        /-(leave|enter|appear)(|-(to|from|active))$/,
-        /^(?!(|.*?:)cursor-move).+-move$/,
-        /^router-link(|-exact)-active$/,
-        /data-v-.*/]
+        /-(leave|enter|appear)(|-(to|from|active))$/,/^(?!(|.*?:)cursor-move).+-move$/,/^router-link(|-exact)-active$/,/data-v-.*/
+      ]
     })
   ]
 }
