@@ -50,6 +50,7 @@
   // @import '@/assets/css/main.scss';
   @import '@/template-techy/assets/css/techy-main.scss';
 
+  /* purgecss start ignore */
   nav {
     width: 100%;
     display: flex;
@@ -424,6 +425,7 @@
     }
   }
 
+  /* purgecss end ignore */
 
 
 </style>
