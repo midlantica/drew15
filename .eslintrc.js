@@ -36,6 +36,12 @@ module.exports = {
     semi: ['error', 'never'],
     'prettier/prettier': ['error', { singleQuote: true, parser: 'flow' }],
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-    'space-before-function-paren': ['error', 'never'],
+    // 'space-before-function-paren': ['error', 'never'],
+    'space-before-function-paren': 'error',
+    'space-before-function-paren': ['error', {
+      'anonymous': 'never',
+      'named': 'never',
+      'asyncArrow': 'ignore'
+    }],
   },
 };
