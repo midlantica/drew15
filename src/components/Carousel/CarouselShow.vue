@@ -88,7 +88,6 @@
   .projectBox {
     padding: 0.2em 0.3em;
     background: lighten(lightgrey, 10);
-    // box-shadow: $bourbonShadow;
     border-radius: 0.25em;
     @include clearfix;
   }
@@ -103,24 +102,105 @@
     // background-repeat: no-repeat;
     // background-size: cover;
     // width: 78px;
-    // height: 94px;
+    // height: 101px;
+    min-height: 386px;
+
+    @media (max-width: $breakThou) {
+      min-height: initial;
+    }
+
+    @media (max-width: $breakOne) {
+      //
+    }
+
+    @media (max-width: $breakTwo) {
+      //
+    }
+
+    @media (max-width: $breakThree) {
+      //
+    }
   }
 
   body.groovy .projectBox {
     @include box-shadow(0px, 6px, 0px, 0px, hsla(0, 0%, 0%, 0.25));
+
+    @media (max-width: $breakThou) {
+      min-height: initial;
+    }
+
+    @media (max-width: $breakOne) {
+      //
+    }
+
+    @media (max-width: $breakTwo) {
+      //
+    }
+
+    @media (max-width: $breakThree) {
+      //
+    }
   }
 
   body.techy .projectBox {
     @include box-shadow(0px, 2px, 2px, -3px, hsla(0, 0%, 0%, 1));
+
+    @media (max-width: $breakThou) {
+      min-height: initial;
+    }
+
+    @media (max-width: $breakOne) {
+      //
+    }
+
+    @media (max-width: $breakTwo) {
+      //
+    }
+
+    @media (max-width: $breakThree) {
+      //
+    }
   }
 
   body.corp .projectBox {
-    @include box-shadow(0px, 0px, 3px, -1px, hsla(0, 0%, 0%, 0.5));
+    @include box-shadow(0px, 1px, 1px, 0px, hsla(0, 0%, 0%, 0.5), false);
+
+    @media (max-width: $breakThou) {
+      min-height: initial;
+    }
+
+    @media (max-width: $breakOne) {
+      //
+    }
+
+    @media (max-width: $breakTwo) {
+      //
+    }
+
+    @media (max-width: $breakThree) {
+      //
+    }
     background: #d7e7f3;
   }
 
   body.punk .projectBox {
     @include box-shadow(0px, 1px, 1px, 0px, hsla(0, 0%, 0%, 0.5), false);
+
+    @media (max-width: $breakThou) {
+      min-height: initial;
+    }
+
+    @media (max-width: $breakOne) {
+      //
+    }
+
+    @media (max-width: $breakTwo) {
+      //
+    }
+
+    @media (max-width: $breakThree) {
+      //
+    }
   }
 
   // ########################
@@ -131,7 +211,7 @@
   }
 
   body.bourbon .box {
-    // height: 115px;
+    height: 115px !important;
   }
 
   //////////
@@ -166,10 +246,6 @@
 
   body.corp .box {
     // height: 154.5px !important;
-  }
-
-  body.corp .projectBox {
-    @include box-shadow(0px, 1px, 1px, 0px, hsla(0, 0%, 0%, 0.5), false);
   }
 
   body.corp .VueCarousel.druCarousel {
@@ -262,7 +338,7 @@
         text-align: center;
         // box-shadow: 1px 1px 0 -1px rgba(0, 0, 0, 0.5);
         margin: 0.25em 0.25em;
-        height: 115px;
+        height: 90%;
         box-shadow: 0px 2px 2px -3px black;
         background: lighten(lightgrey, 15);
         display: flex;
