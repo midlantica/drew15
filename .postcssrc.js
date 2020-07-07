@@ -4,7 +4,7 @@ module.exports = {
   plugins: [
     purgecss({
       content: [
-        './public/**/*.html',
+        './public/index.html',
         './src/**/*.vue'
       ],
       css: ['./src/**/*.css'],

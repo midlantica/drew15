@@ -32,9 +32,10 @@ module.exports = {
     // 'vue/script-indent': ['error', 2, { baseIndent: 1 }],
     'generator-star-spacing': 0,
     quotes: ['error', 'single', 'avoid-escape'],
-    quotes: ['error', 'single'],
+    // quotes: ['error', 'single'],
     semi: ['error', 'never'],
     'prettier/prettier': ['error', { singleQuote: true, parser: 'flow' }],
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    'space-before-function-paren': ['error', 'never'],
   },
 };
