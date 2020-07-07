@@ -82,8 +82,8 @@
 
   p {
     font-family: $font-copy !important;
-    font-size: .95rem;
-    line-height: 2rem;
+    font-size: 1.15rem;
+    line-height: 2.6rem;
     color: $grey;
     margin: 0.25rem 0.5rem 0rem !important;
     letter-spacing: 0.03rem;

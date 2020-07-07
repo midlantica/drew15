@@ -143,6 +143,22 @@
     align-self: center;
     text-align: left;
 
+    @media (max-width: $breakThou) {
+      font-size: 1rem;
+    }
+
+    @media (max-width: $breakOne) {
+      // font-size: 1rem;
+    }
+
+    @media (max-width: $breakTwo) {
+      // font-size: 1rem;
+    }
+
+    @media (max-width: $breakThree) {
+      // font-size: 1rem;
+    }
+
     @media (max-width: $breakFour) {
       text-align: center;
     }
@@ -165,15 +181,15 @@
     //
     p {
       font-family: Alegreya, 'Times New Roman', Times, serif !important;
-      font-size: 0.9rem;
+      font-size: 1rem;
       letter-spacing: .001rem;
       line-height: 1.4rem;
       margin: 0;
       font-weight: 500;
 
       @media (max-width: $breakThou) {
-        // font-size: 1.65vw;
-        // color: red;
+        font-size: 1.15rem;
+        line-height: 1.75rem;
       }
 
       @media (max-width: $breakOne) {
@@ -189,8 +205,6 @@
       }
     }
   }
-
-
 
 </style>
 

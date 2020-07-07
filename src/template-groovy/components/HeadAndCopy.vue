@@ -38,8 +38,8 @@
     // font-family: $font-copy !important;
     font-family: $font-head;
     text-transform: initial;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
     font-weight: 600;
     letter-spacing: 0.00rem;
     margin-bottom:.5rem;
@@ -84,7 +84,7 @@
     // font-family: $font-copy !important;
     font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     color: $grey;
-    font-size: 1rem;
+    font-size: 1.125rem;
     letter-spacing: 0.009rem;
     line-height: 2.25rem;
 

@@ -83,8 +83,6 @@
   // @import '@/template-bourbon/assets/css/bourbon-main.scss';
   @import '@/assets/css/_template-carousel.scss';
 
-  // $bourbonShadow: 0px 1px 1px 0px hsla(0, 0%, 0%, 0.5);
-
   .projectBox {
     padding: 0.2em 0.3em;
     background: lighten(lightgrey, 10);
@@ -211,33 +209,35 @@
   }
 
   body.bourbon .box {
-    height: 115px !important;
+    height: 170px !important;
+    // height: 20vh !important;
+
+    @media (max-width: $breakThou) {
+      min-height: initial;
+    }
   }
 
   //////////
-
   body.groovy .projectHead,
   body.groovy .box p {
     font-family: Dosis, 'Helvetica Neue', Arial, sans-serif !important;
   }
 
   body.groovy .box {
-    height: 136px !important;
+    height: 158.25px !important;
   }
 
   //////////
-
   body.techy .projectHead,
   body.techy .box p {
     font-family: Dosis, 'Helvetica Neue', Arial, sans-serif !important;
   }
 
   body.techy .box {
-    // height: 159px !important;
+    height: 159px !important;
   }
 
   //////////
-
   body.corp .projectHead,
   body.corp .box p {
     font-family: cormorantGaramond-Semi-Bold, 'Times New Roman', Times, serif !important;
@@ -245,7 +245,7 @@
   }
 
   body.corp .box {
-    // height: 154.5px !important;
+    height: 154.5px !important;
   }
 
   body.corp .VueCarousel.druCarousel {
@@ -260,14 +260,13 @@
   }
 
   //////////
-
   body.punk .projectHead,
   body.punk .box p {
     font-family: Poppins, 'Helvetica Neue', Arial, sans-serif !important;
   }
 
   body.punk .box {
-    // height: 171px !important;
+    height: 169.5px !important;
   }
 
   ///////
@@ -309,7 +308,6 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    // transition-property: background-color;
     transition-duration: 1s;
     width: 100%;
 
@@ -333,12 +331,10 @@
       }
 
       .box {
-        // justify-content: center;
         flex-direction: column;
         text-align: center;
-        // box-shadow: 1px 1px 0 -1px rgba(0, 0, 0, 0.5);
         margin: 0.25em 0.25em;
-        height: 90%;
+        // height: 20vh !important;
         box-shadow: 0px 2px 2px -3px black;
         background: lighten(lightgrey, 15);
         display: flex;
@@ -346,7 +342,7 @@
         align-items: flex-end;
 
         @media (max-width: $breakThou) {
-          height: 10vh !important;
+          // height: 10vh !important;
         }
 
         &:hover {
@@ -363,12 +359,9 @@
           border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
-            background: url(/img/carousel/car-icon-uiux.svg) no-repeat center
-              center;
+            background: url(/img/carousel/car-icon-uiux.svg) no-repeat center center;
             background-color: lighten(lightgrey, 10);
-            // transition-property: background-color;
             transition-duration: 0.5s;
-            // background-color: lighten(lightgrey, 25);
             background-size: 75% 75%;
             background-position: center 2px;
             border: 1px solid transparentize(grey, 0.5);
@@ -389,12 +382,9 @@
           border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
-            background: url(/img/carousel/car-icon-mobile.svg) no-repeat center
-              center;
+            background: url(/img/carousel/car-icon-mobile.svg) no-repeat center center;
             background-color: lighten(lightgrey, 10);
-            // transition-property: background-color;
             transition-duration: 0.5s;
-            // background-color: lighten(lightgrey, 25);
             background-size: 75% 75%;
             background-position: center 2px;
             border: 1px solid transparentize(grey, 0.5);
@@ -407,20 +397,16 @@
         }
 
         &.Kiosk {
-          background: url(/img/carousel/car-icon-kiosk.svg) no-repeat center
-            center;
+          background: url(/img/carousel/car-icon-kiosk.svg) no-repeat center center;
           background-color: lighten(lightgrey, 15);
           background-size: 75% 75%;
           background-position: center 4px;
           border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
-            background: url(/img/carousel/car-icon-kiosk.svg) no-repeat center
-              center;
+            background: url(/img/carousel/car-icon-kiosk.svg) no-repeat center center;
             background-color: lighten(lightgrey, 10);
-            // transition-property: background-color;
             transition-duration: 0.5s;
-            // background-color: lighten(lightgrey, 25);
             background-size: 75% 75%;
             background-position: center 2px;
             border: 1px solid transparentize(grey, 0.5);
@@ -433,20 +419,16 @@
         }
 
         &.Graphics {
-          background: url(/img/carousel/car-icon-graphics.svg) no-repeat center
-            center;
+          background: url(/img/carousel/car-icon-graphics.svg) no-repeat center center;
           background-color: lighten(lightgrey, 15);
           background-size: 75% 75%;
           background-position: center 4px;
           border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
-            background: url(/img/carousel/car-icon-graphics.svg) no-repeat center
-              center;
+            background: url(/img/carousel/car-icon-graphics.svg) no-repeat center center;
             background-color: lighten(lightgrey, 10);
-            // transition-property: background-color;
             transition-duration: 0.5s;
-            // background-color: lighten(lightgrey, 25);
             background-size: 75% 75%;
             background-position: center 2px;
             border: 1px solid transparentize(grey, 0.5);
@@ -459,20 +441,16 @@
         }
 
         &.Print {
-          background: url(/img/carousel/car-icon-print.svg) no-repeat center
-            center;
+          background: url(/img/carousel/car-icon-print.svg) no-repeat center center;
           background-color: lighten(lightgrey, 15);
           background-size: 75% 75%;
           background-position: center 4px;
           border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
-            background: url(/img/carousel/car-icon-print.svg) no-repeat center
-              center;
+            background: url(/img/carousel/car-icon-print.svg) no-repeat center center;
             background-color: lighten(lightgrey, 10);
-            // transition-property: background-color;
             transition-duration: 0.5s;
-            // background-color: lighten(lightgrey, 25);
             background-size: 75% 75%;
             background-position: center 2px;
             border: 1px solid transparentize(grey, 0.5);
@@ -492,12 +470,9 @@
           border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
-            background: url(/img/carousel/car-icon-misc.svg) no-repeat center
-              center;
+            background: url(/img/carousel/car-icon-misc.svg) no-repeat center center;
             background-color: lighten(lightgrey, 10);
-            // transition-property: background-color;
             transition-duration: 0.5s;
-            // background-color: lighten(lightgrey, 25);
             background-size: 75% 75%;
             background-position: center 2px;
             border: 1px solid transparentize(grey, 0.5);
@@ -523,7 +498,7 @@
           }
 
           @media (max-width: $breakThou) {
-            margin-bottom: 0em;
+            margin-bottom: 1rem;
           }
         }
       }
