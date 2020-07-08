@@ -75,7 +75,6 @@
 </template>
 
 <style lang="scss" scoped>
-  @import '@/assets/css/main.scss';
 
   .flexContainer {
     width: 100%;

@@ -42,10 +42,7 @@
 </script>
 
 <style lang="scss" scoped>
-  @import '@/assets/css/main.scss';
-  @import '@/template-groovy/assets/css/groovy-main.scss';
-
-  $break860: 860px;
+  // @import '@/template-groovy/assets/css/groovy-main.scss';
 
   header {
     // grid-column: 1 / 4;
@@ -80,11 +77,6 @@
     @media (max-width: $breakThou) {
       // grid-column: span 1;
       // grid-row: 5;
-    }
-
-    @media (max-width: $break860) {
-      // grid-column: span 1;
-      // grid-row: 6;
     }
 
   }

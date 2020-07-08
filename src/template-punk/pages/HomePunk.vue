@@ -63,9 +63,7 @@
 </script>
 
 <style lang="scss" scoped>
-  @import '@/assets/css/main.scss';
   @import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i');
-  @import '@/assets/css/main.scss';
   @import '@/template-punk/assets/css/punk-main.scss';
 
   header,

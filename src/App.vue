@@ -82,6 +82,10 @@
       h1 {
         font-size: 1.75em;
         padding-top: 1em;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        font-family: "VeneerTwo", Helvetica, Arial, sans-serif;
+        font-weight: 300;
       }
     }
 
@@ -135,6 +139,19 @@
       // font-weight: bold !important;
     }
 
+    &.extras .flexContainer {
+      //
+      h1 {
+        font-size: 1.75em;
+        padding-top: 1em;
+        font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-weight: 300;
+      }
+      p {
+        font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-size: 1em !important;
+      }
+    }
   }
 
   // #############################
@@ -189,6 +206,20 @@
       // font-weight: bold !important;
     }
 
+    &.extras .flexContainer {
+      //
+      h1 {
+        font-size: 1.75em;
+        padding-top: 1em;
+        font-family: Dosis, "Helvetica Neue", Arial, sans-serif !important;
+        font-weight: 300;
+      }
+      p {
+        font-family: Dosis, "Helvetica Neue", Arial, sans-serif !important;
+        font-size: 1em !important;
+      }
+    }
+
   }
 
   // #############################
@@ -215,6 +246,22 @@
       letter-spacing: 0.03rem;
       // color: red !important;
       // font-weight: bold !important;
+    }
+
+    &.extras .flexContainer {
+      //
+      h1 {
+        font-size: 1.75em;
+        padding-top: 1em;
+        font-family: Alegreya, "Times New Roman", Times, serif !important;
+        font-weight: 300;
+        color: #01487F !important;
+      }
+
+      p {
+        font-family: Alegreya, "Times New Roman", Times, serif !important;
+        font-size: 1em;
+      }
     }
 
   }
@@ -279,13 +326,18 @@
     &.extras .flexContainer {
       //
       h1 {
-        font-family: Helvetica !important;
-        font-size: 1.5em;
-        color: lighten(black, 20);
+        font-size: 1.75em;
         padding-top: 1em;
-        text-transform: capitalize;
+        font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-weight: 300;
+        // color: #01487F !important;
+      }
+
+      p {
+        font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
       }
     }
+
 
     .smallCaps {
       // font-family: $font-caps;

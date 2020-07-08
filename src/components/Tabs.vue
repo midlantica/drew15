@@ -9,7 +9,6 @@
 </template>
 
 <style lang="scss" scoped>
-  @import '../assets/css/main.scss';
 
   .tabs {
     display: flex;

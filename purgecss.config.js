@@ -1,10 +1,7 @@
 module.exports = {
   content: [
-    'dist/index.html',
-    'dist/js/*.js'
-  ],
-  css: [
-    'dist/css/*.css'
+    './public/**/*.html',
+    './src/**/*.vue'
   ],
   defaultExtractor (content) {
     const contentWithoutStyleBlocks = content.replace(/<style[^]+?<\/style>/gi, '')
