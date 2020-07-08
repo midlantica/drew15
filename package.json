@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build && npm run purgecss",
+    "build": "vue-cli-service build",
     "purgecss": "purgecss --config purgecss.config.js --output dist/css/"
   },
   "dependencies": {
