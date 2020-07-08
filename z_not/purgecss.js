@@ -1,8 +1,11 @@
-module.exports = {
+import Purgecss from 'purgecss'
+
+let purgecss = new Purgecss({
   content: [
     './public/**/*.html',
     './src/**/*.vue'
   ],
+  css: ['dist/**/*.css'],
   defaultExtractor (content) {
     const contentWithoutStyleBlocks = content.replace(/<style[^]+?<\/style>/gi, '')
     return contentWithoutStyleBlocks.match(/[A-Za-z0-9-_/:]*[A-Za-z0-9-_/]+/g) || []
@@ -14,4 +17,6 @@ module.exports = {
     /^router-link(|-exact)-active$/,
     /data-v-.*/
   ]
-}
+})
+
+var purgecssResult = purgecss.purge()
