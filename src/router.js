@@ -1,5 +1,6 @@
 import Vue from 'vue'
-import Router from 'vue-router'
+import VueRouter from 'vue-router'
+
 //
 import HomeBourbon from '@/template-bourbon/pages/HomeBourbon.vue'
 import HomeGroovy from '@/template-groovy/pages/HomeGroovy.vue'
@@ -8,10 +9,10 @@ import HomeCorp from '@/template-corp/pages/HomeCorp.vue'
 import HomePunk from '@/template-punk/pages/HomePunk.vue'
 import Meta from 'vue-meta'
 
-Vue.use(Router)
+Vue.use(VueRouter)
 Vue.use(Meta)
 
-export default new Router({
+export default new VueRouter({
   mode: 'history',
   routes: [
     {
