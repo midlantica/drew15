@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-//
 import HomeBourbon from '@/template-bourbon/pages/HomeBourbon.vue'
 import HomeGroovy from '@/template-groovy/pages/HomeGroovy.vue'
 import HomeTechy from '@/template-techy/pages/HomeTechy.vue'
