@@ -1,7 +1,6 @@
 // SETTINGS
 @import '_colors.scss';
 @import 'dh-common/_dh-main.scss';
-@import 'utilities/_Autilities_base.scss';
 
 // BREAKPOINTS
 $breakThou: 1024px;
@@ -24,11 +23,5 @@ html, html a {
   font-size: 1em;
   // line-height: 1.4;
 }
-
-// .smallCaps {
-//   font-variant: small-caps;
-//   font-size: 85%;
-//   font-weight: 500;
-// }
 
 $bourbonShadow: 0px 1px 1px 0px hsla(0, 0%, 0%, 0.5);

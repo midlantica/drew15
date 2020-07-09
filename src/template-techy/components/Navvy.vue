@@ -14,7 +14,7 @@
           </router-link>
         </div>
 
-        <div class="jobDesc block text-align-left">
+        <div class="jobDesc block">
           <h2>ui/ux designer +</h2>
           <h2 class="marLH">front&nbsp;end&nbsp;dev</h2>
         </div>
@@ -243,6 +243,7 @@
     // text-align: center;
     // margin-top: -1em;
     // @include clearfix;
+    text-align: left;
 
     @media (max-width: $breakThou) {
       margin: 1em 0em;
@@ -251,6 +252,7 @@
 
     @media (max-width: $breakOne) {
       margin: 0rem 0rem 1rem;
+      text-align: center;
     }
 
     @media (max-width: $breakTwo) {

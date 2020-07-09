@@ -13,7 +13,7 @@
 
   .about {
     background: #fbf3bb;
-    padding: 0.8em 1.1em 0.8em 1.1em;
+    padding: 0.75rem 1.1rem .75rem 1.1rem;
     // display: block;
     display: flex;
     flex-direction: row;

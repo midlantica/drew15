@@ -58,6 +58,7 @@
     .about > p {
       font-family: 'AmericanTypewriterStd-Med';
       font-size: 0.85em;
+      margin: 0.25rem auto;
 
       @media (max-width: $breakThou) {
         font-size: 1.65vw;
@@ -184,11 +185,11 @@
     }
 
     .about {
-      top: -.25rem;
-      position: relative;
+      // top: -.25rem;
+      // position: relative;
 
       p {
-        margin: 0.5rem auto;
+        margin: 0rem auto;
       }
     }
 

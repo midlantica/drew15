@@ -66,7 +66,7 @@
   .mainGrid {
     display: grid;
     grid-template-columns: 7fr 6fr;
-    grid-row-gap: 1em;
+    grid-gap: 1rem 1rem;
     background: $ivory;
     padding: 0 1em 0.5em;
     // width: 100%;

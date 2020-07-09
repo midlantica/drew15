@@ -15,7 +15,7 @@
   $breakThree: 530px;
 
   section {
-    margin: 3rem 1.5rem 0rem;
+    margin: 3rem 2.5rem 0rem 1.75rem;
 
     @media (max-width: $breakThou) {
       // margin-top: 2.4em;
@@ -86,7 +86,7 @@
     color: $grey;
     font-size: 1.125rem;
     letter-spacing: 0.009rem;
-    line-height: 2.25rem;
+    line-height: 2.4rem;
 
     @media (max-width: $breakThou) {
       columns: 2 200px;

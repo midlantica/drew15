@@ -10,13 +10,12 @@
   @import '@/template-techy/assets/css/techy-main.scss';
 
   section {
-    margin-top: 1em;
-    margin-bottom: 0.5em;
+    margin: 2rem 1.85rem 0rem 2.25rem;
 
     @media (min-width: $breakThou) {
-      margin-top: 1.5rem;
-      margin-left: 1.5rem;
-      margin-right: 1.5rem;
+      // margin-top: 1.5rem;
+      // margin-left: 1.5rem;
+      // margin-right: 1.5rem;
     }
 
     @media (max-width: $breakThou) {
@@ -45,7 +44,8 @@
     font-weight: 600;
     text-transform: initial;
     line-height: 2rem;
-    font-size: 1.65rem;
+    font-size: 1.5rem;
+    margin-bottom: .85rem;
     color: $blueTech;
 
     @media (min-width: $breakThou) {
@@ -78,8 +78,8 @@
 
   p {
     // font-family: $font-copy;
-    font-size: 1.25rem;
-    line-height: 2.7rem;
+    font-size: 1.3rem;
+    line-height: 2.85rem;
     color: transparentize($blueTech, .2);
     letter-spacing: 0.06em;
 
