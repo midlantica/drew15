@@ -3,8 +3,8 @@ import App from './App.vue'
 import router from './router'
 import './registerServiceWorker'
 
-import './template-bourbon/assets/css/fonts/Veneer/veneer.css'
-import './template-bourbon/assets/css/fonts/AmericanTypewriter/AmericanTypewriter.css'
+// import 'template-bourbon/assets/css/fonts/Veneer/veneer.css'
+// import 'template-bourbon/assets/css/fonts/AmericanTypewriter/AmericanTypewriter.css'
 
 Vue.config.productionTip = false
 
