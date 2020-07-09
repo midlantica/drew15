@@ -42,7 +42,7 @@
 </script>
 
 <style lang="scss" scoped>
-  // @import '@/template-groovy/assets/css/groovy-main.scss';
+  @import '@/template-groovy/assets/css/groovy-main.scss';
 
   header {
     // grid-column: 1 / 4;
@@ -60,16 +60,16 @@
     height: 160px;
     color: $ivory;
     background: linear-gradient(
-      // 0 - 25%
+      /* // 0 - 25% */
       $groovy-aqua 0%,
       $groovy-aqua 25%,
-      // 25% - 50%
+      /* // 25% - 50% */
       $groovy-yellow 25%,
       $groovy-yellow 50%,
-      // 50% - 75%
+      /* // 50% - 75% */
       $groovy-orange 50%,
       $groovy-orange 75%,
-      // 75% - 100%
+      /* // 75% - 100% */
       $groovy-red 75%,
       $groovy-red 100%
     );

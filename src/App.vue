@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class='wrapper'>
     <Tabs />
     <router-view />
   </div>
@@ -7,20 +7,13 @@
 
 <script>
   import Tabs from '@/components/Tabs.vue'
-  // import MY_JSON from './assets/data.json'
   export default {
-    // myJson: MY_JSON,
     components: {
       Tabs,
     },
-    async mounted() {
-      const purgecss = await new PurgeCSS()
-    },
     name: 'App',
     metaInfo: {
-      // if no subcomponents specify a metaInfo.title, this title will be used
       title: 'Drew Harper',
-      // all titles will be injected into this template
       titleTemplate: '%s - UI/UX Designer, Graphic Designer',
     },
   }
@@ -46,7 +39,7 @@
       background: url(./template-bourbon/assets/img/bg/graphy_2.png) repeat;
 
       @media (max-width: $breakOne) {
-        // background-size: 110% 50%;
+        //
       }
 
       header,
@@ -62,7 +55,6 @@
 
       @media (max-width: $breakThou) {
         font-size: 1.65vw;
-        // color: red;
       }
 
       @media (max-width: $breakOne) {
@@ -85,18 +77,15 @@
         padding-top: 1em;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
-        font-family: "VeneerTwo", Helvetica, Arial, sans-serif;
+        font-family: 'VeneerTwo', Helvetica, Arial, sans-serif;
         font-weight: 300;
       }
     }
 
     .smallCaps {
-      // font-family: $font-caps;
       font-variant: small-caps !important;
       font-size: 90% !important;
       letter-spacing: 0.05rem;
-      // color: red !important;
-      // font-weight: bold !important;
     }
   }
 
@@ -136,8 +125,6 @@
       font-variant: small-caps !important;
       font-size: 87.5% !important;
       letter-spacing: 0.05rem;
-      // color: red !important;
-      // font-weight: bold !important;
     }
 
     &.extras .flexContainer {
@@ -145,11 +132,11 @@
       h1 {
         font-size: 1.75em;
         padding-top: 1em;
-        font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
         font-weight: 300;
       }
       p {
-        font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
         font-size: 1em !important;
       }
     }
@@ -169,7 +156,7 @@
       section {
         //
         p {
-          // background: purple;
+          //
         }
       }
     }
@@ -185,8 +172,7 @@
     }
 
     .about {
-      // top: -.25rem;
-      // position: relative;
+      //
 
       p {
         margin: 0rem auto;
@@ -194,17 +180,13 @@
     }
 
     .skillsGrid {
-      // top: -0.5rem;
-      // position: relative;
+      //
     }
 
     .smallCaps {
-      // font-family: $font-caps;
       font-variant: small-caps !important;
       font-size: 87.5% !important;
       letter-spacing: 0.05rem;
-      // color: red !important;
-      // font-weight: bold !important;
     }
 
     &.extras .flexContainer {
@@ -212,11 +194,11 @@
       h1 {
         font-size: 1.75em;
         padding-top: 1em;
-        font-family: Dosis, "Helvetica Neue", Arial, sans-serif !important;
+        font-family: Dosis, 'Helvetica Neue', Arial, sans-serif !important;
         font-weight: 300;
       }
       p {
-        font-family: Dosis, "Helvetica Neue", Arial, sans-serif !important;
+        font-family: Dosis, 'Helvetica Neue', Arial, sans-serif !important;
         font-size: 1em !important;
       }
     }
@@ -229,24 +211,19 @@
     background: $backBlack;
 
     .wrapper {
-      // background: url(/img/bg/black-parch-bg-1.jpg) repeat;
       background: url(/img/bg/white_paper_patt-01.jpg) repeat;
-      // background: url(/img/bg/Drew-punk-back.jpg) repeat;
 
       //
       header,
       footer {
-        // background: url(./template-bourbon/assets/img/bg/bg_bag_dk.jpg) repeat;
+        //
       }
     }
 
     .smallCaps {
-      // font-family: $font-caps;
       font-variant: small-caps !important;
       font-size: 90% !important;
       letter-spacing: 0.03rem;
-      // color: red !important;
-      // font-weight: bold !important;
     }
 
     &.extras .flexContainer {
@@ -254,13 +231,13 @@
       h1 {
         font-size: 1.75em;
         padding-top: 1em;
-        font-family: Alegreya, "Times New Roman", Times, serif !important;
+        font-family: Alegreya, 'Times New Roman', Times, serif !important;
         font-weight: 300;
         color: #01487F !important;
       }
 
       p {
-        font-family: Alegreya, "Times New Roman", Times, serif !important;
+        font-family: Alegreya, 'Times New Roman', Times, serif !important;
         font-size: 1em;
       }
     }
@@ -270,9 +247,7 @@
   // #############################
   // PUNK
   .punk {
-    // background: initial;
     background: $backBlack;
-    // background: url(/img/bg/bricks-bg-01.jpg) repeat;
 
     .wrapper {
       width: 100%;
@@ -298,17 +273,16 @@
 
       //
       header {
-        // background: initial !important;
+        //
       }
     }
 
     .about > p {
-      // font-family: 'AmericanTypewriterStd-Med' !important;
+      font-family: Poppins, "Helvetica Neue", Arial, sans-serif !important;
       font-size: 0.8em !important;
 
       @media (max-width: $breakThou) {
         font-size: 1.65vw !important;
-        // color: red;
       }
 
       @media (max-width: $breakOne) {
@@ -329,24 +303,20 @@
       h1 {
         font-size: 1.75em;
         padding-top: 1em;
-        font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-family: Poppins, 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
         font-weight: 300;
-        // color: #01487F !important;
       }
 
       p {
-        font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-family: Poppins, 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
       }
     }
 
 
     .smallCaps {
-      // font-family: $font-caps;
       font-variant: small-caps !important;
       font-size: 95% !important;
       letter-spacing: 0.05rem;
-      // color: red !important;
-      // font-weight: bold !important;
     }
   }
 </style>

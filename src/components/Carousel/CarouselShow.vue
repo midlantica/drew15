@@ -1,42 +1,42 @@
 <template>
-  <div class="projectBox">
-    <a class="carouselArrow" @click.stop="selectedView = 'Carousel'">◀︎ BACK</a>
-    <p class="projectHead">Projects - {{ selectedView }}</p>
+  <div class='projectBox'>
+    <a class='carouselArrow' @click.stop='selectedView = `Carousel`'>◀︎ BACK</a>
+    <p class='projectHead'>Projects - {{ selectedView }}</p>
 
-    <component :is="selectedView">
-      <div class="miniGallery">
-        <a @click.stop="selectedView = 'Uiux'">
-          <div class="box Uiux">
+    <component :is='selectedView'>
+      <div class='miniGallery'>
+        <a @click.stop='selectedView = `Uiux`'>
+          <div class='box Uiux'>
             <p>UI/UX Design</p>
           </div>
         </a>
 
-        <a @click.stop="selectedView = 'Mobile'">
-          <div class="box Mobile">
+        <a @click.stop='selectedView = `Mobile`'>
+          <div class='box Mobile'>
             <p>Mobile</p>
           </div>
         </a>
 
-        <a @click.stop="selectedView = 'Kiosk'">
-          <div class="box Kiosk">
+        <a @click.stop='selectedView = `Kiosk`'>
+          <div class='box Kiosk'>
             <p>Kiosk</p>
           </div>
         </a>
 
-        <a @click.stop="selectedView = 'Graphics'">
-          <div class="box Graphics">
+        <a @click.stop='selectedView = `Graphics`'>
+          <div class='box Graphics'>
             <p>Graphics</p>
           </div>
         </a>
 
-        <a @click.stop="selectedView = 'Print'">
-          <div class="box Print">
+        <a @click.stop='selectedView = `Print`'>
+          <div class='box Print'>
             <p>Print</p>
           </div>
         </a>
 
-        <a @click.stop="selectedView = 'Misc'">
-          <div class="box Misc">
+        <a @click.stop='selectedView = `Misc`'>
+          <div class='box Misc'>
             <p>Misc.</p>
           </div>
         </a>
@@ -79,7 +79,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang='scss' scoped>
   // @import '@/template-bourbon/assets/css/bourbon-main.scss';
   @import '@/assets/css/_template-carousel.scss';
 

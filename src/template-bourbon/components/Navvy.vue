@@ -22,7 +22,6 @@
 </template>
 
 <style lang="scss" scoped>
-  @import "@/assets/css/main.scss";
   @import "@/template-bourbon/assets/css/bourbon-main.scss";
 
   $outRed: rgba(221, 9, 22, 0.3);

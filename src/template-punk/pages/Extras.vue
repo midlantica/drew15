@@ -4,7 +4,7 @@
       <Navvy />
     </header>
 
-    <div class="backer">
+    <div class='backer'>
       <ExtrasC />
     </div>
 
@@ -21,9 +21,6 @@
   export default {
     name: 'Extras',
     metaInfo: {
-      // if no subcomponents specify a metaInfo.title, this title will be used
-      // title: 'Drew Harper',
-      // all titles will be injected into this template
       titleTemplate: '%s - Extras!',
       bodyAttrs: {
         class: 'punk extras'
@@ -37,7 +34,6 @@
 </script>
 
 <style lang="scss" scoped>
-  @import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i');
   @import '@/template-punk/assets/css/punk-main.scss';
 
   header,

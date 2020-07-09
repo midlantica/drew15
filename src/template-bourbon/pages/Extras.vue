@@ -34,6 +34,5 @@
 </script>
 
 <style lang="scss">
-  @import '../assets/css/fonts/AmericanTypewriter/AmericanTypewriter.css';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 </style>

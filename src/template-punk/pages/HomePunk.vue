@@ -4,12 +4,12 @@
       <Navvy />
     </header>
 
-    <main class="mainGrid">
-      <div class="copyArea">
+    <main class='mainGrid'>
+      <div class='copyArea'>
         <HeadAndCopy />
       </div>
 
-      <div class="slides">
+      <div class='slides'>
         <CarouselShow />
       </div>
 
@@ -18,16 +18,10 @@
       <Skills />
     </main>
 
-    <!-- <footer> -->
-    <!-- <Quotes/> -->
-    <!-- </footer> -->
   </div>
 </template>
 
 <script>
-  // import '@/assets/fonts/Roboto/Roboto.css'
-  // import '@/assets/fonts/AmericanTypewriter/AmericanTypewriter.css'
-
   import Navvy from '../components/Navvy'
   import HeadAndCopy from '../components/HeadAndCopy'
   import Skills from '@/components/Skills'
@@ -53,17 +47,12 @@
       titleTemplate: '%s - UI/UX Designer, Graphic Designer!',
       bodyAttrs: {
         class: 'punk'
-      },
-      style: [
-        { cssText: 'body.punk .VueCarousel.druCarousel { box-shadow: 0px 0px 0px 4px #333; }', type: 'text/css' },
-        { cssText: '.about p { font-family: Poppins, "Helvetica Neue", Arial, sans-serif !important; font-size: .9em !important; }', type: 'text/css' }
-      ]
+      }
     }
   }
 </script>
 
-<style lang="scss" scoped>
-  @import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i');
+<style lang='scss' scoped>
   @import '@/template-punk/assets/css/punk-main.scss';
 
   header,
@@ -74,7 +63,7 @@
   }
 
   .mainGrid {
-    display: grid; // <-- CONTENT GRID
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0.5rem 1rem;
     background: transparent;
@@ -84,9 +73,6 @@
     @media (max-width: $breakThou) {
       grid-template-columns: 1fr;
       grid-gap: 0.25rem 0em;
-      // grid-row-gap: 0.25em;
-      // grid-column: 1 / 3;
-      // grid-row: 1;
     }
 
     @media (max-width: $breakOne) {
@@ -103,7 +89,6 @@
     grid-row: 1 / 3;
     display: flex;
     flex-direction: column;
-    // align-content: flex-end;
     align-self: flex-end;
 
     @media (max-width: $breakThou) {
@@ -125,7 +110,6 @@
   .slides {
     grid-column: 2 / 3;
     grid-row: 1;
-    // z-index: 10;
 
     @media (max-width: $breakThou) {
       grid-column: 1 / 3;

@@ -1,19 +1,19 @@
 <template>
-  <div class="skillsGrid">
-    <iconUiuxBlue class="icon uiux" />
-    <iconHtml5Blue class="icon html5" />
-    <iconCss3Blue class="icon css3" />
-    <iconJsBlue class="icon js" />
+  <div class='skillsGrid'>
+    <iconUiuxBlue class='icon uiux' />
+    <iconHtml5Blue class='icon html5' />
+    <iconCss3Blue class='icon css3' />
+    <iconJsBlue class='icon js' />
 
-    <iconSketchBlue class="icon sketch" />
-    <iconSassBlue class="icon sass" />
-    <iconVueBlue class="icon vue" />
-    <iconSvgBlue class="icon svg" />
+    <iconSketchBlue class='icon sketch' />
+    <iconSassBlue class='icon sass' />
+    <iconVueBlue class='icon vue' />
+    <iconSvgBlue class='icon svg' />
 
-    <iconVSCodeBlue class="icon vs-code" />
-    <iconNodeBlue class="icon node" />
-    <iconWebpackBlue class="icon webpack" />
-    <iconChelseaBlue class="icon chelsea" />
+    <iconVSCodeBlue class='icon vs-code' />
+    <iconNodeBlue class='icon node' />
+    <iconWebpackBlue class='icon webpack' />
+    <iconChelseaBlue class='icon chelsea' />
   </div>
 </template>
 
@@ -48,8 +48,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
-  // @import '@/assets/css/main.scss';
+<style lang='scss' scoped>
   @import '@/template-corp/assets/css/corp-main.scss';
 
   .skillsGrid {

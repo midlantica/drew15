@@ -1,6 +1,6 @@
 <template>
-  <div class="quoteBlock">
-    <div class="quotePad">
+  <div class='quoteBlock'>
+    <div class='quotePad'>
       <p>&ldquo;Everything should be made as simple as possible, but not simpler.&rdquo;</p>
       <cite>&ndash; Albert Einstein</cite>
     </div>
