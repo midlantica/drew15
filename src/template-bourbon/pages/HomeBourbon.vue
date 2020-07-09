@@ -55,7 +55,7 @@
         class: 'bourbon',
       },
       style: [
-      // { cssText: '.about p { font-family: AmericanTypewriterStd-Med; }', type: 'text/css' }
+        //
       ],
     },
   }

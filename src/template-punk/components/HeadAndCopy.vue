@@ -1,16 +1,15 @@
 <template>
-  <div class="copyGrid">
-    <h2 v-html="this.$root.uiuxDesigner"/>
-    <h2 v-html="this.$root.frontEndDev"/>
+  <div class='copyGrid'>
+    <h2 v-html='this.$root.uiuxDesigner'/>
+    <h2 v-html='this.$root.frontEndDev'/>
     <div>
-      <h1 v-html="this.$root.druHead" />
-      <p v-html="this.$root.druCopy" />
+      <h1 v-html='this.$root.druHead' />
+      <p v-html='this.$root.druCopy' />
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-  @import '@/assets/css/main.scss';
   @import '@/template-punk/assets/css/punk-main.scss';
 
   .copyGrid {

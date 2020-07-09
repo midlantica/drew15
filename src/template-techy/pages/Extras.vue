@@ -4,7 +4,7 @@
       <Navvy />
     </header>
 
-    <div class="backer">
+    <div class='backer'>
       <ExtrasC />
     </div>
 
@@ -33,13 +33,12 @@
       ExtrasC
     },
     style: [
-      { cssText: '.techy > .flexContainer { background: #fffff1 !important; }', type: 'text/css' }
+      //
     ]
   }
 </script>
 
 <style lang="scss" scoped>
-  @import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800');
   @import '@/template-techy/assets/css/techy-main.scss';
 
   header {

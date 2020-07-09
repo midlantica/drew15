@@ -6,9 +6,7 @@
 </template>
 
 <style lang="scss" scoped>
-  @import '../../assets/css/_colors.scss';
-  // @import '@/assets/css/main.scss';
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  @import '@/template-punk/assets/css/punk-main.scss';
 
   .quoteBlock {
     background: rgba(7, 97, 7, 0.79);

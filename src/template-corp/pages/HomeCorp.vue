@@ -52,9 +52,7 @@
         class: 'corp'
       },
       style: [
-        { cssText: 'body.corp .VueCarousel.druCarousel { box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.29);  }', type: 'text/css' },
-        { cssText: '.about p { font-family: "Alegreya", "Times New Roman", Times, serif; !important; font-size: 1em; }', type: 'text/css' },
-        { cssText: '.skillsGrid { margin: 0 auto 0 .5rem !important; }', type: 'text/css' }
+        //
       ]
     }
   }

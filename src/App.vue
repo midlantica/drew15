@@ -113,6 +113,10 @@
 
     }
 
+    .wrapper {
+      background: #fffae4;
+    }
+
     .about > p {
       font-size: 0.85rem !important;
       font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
@@ -162,7 +166,8 @@
     }
 
     &.extras .flexContainer {
-      //
+      background: #fffff1 !important;
+
       h1 {
         font-family: Helvetica !important;
         font-size: 1.5em;
@@ -172,9 +177,10 @@
     }
 
     .about {
-      //
+      background: #FFE268 !important; box-shadow: none !important;
 
       p {
+        font-family: Dosis, "Helvetica Neue", Arial, sans-serif !important;
         margin: 0rem auto;
       }
     }
@@ -203,6 +209,10 @@
       }
     }
 
+    &.extras .contact {
+      width: 100% !important;
+    }
+
   }
 
   // #############################
@@ -213,7 +223,6 @@
     .wrapper {
       background: url(/img/bg/white_paper_patt-01.jpg) repeat;
 
-      //
       header,
       footer {
         //
@@ -240,6 +249,15 @@
         font-family: Alegreya, 'Times New Roman', Times, serif !important;
         font-size: 1em;
       }
+    }
+
+    .about p {
+      font-family: "Alegreya", "Times New Roman", Times, serif !important;
+      font-size: 1em;
+    }
+
+    .skillsGrid {
+      margin: 0 auto 0 .5rem !important;
     }
 
   }

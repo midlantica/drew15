@@ -30,7 +30,7 @@
         class: 'groovy extras'
       },
       style: [
-        { cssText: '.wrapper { background: #fffae4; }', type: 'text/css' }
+        //
       ]
     },
     components: {

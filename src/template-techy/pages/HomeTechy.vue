@@ -4,12 +4,12 @@
       <Navvy />
     </header>
 
-    <main class="mainGrid">
-      <div class="copyArea">
+    <main class='mainGrid'>
+      <div class='copyArea'>
         <HeadAndCopy />
       </div>
 
-      <div class="slides">
+      <div class='slides'>
         <CarouselShow />
       </div>
 
@@ -52,15 +52,13 @@
         class: 'techy'
       },
       style: [
-        { cssText: '.about { background: #FFE268 !important; box-shadow: none !important; }', type: 'text/css' },
-        { cssText: '.about p { font-family: Dosis, "Helvetica Neue", Arial, sans-serif !important; }', type: 'text/css' }
+        //
       ]
     }
   }
 </script>
 
-<style lang="scss" scoped>
-  @import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800');
+<style lang='scss' scoped>
   @import '@/template-techy/assets/css/techy-main.scss';
 
   .mainGrid {
