@@ -6,6 +6,9 @@
 </template>
 
 <script>
+  import '@/template-bourbon/assets/css/fonts/Veneer/veneer.css'
+  import '@/template-bourbon/assets/css/fonts/AmericanTypewriter/AmericanTypewriter.css'
+
   import Tabs from '@/components/Tabs.vue'
   export default {
     components: {
