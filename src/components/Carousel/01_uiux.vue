@@ -1,25 +1,25 @@
 <template>
   <carousel
-    class="druCarousel"
-    :perPage="1"
-    :navigationEnabled="true"
-    :paginationEnabled="false"
-    :autoplay="true"
-    :autoplayTimeout="3000"
-    :autoplayHoverPause="false"
-    :loop="true"
-    :navigationClickTargetSize="0"
-    navigationNextLabel="<div class='navvy rightnav'>▶︎</div>"
-    navigationPrevLabel="<div class='navvy leftnav'>◀︎</div>"
+    class='druCarousel'
+    :perPage='1'
+    :navigationEnabled='true'
+    :paginationEnabled='false'
+    :autoplay='true'
+    :autoplayTimeout='3000'
+    :autoplayHoverPause='false'
+    :loop='true'
+    :navigationClickTargetSize='0'
+    navigationNextLabel='<div class="navvy rightnav">▶︎</div>'
+    navigationPrevLabel='<div class="navvy leftnav">◀︎</div>'
   >
     <slide
-      v-for="(image, index) in images"
-      v-bind:image="image"
-      v-bind:index="index"
-      v-bind:key="image.id"
-      data-name="MySlideName"
+      v-for='(image, index) in images'
+      v-bind:image='image'
+      v-bind:index='index'
+      v-bind:key='image.id'
+      data-name='MySlideName'
     >
-      <img :src="image" :alt="image.slice(18,-4)" />
+      <img :src='image' :alt='image.slice(18,-4)' />
     </slide>
   </carousel>
 </template>
@@ -31,12 +31,12 @@
       Carousel,
       Slide
     },
-    data () {
+    data() {
       return {
         images: []
       }
     },
-    mounted () {
+    mounted() {
       const imgPath = 'img/portfolio/01_uiux/'
       setTimeout(() => {
         this.images = [
@@ -69,6 +69,6 @@
   }
 </script>
 
-<style lang="scss">
+<style lang='scss'>
   @import '@/assets/css/_template-carousel.scss';
 </style>
