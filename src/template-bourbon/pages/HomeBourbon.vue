@@ -62,8 +62,6 @@
 </script>
 
 <style lang='scss' scoped>
-  // @import '../assets/css/fonts/AmericanTypewriter/AmericanTypewriter.css';
-  // @import '../assets/css/fonts/Veneer/veneer.css';
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
   header,
