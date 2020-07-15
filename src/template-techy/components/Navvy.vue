@@ -115,8 +115,8 @@
         }
 
         a.drewHeadPic {
-          width: 92px;
-          height: 109px;
+          width: 72px !important;
+          height: 109px !important;
           padding: 1em 1em 0em 1em;
           background-image: url(/img/drew_mug_dig.png);
           background-repeat: no-repeat;
@@ -126,8 +126,8 @@
           justify-self: end;
 
           @media (max-width: $breakThou) {
-            width: 92px;
-            // height: 109px;
+            width: 72px !important;
+            height: 109px !important;
             grid-column: 1 / 2;
             grid-row: 1 / 2;
             margin: 0 .5em 0 0;
@@ -135,31 +135,37 @@
           }
 
           @media (max-width: $breakTwo) {
-            width: 74px;
-            height: 87px;
+            width: 44px !important;
+            height: 75px !important;
           }
 
           @media (max-width: $breakThree) {
-            width: 63px;
-            height: 74px;
+            width: 28px !important;
+            height: 55px !important;
             margin: 0;
           }
 
-          @media (max-device-width: 667px)
-          and (-webkit-device-pixel-ratio: 2)
-          {
-            margin-right: 0.5em;
-            margin-left: 0em;
-            width: 65px !important;
-            height: 77px !important;
-            margin: 0em;
+          @media (max-width: $breakFour) {
+            width: 28px !important;
+            height: 55px !important;
+            margin: 0;
           }
 
-          @media (max-width: $breakFour) {
-            width: 39px !important;
-            height: 46px !important;
-            margin: 0em;
-          }
+          // @media (max-device-width: 667px)
+          // and (-webkit-device-pixel-ratio: 2)
+          // {
+          //   margin-right: 0.5em;
+          //   margin-left: 0em;
+          //   width: 65px !important;
+          //   height: 77px !important;
+          //   margin: 0em;
+          // }
+
+          // @media (max-width: $breakFour) {
+          //   width: 39px !important;
+          //   height: 46px !important;
+          //   margin: 0em;
+          // }
 
         }
 
