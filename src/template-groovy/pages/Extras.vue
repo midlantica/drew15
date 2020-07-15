@@ -22,9 +22,6 @@
   export default {
     name: 'Extras',
     metaInfo: {
-      // if no subcomponents specify a metaInfo.title, this title will be used
-      // title: 'Drew Harper',
-      // all titles will be injected into this template
       titleTemplate: '%s - Extras!',
       bodyAttrs: {
         class: 'groovy extras'
@@ -45,18 +42,12 @@
   @import '@/template-groovy/assets/css/groovy-main.scss';
 
   header {
-    // grid-column: 1 / 4;
-    // grid-row: 1;
     color: $ivory;
     background: $groovy-red;
-    // height: 175px;
     @include clearfix;
   }
 
   footer {
-    // grid-column: 1 / 4;
-    // grid-row: -1;
-    // grid-row: 4;
     height: 160px;
     color: $ivory;
     background: linear-gradient(
@@ -75,8 +66,7 @@
     );
 
     @media (max-width: $breakThou) {
-      // grid-column: span 1;
-      // grid-row: 5;
+      //
     }
 
   }

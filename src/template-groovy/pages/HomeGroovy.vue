@@ -46,9 +46,7 @@
     },
     name: 'HomeGroovy',
     metaInfo: {
-      // if no subcomponents specify a metaInfo.title, this title will be used
       title: 'Drew Harper',
-      // all titles will be injected into this template
       titleTemplate: '%s - UI/UX Designer, Graphic Designer!',
       bodyAttrs: {
         class: 'groovy'
@@ -64,28 +62,16 @@
   @import '@/template-groovy/assets/css/groovy-main.scss';
 
   .mainGrid {
-    // width: 100%;
     display: grid;
     grid-template-columns: 7fr 6fr;
-    // grid-gap: 1em;
     grid-row-gap: 1em;
-    // grid-template-rows: auto auto auto auto;
-    // grid-auto-flow: column;
-    // margin: 0em 0em 0.5em;
-    // width: 96.5%;
-    // position: relative;
-    /* top: 0em; */
-    // left: 1em;
-    // margin-top: 1em;
     margin: 0em 1em 0.5em;
 
     @media (max-width: $breakThou) {
       grid-template-columns: 1fr;
       grid-gap: 0em;
       grid-row-gap: 1em;
-      // margin-top: 2.5em;
       margin: 0em 1em 1em;
-      // background: red;
     }
 
     @media (max-width: $breakOne) {
@@ -106,38 +92,31 @@
   }
 
   header {
-    // grid-column: 1 / 4;
-    // grid-row: 1;
     color: $ivory;
     background: $groovy-red;
-    // height: 175px;
     @include clearfix;
   }
 
   footer {
-    // grid-column: 1 / 4;
-    // grid-row: -1;
-    // grid-row: 4;
     height: 160px;
     color: $ivory;
     background: linear-gradient(
-      // 0 - 25%
-        $groovy-aqua 0%,
+      /* 0 - 25% */
+      $groovy-aqua 0%,
       $groovy-aqua 25%,
-      // 25% - 50%
-        $groovy-yellow 25%,
+      /* 25% - 50% */
+      $groovy-yellow 25%,
       $groovy-yellow 50%,
-      // 50% - 75%
-        $groovy-orange 50%,
+      /* 50% - 75% */
+      $groovy-orange 50%,
       $groovy-orange 75%,
-      // 75% - 100%
-        $groovy-red 75%,
+      /* 75% - 100% */
+      $groovy-red 75%,
       $groovy-red 100%
     );
 
     @media (max-width: $breakThou) {
-      // grid-column: span 1;
-      // grid-row: 5;
+      //
     }
   }
 
@@ -145,8 +124,7 @@
     box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.25);
     background: $groovy-yellow;
     border-radius: 0.75em;
-    font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    // line-height: 2.5rem !important;
+    font-family: $font-head;
   }
 
   .copyArea {
@@ -197,8 +175,6 @@
   .skillsGrid {
     grid-column: 1 / -1;
     grid-row: 3;
-    // align-items: center;
-    // margin: 0 auto 1em;
 
     @media (max-width: $breakThou) {
       grid-row: 2;

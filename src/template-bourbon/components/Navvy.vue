@@ -183,7 +183,7 @@
     }
 
     p {
-      font-family: $font-subhead !important;
+      font-family: $font-subhead;
       letter-spacing: 0.09em;
       font-size: 1rem;
 

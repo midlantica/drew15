@@ -74,14 +74,13 @@
   }
 
   p.smallCaps {
-    // font-family: $font-caps;
     font-variant: small-caps !important;
     font-size: 185% !important;
     // font-weight: 500;
   }
 
   p {
-    font-family: $font-copy !important;
+    font-family: $font-copy;
     font-size: 1.125rem !important;
     line-height: 2.6rem;
     color: $grey;

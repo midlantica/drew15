@@ -1,11 +1,11 @@
 <template>
-  <div class="footer">
-    <div class="car"></div>
-    <div class="starWars"></div>
+  <div class='footer'>
+    <div class='car'></div>
+    <div class='starWars'></div>
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang='scss' scoped>
   @import '@/template-groovy/assets/css/groovy-main.scss';
 
   $breakThou: 1024px;
