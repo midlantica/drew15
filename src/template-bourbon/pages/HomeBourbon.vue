@@ -63,8 +63,6 @@
 
 <style lang='scss' scoped>
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
-  // @import '@/template-bourbon/assets/css/fonts/Veneer/veneer.css';
-  // @import '@/template-bourbon/assets/css/fonts/AmericanTypewriter/AmericanTypewriter.css';
 
   header,
   footer {
