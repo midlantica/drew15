@@ -1,5 +1,6 @@
 h1, h2, h3, h4, h5 {
   color: $accent-red;
+  font-family: $font-subhead;
   line-height: 1.1em;
   font-weight: normal;
   text-align: left;
@@ -7,14 +8,13 @@ h1, h2, h3, h4, h5 {
   padding: 0;
   letter-spacing: .025em;
   text-transform: uppercase;
-  font-family: $font-subhead !important;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-family: $font-subhead;
   color: $accent;
+  font-size: 2.25em;
   text-transform: none;
-  font-family: $font-subhead !important;
 }
 
 h3 {
@@ -32,7 +32,7 @@ h5 {
 }
 
 p {
-  font-family: $font-copy !important;
+  font-family: $font-copy;
   // font-size: $base-font-size;
   // color: $blue-mid;
   // line-height: $base-line-height;
@@ -49,7 +49,7 @@ ul {
   list-style-type: square;
   padding: 0;
   margin: 0 -1em 1em 0em;
-  font-family: $font-copy !important;
+  font-family: $font-copy;
   color: $blue-mid;
   line-height: $base-line-height;
   text-align: left;

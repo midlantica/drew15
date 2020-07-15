@@ -1,32 +1,32 @@
 <template>
   <nav>
-    <div class="mastMain">
+    <div class='mastMain'>
 
-      <div class="masty">
+      <div class='masty'>
 
-        <div class="DHmast">
-          <router-link to="/Techy/Extras" class="drewHeadPic" />
-          <router-link to="/Techy" class="svgArt mastDrew" >
+        <div class='DHmast'>
+          <router-link to='/Techy/Extras' class='drewHeadPic' />
+          <router-link to='/Techy' class='svgArt mastDrew' >
             <mastDrew />
           </router-link>
-          <router-link to="/Techy" class="svgArt mastHarper">
+          <router-link to='/Techy' class='svgArt mastHarper'>
             <mastHarper />
           </router-link>
         </div>
 
-        <div class="jobDesc block">
+        <div class='jobDesc block'>
           <h2>ui/ux designer +</h2>
-          <h2 class="marLH">front&nbsp;end&nbsp;dev</h2>
+          <h2 class='marLH'>front&nbsp;end&nbsp;dev</h2>
         </div>
       </div>
 
-      <div class="bar">
-        <div class="contact">
+      <div class='bar'>
+        <div class='contact'>
           <p class='email'>
-            <a href="mailto:druharper@gmail.com">druharper@gmail.com</a>
+            <a href='mailto:druharper@gmail.com'>druharper@gmail.com</a>
           </p>
           <p class='resume'>Resume:
-            <a href="resume/drew_harper_resume_portfolio.pdf">Lg</a>/<a href="resume/drew_harper_resume_portfolio_short.docx">Sm</a>
+            <a href='resume/drew_harper_resume_portfolio.pdf'>Lg</a>/<a href='resume/drew_harper_resume_portfolio_short.docx'>Sm</a>
           </p>
         </div>
       </div>
@@ -46,7 +46,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang='scss' scoped>
   @import '@/template-techy/assets/css/techy-main.scss';
 
   nav {
@@ -274,7 +274,7 @@
 
     h2 {
       margin: 0;
-      font-family: Dosis;
+      font-family: $font-copy;
       font-weight: 400;
       color: $blueTech;
       text-transform: lowercase;
@@ -361,7 +361,7 @@
       }
 
       p {
-        font-family: $font;
+        font-family: $font-copy;
         font-weight: 500;
         letter-spacing: .09em;
         color: $ivory;

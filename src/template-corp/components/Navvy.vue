@@ -119,7 +119,7 @@
   }
 
   h1 {
-    font-family: $font-copy !important;
+    font-family: $font-copy;
     font-size: 1.5rem;
     letter-spacing: -0.025em;
     transition: 0.25s ease-in;
@@ -223,7 +223,7 @@
     }
 
     p {
-      font-family: $font-copy !important;
+      font-family: $font-copy;
       font-size: 1em;
       letter-spacing: 0.01em;
       align-items: center;

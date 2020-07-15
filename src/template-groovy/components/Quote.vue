@@ -1,24 +1,21 @@
 <template>
-  <div class="quoteBlock">
+  <div class='quoteBlock'>
     <p>&ldquo;Everything should be made as simple as possible, but not simpler.&rdquo;</p>
     <cite>&ndash; Albert Einstein</cite>
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang='scss' scoped>
   @import '@/template-groovy/assets/css/groovy-main.scss';
 
   .quoteBlock {
     background: darken($accent-red, 10);
-    // margin-bottom: .5em;
     padding: .75em 2em 1em;
     @include shadow;
-    // @include clearfix;
     text-align: center;
 
     p {
-      font-family: $font-copy !important;
-      // font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+      font-family: $font-copy;
       font-size: 0.8em;
       color: $ivory !important;
       text-align: center;
@@ -28,8 +25,7 @@
     }
 
     cite {
-      font-family: $font-copy !important;
-      // font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+      font-family: $font-copy;
       font-size: .7em;
       color: $ivory;
       font-style: italic;

@@ -1,16 +1,16 @@
 <template>
   <section>
-    <h1 v-html="this.$root.druHead"></h1>
-    <p v-html="this.$root.druCopy"></p>
+    <h1 v-html='this.$root.druHead'></h1>
+    <p v-html='this.$root.druCopy'></p>
   </section>
 </template>
 
-<style lang="scss" scoped>
+<style lang='scss' scoped>
   @import '@/template-groovy/assets/css/groovy-main.scss';
 
-  $breakThou: 1024px;
-  $breakOne: 840px;
-  $breakTwo: 630px;
+  // $breakThou: 1024px;
+  // $breakOne: 840px;
+  // $breakTwo: 630px;
   $breakThree: 530px;
 
   section {
@@ -34,54 +34,37 @@
   }
 
   h1 {
-    // font-family: $font-copy !important;
     font-family: $font-head;
     text-transform: initial;
     font-size: 1.4rem;
     line-height: 1.8rem;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.00rem;
     margin-bottom:.5rem;
 
     @media (min-width: $breakThou) {
-      // font-size: 1em;
-      // line-height: 2.935em;
-      // margin: 0em;
       max-width: 26ch;
     }
 
     @media (max-width: $breakThou) {
-      // font-size: 1em;
-      // line-height: 2.935em;
-      // margin: 0em;
       max-width: initial;
     }
 
     @media (max-width: $breakOne) {
-      // font-size: 1em;
-      // line-height: 2.935em;
-      // margin: 0em;
       max-width: initial;
     }
 
     @media (max-width: $breakTwo) {
-      // font-size: 1em;
-      // line-height: 2.935em;
-      // margin: 0em;
       max-width: 26ch;
     }
 
     @media (max-width: $breakThree) {
-      // font-size: 1em;
-      // line-height: 1.5rem;
-      // margin: 0em;
       max-width: initial;
     }
   }
 
   p {
-    // font-family: $font-copy !important;
-    font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-family: $font-copy;
     color: $grey;
     font-size: 1.125rem;
     letter-spacing: 0.009rem;

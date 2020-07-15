@@ -29,7 +29,7 @@
   import HeadAndCopy from '../components/HeadAndCopy'
   import Skills from '@/components/Skills'
   import About from '@/components/About'
-  import Quotes from '../components/Quote'
+  // import Quotes from '../components/Quote'
   import Footer from '../components/Footer'
   import CarouselShow from '@/components/Carousel/CarouselShow'
 
@@ -40,7 +40,7 @@
       HeadAndCopy,
       About,
       Skills,
-      Quotes,
+      // Quotes,
       Footer,
       CarouselShow
     },

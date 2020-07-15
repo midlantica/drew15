@@ -14,7 +14,7 @@
     text-align: center;
 
     p {
-      font-family: $font-head !important;
+      font-family: $font-head;
       font-size: 1em;
       color: $ivory;
       text-align: center;

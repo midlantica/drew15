@@ -1,7 +1,7 @@
 <template>
-  <section class="">
-    <h1 v-html="this.$root.druHead"></h1>
-    <p v-html="this.$root.druCopy"></p>
+  <section>
+    <h1 v-html='this.$root.druHead'></h1>
+    <p v-html='this.$root.druCopy'></p>
   </section>
 </template>
 
@@ -40,6 +40,7 @@
   }
 
   h1 {
+    font-family: $font-head;
     font-weight: 600;
     text-transform: initial;
     line-height: 2rem;
@@ -76,7 +77,7 @@
   }
 
   p {
-    // font-family: $font-copy;
+    font-family: $font-copy;
     font-size: 1.3rem;
     line-height: 2.85rem;
     color: transparentize($blueTech, .2);

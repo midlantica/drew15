@@ -355,7 +355,7 @@
 
     h2 {
       margin: 0;
-      font-family: Dosis;
+      font-family: $font-subhead;
       font-weight: 400;
       color: $ivory;
       text-transform: lowercase;
