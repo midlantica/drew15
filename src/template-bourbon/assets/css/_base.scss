@@ -1,12 +1,12 @@
-// @import '@/template-bourbon/assets/css/fonts/Veneer/veneer.css';
-// @import '@/template-bourbon/assets/css/fonts/AmericanTypewriter/AmericanTypewriter.css';
+@import '/fonts/Veneer/veneer.css';
+@import '/fonts/AmericanTypewriter/AmericanTypewriter.css';
 
 // FONTS
 $base-font-size   :1rem;
 $base-line-height :1.7em;
 $font             :"Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-head        :"VeneerTwo", Helvetica, Arial, sans-serif;
-$font-subhead     :"Veneer", Helvetica, Arial, sans-serif;
+$font-head        :VeneerTwo, Helvetica, Arial, sans-serif;
+$font-subhead     :Veneer, Helvetica, Arial, sans-serif;
 $font-copy        :"AmericanTypewriterStd-Med", Helvetica, Times, serif;
 
 // ############################

@@ -1,8 +1,8 @@
 /* eslint-disable */
 
 module.exports = {
-  content: ['./public/**/*.html', './src/**/*.vue'],
-  css: ['src/**/*.css'],
+  content: './src/**/*.vue',
+  css: 'src/**/*.css',
   defaultExtractor(content) {
     const contentWithoutStyleBlocks = content.replace(
       /<style[^]+?<\/style>/gi,
