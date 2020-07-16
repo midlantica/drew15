@@ -4,12 +4,12 @@
       <Navvy />
     </header>
 
-    <main class="mainGrid">
-      <div class="copyArea">
+    <main class='mainGrid'>
+      <div class='copyArea'>
         <HeadAndCopy />
       </div>
 
-      <div class="slides">
+      <div class='slides'>
         <CarouselShow />
       </div>
 

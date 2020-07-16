@@ -177,14 +177,14 @@
 
   .techy .skillsGrid {
     display: grid;
-    width: 100%;
+    // width: 90%;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     justify-items: center;
     //
     align-items: center;
     grid-template-columns: repeat(12, minmax(auto, auto));
-    grid-row-gap: 2.5em;
+    // grid-row-gap: 2.5em;
     grid-column-gap: 0em;
 
     @media (max-width: $breakThou)
@@ -276,8 +276,8 @@
     }
 
     svg {
-      width: 85px;
-      height: 60px;
+      width: 84px;
+      height: 59px;
     }
   }
 

@@ -13,7 +13,7 @@
       </p>
       <p class='resume'>
         Resume: Word
-        <a href='resume/drew_harper_resume_portfolio_short.docx'>Small</a>/
+        <a href='resume/drew_harper_resume_portfolio_short.docx'>Small&#8195;</a>/&#8195;
         <a href='resume/drew_harper_resume_portfolio.docx'>Big</a> or
         <a href='resume/drew_harper_resume_portfolio.pdf'>PDF</a>
       </p>
@@ -78,6 +78,7 @@
     font-family: $font-subhead;
     text-shadow: 4px 0px 3px $black;
     transition: 0.25s ease-in;
+    @include font-smoothing;
     //
     width: auto;
     flex-grow: 0;
@@ -128,6 +129,7 @@
       font-size: 1.6em;
       letter-spacing: 0.03em;
       text-shadow: 3px 0px 3px $black;
+      @include font-smoothing;
 
       &:nth-child(1) {
         //
@@ -186,9 +188,10 @@
       font-family: $font-subhead;
       letter-spacing: 0.09em;
       font-size: 1rem;
+      @include font-smoothing;
 
       &:nth-child(1) {
-        font-size: 1.36em;
+        font-size: 1.375em;
         // line-height: 1.5rem;
         letter-spacing: 0.13rem;
       }

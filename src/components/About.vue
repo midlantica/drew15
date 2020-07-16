@@ -24,7 +24,20 @@
     align-content: center;
     align-self: center;
     border-radius: 2px;
+    // margin: 0rem 0 .5rem;
     @include box-shadow(0px, 1px, 2px, 0px, hsla(0, 0%, 0%, 0.5));
+
+    @media (max-width: $breakThou) {
+      margin: 0rem 0 .5rem;
+    }
+
+    @media (max-width: $breakOne) {
+      margin: 0 0 .5rem;
+    }
+
+    @media (max-width: $breakTwo) {
+      // margin: 0 0 .5rem;
+    }
 
     @media (max-width: $breakFour) {
       flex-direction: column;
@@ -197,7 +210,8 @@
       }
 
       @media (max-width: $breakTwo) {
-        // font-size: 2.5vw;
+        font-size: 1rem;
+        line-height: 1.5rem;
       }
 
       @media (max-width: $breakThree) {

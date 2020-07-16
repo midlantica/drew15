@@ -20,8 +20,7 @@
         </p>
         <p class='resume'>
           Resume:
-          <a href='resume/drew_harper_resume_portfolio.pdf'>Lg</a>/
-          <a href='resume/drew_harper_resume_portfolio_short.docx'>Sm</a>
+          <a href='resume/drew_harper_resume_portfolio.pdf'>Lg</a>&#8195;/&#8195;<a href='resume/drew_harper_resume_portfolio_short.docx'>Sm</a>
         </p>
       </div>
     </div>
@@ -86,16 +85,16 @@
       margin-bottom: -5.3em;
       //
       background-image: radial-gradient(
-        // 0 - 25%
+        /* 0 - 25% */
           $groovy-aqua 0%,
         $groovy-aqua 35%,
-        // 25% - 50%
+        /* 25% - 50% */
           $groovy-yellow 35%,
         $groovy-yellow 47%,
-        // 50% - 75%
+        /* 50% - 75% */
           $groovy-orange 47%,
         $groovy-orange 59%,
-        // 75% - 100%
+        /* 75% - 100% */
           $groovy-red 59%,
         $groovy-red 100%
       );
@@ -199,7 +198,7 @@
         }
         @media (max-width: $breakThree) {
           margin: 0.5em 0 0em;
-          height: 7.9vw;
+          height: 9.5vw;
         }
 
         @media (max-width: $breakFour) {
@@ -283,7 +282,7 @@
       text-transform: lowercase;
       font-size: 1.45em;
       line-height: 0.5em;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.025em;
 
       &:nth-child(1) {
         //
@@ -325,7 +324,7 @@
 
       @media (max-width: $breakThree) {
         line-height: 1.5em;
-        font-size: 3.7vw;
+        font-size: 4.4vw;
       }
     }
   }
@@ -361,6 +360,7 @@
       text-transform: none;
       line-height: 0.7em;
       text-align: center;
+      letter-spacing: -0.01em;
 
       &:nth-child(1) {
         margin: 0;
@@ -417,7 +417,7 @@
       }
 
       @media (max-width: $breakThree) {
-        font-size: 3vw;
+        font-size: 3.6vw;
       }
     }
   }

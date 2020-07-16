@@ -15,8 +15,7 @@
     </div>
 
     <p class='resume'>Resume:
-      <a href="resume/drew_harper_resume_portfolio.pdf">Large</a>/
-      <a href="resume/drew_harper_resume_portfolio_short.docx">Small</a>
+      <a href="resume/drew_harper_resume_portfolio.pdf">Large</a>&#8195;/&#8195;<a href="resume/drew_harper_resume_portfolio_short.docx">Small</a>
     </p>
 
   </nav>

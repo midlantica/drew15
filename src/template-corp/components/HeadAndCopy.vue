@@ -1,14 +1,14 @@
 <template>
-  <div class="wrap">
-    <h1 v-html="this.$root.druHead"></h1>
-    <p v-html="this.$root.druCopy"></p>
+  <div class='wrap'>
+    <h1 v-html='this.$root.druHead'></h1>
+    <p v-html='this.$root.druCopy'></p>
   </div>
 </template>
 
 <script>
 </script>
 
-<style lang="scss" scoped>
+<style lang='scss' scoped>
 
   @import '@/template-corp/assets/css/corp-main.scss';
 
@@ -35,7 +35,7 @@
     font-weight: 500;
     color: $blue-dark;
     text-transform: none;
-    font-size: 1.6em;
+    font-size: 1.5em;
     margin: 0em 0em .5em;
     padding: 0;
     line-height: 2rem;

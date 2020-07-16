@@ -66,7 +66,7 @@
   }
 
   h1 {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     background: hsla(0, 100%, 50%, 0.85);
     color: white;
     font-weight: 500;

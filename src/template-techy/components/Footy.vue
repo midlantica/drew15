@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang='scss' scoped>
   @import '@/template-techy/assets/css/techy-main.scss';
 
   div {
@@ -23,15 +23,15 @@
       }
 
       @media (max-width: $breakOne) {
-        font-size: 1.25em;
+        font-size: 1.2em;
       }
 
       @media (max-width: $breakTwo) {
-        font-size: 1.25em;
+        font-size: 1em;
       }
 
       @media (max-width: $breakThree) {
-        font-size: 1.25em;
+        font-size: .85em;
         line-height: 1.25em;
       }
     }
