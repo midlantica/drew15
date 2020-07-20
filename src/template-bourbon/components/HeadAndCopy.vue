@@ -38,14 +38,6 @@
 
     }
 
-    .jelloHorizontal:hover {
-      -webkit-animation: jelloHorizontal 0.9s both !important;
-      animation: jelloHorizontal 0.9s both !important;
-      animation-delay: initial !important;
-      animation-play-state: running;
-      cursor: pointer;
-    }
-
     h1 {
       display: inline-block;
       font-family: $font-subhead;
