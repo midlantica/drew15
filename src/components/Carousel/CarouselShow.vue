@@ -345,7 +345,8 @@
 
         &:hover {
           background: lighten(grey, 25);
-          transition-duration: 0.5s;
+          transition: ease-in;
+          transition-duration: 0.1s;
           box-shadow: 0px 2px 2px -1px grey;
         }
 
@@ -353,21 +354,21 @@
           background: url(/img/carousel/car-icon-uiux.svg) no-repeat center center;
           background-color: lighten(lightgrey, 15);
           background-size: 75% 75%;
-          background-position: center 4px;
+          background-position: center 6px;
           border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
             background: url(/img/carousel/car-icon-uiux.svg) no-repeat center center;
             background-color: lighten(lightgrey, 10);
-            transition-duration: 0.5s;
+            // transition-duration: 0.5s;
             background-size: 75% 75%;
-            background-position: center 2px;
+            background-position: center 0px;
             border: 1px solid transparentize(grey, 0.5);
             box-shadow: 0px 2px 2px -1px grey;
           }
 
           @media (max-width: $breakThou) {
-            background-position: center 2px;
+            // background-position: center 0px;
           }
         }
 
@@ -376,21 +377,21 @@
             center;
           background-color: lighten(lightgrey, 15);
           background-size: 75% 75%;
-          background-position: center 4px;
+          background-position: center 6px;
           border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
             background: url(/img/carousel/car-icon-mobile.svg) no-repeat center center;
             background-color: lighten(lightgrey, 10);
-            transition-duration: 0.5s;
+            // transition-duration: 0.5s;
             background-size: 75% 75%;
-            background-position: center 2px;
+            background-position: center 0px;
             border: 1px solid transparentize(grey, 0.5);
             box-shadow: 0px 2px 2px -1px grey;
           }
 
           @media (max-width: $breakThou) {
-            background-position: center 2px;
+            // background-position: center 0px;
           }
         }
 
@@ -398,21 +399,21 @@
           background: url(/img/carousel/car-icon-kiosk.svg) no-repeat center center;
           background-color: lighten(lightgrey, 15);
           background-size: 75% 75%;
-          background-position: center 4px;
+          background-position: center 6px;
           border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
             background: url(/img/carousel/car-icon-kiosk.svg) no-repeat center center;
             background-color: lighten(lightgrey, 10);
-            transition-duration: 0.5s;
+            // transition-duration: 0.5s;
             background-size: 75% 75%;
-            background-position: center 2px;
+            background-position: center 0px;
             border: 1px solid transparentize(grey, 0.5);
             box-shadow: 0px 2px 2px -1px grey;
           }
 
           @media (max-width: $breakThou) {
-            background-position: center 2px;
+            // background-position: center 0px;
           }
         }
 
@@ -420,21 +421,21 @@
           background: url(/img/carousel/car-icon-graphics.svg) no-repeat center center;
           background-color: lighten(lightgrey, 15);
           background-size: 75% 75%;
-          background-position: center 4px;
+          background-position: center 6px;
           border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
             background: url(/img/carousel/car-icon-graphics.svg) no-repeat center center;
             background-color: lighten(lightgrey, 10);
-            transition-duration: 0.5s;
+            // transition-duration: 0.5s;
             background-size: 75% 75%;
-            background-position: center 2px;
+            background-position: center 0px;
             border: 1px solid transparentize(grey, 0.5);
             box-shadow: 0px 2px 2px -1px grey;
           }
 
           @media (max-width: $breakThou) {
-            background-position: center 2px;
+            // background-position: center 0px;
           }
         }
 
@@ -442,21 +443,21 @@
           background: url(/img/carousel/car-icon-print.svg) no-repeat center center;
           background-color: lighten(lightgrey, 15);
           background-size: 75% 75%;
-          background-position: center 4px;
+          background-position: center 6px;
           border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
             background: url(/img/carousel/car-icon-print.svg) no-repeat center center;
             background-color: lighten(lightgrey, 10);
-            transition-duration: 0.5s;
+            // transition-duration: 0.5s;
             background-size: 75% 75%;
-            background-position: center 2px;
+            background-position: center 0px;
             border: 1px solid transparentize(grey, 0.5);
             box-shadow: 0px 2px 2px -1px grey;
           }
 
           @media (max-width: $breakThou) {
-            background-position: center 2px;
+            // background-position: center 0px;
           }
         }
 
@@ -464,21 +465,21 @@
           background: url(/img/carousel/car-icon-misc.svg) no-repeat center center;
           background-color: lighten(lightgrey, 15);
           background-size: 75% 75%;
-          background-position: center 4px;
+          background-position: center 6px;
           border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
             background: url(/img/carousel/car-icon-misc.svg) no-repeat center center;
             background-color: lighten(lightgrey, 10);
-            transition-duration: 0.5s;
+            // transition-duration: 0.5s;
             background-size: 75% 75%;
-            background-position: center 2px;
+            background-position: center 0px;
             border: 1px solid transparentize(grey, 0.5);
             box-shadow: 0px 2px 2px -1px grey;
           }
 
           @media (max-width: $breakThou) {
-            background-position: center 2px;
+            // background-position: center 0px;
           }
         }
 

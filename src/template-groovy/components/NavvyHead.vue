@@ -2,7 +2,7 @@
   <nav>
     <div class='gridMast'>
       <div class='groovyCircle'>
-        <router-link to='/Groovy/Extras' class='drewhead' />
+        <router-link to='/Groovy/Extras' class='drewhead jello-horizontal' />
       </div>
 
       <router-link to='/Groovy' class='drewHarperSVG'>

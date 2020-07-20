@@ -1,0 +1,245 @@
+.jello-horizontal {
+  -webkit-animation: jello-horizontal 0.9s both;
+  // -moz-animation: jello-horizontal 0.9s both;
+  // -ms-animation: jello-horizontal 0.9s both;
+  // -o-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+  animation-delay: 2s;
+  // animation-play-state: running;
+}
+
+
+.jello-horizontal:hover {
+  -webkit-animation: jello-horizontal 0.9s both !important;
+  // -moz-animation: jello-horizontal 0.9s both !important;
+  // -ms-animation: jello-horizontal 0.9s both !important;
+  // -o-animation: jello-horizontal 0.9s both !important;
+  animation: jello-horizontal 0.9s both !important;
+  animation-delay: initial !important;
+  // animation-play-state: running;
+}
+
+.jello-horizontalTwo {
+  -webkit-animation: jello-horizontal 0.9s both;
+  // -moz-animation: jello-horizontal 0.9s both;
+  // -ms-animation: jello-horizontal 0.9s both;
+  // -o-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+  animation-delay: 2s;
+  // animation-play-state: running;
+}
+
+.jello-horizontalTwo:hover {
+  -webkit-animation: jello-horizontal 0.9s both !important;
+  // -moz-animation: jello-horizontal 0.9s both !important;
+  // -ms-animation: jello-horizontal 0.9s both !important;
+  // -o-animation: jello-horizontal 0.9s both !important;
+  animation: jello-horizontal 0.9s both !important;
+  animation-delay: initial !important;
+  // animation-play-state: running;
+}
+
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+}
+
+// @-moz-keyframes jello-horizontal {
+//   0% {
+//     transform: scale3d(1, 1, 1);
+//   }
+//   30% {
+//     transform: scale3d(1.25, 0.75, 1);
+//   }
+//   40% {
+//     transform: scale3d(0.75, 1.25, 1);
+//   }
+//   50% {
+//     transform: scale3d(1.15, 0.85, 1);
+//   }
+//   65% {
+//     transform: scale3d(0.95, 1.05, 1);
+//   }
+//   75% {
+//     transform: scale3d(1.05, 0.95, 1);
+//   }
+//   100% {
+//     transform: scale3d(1, 1, 1);
+//   }
+// }
+
+// @-ms-keyframes jello-horizontal {
+//   0% {
+//     transform: scale3d(1, 1, 1);
+//   }
+//   30% {
+//     transform: scale3d(1.25, 0.75, 1);
+//   }
+//   40% {
+//     transform: scale3d(0.75, 1.25, 1);
+//   }
+//   50% {
+//     transform: scale3d(1.15, 0.85, 1);
+//   }
+//   65% {
+//     transform: scale3d(0.95, 1.05, 1);
+//   }
+//   75% {
+//     transform: scale3d(1.05, 0.95, 1);
+//   }
+//   100% {
+//     transform: scale3d(1, 1, 1);
+//   }
+// }
+
+// @-o-keyframes jello-horizontal {
+//   0% {
+//     transform: scale3d(1, 1, 1);
+//   }
+//   30% {
+//     transform: scale3d(1.25, 0.75, 1);
+//   }
+//   40% {
+//     transform: scale3d(0.75, 1.25, 1);
+//   }
+//   50% {
+//     transform: scale3d(1.15, 0.85, 1);
+//   }
+//   65% {
+//     transform: scale3d(0.95, 1.05, 1);
+//   }
+//   75% {
+//     transform: scale3d(1.05, 0.95, 1);
+//   }
+//   100% {
+//     transform: scale3d(1, 1, 1);
+//   }
+// }
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+// .drewShake {
+//   -webkit-animation: drewShake;
+//   -moz-animation: drewShake;
+//   -ms-animation: drewShake;
+//   -o-animation: drewShake;
+//   animation: drewShake;
+//   //
+// 	animation-duration: 2s;
+// 	transform-origin: center;
+// 	animation-iteration-count: 1;
+//   animation-timing-function: ease;
+// }
+
+// .drewShake:hover {
+//   -webkit-animation: drewShake;
+//   -moz-animation: drewShake;
+//   -ms-animation: drewShake;
+//   -o-animation: drewShake;
+//   animation: drewShake;
+//   //
+// 	animation-duration: 1.5s;
+// 	transform-origin: center;
+// 	animation-iteration-count: 2;
+//   animation-timing-function: ease;
+// }
+
+// @keyframes drewShake {
+// 	0% {
+//     transform: translate(2px, 1px) rotate(0deg);
+//   }
+// 	10% {
+//     transform: translate(-1px, -2px) rotate(-1deg);
+//   }
+// 	20% {
+//     transform: translate(-3px, 0px) rotate(1deg);
+//   }
+// 	30% {
+//     transform: translate(0px, 2px) rotate(0deg);
+//   }
+// 	40% {
+//     transform: translate(1px, -1px) rotate(1deg);
+//   }
+// 	50% {
+//     transform: translate(-1px, 2px) rotate(-1deg);
+//   }
+// 	60% {
+//     transform: translate(-3px, 1px) rotate(0deg);
+//   }
+// 	70% {
+//     transform: translate(2px, 1px) rotate(-1deg);
+//   }
+// 	80% {
+//     transform: translate(-1px, -1px) rotate(1deg);
+//   }
+// 	90% {
+//     transform: translate(2px, 2px) rotate(-1deg);
+//   }
+// 	100% {
+//     transform: translate(2px, 1px) rotate(0deg);
+//   }
+// }
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// http://animista.net, t: @cssanimista
+
+// .jello-horizontal-enter-active, .jello-horizontal-leave-active {
+//   -webkit-animation: jello-horizontal 0.9s both;
+//   -moz-animation: jello-horizontal 0.9s both;
+//   -ms-animation: jello-horizontal 0.9s both;
+//   -o-animation: jello-horizontal 0.9s both;
+//   animation: jello-horizontal 0.9s both;
+//   animation-delay: 2s;
+// }
+// .jello-horizontal-enter, .jello-horizontal-leave-to /* .jello-horizontal-leave-active below version 2.1.8 */ {
+//   -webkit-animation: jello-horizontal 0.9s both;
+//   -moz-animation: jello-horizontal 0.9s both;
+//   -ms-animation: jello-horizontal 0.9s both;
+//   -o-animation: jello-horizontal 0.9s both;
+//   animation: jello-horizontal 0.9s both;
+//   animation-delay: 2s;
+// }
+

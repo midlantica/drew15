@@ -1,7 +1,7 @@
 <template>
   <div class='marT0 marL1 marRH'>
     <div class='headBlock'>
-      <router-link to='Bourbon/Extras' class='drewhead' />
+      <router-link to='Bourbon/Extras' class='drewhead jello-horizontal' />
       <h1 v-html='this.$root.druHead'></h1>
     </div>
     <p v-html='this.$root.druCopy'></p>
@@ -21,9 +21,6 @@
     // margin-right: 2rem;
 
     a.drewhead {
-      // display: block;
-      // float: left;
-      // clear: left;
       margin-right: 1em;
       //
       background-image: url(/img/drew_mug_red.png);

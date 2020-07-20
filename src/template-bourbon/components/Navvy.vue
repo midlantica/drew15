@@ -102,6 +102,7 @@
   section.jobDesc {
     flex-grow: 1;
     margin-left: 1em;
+    margin-top: 0.1rem;
     transition: 0.25s ease-in;
 
     @media (max-width: $breakTwo) {

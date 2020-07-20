@@ -16,11 +16,14 @@
       title: 'Drew Harper',
       titleTemplate: '%s - UI/UX Designer, Graphic Designer',
     },
+    // link: [
+    //   { rel: 'stylesheet', href: 'http://csshake.surge.sh/csshake-slow.min.css' },
+    // ]
   }
 </script>
 
 <style lang='scss'>
-  @import '@/assets/css/main.scss';
+  // @import '@/assets/css/main.scss';
 
   $backer: #fffae4;
   $backBlack: #1f1f1f;
