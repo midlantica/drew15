@@ -11,7 +11,7 @@
       <router-link to="/Punk">
         <mastHarper class="svgArt mastHarper" />
       </router-link>
-      <router-link to="Punk/Extras" class="DrewHead jello-horizontal">&nbsp;</router-link>
+      <router-link to="Punk/Extras" class="DrewHead jelloHorizontal">&nbsp;</router-link>
     </div>
 
     <p class='resume'>Resume:

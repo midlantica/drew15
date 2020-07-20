@@ -1,7 +1,7 @@
 <template>
   <div class='marT0 marL1 marRH'>
     <div class='headBlock'>
-      <router-link to='Bourbon/Extras' class='drewhead jello-horizontal' />
+      <router-link to='Bourbon/Extras' class='drewhead jelloHorizontal' />
       <h1 v-html='this.$root.druHead'></h1>
     </div>
     <p v-html='this.$root.druCopy'></p>
@@ -35,6 +35,14 @@
       @media only screen and (min-device-width: 375px) and (max-device-width: 660px) and (-webkit-min-device-pixel-ratio: 2) {
         //
       }
+
+    }
+
+    .jelloHorizontal:hover {
+      -webkit-animation: jelloHorizontal 0.9s both !important;
+      animation: jelloHorizontal 0.9s both !important;
+      animation-delay: initial !important;
+      // animation-play-state: running;
     }
 
     h1 {
@@ -67,7 +75,25 @@
         font-size: 1.25rem;
       }
 
+      &:hover {
+        //
+      }
+
     }
+  }
+
+  @keyframes drewShake {
+    0% { transform: translate(2px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(0px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(2px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(2px, 2px) rotate(-1deg); }
+    100% { transform: translate(2px, 1px) rotate(0deg); }
   }
 
   p.smallCaps {

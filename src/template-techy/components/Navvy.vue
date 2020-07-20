@@ -5,7 +5,7 @@
       <div class='masty'>
 
         <div class='DHmast'>
-          <router-link to='/Techy/Extras' class='drewHeadPic jello-horizontal' />
+          <router-link to='/Techy/Extras' class='drewHeadPic jelloHorizontal' />
           <router-link to='/Techy' class='svgArt mastDrew' >
             <mastDrew />
           </router-link>

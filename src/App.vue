@@ -1,7 +1,9 @@
 <template>
   <div class='wrapper'>
     <Tabs />
-    <router-view />
+    <transition name='fade'>
+      <router-view />
+    </transition>
   </div>
 </template>
 
@@ -15,7 +17,7 @@
     metaInfo: {
       title: 'Drew Harper',
       titleTemplate: '%s - UI/UX Designer, Graphic Designer',
-    },
+    }
     // link: [
     //   { rel: 'stylesheet', href: 'http://csshake.surge.sh/csshake-slow.min.css' },
     // ]

@@ -58,6 +58,15 @@
         //
       ],
     },
+    transition: {
+      name: 'fade',
+      mode: 'out-in'
+    },
+    data() {
+      return {
+        show: true
+      }
+    }
   }
 </script>
 

@@ -4,7 +4,7 @@
     <section class='flexRowWrap w100'>
       <div class='drewTop'>
         <router-link to='/Corp' class='w100' >
-          <router-link to='/Corp/Extras' class='drewhead jello-horizontal' />
+          <router-link to='/Corp/Extras' class='drewhead jelloHorizontal' />
           <drewHarper class='drewHarper marTH' />
           <div class='flexRow just-center marTH'>
             <uiux class='uiux' />
