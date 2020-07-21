@@ -68,7 +68,7 @@
       Print,
       Misc
     },
-    data () {
+    data() {
       return {
         selectedView: 'Carousel',
         uiux: 'UI/UX',

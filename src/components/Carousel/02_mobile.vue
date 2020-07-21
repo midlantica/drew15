@@ -62,7 +62,12 @@
     },
     data: () => ({
       vfOptions: {
-        autoplay: true
+        autoplay: true,
+        enableGestures: true,
+        infinite: true,
+        bindKeys: true,
+        delay: 3000,
+        width: 98,
       },
       vfImages: [
         imgPath + 'jpay/jpay_app/jpay_app_home.jpg',

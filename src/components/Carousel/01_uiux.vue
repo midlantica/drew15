@@ -5,7 +5,8 @@
       :images='vfImages'
       :transitions='vfTransitions'
       :captions='vfCaptions'
-      ref='slider'>
+      ref='slider'
+    >
 
       <template v-slot:preloader>
         <flux-preloader />
@@ -63,7 +64,12 @@
     },
     data: () => ({
       vfOptions: {
-        autoplay: true
+        autoplay: true,
+        enableGestures: true,
+        infinite: true,
+        bindKeys: true,
+        delay: 3000,
+        width: 98,
       },
       vfImages: [
         imgPath + 'tdoe/tn_doc_01.jpg',
