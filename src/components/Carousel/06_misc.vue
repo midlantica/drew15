@@ -60,6 +60,10 @@
       // FluxPagination,
       FluxPreloader,
     },
+    methods: {
+      requestFullscreen: true,
+      exitFullscreen: false
+    },
     data: () => ({
       vfOptions: {
         autoplay: true,
@@ -68,6 +72,10 @@
         bindKeys: true,
         delay: 3000,
         width: 98,
+        toggleFullscreen: true,
+        allowFullscreen: true,
+        lazyLoad: true,
+        autohideTime: 2500,
       },
       vfImages: [
         imgPath + 'booth/jpay_tradeshow_booth2.png',

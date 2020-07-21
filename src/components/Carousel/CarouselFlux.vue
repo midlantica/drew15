@@ -68,6 +68,14 @@
       Print,
       Misc
     },
+    methods: {
+      toggleFullscreen: function() {
+        console.log('toggleFullscreen')
+        return toggleFullscreen
+        // exitFullscreen: false
+      }
+
+    },
     data() {
       return {
         selectedView: 'Carousel',

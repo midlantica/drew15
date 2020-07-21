@@ -62,6 +62,13 @@
       // FluxPagination,
       FluxPreloader,
     },
+    methods: {
+      toggle() {
+        console.log(this.$refs.slider.$children[0].Display.toggleFullScreen())
+        console.log(this.$refs.slider.Display.toggleFullScreen())
+        this.$refs.slider.Display.toggleFullScreen()
+      }
+    },
     data: () => ({
       vfOptions: {
         autoplay: true,
@@ -70,6 +77,10 @@
         bindKeys: true,
         delay: 3000,
         width: 98,
+        toggleFullscreen: true,
+        allowFullscreen: true,
+        lazyLoad: true,
+        autohideTime: 2500,
       },
       vfImages: [
         imgPath + 'tdoe/tn_doc_01.jpg',
@@ -107,4 +118,8 @@
 
 <style lang='scss'>
   @import '@/assets/css/_template-carousel.scss';
+
+  .fullScreen {
+    cursor: pointer;
+  }
 </style>
