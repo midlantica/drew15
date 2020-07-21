@@ -12,7 +12,7 @@
       <Skills />
 
       <div class='slides'>
-        <CarouselShow />
+        <CarouselFlux />
       </div>
 
       <About />
@@ -32,8 +32,7 @@
   import About from '@/components/About'
   import Skills from '@/components/Skills'
   import Quotes from '../components/Quote'
-  import CarouselShow from '@/components/Carousel/CarouselShow'
-  // const CarouselShow = () => import('@/components/Carousel/CarouselShow')
+  import CarouselFlux from '@/components/Carousel/CarouselFlux'
 
   export default {
     layout: 'default',
@@ -41,7 +40,7 @@
     components: {
       Navvy,
       HeadAndCopy,
-      CarouselShow,
+      CarouselFlux,
       About,
       Skills,
       Quotes,

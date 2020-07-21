@@ -10,7 +10,7 @@
       </div>
 
       <div class='slides'>
-        <CarouselShow />
+        <CarouselFlux />
       </div>
 
       <About />
@@ -31,7 +31,7 @@
   import About from '@/components/About'
   // import Quotes from '../components/Quote'
   import Footer from '../components/Footer'
-  import CarouselShow from '@/components/Carousel/CarouselShow'
+  import CarouselFlux from '@/components/Carousel/CarouselFlux'
 
   export default {
     layout: 'default',
@@ -42,7 +42,7 @@
       Skills,
       // Quotes,
       Footer,
-      CarouselShow
+      CarouselFlux
     },
     name: 'HomeGroovy',
     metaInfo: {

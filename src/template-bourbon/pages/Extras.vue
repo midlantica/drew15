@@ -18,9 +18,6 @@
   export default {
     name: 'Extras',
     metaInfo: {
-      // if no subcomponents specify a metaInfo.title, this title will be used
-      // title: 'Drew Harper',
-      // all titles will be injected into this template
       titleTemplate: '%s - Extras!',
       bodyAttrs: {
         class: 'bourbon extras'

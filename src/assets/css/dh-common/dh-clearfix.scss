@@ -1,16 +1,16 @@
 @mixin clearfix {
   &:after {
-    content: "";
-    display: table;
-    clear: both;
+    content: "" !important;
+    display: table !important;
+    clear: both !important;
   }
 }
 
 .clearfix {
   //
   &:after {
-    content: "";
-    display: table;
-    clear: both;
+    content: "" !important;
+    display: table !important;
+    clear: both !important;
   }
 }
