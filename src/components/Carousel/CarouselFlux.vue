@@ -117,7 +117,7 @@
   body.bourbon .projectBox {
     @include box-shadow(0px, 1px, 1px, 0px, hsla(0, 0%, 0%, 0.5));
     // min-height: 386px;
-    min-height: 380px;
+    // min-height: 380px;
 
     @media (max-width: $breakThou) {
       // min-height: initial;
@@ -139,7 +139,7 @@
 
   body.groovy .projectBox {
     @include box-shadow(0px, 6px, 0px, 0px, hsla(0, 0%, 0%, 0.25));
-    min-height: 357px;
+    // min-height: 357px;
 
     @media (max-width: $breakThou) {
       min-height: initial;
@@ -161,7 +161,7 @@
 
   body.techy .projectBox {
     @include box-shadow(0px, 2px, 2px, -3px, hsla(0, 0%, 0%, 1));
-    min-height: 353px;
+    // min-height: 353px;
 
     @media (max-width: $breakThou) {
       min-height: initial;
@@ -185,7 +185,7 @@
   body.corp .projectBox {
     background: #d7e7f3;
     @include box-shadow(0px, 1px, 1px, 0px, hsla(0, 0%, 0%, 0.5), false);
-    min-height: 357px;
+    // min-height: 357px;
 
 
     @media (max-width: $breakThou) {
@@ -209,7 +209,7 @@
 
   body.punk .projectBox {
     @include box-shadow(0px, 1px, 1px, 0px, hsla(0, 0%, 0%, 0.5), false);
-    min-height: 357px;
+    // min-height: 357px;
 
     @media (max-width: $breakThou) {
       min-height: initial;
@@ -323,6 +323,7 @@
     border-radius: 0.25em;
     background: transparentize(white, 0.5);
     cursor: pointer;
+    z-index: 100;
     padding: 0.2em 0.5em 0.1em 0.25em;
     // margin: 0.1em 0em 0 .2rem;
     font-family: Helvetica, Arial, sans-serif;
