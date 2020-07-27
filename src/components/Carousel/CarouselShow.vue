@@ -95,7 +95,7 @@
 
   body.bourbon .projectBox {
     @include box-shadow(0px, 1px, 1px, 0px, hsla(0, 0%, 0%, 0.5));
-    min-height: 386px;
+    // min-height: 386px;
 
     @media (max-width: $breakThou) {
       min-height: initial;

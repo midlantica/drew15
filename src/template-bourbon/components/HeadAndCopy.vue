@@ -18,7 +18,7 @@
     grid-column-gap: 6px;
     justify-items: start;
     align-items: center;
-    // margin-right: 2rem;
+    margin-top: .5rem;
 
     a.drewhead {
       margin-right: 1em;

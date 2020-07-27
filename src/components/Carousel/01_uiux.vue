@@ -35,6 +35,7 @@
 
 <script>
   const imgPath = 'img/portfolio/01_uiux/'
+  // import {vueFluxVars} from './vueFluxVars.js'
 
   const transitions = [{
    name: 'slide',
@@ -77,10 +78,10 @@
         bindKeys: true,
         delay: 3000,
         width: 98,
-        // toggleFullscreen: true,
-        // allowFullscreen: true,
+        toggleFullscreen: true,
+        allowFullscreen: true,
         lazyLoad: true,
-        autohideTime: 2500,
+        autohideTime: 2500
       },
       vfImages: [
         imgPath + 'tdoe/tn_doc_01.jpg',
