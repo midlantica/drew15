@@ -34,6 +34,7 @@
 
 <script>
   const imgPath = 'img/portfolio/02_mobile/'
+  import vueFluxVars from './vueFluxVars.js'
 
   const transitions = [{
    name: 'slide',
@@ -66,18 +67,7 @@
       exitFullscreen: false
     },
     data: () => ({
-      vfOptions: {
-        autoplay: true,
-        enableGestures: true,
-        infinite: true,
-        bindKeys: true,
-        delay: 3000,
-        width: 98,
-        toggleFullscreen: true,
-        allowFullscreen: true,
-        lazyLoad: true,
-        autohideTime: 2500,
-      },
+      vfOptions: vueFluxVars,
       vfImages: [
         imgPath + 'jpay/jpay_app/jpay_app_home.jpg',
         imgPath + 'jpay/jpay_app/jpay_app_home_prefs.jpg',

@@ -11,5 +11,4 @@ const vueFluxVars = {
   autohideTime: 2500
 }
 
-console.log(vueFluxVars)
-// export default()
+export default vueFluxVars

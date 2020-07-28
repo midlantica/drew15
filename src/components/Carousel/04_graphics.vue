@@ -33,6 +33,7 @@
 
 <script>
   const imgPath = 'img/portfolio/04_graphics/'
+  import vueFluxVars from './vueFluxVars.js'
 
   const transitions = [{
    name: 'slide',
@@ -65,18 +66,7 @@
       exitFullscreen: false
     },
     data: () => ({
-      vfOptions: {
-        autoplay: true,
-        enableGestures: true,
-        infinite: true,
-        bindKeys: true,
-        delay: 3000,
-        width: 98,
-        toggleFullscreen: true,
-        allowFullscreen: true,
-        lazyLoad: true,
-        autohideTime: 2500,
-      },
+      vfOptions: vueFluxVars,
       vfImages: [
         imgPath + 'jpay_app_logos.jpg',
         imgPath + 'jpay_infographgic_cloud.jpg',
