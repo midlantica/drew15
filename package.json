@@ -43,7 +43,7 @@
     "file-loader": "^2.0.0",
     "postcss-loader": "^3.0.0",
     "prettier": "2.0.5",
-    "sass": "^1.26.11",
+    "sass": "^1.26.12",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.3.0",
     "vue-template-compiler": "^2.6.12"
