@@ -88,7 +88,8 @@ export default new VueRouter({
     // REDIRECTS ########
     // REDIRECTS ########
     {
-      path: '*',
+      path: '/:pathMatch(.*)*',
+      name: 'HomeBourbon',
       redirect: HomeBourbon
     },
     {

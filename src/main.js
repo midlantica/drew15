@@ -1,12 +1,9 @@
-import Vue from 'vue'
+import { createApp, h } from 'vue';
 import App from './App.vue'
 import router from './router'
 import './registerServiceWorker'
 
-Vue.config.productionTip = false
-
-new Vue({
-  router,
+createApp({
   data: {
     drewHarper: 'Drew Harper',
     uiuxDesigner: 'UI/UX Designer',
@@ -20,5 +17,7 @@ new Vue({
     corp: 'Corp',
     punk: 'Punk'
   },
-  render: (h) => h(App)
-}).$mount('#app')
+
+  render: () => h(App)
+}).use(router)
+  .mount('#app')
