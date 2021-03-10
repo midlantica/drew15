@@ -1,6 +1,6 @@
 root = true
 [*]
-quote_type = single
+quote_type = double
 
 [*]
 charset = utf-8
@@ -15,4 +15,4 @@ insert_final_newline = false
 trim_trailing_whitespace = false
 
 [*.ts]
-quote_type = single
+quote_type = double

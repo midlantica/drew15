@@ -1,15 +1,15 @@
 <template>
-  <div class='marT0 marL1 marRH'>
-    <div class='headBlock'>
-      <router-link to='Bourbon/Extras' class='drewhead jelloHorizontal' />
-      <h1 v-html='this.$root.druHead'></h1>
+  <div class="marT0 marL1 marRH">
+    <div class="headBlock">
+      <router-link to="Bourbon/Extras" class="drewhead jelloHorizontal" />
+      <h1>When UX design is done right the design seems inevitable</h1>
     </div>
-    <p v-html='this.$root.druCopy'></p>
+    <p>Whether it’s a prototype, a responsive website, a wireframe, an interactive <span class="smallCaps">PDF</span>, a new mobile app <span class="smallCaps">UI</span>, a quick skin job, a few more buttons, a dialog box, filling up a bucket, or getting in the trenches with  <span class="smallCaps">HTML</span> and <span class="smallCaps">CSS</span>, I can deliver. I don’t let ‘design’ get in the way. Oh and I’m a coder groupie 😃</p>
   </div>
 </template>
 
-<style lang='scss' scoped>
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
+<style lang="scss" scoped>
+  @import "@/template-bourbon/assets/css/bourbon-main.scss";
 
   .headBlock {
     display: grid;

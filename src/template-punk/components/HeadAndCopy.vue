@@ -1,16 +1,16 @@
 <template>
-  <div class='copyGrid'>
-    <h2 v-html='this.$root.uiuxDesigner'/>
-    <h2 v-html='this.$root.frontEndDev'/>
+  <div class="copyGrid">
+    <h2>UI/UX Designer</h2>
+    <h2>Front-End Dev</h2>
     <div>
-      <h1 v-html='this.$root.druHead' />
-      <p v-html='this.$root.druCopy' />
+      <h1>When UX design is done right the design seems inevitable</h1>
+      <p>Whether it’s a prototype, a responsive website, a wireframe, an interactive <span class="smallCaps">PDF</span>, a new mobile app <span class="smallCaps">UI</span>, a quick skin job, a few more buttons, a dialog box, filling up a bucket, or getting in the trenches with  <span class="smallCaps">HTML</span> and <span class="smallCaps">CSS</span>, I can deliver. I don’t let ‘design’ get in the way. Oh and I’m a coder groupie 😃</p>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-  @import '@/template-punk/assets/css/punk-main.scss';
+  @import "@/template-punk/assets/css/punk-main.scss";
 
   .copyGrid {
     margin-top: 1em;

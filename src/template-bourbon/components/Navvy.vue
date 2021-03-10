@@ -1,21 +1,21 @@
 <template>
   <nav>
     <h1>
-      <router-link to='/'>DREW HARPER</router-link>
+      <router-link to="/">DREW HARPER</router-link>
     </h1>
-    <section class='jobDesc'>
-      <h2>{{ this.$root.uiuxDesigner }}</h2>
+    <section class="jobDesc">
+      <h2>UI/UX Designer</h2>
       <h2>FRONT&nbsp;END&nbsp;DEV</h2>
     </section>
-    <section class='contact'>
-      <p class='email'>
-        <a href='mailto:druharper@gmail.com'>DRUHARPER@GMAIL.COM</a>
+    <section class="contact">
+      <p class="email">
+        <a href="mailto:druharper@gmail.com">DRUHARPER@GMAIL.COM</a>
       </p>
-      <p class='resume'>
+      <p class="resume">
         Resume: Word
-        <a href='resume/drew_harper_resume_portfolio_short.docx'>Small&#8195;</a>/&#8195;
-        <a href='resume/drew_harper_resume_portfolio.docx'>Big</a> or
-        <a href='resume/drew_harper_resume_portfolio.pdf'>PDF</a>
+        <a href="resume/drew_harper_resume_portfolio_short.docx">Small&#8195;</a>/&#8195;
+        <a href="resume/drew_harper_resume_portfolio.docx">Big</a> or
+        <a href="resume/drew_harper_resume_portfolio.pdf">PDF</a>
       </p>
     </section>
   </nav>
