@@ -16,32 +16,32 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      name: "HomeDefault",
+      name: "Bourbon",
       component: HomeBourbon,
     },
     {
       path: "/Bourbon",
-      name: "HomeBourbon",
+      name: "Bourbon",
       component: HomeBourbon,
     },
     {
       path: "/Groovy",
-      name: "HomeGroovy",
+      name: "Groovy",
       component: HomeGroovy,
     },
     {
       path: "/Techy",
-      name: "HomeTechy",
+      name: "Techy",
       component: HomeTechy,
     },
     {
       path: "/Corp",
-      name: "HomeCorp",
+      name: "Corp",
       component: HomeCorp,
     },
     {
       path: "/Punk",
-      name: "HomePunk",
+      name: "Punk",
       component: HomePunk,
     },
     {
@@ -86,7 +86,7 @@ const router = createRouter({
     },
     {
       path: "/:pathMatch(.*)*",
-      name: "HomeBourbon",
+      name: "Bourbon",
       redirect: HomeBourbon,
     },
     {
