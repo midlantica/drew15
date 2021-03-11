@@ -4,12 +4,12 @@
       <NavvyHead />
     </header>
 
-    <main class='mainGrid'>
-      <div class='copyArea'>
+    <main class="mainGrid">
+      <div class="copyArea">
         <HeadAndCopy />
       </div>
 
-      <div class='slides'>
+      <div class="slides">
         <CarouselFlux />
       </div>
 
@@ -25,16 +25,16 @@
 </template>
 
 <script>
-  import NavvyHead from '../components/NavvyHead'
-  import HeadAndCopy from '../components/HeadAndCopy'
-  import Skills from '@/components/Skills'
-  import About from '@/components/About'
-  // import Quotes from '../components/Quote'
-  import Footer from '../components/Footer'
-  import CarouselFlux from '@/components/Carousel/CarouselFlux'
+  import NavvyHead from "../components/NavvyHead"
+  import HeadAndCopy from "../components/HeadAndCopy"
+  import Skills from "@/components/Skills"
+  import About from "@/components/About"
+  // import Quotes from "../components/Quote"
+  import Footer from "../components/Footer"
+  import CarouselFlux from "@/components/Carousel/CarouselFlux"
 
   export default {
-    layout: 'default',
+    layout: "default",
     components: {
       NavvyHead,
       HeadAndCopy,
@@ -44,22 +44,22 @@
       Footer,
       CarouselFlux
     },
-    name: 'HomeGroovy',
+    name: "HomeGroovy",
     metaInfo: {
-      title: 'Drew Harper',
-      titleTemplate: '%s - UI/UX Designer, Graphic Designer!',
+      title: "Drew Harper",
+      titleTemplate: "%s - UI/UX Designer, Graphic Designer!",
       bodyAttrs: {
-        class: 'groovy'
+        class: "groovy"
       },
       style: [
-        // { cssText: '.wrapper { background: #fffae4; }', type: 'text/css' }
+        // { cssText: ".wrapper { background: #fffae4; }", type: "text/css" }
       ]
     }
   }
 </script>
 
-<style lang='scss' scoped>
-  @import '@/template-groovy/assets/css/groovy-main.scss';
+<style lang="scss" scoped>
+  @import "@/template-groovy/assets/css/groovy-main.scss";
 
   .mainGrid {
     display: grid;

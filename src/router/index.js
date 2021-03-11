@@ -6,13 +6,10 @@ import HomeCorp from "@/template-corp/pages/HomeCorp.vue"
 import HomePunk from "@/template-punk/pages/HomePunk.vue"
 // import Meta from "vue-meta"
 
-// Vue.use(VueRouter)
 // Vue.use(Meta)
 
-const routerHistory = createWebHistory()
-
 const router = createRouter({
-  history: routerHistory,
+  history: createWebHistory(),
   routes: [
     {
       path: "/",
@@ -97,6 +94,10 @@ const router = createRouter({
       path: "/404",
       redirect: HomeBourbon,
     },
+    {
+      path: "/:catchAll(.*)",
+      redirect: HomeBourbon,
+    },
   ],
 })
-export default router
+export { router }

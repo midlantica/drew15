@@ -1,10 +1,10 @@
 <template>
   <div class="tabs">
-    <router-link :to="{ name: 'Bourbon' }" class="bourbon">Bourbon</router-link>
-    <router-link :to="{ name: 'Groovy' }" class="groovy">Groovy</router-link>
-    <router-link :to="{ name: 'Techy' }" class="techy">Techy</router-link>
-    <router-link :to="{ name: 'Corp' }" class="corp">Corp</router-link>
-    <router-link :to="{ name: 'Punk' }" class="punk">Punk</router-link>
+    <router-link to="/Bourbon" class="bourbon">Bourbon</router-link>
+    <router-link to="/Groovy" class="groovy">Groovy</router-link>
+    <router-link to="/Techy" class="techy">Techy</router-link>
+    <router-link to="/Corp" class="corp">Corp</router-link>
+    <router-link to="/Punk" class="punk">Punk</router-link>
   </div>
 </template>
 
