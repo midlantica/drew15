@@ -23,6 +23,7 @@ module.exports = {
     },
   },
   plugins: ["import", "variables", "vue", "html", "prettier"],
+  // plugins: ["import", "variables", "vue", "html", "prettier"],
   rules: {
     // allow paren-less arrow functions
     "arrow-parens": 1,
