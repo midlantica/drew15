@@ -30,7 +30,7 @@
   import CarouselFlux from '@/components/Carousel/CarouselFlux'
 
   export default {
-    layout: 'default',
+    // layout: 'default',
     components: {
       Navvy,
       HeadAndCopy,

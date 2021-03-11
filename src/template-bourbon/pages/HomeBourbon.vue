@@ -35,7 +35,7 @@
   import CarouselFlux from '@/components/Carousel/CarouselFlux'
 
   export default {
-    layout: 'default',
+    // layout: 'default',
     name: 'HomeBourbon',
     components: {
       Navvy,
