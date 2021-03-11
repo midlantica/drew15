@@ -45,7 +45,10 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import( /* webpackChunkName: "ExtrasBourbon" */ "../template-bourbon/pages/Extras.vue"),
+    component: () =>
+      import(
+        /* webpackChunkName: "ExtrasBourbon" */ "../template-bourbon/pages/Extras.vue"
+      ),
   },
   {
     path: "/Corp/Extras",
@@ -53,7 +56,10 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import( /* webpackChunkName: "ExtrasCorp" */ "../template-corp/pages/Extras.vue"),
+    component: () =>
+      import(
+        /* webpackChunkName: "ExtrasCorp" */ "../template-corp/pages/Extras.vue"
+      ),
   },
   {
     path: "/Groovy/Extras",
@@ -61,7 +67,10 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import( /* webpackChunkName: "ExtrasGroovy" */ "../template-groovy/pages/Extras.vue"),
+    component: () =>
+      import(
+        /* webpackChunkName: "ExtrasGroovy" */ "../template-groovy/pages/Extras.vue"
+      ),
   },
   {
     path: "/Punk/Extras",
@@ -69,7 +78,10 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import( /* webpackChunkName: "ExtrasPunk" */ "../template-punk/pages/Extras.vue"),
+    component: () =>
+      import(
+        /* webpackChunkName: "ExtrasPunk" */ "../template-punk/pages/Extras.vue"
+      ),
   },
   {
     path: "/Techy/Extras",
@@ -77,7 +89,10 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import( /* webpackChunkName: "ExtrasTechy" */ "../template-techy/pages/Extras.vue"),
+    component: () =>
+      import(
+        /* webpackChunkName: "ExtrasTechy" */ "../template-techy/pages/Extras.vue"
+      ),
   },
   {
     path: "/:pathMatch(.*)*",
@@ -92,10 +107,11 @@ const routes = [
     path: "/404",
     redirect: HomeBourbon,
   },
-  {
-    path: "/:catchAll(.*)",
-    redirect: HomeBourbon,
-  },
+  // ,
+  // {
+  //   path: "/:catchAll(.*)",
+  //   redirect: HomeBourbon,
+  // },
 ]
 
 const router = createRouter({
