@@ -4,7 +4,7 @@ module.exports = {
     sourceMap: true,
     loaderOptions: {
       sass: {
-        data: `@import "@/assets/css/main.scss";`
+        data: `@import "src/assets/css/main.scss";`
       }
     }
   }
