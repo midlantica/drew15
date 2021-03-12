@@ -1,36 +1,36 @@
 <template>
-  <div class="projectBox">
-    <a class="carouselArrow" @click.stop="selectedView = `Carousel`">◀︎ BACK</a>
-    <p class="projectHead">Projects - {{ selectedView }}</p>
-    <component :is="selectedView">
-      <div class="miniGallery">
-        <a @click.stop="selectedView = `Uiux`">
-          <div class="box Uiux">
+  <div class='projectBox'>
+    <a class='carouselArrow' @click.stop='selectedView = `Carousel`'>◀︎ BACK</a>
+    <p class='projectHead'>Projects - {{ selectedView }}</p>
+    <component :is='selectedView'>
+      <div class='miniGallery'>
+        <a @click.stop='selectedView = `Uiux`'>
+          <div class='box Uiux'>
             <p>UI/UX Design</p>
           </div>
         </a>
-        <a @click.stop="selectedView = `Mobile`">
-          <div class="box Mobile">
+        <a @click.stop='selectedView = `Mobile`'>
+          <div class='box Mobile'>
             <p>Mobile</p>
           </div>
         </a>
-        <a @click.stop="selectedView = `Kiosk`">
-          <div class="box Kiosk">
+        <a @click.stop='selectedView = `Kiosk`'>
+          <div class='box Kiosk'>
             <p>Kiosk</p>
           </div>
         </a>
-        <a @click.stop="selectedView = `Graphics`">
-          <div class="box Graphics">
+        <a @click.stop='selectedView = `Graphics`'>
+          <div class='box Graphics'>
             <p>Graphics</p>
           </div>
         </a>
-        <a @click.stop="selectedView = `Print`">
-          <div class="box Print">
+        <a @click.stop='selectedView = `Print`'>
+          <div class='box Print'>
             <p>Print</p>
           </div>
         </a>
-        <a @click.stop="selectedView = `Misc`">
-          <div class="box Misc">
+        <a @click.stop='selectedView = `Misc`'>
+          <div class='box Misc'>
             <p>Misc.</p>
           </div>
         </a>
@@ -40,17 +40,17 @@
 </template>
 
 <script>
-  // import Carousel from "@/components/Carousel/Carousel"
-  import Uiux from "@/components/Carousel/01_uiux"
-  const Mobile = () => import("@/components/Carousel/02_mobile")
-  const Kiosk = () => import("@/components/Carousel/03_kiosk")
-  const Graphics = () => import("@/components/Carousel/04_graphics")
-  const Print = () => import("@/components/Carousel/05_print")
-  const Misc = () => import("@/components/Carousel/06_misc")
+  // import Carousel from '@/components/Carousel/Carousel'
+  import Uiux from '@/components/Carousel/01_uiux'
+  const Mobile = () => import('@/components/Carousel/02_mobile')
+  const Kiosk = () => import('@/components/Carousel/03_kiosk')
+  const Graphics = () => import('@/components/Carousel/04_graphics')
+  const Print = () => import('@/components/Carousel/05_print')
+  const Misc = () => import('@/components/Carousel/06_misc')
 
   export default {
-    layout: "default",
-    name: "CarouselShow",
+    layout: 'default',
+    name: 'CarouselShow',
     components: {
       Uiux,
       Mobile,
@@ -61,20 +61,20 @@
     },
     data() {
       return {
-        selectedView: "Carousel",
-        uiux: "UI/UX",
-        mobile: "Mobile",
-        kiosk: "Kiosk",
-        graphics: "Graphics",
-        print: "Print",
-        misc: "Misc."
+        selectedView: 'Carousel',
+        uiux: 'UI/UX',
+        mobile: 'Mobile',
+        kiosk: 'Kiosk',
+        graphics: 'Graphics',
+        print: 'Print',
+        misc: 'Misc.'
       }
     }
   }
 </script>
 
-<style lang="scss" scoped>
-  @import "@/assets/css/_template-carousel.scss";
+<style lang='scss' scoped>
+  @import '@/assets/css/_template-carousel.scss';
 
   .projectBox {
     background: lighten(lightgrey, 10);
@@ -225,7 +225,7 @@
 
   body.bourbon .projectHead,
   body.bourbon .box p {
-    font-family: Dosis, "Helvetica Neue", Arial, sans-serif !important;
+    font-family: Dosis, 'Helvetica Neue', Arial, sans-serif !important;
   }
 
   body.bourbon .box {
@@ -240,7 +240,7 @@
   //////////
   body.groovy .projectHead,
   body.groovy .box p {
-    font-family: Dosis, "Helvetica Neue", Arial, sans-serif !important;
+    font-family: Dosis, 'Helvetica Neue', Arial, sans-serif !important;
   }
 
   body.groovy .box {
@@ -250,7 +250,7 @@
   //////////
   body.techy .projectHead,
   body.techy .box p {
-    font-family: Dosis, "Helvetica Neue", Arial, sans-serif !important;
+    font-family: Dosis, 'Helvetica Neue', Arial, sans-serif !important;
   }
 
   body.techy .box {
@@ -260,7 +260,7 @@
   //////////
   body.corp .projectHead,
   body.corp .box p {
-    font-family: cormorantGaramond-Semi-Bold, "Times New Roman", Times, serif !important;
+    font-family: cormorantGaramond-Semi-Bold, 'Times New Roman', Times, serif !important;
     letter-spacing: 0em;
   }
 
@@ -286,7 +286,7 @@
   //////////
   body.punk .projectHead,
   body.punk .box p {
-    font-family: Poppins, "Helvetica Neue", Arial, sans-serif !important;
+    font-family: Poppins, 'Helvetica Neue', Arial, sans-serif !important;
   }
 
   body.punk .box {

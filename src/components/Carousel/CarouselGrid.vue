@@ -1,44 +1,45 @@
+/* eslint-disable vue/no-parsing-error */
 <template>
-  <div class="miniGallery">
-    <a @click="$emit('selectedView') = 'Uiux'">
-      <div class="box">
+  <div class='miniGallery'>
+    <a @click='$emit("selectedView") = "Uiux"'>
+      <div class='box'>
         <p>UI/UX Design</p>
       </div>
     </a>
 
-    <a @click="$emit('selectedView') = 'Mobile'">
-      <div class="box">
+    <a @click='$emit("selectedView") = "Mobile"'>
+      <div class='box'>
         <p>Mobile</p>
       </div>
     </a>
 
-    <a @click="$emit('selectedView') = 'Kiosk'">
-      <div class="box">
+    <a @click='$emit("selectedView") = "Kiosk"'>
+      <div class='box'>
         <p>Kiosk</p>
       </div>
     </a>
 
-    <a @click="$emit('selectedView') = 'Graphics'">
-      <div class="box">
+    <a @click='$emit("selectedView") = "Graphics"'>
+      <div class='box'>
         <p>Graphics</p>
       </div>
     </a>
 
-    <a @click="$emit('selectedView') = 'Print'">
-      <div class="box">
+    <a @click='$emit("selectedView") = "Print"'>
+      <div class='box'>
         <p>Print</p>
       </div>
     </a>
 
-    <a @click="$emit('selectedView') = 'Misc'">
-      <div class="box">
+    <a @click='$emit("selectedView") = "Misc"'>
+      <div class='box'>
         <p>Misc.</p>
       </div>
     </a>
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang='scss' scoped>
   // @import '@/assets/css/main.scss';
   // @import '@/template-bourbon/assets/css/bourbon-main.scss';
   @import '@/assets/css/_template-carousel.scss';
@@ -128,4 +129,3 @@
     }
   }
 </style>
-

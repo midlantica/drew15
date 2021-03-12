@@ -9,7 +9,6 @@
 </template>
 
 <style lang="scss" scoped>
-
   .tabs {
     display: flex;
     flex-direction: row;

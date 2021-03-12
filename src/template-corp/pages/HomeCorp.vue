@@ -3,21 +3,16 @@
     <header>
       <Navvy />
     </header>
-
     <main class="mainGrid">
       <div class="copyArea">
         <HeadAndCopy />
       </div>
-
       <div class="slides">
         <CarouselFlux />
       </div>
-
       <About />
-
       <Skills />
     </main>
-
     <footer>
       <Quotes />
     </footer>
