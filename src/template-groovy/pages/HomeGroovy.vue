@@ -25,13 +25,13 @@
 </template>
 
 <script>
-  import NavvyHead from "../components/NavvyHead"
-  import HeadAndCopy from "../components/HeadAndCopy"
-  import Skills from "@/components/Skills"
-  import About from "@/components/About"
+  import NavvyHead from '../components/NavvyHead'
+  import HeadAndCopy from '../components/HeadAndCopy'
+  import Skills from '@/components/Skills'
+  import About from '@/components/About'
   // import Quotes from "../components/Quote"
-  import Footer from "../components/Footer"
-  import CarouselFlux from "@/components/Carousel/CarouselFlux"
+  import Footer from '../components/Footer'
+  import CarouselFlux from '@/components/Carousel/CarouselFlux'
 
   export default {
     // layout: "default",
@@ -44,15 +44,15 @@
       Footer,
       CarouselFlux
     },
-    name: "HomeGroovy",
+    name: 'HomeGroovy',
     metaInfo: {
-      title: "Drew Harper",
-      titleTemplate: "%s - UI/UX Designer, Graphic Designer!",
+      title: 'Drew Harper',
+      titleTemplate: '%s - UI/UX Designer, Graphic Designer!',
       bodyAttrs: {
-        class: "groovy"
+        class: 'groovy'
       },
       style: [
-        // { cssText: ".wrapper { background: #fffae4; }", type: "text/css" }
+      // { cssText: ".wrapper { background: #fffae4; }", type: "text/css" }
       ]
     }
   }

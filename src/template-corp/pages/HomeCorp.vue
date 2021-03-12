@@ -25,12 +25,12 @@
 </template>
 
 <script>
-  import Navvy from "../components/Navvy"
-  import HeadAndCopy from "../components/HeadAndCopy"
-  import Skills from "../components/Skills"
-  import About from "@/components/About"
-  import Quotes from "../components/Quote"
-  import CarouselFlux from "@/components/Carousel/CarouselFlux"
+  import Navvy from '../components/Navvy'
+  import HeadAndCopy from '../components/HeadAndCopy'
+  import Skills from '../components/Skills'
+  import About from '@/components/About'
+  import Quotes from '../components/Quote'
+  import CarouselFlux from '@/components/Carousel/CarouselFlux'
 
   export default {
     // layout: "default",
@@ -42,20 +42,20 @@
       Skills,
       Quotes,
     },
-    name: "HomeCorp",
+    name: 'HomeCorp',
     metaInfo: {
       // if no subcomponents specify a metaInfo.title, this title will be used
-      title: "Drew Harper",
+      title: 'Drew Harper',
       // all titles will be injected into this template
-      titleTemplate: "%s - UI/UX Designer, Graphic Designer!",
+      titleTemplate: '%s - UI/UX Designer, Graphic Designer!',
       bodyAttrs: {
-        class: "corp"
+        class: 'corp'
       },
       style: [
-        //
+      //
       ],
       link: [
-        { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;1,400;1,500&family=Alegreya:ital,wght@0,400;0,500;1,400;1,500&display=swap" },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;1,400;1,500&family=Alegreya:ital,wght@0,400;0,500;1,400;1,500&display=swap' },
       ]
     }
   }

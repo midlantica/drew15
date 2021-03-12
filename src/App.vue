@@ -8,15 +8,15 @@
 </template>
 
 <script>
-  import Tabs from "@/components/Tabs.vue"
+  import Tabs from '@/components/Tabs.vue'
   export default {
     components: {
       Tabs,
     },
-    name: "App",
+    name: 'App',
     metaInfo: {
-      title: "Drew Harper",
-      titleTemplate: "%s - UI/UX Designer, Graphic Designer",
+      title: 'Drew Harper',
+      titleTemplate: '%s - UI/UX Designer, Graphic Designer',
     }
     // link: [
     //   { rel: "stylesheet", href: "http://csshake.surge.sh/csshake-slow.min.css" },

@@ -3,21 +3,16 @@
     <header>
       <Navvy />
     </header>
-
     <main class="mainGrid">
       <div class="copyArea">
         <HeadAndCopy />
       </div>
-
       <div class="slides">
         <CarouselFlux />
       </div>
-
       <About />
-
       <Skills />
     </main>
-
     <footer>
       <Footy />
     </footer>
@@ -25,12 +20,12 @@
 </template>
 
 <script>
-  import Navvy from "../components/Navvy"
-  import HeadAndCopy from "../components/HeadAndCopy"
-  import Skills from "@/components/Skills"
-  import About from "@/components/About"
-  import Footy from "../components/Footy"
-  import CarouselFlux from "@/components/Carousel/CarouselFlux"
+  import Navvy from '../components/Navvy'
+  import HeadAndCopy from '../components/HeadAndCopy'
+  import Skills from '@/components/Skills'
+  import About from '@/components/About'
+  import Footy from '../components/Footy'
+  import CarouselFlux from '@/components/Carousel/CarouselFlux'
 
   export default {
     // layout: "default",
@@ -42,20 +37,20 @@
       Skills,
       Footy
     },
-    name: "HomeTechy",
+    name: 'HomeTechy',
     metaInfo: {
       // if no subcomponents specify a metaInfo.title, this title will be used
-      title: "Drew Harper",
+      title: 'Drew Harper',
       // all titles will be injected into this template
-      titleTemplate: "%s - UI/UX Designer, Graphic Designer!",
+      titleTemplate: '%s - UI/UX Designer, Graphic Designer!',
       bodyAttrs: {
-        class: "techy"
+        class: 'techy'
       },
       style: [
-        //
+      //
       ],
       link: [
-        { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' },
       ]
     }
   }

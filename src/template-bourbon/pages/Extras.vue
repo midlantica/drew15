@@ -23,7 +23,7 @@
         class: 'bourbon extras'
       },
       style: [
-        //
+      //
       ],
     },
     components: {

@@ -37,7 +37,7 @@
       CarouselFlux,
       About,
       Skills
-      // Quotes
+    // Quotes
     },
     name: 'HomePunk',
     metaInfo: {

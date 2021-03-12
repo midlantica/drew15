@@ -54,7 +54,7 @@
         class: 'bourbon',
       },
       style: [
-        //
+      //
       ],
     },
     transition: {

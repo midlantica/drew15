@@ -34,14 +34,14 @@
 </template>
 
 <script>
-  const imgPath = "img/portfolio/01_uiux/"
-  import vueFluxVars from "./vueFluxVars.js"
+  const imgPath = 'img/portfolio/01_uiux/'
+  import vueFluxVars from './vueFluxVars.js'
 
   const transitions = [{
-   name: "slide",
-   options: {
+    name: 'slide',
+    options: {
       totalDuration: 700,
-      easing: "ease-out",
+      easing: 'ease-out',
     }
   }]
 
@@ -52,7 +52,7 @@
     FluxIndex,
     // FluxPagination,
     FluxPreloader,
-  } from "vue-flux"
+  } from 'vue-flux'
 
   export default {
     components: {
@@ -73,34 +73,34 @@
     data: () => ({
       vfOptions: vueFluxVars,
       vfImages: [
-        imgPath + "tdoe/tn_doc_01.jpg",
-        imgPath + "tdoe/tn_doc_02.jpg",
-        imgPath + "civicinc/civicinc_bridge_01.jpg",
-        imgPath + "civicinc/civicinc_bridge_02.jpg",
-        imgPath + "civicinc/civicinc_bridge_03.jpg",
-        imgPath + "civicinc/civicinc_funding_01.jpg",
-        imgPath + "civicinc/civicinc_funding_02.jpg",
-        imgPath + "civicinc/civicinc_land_01.jpg",
-        imgPath + "civicinc/civicinc_land_02.jpg",
-        imgPath + "jpay/jpay_com/jpay_web_home.jpg",
-        imgPath + "jpay/jpay_com/jpay_web_signed_in.jpg",
-        imgPath + "jpay/jpay_com/jpay_web_money.jpg",
-        imgPath + "jpay/jpay_com/jpay_web_email.jpg",
-        imgPath + "jpay/jpay_com/jpay_web_stamps.jpg",
-        imgPath + "jpay/jpayinc/jpayinc_website_old.jpg",
-        imgPath + "jpay/jpayinc/jpayinc_website.jpg",
-        imgPath + "jpay/jpayinc/jpayinc_website_responsive.jpg",
-        imgPath + "prisonride/prisonride_home.jpg",
-        imgPath + "prisonride/prisonride_profile.jpg",
-        imgPath + "mlotto_web.jpg",
-        imgPath + "valentina_website.jpg",
-        imgPath + "tinsley_website.jpg"
+        imgPath + 'tdoe/tn_doc_01.jpg',
+        imgPath + 'tdoe/tn_doc_02.jpg',
+        imgPath + 'civicinc/civicinc_bridge_01.jpg',
+        imgPath + 'civicinc/civicinc_bridge_02.jpg',
+        imgPath + 'civicinc/civicinc_bridge_03.jpg',
+        imgPath + 'civicinc/civicinc_funding_01.jpg',
+        imgPath + 'civicinc/civicinc_funding_02.jpg',
+        imgPath + 'civicinc/civicinc_land_01.jpg',
+        imgPath + 'civicinc/civicinc_land_02.jpg',
+        imgPath + 'jpay/jpay_com/jpay_web_home.jpg',
+        imgPath + 'jpay/jpay_com/jpay_web_signed_in.jpg',
+        imgPath + 'jpay/jpay_com/jpay_web_money.jpg',
+        imgPath + 'jpay/jpay_com/jpay_web_email.jpg',
+        imgPath + 'jpay/jpay_com/jpay_web_stamps.jpg',
+        imgPath + 'jpay/jpayinc/jpayinc_website_old.jpg',
+        imgPath + 'jpay/jpayinc/jpayinc_website.jpg',
+        imgPath + 'jpay/jpayinc/jpayinc_website_responsive.jpg',
+        imgPath + 'prisonride/prisonride_home.jpg',
+        imgPath + 'prisonride/prisonride_profile.jpg',
+        imgPath + 'mlotto_web.jpg',
+        imgPath + 'valentina_website.jpg',
+        imgPath + 'tinsley_website.jpg'
       ],
       vfTransitions: transitions,
       vfCaptions: [
-         "Caption for image 1",
-         "Caption for image 2",
-         "Caption for image 3",
+        'Caption for image 1',
+        'Caption for image 2',
+        'Caption for image 3',
       ],
     })
   }

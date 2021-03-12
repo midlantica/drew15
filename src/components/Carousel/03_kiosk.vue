@@ -36,8 +36,8 @@
   import vueFluxVars from './vueFluxVars.js'
 
   const transitions = [{
-   name: 'slide',
-   options: {
+    name: 'slide',
+    options: {
       totalDuration: 700,
       easing: 'ease-out',
     }
@@ -82,9 +82,9 @@
       ],
       vfTransitions: transitions,
       vfCaptions: [
-         'Caption for image 1',
-         'Caption for image 2',
-         'Caption for image 3',
+        'Caption for image 1',
+        'Caption for image 2',
+        'Caption for image 3',
       ],
     })
   }
