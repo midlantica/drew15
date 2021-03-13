@@ -4,7 +4,7 @@ import HomeGroovy from '../template-groovy/pages/HomeGroovy.vue'
 import HomeTechy from '../template-techy/pages/HomeTechy.vue'
 import HomeCorp from '../template-corp/pages/HomeCorp.vue'
 import HomePunk from '../template-punk/pages/HomePunk.vue'
-// import Meta from 'vue-meta'
+import VueBodyClass from 'vue-body-class'
 
 // Vue.use(Meta)
 
@@ -12,32 +12,92 @@ const routes = [
   {
     path: '/',
     name: 'Bourbon',
-    component: HomeBourbon
+    component: HomeBourbon,
+    meta: {
+      bodyClass: 'bourbon',
+      title: 'Drew Harper – UI/UX Designer',
+      metaTags: [
+        // {
+        //   name: 'description',
+        //   content: 'The home page of our example app.',
+        // }
+      ]
+    }
   },
   {
     path: '/Bourbon',
     name: 'Bourbon',
-    component: HomeBourbon
+    component: HomeBourbon,
+    meta: {
+      bodyClass: 'bourbon',
+      title: 'Drew Harper – UI/UX Designer',
+      metaTags: [
+        // {
+        //   name: 'description',
+        //   content: 'The home page of our example app.',
+        // }
+      ]
+    }
   },
   {
     path: '/Groovy',
     name: 'Groovy',
-    component: HomeGroovy
+    component: HomeGroovy,
+    meta: {
+      bodyClass: 'groovy',
+      title: 'Drew Harper – UI/UX Designer',
+      metaTags: [
+        // {
+        //   name: 'description',
+        //   content: 'The home page of our example app.',
+        // }
+      ]
+    }
   },
   {
     path: '/Techy',
     name: 'Techy',
-    component: HomeTechy
+    component: HomeTechy,
+    meta: {
+      bodyClass: 'techy',
+      title: 'Drew Harper – UI/UX Designer',
+      metaTags: [
+        // {
+        //   name: 'description',
+        //   content: 'The home page of our example app.',
+        // }
+      ]
+    }
   },
   {
     path: '/Corp',
     name: 'Corp',
-    component: HomeCorp
+    component: HomeCorp,
+    meta: {
+      bodyClass: 'corp',
+      title: 'Drew Harper – UI/UX Designer',
+      metaTags: [
+        // {
+        //   name: 'description',
+        //   content: 'The home page of our example app.',
+        // }
+      ]
+    }
   },
   {
     path: '/Punk',
     name: 'Punk',
-    component: HomePunk
+    component: HomePunk,
+    meta: {
+      bodyClass: 'punk',
+      title: 'Drew Harper – UI/UX Designer',
+      metaTags: [
+        // {
+        //   name: 'description',
+        //   content: 'The home page of our example app.',
+        // }
+      ]
+    }
   },
   {
     path: '/Bourbon/Extras',
@@ -45,7 +105,17 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import( /* webpackChunkName: 'ExtrasBourbon' */ '../template-bourbon/pages/Extras.vue')
+    component: () => import( /* webpackChunkName: 'ExtrasBourbon' */ '../template-bourbon/pages/Extras.vue'),
+    meta: {
+      bodyClass: 'bourbon',
+      title: 'Drew Harper – UI/UX Designer',
+      metaTags: [
+        // {
+        //   name: 'description',
+        //   content: 'The home page of our example app.',
+        // }
+      ]
+    }
   },
   {
     path: '/Corp/Extras',
@@ -53,7 +123,17 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: 'ExtrasCorp' */ '../template-corp/pages/Extras.vue')
+    component: () => import(/* webpackChunkName: 'ExtrasCorp' */ '../template-corp/pages/Extras.vue'),
+    meta: {
+      bodyClass: 'corp',
+      title: 'Drew Harper – UI/UX Designer',
+      metaTags: [
+        // {
+        //   name: 'description',
+        //   content: 'The home page of our example app.',
+        // }
+      ]
+    }
   },
   {
     path: '/Groovy/Extras',
@@ -61,7 +141,17 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: 'ExtrasGroovy' */ '../template-groovy/pages/Extras.vue')
+    component: () => import(/* webpackChunkName: 'ExtrasGroovy' */ '../template-groovy/pages/Extras.vue'),
+    meta: {
+      bodyClass: 'groovy',
+      title: 'Drew Harper – UI/UX Designer',
+      metaTags: [
+        // {
+        //   name: 'description',
+        //   content: 'The home page of our example app.',
+        // }
+      ]
+    }
   },
   {
     path: '/Punk/Extras',
@@ -69,7 +159,17 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: 'ExtrasPunk' */ '../template-punk/pages/Extras.vue')
+    component: () => import(/* webpackChunkName: 'ExtrasPunk' */ '../template-punk/pages/Extras.vue'),
+    meta: {
+      bodyClass: 'punk',
+      title: 'Drew Harper – UI/UX Designer',
+      metaTags: [
+        // {
+        //   name: 'description',
+        //   content: 'The home page of our example app.',
+        // }
+      ]
+    }
   },
   {
     path: '/Techy/Extras',
@@ -77,7 +177,17 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: 'ExtrasTechy' */ '../template-techy/pages/Extras.vue')
+    component: () => import(/* webpackChunkName: 'ExtrasTechy' */ '../template-techy/pages/Extras.vue'),
+    meta: {
+      bodyClass: 'techy',
+      title: 'Drew Harper – UI/UX Designer',
+      metaTags: [
+        // {
+        //   name: 'description',
+        //   content: 'The home page of our example app.',
+        // }
+      ]
+    }
   },
   {
     path: '/NotFound',
@@ -89,9 +199,60 @@ const routes = [
   }
 ]
 
+const vueBodyClass = new VueBodyClass(routes)
+
 const router = createRouter({
   // eslint-disable-next-line no-undef
   history: createWebHistory(process.env.BASE_URL),
+  // eslint-disable-next-line no-undef
+  base: process.env.BASE_URL,
   routes,
+})
+
+router.beforeEach((to, from, next) => {
+  // This goes through the matched routes from last to first, finding the closest route with a title.
+  // e.g., if we have `/some/deep/nested/route` and `/some`, `/deep`, and `/nested` have titles,
+  // `/nested`'s will be chosen.
+  const nearestWithTitle = to.matched
+    .slice()
+    .reverse()
+    .find((r) => r.meta && r.meta.title)
+
+  // Find the nearest route element with meta tags.
+  const nearestWithMeta = to.matched
+    .slice()
+    .reverse()
+    .find((r) => r.meta && r.meta.metaTags)
+
+  // If a route with a title was found, set the document (page) title to that value.
+  if (nearestWithTitle) document.title = nearestWithTitle.meta.title
+
+  // Remove any stale meta tags from the document using the key attribute we set below.
+  Array.from(document.querySelectorAll('[data-vue-router-controlled]')).map((el) =>
+    el.parentNode.removeChild(el)
+  )
+
+  // Skip rendering meta tags if there are none.
+  if (!nearestWithMeta) return next()
+
+  // Turn the meta tag definitions into actual elements in the head.
+  nearestWithMeta.meta.metaTags
+    .map((tagDef) => {
+      const tag = document.createElement('meta')
+
+      Object.keys(tagDef).forEach((key) => {
+        tag.setAttribute(key, tagDef[key])
+      })
+
+      // We use this to track which meta tags we create so we don't interfere with other ones.
+      tag.setAttribute('data-vue-router-controlled', '')
+
+      return tag
+    })
+    // Add the meta tags to the document head.
+    .forEach((tag) => document.head.appendChild(tag))
+
+  vueBodyClass.guard(to, from, next())
+  // next()
 })
 export default router
