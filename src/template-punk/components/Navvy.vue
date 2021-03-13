@@ -8,10 +8,10 @@
       <router-link to="/Punk">
         <mastDrew class="svgArt mastDrew" />
       </router-link>
-      <router-link to="/Punk">
+      <router-link :to="{ name: 'HomePunk' }">
         <mastHarper class="svgArt mastHarper" />
       </router-link>
-      <router-link to="Punk/Extras" class="DrewHead jelloHorizontal">&nbsp;</router-link>
+      <router-link :to="{ name: 'ExtrasPunk' }" class="DrewHead jelloHorizontal">&nbsp;</router-link>
     </div>
 
     <p class='resume'>Resume:

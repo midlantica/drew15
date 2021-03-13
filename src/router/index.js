@@ -6,8 +6,6 @@ import HomeCorp from '../template-corp/pages/HomeCorp.vue'
 import HomePunk from '../template-punk/pages/HomePunk.vue'
 import VueBodyClass from 'vue-body-class'
 
-// Vue.use(Meta)
-
 const routes = [
   {
     path: '/',

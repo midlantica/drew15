@@ -1,10 +1,9 @@
 <template>
   <nav>
-
     <section class='flexRowWrap w100'>
       <div class='drewTop'>
-        <router-link to='/Corp' class='w100' >
-          <router-link to='/Corp/Extras' class='drewhead jelloHorizontal' />
+        <router-link :to="{ name: 'HomeCorp' }" class='w100' >
+          <router-link :to="{ name: 'ExtrasCorp' }" class='drewhead jelloHorizontal' />
           <drewHarper class='drewHarper marTH' />
           <div class='flexRow just-center marTH'>
             <uiux class='uiux' />
@@ -16,8 +15,7 @@
         </p>
         <p class='email'><a href='mailto:druharper@gmail.com'>druharper@gmail.com</a></p>
       </section>
-    </section >
-
+    </section>
   </nav>
 </template>
 

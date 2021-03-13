@@ -5,11 +5,11 @@
       <div class='masty'>
 
         <div class='DHmast'>
-          <router-link to='/Techy/Extras' class='drewHeadPic jelloHorizontal' />
+          <router-link :to="{ name: 'ExtrasTechy' }" class='drewHeadPic jelloHorizontal' />
           <router-link to='/Techy' class='svgArt mastDrew' >
             <mastDrew />
           </router-link>
-          <router-link to='/Techy' class='svgArt mastHarper'>
+          <router-link :to="{ name: 'HomeTechy' }" class='svgArt mastHarper'>
             <mastHarper />
           </router-link>
         </div>
