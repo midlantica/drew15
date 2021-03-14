@@ -26,11 +26,10 @@
   import HeadAndCopy from '../components/HeadAndCopy'
   import Skills from '@/components/Skills'
   import About from '@/components/About'
-  // import Quotes from '../components/Quotes/QuoteBasic'
   import CarouselFlux from '@/components/Carousel/CarouselFlux'
 
   export default {
-    // layout: 'default',
+    name: 'HomePunk',
     components: {
       Navvy,
       HeadAndCopy,
@@ -39,24 +38,12 @@
       Skills
     // Quotes
     },
-    name: 'HomePunk',
-    metaInfo: {
-      // if no subcomponents specify a metaInfo.title, this title will be used
-      title: 'Drew Harper',
-      // all titles will be injected into this template
-      titleTemplate: '%s - UI/UX Designer, Graphic Designer!',
-      bodyAttrs: {
-        class: 'punk'
-      },
-      link: [
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i' },
-      ]
-    }
   }
 </script>
 
 <style lang='scss' scoped>
   @import '@/template-punk/assets/css/punk-main.scss';
+  @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
   header,
   footer {

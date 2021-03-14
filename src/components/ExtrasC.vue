@@ -6,68 +6,68 @@
       <div class="flex">
         <a href="/img/portfolio/extras/serviceRequestV1.png" target="_BLANK">
           <img class="portThumbs" src="/img/portfolio/extras/service-request@2x.png" />
-          <center>
+          <div class="text-center">
             <p>A Service Request page</p>
-          </center>
+          </div>
         </a>
 
         <a href="/img/portfolio/extras/jpay_com_ui_email_v64.pdf" target="_BLANK">
           <img class="portThumbs" src="/img/portfolio/extras/jpay-email@2x.png" />
-          <center>
+          <div class="text-center">
             <p>JPay.com multipage PDF</p>
-          </center>
+          </div>
         </a>
 
         <a href="/img/portfolio/extras/JP4_ui_v4.pdf" target="_BLANK">
           <img class="portThumbs" src="/img/portfolio/extras/jp4-device-music@2x.png" />
-          <center>
+          <div class="text-center">
             <p>Multi-page JPay Mobile interface pdf</p>
-          </center>
+          </div>
         </a>
 
         <a href="/img/portfolio/extras/Bridge_Program.png" target="_BLANK">
           <img class="portThumbs" src="/img/portfolio/extras/bridge-analysis@2x.png" />
-          <center>
+          <div class="text-center">
             <p>Bridge Admin Business Analysis</p>
-          </center>
+          </div>
         </a>
 
         <a href="/img/portfolio/extras/Axure-Bridge-Info-TDOT.png" target="_BLANK">
           <img class="portThumbs" src="/img/portfolio/extras/axure-bridge@2x.png" />
-          <center>
+          <div class="text-center">
             <p>Civic Inc - Axure Wireframe</p>
-          </center>
+          </div>
         </a>
 
         <a href="/img/portfolio/extras/jpay_kiosk_emessages_v18.pdf" target="_BLANK">
           <img class="portThumbs" src="/img/portfolio/extras/jpay-kiosk-email@2x.png" />
-          <center>
+          <div class="text-center">
             <p>JPay Kiosk Email screens</p>
-          </center>
+          </div>
         </a>
 
         <a href="/img/portfolio/extras/Jpay_kiosk_music_v18b.pdf" target="_BLANK">
           <img class="portThumbs" src="/img/portfolio/extras/jpay-kiosk-music@2x.png" />
-          <center>
+          <div class="text-center">
             <p>JPay Kiosk Music screens</p>
-          </center>
+          </div>
         </a>
 
         <a href="/img/portfolio/extras/mlotto_app.pdf" target="_BLANK">
           <img class="portThumbs" src="/img/portfolio/extras/m-lotto-ui@2x.png" />
-          <center>
+          <div class="text-center">
             <p>Mobile Lottery interface, interactive pdf</p>
-          </center>
+          </div>
         </a>
 
         <a href="/img/portfolio/extras/JPay_Extras.pdf" target="_BLANK">
           <img class="portThumbs" src="/img/portfolio/extras/JPay_Extras@2x.png" />
-          <center>
+          <div class="text-center">
             <p>
               JPay Extras: Web, Mobile, Corp ID, Print Ads, Newslatters,
               <br />Brochures, Package Design, PDF forms, Kiosk Design, Murals
             </p>
-          </center>
+          </div>
         </a>
       </div>
     </div>
@@ -75,6 +75,10 @@
 </template>
 
 <style lang="scss" scoped>
+
+  .text-center {
+    text-align: center;
+  }
 
   .flexContainer {
     width: 100%;

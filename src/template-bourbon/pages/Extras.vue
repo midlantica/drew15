@@ -3,9 +3,7 @@
     <header>
       <Navvy />
     </header>
-
     <ExtrasC />
-
     <footer>
       <Navvy />
     </footer>
@@ -17,12 +15,6 @@
   import ExtrasC from '@/components/ExtrasC'
   export default {
     name: 'Extras',
-    metaInfo: {
-      titleTemplate: '%s - Extras!',
-      bodyAttrs: {
-        class: 'bourbon extras'
-      }
-    },
     components: {
       Navvy,
       ExtrasC

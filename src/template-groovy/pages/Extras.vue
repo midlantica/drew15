@@ -17,15 +17,6 @@
 
   export default {
     name: 'Extras',
-    metaInfo: {
-      titleTemplate: '%s - Extras!',
-      bodyAttrs: {
-        class: 'groovy extras'
-      },
-      style: [
-      //
-      ]
-    },
     components: {
       NavvyHead,
       Footer,

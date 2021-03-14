@@ -10,13 +10,9 @@
 <script>
   import Tabs from '@/components/Tabs.vue'
   export default {
+    name: 'App',
     components: {
       Tabs,
-    },
-    name: 'App',
-    metaInfo: {
-      title: 'Drew Harper',
-      titleTemplate: '%s - UI/UX Designer, Graphic Designer',
     }
   }
 </script>
@@ -332,7 +328,6 @@
         font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
       }
     }
-
 
     .smallCaps {
       font-variant: small-caps !important;

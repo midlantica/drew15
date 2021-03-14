@@ -9,18 +9,7 @@ import VueBodyClass from 'vue-body-class'
 const routes = [
   {
     path: '/',
-    name: 'Bourbon',
-    component: HomeBourbon,
-    meta: {
-      bodyClass: 'bourbon',
-      title: 'Drew Harper – UI/UX Designer',
-      metaTags: [
-        // {
-        //   name: 'description',
-        //   content: 'The home page of our example app.',
-        // }
-      ]
-    }
+    redirect: 'Bourbon',
   },
   {
     path: '/Bourbon',
@@ -105,7 +94,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import( /* webpackChunkName: 'ExtrasBourbon' */ '../template-bourbon/pages/Extras.vue'),
     meta: {
-      bodyClass: 'bourbon',
+      bodyClass: 'bourbon extras',
       title: 'Drew Harper – UI/UX Designer',
       metaTags: [
         // {
@@ -123,7 +112,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: 'ExtrasCorp' */ '../template-corp/pages/Extras.vue'),
     meta: {
-      bodyClass: 'corp',
+      bodyClass: 'corp extras',
       title: 'Drew Harper – UI/UX Designer',
       metaTags: [
         // {
@@ -141,7 +130,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: 'ExtrasGroovy' */ '../template-groovy/pages/Extras.vue'),
     meta: {
-      bodyClass: 'groovy',
+      bodyClass: 'groovy extras',
       title: 'Drew Harper – UI/UX Designer',
       metaTags: [
         // {
@@ -159,7 +148,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: 'ExtrasPunk' */ '../template-punk/pages/Extras.vue'),
     meta: {
-      bodyClass: 'punk',
+      bodyClass: 'punk extras',
       title: 'Drew Harper – UI/UX Designer',
       metaTags: [
         // {
@@ -177,7 +166,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: 'ExtrasTechy' */ '../template-techy/pages/Extras.vue'),
     meta: {
-      bodyClass: 'techy',
+      bodyClass: 'techy extras',
       title: 'Drew Harper – UI/UX Designer',
       metaTags: [
         // {
@@ -189,11 +178,11 @@ const routes = [
   },
   {
     path: '/NotFound',
-    redirect: HomeBourbon
+    redirect: '/'
   },
   {
     path: '/404',
-    redirect: HomeBourbon
+    redirect: '/'
   }
 ]
 
