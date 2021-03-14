@@ -21,10 +21,7 @@
       titleTemplate: '%s - Extras!',
       bodyAttrs: {
         class: 'bourbon extras'
-      },
-      style: [
-      //
-      ],
+      }
     },
     components: {
       Navvy,

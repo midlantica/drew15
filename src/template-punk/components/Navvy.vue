@@ -5,10 +5,10 @@
     <p class='email'><a href="mailto:druharper@gmail.com">druharper@gmail.com</a></p>
 
     <div class="mastMain">
-      <router-link to="/Punk">
+      <router-link :to="{ name: 'Punk' }">
         <mastDrew class="svgArt mastDrew" />
       </router-link>
-      <router-link :to="{ name: 'HomePunk' }">
+      <router-link :to="{ name: 'Punk' }">
         <mastHarper class="svgArt mastHarper" />
       </router-link>
       <router-link :to="{ name: 'ExtrasPunk' }" class="DrewHead jelloHorizontal">&nbsp;</router-link>

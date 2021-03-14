@@ -52,10 +52,7 @@
       titleTemplate: '%s - UI/UX Designer, Graphic Designer!',
       bodyAttrs: {
         class: 'bourbon',
-      },
-      style: [
-      //
-      ],
+      }
     },
     transition: {
       name: 'fade',

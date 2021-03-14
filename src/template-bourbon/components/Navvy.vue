@@ -1,7 +1,7 @@
 <template>
   <nav>
     <h1>
-      <router-link :to="{ name: 'HomeBourbon' }">DREW HARPER</router-link>
+      <router-link :to="{ name: 'Bourbon' }">DREW HARPER</router-link>
     </h1>
     <section class='jobDesc'>
       <h2>UI/UX Designer</h2>

@@ -9,7 +9,7 @@
           <router-link to='/Techy' class='svgArt mastDrew' >
             <mastDrew />
           </router-link>
-          <router-link :to="{ name: 'HomeTechy' }" class='svgArt mastHarper'>
+          <router-link :to="{ name: 'Techy' }" class='svgArt mastHarper'>
             <mastHarper />
           </router-link>
         </div>

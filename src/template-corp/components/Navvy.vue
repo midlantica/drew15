@@ -2,7 +2,7 @@
   <nav>
     <section class='flexRowWrap w100'>
       <div class='drewTop'>
-        <router-link :to="{ name: 'HomeCorp' }" class='w100' >
+        <router-link :to="{ name: 'Corp' }" class='w100' >
           <router-link :to="{ name: 'ExtrasCorp' }" class='drewhead jelloHorizontal' />
           <drewHarper class='drewHarper marTH' />
           <div class='flexRow just-center marTH'>
