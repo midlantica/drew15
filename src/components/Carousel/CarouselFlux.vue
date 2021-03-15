@@ -48,8 +48,9 @@
   const Print = () => import('@/components/Carousel/05_print')
   const Misc = () => import('@/components/Carousel/06_misc')
 
+  // import 'vue-flux/dist-ssr/vue-flux.css'
+
   export default {
-    layout: 'default',
     name: 'CarouselShow',
     components: {
       Uiux,

@@ -1,41 +1,43 @@
 <template>
   <div>
-    <vue-flux
-      :options="vfOptions"
-      :images="vfImages"
-      :transitions="vfTransitions"
-      :captions="vfCaptions"
-      ref="slider"
-    >
+    <client-only>
+      <vue-flux
+        :options="vfOptions"
+        :images="vfImages"
+        :transitions="vfTransitions"
+        :captions="vfCaptions"
+        ref="slider"
+      >
 
-      <template v-slot:preloader>
-        <flux-preloader />
-      </template>
+        <template v-slot:preloader>
+          <flux-preloader />
+        </template>
 
-      <!-- <template v-slot:caption>
-        <flux-caption />
-      </template> -->
+        <!-- <template v-slot:caption>
+          <flux-caption />
+        </template> -->
 
-      <template v-slot:controls>
-        <flux-controls />
-      </template>
+        <template v-slot:controls>
+          <flux-controls />
+        </template>
 
-      <!-- <template v-slot:pagination>
-        <flux-pagination />
-      </template> -->
+        <!-- <template v-slot:pagination>
+          <flux-pagination />
+        </template> -->
 
-      <template v-slot:index>
-        <flux-index />
-      </template>
+        <template v-slot:index>
+          <flux-index />
+        </template>
 
-    </vue-flux>
+      </vue-flux>
     <!-- <button @click="$refs.slider.show("next")">NEXT</button> -->
+    </client-only>
   </div>
 </template>
 
 <script>
   const imgPath = 'img/portfolio/01_uiux/'
-  import vueFluxVars from './vueFluxVars.js'
+  import 'vue-flux/dist-ssr/vue-flux.css'
 
   const transitions = [{
     name: 'slide',
@@ -63,15 +65,19 @@
       // FluxPagination,
       FluxPreloader,
     },
-    methods: {
-      toggle() {
-        console.log(this.$refs.slider.$children[0].Display.toggleFullScreen())
-        console.log(this.$refs.slider.Display.toggleFullScreen())
-        this.$refs.slider.Display.toggleFullScreen()
-      }
-    },
     data: () => ({
-      vfOptions: vueFluxVars,
+      vfOptions: {
+        autoplay: true,
+        enableGestures: true,
+        infinite: true,
+        bindKeys: true,
+        delay: 3000,
+        width: 98,
+        toggleFullscreen: true,
+        allowFullscreen: true,
+        lazyLoad: true,
+        autohideTime: 2500
+      },
       vfImages: [
         imgPath + 'tdoe/tn_doc_01.jpg',
         imgPath + 'tdoe/tn_doc_02.jpg',
@@ -102,7 +108,14 @@
         'Caption for image 2',
         'Caption for image 3',
       ],
-    })
+    }),
+    methods: {
+      toggle() {
+        console.log(this.$refs.slider.$children[0].Display.toggleFullScreen())
+        console.log(this.$refs.slider.Display.toggleFullScreen())
+        this.$refs.slider.Display.toggleFullScreen()
+      }
+    },
   }
 </script>
 
