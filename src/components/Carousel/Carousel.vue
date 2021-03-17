@@ -79,10 +79,12 @@
 <style lang='scss' scoped>
   @import '@/assets/css/carousel.scss';
 
+  $mortar: .25rem;
+
   .projectBox {
     background: lighten(lightgrey, 10);
-    border-radius: 0.25rem;
-    padding: 0.25rem 0.3rem 0.5rem;
+    border-radius: $mortar;
+    padding: $mortar 0.15rem $mortar;
     position: relative;
     @include clearfix;
   }
@@ -92,7 +94,7 @@
 
     @media (max-width: $breakThou) {
       min-height: initial;
-      // padding: 0.25rem 0.3rem 0.75rem;
+      // padding: $mortar 0.3rem 0.75rem;
     }
 
     @media (max-width: $breakOne) {
@@ -113,7 +115,7 @@
     @include box-shadow(0px, 1px, 1px, 0px, hsla(0, 0%, 0%, 0.5));
     // min-height: 386px;
     // min-height: 380px;
-    padding: 0.25rem 0.3rem 0.25rem;
+    padding: 0.35rem 0.3rem 0.15rem;
 
     @media (max-width: $breakThou) {
       // min-height: initial;
@@ -134,7 +136,7 @@
 
   body.groovy .projectBox {
     @include box-shadow(0px, 6px, 0px, 0px, hsla(0, 0%, 0%, 0.25));
-    padding: 0.25rem 0.3rem 0.35rem;
+    padding: $mortar 0.3rem 0.35rem;
     // min-height: 357px;
 
     @media (max-width: $breakThou) {
@@ -156,7 +158,7 @@
 
   body.techy .projectBox {
     @include box-shadow(0px, 2px, 2px, -3px, hsla(0, 0%, 0%, 1));
-    padding: 0.25rem 0.3rem 0.5rem;
+    padding: $mortar 0.3rem 0.5rem;
     // min-height: 353px;
 
     @media (max-width: $breakThou) {
@@ -180,7 +182,7 @@
   body.corp .projectBox {
     background: #d7e7f3;
     @include box-shadow(0px, 1px, 1px, 0px, hsla(0, 0%, 0%, 0.5), false);
-    padding: 0.25rem 0.3rem 0.5rem;
+    padding: $mortar 0.3rem 0.5rem;
     // min-height: 357px;
 
 
@@ -204,7 +206,7 @@
 
   body.punk .projectBox {
     @include box-shadow(0px, 1px, 1px, 0px, hsla(0, 0%, 0%, 0.5), false);
-    padding: 0.25rem 0.3rem 0.35rem;
+    padding: $mortar 0.3rem 0.35rem;
     // min-height: 357px;
 
     @media (max-width: $breakThou) {
@@ -232,7 +234,7 @@
   }
 
   body.bourbon .box {
-    height: 172px !important;
+    height: 174.5px !important;
     // height: 20vh !important;
 
     @media (max-width: $breakThou) {
@@ -302,7 +304,7 @@
     text-align: center;
     text-transform: uppercase;
     // margin-right: 3.5em;
-    margin: 0.25rem 4rem 0.0rem;
+    margin: $mortar 4rem 0.0rem;
 
     a {
       cursor: pointer;
@@ -315,10 +317,11 @@
     float: left;
     clear: left;
     border: 1px solid lightgrey;
-    border-radius: 0.25em;
+    border-radius: $mortar;
     background: transparentize(white, 0.5);
     cursor: pointer;
-    padding: 0.2em 0.5em 0.1em 0.25em;
+    padding: 0.2em 0.5em 0.1em $mortar;
+    margin: 0.1rem 0 0 0.2em;
     // margin: 0.1em 0em 0 .2rem;
     font-family: Helvetica, Arial, sans-serif;
     position: absolute;
@@ -339,6 +342,7 @@
     align-content: center;
     transition-duration: 1s;
     width: 100%;
+    margin-top: .3rem;
 
     a {
       flex-grow: 1;
@@ -362,155 +366,99 @@
       .box {
         flex-direction: column;
         text-align: center;
-        margin: 0.25em 0.25em;
-        // height: 20vh !important;
+        margin: 0.15em 0.15em;
         box-shadow: 0px 2px 2px -3px black;
-        background: lighten(lightgrey, 15);
         display: flex;
         justify-content: flex-end;
-        align-items: flex-end;
+        align-items: stretch;
+        //
+        background-color: lighten(lightgrey, 13) !important;
+        background-size: 75% 75%;
+        background-position: center 18px !important;
+        border: 1px solid transparentize(grey, 0.75) !important;
 
         @media (max-width: $breakThou) {
-          // height: 10vh !important;
+          //
         }
 
         &:hover {
-          background: lighten(grey, 25);
-          transition: ease-in;
-          transition-duration: 0.1s;
-          box-shadow: 0px 2px 2px -1px grey;
+          background-color: lighten(lightgrey, 16) !important;
+          transition: ease-in-out;
+          background-size: 75% 75%;
+          background-position: center 12px !important;
+          border: 1px solid transparentize(grey, 0.5);
+          box-shadow: 0px 2px 4px -1px hsla(0, 0%, 50%, 0.25);
         }
 
         &.Uiux {
           background: url(/img/carousel/car-icon-uiux.svg) no-repeat center center;
-          background-color: lighten(lightgrey, 15);
-          background-size: 75% 75%;
-          background-position: center 6px;
-          border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
-            background: url(/img/carousel/car-icon-uiux.svg) no-repeat center center;
-            background-color: lighten(lightgrey, 10);
-            // transition-duration: 0.5s;
-            background-size: 75% 75%;
-            background-position: center 0px;
-            border: 1px solid transparentize(grey, 0.5);
-            box-shadow: 0px 2px 2px -1px grey;
+            //
           }
 
           @media (max-width: $breakThou) {
-            // background-position: center 0px;
+            //
           }
         }
 
         &.Mobile {
-          background: url(/img/carousel/car-icon-mobile.svg) no-repeat center
-            center;
-          background-color: lighten(lightgrey, 15);
-          background-size: 75% 75%;
-          background-position: center 6px;
-          border: 1px solid transparentize(grey, 0.5);
+          background: url(/img/carousel/car-icon-mobile.svg) no-repeat center center;
 
           &:hover {
-            background: url(/img/carousel/car-icon-mobile.svg) no-repeat center center;
-            background-color: lighten(lightgrey, 10);
-            // transition-duration: 0.5s;
-            background-size: 75% 75%;
-            background-position: center 0px;
-            border: 1px solid transparentize(grey, 0.5);
-            box-shadow: 0px 2px 2px -1px grey;
+            //
           }
 
           @media (max-width: $breakThou) {
-            // background-position: center 0px;
+            //
           }
         }
 
         &.Kiosk {
           background: url(/img/carousel/car-icon-kiosk.svg) no-repeat center center;
-          background-color: lighten(lightgrey, 15);
-          background-size: 75% 75%;
-          background-position: center 6px;
-          border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
-            background: url(/img/carousel/car-icon-kiosk.svg) no-repeat center center;
-            background-color: lighten(lightgrey, 10);
-            // transition-duration: 0.5s;
-            background-size: 75% 75%;
-            background-position: center 0px;
-            border: 1px solid transparentize(grey, 0.5);
-            box-shadow: 0px 2px 2px -1px grey;
+            //
           }
 
           @media (max-width: $breakThou) {
-            // background-position: center 0px;
+            //
           }
         }
 
         &.Graphics {
           background: url(/img/carousel/car-icon-graphics.svg) no-repeat center center;
-          background-color: lighten(lightgrey, 15);
-          background-size: 75% 75%;
-          background-position: center 6px;
-          border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
-            background: url(/img/carousel/car-icon-graphics.svg) no-repeat center center;
-            background-color: lighten(lightgrey, 10);
-            // transition-duration: 0.5s;
-            background-size: 75% 75%;
-            background-position: center 0px;
-            border: 1px solid transparentize(grey, 0.5);
-            box-shadow: 0px 2px 2px -1px grey;
+            //
           }
 
           @media (max-width: $breakThou) {
-            // background-position: center 0px;
+            //
           }
         }
 
         &.Print {
           background: url(/img/carousel/car-icon-print.svg) no-repeat center center;
-          background-color: lighten(lightgrey, 15);
-          background-size: 75% 75%;
-          background-position: center 6px;
-          border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
-            background: url(/img/carousel/car-icon-print.svg) no-repeat center center;
-            background-color: lighten(lightgrey, 10);
-            // transition-duration: 0.5s;
-            background-size: 75% 75%;
-            background-position: center 0px;
-            border: 1px solid transparentize(grey, 0.5);
-            box-shadow: 0px 2px 2px -1px grey;
+            //
           }
 
           @media (max-width: $breakThou) {
-            // background-position: center 0px;
+            //
           }
         }
 
         &.Misc {
           background: url(/img/carousel/car-icon-misc.svg) no-repeat center center;
-          background-color: lighten(lightgrey, 15);
-          background-size: 75% 75%;
-          background-position: center 6px;
-          border: 1px solid transparentize(grey, 0.5);
 
           &:hover {
-            background: url(/img/carousel/car-icon-misc.svg) no-repeat center center;
-            background-color: lighten(lightgrey, 10);
-            // transition-duration: 0.5s;
-            background-size: 75% 75%;
-            background-position: center 0px;
-            border: 1px solid transparentize(grey, 0.5);
-            box-shadow: 0px 2px 2px -1px grey;
+            //
           }
 
           @media (max-width: $breakThou) {
-            // background-position: center 0px;
+            //
           }
         }
 
@@ -532,6 +480,14 @@
           }
         }
       }
+
     }
+
+    .box:hover p {
+      position: relative;
+      top: -6px;
+      transition: ease-in-out;
+    }
+
   }
 </style>
