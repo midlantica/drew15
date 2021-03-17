@@ -8,7 +8,7 @@
         <HeadAndCopy />
       </div>
       <div class="slides">
-        <CarouselFlux />
+        <Carousel />
       </div>
       <About />
       <Skills />
@@ -25,14 +25,14 @@
   import Skills from '@/components/Skills'
   import About from '@/components/About'
   import Footy from '../components/Footy'
-  import CarouselFlux from '@/components/Carousel/CarouselFlux'
+  import Carousel from '@/components/Carousel/Carousel'
 
   export default {
     name: 'HomeTechy',
     components: {
       Navvy,
       HeadAndCopy,
-      CarouselFlux,
+      Carousel,
       About,
       Skills,
       Footy
