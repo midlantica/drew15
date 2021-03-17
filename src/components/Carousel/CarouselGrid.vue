@@ -42,7 +42,7 @@
 <style lang='scss' scoped>
   // @import '@/assets/css/main.scss';
   // @import '@/template-bourbon/assets/css/bourbon-main.scss';
-  @import '@/assets/css/_template-carousel.scss';
+  @import '@/assets/css/carousel.scss';
 
   .projectBox {
     padding: 0.2em 0.3em;

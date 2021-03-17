@@ -16,8 +16,8 @@
     "eslint-plugin-variables": "^1.0.3",
     "vue": "^3.0.0",
     "vue-body-class": "^3.0.2",
-    "vue-flux": "^6.4.0",
-    "vue-router": "^4.0.5"
+    "vue-router": "^4.0.5",
+    "vueperslides": "^3.2.0"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.2",

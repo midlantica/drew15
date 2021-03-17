@@ -1,88 +1,60 @@
 <template>
-  <div>
-    <vue-flux
-      :options='vfOptions'
-      :images='vfImages'
-      :transitions='vfTransitions'
-      :captions='vfCaptions'
-      ref='slider'>
+  <vueper-slides
+    fade
+    :infinite="false"
+    :bullets="false"
+    :touchable="false"
+    fractions
+    progress
+  >
+    <vueper-slide
+      v-for='(slide, i) in slides' :key='i'
+      :image='slide.image'
+    />
 
-      <template v-slot:preloader>
-        <flux-preloader />
-      </template>
+    <template v-slot:loader>
+      <i class="icon icon-loader spinning"></i>
+      <span>Loading...</span>
+    </template>
 
-      <!-- <template v-slot:caption>
-        <flux-caption />
-      </template> -->
-
-      <template v-slot:controls>
-        <flux-controls />
-      </template>
-
-      <!-- <template v-slot:pagination>
-        <flux-pagination />
-      </template> -->
-
-      <template v-slot:index>
-        <flux-index />
-      </template>
-    </vue-flux>
-    <!-- <button @click='$refs.slider.show("next")'>NEXT</button> -->
-  </div>
+  </vueper-slides>
 </template>
 
 <script>
-  const imgPath = 'img/portfolio/05_print/'
-  import vueFluxVars from './vueFluxVars.js'
-
-  const transitions = [{
-    name: 'slide',
-    options: {
-      totalDuration: 700,
-      easing: 'ease-out',
-    }
-  }]
-
-  import {
-    VueFlux,
-    // FluxCaption,
-    FluxControls,
-    FluxIndex,
-    // FluxPagination,
-    FluxPreloader,
-  } from 'vue-flux'
+  import { ref } from 'vue'
+  import { VueperSlides, VueperSlide } from 'vueperslides'
+  import 'vueperslides/dist/vueperslides.css'
 
   export default {
     components: {
-      VueFlux,
-      // FluxCaption,
-      FluxControls,
-      FluxIndex,
-      // FluxPagination,
-      FluxPreloader,
+      VueperSlides,
+      VueperSlide
     },
-    methods: {
-      requestFullscreen: true,
-      exitFullscreen: false
-    },
-    data: () => ({
-      vfOptions: vueFluxVars,
-      vfImages: [
-        imgPath + 'jpay/jpay_newsletters.png',
-        imgPath + 'mlotto_brochure.jpg',
-        imgPath + 'celebrity_cruise_lines_brochure.jpg',
-        imgPath + 'starclippers_email_panel.png'
-      ],
-      vfTransitions: transitions,
-      vfCaptions: [
-        'Caption for image 1',
-        'Caption for image 2',
-        'Caption for image 3',
-      ],
-    })
+    setup() {
+      // let title = ref('')
+      // const imgPath = ('/public/img/portfolio/01_uiux/')
+      let slides = ref([
+        {
+          image: require('/public/img/portfolio/05_print/jpay/jpay_newsletters.png')
+        },
+        {
+          image: require('/public/img/portfolio/05_print/mlotto_brochure.jpg')
+        },
+        {
+          image: require('/public/img/portfolio/05_print/celebrity_cruise_lines_brochure.jpg')
+        },
+        {
+          image: require('/public/img/portfolio/05_print/starclippers_email_panel.png')
+        },
+
+      ])
+
+      return { slides }
+
+    }
   }
 </script>
 
 <style lang="scss">
-  @import '@/assets/css/_template-carousel.scss';
+  @import '@/assets/css/carousel.scss';
 </style>

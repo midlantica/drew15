@@ -41,12 +41,14 @@
 
 <script>
   // import Carousel from '@/components/Carousel/Carousel'
+  import { defineAsyncComponent } from 'vue'
+
   import Uiux from '@/components/Carousel/01_uiux'
-  const Mobile = () => import('@/components/Carousel/02_mobile')
-  const Kiosk = () => import('@/components/Carousel/03_kiosk')
-  const Graphics = () => import('@/components/Carousel/04_graphics')
-  const Print = () => import('@/components/Carousel/05_print')
-  const Misc = () => import('@/components/Carousel/06_misc')
+  const Mobile = defineAsyncComponent(() => import('@/components/Carousel/02_mobile'))
+  const Kiosk = defineAsyncComponent(() => import('@/components/Carousel/03_kiosk'))
+  const Graphics = defineAsyncComponent(() => import('@/components/Carousel/04_graphics'))
+  const Print = defineAsyncComponent(() => import('@/components/Carousel/05_print'))
+  const Misc = defineAsyncComponent(() => import('@/components/Carousel/06_misc'))
 
   // import 'vue-flux/dist-ssr/vue-flux.css'
 
@@ -75,12 +77,12 @@
 </script>
 
 <style lang='scss' scoped>
-  @import '@/assets/css/_template-carousel.scss';
+  @import '@/assets/css/carousel.scss';
 
   .projectBox {
     background: lighten(lightgrey, 10);
     border-radius: 0.25rem;
-    padding: 0.25rem 0.3rem 0.75rem;
+    padding: 0.25rem 0.3rem 0.5rem;
     position: relative;
     @include clearfix;
   }
@@ -111,7 +113,7 @@
     @include box-shadow(0px, 1px, 1px, 0px, hsla(0, 0%, 0%, 0.5));
     // min-height: 386px;
     // min-height: 380px;
-    padding: 0.25rem 0.3rem 0.35rem;
+    padding: 0.25rem 0.3rem 0.25rem;
 
     @media (max-width: $breakThou) {
       // min-height: initial;
@@ -154,7 +156,7 @@
 
   body.techy .projectBox {
     @include box-shadow(0px, 2px, 2px, -3px, hsla(0, 0%, 0%, 1));
-    padding: 0.25rem 0.3rem 0.75rem;
+    padding: 0.25rem 0.3rem 0.5rem;
     // min-height: 353px;
 
     @media (max-width: $breakThou) {
@@ -178,7 +180,7 @@
   body.corp .projectBox {
     background: #d7e7f3;
     @include box-shadow(0px, 1px, 1px, 0px, hsla(0, 0%, 0%, 0.5), false);
-    padding: 0.25rem 0.3rem 0.75rem;
+    padding: 0.25rem 0.3rem 0.5rem;
     // min-height: 357px;
 
 

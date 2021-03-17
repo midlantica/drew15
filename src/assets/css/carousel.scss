@@ -1,0 +1,35 @@
+.vueperslides__parallax-wrapper {
+  height: 170px;
+  margin-top: .25rem;
+}
+
+.vueperslides__arrow {
+  color: hsl(0deg 0% 0% / 50%);
+}
+
+.vueperslides__progress {
+  color: rgba(150, 27, 27, 0.616);
+  // top: initial;
+  top: calc(100% - 4px);
+  height: 4px;
+  // border: 1px solid magenta;
+}
+
+.vueperslides__fractions {
+  position: absolute;
+  top: initial;
+  left: initial;
+  bottom: .25em !important;
+  right: .25em !important;
+  z-index: 2;
+  padding: 0.15em 0.5em;
+  border: 1px solid hsl(0deg 0% 100% / 27%);
+  border-radius: 0.4em;
+  background: hsl(0deg 0% 32% / 32%);
+  color: hsl(0deg 0% 100%);
+  font-family: Helvetica, Arial, sans-serif !important;
+}
+
+.fullScreen {
+  cursor: pointer;
+}

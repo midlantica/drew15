@@ -1,6 +1,7 @@
 module.exports = {
   'env': {
     'browser': true,
+    'node': true,
     'es6': true
   },
   'extends': [
@@ -30,7 +31,10 @@ module.exports = {
     ],
     'quotes': [
       'error',
-      'single'
+      'single', {
+        'avoidEscape': true,
+        'allowTemplateLiterals': true
+      }
     ],
     'semi': [
       'error',
