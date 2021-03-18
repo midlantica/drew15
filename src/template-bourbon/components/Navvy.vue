@@ -13,7 +13,7 @@
       </p>
       <p class='resume'>
         Resume: Word
-        <a href='resume/drew_harper_resume_portfolio_short.docx'>Small&#8195;</a>/&#8195;
+        <a href='resume/drew_harper_resume_portfolio_short.docx'>Small </a>/
         <a href='resume/drew_harper_resume_portfolio.docx'>Big</a> or
         <a href='resume/drew_harper_resume_portfolio.pdf'>PDF</a>
       </p>

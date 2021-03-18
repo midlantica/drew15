@@ -1,7 +1,9 @@
 <template>
   <div class='projectBox'>
-    <a class='carouselArrow' @click.stop='selectedView = `Carousel`'>◀︎ BACK</a>
-    <p class='projectHead'>Projects - {{ selectedView }}</p>
+    <div class="projectBox__top">
+      <a class='carouselArrow' @click.stop='selectedView = `Carousel`'>◀︎ BACK</a>
+      <p class='projectHead'>Projects - {{ selectedView }}</p>
+    </div>
     <component :is='selectedView'>
       <div class='miniGallery'>
         <a @click.stop='selectedView = `Uiux`'>
@@ -85,6 +87,16 @@
     padding: $mortar 0.15rem $mortar;
     position: relative;
     @include clearfix;
+  }
+
+  .projectBox__top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 1.6rem;
   }
 
   body.box {
@@ -268,7 +280,7 @@
   }
 
   body.corp .box {
-    height: 160px !important;
+    height: 150px !important;
   }
 
   body.corp .VueCarousel.druCarousel {
@@ -282,6 +294,10 @@
     }
   }
 
+  body.punk .miniGallery {
+    margin-top: 0;
+  }
+
   body.corp .VueCarousel.druCarousel {
     box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.29);
   }
@@ -293,7 +309,7 @@
   }
 
   body.punk .box {
-    height: 156.5px !important;
+    height: 169px !important;
   }
 
   ///////
@@ -302,7 +318,7 @@
     text-align: center;
     text-transform: uppercase;
     // margin-right: 3.5em;
-    margin: $mortar 4rem 0.0rem;
+    margin: auto;
 
     a {
       cursor: pointer;
@@ -311,15 +327,15 @@
 
   .carouselArrow {
     font-size: 0.75em;
-    display: block;
-    float: left;
-    clear: left;
+    // display: block;
+    // float: left;
+    // clear: left;
     border: 1px solid lightgrey;
     border-radius: $mortar;
     background: transparentize(white, 0.5);
     cursor: pointer;
     padding: 0.2em 0.5em 0.1em $mortar;
-    margin: 0.1rem 0 0 0.2em;
+    margin: 0rem 0 0 0em;
     // margin: 0.1em 0em 0 .2rem;
     font-family: Helvetica, Arial, sans-serif;
     position: absolute;
@@ -340,7 +356,7 @@
     align-content: center;
     transition-duration: 1s;
     width: 100%;
-    margin-top: .3rem;
+    // margin-top: .3rem;
 
     a {
       flex-grow: 1;

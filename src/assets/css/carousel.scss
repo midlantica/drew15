@@ -1,12 +1,36 @@
 $mortar: .25rem;
 
 .vueperslides {
-  padding: .2rem .2rem !important;
+  padding: 0rem 0rem;
 }
+
+// .body.punk .vueperslides {
+//   padding: 0rem 0.2rem !important;
+// }
 
 .vueperslides__parallax-wrapper {
   height: 200px;
   margin-top: $mortar;
+}
+
+.groovy .vueperslides__parallax-wrapper {
+  height: 177.5px;
+  margin-top: $mortar;
+}
+
+.techy .vueperslides__parallax-wrapper {
+  height: 175px;
+  margin-top: $mortar;
+}
+
+.corp .vueperslides__parallax-wrapper {
+  height: 166.85px;
+  margin-top: $mortar;
+}
+
+.punk .vueperslides__parallax-wrapper {
+  height: 188.5px;
+  // margin-top: $mortar;
 }
 
 .vueperslides__arrow {

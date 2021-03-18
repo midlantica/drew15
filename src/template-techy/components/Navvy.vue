@@ -26,7 +26,7 @@
             <a href='mailto:druharper@gmail.com'>druharper@gmail.com</a>
           </p>
           <p class='resume'>Resume:
-            <a href='resume/drew_harper_resume_portfolio.pdf'>Lg</a>&#8195;/&#8195;<a href='resume/drew_harper_resume_portfolio_short.docx'>Sm</a>
+            <a href='resume/drew_harper_resume_portfolio.pdf'>Lg</a> / <a href='resume/drew_harper_resume_portfolio_short.docx'>Sm</a>
           </p>
         </div>
       </div>
@@ -115,7 +115,7 @@
         }
 
         a.drewHeadPic {
-          width: 72px !important;
+          width: 92px !important;
           height: 109px !important;
           padding: 1em 1em 0em 1em;
           background-image: url(/img/drew_mug_dig.png);
@@ -126,7 +126,7 @@
           justify-self: end;
 
           @media (max-width: $breakThou) {
-            width: 72px !important;
+            width: 92px !important;
             height: 109px !important;
             grid-column: 1 / 2;
             grid-row: 1 / 2;
@@ -135,18 +135,18 @@
           }
 
           @media (max-width: $breakTwo) {
-            width: 44px !important;
+            width: 64px !important;
             height: 75px !important;
           }
 
           @media (max-width: $breakThree) {
-            width: 28px !important;
+            width: 46px !important;
             height: 55px !important;
             margin: 0;
           }
 
           @media (max-width: $breakFour) {
-            width: 28px !important;
+            // width: 28px !important;
             height: 55px !important;
             margin: 0;
           }
