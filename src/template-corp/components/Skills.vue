@@ -53,58 +53,37 @@
 
   .skillsGrid {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
     width: 100%;
-    flex-wrap: wrap;
     justify-content: space-between;
     justify-items: center;
-    //
-    align-items: center;
-    grid-template-columns: repeat(6, minmax(auto, auto));
-    grid-row-gap: 0.5em;
+    align-items: stretch;
+    align-content: space-between;
+    gap: .5rem auto;
+    transition: 0.25s ease-in;
 
-    @media (max-width: 1024px) and (min-width: 726px) {
-      // margin: 0 !important;
+   @media (min-width: 1026px) {
+      grid-template-columns: repeat(6, minmax(88px, 1fr));
+      // background: blue;
     }
 
-    @media (min-width: 682px) and (max-width: 1024px) {
-      grid-template-columns: repeat(6, minmax(auto, auto));
-      grid-row-gap: 0.5em;
+    @media (min-width: 563px) and (max-width: 1025px) {
+      grid-template-columns: repeat(6, minmax(84px, 1fr));
+      // background: red;
     }
 
-    @media (min-device-width: 682px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-      grid-template-columns: repeat(6, minmax(auto, auto));
+    @media (min-width: 471px) and (max-width: 562px) {
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+      // background: greenyellow;
     }
 
-    @media (min-width: 414px) and (max-width: 682px) {
-      grid-template-columns: repeat(4, minmax(auto, auto));
-      grid-row-gap: 1em;
-    }
-
-    @media (min-width: 0px) and (max-width: 414px) {
-      grid-template-columns: repeat(3, minmax(auto, auto));
-      grid-row-gap: 0.75em;
-    }
-
-    @media only screen and (min-device-width: 375px) and (max-device-width: 660px) and (-webkit-min-device-pixel-ratio: 2) {
-      padding: 0;
-      margin-top: 0.5em;
-      margin-bottom: 0.5em;
-
-      svg {
-        // margin: 0em 0.8em ;
-      }
-    }
-
-    @media only screen and (min-device-width: 375px) and (max-device-width: 660px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-      // margin: 0.5em 1em 0em;
-
-      svg {
-        // margin: 0em 0.55em;
-      }
-    }
-
-    .icon {
-      // margin: auto;
+    @media (max-width: 470px) {
+      grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+      // background: rgb(47, 255, 245);
     }
   }
+
+
+
+
 </style>

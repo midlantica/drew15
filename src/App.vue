@@ -184,10 +184,6 @@
       }
     }
 
-    .skillsGrid {
-      //
-    }
-
     .smallCaps {
       font-variant: small-caps !important;
       font-size: 87.5% !important;
@@ -253,10 +249,6 @@
     .about p {
       font-family: "Alegreya", "Times New Roman", Times, serif !important;
       font-size: 1em;
-    }
-
-    .skillsGrid {
-      margin: 0 auto 0 .5rem !important;
     }
 
   }
