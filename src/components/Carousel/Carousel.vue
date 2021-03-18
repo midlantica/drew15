@@ -50,8 +50,6 @@
   const Print = defineAsyncComponent(() => import('@/components/Carousel/05_print'))
   const Misc = defineAsyncComponent(() => import('@/components/Carousel/06_misc'))
 
-  // import 'vue-flux/dist-ssr/vue-flux.css'
-
   export default {
     name: 'CarouselShow',
     components: {
@@ -388,6 +386,12 @@
           background-position: center 12px !important;
           border: 1px solid transparentize(grey, 0.5);
           box-shadow: 0px 2px 4px -1px hsla(0, 0%, 50%, 0.25);
+
+          p {
+            position: relative;
+            top: -6px;
+            transition: ease-in-out;
+          }
         }
 
         &.Uiux {
@@ -481,12 +485,6 @@
         }
       }
 
-    }
-
-    .box:hover p {
-      position: relative;
-      top: -6px;
-      transition: ease-in-out;
     }
 
   }
