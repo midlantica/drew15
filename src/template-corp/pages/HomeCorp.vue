@@ -66,7 +66,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: .5rem 1rem;
     // grid-row-gap: 1rem 1rem;
-    margin: 0.25rem 1rem .5rem;
+    margin: 0.25rem 1rem 1rem;
     // background: none !important;
     // box-shadow: none !important;
 

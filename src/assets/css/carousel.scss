@@ -1,36 +1,36 @@
 $mortar: .25rem;
 
-.vueperslides {
-  padding: 0rem 0rem;
-}
-
-// .body.punk .vueperslides {
-//   padding: 0rem 0.2rem !important;
+// .vueperslide {
+//   height: 400px !important;
 // }
 
+.vueperslides {
+  // padding: 0rem 0rem;
+  // padding: $mortar;
+}
+
 .vueperslides__parallax-wrapper {
-  height: 200px;
-  margin-top: $mortar;
+  // height: 354.5px;
+}
+
+.bourbon .vueperslides__parallax-wrapper {
+  height: 349px;
 }
 
 .groovy .vueperslides__parallax-wrapper {
-  height: 177.5px;
-  margin-top: $mortar;
+  height: 317px;
 }
 
 .techy .vueperslides__parallax-wrapper {
-  height: 175px;
-  margin-top: $mortar;
+  height: 312px;
 }
 
 .corp .vueperslides__parallax-wrapper {
-  height: 166.85px;
-  margin-top: $mortar;
+  height: 300px;
 }
 
 .punk .vueperslides__parallax-wrapper {
-  height: 188.5px;
-  // margin-top: $mortar;
+  height: 345px;
 }
 
 .vueperslides__arrow {

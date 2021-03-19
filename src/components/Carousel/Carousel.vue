@@ -82,9 +82,10 @@
   $mortar: .25rem;
 
   .projectBox {
-    background: lighten(lightgrey, 10);
+    background: lighten(lightgrey, 12);
+    // background: transparentize($color: white, $amount: .25);
     border-radius: $mortar;
-    padding: $mortar 0.15rem $mortar;
+    padding: .5rem;
     position: relative;
     @include clearfix;
   }
@@ -93,10 +94,13 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    height: 1.6rem;
+    // justify-content: space-between;
+    // justify-content: flex-start;
+    align-items: flex-start;
+    // align-items: flex-start;
+    // align-content: flex-start;
+    height: 1.5rem;
+    margin-bottom: $mortar;
   }
 
   body.box {
@@ -125,7 +129,7 @@
     @include box-shadow(0px, 1px, 1px, 0px, hsla(0, 0%, 0%, 0.5));
     // min-height: 386px;
     // min-height: 380px;
-    padding: 0.35rem 0.3rem 0.15rem;
+    // padding: $mortar 0.3rem $mortar;
 
     @media (max-width: $breakThou) {
       // min-height: initial;
@@ -146,7 +150,7 @@
 
   body.groovy .projectBox {
     @include box-shadow(0px, 6px, 0px, 0px, hsla(0, 0%, 0%, 0.25));
-    padding: $mortar 0.3rem 0.35rem;
+    // padding: $mortar 0.3rem $mortar;
     // min-height: 357px;
 
     @media (max-width: $breakThou) {
@@ -168,7 +172,7 @@
 
   body.techy .projectBox {
     @include box-shadow(0px, 2px, 2px, -3px, hsla(0, 0%, 0%, 1));
-    padding: $mortar 0.3rem 0.5rem;
+    // padding: $mortar 0.3rem 0.5rem;
     // min-height: 353px;
 
     @media (max-width: $breakThou) {
@@ -192,7 +196,7 @@
   body.corp .projectBox {
     background: #d7e7f3;
     @include box-shadow(0px, 1px, 1px, 0px, hsla(0, 0%, 0%, 0.5), false);
-    padding: $mortar 0.3rem 0.5rem;
+    // padding: $mortar 0.3rem $mortar;
     // min-height: 357px;
 
 
@@ -216,7 +220,7 @@
 
   body.punk .projectBox {
     @include box-shadow(0px, 1px, 1px, 0px, hsla(0, 0%, 0%, 0.5), false);
-    padding: $mortar 0.3rem 0.35rem;
+    // padding: $mortar 0.3rem $mortar;
     // min-height: 357px;
 
     @media (max-width: $breakThou) {
@@ -309,7 +313,7 @@
   }
 
   body.punk .box {
-    height: 169px !important;
+    height: 172.5px !important;
   }
 
   ///////
@@ -326,18 +330,17 @@
   }
 
   .carouselArrow {
-    font-size: 0.75em;
+    font-size: 0.7em;
     // display: block;
     // float: left;
     // clear: left;
-    border: 1px solid lightgrey;
-    border-radius: $mortar;
+    border: 1px solid hsla(0, 0%, 83%, 0.75);
+    border-radius: 4px;
     background: transparentize(white, 0.5);
-    cursor: pointer;
-    padding: 0.2em 0.5em 0.1em $mortar;
+    padding: 0.15rem .3rem 0.15rem .2rem;
     margin: 0rem 0 0 0em;
-    // margin: 0.1em 0em 0 .2rem;
     font-family: Helvetica, Arial, sans-serif;
+    cursor: pointer;
     position: absolute;
     z-index: 100;
 
@@ -380,16 +383,17 @@
       .box {
         flex-direction: column;
         text-align: center;
-        margin: 0.15em 0.15em;
         box-shadow: 0px 2px 2px -3px black;
         display: flex;
         justify-content: flex-end;
         align-items: stretch;
+        // margin: 0.15em 0.15em;
+        gap: .25rem;
         //
-        background-color: lighten(lightgrey, 13) !important;
+        background-color: lighten(lightgrey, 15) !important;
         background-size: 75% 75%;
         background-position: center 18px !important;
-        border: 1px solid transparentize(grey, 0.75) !important;
+        border: 1px solid transparentize(grey, 0.85) !important;
 
         @media (max-width: $breakThou) {
           //

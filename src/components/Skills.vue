@@ -30,6 +30,7 @@
   import iconNode from '@/components/Icons/icon-node'
   import iconWebpack from '@/components/Icons/icon-webpack'
   import iconChelsea from '@/components/Icons/icon-chelsea'
+
   export default {
     components: {
       iconUiux,
@@ -49,7 +50,6 @@
 </script>
 
 <style lang="scss" scoped>
-
   .skillsGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -59,7 +59,6 @@
     align-items: stretch;
     align-content: space-between;
     gap: .5rem auto;
-    transition: 0.25s ease-in;
 
     @media (min-width: 1026px) {
       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));

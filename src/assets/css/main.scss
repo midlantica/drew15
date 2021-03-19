@@ -1,8 +1,19 @@
 // SETTINGS
 @import '~breakpoint-sass/stylesheets/breakpoint';
+// @import 'vendor/html5Boilerplate';
 @import '_colors.scss';
 @import './dh-common/_dh-main.scss';
 @import '_drewShake.scss';
+
+* {
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
 
 // BREAKPOINTS
 $breakThou: 1024px;
