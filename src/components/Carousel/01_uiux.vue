@@ -4,6 +4,7 @@
     :infinite="false"
     :bullets="false"
     :touchable="false"
+    :slide-ratio="1 / 4"
     fractions
     progress
   >
