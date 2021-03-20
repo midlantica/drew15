@@ -101,6 +101,8 @@
     // align-content: flex-start;
     height: 1.5rem;
     margin-bottom: $mortar;
+    position: relative;
+    z-index: 20;
   }
 
   body.box {
@@ -185,7 +187,7 @@
     }
 
     @media (max-width: $breakTwo) {
-      // min-height: 386px;
+      //
     }
 
     @media (max-width: $breakThree) {
@@ -248,7 +250,7 @@
   }
 
   body.bourbon .box {
-    height: 174.5px !important;
+    height: 181.5px !important;
     // height: 20vh !important;
 
     @media (max-width: $breakThou) {
@@ -263,7 +265,7 @@
   }
 
   body.groovy .box {
-    height: 158.25px !important;
+    height: 170px !important;
   }
 
   //////////
@@ -273,7 +275,7 @@
   }
 
   body.techy .box {
-    height: 156px !important;
+    height: 167px !important;
   }
 
   //////////
@@ -284,7 +286,7 @@
   }
 
   body.corp .box {
-    height: 150px !important;
+    height: 166.25px !important;
   }
 
   body.corp .VueCarousel.druCarousel {
@@ -313,7 +315,7 @@
   }
 
   body.punk .box {
-    height: 172.5px !important;
+    height: 181.5px !important;
   }
 
   ///////

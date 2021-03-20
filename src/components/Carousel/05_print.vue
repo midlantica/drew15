@@ -3,7 +3,8 @@
     fade
     :infinite="false"
     :bullets="false"
-    :touchable="false"
+    :slide-ratio="1 / 1.3"
+    autoplay
     fractions
     progress
   >
