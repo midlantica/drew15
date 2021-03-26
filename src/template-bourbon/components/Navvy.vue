@@ -12,10 +12,9 @@
         <a href='mailto:druharper@gmail.com'>DRUHARPER@GMAIL.COM</a>
       </p>
       <p class='resume'>
-        Resume: Word
-        <a href='resume/drew_harper_resume_portfolio_short.docx'>Small </a>/
-        <a href='resume/drew_harper_resume_portfolio.docx'>Big</a> or
-        <a href='resume/drew_harper_resume_portfolio.pdf'>PDF</a>
+        Resume:
+        <a href='resume/drew_harper_resume_portfolio.pdf'>PDF</a> or
+        <a href='resume/drew_harper_resume_portfolio.docx'>WORD</a>
       </p>
     </section>
   </nav>
@@ -187,8 +186,8 @@
 
     p {
       font-family: $font-subhead;
-      letter-spacing: 0.09em;
-      font-size: 1rem;
+      letter-spacing: 5rem;
+      font-size: 1.2rem;
       @include font-smoothing;
 
       &:nth-child(1) {
@@ -200,13 +199,13 @@
       &:nth-child(2) {
         // font-size: 1.05em;
         // line-height: 1.5rem;
-        letter-spacing: 0.075rem;
+        letter-spacing: 0.25rem;
       }
 
       @media (max-width: $breakOne) {
         justify-content: center;
-        font-size: 1.27em !important;
-        letter-spacing: 0.09em !important;
+        font-size: 1.5rem !important;
+        letter-spacing: 0.1785rem !important;
         margin-top: -0.3em;
 
         &:nth-child(1) {
@@ -221,7 +220,7 @@
       }
 
       @media (max-width: $breakTwo) {
-        font-size: 0.87em !important;
+        font-size: 1.05rem !important;
         letter-spacing: 0.09em !important;
 
         &:nth-child(1) {
@@ -235,7 +234,7 @@
 
       @media (max-width: $breakThree) {
         justify-content: center;
-        font-size: 1.04em !important;
+        font-size: 1.25rem !important;
         letter-spacing: 0.09em !important;
         line-height: 1.25em;
         margin-bottom: -4px;

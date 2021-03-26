@@ -4,12 +4,10 @@
     <iconHtml5 class="icon html5" />
     <iconCss3 class="icon css3" />
     <iconJs class="icon js" />
-
     <iconSketch class="icon sketch" />
     <iconSass class="icon sass" />
     <iconVue class="icon vue" />
     <iconSvg class="icon svg" />
-
     <iconVSCode class="icon vs-code" />
     <iconNode class="icon node" />
     <iconWebpack class="icon webpack" />
@@ -62,22 +60,18 @@
 
     @media (min-width: 1026px) {
       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      // background: blue;
     }
 
     @media (min-width: 563px) and (max-width: 1025px) {
       grid-template-columns: repeat(6, minmax(88px, 1fr));
-      // background: red;
     }
 
     @media (min-width: 471px) and (max-width: 562px) {
       grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-      // background: greenyellow;
     }
 
     @media (max-width: 470px) {
       grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
-      // background: rgb(47, 255, 245);
     }
 
     svg {
@@ -96,22 +90,23 @@
 
     @media (min-width: 1026px) {
       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      // background: blue;
     }
 
     @media (min-width: 563px) and (max-width: 1025px) {
       grid-template-columns: repeat(6, minmax(88px, 1fr));
-      // background: red;
     }
 
     @media (min-width: 471px) and (max-width: 562px) {
       grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-      // background: greenyellow;
     }
 
     @media (max-width: 470px) {
       grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
-      // background: rgb(47, 255, 245);
+    }
+
+    svg {
+      width: 88px;
+      // height: 59px;
     }
   }
 
@@ -119,22 +114,18 @@
     //
     @media (min-width: 1026px) {
       grid-template-columns: repeat(12, minmax(84px, 1fr));
-      // background: blue;
     }
 
     @media (min-width: 563px) and (max-width: 1025px) {
       grid-template-columns: repeat(6, minmax(84px, 1fr));
-      // background: red;
     }
 
     @media (min-width: 471px) and (max-width: 562px) {
       grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-      // background: greenyellow;
     }
 
     @media (max-width: 470px) {
       grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
-      // background: rgb(47, 255, 245);
     }
 
     svg {
@@ -149,22 +140,18 @@
 
     @media (min-width: 1026px) {
       grid-template-columns: repeat(12, minmax(84px, 1fr));
-      // background: blue;
     }
 
     @media (min-width: 563px) and (max-width: 1025px) {
       grid-template-columns: repeat(6, minmax(84px, 1fr));
-      // background: red;
     }
 
     @media (min-width: 471px) and (max-width: 562px) {
       grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-      // background: greenyellow;
     }
 
     @media (max-width: 470px) {
       grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
-      // background: rgb(47, 255, 245);
     }
 
     svg {
@@ -178,22 +165,18 @@
 
     @media (min-width: 1026px) {
       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      // background: blue;
     }
 
     @media (min-width: 563px) and (max-width: 1025px) {
       grid-template-columns: repeat(6, minmax(88px, 1fr));
-      // background: red;
     }
 
     @media (min-width: 471px) and (max-width: 562px) {
       grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-      // background: greenyellow;
     }
 
     @media (max-width: 470px) {
       grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
-      // background: rgb(47, 255, 245);
     }
   }
 
@@ -205,22 +188,18 @@
 
     @media (min-width: 1026px) {
       grid-template-columns: repeat(12, minmax(84px, 1fr));
-      // background: blue;
     }
 
     @media (min-width: 563px) and (max-width: 1025px) {
       grid-template-columns: repeat(6, minmax(88px, 1fr));
-      // background: red;
     }
 
     @media (min-width: 471px) and (max-width: 562px) {
       grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-      // background: greenyellow;
     }
 
     @media (max-width: 470px) {
       grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
-      // background: rgb(47, 255, 245);
     }
 
     svg {
