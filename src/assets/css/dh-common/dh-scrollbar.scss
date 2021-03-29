@@ -1,6 +1,8 @@
 ::-webkit-scrollbar {
   height: 0.75rem;
   width: 0.75rem;
+  overflow-x: hidden !important;
+  overflow-y: visible;
 }
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(

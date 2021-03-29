@@ -3,7 +3,7 @@
 // @import 'vendor/html5Boilerplate';
 @import '_colors';
 @import './dh-common/_dh-main';
-@import 'drewShake';
+@import '_drewShake';
 
 * {
   box-sizing: border-box;
@@ -40,3 +40,13 @@ html, html a {
 }
 
 $bourbonShadow: 0px 1px 1px 0px hsla(0, 0%, 0%, 0.5);
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}

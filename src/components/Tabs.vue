@@ -24,7 +24,7 @@
     top: 0px;
     left: 0px;
     z-index: 10;
-    width: 100.1%;
+    width: calc(100%);
     font-family: Helvetica,Arial,sans-serif;
     // display: relative;
 

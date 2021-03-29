@@ -1,7 +1,9 @@
 <template>
   <div class="marT0 marL1 marRH">
     <div class="headBlock">
-      <router-link :to="{ name: 'ExtrasBourbon' }" class="drewhead jelloHorizontal" />
+      <transition enter-active-class="jelloHorizontal">
+        <router-link :to="{ name: 'ExtrasBourbon' }" class="drewhead jelloHorizontal" />
+      </transition>
       <h1>When UX design is done right the design seems inevitable</h1>
     </div>
     <p>Whether it’s a prototype, a responsive website, a wireframe, an interactive <span class="smallCaps">PDF</span>, a new mobile app <span class="smallCaps">UI</span>, a quick skin job, a few more buttons, a dialog box, filling up a bucket, or getting in the trenches with  <span class="smallCaps">HTML</span> and <span class="smallCaps">CSS</span>, I can deliver. I don’t let ‘design’ get in the way. Oh and I’m a coder groupie 😃</p>
@@ -73,20 +75,6 @@
       }
 
     }
-  }
-
-  @keyframes drewShake {
-    0% { transform: translate(2px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(0px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(2px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(2px, 2px) rotate(-1deg); }
-    100% { transform: translate(2px, 1px) rotate(0deg); }
   }
 
   p.smallCaps {

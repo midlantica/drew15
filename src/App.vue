@@ -1,9 +1,9 @@
 <template>
   <div class="wrapper">
     <Tabs />
-    <!-- <transition name="fade"> -->
-    <router-view />
-    <!-- </transition> -->
+    <transition name="fade">
+      <router-view />
+    </transition>
   </div>
 </template>
 
