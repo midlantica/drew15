@@ -4,7 +4,7 @@
       <a class='carouselArrow'
         v-if="backButtonView"
         @click='viewCarousel(); backButtonState();'
-      >◀︎ BACK</a>
+      >﹤ BACK</a>
       <p class='projectHead'>Projects - {{ selectedView }}</p>
     </div>
 

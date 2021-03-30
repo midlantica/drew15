@@ -1,8 +1,8 @@
 <template>
   <div class="wrapper">
+    <Tabs />
     <router-view v-slot="{ Component }">
-      <Tabs />
-      <transition name="fade">
+      <transition name="fade" mode="ease-out">
         <component :is="Component" />
       </transition>
     </router-view>
@@ -99,7 +99,7 @@
       background: linear-gradient(
         lighten($backer, 10) 0%,
         darken($backer, 05) 85%,
-        darken($backer, 15) 100%
+        darken($backer, 10) 100%
       );
 
       @media (max-width: $breakOne) {
@@ -112,10 +112,6 @@
         //
       }
 
-    }
-
-    .wrapper {
-      background: #fffae4;
     }
 
     .about > p {
