@@ -79,3 +79,25 @@ $mortar: .25rem;
 .fullScreen {
   cursor: pointer;
 }
+
+.carouselArrow {
+  font-size: 0.7em;
+  // display: block;
+  // float: left;
+  // clear: left;
+  border: 1px solid hsla(0, 0%, 83%, 0.75);
+  border-radius: 4px;
+  background: transparentize(white, 0.5);
+  padding: 0.15rem .5rem 0.15rem .4rem;
+  margin: 0rem 0 0 0em;
+  font-family: Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  position: absolute;
+  // top: .4rem;
+  z-index: 100;
+
+  &:hover {
+    color: white;
+    background: grey;
+  }
+}

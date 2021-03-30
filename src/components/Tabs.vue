@@ -12,9 +12,9 @@
   .tabs {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
     align-content: center;
     text-align: center;
     font-size: 0.7em;
@@ -27,6 +27,7 @@
     width: calc(100%);
     font-family: Helvetica,Arial,sans-serif;
     // display: relative;
+    overflow-x: hidden !important;
 
     a {
       flex-grow: 1;
@@ -38,7 +39,8 @@
       letter-spacing: 0.1em;
 
       &:last-child {
-        border-right: none;
+        border-right: 0px !important;
+        // margin-right: -1px;
       }
 
       &:hover {

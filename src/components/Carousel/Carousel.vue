@@ -1,37 +1,41 @@
 <template>
   <div class='projectBox'>
     <div class="projectBox__top">
-      <a class='carouselArrow' @click.stop='selectedView = `Carousel`'>◀︎ BACK</a>
+      <a class='carouselArrow'
+        v-if="backButtonView"
+        @click.prevent='viewCarousel(); backButtonState();'
+      >◀︎ BACK</a>
       <p class='projectHead'>Projects - {{ selectedView }}</p>
     </div>
+
     <component :is='selectedView'>
       <div class='miniGallery'>
-        <a @click.stop='selectedView = `Uiux`'>
+        <a @click.prevent='selectedView = `Uiux`' >
           <div class='box Uiux'>
             <p>UI/UX Design</p>
           </div>
         </a>
-        <a @click.stop='selectedView = `Mobile`'>
+        <a @click.prevent='selectedView = `Mobile`' >
           <div class='box Mobile'>
             <p>Mobile</p>
           </div>
         </a>
-        <a @click.stop='selectedView = `Kiosk`'>
+        <a @click.prevent='selectedView = `Kiosk`' >
           <div class='box Kiosk'>
             <p>Kiosk</p>
           </div>
         </a>
-        <a @click.stop='selectedView = `Graphics`'>
+        <a @click.prevent='selectedView = `Graphics`' >
           <div class='box Graphics'>
             <p>Graphics</p>
           </div>
         </a>
-        <a @click.stop='selectedView = `Print`'>
+        <a @click.prevent='selectedView = `Print`' >
           <div class='box Print'>
             <p>Print</p>
           </div>
         </a>
-        <a @click.stop='selectedView = `Misc`'>
+        <a @click.prevent='selectedView = `Misc`' >
           <div class='box Misc'>
             <p>Misc.</p>
           </div>
@@ -43,14 +47,13 @@
 
 <script>
   // import Carousel from '@/components/Carousel/Carousel'
-  import { defineAsyncComponent } from 'vue'
-
+  // import { defineAsyncComponent } from 'vue'
   import Uiux from '@/components/Carousel/01_uiux'
-  const Mobile = defineAsyncComponent(() => import('@/components/Carousel/02_mobile'))
-  const Kiosk = defineAsyncComponent(() => import('@/components/Carousel/03_kiosk'))
-  const Graphics = defineAsyncComponent(() => import('@/components/Carousel/04_graphics'))
-  const Print = defineAsyncComponent(() => import('@/components/Carousel/05_print'))
-  const Misc = defineAsyncComponent(() => import('@/components/Carousel/06_misc'))
+  import Mobile from '@/components/Carousel/02_mobile'
+  import Kiosk from '@/components/Carousel/03_kiosk'
+  import Graphics from '@/components/Carousel/04_graphics'
+  import Print from '@/components/Carousel/05_print'
+  import Misc from '@/components/Carousel/06_misc'
 
   export default {
     name: 'CarouselShow',
@@ -70,8 +73,19 @@
         kiosk: 'Kiosk',
         graphics: 'Graphics',
         print: 'Print',
-        misc: 'Misc.'
+        misc: 'Misc.',
+        backButtonView: false,
       }
+    },
+    methods: {
+      viewCarousel: function() {
+        this.selectedView = `Carousel`
+      },
+      backButtonState: function(){
+        console.log('Please god...')
+        this.backButtonView = !this.backButtonView
+      }
+
     }
   }
 </script>
@@ -331,26 +345,26 @@
     }
   }
 
-  .carouselArrow {
-    font-size: 0.7em;
-    // display: block;
-    // float: left;
-    // clear: left;
-    border: 1px solid hsla(0, 0%, 83%, 0.75);
-    border-radius: 4px;
-    background: transparentize(white, 0.5);
-    padding: 0.15rem .3rem 0.15rem .2rem;
-    margin: 0rem 0 0 0em;
-    font-family: Helvetica, Arial, sans-serif;
-    cursor: pointer;
-    position: absolute;
-    z-index: 100;
+  // .carouselArrow {
+  //   font-size: 0.7em;
+  //   // display: block;
+  //   // float: left;
+  //   // clear: left;
+  //   border: 1px solid hsla(0, 0%, 83%, 0.75);
+  //   border-radius: 4px;
+  //   background: transparentize(white, 0.5);
+  //   padding: 0.15rem .5rem 0.15rem .4rem;
+  //   margin: 0rem 0 0 0em;
+  //   font-family: Helvetica, Arial, sans-serif;
+  //   cursor: pointer;
+  //   position: absolute;
+  //   z-index: 100;
 
-    &:hover {
-      color: white;
-      background: grey;
-    }
-  }
+  //   &:hover {
+  //     color: white;
+  //     background: grey;
+  //   }
+  // }
 
   .miniGallery {
     display: flex;
