@@ -2,7 +2,7 @@
   height: 0.75rem;
   width: 0.75rem;
   overflow-x: hidden !important;
-  overflow-y: visible;
+  overflow-y: hidden !important;
 }
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(

@@ -3,39 +3,39 @@
     <div class="projectBox__top">
       <a class='carouselArrow'
         v-if="backButtonView"
-        @click.prevent='viewCarousel(); backButtonState();'
+        @click='viewCarousel(); backButtonState();'
       >◀︎ BACK</a>
       <p class='projectHead'>Projects - {{ selectedView }}</p>
     </div>
 
     <component :is='selectedView'>
       <div class='miniGallery'>
-        <a @click.prevent='selectedView = `Uiux`' >
+        <a @click='selectedView = `Uiux`; backButtonState();' >
           <div class='box Uiux'>
             <p>UI/UX Design</p>
           </div>
         </a>
-        <a @click.prevent='selectedView = `Mobile`' >
+        <a @click='selectedView = `Mobile`; backButtonState();' >
           <div class='box Mobile'>
             <p>Mobile</p>
           </div>
         </a>
-        <a @click.prevent='selectedView = `Kiosk`' >
+        <a @click='selectedView = `Kiosk`; backButtonState();' >
           <div class='box Kiosk'>
             <p>Kiosk</p>
           </div>
         </a>
-        <a @click.prevent='selectedView = `Graphics`' >
+        <a @click='selectedView = `Graphics`; backButtonState();' >
           <div class='box Graphics'>
             <p>Graphics</p>
           </div>
         </a>
-        <a @click.prevent='selectedView = `Print`' >
+        <a @click='selectedView = `Print`; backButtonState();' >
           <div class='box Print'>
             <p>Print</p>
           </div>
         </a>
-        <a @click.prevent='selectedView = `Misc`' >
+        <a @click='selectedView = `Misc`; backButtonState();' >
           <div class='box Misc'>
             <p>Misc.</p>
           </div>
@@ -78,12 +78,16 @@
       }
     },
     methods: {
+      carouselBack: function() {
+        this.selectedView = `Carousel`
+        this.backButtonView = !this.backButtonView
+      },
       viewCarousel: function() {
         this.selectedView = `Carousel`
       },
-      backButtonState: function(){
-        console.log('Please god...')
+      backButtonState: function() {
         this.backButtonView = !this.backButtonView
+        // console.log('Please god...')
       }
 
     }

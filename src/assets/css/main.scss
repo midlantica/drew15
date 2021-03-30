@@ -2,8 +2,11 @@
 @import '~breakpoint-sass/stylesheets/breakpoint';
 // @import 'vendor/html5Boilerplate';
 @import '_colors';
+@import '_breakpoints';
 @import './dh-common/_dh-main';
 @import '_drewShake';
+@import 'transitions';
+@import 'tryout';
 
 * {
   box-sizing: border-box;
@@ -13,16 +16,6 @@
     box-sizing: border-box;
   }
 }
-
-
-// BREAKPOINTS
-$breakThou: 1024px;
-$breakOne: 840px;
-$breakTwo: 630px;
-$breakThree: 430px;
-$breakFour: 320px;
-
-$breakMinMax: 630px 760px;
 
 body {
   margin: 0;
@@ -37,16 +30,4 @@ html, html a {
   // color: #222;
   font-size: 1em;
   // line-height: 1.4;
-}
-
-$bourbonShadow: 0px 1px 1px 0px hsla(0, 0%, 0%, 0.5);
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
 }

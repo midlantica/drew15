@@ -1,12 +1,11 @@
 <template>
   <div class="wrapper">
-    <Tabs />
     <router-view v-slot="{ Component }">
+      <Tabs />
       <transition name="fade">
         <component :is="Component" />
       </transition>
     </router-view>
-
   </div>
 </template>
 
