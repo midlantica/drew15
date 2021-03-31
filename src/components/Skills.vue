@@ -7,10 +7,10 @@
     <iconSketch class="icon sketch" />
     <iconSass class="icon sass" />
     <iconVue class="icon vue" />
-    <iconSvg class="icon svg" />
+    <iconNuxt class="icon nuxt" />
     <iconVSCode class="icon vs-code" />
+    <iconSvg class="icon svg" />
     <iconNode class="icon node" />
-    <iconWebpack class="icon webpack" />
     <iconChelsea class="icon chelsea" />
   </div>
 </template>
@@ -26,7 +26,7 @@
   import iconSvg from '@/components/Icons/icon-svg'
   import iconVSCode from '@/components/Icons/icon-vs-code'
   import iconNode from '@/components/Icons/icon-node'
-  import iconWebpack from '@/components/Icons/icon-webpack'
+  import iconNuxt from '@/components/Icons/icon-nuxt'
   import iconChelsea from '@/components/Icons/icon-chelsea'
 
   export default {
@@ -41,7 +41,7 @@
       iconSvg,
       iconVSCode,
       iconNode,
-      iconWebpack,
+      iconNuxt,
       iconChelsea
     }
   }

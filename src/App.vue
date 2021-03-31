@@ -2,7 +2,7 @@
   <div class="wrapper">
     <Tabs />
     <router-view v-slot="{ Component }">
-      <transition name="fade" mode="ease-out">
+      <transition name="fade" mode="out-in">
         <component :is="Component" />
       </transition>
     </router-view>

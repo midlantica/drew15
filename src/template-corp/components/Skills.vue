@@ -8,11 +8,11 @@
     <iconSketchBlue class='icon sketch' />
     <iconSassBlue class='icon sass' />
     <iconVueBlue class='icon vue' />
-    <iconSvgBlue class='icon svg' />
+    <iconNuxtBlue class='icon nuxt' />
 
     <iconVSCodeBlue class='icon vs-code' />
+    <iconSvgBlue class='icon svg' />
     <iconNodeBlue class='icon node' />
-    <iconWebpackBlue class='icon webpack' />
     <iconChelseaBlue class='icon chelsea' />
   </div>
 </template>
@@ -28,7 +28,7 @@
   import iconSvgBlue from '@/template-corp/components/Icons/icon-svg'
   import iconVSCodeBlue from '@/template-corp/components/Icons/icon-vs-code'
   import iconNodeBlue from '@/template-corp/components/Icons/icon-node'
-  import iconWebpackBlue from '@/template-corp/components/Icons/icon-webpack'
+  import iconNuxtBlue from '@/template-corp/components/Icons/icon-nuxt'
   import iconChelseaBlue from '@/template-corp/components/Icons/icon-chelsea'
   export default {
     components: {
@@ -42,7 +42,7 @@
       iconSvgBlue,
       iconVSCodeBlue,
       iconNodeBlue,
-      iconWebpackBlue,
+      iconNuxtBlue,
       iconChelseaBlue
     }
   }
