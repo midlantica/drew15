@@ -1,57 +1,51 @@
+/* eslint-disable no-undef */
 module.exports = {
-  'env': {
-    'browser': true,
-    'node': true,
-    'es6': true
+  root: true,
+  env: {
+    browser: true,
+    es6: true
   },
-  'extends': [
+  extends: [
+    'plugin:prettier/recommended',
+    'plugin:vue/essential',
+    'plugin:vue/recommended',
     'eslint:recommended',
-    'plugin:vue/essential'
   ],
-  'globals': {
-    'Atomics': 'readonly',
-    'SharedArrayBuffer': 'readonly'
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
   },
-  'parserOptions': {
-    'ecmaVersion': 2018,
-    'sourceType': 'module',
-    "parser": "babel-eslint",
+  parser: 'babel-eslint',
+  parserOptions: {
+    ecmaVersion: 11,
+    sourceType: 'module',
+    ecmaFeatures: {
+      globalReturn: false,
+      // impliedStrict: false,
+    },
   },
-  'plugins': [
-    'vue'
-  ],
-  'rules': {
-    'indent': [
+  plugins: ['import', 'variables', 'prettier', 'vue'],
+  rules: {
+    // allow paren-less arrow functions
+    'arrow-parens': 1,
+    // INDENT DEFAULT AT 2 SPACES
+    'vue/html-quotes': ['error', 'single', { avoidEscape: false }],
+    // indent: ['error', 2],
+    // 'vue/script-indent': ['error', 2, { baseIndent: 1 }],
+    'generator-star-spacing': 0,
+    quotes: ['error', 'single', 'avoid-escape'],
+    // quotes: ['error', 'single'],
+    semi: ['error', 'never'],
+    'prettier/prettier': ['error', { singleQuote: true, parser: 'flow' }],
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    // 'space-before-function-paren': ['error', 'never'],
+    'space-before-function-paren': [
       'error',
-      2
+      {
+        anonymous: 'never',
+        named: 'never',
+        asyncArrow: 'ignore',
+      },
     ],
-    'linebreak-style': [
-      'error',
-      'unix'
-    ],
-    'quotes': [
-      'error',
-      'single', {
-        'avoidEscape': true,
-        'allowTemplateLiterals': true
-      }
-    ],
-    'semi': [
-      'error',
-      'never'
-    ],
-    "vue/script-indent": ["error", 2, {
-      "baseIndent": 1,
-      "switchCase": 0,
-      // "ignores": []
-    }],
   },
-  "overrides": [
-    {
-      "files": ["*.vue"],
-      "rules": {
-        "indent": "off"
-      }
-    }
-  ]
 }

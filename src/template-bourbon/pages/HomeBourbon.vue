@@ -21,13 +21,14 @@
     </main>
 
     <footer>
-      <Navvy />
+      <NavvyEmpty />
     </footer>
   </div>
 </template>
 
 <script>
   import Navvy from '../components/Navvy'
+  import NavvyEmpty from '../components/NavvyEmpty'
   import HeadAndCopy from '../components/HeadAndCopy'
   import About from '@/components/About'
   import Skills from '@/components/Skills'
@@ -39,6 +40,7 @@
     name: 'HomeBourbon',
     components: {
       Navvy,
+      NavvyEmpty,
       HeadAndCopy,
       Carousel,
       About,

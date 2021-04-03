@@ -56,9 +56,8 @@
 
   header,
   footer {
-    color: $ivory;
+    // color: $ivory;
     box-shadow: none !important;
-    background: url(/img/bg/white_paper_patt-01.jpg) repeat !important;
   }
 
   .mainGrid {
