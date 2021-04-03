@@ -8,11 +8,19 @@ module.exports = {
     node: true
   },
 
-  extends: [
+  // extends: [
+  //   'plugin:prettier/recommended',
+  //   'plugin:vue/essential',
+  //   'plugin:vue/recommended',
+  //   'eslint:recommended',
+  // ],
+  'extends': [
     'plugin:prettier/recommended',
     'plugin:vue/essential',
     'plugin:vue/recommended',
     'eslint:recommended',
+    'plugin:vue/vue3-essential',
+    '@vue/prettier'
   ],
 
   globals: {
@@ -68,15 +76,5 @@ module.exports = {
         asyncArrow: 'ignore'
       }
     ],
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
   },
-
-  'extends': [
-    'plugin:prettier/recommended',
-    'plugin:vue/essential',
-    'plugin:vue/recommended',
-    'eslint:recommended',
-    'plugin:vue/vue3-essential',
-    '@vue/prettier'
-  ]
 }
