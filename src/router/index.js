@@ -23,8 +23,8 @@ const routes = [
         //   name: 'description',
         //   content: 'The home page of our example app.',
         // }
-      ]
-    }
+      ],
+    },
   },
   {
     path: '/Groovy',
@@ -38,8 +38,8 @@ const routes = [
         //   name: 'description',
         //   content: 'The home page of our example app.',
         // }
-      ]
-    }
+      ],
+    },
   },
   {
     path: '/Techy',
@@ -53,8 +53,8 @@ const routes = [
         //   name: 'description',
         //   content: 'The home page of our example app.',
         // }
-      ]
-    }
+      ],
+    },
   },
   {
     path: '/Corp',
@@ -68,8 +68,8 @@ const routes = [
         //   name: 'description',
         //   content: 'The home page of our example app.',
         // }
-      ]
-    }
+      ],
+    },
   },
   {
     path: '/Punk',
@@ -83,8 +83,8 @@ const routes = [
         //   name: 'description',
         //   content: 'The home page of our example app.',
         // }
-      ]
-    }
+      ],
+    },
   },
   {
     path: '/Bourbon/Extras',
@@ -92,7 +92,10 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import( /* webpackChunkName: 'ExtrasBourbon' */ '../template-bourbon/pages/Extras.vue'),
+    component: () =>
+      import(
+        /* webpackChunkName: 'ExtrasBourbon' */ '../template-bourbon/pages/Extras.vue'
+      ),
     meta: {
       bodyClass: 'bourbon extras',
       title: 'Drew Harper – UI/UX Designer',
@@ -101,8 +104,8 @@ const routes = [
         //   name: 'description',
         //   content: 'The home page of our example app.',
         // }
-      ]
-    }
+      ],
+    },
   },
   {
     path: '/Corp/Extras',
@@ -110,7 +113,10 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: 'ExtrasCorp' */ '../template-corp/pages/Extras.vue'),
+    component: () =>
+      import(
+        /* webpackChunkName: 'ExtrasCorp' */ '../template-corp/pages/Extras.vue'
+      ),
     meta: {
       bodyClass: 'corp extras',
       title: 'Drew Harper – UI/UX Designer',
@@ -119,8 +125,8 @@ const routes = [
         //   name: 'description',
         //   content: 'The home page of our example app.',
         // }
-      ]
-    }
+      ],
+    },
   },
   {
     path: '/Groovy/Extras',
@@ -128,7 +134,10 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: 'ExtrasGroovy' */ '../template-groovy/pages/Extras.vue'),
+    component: () =>
+      import(
+        /* webpackChunkName: 'ExtrasGroovy' */ '../template-groovy/pages/Extras.vue'
+      ),
     meta: {
       bodyClass: 'groovy extras',
       title: 'Drew Harper – UI/UX Designer',
@@ -137,8 +146,8 @@ const routes = [
         //   name: 'description',
         //   content: 'The home page of our example app.',
         // }
-      ]
-    }
+      ],
+    },
   },
   {
     path: '/Punk/Extras',
@@ -146,7 +155,10 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: 'ExtrasPunk' */ '../template-punk/pages/Extras.vue'),
+    component: () =>
+      import(
+        /* webpackChunkName: 'ExtrasPunk' */ '../template-punk/pages/Extras.vue'
+      ),
     meta: {
       bodyClass: 'punk extras',
       title: 'Drew Harper – UI/UX Designer',
@@ -155,8 +167,8 @@ const routes = [
         //   name: 'description',
         //   content: 'The home page of our example app.',
         // }
-      ]
-    }
+      ],
+    },
   },
   {
     path: '/Techy/Extras',
@@ -164,7 +176,10 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: 'ExtrasTechy' */ '../template-techy/pages/Extras.vue'),
+    component: () =>
+      import(
+        /* webpackChunkName: 'ExtrasTechy' */ '../template-techy/pages/Extras.vue'
+      ),
     meta: {
       bodyClass: 'techy extras',
       title: 'Drew Harper – UI/UX Designer',
@@ -173,17 +188,17 @@ const routes = [
         //   name: 'description',
         //   content: 'The home page of our example app.',
         // }
-      ]
-    }
+      ],
+    },
   },
   {
     path: '/NotFound',
-    redirect: '/'
+    redirect: '/',
   },
   {
     path: '/404',
-    redirect: '/'
-  }
+    redirect: '/',
+  },
 ]
 
 const vueBodyClass = new VueBodyClass(routes)
@@ -215,9 +230,9 @@ router.beforeEach((to, from, next) => {
   if (nearestWithTitle) document.title = nearestWithTitle.meta.title
 
   // Remove any stale meta tags from the document using the key attribute we set below.
-  Array.from(document.querySelectorAll('[data-vue-router-controlled]')).map((el) =>
-    el.parentNode.removeChild(el)
-  )
+  Array.from(
+    document.querySelectorAll('[data-vue-router-controlled]')
+  ).map((el) => el.parentNode.removeChild(el))
 
   // Skip rendering meta tags if there are none.
   if (!nearestWithMeta) return next()
