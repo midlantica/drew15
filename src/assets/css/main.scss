@@ -1,14 +1,21 @@
 // SETTINGS
-@import '_colors.scss';
-@import 'dh-common/_dh-main.scss';
-@import '_drewShake.scss';
+@import '~breakpoint-sass/stylesheets/breakpoint';
+// @import 'vendor/html5Boilerplate';
+@import '_colors';
+@import '_breakpoints';
+@import './dh-common/_dh-main';
+@import '_drewShake';
+@import 'transitions';
+@import 'tryout';
 
-// BREAKPOINTS
-$breakThou: 1024px;
-$breakOne: 840px;
-$breakTwo: 630px;
-$breakThree: 430px;
-$breakFour: 320px;
+* {
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
 
 body {
   margin: 0;
@@ -24,5 +31,3 @@ html, html a {
   font-size: 1em;
   // line-height: 1.4;
 }
-
-$bourbonShadow: 0px 1px 1px 0px hsla(0, 0%, 0%, 0.5);

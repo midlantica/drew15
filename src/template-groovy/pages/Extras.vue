@@ -1,16 +1,12 @@
 <template>
   <div>
-
     <header>
       <NavvyHead/>
     </header>
-
     <ExtrasC/>
-
     <footer>
       <Footer />
     </footer>
-
   </div>
 </template>
 
@@ -21,15 +17,6 @@
 
   export default {
     name: 'Extras',
-    metaInfo: {
-      titleTemplate: '%s - Extras!',
-      bodyAttrs: {
-        class: 'groovy extras'
-      },
-      style: [
-        //
-      ]
-    },
     components: {
       NavvyHead,
       Footer,

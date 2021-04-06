@@ -1,31 +1,27 @@
 <template>
-  <div class='wrapper'>
+  <div class="wrapper">
     <Tabs />
-    <transition name='fade'>
-      <router-view />
-    </transition>
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </div>
 </template>
 
 <script>
   import Tabs from '@/components/Tabs.vue'
   export default {
+    name: 'App',
     components: {
       Tabs,
-    },
-    name: 'App',
-    metaInfo: {
-      title: 'Drew Harper',
-      titleTemplate: '%s - UI/UX Designer, Graphic Designer',
     }
-    // link: [
-    //   { rel: 'stylesheet', href: 'http://csshake.surge.sh/csshake-slow.min.css' },
-    // ]
   }
 </script>
 
-<style lang='scss'>
-  // @import '@/assets/css/main.scss';
+<style lang="scss">
+  @import '@/assets/css/_colors.scss';
+  @import "@/assets/css/main.scss";
 
   $backer: #fffae4;
   $backBlack: #1f1f1f;
@@ -54,7 +50,7 @@
     }
 
     .about > p {
-      font-family: 'AmericanTypewriterStd-Med';
+      font-family: "AmericanTypewriterStd-Med";
       font-size: 0.85em;
       margin: 0.25rem auto;
 
@@ -82,7 +78,7 @@
         padding-top: 1em;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
-        font-family: 'VeneerTwo', Helvetica, Arial, sans-serif;
+        font-family: "VeneerTwo", Helvetica, Arial, sans-serif;
         font-weight: 300;
       }
     }
@@ -103,7 +99,7 @@
       background: linear-gradient(
         lighten($backer, 10) 0%,
         darken($backer, 05) 85%,
-        darken($backer, 15) 100%
+        darken($backer, 10) 100%
       );
 
       @media (max-width: $breakOne) {
@@ -118,13 +114,9 @@
 
     }
 
-    .wrapper {
-      background: #fffae4;
-    }
-
     .about > p {
       font-size: 0.85rem !important;
-      font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+      font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
       line-height: 1.25rem;
       margin: 0.25rem 0;
     }
@@ -141,11 +133,11 @@
       h1 {
         font-size: 1.75em;
         padding-top: 1em;
-        font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+        font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
         font-weight: 300;
       }
       p {
-        font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+        font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
         font-size: 1em !important;
       }
     }
@@ -190,10 +182,6 @@
       }
     }
 
-    .skillsGrid {
-      //
-    }
-
     .smallCaps {
       font-variant: small-caps !important;
       font-size: 87.5% !important;
@@ -205,11 +193,11 @@
       h1 {
         font-size: 1.75em;
         padding-top: 1em;
-        font-family: Dosis, 'Helvetica Neue', Arial, sans-serif !important;
+        font-family: Dosis, "Helvetica Neue", Arial, sans-serif !important;
         font-weight: 300;
       }
       p {
-        font-family: Dosis, 'Helvetica Neue', Arial, sans-serif !important;
+        font-family: Dosis, "Helvetica Neue", Arial, sans-serif !important;
         font-size: 1em !important;
       }
     }
@@ -245,13 +233,13 @@
       h1 {
         font-size: 1.75em;
         padding-top: 1em;
-        font-family: Alegreya, 'Times New Roman', Times, serif !important;
+        font-family: Alegreya, "Times New Roman", Times, serif !important;
         font-weight: 300;
         color: #01487F !important;
       }
 
       p {
-        font-family: Alegreya, 'Times New Roman', Times, serif !important;
+        font-family: Alegreya, "Times New Roman", Times, serif !important;
         font-size: 1em;
       }
     }
@@ -259,10 +247,6 @@
     .about p {
       font-family: "Alegreya", "Times New Roman", Times, serif !important;
       font-size: 1em;
-    }
-
-    .skillsGrid {
-      margin: 0 auto 0 .5rem !important;
     }
 
   }
@@ -326,15 +310,14 @@
       h1 {
         font-size: 1.75em;
         padding-top: 1em;
-        font-family: Poppins, 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+        font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
         font-weight: 300;
       }
 
       p {
-        font-family: Poppins, 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+        font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
       }
     }
-
 
     .smallCaps {
       font-variant: small-caps !important;

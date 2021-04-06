@@ -1,0 +1,103 @@
+$mortar: .25rem;
+
+// .vueperslide {
+//   height: 400px !important;
+// }
+
+.vueperslides {
+  // padding: 0rem 0rem;
+  // padding: $mortar;
+}
+
+.vueperslides__parallax-wrapper {
+  // height: 354.5px;
+
+  @media (min-width: 563px) and (max-width: 1025px) {
+    // height: 600px;
+    // background: red;
+  }
+}
+
+.bourbon .vueperslides__parallax-wrapper {
+  // min-height: 349px;
+}
+
+.groovy .vueperslides__parallax-wrapper {
+  // min-height: 317px;
+}
+
+.techy .vueperslides__parallax-wrapper {
+  // min-height: 312px;
+}
+
+.corp .vueperslides__parallax-wrapper {
+  // min-height: 300px;
+}
+
+.punk .vueperslides__parallax-wrapper {
+  // min-height: 345px;
+}
+
+.vueperslides__arrow {
+  color: hsl(0deg 0% 0% / 80%);
+}
+
+.vueperslides__arrow svg {
+  // vertical-align: middle;
+  // stroke: currentColor;
+  // fill: none;
+  width: 3em;
+  // padding: 1em;
+  stroke-width: 1;
+  // -webkit-box-sizing: border-box;
+  // box-sizing: border-box;
+}
+
+.vueperslides__progress {
+  color: rgba(150, 27, 27, 0.616);
+  // top: initial;
+  top: calc(100% - 4px);
+  height: 4px;
+  // border: 1px solid magenta;
+}
+
+.vueperslides__fractions {
+  position: absolute;
+  top: initial;
+  left: initial;
+  bottom: $mortar !important;
+  right: $mortar !important;
+  z-index: 2;
+  padding: 0.15em 0.5em;
+  border: 1px solid hsl(0deg 0% 100% / 27%);
+  border-radius: 0.4em;
+  background: hsl(0deg 0% 32% / 32%);
+  color: hsl(0deg 0% 100%);
+  font-family: Helvetica, Arial, sans-serif !important;
+}
+
+.fullScreen {
+  cursor: pointer;
+}
+
+.carouselArrow {
+  font-size: 0.7em;
+  color: $grey;
+  border: none;
+  border-radius: 4px;
+  border-left-width: 10px;
+  background: transparentize(white, 0.95);
+  padding: 0.15rem .5rem 0.16rem .4rem;
+  margin: 0rem 0 0 0em;
+  font-family: Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  position: absolute;
+  // z-index: 100;
+
+  &:hover {
+    // background: grey;
+    background: transparentize(black, .90);
+    // font-weight: bold;
+    // color: $accent-red
+  }
+}

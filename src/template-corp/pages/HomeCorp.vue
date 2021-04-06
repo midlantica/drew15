@@ -3,21 +3,16 @@
     <header>
       <Navvy />
     </header>
-
-    <main class='mainGrid'>
-      <div class='copyArea'>
+    <main class="mainGrid">
+      <div class="copyArea">
         <HeadAndCopy />
       </div>
-
-      <div class='slides'>
-        <CarouselFlux />
+      <div class="slides">
+        <Carousel />
       </div>
-
       <About />
-
       <Skills />
     </main>
-
     <footer>
       <Quotes />
     </footer>
@@ -30,39 +25,24 @@
   import Skills from '../components/Skills'
   import About from '@/components/About'
   import Quotes from '../components/Quote'
-  import CarouselFlux from '@/components/Carousel/CarouselFlux'
+  import Carousel from '@/components/Carousel/Carousel'
 
   export default {
-    layout: 'default',
+    name: 'HomeCorp',
     components: {
       Navvy,
       HeadAndCopy,
-      CarouselFlux,
+      Carousel,
       About,
       Skills,
-      Quotes
+      Quotes,
     },
-    name: 'HomeCorp',
-    metaInfo: {
-      // if no subcomponents specify a metaInfo.title, this title will be used
-      title: 'Drew Harper',
-      // all titles will be injected into this template
-      titleTemplate: '%s - UI/UX Designer, Graphic Designer!',
-      bodyAttrs: {
-        class: 'corp'
-      },
-      style: [
-        //
-      ],
-      link: [
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;1,400;1,500&family=Alegreya:ital,wght@0,400;0,500;1,400;1,500&display=swap' },
-      ]
-    }
   }
 </script>
 
-<style lang='scss' scoped>
-  @import '@/template-corp/assets/css/corp-main.scss';
+<style lang="scss" scoped>
+  @import "@/template-corp/assets/css/corp-main.scss";
+  @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;1,400;1,500&family=Alegreya:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 
   .about {
     background: white;
@@ -76,9 +56,8 @@
 
   header,
   footer {
-    color: $ivory;
+    // color: $ivory;
     box-shadow: none !important;
-    background: url(/img/bg/white_paper_patt-01.jpg) repeat !important;
   }
 
   .mainGrid {
@@ -86,7 +65,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: .5rem 1rem;
     // grid-row-gap: 1rem 1rem;
-    margin: 0.25rem 1rem .5rem;
+    margin: 0.25rem 1rem 1rem;
     // background: none !important;
     // box-shadow: none !important;
 
@@ -205,5 +184,3 @@
     }
   }
 </style>
-
-

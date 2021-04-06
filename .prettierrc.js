@@ -1,12 +1,10 @@
 module.exports = {
   singleQuote: true,
-  parser: 'flow',
+  // parser: 'flow',
   parser: 'vue',
-  bracketSpacing: true,
   semi: false,
   trailingComma: 'es5',
   editorconfig: false,
-  vueIndentScriptAndStyle: false,
   bracketSpacing: true,
   jsxBracketSameLine: false,
   jsxSingleQuote: true,

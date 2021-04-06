@@ -1,98 +1,91 @@
 <template>
-  <div>
-    <vue-flux
-      :options='vfOptions'
-      :images='vfImages'
-      :transitions='vfTransitions'
-      :captions='vfCaptions'
-      ref='slider'>
+  <vueper-slides
+    fade
+    :infinite="false"
+    :bullets="false"
+    :slide-ratio="1 / 1.3"
+    autoplay
+    fractions
+    progress
+  >
+    <vueper-slide
+      v-for='(slide, i) in slides' :key='i'
+      :image='slide.image'
+    />
 
-      <template v-slot:preloader>
-        <flux-preloader />
-      </template>
+    <template v-slot:loader>
+      <i class="icon icon-loader spinning"></i>
+      <span>Loading...</span>
+    </template>
 
-      <!-- <template v-slot:caption>
-        <flux-caption />
-      </template> -->
-
-      <template v-slot:controls>
-        <flux-controls />
-      </template>
-
-      <!-- <template v-slot:pagination>
-        <flux-pagination />
-      </template> -->
-
-      <template v-slot:index>
-        <flux-index />
-      </template>
-    </vue-flux>
-    <!-- <button @click='$refs.slider.show("next")'>NEXT</button> -->
-  </div>
+  </vueper-slides>
 </template>
 
 <script>
-  const imgPath = 'img/portfolio/04_graphics/'
-  import vueFluxVars from './vueFluxVars.js'
-
-  const transitions = [{
-   name: 'slide',
-   options: {
-      totalDuration: 700,
-      easing: 'ease-out',
-    }
-  }]
-
-  import {
-    VueFlux,
-    // FluxCaption,
-    FluxControls,
-    FluxIndex,
-    // FluxPagination,
-    FluxPreloader,
-  } from 'vue-flux'
+  import { ref } from 'vue'
+  import { VueperSlides, VueperSlide } from 'vueperslides'
+  import 'vueperslides/dist/vueperslides.css'
 
   export default {
     components: {
-      VueFlux,
-      // FluxCaption,
-      FluxControls,
-      FluxIndex,
-      // FluxPagination,
-      FluxPreloader,
+      VueperSlides,
+      VueperSlide
     },
-    methods: {
-      requestFullscreen: true,
-      exitFullscreen: false
-    },
-    data: () => ({
-      vfOptions: vueFluxVars,
-      vfImages: [
-        imgPath + 'jpay_app_logos.jpg',
-        imgPath + 'jpay_infographgic_cloud.jpg',
-        imgPath + 'jpay_icons_doc.jpg',
-        imgPath + 'icons_doc_parole.jpg',
-        imgPath + 'jpay_icons_cards_kiosk.jpg',
-        imgPath + 'jpay_infographic_01.jpg',
-        imgPath + 'jpay_infographic_02.jpg',
-        imgPath + 'jpay_inforgraphic_money.jpg',
-        imgPath + 'jpay_icons_email.jpg',
-        imgPath + 'jpay_mural.jpg',
-        imgPath + 'newsletter_hero1.jpg',
-        imgPath + 'newsletter_hero2.jpg',
-        imgPath + 'celebrity_cruise_lines.jpg',
-        imgPath + 'bike_icons.png'
-      ],
-      vfTransitions: transitions,
-      vfCaptions: [
-         'Caption for image 1',
-         'Caption for image 2',
-         'Caption for image 3',
-      ],
-    })
+    setup() {
+      // let title = ref('')
+      // const imgPath = ('/public/img/portfolio/01_uiux/')
+      let slides = ref([
+        {
+          image: require('/public/img/portfolio/04_graphics/jpay_app_logos.jpg')
+        },
+        {
+          image: require('/public/img/portfolio/04_graphics/jpay_infographgic_cloud.jpg')
+        },
+        {
+          image: require('/public/img/portfolio/04_graphics/jpay_icons_doc.jpg')
+        },
+        {
+          image: require('/public/img/portfolio/04_graphics/icons_doc_parole.jpg')
+        },
+        {
+          image: require('/public/img/portfolio/04_graphics/jpay_icons_cards_kiosk.jpg')
+        },
+        {
+          image: require('/public/img/portfolio/04_graphics/jpay_infographic_01.jpg')
+        },
+        {
+          image: require('/public/img/portfolio/04_graphics/jpay_infographic_02.jpg')
+        },
+        {
+          image: require('/public/img/portfolio/04_graphics/jpay_inforgraphic_money.jpg')
+        },
+        {
+          image: require('/public/img/portfolio/04_graphics/jpay_icons_email.jpg')
+        },
+        {
+          image: require('/public/img/portfolio/04_graphics/jpay_mural.jpg')
+        },
+        {
+          image: require('/public/img/portfolio/04_graphics/newsletter_hero1.jpg')
+        },
+        {
+          image: require('/public/img/portfolio/04_graphics/newsletter_hero2.jpg')
+        },
+        {
+          image: require('/public/img/portfolio/04_graphics/celebrity_cruise_lines.jpg')
+        },
+        {
+          image: require('/public/img/portfolio/04_graphics/bike_icons.png')
+        },
+
+      ])
+
+      return { slides }
+
+    }
   }
 </script>
 
 <style lang='scss'>
-  @import '@/assets/css/_template-carousel.scss';
+  @import '@/assets/css/carousel.scss';
 </style>

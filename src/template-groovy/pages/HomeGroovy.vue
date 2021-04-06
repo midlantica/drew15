@@ -4,13 +4,13 @@
       <NavvyHead />
     </header>
 
-    <main class='mainGrid'>
-      <div class='copyArea'>
+    <main class="mainGrid">
+      <div class="copyArea">
         <HeadAndCopy />
       </div>
 
-      <div class='slides'>
-        <CarouselFlux />
+      <div class="slides">
+        <Carousel />
       </div>
 
       <About />
@@ -29,20 +29,19 @@
   import HeadAndCopy from '../components/HeadAndCopy'
   import Skills from '@/components/Skills'
   import About from '@/components/About'
-  // import Quotes from '../components/Quote'
+  // import Quotes from "../components/Quote"
   import Footer from '../components/Footer'
-  import CarouselFlux from '@/components/Carousel/CarouselFlux'
+  import Carousel from '@/components/Carousel/Carousel'
 
   export default {
-    layout: 'default',
+    // layout: "default",
     components: {
       NavvyHead,
       HeadAndCopy,
       About,
       Skills,
-      // Quotes,
       Footer,
-      CarouselFlux
+      Carousel
     },
     name: 'HomeGroovy',
     metaInfo: {
@@ -52,14 +51,14 @@
         class: 'groovy'
       },
       style: [
-        // { cssText: '.wrapper { background: #fffae4; }', type: 'text/css' }
+      // { cssText: ".wrapper { background: #fffae4; }", type: "text/css" }
       ]
     }
   }
 </script>
 
-<style lang='scss' scoped>
-  @import '@/template-groovy/assets/css/groovy-main.scss';
+<style lang="scss" scoped>
+  @import "@/template-groovy/assets/css/groovy-main.scss";
 
   .mainGrid {
     display: grid;

@@ -1,21 +1,20 @@
 <template>
-  <div class='tabs'>
-    <router-link to='/Bourbon' class='bourbon'>{{ this.$root.bourbon }}</router-link>
-    <router-link to='/Groovy' class='groovy'>{{ this.$root.groovy }}</router-link>
-    <router-link to='/Techy' class='techy'>{{ this.$root.techy }}</router-link>
-    <router-link to='/Corp' class='corp'>{{ this.$root.corp }}</router-link>
-    <router-link to='/Punk' class='punk'>{{ this.$root.punk }}</router-link>
+  <div class="tabs">
+    <router-link :to="{ name: 'Bourbon' }" class="bourbon">Bourbon</router-link>
+    <router-link :to="{ name: 'Groovy' }" class="groovy">Groovy</router-link>
+    <router-link :to="{ name: 'Techy' }" class="techy">Techy</router-link>
+    <router-link :to="{ name: 'Corp' }" class="corp">Corp</router-link>
+    <router-link :to="{ name: 'Punk' }" class="punk">Punk</router-link>
   </div>
 </template>
 
 <style lang="scss" scoped>
-
   .tabs {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
     align-content: center;
     text-align: center;
     font-size: 0.7em;
@@ -25,9 +24,10 @@
     top: 0px;
     left: 0px;
     z-index: 10;
-    width: 100.1%;
+    width: calc(100%);
     font-family: Helvetica,Arial,sans-serif;
     // display: relative;
+    overflow-x: hidden !important;
 
     a {
       flex-grow: 1;
@@ -39,7 +39,8 @@
       letter-spacing: 0.1em;
 
       &:last-child {
-        border-right: none;
+        border-right: 0px !important;
+        // margin-right: -1px;
       }
 
       &:hover {

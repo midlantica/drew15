@@ -1,15 +1,15 @@
 <template>
-  <div class='about'>
-    <div class='flagBox'>
-      <div class='flag'>&nbsp;</div>
+  <div class="about">
+    <div class="flagBox">
+      <div class="flag">&nbsp;</div>
     </div>
-    <p>{{ this.$root.aboutCopy }}</p>
+    <p>I’m half-English/half-American, worked in Advertising most my life, switched to web in late ’90s. Travelled the world, enjoy reading history, love NFL, Rugby, Footy.</p>
   </div>
 </template>
 
 <style lang="scss" scoped>
-  // @import '@/assets/css/main.scss';
-  // @import '@/template-techy/assets/css/techy-main.scss';
+  // @import "@/assets/css/main.scss";
+  // @import "@/template-techy/assets/css/techy-main.scss";
 
   .about {
     background: #fbf3bb;
@@ -98,7 +98,7 @@
 
   .flag {
     display: block;
-    background: url('/img/brit_amer_flag.svg');
+    background: url("/img/brit_amer_flag.svg");
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: 1em;
@@ -193,7 +193,7 @@
   .corp .about {
     //
     p {
-      font-family: Alegreya, 'Times New Roman', Times, serif !important;
+      font-family: Alegreya, "Times New Roman", Times, serif !important;
       font-size: 1rem;
       letter-spacing: .001rem;
       line-height: 1.4rem;
@@ -221,10 +221,3 @@
   }
 
 </style>
-
-
-
-
-
-
-

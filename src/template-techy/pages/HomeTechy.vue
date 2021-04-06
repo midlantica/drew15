@@ -3,21 +3,16 @@
     <header>
       <Navvy />
     </header>
-
-    <main class='mainGrid'>
-      <div class='copyArea'>
+    <main class="mainGrid">
+      <div class="copyArea">
         <HeadAndCopy />
       </div>
-
-      <div class='slides'>
-        <CarouselFlux />
+      <div class="slides">
+        <Carousel />
       </div>
-
       <About />
-
       <Skills />
     </main>
-
     <footer>
       <Footy />
     </footer>
@@ -30,39 +25,24 @@
   import Skills from '@/components/Skills'
   import About from '@/components/About'
   import Footy from '../components/Footy'
-  import CarouselFlux from '@/components/Carousel/CarouselFlux'
+  import Carousel from '@/components/Carousel/Carousel'
 
   export default {
-    layout: 'default',
+    name: 'HomeTechy',
     components: {
       Navvy,
       HeadAndCopy,
-      CarouselFlux,
+      Carousel,
       About,
       Skills,
       Footy
     },
-    name: 'HomeTechy',
-    metaInfo: {
-      // if no subcomponents specify a metaInfo.title, this title will be used
-      title: 'Drew Harper',
-      // all titles will be injected into this template
-      titleTemplate: '%s - UI/UX Designer, Graphic Designer!',
-      bodyAttrs: {
-        class: 'techy'
-      },
-      style: [
-        //
-      ],
-      link: [
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' },
-      ]
-    }
   }
 </script>
 
-<style lang='scss' scoped>
-  @import '@/template-techy/assets/css/techy-main.scss';
+<style lang="scss" scoped>
+  @import "@/template-techy/assets/css/techy-main.scss";
+  @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;500;600&display=swap');
 
   .mainGrid {
     display: grid;

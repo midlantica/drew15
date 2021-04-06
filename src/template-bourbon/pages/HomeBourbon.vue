@@ -12,7 +12,7 @@
       <Skills />
 
       <div class='slides'>
-        <CarouselFlux />
+        <Carousel />
       </div>
 
       <About />
@@ -21,45 +21,31 @@
     </main>
 
     <footer>
-      <Navvy />
+      <NavvyEmpty />
     </footer>
   </div>
 </template>
 
 <script>
   import Navvy from '../components/Navvy'
+  import NavvyEmpty from '../components/NavvyEmpty'
   import HeadAndCopy from '../components/HeadAndCopy'
   import About from '@/components/About'
   import Skills from '@/components/Skills'
   import Quotes from '../components/Quote'
-  import CarouselFlux from '@/components/Carousel/CarouselFlux'
+  import Carousel from '@/components/Carousel/Carousel'
 
   export default {
-    layout: 'default',
+    // layout: 'default',
     name: 'HomeBourbon',
     components: {
       Navvy,
+      NavvyEmpty,
       HeadAndCopy,
-      CarouselFlux,
+      Carousel,
       About,
       Skills,
       Quotes,
-    },
-    metaInfo: {
-      // if no subcomponents specify a metaInfo.title, this title will be used
-      title: 'Drew Harper',
-      // all titles will be injected into this template
-      titleTemplate: '%s - UI/UX Designer, Graphic Designer!',
-      bodyAttrs: {
-        class: 'bourbon',
-      },
-      style: [
-        //
-      ],
-    },
-    transition: {
-      name: 'fade',
-      mode: 'out-in'
     },
     data() {
       return {

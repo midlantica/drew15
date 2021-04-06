@@ -1,10 +1,9 @@
 <template>
   <nav>
-
     <section class='flexRowWrap w100'>
       <div class='drewTop'>
-        <router-link to='/Corp' class='w100' >
-          <router-link to='/Corp/Extras' class='drewhead jelloHorizontal' />
+        <router-link :to="{ name: 'Corp' }" class='w100' >
+          <router-link :to="{ name: 'ExtrasCorp' }" class='drewhead jelloHorizontal' />
           <drewHarper class='drewHarper marTH' />
           <div class='flexRow just-center marTH'>
             <uiux class='uiux' />
@@ -12,12 +11,13 @@
         </router-link>
       </div>
       <section class='contact'>
-        <p class='resume'>Resume: <a href='resume/drew_harper_resume_portfolio.docx'>Word</a> or <a href='resume/drew_harper_resume_portfolio.pdf'>PDF</a>
+        <p class='resume'>Resume: <a href='resume/drew_harper_resume_portfolio.pdf'>PDF</a>
+        or
+        <a href='resume/drew_harper_resume_portfolio.docx'>Word</a>
         </p>
         <p class='email'><a href='mailto:druharper@gmail.com'>druharper@gmail.com</a></p>
       </section>
-    </section >
-
+    </section>
   </nav>
 </template>
 

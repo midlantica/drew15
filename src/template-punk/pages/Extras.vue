@@ -20,15 +20,6 @@
 
   export default {
     name: 'Extras',
-    metaInfo: {
-      titleTemplate: '%s - Extras!',
-      bodyAttrs: {
-        class: 'punk extras'
-      },
-      link: [
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i' },
-      ]
-    },
     components: {
       Navvy,
       ExtrasC

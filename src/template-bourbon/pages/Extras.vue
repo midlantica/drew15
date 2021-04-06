@@ -3,31 +3,22 @@
     <header>
       <Navvy />
     </header>
-
     <ExtrasC />
-
     <footer>
-      <Navvy />
+      <NavvyEmpty />
     </footer>
   </div>
 </template>
 
 <script>
   import Navvy from '@/template-bourbon/components/Navvy'
+  import NavvyEmpty from '@/template-bourbon/components/NavvyEmpty'
   import ExtrasC from '@/components/ExtrasC'
   export default {
     name: 'Extras',
-    metaInfo: {
-      titleTemplate: '%s - Extras!',
-      bodyAttrs: {
-        class: 'bourbon extras'
-      },
-      style: [
-        //
-      ],
-    },
     components: {
       Navvy,
+      NavvyEmpty,
       ExtrasC
     }
   }

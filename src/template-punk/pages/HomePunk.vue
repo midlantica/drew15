@@ -10,7 +10,7 @@
       </div>
 
       <div class='slides'>
-        <CarouselFlux />
+        <Carousel />
       </div>
 
       <About />
@@ -26,43 +26,31 @@
   import HeadAndCopy from '../components/HeadAndCopy'
   import Skills from '@/components/Skills'
   import About from '@/components/About'
-  // import Quotes from '../components/Quotes/QuoteBasic'
-  import CarouselFlux from '@/components/Carousel/CarouselFlux'
+  import Carousel from '@/components/Carousel/Carousel'
 
   export default {
-    layout: 'default',
+    name: 'HomePunk',
     components: {
       Navvy,
       HeadAndCopy,
-      CarouselFlux,
+      Carousel,
       About,
       Skills
-      // Quotes
+    // Quotes
     },
-    name: 'HomePunk',
-    metaInfo: {
-      // if no subcomponents specify a metaInfo.title, this title will be used
-      title: 'Drew Harper',
-      // all titles will be injected into this template
-      titleTemplate: '%s - UI/UX Designer, Graphic Designer!',
-      bodyAttrs: {
-        class: 'punk'
-      },
-      link: [
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i' },
-      ]
-    }
   }
 </script>
 
 <style lang='scss' scoped>
   @import '@/template-punk/assets/css/punk-main.scss';
+  @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
   header,
   footer {
     color: $ivory;
     background: initial !important;
     box-shadow: none;
+    margin-bottom: -1rem;
   }
 
   .mainGrid {

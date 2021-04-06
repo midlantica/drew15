@@ -2,7 +2,7 @@
   <nav>
     <div class='gridMast'>
       <div class='groovyCircle'>
-        <router-link to='/Groovy/Extras' class='drewhead jelloHorizontal' />
+        <router-link :to="{ name: 'ExtrasGroovy' }" class='drewhead jelloHorizontal' />
       </div>
 
       <router-link to='/Groovy' class='drewHarperSVG'>
@@ -20,7 +20,7 @@
         </p>
         <p class='resume'>
           Resume:
-          <a href='resume/drew_harper_resume_portfolio.pdf'>Lg</a>&#8195;/&#8195;<a href='resume/drew_harper_resume_portfolio_short.docx'>Sm</a>
+          <a href='resume/drew_harper_resume_portfolio.pdf'><small>PDF</small></a> / <a href='resume/drew_harper_resume_portfolio_short.docx'>Word</a>
         </p>
       </div>
     </div>
@@ -355,7 +355,7 @@
     p {
       display: inline-block;
       font-family: $font-copy;
-      font-size: 1.17em;
+      font-size: 1.085em;
       letter-spacing: 0em;
       text-transform: none;
       line-height: 0.7em;
@@ -405,7 +405,7 @@
       }
 
       @media (max-width: $breakOne) {
-        font-size: 3.05vw;
+        font-size: 2.785vw;
         text-align: center;
         margin: 0 auto;
         float: initial;

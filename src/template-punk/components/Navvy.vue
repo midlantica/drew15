@@ -5,18 +5,14 @@
     <p class='email'><a href="mailto:druharper@gmail.com">druharper@gmail.com</a></p>
 
     <div class="mastMain">
-      <router-link to="/Punk">
+      <router-link :to="{ name: 'Punk' }">
         <mastDrew class="svgArt mastDrew" />
       </router-link>
-      <router-link to="/Punk">
+      <router-link :to="{ name: 'Punk' }">
         <mastHarper class="svgArt mastHarper" />
       </router-link>
-      <router-link to="Punk/Extras" class="DrewHead jelloHorizontal">&nbsp;</router-link>
+      <router-link :to="{ name: 'ExtrasPunk' }" class="DrewHead jelloHorizontal">&nbsp;</router-link>
     </div>
-
-    <p class='resume'>Resume:
-      <a href="resume/drew_harper_resume_portfolio.pdf">Large</a>&#8195;/&#8195;<a href="resume/drew_harper_resume_portfolio_short.docx">Small</a>
-    </p>
 
   </nav>
 </template>
@@ -103,7 +99,7 @@
       justify-content: center;
       align-items: center;
       align-content: center;
-      margin-top: -1em;
+      margin-top: -1.5em;
       z-index: 2;
       width: 100%;
       //
@@ -332,35 +328,6 @@
       }
     }
 
-    // ###############################
-    // ###############################
-
-  p.resume {
-    font-size: 1.5em;
-    letter-spacing: 0.03em;
-    text-shadow: 1px 1px 2px black;
-    font-family: $font;
-    // text-align: right;
-    transform: rotate(1deg);
-    // position: relative;
-    // top: -0.8em;
-    align-self: flex-end;
-    // align-content: flex-end;
-    // flex-grow: 1;
-    margin-top: -0.6em;
-    //
-    a {
-      // text-align: right;
-      color: $ivory;
-      margin: 0 .25em;
-    }
-
-    @media (max-width: $breakOne) {
-      font-size: 1.25em;
-      letter-spacing: .05em;
-      align-self: center;
-    }
-  }
 }
 
 </style>
