@@ -50,6 +50,7 @@
     color: $ivory;
     background: initial !important;
     box-shadow: none;
+    margin-bottom: -1rem;
   }
 
   .mainGrid {

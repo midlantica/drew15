@@ -14,10 +14,6 @@
       <router-link :to="{ name: 'ExtrasPunk' }" class="DrewHead jelloHorizontal">&nbsp;</router-link>
     </div>
 
-    <p class='resume'>Resume:
-      <a href="resume/drew_harper_resume_portfolio.pdf">PDF</a> / <a href="resume/drew_harper_resume_portfolio_short.docx">Word</a>
-    </p>
-
   </nav>
 </template>
 
@@ -103,7 +99,7 @@
       justify-content: center;
       align-items: center;
       align-content: center;
-      margin-top: -1em;
+      margin-top: -1.5em;
       z-index: 2;
       width: 100%;
       //
@@ -332,35 +328,6 @@
       }
     }
 
-    // ###############################
-    // ###############################
-
-  p.resume {
-    font-size: 1.5em;
-    letter-spacing: 0.03em;
-    text-shadow: 1px 1px 2px black;
-    font-family: $font;
-    // text-align: right;
-    transform: rotate(1deg);
-    // position: relative;
-    // top: -0.8em;
-    align-self: flex-end;
-    // align-content: flex-end;
-    // flex-grow: 1;
-    margin-top: -0.6em;
-    //
-    a {
-      // text-align: right;
-      color: $ivory;
-      margin: 0 .25em;
-    }
-
-    @media (max-width: $breakOne) {
-      font-size: 1.25em;
-      letter-spacing: .05em;
-      align-self: center;
-    }
-  }
 }
 
 </style>
