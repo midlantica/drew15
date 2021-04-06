@@ -9,8 +9,8 @@
 
       <div class="resumeLinks">
         <p class='resume rOne'>Resume:</p>
-        <a class='resume rTwo' href="resume/drew_harper_resume_portfolio.pdf">PDF</a>
         <a class='resume rThree' href="resume/drew_harper_resume_portfolio_short.docx">Word</a>
+        <a class='resume rTwo' href="resume/drew_harper_resume_portfolio.pdf">PDF</a>
       </div>
 
     </div>
@@ -93,27 +93,41 @@
         &.rOne {
           transform: rotate(-2deg) !important;
           // background: red;
+          background: transparentize(#ff4bf5, .5);
+          color: white;
         }
 
         &.rTwo {
           transform: rotate(6deg) !important;
+          text-decoration: none;
+
+          &:hover {
+            color: #ff4bf5 !important;
+            text-decoration: underline;
+          }
         }
 
         &.rThree {
           transform: rotate(3deg) !important;
-        }
-
-        a,
-        a.rTwo,
-        a.rThree {
-          color: $black;
-          margin: 0 .25em;
+          text-decoration: none;
 
           &:hover {
             color: #ff4bf5 !important;
-            background: red;
+            text-decoration: underline;
           }
         }
+
+        // a,
+        // a.rTwo,
+        // a.rThree {
+        //   color: $black;
+        //   margin: 0 .25em;
+
+        //   &:hover {
+        //     color: #ff4bf5 !important;
+        //     background: red;
+        //   }
+        // }
 
         a:hover {
           color: #ff4bf5 !important;
