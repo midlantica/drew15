@@ -1,5 +1,5 @@
 <template>
-  <div class="marT0 marL1 marRH">
+  <div class="marT1 marL1H marRH">
     <div class="headBlock">
       <router-link :to="{ name: 'ExtrasBourbon' }" class="drewhead jelloHorizontal" />
       <h1>When UX design is done right the design seems inevitable</h1>

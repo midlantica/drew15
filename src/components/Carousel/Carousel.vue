@@ -12,31 +12,37 @@
       <div class='miniGallery'>
         <a @click='selectedView = `Uiux`; backButtonState();' >
           <div class='box Uiux'>
+            <IconUiux />
             <p>UI/UX Design</p>
           </div>
         </a>
         <a @click='selectedView = `Mobile`; backButtonState();' >
           <div class='box Mobile'>
+            <IconMobile />
             <p>Mobile</p>
           </div>
         </a>
         <a @click='selectedView = `Kiosk`; backButtonState();' >
           <div class='box Kiosk'>
+            <IconKiosk />
             <p>Kiosk</p>
           </div>
         </a>
         <a @click='selectedView = `Graphics`; backButtonState();' >
           <div class='box Graphics'>
+            <IconGraphics />
             <p>Graphics</p>
           </div>
         </a>
         <a @click='selectedView = `Print`; backButtonState();' >
           <div class='box Print'>
+            <IconPrint />
             <p>Print</p>
           </div>
         </a>
         <a @click='selectedView = `Misc`; backButtonState();' >
           <div class='box Misc'>
+            <IconMisc />
             <p>Misc.</p>
           </div>
         </a>
@@ -55,6 +61,13 @@
   import Print from '@/components/Carousel/05_print'
   import Misc from '@/components/Carousel/06_misc'
 
+  import IconUiux from '@/components/Carousel/icons/icon-uiux'
+  import IconMobile from '@/components/Carousel/icons/icon-mobile'
+  import IconKiosk from '@/components/Carousel/icons/icon-kiosk'
+  import IconGraphics from '@/components/Carousel/icons/icon-graphics'
+  import IconPrint from '@/components/Carousel/icons/icon-print'
+  import IconMisc from '@/components/Carousel/icons/icon-misc'
+
   export default {
     name: 'CarouselShow',
     components: {
@@ -63,7 +76,13 @@
       Kiosk,
       Graphics,
       Print,
-      Misc
+      Misc,
+      IconUiux,
+      IconMobile,
+      IconKiosk,
+      IconGraphics,
+      IconPrint,
+      IconMisc
     },
     data() {
       return {
@@ -349,27 +368,6 @@
     }
   }
 
-  // .carouselArrow {
-  //   font-size: 0.7em;
-  //   // display: block;
-  //   // float: left;
-  //   // clear: left;
-  //   border: 1px solid hsla(0, 0%, 83%, 0.75);
-  //   border-radius: 4px;
-  //   background: transparentize(white, 0.5);
-  //   padding: 0.15rem .5rem 0.15rem .4rem;
-  //   margin: 0rem 0 0 0em;
-  //   font-family: Helvetica, Arial, sans-serif;
-  //   cursor: pointer;
-  //   position: absolute;
-  //   z-index: 100;
-
-  //   &:hover {
-  //     color: white;
-  //     background: grey;
-  //   }
-  // }
-
   .miniGallery {
     display: flex;
     flex-direction: row;
@@ -401,41 +399,60 @@
       }
 
       .box {
+        display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: center;
+        justify-content: flex-end;
+        //
+        transition-duration: 1s;
         text-align: center;
         box-shadow: 0px 2px 2px -3px black;
-        display: flex;
-        justify-content: flex-end;
-        align-items: stretch;
-        // margin: 0.15em 0.15em;
-        gap: .25rem;
-        //
-        background-color: lighten(lightgrey, 15) !important;
-        background-size: 75% 75%;
-        background-position: center 18px !important;
+        margin: auto;
+        padding-bottom: .5rem;
+        // background-color: lighten(lightgrey, 15) !important;
+        // background-size: 75% 75%;
+        // background-position: center 18px !important;
+        background: hsl(0, 0%, 97%);
         border: 1px solid transparentize(grey, 0.85) !important;
 
         @media (max-width: $breakThou) {
           //
         }
 
+        p {
+          position: relative;
+          top: 0px;
+          transition: ease-out;
+        }
+
+        svg {
+          position: relative;
+          top: 0px;
+          transition: ease-out;
+        }
+
         &:hover {
-          background-color: lighten(lightgrey, 16) !important;
-          transition: ease-in-out;
-          background-size: 75% 75%;
-          background-position: center 12px !important;
+          transition: ease-out;
           border: 1px solid transparentize(grey, 0.5);
           box-shadow: 0px 2px 4px -1px hsla(0, 0%, 50%, 0.25);
 
           p {
             position: relative;
             top: -6px;
-            transition: ease-in-out;
+            transition: ease-out;
+          }
+
+          svg {
+            position: relative !important;
+            top: -6px !important;
+            transition: ease-out;
           }
         }
 
         &.Uiux {
-          background: url(/img/carousel/car-icon-uiux.svg) no-repeat center center;
+          // background: url(/img/carousel/car-icon-uiux.svg) no-repeat center center;
 
           &:hover {
             //
@@ -447,7 +464,7 @@
         }
 
         &.Mobile {
-          background: url(/img/carousel/car-icon-mobile.svg) no-repeat center center;
+          // background: url(/img/carousel/car-icon-mobile.svg) no-repeat center center;
 
           &:hover {
             //
@@ -459,7 +476,7 @@
         }
 
         &.Kiosk {
-          background: url(/img/carousel/car-icon-kiosk.svg) no-repeat center center;
+          // background: url(/img/carousel/car-icon-kiosk.svg) no-repeat center center;
 
           &:hover {
             //
@@ -471,7 +488,7 @@
         }
 
         &.Graphics {
-          background: url(/img/carousel/car-icon-graphics.svg) no-repeat center center;
+          // background: url(/img/carousel/car-icon-graphics.svg) no-repeat center center;
 
           &:hover {
             //
@@ -483,7 +500,7 @@
         }
 
         &.Print {
-          background: url(/img/carousel/car-icon-print.svg) no-repeat center center;
+          // background: url(/img/carousel/car-icon-print.svg) no-repeat center center;
 
           &:hover {
             //
@@ -495,7 +512,7 @@
         }
 
         &.Misc {
-          background: url(/img/carousel/car-icon-misc.svg) no-repeat center center;
+          // background: url(/img/carousel/car-icon-misc.svg) no-repeat center center;
 
           &:hover {
             //
@@ -520,12 +537,11 @@
           }
 
           @media (max-width: $breakThou) {
-            margin-bottom: 1rem;
+            // margin-bottom: 1rem;
           }
         }
       }
 
     }
-
   }
 </style>

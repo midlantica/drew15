@@ -101,3 +101,82 @@ $mortar: .25rem;
     // color: $accent-red
   }
 }
+
+.box {
+  //
+
+  &:hover {
+    //
+    .brickBack {
+      fill: hsla(0, 100%, 57%, 0.25);
+      transition: fill 10s ease-out;
+    }
+    .brickCircles {
+      fill: hsla(0, 100%, 57%, 0.25);
+      transition: fill 10s ease-out;
+    }
+  }
+}
+
+body.corp .box {
+  //
+
+  &:hover {
+    //
+    .brickBack {
+      fill: hsl(195, 88%, 90%);
+      transition: fill 10s ease-out;
+    }
+    .brickCircles {
+      fill: hsl(195, 88%, 90%);
+      transition: fill 10s ease-out;
+    }
+  }
+}
+
+body.techy .box {
+  //
+
+  &:hover {
+    //
+    .brickBack {
+      fill: hsla(48, 100%, 70%, 0.8);
+      transition: fill 10s ease-out;
+    }
+    .brickCircles {
+      fill: hsla(48, 100%, 70%, 0.8);
+      transition: fill 10s ease-out;
+    }
+  }
+}
+
+body.punk .box {
+  //
+
+  &:hover {
+    //
+    .brickBack {
+      fill: hsla(59, 100%, 50%, 0.85);
+      transition: fill 10s ease-out;
+    }
+    .brickCircles {
+      fill: hsla(59, 100%, 50%, 0.85);
+      transition: fill 10s ease-out;
+    }
+  }
+}
+
+body.groovy .box {
+  //
+
+  &:hover {
+    //
+    .brickBack {
+      fill: hsla(180, 100%, 50%, 0.25);
+      transition: fill 10s ease-out;
+    }
+    .brickCircles {
+      fill: hsla(180, 100%, 50%, 0.25);
+    }
+  }
+}
