@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="flexContainer">
+    <div class="flexRowWrap w100 marAuto">
       <h1>Portfolio Extras</h1>
 
-      <div class="flex">
+      <div class="flexxy flexRowWrap center-flex align-content-start">
         <a href="/img/portfolio/extras/serviceRequestV1.png" target="_BLANK">
           <img class="portThumbs" src="/img/portfolio/extras/service-request@2x.png" />
           <div class="text-center">
@@ -69,6 +69,7 @@
             </p>
           </div>
         </a>
+
       </div>
     </div>
   </div>
@@ -76,40 +77,19 @@
 
 <style lang="scss" scoped>
 
-  .text-center {
-    text-align: center;
-  }
-
-  .flexContainer {
-    width: 100%;
-    margin: 0 auto 0em;
-  }
-
   h1 {
     font-size: 2.2em;
     text-align: center;
-    // width: 100%;
     margin: 0;
     padding: 0.5em 0;
-    // grid-area: center-block;
+
     a {
       text-decoration: none;
     }
   }
 
-  .flex {
-    display: flex;
-    flex-wrap: wrap;
-    // align-content: center;
-    justify-content: center;
-    align-content: flex-start;
-    // transition: flex-basis 1s ease-in-out;
-    // margin-left: -1em;
-    // margin-top: -1em;
+  .flexxy {
     padding: 0 4em;
-    // @media only screen and (max-width: 800px) {
-    //   // width: 100%;
-    // }
 
     a {
       flex-basis: auto;
@@ -119,38 +99,15 @@
       align-items: center;
       text-decoration: none;
       margin: 0em 1em;
-      // margin-top: 1em;
-      // transition: flex-basis 1s ease-in-out;
-
-      // &:last-child {
-      // margin: 0 0 2em;
-      // padding: 0;
-      // border:2px solid red;
-      // }
-
-      // &:nth-child(even) {
-      //   margin-right: 4em;
-      //   // background: blue;
-      //   // border: 10px red solid;
-      // }
-
-      // &:nth-child(odd) {
-      //   margin-left: 4em;
-      //   // background: green
-      //   // border: 10px red solid;
-      // }
 
       img.portThumbs {
-        // width: calc(100% * (1/2));
         width: 400px;
-        // width: 270px;
         height: auto;
-        // height: 170px;
         margin: 1em auto 0;
         border: 2px solid $ivory;
         transition: opacity 1s ease-in-out;
         @include shadow;
-        // @include clearfix;
+
         &:hover {
           border: 2px solid lighten($accent-red, 0);
           @include no-shadow;

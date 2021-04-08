@@ -22,7 +22,6 @@
 
     a.drewhead {
       margin-right: 1em;
-      //
       background-image: url(/img/drew_mug_red.png);
       background-repeat: no-repeat;
       background-size: cover;
@@ -31,11 +30,6 @@
       grid-column: 1 / 2;
       grid-row: 1 / 2;
       align-self: flex-start;
-
-      @media only screen and (min-device-width: 375px) and (max-device-width: 660px) and (-webkit-min-device-pixel-ratio: 2) {
-        //
-      }
-
     }
 
     h1 {
@@ -64,12 +58,7 @@
       }
 
       @media (max-width: $breakThree) {
-        //
         font-size: 1.25rem;
-      }
-
-      &:hover {
-        //
       }
 
     }
@@ -90,7 +79,6 @@
     letter-spacing: 0.03rem;
 
     @media (max-width: $breakThou) {
-      // font-size: 1rem;
       columns: 2 200px;
       line-height: 2.25rem !important;
       column-gap: 3rem;

@@ -76,11 +76,6 @@
 
     svg {
       width: 88px;
-      // height: 60px;
-    }
-
-    .icon {
-      //
     }
 
   }
@@ -106,7 +101,6 @@
 
     svg {
       width: 88px;
-      // height: 59px;
     }
   }
 
@@ -130,7 +124,6 @@
 
     svg {
       width: 88px;
-      // height: 59px;
     }
   }
 
@@ -156,7 +149,6 @@
 
     svg {
       width: 88px;
-      // height: 56px;
     }
   }
 
@@ -204,7 +196,6 @@
 
     svg {
       width: 88px;
-
     }
 
   }

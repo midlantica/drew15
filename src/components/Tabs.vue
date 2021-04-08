@@ -26,7 +26,6 @@
     z-index: 10;
     width: calc(100%);
     font-family: Helvetica,Arial,sans-serif;
-    // display: relative;
     overflow-x: hidden !important;
 
     a {
@@ -40,7 +39,6 @@
 
       &:last-child {
         border-right: 0px !important;
-        // margin-right: -1px;
       }
 
       &:hover {
@@ -62,20 +60,6 @@
     text-shadow: 0px 0px 1px black;
     background: darken(#ff3940, 30);
     box-shadow: 0px -2px 6px black inset;
-    // background: linear-gradient(
-    //   // 0 - 10%
-    //   $groovy-aqua-dk 0%,
-    //   $groovy-aqua-dk 20%,
-    //   // 10% - 50%
-    //   $groovy-yellow-dk 20%,
-    //   $groovy-yellow-dk 50%,
-    //   // 50% - 75%
-    //   $groovy-orange-dk 50%,
-    //   $groovy-orange-dk 75%,
-    //   // 75% - 100%
-    //   $groovy-red-dk 75%,
-    //   $groovy-red-dk 100%
-    // );
 
     &:hover {
       color: $black;

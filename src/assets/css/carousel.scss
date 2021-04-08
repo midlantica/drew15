@@ -1,43 +1,5 @@
 $mortar: .25rem;
 
-// .vueperslide {
-//   height: 400px !important;
-// }
-
-.vueperslides {
-  // padding: 0rem 0rem;
-  // padding: $mortar;
-}
-
-.vueperslides__parallax-wrapper {
-  // height: 354.5px;
-
-  @media (min-width: 563px) and (max-width: 1025px) {
-    // height: 600px;
-    // background: red;
-  }
-}
-
-.bourbon .vueperslides__parallax-wrapper {
-  // min-height: 349px;
-}
-
-.groovy .vueperslides__parallax-wrapper {
-  // min-height: 317px;
-}
-
-.techy .vueperslides__parallax-wrapper {
-  // min-height: 312px;
-}
-
-.corp .vueperslides__parallax-wrapper {
-  // min-height: 300px;
-}
-
-.punk .vueperslides__parallax-wrapper {
-  // min-height: 345px;
-}
-
 .vueperslides__arrow {
   color: hsl(0deg 0% 0% / 80%);
 }
@@ -54,7 +16,8 @@ $mortar: .25rem;
 }
 
 .vueperslides__progress {
-  color: rgba(150, 27, 27, 0.616);
+  color: hsla(98, 100%, 37%, 0.5);
+  border: 1px solid hsla(0, 0%, 100%, 0.25);
   // top: initial;
   top: calc(100% - 4px);
   height: 4px;

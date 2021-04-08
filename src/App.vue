@@ -106,12 +106,6 @@
         // background-size: 110% 50%;
       }
 
-      //
-      header,
-      footer {
-        //
-      }
-
     }
 
     .about > p {
@@ -147,20 +141,6 @@
   // TECHY
   .techy {
     background: $backBlack;
-
-    .wrapper {
-      //
-    }
-
-    .copyArea {
-      //
-      section {
-        //
-        p {
-          //
-        }
-      }
-    }
 
     &.extras .flexContainer {
       background: #fffff1 !important;
@@ -215,11 +195,6 @@
 
     .wrapper {
       background: url(/img/bg/white_paper_patt-01.jpg) repeat;
-
-      header,
-      footer {
-        //
-      }
     }
 
     .smallCaps {
@@ -278,10 +253,6 @@
         background-position: center center, -3em 3em;
       }
 
-      //
-      header {
-        //
-      }
     }
 
     .about > p {

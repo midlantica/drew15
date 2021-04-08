@@ -1,6 +1,6 @@
 
 .normalized {
-  font-style: normal;
+  font-style: normal !important;
 }
 
 .toLowerCase {
@@ -19,10 +19,6 @@
   text-transform: initial !important;
 }
 
-.text-initial {
-  text-align: initial !important;
-}
-
 .text-left {
   text-align: left !important;
 }
@@ -33,16 +29,4 @@
 
 .text-right {
   text-align: right !important;
-}
-
-.text-align-left {
-  text-align: left;
-}
-
-.text-align-center {
-  text-align: center;
-}
-
-.text-align-right {
-  text-align: right;
 }

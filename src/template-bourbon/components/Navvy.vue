@@ -23,8 +23,8 @@
 <style lang='scss' scoped>
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 
-  $outRed: rgba(221, 9, 22, 0.3);
-  $outBlue: rgba(92, 201, 245, 0.3);
+  $outRed: hsla(356, 92%, 45%, 0.3);
+  $outBlue: hsla(197, 88%, 66%, 0.3);
 
   a {
     color: $ivory;
@@ -105,7 +105,6 @@
     transition: 0.25s ease-in;
 
     @media (max-width: $breakTwo) {
-      // justify-content: center;
       flex-grow: 0;
       text-align: center;
       align-self: center;
@@ -131,10 +130,6 @@
       text-shadow: 3px 0px 3px $black;
       @include font-smoothing;
 
-      &:nth-child(1) {
-        //
-      }
-
       &:nth-child(2) {
         font-size: 1.65em;
         margin-bottom: 0.1em;
@@ -144,10 +139,6 @@
         display: inline-block;
         font-size: 1.85em !important;
         margin-top: -3px;
-
-        &:nth-child(1) {
-          //
-        }
 
         &:nth-child(2) {
           margin-left: 0.25em !important;
@@ -192,13 +183,10 @@
 
       &:nth-child(1) {
         font-size: 1.375em;
-        // line-height: 1.5rem;
         letter-spacing: 0.13rem;
       }
 
       &:nth-child(2) {
-        // font-size: 1.05em;
-        // line-height: 1.5rem;
         letter-spacing: 0.25rem;
       }
 
@@ -222,14 +210,6 @@
       @media (max-width: $breakTwo) {
         font-size: 1.05rem !important;
         letter-spacing: 0.09em !important;
-
-        &:nth-child(1) {
-          // color: lightgrey;
-        }
-
-        &:nth-child(2) {
-          // color: lightgrey;
-        }
       }
 
       @media (max-width: $breakThree) {
