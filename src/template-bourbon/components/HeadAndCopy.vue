@@ -72,14 +72,14 @@
 
   p {
     font-family: $font-copy;
-    font-size: 1.125rem !important;
+    font-size: 1.1rem !important;
     line-height: 2.6rem;
     color: $grey;
-    margin: 0.25rem 0.5rem 0rem !important;
+    margin: 0.5rem 0.5rem 0rem !important;
     letter-spacing: 0.03rem;
 
     @media (max-width: $breakThou) {
-      columns: 2 200px;
+      columns: 2 20ch;
       line-height: 2.25rem !important;
       column-gap: 3rem;
       column-rule: 1px solid transparentize($accent-red, .75);
@@ -89,7 +89,7 @@
 
     @media (max-width: $breakOne) {
       letter-spacing: 0.05rem;
-      columns: 2 200px;
+      // columns: 2 200px;
       text-justify: auto;
       hyphens: auto;
     }

@@ -23,8 +23,10 @@
   @import '@/assets/css/_colors.scss';
   @import "@/assets/css/main.scss";
 
+  $font-groovy: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   $backer: #fffae4;
   $backBlack: #1f1f1f;
+
 
   .wrapper {
     max-width: 1024px;
@@ -71,7 +73,7 @@
       }
     }
 
-    &.extras .flexContainer {
+    &.extras .extrasWrapper {
       //
       h1 {
         font-size: 1.75em;
@@ -110,28 +112,28 @@
 
     .about > p {
       font-size: 0.85rem !important;
-      font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+      font-family: $font-groovy;
       line-height: 1.25rem;
       margin: 0.25rem 0;
     }
 
     .smallCaps {
-      // font-family: $font-caps;
       font-variant: small-caps !important;
       font-size: 87.5% !important;
       letter-spacing: 0.05rem;
     }
 
-    &.extras .flexContainer {
+    &.extras .extrasWrapper {
       //
       h1 {
-        font-size: 1.75em;
+        font-size: 1.5em;
         padding-top: 1em;
-        font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-family: $font-groovy;
         font-weight: 300;
+        text-transform: capitalize;
       }
       p {
-        font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-family: $font-groovy;
         font-size: 1em !important;
       }
     }
@@ -142,7 +144,7 @@
   .techy {
     background: $backBlack;
 
-    &.extras .flexContainer {
+    &.extras .extrasWrapper {
       background: #fffff1 !important;
 
       h1 {
@@ -150,6 +152,7 @@
         font-size: 1.5em;
         color: lighten(black, 30);
         padding-top: 1em;
+        text-transform: capitalize;
       }
     }
 
@@ -168,13 +171,13 @@
       letter-spacing: 0.05rem;
     }
 
-    &.extras .flexContainer {
+    &.extras .extrasWrapper {
       //
       h1 {
         font-size: 1.75em;
         padding-top: 1em;
         font-family: Dosis, "Helvetica Neue", Arial, sans-serif !important;
-        font-weight: 300;
+        font-weight: 500;
       }
       p {
         font-family: Dosis, "Helvetica Neue", Arial, sans-serif !important;
@@ -203,14 +206,15 @@
       letter-spacing: 0.03rem;
     }
 
-    &.extras .flexContainer {
+    &.extras .extrasWrapper {
       //
       h1 {
         font-size: 1.75em;
         padding-top: 1em;
-        font-family: Alegreya, "Times New Roman", Times, serif !important;
+        font-family: "Alegreya SC", "Times New Roman", Times, serif !important;
         font-weight: 300;
         color: #01487F !important;
+        text-transform: capitalize;
       }
 
       p {
@@ -220,7 +224,7 @@
     }
 
     .about p {
-      font-family: "Alegreya", "Times New Roman", Times, serif !important;
+      font-family: Alegreya, "Times New Roman", Times, serif !important;
       font-size: 1em;
     }
 
@@ -276,13 +280,14 @@
       }
     }
 
-    &.extras .flexContainer {
+    &.extras .extrasWrapper {
       //
       h1 {
         font-size: 1.75em;
         padding-top: 1em;
         font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
         font-weight: 300;
+        text-transform: capitalize;
       }
 
       p {

@@ -106,7 +106,6 @@
       },
       backButtonState: function() {
         this.backButtonView = !this.backButtonView
-        // console.log('Please god...')
       }
 
     }
@@ -131,11 +130,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    // justify-content: space-between;
-    // justify-content: flex-start;
     align-items: flex-start;
-    // align-items: flex-start;
-    // align-content: flex-start;
     height: 1.5rem;
     margin-bottom: $mortar;
     position: relative;
@@ -147,7 +142,6 @@
 
     @media (max-width: $breakThou) {
       min-height: initial;
-      // padding: $mortar 0.3rem 0.75rem;
     }
 
     @media (max-width: $breakOne) {
@@ -410,6 +404,8 @@
         text-align: center;
         box-shadow: 0px 2px 2px -3px black;
         margin: auto;
+        //
+        // padding: .5rem auto .5rem;
         padding-bottom: .5rem;
         // background-color: lighten(lightgrey, 15) !important;
         // background-size: 75% 75%;
@@ -428,9 +424,9 @@
         }
 
         svg {
-          position: relative;
-          top: 0px;
-          transition: ease-out;
+          // position: relative;
+          // top: 0px;
+          // transition: ease-out;
         }
 
         &:hover {

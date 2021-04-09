@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="flexRowWrap w100 marAuto">
-      <h1>Portfolio Extras</h1>
+    <div class="extrasWrapper flexRowWrap w100 marAuto">
+      <h1 class="marAuto">Portfolio Extras</h1>
 
       <div class="flexxy flexRowWrap center-flex align-content-start">
         <a href="/img/portfolio/extras/serviceRequestV1.png" target="_BLANK">
@@ -78,9 +78,8 @@
 <style lang="scss" scoped>
 
   h1 {
-    font-size: 2.2em;
+    font-size: 2em;
     text-align: center;
-    margin: 0;
     padding: 0.5em 0;
 
     a {
