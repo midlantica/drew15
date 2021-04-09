@@ -12,15 +12,15 @@
   to = "/Bourbon"
   status = 200
 
-# [[plugins]]
-#   package = "netlify-plugin-subfont"
+[[plugins]]
+  package = "netlify-plugin-subfont"
 
-  # [plugins.inputs]
+  [plugins.inputs]
   # An array of glob patterns for pages on your site
   # Recursive traversal will start from these
-  # entryPoints = [
-  #   "index.html"
-  # ]
+  entryPoints = [
+    "index.html"
+  ]
 
   # Follow your links across all pages to optimize the fonts across the entire site
   # recursive = true
