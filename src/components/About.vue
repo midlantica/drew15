@@ -35,10 +35,6 @@
       margin: 0 0 .5rem;
     }
 
-    @media (max-width: $breakTwo) {
-      // margin: 0 0 .5rem;
-    }
-
     @media (max-width: $breakFour) {
       flex-direction: column;
     }
@@ -57,39 +53,6 @@
     float: left;
     clear: left;
     flex-basis: auto;
-
-    @media (max-width: $breakThou) {
-      // width: calc(30%);
-      // min-width: 17%;
-    }
-
-    @media (max-width: $breakOne) {
-      // width: calc(36%);
-      // min-width: 20%;
-    }
-
-    @media (max-width: $breakTwo) {
-      // width: calc(60%);
-      // height: 54px;
-      // min-width: 20%;
-    }
-
-    @media (max-width: $breakThree) {
-      // width: 100px;
-      // height: 84px;
-      // background: red;
-    }
-
-    @media only screen and (min-device-width: 375px) and (max-device-width: 660px) and (-webkit-min-device-pixel-ratio: 2) {
-      // display: block;
-      // float: left;
-      // clear: left;
-      // background: purple;
-      //
-      // border: 2px solid red;
-      // width: 550px;
-      // height: auto;
-    }
 
     @media (max-width: $breakFour) {
       margin-bottom: 0.5em;
@@ -111,36 +74,6 @@
     width: 100px;
     height: 60px;
 
-    @media (max-width: $breakThou) {
-      // width: calc(30%);
-      // min-width: 17%;
-    }
-
-    @media (max-width: $breakOne) {
-      // width: calc(36%);
-      // min-width: 20%;
-    }
-
-    @media (max-width: $breakTwo) {
-      // width: calc(60%);
-      // height: 54px;
-      // min-width: 20%;
-    }
-
-    @media (max-width: $breakThree) {
-      // width: 100px;
-      // height: 84px;
-    }
-
-    @media only screen and (min-device-width: 375px) and (max-device-width: 660px) and (-webkit-min-device-pixel-ratio: 2) {
-      // display: block;
-      // float: left;
-      // clear: left;
-      // background: purple;
-      // border: 2px solid red;
-      // width: 105px;
-      // height: 53px;
-    }
   }
 
   p {
@@ -155,26 +88,6 @@
     justify-content: center;
     align-self: center;
     text-align: left;
-
-    @media (max-width: $breakThou) {
-      font-size: 1rem;
-    }
-
-    @media (max-width: $breakOne) {
-      // font-size: 1rem;
-    }
-
-    @media (max-width: $breakTwo) {
-      // font-size: 1rem;
-    }
-
-    @media (max-width: $breakThree) {
-      // font-size: 1rem;
-    }
-
-    @media (max-width: $breakFour) {
-      text-align: center;
-    }
   }
 
   .corp .about {
@@ -205,18 +118,11 @@
         line-height: 1.75rem;
       }
 
-      @media (max-width: $breakOne) {
-        // font-size: 1.85vw;
-      }
-
       @media (max-width: $breakTwo) {
         font-size: 1rem;
         line-height: 1.5rem;
       }
 
-      @media (max-width: $breakThree) {
-        // font-size: 3vw;
-      }
     }
   }
 
