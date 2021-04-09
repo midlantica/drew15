@@ -405,11 +405,7 @@
         box-shadow: 0px 2px 2px -3px black;
         margin: auto;
         //
-        // padding: .5rem auto .5rem;
         padding-bottom: .5rem;
-        // background-color: lighten(lightgrey, 15) !important;
-        // background-size: 75% 75%;
-        // background-position: center 18px !important;
         background: hsl(0, 0%, 97%);
         border: 1px solid transparentize(grey, 0.85) !important;
 
@@ -421,12 +417,6 @@
           position: relative;
           top: 0px;
           transition: ease-out;
-        }
-
-        svg {
-          // position: relative;
-          // top: 0px;
-          // transition: ease-out;
         }
 
         &:hover {
@@ -450,10 +440,6 @@
         &.Uiux {
           // background: url(/img/carousel/car-icon-uiux.svg) no-repeat center center;
 
-          &:hover {
-            //
-          }
-
           @media (max-width: $breakThou) {
             //
           }
@@ -462,9 +448,6 @@
         &.Mobile {
           // background: url(/img/carousel/car-icon-mobile.svg) no-repeat center center;
 
-          &:hover {
-            //
-          }
 
           @media (max-width: $breakThou) {
             //
@@ -473,50 +456,18 @@
 
         &.Kiosk {
           // background: url(/img/carousel/car-icon-kiosk.svg) no-repeat center center;
-
-          &:hover {
-            //
-          }
-
-          @media (max-width: $breakThou) {
-            //
-          }
         }
 
         &.Graphics {
           // background: url(/img/carousel/car-icon-graphics.svg) no-repeat center center;
-
-          &:hover {
-            //
-          }
-
-          @media (max-width: $breakThou) {
-            //
-          }
         }
 
         &.Print {
           // background: url(/img/carousel/car-icon-print.svg) no-repeat center center;
-
-          &:hover {
-            //
-          }
-
-          @media (max-width: $breakThou) {
-            //
-          }
         }
 
         &.Misc {
           // background: url(/img/carousel/car-icon-misc.svg) no-repeat center center;
-
-          &:hover {
-            //
-          }
-
-          @media (max-width: $breakThou) {
-            //
-          }
         }
 
         p {
@@ -530,10 +481,6 @@
 
           &:hover {
             color: $ivory;
-          }
-
-          @media (max-width: $breakThou) {
-            // margin-bottom: 1rem;
           }
         }
       }
