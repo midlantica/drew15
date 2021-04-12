@@ -47,7 +47,7 @@
 
 <style lang="scss" scoped>
   @import "@/template-techy/assets/css/techy-main.scss";
-  // @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;500;600&display=swap');
 
   .mainGrid {
     display: grid;

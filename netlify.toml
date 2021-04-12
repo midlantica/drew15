@@ -23,20 +23,20 @@
   ]
 
   # Follow your links across all pages to optimize the fonts across the entire site
-  # recursive = true
+  recursive = true
 
   # Subfont lets you set CSS font-display value of the optimized subsets
   # See https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display
-  # fontDisplay = "swap"
+  fontDisplay = "swap"
 
   # Inline generated CSS @font-face blocks into each page
   # When set to `false` an external CSS file will be created
-  # inlineCss = false
+  inlineCss = false
 
   # Inline generated font subsets into their respective @font-face blocks
   # When set to `false` external font files will be created
-  # inlineFonts = false
+  inlineFonts = false
 
   # Include fallbacks so the original font will be loaded when dynamic content gets injected at runtime
   # When set to `false` external font files will be created
-  # fallbacks = true
+  fallbacks = true
