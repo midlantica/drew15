@@ -9,7 +9,7 @@
 
 [[redirects]]
   from = "/*"
-  to = "/Bourbon"
+  to = "/index.html"
   status = 200
 
 [[plugins]]

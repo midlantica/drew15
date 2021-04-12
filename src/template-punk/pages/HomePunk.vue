@@ -14,8 +14,8 @@
       </div>
 
       <About />
-
       <Skills />
+
     </main>
 
   </div>
