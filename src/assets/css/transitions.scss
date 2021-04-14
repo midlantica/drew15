@@ -1,42 +1,64 @@
-// FADE
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.25s ease;
-}
+// ORDER
+// xAni-enter-from  -> START
+// xAni-enter-to -> FINAL
+// xAni-enter-active -> TWEEN
+//
+// xAni-leave-from -> START
+// xAni-leave-to -> FINAL
+// xAni-leave-active -> TWEEN
+// ----->>>
 
-.fade-enter-from,
+// CSS GROUPS
+// xAni-enter-from
+// xAni-enter-to
+// xAni-enter-active
+//
+// xAni-leave-from
+// xAni-leave-to
+// xAni-leave-active
+// ----->>>
+
+// FADE
+.fade-enter-from {
+  opacity: 0;
+}
+.fade-enter-to {
+  opacity: 1;
+}
+.fade-enter-active {
+  transition: opacity 1s;
+}
+.fade-leave-active {
+  transition: opacity 0s;
+}
+.fade-leave-from {
+  opacity: 1;
+}
 .fade-leave-to {
   opacity: 0;
 }
 
-// Scale new
-.scale-enter-from {
+// FADE TWO
+.testAni-enter-from {
   opacity: 0;
-  transform: scale(1.15);
+  background-color: red;
 }
-.scale-enter-active,
-.scale-leave-active {
+.testAni-enter-to {
   opacity: 1;
-  transform: scale(1);
-  transition: all 0.5s ease-out;
+  background-color: blue;
 }
-.scale-leave-to {
+.testAni-enter-active {
+  transition: opacity 5s;
+  transition-delay: 2s;
+}
+.testAni-leave-active {
+  transition: opacity 0s;
+}
+.testAni-leave-from {
+  opacity: 1;
+  background-color: blue;
+}
+.testAni-leave-to {
   opacity: 0;
-  transform: scale(.95);
-}
-
-
-/* Enter and leave animations can use different */
-/* durations and timing functions.              */
-.slide-fade-enter-active {
-  transition: all .3s ease;
-  opacity: 0;
-}
-.slide-fade-leave-active {
-  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-}
-.slide-fade-enter, .slide-fade-leave-to
-/* .slide-fade-leave-active below version 2.1.8 */ {
-  transform: translateX(10px);
-  opacity: 0;
+  background-color: red;
 }
