@@ -27,6 +27,7 @@
 }
 .fade-enter-active {
   transition: opacity 1s;
+  // transition-delay: 2s;
 }
 .fade-leave-active {
   transition: opacity 0s;
@@ -48,7 +49,7 @@
   background-color: blue;
 }
 .testAni-enter-active {
-  transition: opacity 5s;
+  transition: opacity 1s;
   transition-delay: 2s;
 }
 .testAni-leave-active {
