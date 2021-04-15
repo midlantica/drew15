@@ -12,7 +12,7 @@
 
     <iconVSCodeBlue class='icon vs-code' />
     <iconSvgBlue class='icon svg' />
-    <iconNodeBlue class='icon node' />
+    <iconFigmaBlue class='icon figma' />
     <iconChelseaBlue class='icon chelsea' />
   </div>
 </template>
@@ -27,7 +27,7 @@
   import iconVueBlue from '@/template-corp/components/Icons/icon-vue'
   import iconSvgBlue from '@/template-corp/components/Icons/icon-svg'
   import iconVSCodeBlue from '@/template-corp/components/Icons/icon-vs-code'
-  import iconNodeBlue from '@/template-corp/components/Icons/icon-node'
+  import iconFigmaBlue from '@/template-corp/components/Icons/icon-figma'
   import iconNuxtBlue from '@/template-corp/components/Icons/icon-nuxt'
   import iconChelseaBlue from '@/template-corp/components/Icons/icon-chelsea'
   export default {
@@ -41,7 +41,7 @@
       iconVueBlue,
       iconSvgBlue,
       iconVSCodeBlue,
-      iconNodeBlue,
+      iconFigmaBlue,
       iconNuxtBlue,
       iconChelseaBlue
     }

@@ -4,13 +4,15 @@
     <iconHtml5 class="icon html5" />
     <iconCss3 class="icon css3" />
     <iconJs class="icon js" />
-    <iconSketch class="icon sketch" />
+
     <iconSass class="icon sass" />
     <iconVue class="icon vue" />
     <iconNuxt class="icon nuxt" />
     <iconVSCode class="icon vs-code" />
+
+    <iconSketch class="icon sketch" />
+    <iconFigma class="icon figma" />
     <iconSvg class="icon svg" />
-    <iconNode class="icon node" />
     <iconChelsea class="icon chelsea" />
   </div>
 </template>
@@ -25,7 +27,7 @@
   import iconVue from '@/components/Icons/icon-vue'
   import iconSvg from '@/components/Icons/icon-svg'
   import iconVSCode from '@/components/Icons/icon-vs-code'
-  import iconNode from '@/components/Icons/icon-node'
+  import iconFigma from '@/components/Icons/icon-figma'
   import iconNuxt from '@/components/Icons/icon-nuxt'
   import iconChelsea from '@/components/Icons/icon-chelsea'
 
@@ -40,7 +42,7 @@
       iconVue,
       iconSvg,
       iconVSCode,
-      iconNode,
+      iconFigma,
       iconNuxt,
       iconChelsea
     }
