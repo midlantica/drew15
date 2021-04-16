@@ -4,13 +4,12 @@
       <Navvy />
     </header>
 
-    <div class='backer'>
-      <ExtrasC />
-    </div>
+    <transition name="fade" appear>
+      <div class='backer'>
+        <ExtrasC />
+      </div>
+    </transition>
 
-    <br />
-    <br />
-    <br />
   </div>
 </template>
 

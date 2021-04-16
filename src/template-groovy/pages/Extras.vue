@@ -3,7 +3,11 @@
     <header>
       <NavvyHead/>
     </header>
-    <ExtrasC/>
+
+    <transition name="fade" appear>
+      <ExtrasC />
+    </transition>
+
     <footer>
       <Footer />
     </footer>

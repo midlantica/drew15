@@ -4,7 +4,9 @@
       <Navvy />
     </header>
 
-    <ExtrasC />
+    <transition name="fade" appear>
+      <ExtrasC />
+    </transition>
 
     <footer>
       <Quotes />

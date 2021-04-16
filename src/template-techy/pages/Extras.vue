@@ -4,9 +4,11 @@
       <Navvy />
     </header>
 
-    <div class='backer'>
-      <ExtrasC />
-    </div>
+    <transition name="fade" appear>
+      <div class='backer'>
+        <ExtrasC />
+      </div>
+    </transition>
 
     <footer>
       <Footy />
