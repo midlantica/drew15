@@ -14,7 +14,7 @@
   $breakThree: 530px;
 
   .footer {
-    //
+    position: relative;
 
     @media (max-width: $breakThou) {
       //
@@ -39,7 +39,7 @@
       width: 226px;
       height: 165px;
       display: block;
-      position: relative;
+      position: absolute;
       top: -0.3em;
       left: 0.7em;
 
@@ -59,8 +59,6 @@
         height: 135px;
         top: 1em;
         left: -1em;
-        // background: red;
-        // border: 10px green solid;
       }
     }
 
@@ -71,32 +69,16 @@
       width: 148px;
       height: 177px;
       display: block;
-      position: relative;
-      top: -182px;
-      right: 0em;
-      float: right;
+      position: absolute;
+      top: -17px;
+      right: 0px;
 
       @media (max-width: $breakThree) {
         width: 120px;
         height: 177px;
-        top: -152px;
-        right: 0em;
       }
 
-      // IPHONE 6,7,8
-      // @media only screen
-      // and (min-device-width: 375px)
-      // and (max-device-width: 667px)
-      // {
-      //   width: 120px;
-      //   height: 177px;
-      //   top: -152px;
-      //   right: 0em;
-      // }
-
     }
-
-
   }
 
 </style>

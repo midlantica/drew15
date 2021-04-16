@@ -1,12 +1,14 @@
 <template>
+  <transition name="fade" mode="ease-out">
   <div class="wrapper">
     <Tabs />
     <router-view v-slot="{ Component }">
-      <transition name="fade">
+      <transition name="fade" appear>
         <component :is="Component" />
       </transition>
     </router-view>
   </div>
+  </transition>
 </template>
 
 <script>
@@ -143,6 +145,10 @@
   // TECHY
   .techy {
     background: $backBlack;
+
+    .wrapper {
+      background: #fffdf4;
+    }
 
     &.extras .extrasWrapper {
       background: #fffff1 !important;

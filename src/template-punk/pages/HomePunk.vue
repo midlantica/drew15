@@ -4,19 +4,21 @@
       <Navvy />
     </header>
 
-    <main class='mainGrid'>
-      <div class='copyArea'>
-        <HeadAndCopy />
-      </div>
+    <transition name="bounce" appear>
+      <main class='mainGrid'>
+        <div class='copyArea'>
+          <HeadAndCopy />
+        </div>
 
-      <div class='slides'>
-        <Carousel />
-      </div>
+        <div class='slides'>
+          <Carousel />
+        </div>
 
-      <About />
-      <Skills />
+        <About />
+        <Skills />
 
-    </main>
+      </main>
+    </transition>
 
   </div>
 </template>
