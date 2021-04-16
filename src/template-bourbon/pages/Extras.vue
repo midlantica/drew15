@@ -1,12 +1,16 @@
 <template>
   <div>
+
     <header>
       <Navvy />
     </header>
+
     <ExtrasC />
+
     <footer>
       <NavvyEmpty />
     </footer>
+
   </div>
 </template>
 
