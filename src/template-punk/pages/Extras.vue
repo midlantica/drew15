@@ -1,16 +1,16 @@
 <template>
-  <div>
-    <header>
-      <Navvy />
-    </header>
+  <transition name="bounce" appear>
+    <div>
+      <header>
+        <Navvy />
+      </header>
 
-    <transition name="fade" appear>
       <div class='backer'>
         <ExtrasC />
       </div>
-    </transition>
 
-  </div>
+    </div>
+  </transition>
 </template>
 
 <script>

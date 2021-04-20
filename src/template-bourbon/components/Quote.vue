@@ -1,10 +1,12 @@
 <template>
-  <div class='quoteBlock'>
-    <div class='quotePad'>
-      <p>&ldquo;Everything should be made as simple as possible, but not simpler.&rdquo;</p>
-      <cite>&ndash; Albert Einstein</cite>
+  <transition name="bounce7" appear>
+    <div class='quoteBlock'>
+      <div class='quotePad'>
+        <p>&ldquo;Everything should be made as simple as possible, but not simpler.&rdquo;</p>
+        <cite>&ndash; Albert Einstein</cite>
+      </div>
     </div>
-  </div>
+  </transition>
 </template>
 
 <style lang='scss' scoped>

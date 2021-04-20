@@ -1,25 +1,29 @@
 <template>
   <div>
-    <header>
-      <Navvy />
-    </header>
+    <transition name="bounce" appear>
+      <div>
+        <header>
+          <Navvy />
+        </header>
 
-    <transition name="bounce" appear :duration="100000">
-      <main class="mainGrid">
-        <div class="copyArea">
-          <HeadAndCopy />
-        </div>
-        <div class="slides">
-          <Carousel />
-        </div>
-        <About />
-        <Skills />
-      </main>
+        <transition name="bounce2" appear>
+          <main class="mainGrid">
+            <div class="copyArea">
+              <HeadAndCopy />
+            </div>
+            <div class="slides">
+              <Carousel />
+            </div>
+            <About />
+            <Skills />
+          </main>
+        </transition>
+
+        <footer>
+          <Quotes />
+        </footer>
+      </div>
     </transition>
-
-    <footer>
-      <Quotes />
-    </footer>
   </div>
 </template>
 

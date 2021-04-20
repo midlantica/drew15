@@ -1,17 +1,17 @@
 <template>
-  <div>
-    <header>
-      <Navvy />
-    </header>
+  <transition name="bounce" appear>
+    <div>
+      <header>
+        <Navvy />
+      </header>
 
-    <transition name="fade" appear>
       <ExtrasC />
-    </transition>
 
-    <footer>
-      <Quotes />
-    </footer>
-  </div>
+      <footer>
+        <Quotes />
+      </footer>
+    </div>
+  </transition>
 </template>
 
 <script>

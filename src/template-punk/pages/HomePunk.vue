@@ -1,25 +1,28 @@
 <template>
   <div>
-    <header>
-      <Navvy />
-    </header>
-
     <transition name="bounce" appear>
-      <main class='mainGrid'>
-        <div class='copyArea'>
-          <HeadAndCopy />
-        </div>
+      <div>
+        <header>
+          <Navvy />
+        </header>
 
-        <div class='slides'>
-          <Carousel />
-        </div>
+        <transition name="bounce2" appear>
+          <main class='mainGrid'>
+            <div class='copyArea'>
+              <HeadAndCopy />
+            </div>
 
-        <About />
-        <Skills />
+            <div class='slides'>
+              <Carousel />
+            </div>
 
-      </main>
+            <About />
+            <Skills />
+
+          </main>
+        </transition>
+      </div>
     </transition>
-
   </div>
 </template>
 

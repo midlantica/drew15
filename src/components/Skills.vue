@@ -1,20 +1,22 @@
 <template>
-  <div class="skillsGrid">
-    <iconUiux class="icon uiux" />
-    <iconHtml5 class="icon html5" />
-    <iconCss3 class="icon css3" />
-    <iconJs class="icon js" />
+  <transition name="bounce4" appear>
+    <div class="skillsGrid">
+      <iconUiux class="icon uiux" />
+      <iconHtml5 class="icon html5" />
+      <iconCss3 class="icon css3" />
+      <iconJs class="icon js" />
 
-    <iconSass class="icon sass" />
-    <iconVue class="icon vue" />
-    <iconNuxt class="icon nuxt" />
-    <iconVSCode class="icon vs-code" />
+      <iconSass class="icon sass" />
+      <iconVue class="icon vue" />
+      <iconNuxt class="icon nuxt" />
+      <iconVSCode class="icon vs-code" />
 
-    <iconSketch class="icon sketch" />
-    <iconFigma class="icon figma" />
-    <iconSvg class="icon svg" />
-    <iconChelsea class="icon chelsea" />
-  </div>
+      <iconSketch class="icon sketch" />
+      <iconFigma class="icon figma" />
+      <iconSvg class="icon svg" />
+      <iconChelsea class="icon chelsea" />
+    </div>
+  </transition>
 </template>
 
 <script>

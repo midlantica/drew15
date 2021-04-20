@@ -1,5 +1,5 @@
 <template>
-  <transition name="testAni">
+  <transition name="bounce5" appear>
     <div class='projectBox'>
       <div class="projectBox__top">
         <a class='carouselArrow'

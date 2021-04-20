@@ -1,19 +1,19 @@
 <template>
-  <div>
+  <transition name="bounce" appear>
+    <div>
 
-    <header>
-      <Navvy />
-    </header>
+      <header>
+        <Navvy />
+      </header>
 
-    <transition name="fade" appear>
       <ExtrasC />
-    </transition>
 
-    <footer>
-      <NavvyEmpty />
-    </footer>
+      <footer>
+        <NavvyEmpty />
+      </footer>
 
-  </div>
+    </div>
+  </transition>
 </template>
 
 <script>
