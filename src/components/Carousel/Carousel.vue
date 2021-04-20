@@ -1,56 +1,54 @@
 <template>
-  <transition name="bounce5" appear>
-    <div class='projectBox'>
-      <div class="projectBox__top">
-        <a class='carouselArrow'
-          v-if="backButtonView"
-          @click='viewCarousel(); backButtonState();'
-        >﹤ BACK</a>
-        <p class='projectHead'>Projects - {{ selectedView }}</p>
-      </div>
-
-      <component :is='selectedView'>
-        <div class='miniGallery'>
-          <a @click='selectedView = `Uiux`; backButtonState();' >
-            <div class='box Uiux'>
-              <IconUiux />
-              <p>UI/UX Design</p>
-            </div>
-          </a>
-          <a @click='selectedView = `Mobile`; backButtonState();' >
-            <div class='box Mobile'>
-              <IconMobile />
-              <p>Mobile</p>
-            </div>
-          </a>
-          <a @click='selectedView = `Kiosk`; backButtonState();' >
-            <div class='box Kiosk'>
-              <IconKiosk />
-              <p>Kiosk</p>
-            </div>
-          </a>
-          <a @click='selectedView = `Graphics`; backButtonState();' >
-            <div class='box Graphics'>
-              <IconGraphics />
-              <p>Graphics</p>
-            </div>
-          </a>
-          <a @click='selectedView = `Print`; backButtonState();' >
-            <div class='box Print'>
-              <IconPrint />
-              <p>Print</p>
-            </div>
-          </a>
-          <a @click='selectedView = `Misc`; backButtonState();' >
-            <div class='box Misc'>
-              <IconMisc />
-              <p>Misc.</p>
-            </div>
-          </a>
-        </div>
-      </component>
+  <div class='projectBox'>
+    <div class="projectBox__top">
+      <a class='carouselArrow'
+        v-if="backButtonView"
+        @click='viewCarousel(); backButtonState();'
+      >﹤ BACK</a>
+      <p class='projectHead'>Projects - {{ selectedView }}</p>
     </div>
-  </transition>
+
+    <component :is='selectedView'>
+      <div class='miniGallery'>
+        <a @click='selectedView = `Uiux`; backButtonState();' >
+          <div class='box Uiux'>
+            <IconUiux />
+            <p>UI/UX Design</p>
+          </div>
+        </a>
+        <a @click='selectedView = `Mobile`; backButtonState();' >
+          <div class='box Mobile'>
+            <IconMobile />
+            <p>Mobile</p>
+          </div>
+        </a>
+        <a @click='selectedView = `Kiosk`; backButtonState();' >
+          <div class='box Kiosk'>
+            <IconKiosk />
+            <p>Kiosk</p>
+          </div>
+        </a>
+        <a @click='selectedView = `Graphics`; backButtonState();' >
+          <div class='box Graphics'>
+            <IconGraphics />
+            <p>Graphics</p>
+          </div>
+        </a>
+        <a @click='selectedView = `Print`; backButtonState();' >
+          <div class='box Print'>
+            <IconPrint />
+            <p>Print</p>
+          </div>
+        </a>
+        <a @click='selectedView = `Misc`; backButtonState();' >
+          <div class='box Misc'>
+            <IconMisc />
+            <p>Misc.</p>
+          </div>
+        </a>
+      </div>
+    </component>
+  </div>
 </template>
 
 <script>

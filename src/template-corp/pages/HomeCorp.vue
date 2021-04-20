@@ -1,6 +1,6 @@
 <template>
   <div>
-    <transition name="bounce" appear>
+    <transition name="fader" appear>
       <div>
         <header>
           <Navvy />
@@ -8,14 +8,27 @@
 
         <transition name="bounce2" appear>
           <main class="mainGrid">
-            <div class="copyArea">
-              <HeadAndCopy />
-            </div>
-            <div class="slides">
-              <Carousel />
-            </div>
-            <About />
-            <Skills />
+
+            <transition name="bounce3" appear>
+              <div class="copyArea">
+                <HeadAndCopy />
+              </div>
+            </transition>
+
+            <transition name="bounce4" appear>
+              <div class="slides">
+                <Carousel />
+              </div>
+            </transition>
+
+            <transition name="bounce7" appear>
+              <About />
+            </transition>
+
+            <transition name="bounce6" appear>
+              <Skills />
+            </transition>
+
           </main>
         </transition>
 

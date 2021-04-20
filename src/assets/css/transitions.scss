@@ -1,16 +1,16 @@
-$timeBase: 1;
+$timeBase: .4;
 
 // bounce
 .bounce-enter-active {
-  animation: bounce-in ($timeBase * .25 + s);
+  animation: bounce-in all ($timeBase * .25 + s);
 }
 .bounce-leave-active {
-  animation: bounce-in ($timeBase * .25 + s) reverse;
+  animation: bounce-in all ($timeBase * .25 + s) reverse;
 }
 
 @keyframes bounce-in {
   0% {
-    transform: scale(0.75);
+    transform: scale(0);
     opacity: 0;
   }
   85% {
@@ -33,7 +33,7 @@ $timeBase: 1;
 
 // bounce3
 .bounce3-enter-active {
-  animation: bounce-in ($timeBase * 1.25 + s);
+  animation: bounce-in ($timeBase * 2.5 + s);
 }
 .bounce3-leave-active {
   animation: bounce-in ($timeBase * .25 + s) reverse;
@@ -41,7 +41,7 @@ $timeBase: 1;
 
 // bounce4
 .bounce4-enter-active {
-  animation: bounce-in ($timeBase * 1.5 + s);
+  animation: bounce-in ($timeBase * 3.5 + s);
 }
 .bounce4-leave-active {
   animation: bounce-in ($timeBase * .25 + s) reverse;
@@ -49,7 +49,7 @@ $timeBase: 1;
 
 // bounce5
 .bounce5-enter-active {
-  animation: bounce-in($timeBase * 1.75 + s);
+  animation: bounce-in($timeBase * 4.5 + s);
 }
 .bounce5-leave-active {
   animation: bounce-in ($timeBase * .25 + s) reverse;
@@ -57,7 +57,7 @@ $timeBase: 1;
 
 // bounce6
 .bounce6-enter-active {
-  animation: bounce-in ($timeBase * 2 + s);
+  animation: bounce-in ($timeBase * 5.5 + s);
 }
 .bounce6-leave-active {
   animation: bounce-in ($timeBase * .25 + s) reverse;
@@ -65,9 +65,41 @@ $timeBase: 1;
 
 // bounce7
 .bounce7-enter-active {
-  animation: bounce-in ($timeBase * 2.25 + s);
+  animation: bounce-in ($timeBase * 6.5 + s);
 }
 .bounce7-leave-active {
+  animation: bounce-in ($timeBase * .25 + s) reverse;
+}
+
+// bounce8
+.bounce8-enter-active {
+  animation: bounce-in ($timeBase * 7.5 + s);
+}
+.bounce8-leave-active {
+  animation: bounce-in ($timeBase * .25 + s) reverse;
+}
+
+// bounce9
+.bounce9-enter-active {
+  animation: bounce-in ($timeBase * 8.5 + s);
+}
+.bounce9-leave-active {
+  animation: bounce-in ($timeBase * .25 + s) reverse;
+}
+
+// bounce10
+.bounce10-enter-active {
+  animation: bounce-in ($timeBase * 9.5 + s);
+}
+.bounce10-leave-active {
+  animation: bounce-in ($timeBase * .25 + s) reverse;
+}
+
+// bounce11
+.bounce11-enter-active {
+  animation: bounce-in ($timeBase * 10.5 + s);
+}
+.bounce11-leave-active {
   animation: bounce-in ($timeBase * .25 + s) reverse;
 }
 
@@ -82,15 +114,9 @@ $timeBase: 1;
 }
 @keyframes fader {
   0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  50% {
-    transform: scale(0.5);
     opacity: 0;
   }
   100% {
-    transform: scale(1);
     opacity: 1;
   }
 }

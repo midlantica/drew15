@@ -1,12 +1,10 @@
 <template>
-  <transition name="bounce6" appear>
-    <div class="about">
-      <div class="flagBox">
-        <div class="flag">&nbsp;</div>
-      </div>
-      <p>I’m half-English/half-American, worked in Advertising most my life, switched to web in late ’90s. Travelled the world, enjoy reading history, love NFL, Rugby, Footy.</p>
+  <div class="about">
+    <div class="flagBox">
+      <div class="flag">&nbsp;</div>
     </div>
-  </transition>
+    <p>I’m half-English/half-American, worked in Advertising most my life, switched to web in late ’90s. Travelled the world, enjoy reading history, love NFL, Rugby, Footy.</p>
+  </div>
 </template>
 
 <style lang="scss" scoped>
