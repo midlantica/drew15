@@ -1,79 +1,74 @@
+$timeBase: 1;
 
 // bounce
 .bounce-enter-active {
-  animation: bounce-in .75s;
+  animation: bounce-in ($timeBase * .25 + s);
 }
 .bounce-leave-active {
-  animation: bounce-in .25s reverse;
+  animation: bounce-in ($timeBase * .25 + s) reverse;
 }
 
 @keyframes bounce-in {
   0% {
-    transform: scale(0.5);
-    opacity: 0;
-    height: 0;
-  }
-  50% {
-    transform: scale(0.5);
+    transform: scale(0.75);
     opacity: 0;
   }
-  75% {
+  85% {
     transform: scale(1.015);
     opacity: 0;
   }
   100% {
     transform: scale(1);
     opacity: 1;
-    height: initial;
   }
 }
 
 // bounce2
 .bounce2-enter-active {
-  animation: bounce-in 1s;
+  animation: bounce-in ($timeBase * 1 + s);
 }
 .bounce2-leave-active {
-  animation: bounce-in .25s reverse;
+  animation: bounce-in ($timeBase * .25 + s) reverse;
 }
 
 // bounce3
 .bounce3-enter-active {
-  animation: bounce-in 1.25s;
+  animation: bounce-in ($timeBase * 1.25 + s);
 }
 .bounce3-leave-active {
-  animation: bounce-in .25s reverse;
+  animation: bounce-in ($timeBase * .25 + s) reverse;
 }
 
 // bounce4
 .bounce4-enter-active {
-  animation: bounce-in 1.5s;
+  animation: bounce-in ($timeBase * 1.5 + s);
 }
 .bounce4-leave-active {
-  animation: bounce-in .25s reverse;
+  animation: bounce-in ($timeBase * .25 + s) reverse;
 }
 
 // bounce5
 .bounce5-enter-active {
-  animation: bounce-in 1.75s;
+  animation: bounce-in($timeBase * 1.75 + s);
 }
 .bounce5-leave-active {
-  animation: bounce-in .25s reverse;
+  animation: bounce-in ($timeBase * .25 + s) reverse;
 }
 
 // bounce6
 .bounce6-enter-active {
-  animation: bounce-in 2s;
+  animation: bounce-in ($timeBase * 2 + s);
 }
 .bounce6-leave-active {
-  animation: bounce-in .25s reverse;
+  animation: bounce-in ($timeBase * .25 + s) reverse;
 }
 
 // bounce7
 .bounce7-enter-active {
-  animation: bounce-in 2.25s;
+  animation: bounce-in ($timeBase * 2.25 + s);
 }
 .bounce7-leave-active {
-  animation: bounce-in .25s reverse;
+  animation: bounce-in ($timeBase * .25 + s) reverse;
 }
 
 

@@ -161,10 +161,7 @@
   }
 
   body.bourbon .projectBox {
-    @include box-shadow(0px, 1px, 1px, 0px, hsla(0, 0%, 0%, 0.5));
-    // min-height: 386px;
-    // min-height: 380px;
-    // padding: $mortar 0.3rem $mortar;
+    @include box-shadow(0px, 2px, 6px, -2px, hsla(0, 0%, 0%, .9));
 
     @media (max-width: $breakThou) {
       // min-height: initial;
@@ -206,13 +203,10 @@
   }
 
   body.techy .projectBox {
-    @include box-shadow(0px, 2px, 2px, -3px, hsla(0, 0%, 0%, 1));
-    // padding: $mortar 0.3rem 0.5rem;
-    // min-height: 353px;
+    @include box-shadow(0px, 2px, 6px, -2px, hsla(0, 0%, 0%, 1));
 
     @media (max-width: $breakThou) {
       min-height: initial;
-
     }
 
     @media (max-width: $breakOne) {
@@ -231,9 +225,6 @@
   body.corp .projectBox {
     background: #d7e7f3;
     @include box-shadow(0px, 1px, 1px, 0px, hsla(0, 0%, 0%, 0.5), false);
-    // padding: $mortar 0.3rem $mortar;
-    // min-height: 357px;
-
 
     @media (max-width: $breakThou) {
       min-height: initial;
@@ -255,8 +246,6 @@
 
   body.punk .projectBox {
     @include box-shadow(0px, 1px, 1px, 0px, hsla(0, 0%, 0%, 0.5), false);
-    // padding: $mortar 0.3rem $mortar;
-    // min-height: 357px;
 
     @media (max-width: $breakThou) {
       min-height: initial;
@@ -284,7 +273,6 @@
 
   body.bourbon .box {
     height: 181.5px !important;
-    // height: 20vh !important;
 
     @media (max-width: $breakThou) {
       min-height: initial;
