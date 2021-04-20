@@ -1,13 +1,13 @@
 <template>
-  <transition name="fade" mode="ease-out">
-  <div class="wrapper">
-    <Tabs />
-    <router-view v-slot="{ Component }">
-      <transition name="fade" appear>
-        <component :is="Component" />
-      </transition>
-    </router-view>
-  </div>
+  <transition name="fade" appear>
+    <div class="wrapper">
+      <Tabs />
+      <router-view v-slot="{ Component }">
+        <transition name="fader" appear>
+          <component :is="Component" />
+        </transition>
+      </router-view>
+    </div>
   </transition>
 </template>
 

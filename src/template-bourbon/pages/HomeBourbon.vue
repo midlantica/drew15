@@ -94,9 +94,7 @@
   .copyArea {
     grid-column: 1 / 2;
     grid-row: 1 / 4;
-    // transition: opacity 5s ease-out;
     transition-delay: 250ms;
-    // opacity: 0;
 
     @media (max-width: $breakThou) {
       grid-column: 1 / 3;
