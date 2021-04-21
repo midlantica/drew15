@@ -50,7 +50,6 @@
       ])
 
       return { slides }
-
     }
   }
 </script>

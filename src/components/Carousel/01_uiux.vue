@@ -103,9 +103,7 @@
       ])
 
       return { slides }
-
     }
-
   }
 </script>
 
