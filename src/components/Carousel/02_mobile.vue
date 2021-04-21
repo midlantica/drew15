@@ -11,13 +11,12 @@
     <vueper-slide
       v-for='(slide, i) in slides' :key='i'
       :image='slide.image'
-    />
-
-    <template v-slot:loader>
-      <i class="icon icon-loader spinning"></i>
-      <span>Loading...</span>
-    </template>
-
+    >
+      <template v-slot:loader>
+        <i class="icon icon-loader spinning"></i>
+        <span>Loading...</span>
+      </template>
+    </vueper-slide>
   </vueper-slides>
 </template>
 

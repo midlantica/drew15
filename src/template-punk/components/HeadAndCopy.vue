@@ -50,13 +50,11 @@
         padding: 0.3em 0.5em;
 
         @media (max-width: $breakTwo) {
-          // font-size: 1.3em !important;
-          // margin-top: -3px;
+          //
         }
 
         @media (max-width: $breakThree) {
-          // font-size: 1em !important;
-          // line-height: 2em;
+          //
         }
 
         &:nth-of-type(1) {
@@ -92,7 +90,6 @@
 
         &.rOne {
           transform: rotate(-2deg) !important;
-          // background: red;
           background: transparentize(#ff4bf5, .5);
           color: white;
         }
@@ -116,18 +113,6 @@
             text-decoration: underline;
           }
         }
-
-        // a,
-        // a.rTwo,
-        // a.rThree {
-        //   color: $black;
-        //   margin: 0 .25em;
-
-        //   &:hover {
-        //     color: #ff4bf5 !important;
-        //     background: red;
-        //   }
-        // }
 
         a:hover {
           color: #ff4bf5 !important;
@@ -199,18 +184,11 @@
       // line-height: 3em;
 
       @media (min-width: $breakOne) {
-        // font-size: 0.875rem;
-        // line-height: 2.75em;
-        // line-height: calc(2.1em + .6vw);
-        // margin-bottom: 1em;
-        // background: green;
+        //
       }
 
       @media (min-width: 1010px) {
-        // font-size: 1rem;
-        // line-height: 2.7em;
-        // line-height: calc(2.4em + 0.3vw);
-        // background: red;
+        //
       }
 
     }

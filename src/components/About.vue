@@ -8,8 +8,6 @@
 </template>
 
 <style lang="scss" scoped>
-  // @import "@/assets/css/main.scss";
-  // @import "@/template-techy/assets/css/techy-main.scss";
 
   .about {
     background: #fbf3bb;
@@ -24,7 +22,6 @@
     align-content: center;
     align-self: center;
     border-radius: 2px;
-    // margin: 0rem 0 .5rem;
     @include box-shadow(0px, 1px, 2px, 0px, hsla(0, 0%, 0%, 0.5));
 
     @media (max-width: $breakThou) {
@@ -41,7 +38,6 @@
   }
 
   .flagBox {
-    // display: block;
     display: flex;
     flex-direction: column;
     //

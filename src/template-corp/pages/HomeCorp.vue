@@ -68,10 +68,9 @@
   .about {
     background: white;
     font-size: 0.95em;
-    // margin-bottom: 0.5em;
 
     @media (max-width: $breakThou) {
-      // margin-bottom: 0.5em;
+      //
     }
   }
 
@@ -85,10 +84,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: .5rem 1rem;
-    // grid-row-gap: 1rem 1rem;
     margin: 0.25rem 1rem 1rem;
-    // background: none !important;
-    // box-shadow: none !important;
 
     @media (max-width: $breakThou) {
       grid-template-columns: 1fr;

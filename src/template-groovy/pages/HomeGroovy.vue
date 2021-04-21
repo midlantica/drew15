@@ -58,17 +58,6 @@
       Skills,
       Footer,
       Carousel
-    },
-    name: 'HomeGroovy',
-    metaInfo: {
-      title: 'Drew Harper',
-      titleTemplate: '%s - UI/UX Designer, Graphic Designer!',
-      bodyAttrs: {
-        class: 'groovy'
-      },
-      style: [
-      // { cssText: ".wrapper { background: #fffae4; }", type: "text/css" }
-      ]
     }
   }
 </script>

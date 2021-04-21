@@ -25,7 +25,7 @@
               <About />
             </transition>
 
-            <transition name="bounce72" appear>
+            <transition name="bounce7" appear>
               <Skills />
             </transition>
 
@@ -59,7 +59,6 @@
 
 <style lang='scss' scoped>
   @import '@/template-punk/assets/css/punk-main.scss';
-  // @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
   header,
   footer {

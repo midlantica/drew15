@@ -18,8 +18,6 @@
     align-content: center;
     text-align: center;
     font-size: 0.7em;
-    // background: purple;
-    // background: #333;
     position: relative;
     top: 0px;
     left: 0px;
@@ -122,7 +120,6 @@
       background: #333;
       &:hover {
         color: $black;
-        // text-shadow: 0px 0px 1px black;
         background: darken(#ff3940, 30);
         background: linear-gradient(
           // 0 - 10%

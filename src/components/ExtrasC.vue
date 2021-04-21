@@ -1,5 +1,5 @@
 <template>
-  <transition name="bounce6" appear>
+  <transition name="bounce3" appear>
     <div class="extrasWrapper flexRowWrap w100 marAuto">
       <h1 class="marAuto">Portfolio Extras</h1>
 
