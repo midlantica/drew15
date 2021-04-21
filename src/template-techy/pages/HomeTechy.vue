@@ -1,43 +1,45 @@
 <template>
-  <div>
-    <transition name="fader" appear>
-      <div>
+  <transition name="fade" appear>
+    <div>
+
+      <transition name="topDown" appear>
         <header>
           <Navvy />
         </header>
+      </transition>
 
-        <transition name="bounce2" appear>
-          <main class="mainGrid">
+      <transition name="bounce2" appear>
+        <main class="mainGrid">
 
-            <transition name="bounce3" appear>
-              <div class="copyArea">
-                <HeadAndCopy />
-              </div>
-            </transition>
+          <transition name="bounce3" appear>
+            <div class="copyArea">
+              <HeadAndCopy />
+            </div>
+          </transition>
 
-            <transition name="bounce4" appear>
-              <div class="slides">
-                <Carousel />
-              </div>
-            </transition>
+          <transition name="bounce4" appear>
+            <div class="slides">
+              <Carousel />
+            </div>
+          </transition>
 
-            <transition name="bounce6" appear>
-              <About />
-            </transition>
+          <transition name="bounce8" appear>
+            <About />
+          </transition>
 
-            <transition name="bounce7" appear>
-              <Skills />
-            </transition>
+          <transition name="bounce10" appear>
+            <Skills />
+          </transition>
 
-          </main>
-        </transition>
+        </main>
+      </transition>
 
-        <footer>
-          <Footy />
-        </footer>
-      </div>
-    </transition>
-  </div>
+      <footer>
+        <Footy />
+      </footer>
+    </div>
+  </transition>
+
 </template>
 
 <script>
@@ -68,7 +70,6 @@
     display: grid;
     grid-template-columns: 7fr 6fr;
     grid-gap: 1rem 1rem;
-    background: $ivory;
     padding: 0 1em 0.5em;
 
     @media (min-width: $breakThou) and (min-device-width: 768px) {

@@ -1,43 +1,47 @@
 <template>
-  <div>
-    <transition name="fader" appear>
-      <div>
+  <transition name="fade" appear>
+    <div>
+
+      <transition name="topDown" appear>
         <header>
           <NavvyHead />
         </header>
+      </transition>
 
-        <transition name="bounce2" appear>
-          <main class="mainGrid">
+      <transition name="bounce2" appear>
+        <main class="mainGrid">
 
-            <transition name="bounce3" appear>
-              <div class="copyArea">
-                <HeadAndCopy />
-              </div>
-            </transition>
+          <transition name="bounce3" appear>
+            <div class="copyArea">
+              <HeadAndCopy />
+            </div>
+          </transition>
 
-            <transition name="bounce4" appear>
-              <div class="slides">
-                <Carousel />
-              </div>
-            </transition>
+          <transition name="bounce4" appear>
+            <div class="slides">
+              <Carousel />
+            </div>
+          </transition>
 
-            <transition name="bounce6" appear>
-              <About />
-            </transition>
+          <transition name="bounce7" appear>
+            <About />
+          </transition>
 
-            <transition name="bounce7" appear>
-              <Skills />
-            </transition>
+          <transition name="bounce9" appear>
+            <Skills />
+          </transition>
 
-          </main>
-        </transition>
+        </main>
+      </transition>
 
+      <transition name="fade" appear>
         <footer>
           <Footer />
         </footer>
-      </div>
-    </transition>
-  </div>
+      </transition>
+
+    </div>
+  </transition>
 </template>
 
 <script>
