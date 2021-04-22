@@ -29,14 +29,13 @@
 
 @font-face {
   font-family: 'Veneer';
-  src: url('webFonts/Veneer/font.woff2') format('woff2'), url('webFonts/Veneer/font.woff') format('woff');
+  src: url('Veneer/font.woff2') format('woff2'), url('Veneer/font.woff') format('woff');
 }
 @font-face {
   font-family: 'VeneerTwo';
-  src: url('webFonts/VeneerTwo/font.woff2') format('woff2'), url('webFonts/VeneerTwo/font.woff') format('woff');
+  src: url('VeneerTwo/font.woff2') format('woff2'), url('VeneerTwo/font.woff') format('woff');
 }
 /* @font-face {
   font-family: 'VeneerThree';
-  src: url('webFonts/VeneerThree/font.woff2') format('woff2'), url('webFonts/VeneerThree/font.woff') format('woff');
+  src: url('VeneerThree/font.woff2') format('woff2'), url('VeneerThree/font.woff') format('woff');
 } */
-

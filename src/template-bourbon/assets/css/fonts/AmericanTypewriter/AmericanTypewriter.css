@@ -26,10 +26,9 @@
 
 @font-face {
   font-family: 'AmericanTypewriterStd-Med';
-  src: url('webFonts/AmericanTypewriterStd-Med/font.woff2') format('woff2'), url('webFonts/AmericanTypewriterStd-Med/font.woff') format('woff');
+  src: url('AmericanTypewriterStd-Med/font.woff2') format('woff2'), url('AmericanTypewriterStd-Med/font.woff') format('woff');
 }
 @font-face {
   font-family: 'AmericanTypewriterStd-Bold';
-  src: url('webFonts/AmericanTypewriterStd-Bold/font.woff2') format('woff2'), url('webFonts/AmericanTypewriterStd-Bold/font.woff') format('woff');
+  src: url('AmericanTypewriterStd-Bold/font.woff2') format('woff2'), url('AmericanTypewriterStd-Bold/font.woff') format('woff');
 }
-
