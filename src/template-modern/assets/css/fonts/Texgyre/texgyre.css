@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Texgyre-regular';
+  src: url('texgyre-regular.otf') format('otf');
+}
+@font-face {
+  font-family: 'Texgyre-italic';
+  src: url('texgyre-italic.otf') format('otf');
+}
+@font-face {
+  font-family: 'Texgyre-bold';
+  src: url('texgyre-bold.otf') format('otf');
+}
+@font-face {
+  font-family: 'Texgyre-bolditalic';
+  src: url('texgyre-bolditalic.otf') format('otf');
+}
