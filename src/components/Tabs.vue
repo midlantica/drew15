@@ -1,5 +1,6 @@
 <template>
   <div class="tabs">
+    <router-link :to="{ name: 'Modern' }" class="modern">Modern</router-link>
     <router-link :to="{ name: 'Bourbon' }" class="bourbon">Bourbon</router-link>
     <router-link :to="{ name: 'Groovy' }" class="groovy">Groovy</router-link>
     <router-link :to="{ name: 'Techy' }" class="techy">Techy</router-link>

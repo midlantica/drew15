@@ -12,6 +12,21 @@ const routes = [
     redirect: 'Bourbon',
   },
   {
+    path: '/Modern',
+    name: 'Modern',
+    component: HomeModern,
+    meta: {
+      bodyClass: 'modern',
+      title: 'Drew Harper – UI/UX Designer',
+      metaTags: [
+        // {
+        //   name: 'description',
+        //   content: 'The home page of our example app.',
+        // }
+      ],
+    },
+  },
+  {
     path: '/Bourbon',
     name: 'Bourbon',
     component: HomeBourbon,
@@ -77,6 +92,27 @@ const routes = [
     component: HomePunk,
     meta: {
       bodyClass: 'punk',
+      title: 'Drew Harper – UI/UX Designer',
+      metaTags: [
+        // {
+        //   name: 'description',
+        //   content: 'The home page of our example app.',
+        // }
+      ],
+    },
+  },
+  {
+    path: '/Modern/Extras',
+    name: 'ExtrasModern',
+    // route level code-splitting
+    // this generates a separate chunk (Extras.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(
+        /* webpackChunkName: 'ExtrasBourbon' */ '../template-modern/pages/Extras.vue'
+      ),
+    meta: {
+      bodyClass: 'bourbon extras',
       title: 'Drew Harper – UI/UX Designer',
       metaTags: [
         // {
