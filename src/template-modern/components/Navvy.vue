@@ -1,7 +1,7 @@
 <template>
   <nav>
     <h1>
-      <router-link :to="{ name: 'Bourbon' }">DREW HARPER</router-link>
+      <router-link :to="{ name: 'Modern' }">DREW HARPER</router-link>
     </h1>
     <section class='jobDesc'>
       <h2>UI/UX Designer</h2>
@@ -21,7 +21,7 @@
 </template>
 
 <style lang='scss' scoped>
-  @import '@/template-bourbon/assets/css/bourbon-main.scss';
+  @import '@/template-modern/assets/css/modern-main.scss';
 
   $outRed: hsla(356, 92%, 45%, 0.3);
   $outBlue: hsla(197, 88%, 66%, 0.3);

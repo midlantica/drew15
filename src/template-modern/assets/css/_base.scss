@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,300;0,700;0,900;1,100;1,300;1,700;1,900&display=swap');
 // FONTS
 $base-font-size   :1rem;
 $base-line-height :1.7em;
-$font             :"Helvetica Neue", Helvetica, Arial, sans-serif !important;
-$font-head        :VeneerTwo, Helvetica, Arial, sans-serif !important;
-$font-subhead     :Veneer, Helvetica, Arial, sans-serif !important;
-$font-copy        :"AmericanTypewriterStd-Med", Helvetica, Times, serif !important;
+$font             :'Epilogue', Helvetica, Arial, sans-serif !important;
+$font-head        :'Epilogue', Helvetica, Arial, sans-serif !important;
+$font-subhead     :'Epilogue', Helvetica, Arial, sans-serif !important;
+$font-copy        :'Epilogue', Helvetica, Arial, sans-serif !important;
 
 // ############################
 
@@ -17,7 +18,7 @@ html, html a {
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Epilogue', Helvetica, Arial, sans-serif;
   font-size: $base-font-size;
   background: #333;
   margin: 0;

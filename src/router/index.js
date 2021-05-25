@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import HomeModern from '../template-modern/pages/HomeModern.vue'
 import HomeBourbon from '../template-bourbon/pages/HomeBourbon.vue'
 import HomeGroovy from '../template-groovy/pages/HomeGroovy.vue'
 import HomeTechy from '../template-techy/pages/HomeTechy.vue'

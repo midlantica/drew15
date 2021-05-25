@@ -94,6 +94,65 @@
     }
   }
 
+// #############################
+  // MODERN
+  .modern {
+    background: $backBlack;
+
+    .wrapper {
+      background: url(./template-modern/assets/img/bg/graphy_2.png) repeat;
+
+      @media (max-width: $breakOne) {
+        //
+      }
+
+      header,
+      footer {
+        background: url(./template-modern/assets/img/bg/bg_bag_dk.jpg) repeat;
+      }
+    }
+
+    .about > p {
+      font-family: 'Epilogue', Helvetica, Arial, sans-serif;
+      font-size: 0.85em;
+      margin: 0.25rem auto;
+
+      @media (max-width: $breakThou) {
+        font-size: 1.65vw;
+      }
+
+      @media (max-width: $breakOne) {
+        font-size: 1.85vw;
+      }
+
+      @media (max-width: $breakTwo) {
+        font-size: 2.5vw;
+      }
+
+      @media (max-width: $breakThree) {
+        font-size: 3vw;
+      }
+    }
+
+    &.extras .extrasWrapper {
+      //
+      h1 {
+        font-size: 1.75em;
+        padding-top: 1em;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        font-family: 'Epilogue', Helvetica, Arial, sans-serif;
+        font-weight: 300;
+      }
+    }
+
+    .smallCaps {
+      font-variant: small-caps !important;
+      font-size: 90% !important;
+      letter-spacing: 0.05rem;
+    }
+  }
+
   // #############################
   // GROOVY
   .groovy {

@@ -24,7 +24,7 @@
     left: 0px;
     z-index: 10;
     width: calc(100%);
-    font-family: Helvetica,Arial,sans-serif;
+    font-family: Helvetica, Arial,sans-serif;
     overflow-x: hidden !important;
 
     a {
@@ -45,6 +45,13 @@
         transition: 0.2s ease-in;
       }
     }
+  }
+
+  body.modern .tabs > a.modern {
+    color: transparentize($ivory, 0.1);
+    background: darken($orange, 30);
+    text-shadow: 0px 0px 1px black;
+    box-shadow: 0px -2px 6px black inset;
   }
 
   body.bourbon .tabs > a.bourbon {
@@ -101,15 +108,15 @@
     box-shadow: 0px -2px 6px black inset;
   }
 
-  body.samurai .tabs > a.samurai {
-    color: transparentize($ivory, 0.1);
-    background: darken(#922212, 30);
-    text-shadow: 0px 0px 1px black;
-    box-shadow: 0px -2px 6px black inset;
-  }
-
   body .tabs {
     //
+    > a.modern {
+      background: #333;
+      text-shadow: 0px 0px 1px black;
+      &:hover {
+        background: darken($orange, 30);
+      }
+    }
     > a.bourbon {
       background: #333;
       text-shadow: 0px 0px 1px black;
@@ -159,12 +166,6 @@
         background: darken(#ff4bf5, 30);
       }
     }
-    > a.samurai {
-      background: #333;
-      text-shadow: 0px 0px 1px black;
-      &:hover {
-        background: darken(#922212, 30);
-      }
-    }
+
   }
 </style>
