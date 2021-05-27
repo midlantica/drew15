@@ -100,7 +100,7 @@
     background: $backBlack;
 
     .wrapper {
-      background: url(./template-modern/assets/img/bg/graphy_2.png) repeat;
+      // background: url(./template-modern/assets/img/bg/graphy_2.png) repeat;
 
       @media (max-width: $breakOne) {
         //
@@ -108,7 +108,7 @@
 
       header,
       footer {
-        background: url(./template-modern/assets/img/bg/bg_bag_dk.jpg) repeat;
+        // background: url(./template-modern/assets/img/bg/bg_bag_dk.jpg) repeat;
       }
     }
 

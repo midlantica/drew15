@@ -3,11 +3,11 @@ $grey:       #333;
 $blue-dark:  hsl(195, 22%, 35%);
 $blue-mid:   hsl(205, 24%, 47%);
 $blue-light: hsl(209, 29%, 66%);
-$accent:     hsl(29, 100%, 50%);
+$accent:     hsl(22, 100%, 55%);
 $ivory:      hsl(49, 100%, 98%);
 $orange:     hsl(303, 76%, 55%);
-$paleyellow: hsla(60, 100%, 74%, 0.6);
-$accent-red: #C02C19;
+$paleyellow: hsla(22, 100%, 50%, 0.6);
+$accent-red: $orange;
 $white:      white;
 $black:     black;
 

@@ -2,7 +2,7 @@
   <div class="marT1 marL1H marRH">
     <div class="headBlock">
       <router-link :to="{ name: 'ExtrasModern' }" class="drewhead jelloHorizontal" />
-      <h1>Modern!! When UX design is done right the design seems inevitable</h1>
+      <h1>When UX design is done right the design seems inevitable</h1>
     </div>
     <p>Whether it’s a prototype, a responsive website, a wireframe, an interactive <span class="smallCaps">PDF</span>, a new mobile app <span class="smallCaps">UI</span>, a quick skin job, a few more buttons, a dialog box, filling up a bucket, or getting in the trenches with  <span class="smallCaps">HTML</span> and <span class="smallCaps">CSS</span>, I can deliver. I don’t let ‘design’ get in the way. Oh and I’m a coder groupie 😃</p>
   </div>
@@ -36,7 +36,9 @@
       display: inline-block;
       font-family: $font-subhead;
       color: $accent-red;
-      font-size: 1.7rem;
+      // color: magenta;
+      font-size: 1.35rem;
+      letter-spacing: -0.01ch;
       padding: 0;
       grid-column: 2 / 3;
       grid-row: 1 / 2;
