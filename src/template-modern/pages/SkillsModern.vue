@@ -16,11 +16,9 @@
         <main class='mainGrid'>
 
 
-          <div class='slides'>
-            <transition name="bounce4" appear>
-              <Carousel />
-            </transition>
-          </div>
+          <transition name="bounce6" appear>
+            <Skills />
+          </transition>
 
         </main>
       </transition>
@@ -36,8 +34,8 @@
 <script>
   import Navvy from '../components/Navvy'
   import NavvyEmpty from '../components/NavvyEmpty'
+  import Skills from '@/components/Skills'
   import ModernTabs from '../components/ModernTabs'
-  import Carousel from '@/components/Carousel/Carousel'
 
   export default {
     // layout: 'default',
@@ -45,8 +43,8 @@
     components: {
       Navvy,
       NavvyEmpty,
-      ModernTabs,
-      Carousel,
+      Skills,
+      ModernTabs
     },
     data() {
       return {
@@ -57,7 +55,6 @@
 </script>
 
 <style lang='scss' scoped>
-  // @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,300;0,700;0,900;1,100;1,300;1,700;1,900&display=swap');
   @import '@/template-modern/assets/css/modern-main.scss';
 
   header,

@@ -15,12 +15,9 @@
       <transition name="bounce2" appear>
         <main class='mainGrid'>
 
-
-          <div class='slides'>
-            <transition name="bounce4" appear>
-              <Carousel />
-            </transition>
-          </div>
+          <transition name="bounce6" appear>
+            <h1>ABOUTTTTTT</h1>
+          </transition>
 
         </main>
       </transition>
@@ -37,7 +34,6 @@
   import Navvy from '../components/Navvy'
   import NavvyEmpty from '../components/NavvyEmpty'
   import ModernTabs from '../components/ModernTabs'
-  import Carousel from '@/components/Carousel/Carousel'
 
   export default {
     // layout: 'default',
@@ -45,8 +41,7 @@
     components: {
       Navvy,
       NavvyEmpty,
-      ModernTabs,
-      Carousel,
+      ModernTabs
     },
     data() {
       return {

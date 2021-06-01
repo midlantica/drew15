@@ -4,7 +4,7 @@
       <a class='carouselArrow'
         v-if="backButtonView"
         @click='viewCarousel(); backButtonState();'
-      >﹤ BACK</a>
+      >﹤ back</a>
       <p class='projectHead'>Projects - {{ selectedView }}</p>
     </div>
 
@@ -158,6 +158,27 @@
 
   }
 
+  body.modern .projectBox {
+    // @include box-shadow(0px, 2px, 6px, -2px, hsla(0, 0%, 0%, .9));
+    background: none;
+
+    @media (max-width: $breakThou) {
+      // min-height: initial;
+    }
+
+    @media (max-width: $breakOne) {
+      //
+    }
+
+    @media (max-width: $breakTwo) {
+      // min-height: 386px;
+    }
+
+    @media (max-width: $breakThree) {
+      //
+    }
+  }
+
   body.bourbon .projectBox {
     @include box-shadow(0px, 2px, 6px, -2px, hsla(0, 0%, 0%, .9));
 
@@ -304,6 +325,23 @@
     letter-spacing: 0em;
   }
 
+  body.modern .projectHead,
+  body.modern .box p {
+    font-family: 'Spartan', Helvetica, Arial, sans-serif !important;
+    letter-spacing: 0em !important;
+    color: white !important;
+    text-transform: none;
+
+    a {
+      color: white !important;
+
+      &:hover {
+        color: red !important;
+      }
+    }
+
+  }
+
   body.corp .box {
     height: 166.25px !important;
   }
@@ -319,8 +357,29 @@
     }
   }
 
+  body.modern .miniGallery a .box {
+    border: none !important;
+    background: none !important;
+    &:hover {
+      border: none;
+      box-shadow: none;
+    }
+
+    p {
+      color: white !important;
+
+      &:hover {
+        color: red !important;
+      }
+    }
+  }
+
   body.punk .miniGallery {
     margin-top: 0;
+  }
+
+  body.modern .miniGallery {
+    background: none;
   }
 
   body.corp .VueCarousel.druCarousel {

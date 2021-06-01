@@ -35,7 +35,7 @@
     h1 {
       display: inline-block;
       font-family: $font-subhead;
-      color: $accent-red;
+      // color: $accent-red;
       // color: magenta;
       font-size: 1.35rem;
       letter-spacing: -0.01ch;
@@ -76,7 +76,7 @@
     font-family: $font-copy;
     font-size: 1.1rem !important;
     line-height: 2.6rem;
-    color: $grey;
+    // color: $grey;
     margin: 0.5rem 0.5rem 0rem !important;
     letter-spacing: 0.03rem;
 

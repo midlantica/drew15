@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeModern from '../template-modern/pages/HomeModern.vue'
+import SkillsModern from '../template-modern/pages/SkillsModern.vue'
+import AboutModern from '../template-modern/pages/AboutModern.vue'
 import HomeBourbon from '../template-bourbon/pages/HomeBourbon.vue'
 import HomeGroovy from '../template-groovy/pages/HomeGroovy.vue'
 import HomeTechy from '../template-techy/pages/HomeTechy.vue'
@@ -16,6 +18,36 @@ const routes = [
     path: '/Modern',
     name: 'Modern',
     component: HomeModern,
+    meta: {
+      bodyClass: 'modern',
+      title: 'Drew Harper – UI/UX Designer',
+      metaTags: [
+        // {
+        //   name: 'description',
+        //   content: 'The home page of our example app.',
+        // }
+      ],
+    },
+  },
+  {
+    path: '/ModernSkills',
+    name: 'ModernSkills',
+    component: SkillsModern,
+    meta: {
+      bodyClass: 'modern',
+      title: 'Drew Harper – UI/UX Designer',
+      metaTags: [
+        // {
+        //   name: 'description',
+        //   content: 'The home page of our example app.',
+        // }
+      ],
+    },
+  },
+  {
+    path: '/ModernAbout',
+    name: 'ModernAbout',
+    component: AboutModern,
     meta: {
       bodyClass: 'modern',
       title: 'Drew Harper – UI/UX Designer',
