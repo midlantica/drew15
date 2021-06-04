@@ -105,6 +105,31 @@ $mortar: .25rem;
   }
 }
 
+$modernCol: #9BC4CB;
+body.modern .box {
+
+  &:hover {
+    //
+    .brickBack {
+      fill: $modernCol;
+      transition: fill 10s ease-out;
+    }
+    .brickCircles {
+      fill: $modernCol;
+      transition: fill 10s ease-out;
+    }
+  }
+
+  svg path,
+  svg polygon,
+  svg rect,
+  svg polyline {
+    stroke: $modernCol;
+  }
+
+}
+
+
 body.corp .box {
   //
 

@@ -97,10 +97,14 @@
 // #############################
   // MODERN
   .modern {
-    background: black;
+    background: #342E37;
 
     .wrapper {
       // background: url(./template-modern/assets/img/bg/graphy_2.png) repeat;
+      // background: #110e1d;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
 
       @media (max-width: $breakOne) {
         //
@@ -113,7 +117,7 @@
       }
     }
 
-    .about > p {
+    .about p {
       font-family: 'Epilogue', Helvetica, Arial, sans-serif;
       font-size: 0.85em;
       margin: 0.25rem auto;
@@ -142,7 +146,7 @@
         padding-top: 1em;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
-        font-family: 'Epilogue', Helvetica, Arial, sans-serif;
+        font-family: 'Spartan', Helvetica, Arial, sans-serif;
         font-weight: 300;
       }
     }

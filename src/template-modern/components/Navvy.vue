@@ -1,10 +1,10 @@
 <template>
   <nav>
     <h1>
-      <router-link :to="{ name: 'Modern' }">drew harper</router-link>
+      <router-link :to="'About'">drew harper</router-link>
     </h1>
     <section class='jobDesc'>
-      <h2>ui/ux designer / front&nbsp;end&nbsp;dev</h2>
+      <h2>ui/ux designer / front-end&nbsp;dev</h2>
     </section>
     <section class='contact'>
       <p class=''>
@@ -33,7 +33,7 @@
     }
 
     &:hover {
-      color: $accent !important;
+      color: $accent;
     }
   }
 
@@ -70,15 +70,23 @@
 
   h1 {
     font-size: 4em;
-    font-weight: normal;
-    letter-spacing: -0.025em;
+    font-weight: 100;
+    letter-spacing: -0.05em;
     font-family: $font-subhead;
-    text-shadow: 4px 0px 3px $black;
+    text-shadow: 0px 2px 3px $black;
     transition: 0.25s ease-in;
     @include font-smoothing;
     //
     width: auto;
-    flex-grow: 0;
+    flex-grow: 1;
+
+    a {
+      color: $accent !important;
+      //
+      &:hover {
+        color: $accent !important;
+      }
+    }
 
     @media (max-width: $breakOne) {
       // flex-grow: 0;
@@ -124,9 +132,11 @@
 
     h2 {
       font-size: 1.5em;
-      letter-spacing: -0.03em;
+      letter-spacing: -0.01em;
       text-shadow: 3px 0px 3px $black;
       line-height: 2em;
+      font-weight: 400;
+      color: hsla(0, 0%, 100%, 0.85) !important;
       @include font-smoothing;
 
       @media (max-width: $breakTwo) {
@@ -167,10 +177,23 @@
 
     p {
       font-family: $font-subhead;
-      letter-spacing: -0.05em;
-      // line-height: 3rem;
-      font-size: 1rem;
+      letter-spacing: -0.01em;
+      font-weight: 100;
+      font-size: 1.2rem;
       @include font-smoothing;
+
+      &:hover {
+       //
+      }
+
+      a {
+        //
+
+        &:hover {
+          color: lighten($accent-red, 10) !important;
+          text-decoration: underline;
+        }
+      }
 
       @media (max-width: $breakOne) {
         // justify-content: center;
@@ -193,6 +216,19 @@
         // margin-bottom: -4px;
         // text-align: center;
 
+      }
+    }
+  }
+
+  h1 {
+    color: $accent-red !important;
+    text-transform: none;
+
+    a {
+      color: $accent-red !important;
+
+      &:hover {
+        color: $accent-red !important;
       }
     }
   }

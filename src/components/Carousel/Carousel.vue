@@ -161,6 +161,7 @@
   body.modern .projectBox {
     // @include box-shadow(0px, 2px, 6px, -2px, hsla(0, 0%, 0%, .9));
     background: none;
+    // stroke: orange;
 
     @media (max-width: $breakThou) {
       // min-height: initial;
@@ -336,7 +337,7 @@
       color: white !important;
 
       &:hover {
-        color: red !important;
+        color: $accent-red !important;
       }
     }
 

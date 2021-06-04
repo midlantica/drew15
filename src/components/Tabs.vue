@@ -1,6 +1,6 @@
 <template>
   <div class="tabs">
-    <router-link :to="{ name: 'Modern' }" class="modern">Modern</router-link>
+    <router-link :to="{ name: 'ModernAbout' }" class="modern">Modern</router-link>
     <router-link :to="{ name: 'Bourbon' }" class="bourbon">Bourbon</router-link>
     <router-link :to="{ name: 'Groovy' }" class="groovy">Groovy</router-link>
     <router-link :to="{ name: 'Techy' }" class="techy">Techy</router-link>
@@ -111,10 +111,10 @@
   body .tabs {
     //
     > a.modern {
-      background: #333;
+      background: $grey;
       text-shadow: 0px 0px 1px black;
       &:hover {
-        background: darken($orange, 30);
+        background: $accent-red;
       }
     }
     > a.bourbon {

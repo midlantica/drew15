@@ -37,30 +37,30 @@
       font-family: $font-subhead;
       // color: $accent-red;
       // color: magenta;
-      font-size: 1.35rem;
+      font-size: 1.25rem;
       letter-spacing: -0.01ch;
       padding: 0;
       grid-column: 2 / 3;
       grid-row: 1 / 2;
       align-self: center;
-      max-width: 30ch;
+      // max-width: 30ch;
 
       @media (min-width: $breakThou) {
-        max-width: 30ch;
+        // max-width: 30ch;
       }
 
       @media (max-width: $breakOne) {
         max-width: initial;
-        font-size: 1.65rem;
+        // font-size: 1.65rem;
       }
 
       @media (max-width: $breakTwo) {
         max-width: 30ch;
-        font-size: 1.5rem;
+        // font-size: 1.5rem;
       }
 
       @media (max-width: $breakThree) {
-        font-size: 1.25rem;
+        // font-size: 1.25rem;
       }
 
     }
@@ -74,9 +74,9 @@
 
   p {
     font-family: $font-copy;
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
     line-height: 2.6rem;
-    // color: $grey;
+    font-weight: light;
     margin: 0.5rem 0.5rem 0rem !important;
     letter-spacing: 0.03rem;
 

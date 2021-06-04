@@ -1,12 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeModern from '../template-modern/pages/HomeModern.vue'
-import SkillsModern from '../template-modern/pages/SkillsModern.vue'
-import AboutModern from '../template-modern/pages/AboutModern.vue'
-import HomeBourbon from '../template-bourbon/pages/HomeBourbon.vue'
-import HomeGroovy from '../template-groovy/pages/HomeGroovy.vue'
-import HomeTechy from '../template-techy/pages/HomeTechy.vue'
-import HomeCorp from '../template-corp/pages/HomeCorp.vue'
-import HomePunk from '../template-punk/pages/HomePunk.vue'
+import ModernRoot from './template-modern/pages/ModernRoot.vue'
+import ModernCarousel from './template-modern/pages/ModernCarousel.vue'
+import ModernSkills from './template-modern/pages/ModernSkills.vue'
+import ModernAbout from './template-modern/pages/ModernAbout.vue'
+import HomeBourbon from './template-bourbon/pages/HomeBourbon.vue'
+import HomeGroovy from './template-groovy/pages/HomeGroovy.vue'
+import HomeTechy from './template-techy/pages/HomeTechy.vue'
+import HomeCorp from './template-corp/pages/HomeCorp.vue'
+import HomePunk from './template-punk/pages/HomePunk.vue'
 import VueBodyClass from 'vue-body-class'
 
 const routes = [
@@ -17,7 +18,7 @@ const routes = [
   {
     path: '/Modern',
     name: 'Modern',
-    component: HomeModern,
+    component: ModernRoot,
     meta: {
       bodyClass: 'modern',
       title: 'Drew Harper – UI/UX Designer',
@@ -28,36 +29,26 @@ const routes = [
         // }
       ],
     },
-  },
-  {
-    path: '/ModernSkills',
-    name: 'ModernSkills',
-    component: SkillsModern,
-    meta: {
-      bodyClass: 'modern',
-      title: 'Drew Harper – UI/UX Designer',
-      metaTags: [
-        // {
-        //   name: 'description',
-        //   content: 'The home page of our example app.',
-        // }
-      ],
-    },
-  },
-  {
-    path: '/ModernAbout',
-    name: 'ModernAbout',
-    component: AboutModern,
-    meta: {
-      bodyClass: 'modern',
-      title: 'Drew Harper – UI/UX Designer',
-      metaTags: [
-        // {
-        //   name: 'description',
-        //   content: 'The home page of our example app.',
-        // }
-      ],
-    },
+    children: [
+      {
+        path: '',
+        redirect: '/Modern/About', // default child path
+      },
+      {
+        path: 'Carousel',
+        component: ModernCarousel
+      },
+      {
+        path: 'Skills',
+        component: ModernSkills
+      },
+      {
+        path: 'About',
+        name: 'ModernAbout',
+        component: ModernAbout
+      },
+      // ...other sub routes
+    ],
   },
   {
     path: '/Bourbon',
@@ -142,7 +133,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: 'ExtrasBourbon' */ '../template-modern/pages/Extras.vue'
+        /* webpackChunkName: 'ExtrasBourbon' */ './template-modern/pages/Extras.vue'
       ),
     meta: {
       bodyClass: 'bourbon extras',
@@ -163,7 +154,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: 'ExtrasBourbon' */ '../template-bourbon/pages/Extras.vue'
+        /* webpackChunkName: 'ExtrasBourbon' */ './template-bourbon/pages/Extras.vue'
       ),
     meta: {
       bodyClass: 'bourbon extras',
@@ -184,7 +175,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: 'ExtrasCorp' */ '../template-corp/pages/Extras.vue'
+        /* webpackChunkName: 'ExtrasCorp' */ './template-corp/pages/Extras.vue'
       ),
     meta: {
       bodyClass: 'corp extras',
@@ -205,7 +196,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: 'ExtrasGroovy' */ '../template-groovy/pages/Extras.vue'
+        /* webpackChunkName: 'ExtrasGroovy' */ './template-groovy/pages/Extras.vue'
       ),
     meta: {
       bodyClass: 'groovy extras',
@@ -226,7 +217,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: 'ExtrasPunk' */ '../template-punk/pages/Extras.vue'
+        /* webpackChunkName: 'ExtrasPunk' */ './template-punk/pages/Extras.vue'
       ),
     meta: {
       bodyClass: 'punk extras',
@@ -247,7 +238,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: 'ExtrasTechy' */ '../template-techy/pages/Extras.vue'
+        /* webpackChunkName: 'ExtrasTechy' */ './template-techy/pages/Extras.vue'
       ),
     meta: {
       bodyClass: 'techy extras',

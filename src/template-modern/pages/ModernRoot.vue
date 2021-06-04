@@ -1,5 +1,5 @@
 <template>
-  <transition name="fade" appear>
+  <transition name="fade" appear class="modBacker">
     <div>
 
       <transition name="topDown" appear>
@@ -15,9 +15,7 @@
       <transition name="bounce2" appear>
         <main class='mainGrid'>
 
-          <transition name="bounce6" appear>
-            <h1>ABOUTTTTTT</h1>
-          </transition>
+          <router-view></router-view>
 
         </main>
       </transition>
@@ -32,12 +30,12 @@
 
 <script>
   import Navvy from '../components/Navvy'
-  import NavvyEmpty from '../components/NavvyEmpty'
   import ModernTabs from '../components/ModernTabs'
+  import NavvyEmpty from '../components/NavvyEmpty'
 
   export default {
     // layout: 'default',
-    name: 'HomeModern',
+    name: 'ModernRoot',
     components: {
       Navvy,
       NavvyEmpty,
@@ -57,7 +55,13 @@
 
   header,
   footer {
-    @include shadow;
+    // @include shadow;
+  }
+
+  .modBacker {
+    background: hsl(282, 10%, 10%);
+    height: calc(100vh - 30px);
+
   }
 
   .mainGrid {

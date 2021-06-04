@@ -82,6 +82,35 @@
 
   }
 
+  .modern .skillsGrid {
+    // stroke: orange;
+
+    @media (min-width: 1026px) {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    @media (min-width: 563px) and (max-width: 1025px) {
+      grid-template-columns: repeat(6, minmax(88px, 1fr));
+    }
+
+    @media (min-width: 471px) and (max-width: 562px) {
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    }
+
+    @media (max-width: 470px) {
+      grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+    }
+
+    svg {
+      width: 88px;
+      // stroke: $accent;
+
+      g {
+        // stroke: $accent !important;
+      }
+    }
+  }
+
   .bourbon .skillsGrid {
     //
 
