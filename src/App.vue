@@ -117,25 +117,30 @@
       }
     }
 
-    .about p {
-      font-family: 'Epilogue', Helvetica, Arial, sans-serif;
-      font-size: 0.85em;
-      margin: 0.25rem auto;
+    .about {
+      background: hsla(340, 76%, 48%, 1) !important;
 
-      @media (max-width: $breakThou) {
-        font-size: 1.65vw;
-      }
+      p {
+        font-family: 'Epilogue', Helvetica, Arial, sans-serif;
+        font-size: calc(0.85em * 1);
+        margin: 0.25rem auto;
+        color: $ivory;
 
-      @media (max-width: $breakOne) {
-        font-size: 1.85vw;
-      }
+        @media (max-width: $breakThou) {
+          font-size: 1.65vw;
+        }
 
-      @media (max-width: $breakTwo) {
-        font-size: 2.5vw;
-      }
+        @media (max-width: $breakOne) {
+          font-size: 1.85vw;
+        }
 
-      @media (max-width: $breakThree) {
-        font-size: 3vw;
+        @media (max-width: $breakTwo) {
+          font-size: 2.5vw;
+        }
+
+        @media (max-width: $breakThree) {
+          font-size: 3vw;
+        }
       }
     }
 

@@ -75,6 +75,7 @@
     font-family: $font-subhead;
     text-shadow: 0px 2px 3px $black;
     transition: 0.25s ease-in;
+    text-align: center;
     @include font-smoothing;
     //
     width: auto;
@@ -137,6 +138,7 @@
       line-height: 2em;
       font-weight: 400;
       color: hsla(0, 0%, 100%, 0.85) !important;
+      text-align: center;
       @include font-smoothing;
 
       @media (max-width: $breakTwo) {
@@ -178,9 +180,11 @@
     p {
       font-family: $font-subhead;
       letter-spacing: -0.01em;
-      font-weight: 100;
+      font-weight: 400;
       font-size: 1.2rem;
+      text-align: center;
       @include font-smoothing;
+
 
       &:hover {
        //
@@ -223,6 +227,7 @@
   h1 {
     color: $accent-red !important;
     text-transform: none;
+    text-align: center;
 
     a {
       color: $accent-red !important;

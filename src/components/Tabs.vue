@@ -1,6 +1,6 @@
 <template>
   <div class="tabs">
-    <router-link :to="{ name: 'ModernAbout' }" class="modern">Modern</router-link>
+    <router-link :to="{ name: 'ModernCarousel' }" class="modern">Modern</router-link>
     <router-link :to="{ name: 'Bourbon' }" class="bourbon">Bourbon</router-link>
     <router-link :to="{ name: 'Groovy' }" class="groovy">Groovy</router-link>
     <router-link :to="{ name: 'Techy' }" class="techy">Techy</router-link>
@@ -48,14 +48,14 @@
   }
 
   body.modern .tabs > a.modern {
-    color: transparentize($ivory, 0.1);
-    background: darken($orange, 30);
+    color: $ivory;
+    background: hsla(340, 76%, 48%, 1);
     text-shadow: 0px 0px 1px black;
     box-shadow: 0px -2px 6px black inset;
   }
 
   body.bourbon .tabs > a.bourbon {
-    color: transparentize($ivory, 0.1);
+    color: $ivory;
     background: darken($orange, 30);
     text-shadow: 0px 0px 1px black;
     box-shadow: 0px -2px 6px black inset;

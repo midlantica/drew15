@@ -90,7 +90,7 @@
     }
 
     @media (min-width: 563px) and (max-width: 1025px) {
-      grid-template-columns: repeat(6, minmax(88px, 1fr));
+      grid-template-columns: repeat(6, minmax(100px, 1fr));
     }
 
     @media (min-width: 471px) and (max-width: 562px) {
@@ -98,11 +98,11 @@
     }
 
     @media (max-width: 470px) {
-      grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 
     svg {
-      width: 88px;
+      width: 100px;
       // stroke: $accent;
 
       g {

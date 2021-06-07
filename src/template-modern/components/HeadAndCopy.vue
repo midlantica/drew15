@@ -1,5 +1,5 @@
 <template>
-  <div class="marT1 marL1H marRH">
+  <div class="marT1 marL1H marRH marB2">
     <div class="headBlock">
       <router-link :to="{ name: 'ExtrasModern' }" class="drewhead jelloHorizontal" />
       <h1>When UX design is done right the design seems inevitable</h1>
@@ -37,7 +37,7 @@
       font-family: $font-subhead;
       // color: $accent-red;
       // color: magenta;
-      font-size: 1.25rem;
+      font-size: clamp(.85rem, 1.3rem, 1.5rem) !important;
       letter-spacing: -0.01ch;
       padding: 0;
       grid-column: 2 / 3;
@@ -69,28 +69,30 @@
   p.smallCaps {
     font-variant: small-caps !important;
     font-size: 185% !important;
-    // font-weight: 500;
+    font-weight: 300;
   }
 
   p {
     font-family: $font-copy;
-    font-size: 1rem !important;
+    font-size: clamp(.8rem, 1.25rem, 1.4rem) !important;
     line-height: 2.6rem;
-    font-weight: light;
+    font-weight: 300;
     margin: 0.5rem 0.5rem 0rem !important;
     letter-spacing: 0.03rem;
 
-    @media (max-width: $breakThou) {
+    @media (max-width: 300000rem) {
+      // font-size: 1.3rem;
+      line-height: 2.5rem !important;
       columns: 2 20ch;
-      line-height: 2.25rem !important;
       column-gap: 3rem;
       column-rule: 1px solid transparentize($accent-red, .75);
       text-justify: auto;
-      hyphens: auto;
+      hyphens: none;
     }
 
     @media (max-width: $breakOne) {
       letter-spacing: 0.05rem;
+      // font-size: 1rem !important;
       // columns: 2 200px;
       text-justify: auto;
       hyphens: auto;

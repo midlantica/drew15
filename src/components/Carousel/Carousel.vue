@@ -158,28 +158,6 @@
 
   }
 
-  body.modern .projectBox {
-    // @include box-shadow(0px, 2px, 6px, -2px, hsla(0, 0%, 0%, .9));
-    background: none;
-    // stroke: orange;
-
-    @media (max-width: $breakThou) {
-      // min-height: initial;
-    }
-
-    @media (max-width: $breakOne) {
-      //
-    }
-
-    @media (max-width: $breakTwo) {
-      // min-height: 386px;
-    }
-
-    @media (max-width: $breakThree) {
-      //
-    }
-  }
-
   body.bourbon .projectBox {
     @include box-shadow(0px, 2px, 6px, -2px, hsla(0, 0%, 0%, .9));
 
@@ -326,23 +304,6 @@
     letter-spacing: 0em;
   }
 
-  body.modern .projectHead,
-  body.modern .box p {
-    font-family: 'Spartan', Helvetica, Arial, sans-serif !important;
-    letter-spacing: 0em !important;
-    color: white !important;
-    text-transform: none;
-
-    a {
-      color: white !important;
-
-      &:hover {
-        color: $accent-red !important;
-      }
-    }
-
-  }
-
   body.corp .box {
     height: 166.25px !important;
   }
@@ -358,9 +319,52 @@
     }
   }
 
+  // .modern .projectBox >>>>>>>>
+  // .modern .projectBox >>>>>>>>
+  body.modern .projectBox {
+    // @include box-shadow(0px, 2px, 6px, -2px, hsla(0, 0%, 0%, .9));
+    background: none;
+    // stroke: orange;
+
+    @media (max-width: $breakThou) {
+      // min-height: initial;
+    }
+
+    @media (max-width: $breakOne) {
+      //
+    }
+
+    @media (max-width: $breakTwo) {
+      // min-height: 386px;
+    }
+
+    @media (max-width: $breakThree) {
+      //
+    }
+  }
+  // .modern >>>>>>>>>>>>>>>>>>
+  // .modern >>>>>>>>>>>>>>>>>>
+  body.modern .projectHead,
+  body.modern .box p {
+    font-family: 'Spartan', Helvetica, Arial, sans-serif !important;
+    // font-size: 1rem;
+    letter-spacing: 0em !important;
+    color: white !important;
+    text-transform: lowercase !important;
+
+    a {
+      color: white !important;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
   body.modern .miniGallery a .box {
     border: none !important;
     background: none !important;
+
     &:hover {
       border: none;
       box-shadow: none;
@@ -368,9 +372,10 @@
 
     p {
       color: white !important;
+      font-size: 1rem;
 
       &:hover {
-        color: red !important;
+        color: $accent-red !important;
       }
     }
   }
@@ -474,13 +479,13 @@
 
           p {
             position: relative;
-            top: -6px;
+            top: -4px;
             transition: ease-out;
           }
 
           svg {
             position: relative !important;
-            top: -6px !important;
+            top: -4px !important;
             transition: ease-out;
           }
         }
@@ -495,7 +500,6 @@
 
         &.Mobile {
           // background: url(/img/carousel/car-icon-mobile.svg) no-repeat center center;
-
 
           @media (max-width: $breakThou) {
             //
@@ -533,6 +537,71 @@
         }
       }
 
+
     }
+  }
+
+  // .modern Carousel box >>>>>>>>>>>>>
+  // .modern Carousel box >>>>>>>>>>>>>
+  // .modern Carousel box >>>>>>>>>>>>>
+  $ruby: hsla(340, 76%, 48%, 1);
+  $modernCol: $white;
+  .modern .miniGallery a .box {
+    // background: $ruby;
+
+    p {
+      position: relative;
+      top: 0px;
+      transition: ease-out;
+    }
+
+    svg path,
+    svg polygon,
+    svg rect,
+    svg polyline {
+      stroke: $modernCol;
+    }
+
+    &:hover {
+      transition: ease-out;
+      border: 1px solid transparentize(grey, 0.5);
+      box-shadow: 0px 2px 4px -1px hsla(0, 0%, 50%, 0.25);
+      color: yellow;
+
+      p {
+        position: relative;
+        top: 0px;
+        transition: ease-out;
+        color: $ruby !important;
+
+        // &:hover {
+        //   color: aqua !important;
+        // }
+      }
+
+      // .brickBack {
+      //   fill: $modernCol;
+      //   transition: fill 10s ease-out;
+      // }
+      // .brickCircles {
+      //   fill: $modernCol;
+      //   transition: fill 10s ease-out;
+      // }
+
+      svg {
+        position: initial !important;
+        top: initial !important;
+        transition: ease-out;
+
+        &:hover {
+          // background: $accent-red;
+          stroke: $accent-red;
+          // stroke-width: 2px;
+          // fill-opacity: 0.5;
+          stroke-opacity: 0.8;
+        }
+      }
+    }
+
   }
 </style>

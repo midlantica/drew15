@@ -105,17 +105,18 @@ $mortar: .25rem;
   }
 }
 
-$modernCol: #9BC4CB;
+$modernCol: $white;
+$ruby: hsla(340, 76%, 48%, 1);
 body.modern .box {
 
   &:hover {
     //
     .brickBack {
-      fill: $modernCol;
+      fill: $ruby;
       transition: fill 10s ease-out;
     }
     .brickCircles {
-      fill: $modernCol;
+      fill: $ruby;
       transition: fill 10s ease-out;
     }
   }

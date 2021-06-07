@@ -1,8 +1,8 @@
 <template>
   <div class="modernTabs">
-    <router-link to="/Modern/About">About</router-link>
     <router-link to="/Modern/Carousel">Carousel</router-link>
     <router-link to="/Modern/Skills">Skills</router-link>
+    <router-link to="/Modern/About">About</router-link>
   </div>
 </template>
 
@@ -23,7 +23,7 @@
 
     a {
       color: white;
-      margin: auto .5rem;
+      margin: auto 0.75rem;
 
       &:hover {
         color: $accent-red;

@@ -32,14 +32,16 @@ const routes = [
     children: [
       {
         path: '',
-        redirect: '/Modern/About', // default child path
+        redirect: '/Modern/Carousel', // default child path
       },
       {
         path: 'Carousel',
+        name: 'ModernCarousel',
         component: ModernCarousel
       },
       {
         path: 'Skills',
+        name: 'ModernSkills',
         component: ModernSkills
       },
       {
