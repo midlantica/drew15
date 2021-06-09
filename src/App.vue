@@ -97,7 +97,7 @@
 // #############################
   // MODERN
   .modern {
-    background: #342E37;
+    background: hsl(320, 100%, 9%);
 
     .wrapper {
       // background: url(./template-modern/assets/img/bg/graphy_2.png) repeat;
@@ -122,24 +122,24 @@
 
       p {
         font-family: 'Epilogue', Helvetica, Arial, sans-serif;
-        font-size: calc(0.85em * 1);
+        font-size: clamp(1rem, 1.2rem, 0.75rem) !important;
         margin: 0.25rem auto;
         color: $ivory;
 
         @media (max-width: $breakThou) {
-          font-size: 1.65vw;
+          // font-size: 1.65vw;
         }
 
         @media (max-width: $breakOne) {
-          font-size: 1.85vw;
+          // font-size: 1.85vw;
         }
 
         @media (max-width: $breakTwo) {
-          font-size: 2.5vw;
+          // font-size: 2.5vw;
         }
 
         @media (max-width: $breakThree) {
-          font-size: 3vw;
+          // font-size: 3vw;
         }
       }
     }
@@ -147,7 +147,7 @@
     &.extras .extrasWrapper {
       //
       h1 {
-        font-size: 1.75em;
+        font-size: clamp(1rem, 1.3rem, 0.75rem) !important;
         padding-top: 1em;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;

@@ -12,7 +12,7 @@
         <ModernTabs />
       </transition>
 
-      <transition name="bounce2" appear>
+      <transition name="bounce4" appear>
         <main class='mainGrid'>
 
           <router-view></router-view>
@@ -54,8 +54,10 @@
 
   .modBacker {
     background: hsl(282, 10%, 10%);
-    height: calc(100vh - 30px);
-
+    height: 100vh;
+    background-image: url(../assets/img/bg/bg_bak_dk4.jpeg);
+    background-size: cover;
+    // transform: scaleX(-1);
   }
 
   .mainGrid {
@@ -84,7 +86,7 @@
     grid-row: 1;
     align-content: center;
     max-width: 500px;
-    width: 70%;
+    width: 85%;
     justify-self: center;
 
     @media (max-width: $breakThou) {

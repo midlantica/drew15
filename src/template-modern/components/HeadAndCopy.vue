@@ -1,5 +1,5 @@
 <template>
-  <div class="marT1 marL1H marRH marB2">
+  <div class="marXBal3 marB2">
     <div class="headBlock">
       <router-link :to="{ name: 'ExtrasModern' }" class="drewhead jelloHorizontal" />
       <h1>When UX design is done right the design seems inevitable</h1>
@@ -18,7 +18,7 @@
     grid-column-gap: 6px;
     justify-items: start;
     align-items: center;
-    margin-top: .5rem;
+    margin-bottom: 1rem;
 
     a.drewhead {
       margin-right: 1em;
@@ -35,6 +35,7 @@
     h1 {
       display: inline-block;
       font-family: $font-subhead;
+      font-weight: 400;
       // color: $accent-red;
       // color: magenta;
       font-size: clamp(.85rem, 1.3rem, 1.5rem) !important;
@@ -74,10 +75,10 @@
 
   p {
     font-family: $font-copy;
-    font-size: clamp(.8rem, 1.25rem, 1.4rem) !important;
+    font-size: clamp(.85rem, 1.1rem, 1.4rem) !important;
     line-height: 2.6rem;
     font-weight: 300;
-    margin: 0.5rem 0.5rem 0rem !important;
+    // margin: 0.5rem 0.5rem 0rem !important;
     letter-spacing: 0.03rem;
 
     @media (max-width: 300000rem) {

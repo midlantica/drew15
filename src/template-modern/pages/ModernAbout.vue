@@ -1,8 +1,12 @@
 <template>
-  <transition name="bounce6" appear>
+  <transition name="bounce2" appear>
     <div>
-      <HeadAndCopy />
-      <About />
+      <transition name="bounce4" appear>
+        <HeadAndCopy />
+      </transition>
+      <transition name="bounce6" appear>
+        <About />
+      </transition>
     </div>
   </transition>
 </template>
@@ -27,12 +31,12 @@
 </script>
 
 <style lang='scss' scoped>
-  // @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,300;0,700;0,900;1,100;1,300;1,700;1,900&display=swap');
   @import '@/template-modern/assets/css/modern-main.scss';
 
   .about {
     grid-column: 2 / 3;
     grid-row: 2;
+    margin: 0rem 2rem;
 
     @media (max-width: $breakThou) {
       grid-column: 1 / 3;

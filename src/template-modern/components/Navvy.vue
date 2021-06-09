@@ -1,7 +1,7 @@
 <template>
   <nav>
     <h1>
-      <router-link :to="'About'">drew harper</router-link>
+      <router-link :to="'About'">&nbsp;drew harper</router-link>
     </h1>
     <section class='jobDesc'>
       <h2>ui/ux designer / front-end&nbsp;dev</h2>
@@ -48,6 +48,7 @@
     padding: 0;
     color: $ivory !important;
     text-transform: none;
+    font-weight: 200;
 
     a {
       color: $ivory !important;
@@ -70,7 +71,7 @@
 
   h1 {
     font-size: 4em;
-    font-weight: 100;
+    font-weight: 200;
     letter-spacing: -0.05em;
     font-family: $font-subhead;
     text-shadow: 0px 2px 3px $black;

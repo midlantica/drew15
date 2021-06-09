@@ -11,7 +11,7 @@
 
   .about {
     background: #fbf3bb;
-    padding: 0.75rem 1.1rem .75rem 1.1rem;
+    padding: 1.25rem 1.75rem;
     // display: block;
     display: flex;
     flex-direction: row;

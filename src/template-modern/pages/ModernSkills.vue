@@ -1,5 +1,5 @@
 <template>
-  <transition name="bounce6" appear>
+  <transition name="bounce3" appear>
     <Skills />
   </transition>
 </template>

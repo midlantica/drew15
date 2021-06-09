@@ -1,5 +1,5 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" width="111" height="111" viewBox="0 0 111 111">
+  <svg class="iconSVG" xmlns="http://www.w3.org/2000/svg" width="111" height="111" viewBox="0 0 111 111">
     <g fill="none" fill-rule="evenodd" transform="translate(18.474 18.466)">
       <polyline stroke="grey" stroke-linejoin="round" points="48.67 48.917 38.705 23.154 30.003 41.953 21.299 31.698 10.978 48.856"/>
       <g class="brickBack" stroke="grey" stroke-linecap="round" stroke-linejoin="round" transform="translate(4.432 3.466)">

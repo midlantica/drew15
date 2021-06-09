@@ -341,13 +341,17 @@
     @media (max-width: $breakThree) {
       //
     }
+
+    .projectBox__top {
+      margin-bottom: 1rem !important;
+    }
   }
   // .modern >>>>>>>>>>>>>>>>>>
   // .modern >>>>>>>>>>>>>>>>>>
   body.modern .projectHead,
   body.modern .box p {
     font-family: 'Spartan', Helvetica, Arial, sans-serif !important;
-    // font-size: 1rem;
+    font-size: 1rem;
     letter-spacing: 0em !important;
     color: white !important;
     text-transform: lowercase !important;
@@ -359,25 +363,8 @@
         color: white;
       }
     }
-  }
 
-  body.modern .miniGallery a .box {
-    border: none !important;
-    background: none !important;
 
-    &:hover {
-      border: none;
-      box-shadow: none;
-    }
-
-    p {
-      color: white !important;
-      font-size: 1rem;
-
-      &:hover {
-        color: $accent-red !important;
-      }
-    }
   }
 
   body.punk .miniGallery {
@@ -386,6 +373,7 @@
 
   body.modern .miniGallery {
     background: none;
+    gap: 1rem;
   }
 
   body.corp .VueCarousel.druCarousel {
@@ -546,37 +534,76 @@
   // .modern Carousel box >>>>>>>>>>>>>
   $ruby: hsla(340, 76%, 48%, 1);
   $modernCol: $white;
+  // >>>>>>
   .modern .miniGallery a .box {
-    // background: $ruby;
+    background: none !important;
+    // border: 1px solid #1b171c !important;
+    border: 1px solid transparent !important;
+    border-radius: .75rem;
 
     p {
-      position: relative;
-      top: 0px;
+      color: $white !important;
+      font-size: 1rem;
       transition: ease-out;
+
+      &:hover {
+        color: $accent-red !important;
+        transition: ease-out;
+      }
     }
 
-    svg path,
-    svg polygon,
-    svg rect,
-    svg polyline {
-      stroke: $modernCol;
+    // &:hover {
+    //   position: relative !important;
+    //   top: 10px !important;
+    //   transition: ease-out;
+    // }
+
+    .iconSVG {
+      position: relative !important;
+      top: 10px !important;
+      transition: ease-out;
+
+      &:hover {
+        position: relative !important;
+        top: 10px !important;
+        transition: ease-out;
+      }
+
+      svg path,
+      svg polygon,
+      svg rect,
+      svg polyline {
+        stroke: $modernCol;
+        // position: relative !important;
+        // top: -10px !important;
+        // transition: ease-out;
+      }
     }
+
 
     &:hover {
       transition: ease-out;
-      border: 1px solid transparentize(grey, 0.5);
-      box-shadow: 0px 2px 4px -1px hsla(0, 0%, 50%, 0.25);
-      color: yellow;
+      // border: 1px solid transparentize(grey, 0.5);
+      // box-shadow: 0px 0px 4px 0px hsl(0, 0%, 100%);
+      // color: yellow;
+      // border: 1px solid transparentize($ruby, .2) !important;
+      border-radius: .75rem;
+      // background: transparentize($ruby, .9) !important;
+      border: 1px solid transparentize($white, .5) !important;
+      box-shadow: 0px 0px .5rem 0px $ruby;
 
       p {
         position: relative;
-        top: 0px;
+        top: 0px !important;
         transition: ease-out;
-        color: $ruby !important;
+        // color: $ruby !important;
 
-        // &:hover {
-        //   color: aqua !important;
-        // }
+        &:hover {
+          color: $white !important;
+          position: relative;
+          top: 0px !important;
+          transition: ease-out;
+        }
       }
 
       // .brickBack {
@@ -589,8 +616,8 @@
       // }
 
       svg {
-        position: initial !important;
-        top: initial !important;
+        position: relative !important;
+        top: 10 !important;
         transition: ease-out;
 
         &:hover {
@@ -599,6 +626,9 @@
           // stroke-width: 2px;
           // fill-opacity: 0.5;
           stroke-opacity: 0.8;
+          position: relative !important;
+          top: 10 !important;
+          transition: ease-out;
         }
       }
     }
