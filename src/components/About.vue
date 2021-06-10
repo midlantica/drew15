@@ -57,7 +57,7 @@
 
   .flag {
     display: block;
-    background: url("/img/brit_amer_flag.svg");
+    background: url("/img/brit_amer_flag_trans.svg");
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: 1em;
@@ -120,6 +120,44 @@
       }
 
     }
+  }
+
+  .modern .about {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+
+    @media (max-width: 760px) {
+      flex-direction: row;
+    }
+
+    .flagBox {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-family: Spartan, "Times New Roman", Times, serif !important;
+      font-size: clamp(.75rem, .8rem, 1.15rem) !important;
+      letter-spacing: .000rem;
+      line-height: 1.4rem;
+      margin: 0;
+      font-weight: 300;
+      color: $ivory;
+
+      // @media (max-width: $breakThou) {
+      //   font-size: 1.15rem;
+      //   line-height: 1.75rem;
+      // }
+
+      // @media (max-width: $breakTwo) {
+      //   font-size: 1rem;
+      //   line-height: 1.5rem;
+      // }
+
+    }
+
   }
 
 </style>

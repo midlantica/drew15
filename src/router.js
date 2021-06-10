@@ -37,17 +37,47 @@ const routes = [
       {
         path: 'Carousel',
         name: 'ModernCarousel',
-        component: ModernCarousel
+        component: ModernCarousel,
+        meta: {
+          bodyClass: 'carousel',
+          title: 'Drew Harper – UI/UX Designer Carousel',
+          metaTags: [
+            // {
+            //   name: 'description',
+            //   content: 'The home page of our example app.',
+            // }
+          ],
+        },
       },
       {
         path: 'Skills',
         name: 'ModernSkills',
-        component: ModernSkills
+        component: ModernSkills,
+        meta: {
+          bodyClass: 'skills',
+          title: 'Drew Harper – UI/UX Designer Skills',
+          metaTags: [
+            // {
+            //   name: 'description',
+            //   content: 'The home page of our example app.',
+            // }
+          ],
+        },
       },
       {
         path: 'About',
         name: 'ModernAbout',
-        component: ModernAbout
+        component: ModernAbout,
+        meta: {
+          bodyClass: 'about',
+          title: 'Drew Harper – UI/UX Designer About',
+          metaTags: [
+            // {
+            //   name: 'description',
+            //   content: 'The home page of our example app.',
+            // }
+          ],
+        },
       },
       // ...other sub routes
     ],

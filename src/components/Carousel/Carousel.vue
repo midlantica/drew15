@@ -321,6 +321,12 @@
 
   // .modern .projectBox >>>>>>>>
   // .modern .projectBox >>>>>>>>
+
+  body.modern .box {
+    width: 130px !important;
+    height: 140px !important;
+  }
+
   body.modern .projectBox {
     // @include box-shadow(0px, 2px, 6px, -2px, hsla(0, 0%, 0%, .9));
     background: none;
@@ -343,7 +349,7 @@
     }
 
     .projectBox__top {
-      margin-bottom: 1rem !important;
+      margin-bottom: .5rem !important;
     }
   }
   // .modern >>>>>>>>>>>>>>>>>>
@@ -373,7 +379,7 @@
 
   body.modern .miniGallery {
     background: none;
-    gap: 1rem;
+    gap: .75rem;
   }
 
   body.corp .VueCarousel.druCarousel {
@@ -543,7 +549,7 @@
 
     p {
       color: $white !important;
-      font-size: 1rem;
+      font-size: .85rem;
       transition: ease-out;
 
       &:hover {
@@ -590,7 +596,8 @@
       border-radius: .75rem;
       // background: transparentize($ruby, .9) !important;
       border: 1px solid transparentize($white, .5) !important;
-      box-shadow: 0px 0px .5rem 0px $ruby;
+      // box-shadow: 0px 0px .5rem 0px $ruby;
+      box-shadow: 0px 0px 1rem 0px $ruby;
 
       p {
         position: relative;

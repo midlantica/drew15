@@ -20,9 +20,9 @@
         </main>
       </transition>
 
-      <footer>
+      <!-- <footer>
         <NavvyEmpty />
-      </footer>
+      </footer> -->
 
     </div>
   </transition>
@@ -31,14 +31,14 @@
 <script>
   import Navvy from '../components/Navvy'
   import ModernTabs from '../components/ModernTabs'
-  import NavvyEmpty from '../components/NavvyEmpty'
+  // import NavvyEmpty from '../components/NavvyEmpty'
 
   export default {
     // layout: 'default',
     name: 'ModernRoot',
     components: {
       Navvy,
-      NavvyEmpty,
+      // NavvyEmpty,
       ModernTabs
     },
     data() {
@@ -54,9 +54,12 @@
 
   .modBacker {
     background: hsl(282, 10%, 10%);
-    height: 100vh;
+    height: 770px;
     background-image: url(../assets/img/bg/bg_bak_dk4.jpeg);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     // transform: scaleX(-1);
   }
 
@@ -65,6 +68,7 @@
     grid-template-columns: 1fr;
     // grid-gap: 1em;
     margin: 0em 0 1em;
+    width: 90%;
 
     @media (max-width: $breakThou) {
       // grid-template-columns: 1fr;

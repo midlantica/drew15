@@ -83,27 +83,37 @@
   }
 
   .modern .skillsGrid {
-    // stroke: orange;
+    width: 60%;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    justify-content: center;
+    margin: 1rem auto;
 
-    @media (min-width: 1026px) {
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    @media (min-width: 701px) {
+      width: 50%;
+      grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
     }
 
-    @media (min-width: 563px) and (max-width: 1025px) {
-      grid-template-columns: repeat(6, minmax(100px, 1fr));
-    }
+    // @media (min-width: 563px) and (max-width: 1025px) {
+    //   grid-template-columns: repeat(auto-fit, minmax(calc(33.3%), 1fr));
+    //   width: 70%;
+    // }
 
-    @media (min-width: 471px) and (max-width: 562px) {
-      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-    }
+    // @media (min-width: 701px) and (max-width: 1025px) {
+    //   grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    //   width: 60%;
+    // }
 
-    @media (max-width: 470px) {
+    @media (max-width: 700px) {
       grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      width: 80%;
+      // background: rgba(255, 0, 0, 0.144);
     }
 
     svg {
       width: 100px;
       // stroke: $accent;
+      // margin-bottom: 1rem;
+      margin: 0rem auto .75rem;
 
       g {
         // stroke: $accent !important;

@@ -1,5 +1,5 @@
 <template>
-  <div class="marXBal3 marB2">
+  <div>
     <div class="headBlock">
       <router-link :to="{ name: 'ExtrasModern' }" class="drewhead jelloHorizontal" />
       <h1>When UX design is done right the design seems inevitable</h1>
@@ -35,19 +35,22 @@
     h1 {
       display: inline-block;
       font-family: $font-subhead;
-      font-weight: 400;
-      // color: $accent-red;
-      // color: magenta;
-      font-size: clamp(.85rem, 1.3rem, 1.5rem) !important;
       letter-spacing: -0.01ch;
       padding: 0;
       grid-column: 2 / 3;
       grid-row: 1 / 2;
       align-self: center;
-      // max-width: 30ch;
+      margin-top: 2.2rem;
+      // >>>>>>
+      width: 20ch;
+      color: #da2561 !important;
+      font-weight: 400;
+      font-size: clamp(.8rem, 1.1rem, 1.25rem) !important;
+      text-shadow: 1px 1px 4px black;
 
-      @media (min-width: $breakThou) {
-        // max-width: 30ch;
+      @media (max-width: 535px) {
+        width: initial;
+        margin-top: .75rem;
       }
 
       @media (max-width: $breakOne) {
@@ -75,15 +78,15 @@
 
   p {
     font-family: $font-copy;
-    font-size: clamp(.85rem, 1.1rem, 1.4rem) !important;
-    line-height: 2.6rem;
+    font-size: clamp(.8rem, .85rem, 1.25rem) !important;
+    line-height: 2rem;
     font-weight: 300;
-    // margin: 0.5rem 0.5rem 0rem !important;
+    margin: 0.0rem auto 1rem !important;
     letter-spacing: 0.03rem;
 
     @media (max-width: 300000rem) {
       // font-size: 1.3rem;
-      line-height: 2.5rem !important;
+      // line-height: 2.5rem !important;
       columns: 2 20ch;
       column-gap: 3rem;
       column-rule: 1px solid transparentize($accent-red, .75);

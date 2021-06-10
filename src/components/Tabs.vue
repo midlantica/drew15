@@ -47,7 +47,7 @@
     }
   }
 
-  body.modern .tabs > a.modern {
+  body.modern .tabs a.modern {
     color: $ivory;
     background: hsla(340, 76%, 48%, 1);
     text-shadow: 0px 0px 1px black;
@@ -114,7 +114,7 @@
       background: $grey;
       text-shadow: 0px 0px 1px black;
       &:hover {
-        background: $accent-red;
+        background: #d71d5b;
       }
     }
     > a.bourbon {

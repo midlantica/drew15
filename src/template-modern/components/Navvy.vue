@@ -70,11 +70,11 @@
   }
 
   h1 {
-    font-size: 4em;
+    font-size: 3.75rem;
     font-weight: 200;
     letter-spacing: -0.05em;
     font-family: $font-subhead;
-    text-shadow: 0px 2px 3px $black;
+    text-shadow: 1px 1px 4px $black;
     transition: 0.25s ease-in;
     text-align: center;
     @include font-smoothing;
@@ -133,23 +133,24 @@
     }
 
     h2 {
-      font-size: 1.5em;
+      font-size: 1.15rem;
       letter-spacing: -0.01em;
       text-shadow: 3px 0px 3px $black;
       line-height: 2em;
       font-weight: 400;
       color: hsla(0, 0%, 100%, 0.85) !important;
       text-align: center;
+      text-shadow: 1px 1px 4px$black;
       @include font-smoothing;
 
       @media (max-width: $breakTwo) {
         // display: inline-block;
-        // font-size: 1.85em !important;
+        // font-size: 1.85rem !important;
         // margin-top: -3px;
       }
 
       @media (max-width: $breakThree) {
-        // font-size: 1.25em !important;
+        // font-size: 1.25rem !important;
         // line-height: 2em;
       }
     }
@@ -158,11 +159,11 @@
   section.contact {
     // text-transform: uppercase;
     margin-top: 0.2em;
-    margin-left: 1em;
-    margin-bottom: 4px;
+    // margin-left: 1em;
+    margin-bottom: 0rem;
     z-index: 10;
     // border: 1px solid $outBlue;
-    text-shadow: 3px 0px 1px $black;
+    // text-shadow: 3px 0px 1px $black;
     transition: 0.25s ease-in;
 
     @media (max-width: $breakOne) {
@@ -182,21 +183,27 @@
       font-family: $font-subhead;
       letter-spacing: -0.01em;
       font-weight: 400;
-      font-size: 1.2rem;
+      font-size: 1rem;
       text-align: center;
+      margin-top: .5rem;
+      text-shadow: 1px 1px 4px $black;
       @include font-smoothing;
-
 
       &:hover {
        //
       }
 
       a {
-        //
+        // border-bottom: 1px solid $yellow-red;
+        color: $white;
+        padding: .25rem;
+        // background: transparentize($white, .65);
 
         &:hover {
-          color: lighten($accent-red, 10) !important;
+          color: $yellow-red !important;
           text-decoration: underline;
+          text-decoration: none;
+          background: darken($ruby, 15);
         }
       }
 

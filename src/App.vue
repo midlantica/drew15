@@ -118,30 +118,10 @@
     }
 
     .about {
-      background: hsla(340, 76%, 48%, 1) !important;
-
-      p {
-        font-family: 'Epilogue', Helvetica, Arial, sans-serif;
-        font-size: clamp(1rem, 1.2rem, 0.75rem) !important;
-        margin: 0.25rem auto;
-        color: $ivory;
-
-        @media (max-width: $breakThou) {
-          // font-size: 1.65vw;
-        }
-
-        @media (max-width: $breakOne) {
-          // font-size: 1.85vw;
-        }
-
-        @media (max-width: $breakTwo) {
-          // font-size: 2.5vw;
-        }
-
-        @media (max-width: $breakThree) {
-          // font-size: 3vw;
-        }
-      }
+      // background: hsla(340, 76%, 48%, 1) !important;
+      background: linear-gradient(180deg,hsl(340deg 76% 48% / 61%),hsl(340deg 76% 31% / 62%)) !important;
+      width: 50%;
+      margin: 0 auto;
     }
 
     &.extras .extrasWrapper {

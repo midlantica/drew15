@@ -1,16 +1,22 @@
 <template>
   <div class="modernTabs">
-    <router-link to="/Modern/Carousel">Carousel</router-link>
-    <router-link to="/Modern/Skills">Skills</router-link>
-    <router-link to="/Modern/About">About</router-link>
+    <router-link to="/Modern/Carousel" class="carouselTab">Carousel</router-link>
+    <router-link to="/Modern/Skills" class="skillsTab">Skills</router-link>
+    <router-link to="/Modern/About" class="aboutTab">About</router-link>
   </div>
 </template>
 
 <style lang='scss' scoped>
   @import '@/template-modern/assets/css/modern-main.scss';
 
+  body.modern.carousel a.carouselTab,
+  body.modern.skills a.skillsTab,
+  body.modern.about a.aboutTab {
+    color: white !important;
+  }
+
   .modernTabs {
-    margin: .85rem 0 1rem;
+    margin: 0.75rem 0 0.5rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -26,25 +32,25 @@
       margin: .5rem 0.5rem;
       padding: 0.55rem 1rem 0.4rem;
       // border: 1px solid $ruby !important;
-      border-radius: 1.25rem;
+      border-radius: 2rem;
       text-decoration: none !important;
       text-transform: uppercase;
-      font-size: .65rem;
+      font-size: .5rem;
       font-weight: 600;
       letter-spacing: 0.075ch;
       background: $ruby;
       background: linear-gradient(180deg,
-        darken($ruby, 0),
-        darken($ruby, 15)
-      );
+          darken($ruby, 0),
+          darken($ruby, 15)
+        );
 
       &:hover {
         color: $white;
         background: $ruby;
         background: linear-gradient(0deg,
-        darken($ruby, 0),
-        darken($ruby, 15)
-      );
+          darken($ruby, 0),
+          darken($ruby, 15)
+        );
       }
     }
   }
