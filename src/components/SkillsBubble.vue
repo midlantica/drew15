@@ -5,9 +5,9 @@
 </template>
 
 <style lang="scss" scoped>
+  @import "@/template-modern/assets/css/modern-main.scss";
 
   .skillsBubble {
-    // background: #fbf3bb;
     background: transparent;
     padding: 1.25rem 1.75rem;
     // display: block;
@@ -19,8 +19,9 @@
     align-items: center;
     align-content: center;
     align-self: center;
-    border-radius: 2px;
-    @include box-shadow(0px, 1px, 2px, 0px, hsla(0, 0%, 0%, 0.5));
+    border: 1px solid $ruby;
+    border-radius: .5rem;
+    @include box-shadow(0px, 1px, 20px, 0px, hsl(0, 0%, 0%));
 
     @media (max-width: $breakThou) {
       margin: 0rem 0 .5rem;
@@ -36,11 +37,12 @@
   }
 
   p {
-    display: block;
-    color: lighten($grey, 15);
+    // display: block;
     font-size: .9em;
     line-height: 1.4em;
     letter-spacing: 0.05em;
+    color: white;
+    font-weight: 500;
     //
     align-content: center;
     align-items: center;

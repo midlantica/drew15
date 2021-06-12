@@ -47,6 +47,11 @@
       font-weight: 400;
       font-size: clamp(.8rem, 1.1rem, 1.25rem) !important;
       text-shadow: 1px 1px 4px black;
+      // >>>>>>
+      color: white !important;
+      font-weight: 500;
+      font-size: 1.1rem !important;
+      width: 20ch;
 
       @media (max-width: 535px) {
         width: initial;
@@ -81,36 +86,37 @@
     font-size: clamp(.8rem, .85rem, 1.25rem) !important;
     line-height: 2rem;
     font-weight: 300;
-    margin: 0.0rem auto 1rem !important;
+    margin: 0 !important;
+    // margin: 0.0rem auto 1rem !important;
     letter-spacing: 0.03rem;
 
-    @media (max-width: 300000rem) {
-      // font-size: 1.3rem;
-      // line-height: 2.5rem !important;
-      columns: 2 20ch;
-      column-gap: 3rem;
-      column-rule: 1px solid transparentize($accent-red, .75);
-      text-justify: auto;
-      hyphens: none;
-    }
+    // @media (max-width: 300000rem) {
+    //   // font-size: 1.3rem;
+    //   // line-height: 2.5rem !important;
+    //   columns: 2 20ch;
+    //   column-gap: 3rem;
+    //   column-rule: 1px solid transparentize($accent-red, .75);
+    //   text-justify: auto;
+    //   hyphens: none;
+    // }
 
-    @media (max-width: $breakOne) {
-      letter-spacing: 0.05rem;
-      // font-size: 1rem !important;
-      // columns: 2 200px;
-      text-justify: auto;
-      hyphens: auto;
-    }
+    // @media (max-width: $breakOne) {
+    //   letter-spacing: 0.05rem;
+    //   // font-size: 1rem !important;
+    //   // columns: 2 200px;
+    //   text-justify: auto;
+    //   hyphens: auto;
+    // }
 
-    @media (max-width: 670px) {
-      columns: initial;
-      text-justify: auto;
-      hyphens: auto;
-    }
+    // @media (max-width: 670px) {
+    //   columns: initial;
+    //   text-justify: auto;
+    //   hyphens: auto;
+    // }
 
-    @media (max-width: $breakTwo) {
-      text-justify: auto;
-      hyphens: auto;
-    }
+    // @media (max-width: $breakTwo) {
+    //   text-justify: auto;
+    //   hyphens: auto;
+    // }
   }
 </style>

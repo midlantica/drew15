@@ -1,5 +1,5 @@
 <svg width="246" height="146" viewBox="0 0 246 146" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="246" height="146" fill="white" fill-opacity="0.5"/>
+<g style="mix-blend-mode:luminosity">
 <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="246" height="146">
 <path d="M246 0H0V146H246V0Z" fill="white"/>
 </mask>
@@ -18,6 +18,7 @@
 </g>
 <g style="mix-blend-mode:hard-light">
 <path d="M62.1139 49L0.0104813 10.9352L0 0L0.0556928 8.0393e-05L80 49H62.1139ZM98 97L17.7487 146L0 145.921L80.0931 97H98ZM128 146H108.023V87.6H0V58.4H108.023V0H128V146Z" fill="#CF142B" fill-opacity="0.5"/>
+</g>
 </g>
 </g>
 </svg>

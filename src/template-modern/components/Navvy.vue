@@ -183,20 +183,17 @@
       font-family: $font-subhead;
       letter-spacing: -0.01em;
       font-weight: 400;
-      font-size: 1rem;
+      font-size: 1rem !important;
       text-align: center;
       margin-top: .5rem;
       text-shadow: 1px 1px 4px $black;
       @include font-smoothing;
 
-      &:hover {
-       //
-      }
-
       a {
         // border-bottom: 1px solid $yellow-red;
-        color: $white;
-        padding: .25rem;
+        // color: $white;
+        // font: 1rem !important;
+        // padding: .25rem;
         // background: transparentize($white, .65);
 
         &:hover {
@@ -230,6 +227,10 @@
 
       }
     }
+  }
+
+  section.contact p a {
+    font-size: 1rem;
   }
 
   h1 {

@@ -57,7 +57,7 @@
 
   .flag {
     display: block;
-    background: url("/img/brit_amer_flag_trans.svg");
+    background: url("/img/brit_amer_flag.svg");
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: 1em;
@@ -127,14 +127,32 @@
     flex-direction: column;
     margin: auto;
     width: 100%;
+    gap: 1rem;
+    box-shadow: 2px 2px 10px 0px black;
 
     @media (max-width: 760px) {
       flex-direction: row;
     }
 
     .flagBox {
-      width: 100%;
-      margin-bottom: 1rem;
+      width: auto;
+      // margin-bottom: 1rem;
+    }
+
+    .flag {
+      display: block;
+      background: url("/img/brit_amer_flag.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-right: initial !important;
+      background-position-y: center;
+      //
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      width: 100px;
+      height: 60px;
     }
 
     p {
