@@ -1,14 +1,6 @@
 $timeBase: 1;
-
 // bounce
-.bounce-enter-active {
-  animation: bounce-in ($timeBase * .25 + s);
-}
-.bounce-leave-active {
-  animation: bounce-in ($timeBase * .25 + s) reverse;
-}
-
-@keyframes bounce-in {
+@keyframes bounceIn {
   0% {
     transform: scale(0);
     opacity: 0;
@@ -27,99 +19,93 @@ $timeBase: 1;
   }
 }
 
+.bounce-enter-active {
+  animation: bounceIn ($timeBase * .25 + s);
+}
+.bounce-leave-active {
+  animation: bounceIn ($timeBase * .25 + s) reverse;
+}
 // bounce2
 .bounce2-enter-active {
-  animation: bounce-in ($timeBase * .75 + s);
+  animation: bounceIn ($timeBase * .75 + s);
 }
 .bounce2-leave-active {
-  animation: bounce-in ($timeBase * .25 + s) reverse;
+  animation: bounceIn ($timeBase * .25 + s) reverse;
 }
-
 // bounce3
 .bounce3-enter-active {
-  animation: bounce-in ($timeBase * 1 + s);
+  animation: bounceIn ($timeBase * 1 + s);
 }
 .bounce3-leave-active {
-  animation: bounce-in ($timeBase * .25 + s) reverse;
+  animation: bounceIn ($timeBase * .25 + s) reverse;
 }
-
 // bounce4
 .bounce4-enter-active {
-  animation: bounce-in ($timeBase * 1.25 + s);
+  animation: bounceIn ($timeBase * 1.25 + s);
 }
 .bounce4-leave-active {
-  animation: bounce-in ($timeBase * .25 + s) reverse;
+  animation: bounceIn ($timeBase * .25 + s) reverse;
 }
-
 // bounce5
 .bounce5-enter-active {
-  animation: bounce-in($timeBase * 1.5 + s);
+  animation: bounceIn($timeBase * 1.5 + s);
 }
 .bounce5-leave-active {
-  animation: bounce-in ($timeBase * .25 + s) reverse;
+  animation: bounceIn ($timeBase * .25 + s) reverse;
 }
-
 // bounce6
 .bounce6-enter-active {
-  animation: bounce-in ($timeBase * 1.75 + s);
+  animation: bounceIn ($timeBase * 1.75 + s);
 }
 .bounce6-leave-active {
-  animation: bounce-in ($timeBase * .25 + s) reverse;
+  animation: bounceIn ($timeBase * .25 + s) reverse;
 }
-
 // bounce7
 .bounce7-enter-active {
-  animation: bounce-in ($timeBase * 2 + s);
+  animation: bounceIn ($timeBase * 2 + s);
 }
 .bounce7-leave-active {
-  animation: bounce-in ($timeBase * .25 + s) reverse;
+  animation: bounceIn ($timeBase * .25 + s) reverse;
 }
-
 // bounce8
 .bounce8-enter-active {
-  animation: bounce-in ($timeBase * 2.25 + s);
+  animation: bounceIn ($timeBase * 2.25 + s);
 }
 .bounce8-leave-active {
-  animation: bounce-in ($timeBase * .25 + s) reverse;
+  animation: bounceIn ($timeBase * .25 + s) reverse;
 }
-
 // bounce9
 .bounce9-enter-active {
-  animation: bounce-in ($timeBase * 2.5 + s);
+  animation: bounceIn ($timeBase * 2.5 + s);
 }
 .bounce9-leave-active {
-  animation: bounce-in ($timeBase * .25 + s) reverse;
+  animation: bounceIn ($timeBase * .25 + s) reverse;
 }
-
 // bounce10
 .bounce10-enter-active {
-  animation: bounce-in ($timeBase * 2.75 + s);
+  animation: bounceIn ($timeBase * 2.75 + s);
 }
 .bounce10-leave-active {
-  animation: bounce-in ($timeBase * .25 + s) reverse;
+  animation: bounceIn ($timeBase * .25 + s) reverse;
 }
-
 // bounce11
 .bounce11-enter-active {
-  animation: bounce-in ($timeBase * 3 + s);
+  animation: bounceIn ($timeBase * 3 + s);
 }
 .bounce11-leave-active {
-  animation: bounce-in ($timeBase * .25 + s) reverse;
+  animation: bounceIn ($timeBase * .25 + s) reverse;
 }
 
-
-
-// topDown
-// topDown
+// topDown// topDown
 .topDown-enter-active {
   position: relative;
   transform: translateY(0px);
-  animation: topDown .5s;
+  animation: topDown .75s;
 }
 .topDown-leave-active {
   position: relative;
   transform: translateY(0px);
-  animation: topDown 0s;
+  animation: bottomUp 0.25s;
 }
 @keyframes topDown {
   0% {
@@ -131,7 +117,6 @@ $timeBase: 1;
     opacity: 1;
   }
 }
-
 // bottomUp
 .bottomUp-enter-active {
   position: relative;
@@ -145,17 +130,16 @@ $timeBase: 1;
 }
 @keyframes bottomUp {
   0% {
-    transform: translateY(1000px);
+    transform: translateY(0px);
     opacity: 0;
     height: 0;
   }
   100% {
-    transform: translateY(0px);
+    transform: translateY(-100px);
     opacity: 1;
-    height: initial;
+    // height: initial;
   }
 }
-
 // LeftIn
 .leftIn-enter-active {
   position: relative;
@@ -177,7 +161,6 @@ $timeBase: 1;
     opacity: 1;
   }
 }
-
 // RightIn
 .rightIn-enter-active {
   position: relative;
@@ -199,7 +182,6 @@ $timeBase: 1;
     opacity: 1;
   }
 }
-
 
 
 

@@ -12,7 +12,7 @@
         <ModernTabs />
       </transition>
 
-      <transition name="bounce4" appear>
+      <transition name="bounce3" appear>
         <main class='mainGrid'>
 
           <router-view></router-view>
@@ -50,6 +50,7 @@
 </script>
 
 <style lang='scss' scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;600;900&display=swap');
   @import '@/template-modern/assets/css/modern-main.scss';
 
   .modBacker {

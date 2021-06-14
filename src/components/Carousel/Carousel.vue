@@ -535,6 +535,49 @@
     }
   }
 
+  @keyframes carouselFader {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    95% {
+      transform: scale(1.015);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  $carouselFade: 1;
+
+  .miniGallery a {
+    //
+    &:nth-of-type(1) {
+      animation: carouselFader ($carouselFade * 1.25 + s);
+    }
+    &:nth-of-type(2) {
+      animation: carouselFader ($carouselFade * 1.5 + s);
+    }
+    &:nth-of-type(3) {
+      animation: carouselFader ($carouselFade * 1.75 + s);
+    }
+    &:nth-of-type(4) {
+      animation: carouselFader ($carouselFade * 2 + s);
+    }
+    &:nth-of-type(5) {
+      animation: carouselFader ($carouselFade * 2.25 + s);
+    }
+    &:nth-of-type(6) {
+      animation: carouselFader ($carouselFade * 2.5 + s);
+    }
+  }
+
   // .modern Carousel box >>>>>>>>>>>>>
   // .modern Carousel box >>>>>>>>>>>>>
   // .modern Carousel box >>>>>>>>>>>>>
