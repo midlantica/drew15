@@ -2,20 +2,20 @@
   <div name="bounce" appear>
     <transition name="bounce2" appear>
       <div class="skillsGrid">
-        <iconUiux class="icon uiux" @mouseover="onHover(uiux)" @mouseleave="onLeave(e)" />
-        <iconHtml5 class="icon html5" @mouseover="onHover(html5)" @mouseleave="onLeave(e)" />
-        <iconCss3 class="icon css3" @mouseover="onHover(css3)" @mouseleave="onLeave(e)" />
-        <iconJs class="icon js" @mouseover="onHover(js)" @mouseleave="onLeave(e)" />
+        <iconUiux class="icon uiux" @mouseover="onHover(uiux)" @mouseleave="onLeave()" />
+        <iconHtml5 class="icon html5" @mouseover="onHover(html5)" @mouseleave="onLeave()" />
+        <iconCss3 class="icon css3" @mouseover="onHover(css3)" @mouseleave="onLeave()" />
+        <iconJs class="icon js" @mouseover="onHover(js)" @mouseleave="onLeave()" />
 
-        <iconSass class="icon sass" @mouseover="onHover(sass)" @mouseleave="onLeave(e)" />
-        <iconVue class="icon vue" @mouseover="onHover(vue)" @mouseleave="onLeave(e)" />
-        <iconNuxt class="icon nuxt" @mouseover="onHover(nuxt)" @mouseleave="onLeave(e)" />
-        <iconVSCode class="icon vs-code" @mouseover="onHover(vsCode)" @mouseleave="onLeave(e)" />
+        <iconSass class="icon sass" @mouseover="onHover(sass)" @mouseleave="onLeave()" />
+        <iconVue class="icon vue" @mouseover="onHover(vue)" @mouseleave="onLeave()" />
+        <iconNuxt class="icon nuxt" @mouseover="onHover(nuxt)" @mouseleave="onLeave()" />
+        <iconVSCode class="icon vs-code" @mouseover="onHover(vsCode)" @mouseleave="onLeave()" />
 
-        <iconSketch class="icon sketch" @mouseover="onHover(sketch)" @mouseleave="onLeave(e)" />
-        <iconFigma class="icon figma" @mouseover="onHover(figma)" @mouseleave="onLeave(e)" />
-        <iconSvg class="icon svg" @mouseover="onHover(svg)" @mouseleave="onLeave(e)" />
-        <iconChelsea class="icon chelsea" @mouseover="onHover(chelsea)" @mouseleave="onLeave(e)" />
+        <iconSketch class="icon sketch" @mouseover="onHover(sketch)" @mouseleave="onLeave()" />
+        <iconFigma class="icon figma" @mouseover="onHover(figma)" @mouseleave="onLeave()" />
+        <iconSvg class="icon svg" @mouseover="onHover(svg)" @mouseleave="onLeave()" />
+        <iconChelsea class="icon chelsea" @mouseover="onHover(chelsea)" @mouseleave="onLeave()" />
       </div>
     </transition>
     <transition name="bounce4" appear>

@@ -100,8 +100,10 @@
     background: hsl(320, 100%, 9%);
 
     .wrapper {
-      // background: url(./template-modern/assets/img/bg/graphy_2.png) repeat;
-      // background: #110e1d;
+      background: #110e1d;
+      background-image: url(./template-modern/assets/img/bg/bg_bak_dk4.jpeg);
+      background-size: 100vw 100vh;
+      min-height: 780px;
       display: flex;
       flex-direction: column;
       flex-grow: 1;

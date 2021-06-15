@@ -53,11 +53,10 @@
   @import '@/template-modern/assets/css/modern-main.scss';
 
   .modBacker {
-    background: hsl(282, 10%, 10%);
-    height: 770px;
-    background-image: url(../assets/img/bg/bg_bak_dk4.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background: hsl(282, 10%, 10%);
+    // height: 770px;
+    // background-repeat: no-repeat;
+    // background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
