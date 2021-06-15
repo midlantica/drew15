@@ -2,25 +2,27 @@
   <div name="bounce" appear>
     <transition name="bounce2" appear>
       <div class="skillsGrid">
-        <iconUiux class="icon uiux" @mouseover="onHover(uiux)" />
-        <iconHtml5 class="icon html5" @mouseover="onHover(html5)" />
-        <iconCss3 class="icon css3" @mouseover="onHover(css3)" />
-        <iconJs class="icon js" @mouseover="onHover(js)" />
+        <iconUiux class="icon uiux" @mouseover="onHover(uiux)" @mouseleave="onLeave(e)" />
+        <iconHtml5 class="icon html5" @mouseover="onHover(html5)" @mouseleave="onLeave(e)" />
+        <iconCss3 class="icon css3" @mouseover="onHover(css3)" @mouseleave="onLeave(e)" />
+        <iconJs class="icon js" @mouseover="onHover(js)" @mouseleave="onLeave(e)" />
 
-        <iconSass class="icon sass" @mouseover="onHover(sass)" />
-        <iconVue class="icon vue" @mouseover="onHover(vue)" />
-        <iconNuxt class="icon nuxt" @mouseover="onHover(nuxt)" />
-        <iconVSCode class="icon vs-code" @mouseover="onHover(vsCode)" />
+        <iconSass class="icon sass" @mouseover="onHover(sass)" @mouseleave="onLeave(e)" />
+        <iconVue class="icon vue" @mouseover="onHover(vue)" @mouseleave="onLeave(e)" />
+        <iconNuxt class="icon nuxt" @mouseover="onHover(nuxt)" @mouseleave="onLeave(e)" />
+        <iconVSCode class="icon vs-code" @mouseover="onHover(vsCode)" @mouseleave="onLeave(e)" />
 
-        <iconSketch class="icon sketch" @mouseover="onHover(sketch)" />
-        <iconFigma class="icon figma" @mouseover="onHover(figma)" />
-        <iconSvg class="icon svg" @mouseover="onHover(svg)" />
-        <iconChelsea class="icon chelsea" @mouseover="onHover(chelsea)" />
+        <iconSketch class="icon sketch" @mouseover="onHover(sketch)" @mouseleave="onLeave(e)" />
+        <iconFigma class="icon figma" @mouseover="onHover(figma)" @mouseleave="onLeave(e)" />
+        <iconSvg class="icon svg" @mouseover="onHover(svg)" @mouseleave="onLeave(e)" />
+        <iconChelsea class="icon chelsea" @mouseover="onHover(chelsea)" @mouseleave="onLeave(e)" />
       </div>
     </transition>
     <transition name="bounce4" appear>
       <div class="skillsBubble">
-        <p>{{ baseText }}</p>
+        <transition name="fade">
+          <p>{{ textSpot }}</p>
+        </transition>
       </div>
       <!-- <p>{{ this.e }}</p> -->
       <!-- <p>{{ $data.this.e }}</p> -->
@@ -60,26 +62,37 @@
     },
     data: () => {
       return {
-        showContent: true,
-        baseText: 'base Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.',
-        uiux: 'uiux Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.',
-        html5: 'html5 Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        css3: 'css3 Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur.',
-        js: 'js Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.',
-        sass: 'sass Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        vue: 'vue Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur.',
-        nuxt: 'nuxt Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.',
-        vsCode: 'vsCode Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        sketch: 'sketch Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur.',
-        figma: 'figma Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.',
-        svg: 'svg Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur.',
-        chelsea: 'chelsea Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        showText: true,
+        textSpot: '',
+        baseText: `Not enough just to be a Designer anymore, coding requirements have exploded in the last few years. Over the years my skillset has expanded — I'm doing this site in Vue 💚`,
+        uiux: `uiux Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
+        html5: `html5 Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+        css3: `css3 Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur.`,
+        js: `js Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
+        sass: `sass Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+        vue: `vue Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur.`,
+        nuxt: `nuxt Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
+        vsCode: `vsCode Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+        sketch: `sketch Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur.`,
+        figma: `figma Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
+        svg: `svg Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur.`,
+        chelsea: `chelsea Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
       }
+    },
+    mounted() {
+      this.textSpot = this.baseText
+      // console.log('mounted')
     },
     methods: {
       onHover(e) {
-        this.baseText = e
-      }
+        this.textSpot = e
+        // console.log(e, 'inside')
+      },
+      onLeave() {
+        this.textSpot = this.baseText
+        // console.log('outside')
+      },
+
     }
   }
 </script>
@@ -153,7 +166,6 @@
       }
     }
 
-
   }
 
   .bounce {
@@ -161,68 +173,54 @@
   }
 
   .skillsBubble {
+    width: 45%;
     background: transparent;
-    // background: hsla(60, 100%, 50%, .25);
-    // position: fixed;
-    // left: calc(100% - 70%);
-    // top: 0;
-    padding: 1.25rem 1.75rem;
-    // display: block;
+    margin: auto;
+    padding: 1rem 1.5rem;
     border: 1px solid $ruby;
     border-radius: .5rem;
+    // transition: all .25s ease-out .25s;
     @include box-shadow(0px, 1px, 20px, 0px, hsl(0, 0%, 0%));
-
-    @media (max-width: $breakThou) {
-      margin: 0rem 0 .5rem;
-    }
-
-    @media (max-width: $breakOne) {
-      margin: 0 0 .5rem;
-    }
 
     @media (max-width: $breakFour) {
       flex-direction: column;
     }
-  }
 
-  p {
-    // display: block;
-    font-size: .9em;
-    line-height: 1.4em;
-    letter-spacing: 0.05em;
-    color: white;
-    font-weight: 500;
-    //
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    text-align: left;
-  }
+    @media (max-width: 900px) {
+      width: 55%;
+    }
 
-  .modern .skillsBubble {
-    width: 45%;
-    margin: auto;
-    padding: 1rem 1.5rem;
+    @media (max-width: 600px) {
+      width: 65%;
+    }
+
+    @media (max-width: 300px) {
+      width: 100%;
+    }
 
     p {
+      // display: block;
+      // width: 50%;
       font-family: Spartan, "Times New Roman", Times, serif !important;
-      font-size: .85rem;
-      letter-spacing: .000rem;
-      line-height: 1.4rem;
-      margin: 0;
+      font-size: .9em;
+      line-height: 1.4em;
+      letter-spacing: 0.05em;
+      color: white;
       font-weight: 300;
-
-      // @media (max-width: $breakThou) {
-      //   font-size: 1.15rem;
-      //   line-height: 1.75rem;
-      // }
-
-      // @media (max-width: $breakTwo) {
-      //   font-size: 1rem;
-      //   line-height: 1.5rem;
-      // }
-
+      //
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      text-align: left;
+      transition: all .25s ease-out .25s;
     }
+  }
+
+  .fade-enter-active, .fade-leave-active {
+    transition: all .25s ease-out .25s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
   }
 </style>

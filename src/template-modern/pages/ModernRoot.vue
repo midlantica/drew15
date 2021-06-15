@@ -50,18 +50,33 @@
 </script>
 
 <style lang='scss' scoped>
-  @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;600;900&display=swap');
   @import '@/template-modern/assets/css/modern-main.scss';
 
   .modBacker {
     background: hsl(282, 10%, 10%);
     height: 770px;
     background-image: url(../assets/img/bg/bg_bak_dk4.jpeg);
+    background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     // transform: scaleX(-1);
+
+    @media (max-width: 900px) {
+      background-size: 130vh !important;
+      height: calc(100vh - 30px);
+    }
+
+    @media (max-width: 600px) {
+      // height: calc(100vh - 30px);
+      // background-size: contain;
+    }
+
+    @media (max-width: 300px) {
+      // height: calc(100vh - 30px);
+      // background-size: contain;
+    }
   }
 
   .mainGrid {
@@ -79,10 +94,10 @@
 
     @media (max-width: $breakOne) {
       //
-    }
+      }
 
     @media (max-width: $breakTwo) {
-      //
+      width: 80%;
     }
   }
 

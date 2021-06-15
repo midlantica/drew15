@@ -125,10 +125,12 @@
   .modern .about {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: initial;
+    margin-top: auto;
     width: 100%;
     gap: 1rem;
     box-shadow: 2px 2px 10px 0px black;
+    border-radius: 3px;
 
     @media (max-width: 760px) {
       flex-direction: row;
@@ -159,7 +161,7 @@
       font-family: Spartan, "Times New Roman", Times, serif !important;
       font-size: clamp(.75rem, .8rem, 1.15rem) !important;
       letter-spacing: .000rem;
-      line-height: 1.4rem;
+      line-height: 1.5rem;
       margin: 0;
       font-weight: 300;
       color: $ivory;

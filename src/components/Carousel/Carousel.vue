@@ -559,22 +559,22 @@
   .miniGallery a {
     //
     &:nth-of-type(1) {
-      animation: carouselFader ($carouselFade * 1.25 + s);
+      animation: carouselFader ($carouselFade * 1 + s);
     }
     &:nth-of-type(2) {
-      animation: carouselFader ($carouselFade * 1.5 + s);
+      animation: carouselFader ($carouselFade * 1.2 + s);
     }
     &:nth-of-type(3) {
-      animation: carouselFader ($carouselFade * 1.75 + s);
+      animation: carouselFader ($carouselFade * 1.3 + s);
     }
     &:nth-of-type(4) {
-      animation: carouselFader ($carouselFade * 2 + s);
+      animation: carouselFader ($carouselFade * 1.4 + s);
     }
     &:nth-of-type(5) {
-      animation: carouselFader ($carouselFade * 2.25 + s);
+      animation: carouselFader ($carouselFade * 1.5 + s);
     }
     &:nth-of-type(6) {
-      animation: carouselFader ($carouselFade * 2.5 + s);
+      animation: carouselFader ($carouselFade * 1.6 + s);
     }
   }
 

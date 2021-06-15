@@ -83,8 +83,8 @@
 
   p {
     font-family: $font-copy;
-    font-size: clamp(.8rem, .85rem, 1.25rem) !important;
-    line-height: 2rem;
+    font-size: clamp(0.8rem, 0.95rem, 1.35rem);
+    line-height: clamp(1.5rem, 2.2rem, 2.6rem);
     font-weight: 300;
     margin: 0 !important;
     // margin: 0.0rem auto 1rem !important;

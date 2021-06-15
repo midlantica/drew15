@@ -1,10 +1,10 @@
 <template>
   <transition name="bounce2" appear>
     <div class="aboutGrid">
-      <transition name="bounce4" appear>
+      <transition name="bounce3" appear>
         <HeadAndCopy />
       </transition>
-      <transition name="bounce6" appear>
+      <transition name="bounce4" appear>
         <About />
       </transition>
     </div>
@@ -40,7 +40,7 @@
     // grid-column: 2 / 3;
     // grid-row: 2;
     gap: 2rem;
-    margin: 0rem 2rem;
+    margin: 1rem 2rem 0;
 
     @media (max-width: 760px) {
       grid-template-columns: 1fr;
@@ -60,8 +60,7 @@
       margin: 0;
     }
 
-    @media only screen
-    and (min-device-width: 375px)
+    @media (min-device-width: 375px)
     and (max-device-width: 660px)
     and (-webkit-min-device-pixel-ratio: 2) {
       margin-top: 0.25em;
