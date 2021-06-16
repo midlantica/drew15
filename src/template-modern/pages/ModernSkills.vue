@@ -2,7 +2,7 @@
   <div name="bounce" appear>
     <transition name="bounce2" appear>
       <div class="skillsGrid">
-        <iconUiux class="icon uiux" @mouseover="onHover(uiux)" @mouseleave="onLeave()" />
+        <iconUiux class="icon uiux" @mouseover="onHover(uiux)" @mouseleave="onLeave()" data-tooltip="I’m the tooltip text." />
         <iconHtml5 class="icon html5" @mouseover="onHover(html5)" @mouseleave="onLeave()" />
         <iconCss3 class="icon css3" @mouseover="onHover(css3)" @mouseleave="onLeave()" />
         <iconJs class="icon js" @mouseover="onHover(js)" @mouseleave="onLeave()" />
@@ -18,11 +18,11 @@
         <iconChelsea class="icon chelsea" @mouseover="onHover(chelsea)" @mouseleave="onLeave()" />
       </div>
     </transition>
-    <transition name="bounce4" appear>
-      <div class="skillsBubble">
-        <transition name="fade">
+    <transition name="" appear>
+      <div class="skillsBubble" v-if="showTextBox">
+        <!-- <transition name=""> -->
           <p>{{ textSpot }}</p>
-        </transition>
+        <!-- </transition> -->
       </div>
     </transition>
     </div>
@@ -60,36 +60,30 @@
     },
     data: () => {
       return {
-        showText: true,
-        ssss: 42,
+        showTextBox: false,
         textSpot: '',
-        baseText: `UX Design: My first love. It's not enough to be merely a Designer anymore, coding requirements have exploded in the last few years. Over the years my skillset has expanded; I'm doing this site in Vue 💚`,
-        uiux: `UX Design: it's not enough to be merely a Designer anymore, coding requirements have exploded in the last few years. Over the years my skillset has expanded — I'm doing this site in Vue 💚`,
+        baseText: `UX Design: My first love. Grocking the industry. Humility before the User. Cracking the flow. Coding requirements have exploded in recent years, coding is a part of design in many companies, my skillset has expanded; I'm doing this site in Vue 💚`,
+        uiux: `UX Design: My first love. It's often not enough to be just a Designer anymore, coding requirements have exploded in recent years. Over the years my skillset has expanded, I produced this site with Vue 💚`,
         html5: `HTML5: the bones of the Internet. As few divs and spans as possible if you please.`,
         css3: `CSS3: Engineers just love CSS haha! Let me do that for you 🙂 I enjoy its declarative cascading infuriating novelty.`,
-        js: `JavaScript: I design, do all my HTML and CSS, JavaScript I'm still mastering. I've come a long way, Love me some Vue.`,
-        sass: `SASS: Syntactically Awesome Style Sheets have made CSS so much more fun to use. CSS's new --vars make CSS more robust, but there's along way to go.`,
-        vue: `Vue.js is my favorite framework, a great balance of Angular's ease and React's abilities. Although new kid on the block  Svelte has caught my eye.`,
-        nuxt: `The Next framework for Vue: SSR, routes by directory, SEO. It's jam-packed with crunchy goodness.`,
-        vsCode: `VS Code: I used to be a Sublime Text guy, but I'm fully on the VS Code bandwagon now. MS should have done this years ago.`,
-        sketch: `Sketch used to be the king of UX prototyping, now there are many alternatives, I still enjoy it.`,
-        figma: `Figma is the new king of UX prototyping. It sure isn't Illustrator in the vector dept, but UX rarely requires that sophistication, And it's multi-platform and collaborative, unlike Sketch.`,
-        svg: `SVG: Vector is best because it scales and rasters don't, and it's editable, but it cannot replace a photograph.`,
+        js: `JavaScript: I design, do all my HTML and CSS as is needed, JavaScript I'm still mastering. I've come a long way, continuous learning is my daily bread, Love me some Vue.`,
+        sass: `SASS has made CSS so much more fun to use. CSS's new --vars make CSS more robust, but there's along way to go.`,
+        vue: `Vue.js is my favorite JS framework, a great balance of Angular's ease and React's abilities. Although new kid on the block  Svelte has caught my eye.`,
+        nuxt: `The Next framework for Vue: SSR, routes by directory, SEO. It's jam-packed with crunchy goodness. Also digging Gridsome.js.`,
+        vsCode: `VS Code: I used to be a Sublime Text guy, but I'm all VS Code these days. Microsoft should have done this years ago – better late than never.`,
+        sketch: `Sketch used to be the king of UX prototyping, now there are many alternatives, I still enjoy it. Oh and Axure too.`,
+        figma: `Figma is the new king of UX prototyping. It sure isn't Illustrator in the vector drawing dept, but UX rarely requires such sophistication, And it's multi-platform and collaborative, unlike Sketch.`,
+        svg: `SVG: Vector is best because it scales and rasters don't, and it's editable, but it still cannot replace a photograph.`,
         chelsea: `Chelsea I 💙! The only team in London with a European Cup 🎤`,
       }
-    },
-    mounted() {
-      this.textSpot = this.baseText
-      // console.log('mounted')
     },
     methods: {
       onHover(e) {
         this.textSpot = e
-        // console.log(e, 'inside')
+        this.showTextBox = true
       },
       onLeave() {
-        this.textSpot = this.baseText
-        // console.log('outside')
+        this.showTextBox = false
       },
 
     }
@@ -126,22 +120,6 @@
       width: 100%;
     }
 
-    // @media (min-width: 563px) and (max-width: 1025px) {
-    //   grid-template-columns: repeat(auto-fit, minmax(calc(33.3%), 1fr));
-    //   width: 70%;
-    // }
-
-    // @media (min-width: 701px) and (max-width: 1025px) {
-    //   grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
-    //   width: 60%;
-    // }
-
-    // @media (max-width: 700px) {
-    //   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    //   width: 80%;
-    //   // background: rgba(255, 0, 0, 0.144);
-    // }
-
     .icon {
       cursor: pointer;
     }
@@ -174,12 +152,13 @@
   .skillsBubble {
     width: 45%;
     // background: transparent;
-    background: hsla(340, 100%, 50%, 0.2);
+    background: hsla(340, 100%, 50%, 0.25);
+    // background: transparentize($ruby, .2);
     margin: auto;
     padding: .75rem 1.25rem;
     border: 1px solid $ruby;
     border-radius: .5rem;
-    // transition: all .25s ease-out .25s;
+    transition: all .15s ease-out;
     @include box-shadow(0px, 1px, 20px, 0px, hsl(0, 0%, 0%));
 
     @media (max-width: $breakFour) {
@@ -213,7 +192,7 @@
       justify-content: center;
       align-self: center;
       text-align: left;
-      transition: all .25s ease-out .25s;
+      // transition: all .25s ease-out .25s;
     }
   }
 

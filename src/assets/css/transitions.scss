@@ -183,18 +183,14 @@ $timeBase: 1;
   }
 }
 
-
-
-
-
-
 // fade
 .fade-enter-active {
   animation: fade 1s;
 }
 .fade-leave-active {
-  animation: fade 0s reverse;
+  animation: fade 1s reverse;
 }
+
 @keyframes fade {
   0% {
     opacity: 0;
