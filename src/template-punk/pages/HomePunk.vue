@@ -8,26 +8,26 @@
         </header>
       </transition>
 
-      <transition name="bounce2" appear>
+      <transition name="bounce" appear>
         <main class='mainGrid'>
 
-          <transition name="bounce4" appear>
+          <transition name="bounce2" appear>
             <div class='copyArea'>
               <HeadAndCopy />
             </div>
           </transition>
 
-          <transition name="bounce6" appear>
+          <transition name="bounce4" appear>
             <div class='slides'>
               <Carousel />
             </div>
           </transition>
 
-          <transition name="bounce7" appear>
+          <transition name="bounce6" appear>
             <About />
           </transition>
 
-          <transition name="bounce9" appear>
+          <transition name="bounce7" appear>
             <Skills />
           </transition>
 

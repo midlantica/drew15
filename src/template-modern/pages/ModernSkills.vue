@@ -24,8 +24,6 @@
           <p>{{ textSpot }}</p>
         </transition>
       </div>
-      <!-- <p>{{ this.e }}</p> -->
-      <!-- <p>{{ $data.this.e }}</p> -->
     </transition>
     </div>
 </template>
@@ -63,20 +61,21 @@
     data: () => {
       return {
         showText: true,
+        ssss: 42,
         textSpot: '',
-        baseText: `Not enough just to be a Designer anymore, coding requirements have exploded in the last few years. Over the years my skillset has expanded — I'm doing this site in Vue 💚`,
-        uiux: `uiux Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
-        html5: `html5 Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
-        css3: `css3 Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur.`,
-        js: `js Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
-        sass: `sass Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
-        vue: `vue Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur.`,
-        nuxt: `nuxt Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
-        vsCode: `vsCode Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
-        sketch: `sketch Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur.`,
-        figma: `figma Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
-        svg: `svg Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur.`,
-        chelsea: `chelsea Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+        baseText: `UX Design: My first love. It's not enough to be merely a Designer anymore, coding requirements have exploded in the last few years. Over the years my skillset has expanded; I'm doing this site in Vue 💚`,
+        uiux: `UX Design: it's not enough to be merely a Designer anymore, coding requirements have exploded in the last few years. Over the years my skillset has expanded — I'm doing this site in Vue 💚`,
+        html5: `HTML5: the bones of the Internet. As few divs and spans as possible if you please.`,
+        css3: `CSS3: Engineers just love CSS haha! Let me do that for you 🙂 I enjoy its declarative cascading infuriating novelty.`,
+        js: `JavaScript: I design, do all my HTML and CSS, JavaScript I'm still mastering. I've come a long way, Love me some Vue.`,
+        sass: `SASS: Syntactically Awesome Style Sheets have made CSS so much more fun to use. CSS's new --vars make CSS more robust, but there's along way to go.`,
+        vue: `Vue.js is my favorite framework, a great balance of Angular's ease and React's abilities. Although new kid on the block  Svelte has caught my eye.`,
+        nuxt: `The Next framework for Vue: SSR, routes by directory, SEO. It's jam-packed with crunchy goodness.`,
+        vsCode: `VS Code: I used to be a Sublime Text guy, but I'm fully on the VS Code bandwagon now. MS should have done this years ago.`,
+        sketch: `Sketch used to be the king of UX prototyping, now there are many alternatives, I still enjoy it.`,
+        figma: `Figma is the new king of UX prototyping. It sure isn't Illustrator in the vector dept, but UX rarely requires that sophistication, And it's multi-platform and collaborative, unlike Sketch.`,
+        svg: `SVG: Vector is best because it scales and rasters don't, and it's editable, but it cannot replace a photograph.`,
+        chelsea: `Chelsea I 💙! The only team in London with a European Cup 🎤`,
       }
     },
     mounted() {
@@ -174,9 +173,10 @@
 
   .skillsBubble {
     width: 45%;
-    background: transparent;
+    // background: transparent;
+    background: hsla(340, 100%, 50%, 0.2);
     margin: auto;
-    padding: 1rem 1.5rem;
+    padding: .75rem 1.25rem;
     border: 1px solid $ruby;
     border-radius: .5rem;
     // transition: all .25s ease-out .25s;
@@ -202,11 +202,11 @@
       // display: block;
       // width: 50%;
       font-family: Spartan, "Times New Roman", Times, serif !important;
-      font-size: .9em;
-      line-height: 1.4em;
-      letter-spacing: 0.05em;
+      font-size: .85em;
+      line-height: 1.75em;
+      letter-spacing: 0.025em;
       color: white;
-      font-weight: 300;
+      font-weight: 500;
       //
       align-content: center;
       align-items: center;
