@@ -1,7 +1,7 @@
 <template>
   <svg viewBox="0 0 88 60" xmlns="http://www.w3.org/2000/svg">
     <title>CSS</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="css3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Artboard-Copy" transform="translate(-299.000000, -19.000000)" fill-rule="nonzero">
             <g id="css" transform="translate(325.500000, 28.500000)">
                 <g id="Group-10">
@@ -33,5 +33,7 @@
       // fill: white;
     }
   }
+
+  svg g { cursor: pointer; }
 
 </style>

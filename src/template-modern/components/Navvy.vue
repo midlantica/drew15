@@ -108,8 +108,8 @@
 
   section.jobDesc {
     // flex-grow: 1;
-    margin-left: 1em;
-    margin-top: 0.1rem;
+    // margin-left: 1em;
+    margin-top: 1rem;
     transition: 0.25s ease-in;
 
     @media (max-width: $breakTwo) {
@@ -132,11 +132,15 @@
       // flex-grow: 0;
     }
 
+    @media (max-width: $breakThree) {
+      width: 20ch;
+    }
+
     h2 {
       font-size: 1.15rem;
       letter-spacing: -0.01em;
       text-shadow: 3px 0px 3px $black;
-      line-height: 2em;
+      line-height: 1.5em;
       font-weight: 400;
       color: hsla(0, 0%, 100%, 0.85) !important;
       text-align: center;
@@ -175,6 +179,7 @@
     }
 
     @media (max-width: $breakThree) {
+      width: 30ch;
       // margin-top: 0em;
       // transition: 0.25s ease-in;
     }
@@ -187,6 +192,7 @@
       text-align: center;
       margin-top: .5rem;
       text-shadow: 1px 1px 4px $black;
+      line-height: 1.5rem;
       @include font-smoothing;
 
       a {

@@ -128,12 +128,17 @@
     margin: initial;
     margin-top: auto;
     width: 100%;
+    // min-width: 30ch;
     gap: 1rem;
     box-shadow: 2px 2px 10px 0px black;
     border-radius: 3px;
 
-    @media (max-width: 760px) {
+    @media (max-width: 850px) {
       flex-direction: row;
+    }
+
+    @media (max-width: 550px) {
+      flex-direction: column;
     }
 
     .flagBox {

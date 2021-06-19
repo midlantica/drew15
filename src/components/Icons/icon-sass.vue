@@ -26,5 +26,5 @@
       // fill: white;
     }
   }
-
+  svg g { cursor: pointer; }
 </style>

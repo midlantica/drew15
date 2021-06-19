@@ -188,7 +188,7 @@ $timeBase: 1;
   animation: fade 1s;
 }
 .fade-leave-active {
-  animation: fade 1s reverse;
+  animation: fade 0s reverse;
 }
 
 @keyframes fade {

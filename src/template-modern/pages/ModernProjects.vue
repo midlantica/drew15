@@ -12,7 +12,7 @@
 
   export default {
     // layout: 'default',
-    name: 'ModernCarousel',
+    name: 'ModernProjects',
     components: {
       Carousel,
     },

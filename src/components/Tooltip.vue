@@ -1,70 +1,71 @@
 <template>
-  <div class="skillsBubble">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet est ut, rerum doloribus libero hic sint voluptatibus. </p>
+  <div class="tooltip" v-if="tooltip">
+    <p>{{ tooltipText }}</p>
   </div>
 </template>
 
-<style lang="scss" scoped>
-  @import "@/template-modern/assets/css/modern-main.scss";
+<script>
+  export default {
+    props: ['tooltip', 'tooltipText'],
+  }
+</script>
 
-  .skillsBubble {
-    background: transparent;
-    padding: 1.25rem 1.75rem;
-    // display: block;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+<style lang="scss" scoped>
+  .tooltip {
+    background: #d71d5b;
+    font-family: Spartan, "Times New Roman", Times, serif !important;
+    box-shadow: 0 2px 20px 0px black;
+    padding: .5rem 1.5rem;
+    width: 30ch;
+    border-radius: 1rem;
     //
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-    border: 1px solid $ruby;
-    border-radius: .5rem;
-    @include box-shadow(0px, 1px, 20px, 0px, hsl(0, 0%, 0%));
+    position: fixed;
+    top: -3rem;
 
     @media (max-width: $breakThou) {
-      margin: 0rem 0 .5rem;
+      // margin: 0rem 0 .5rem;
     }
 
     @media (max-width: $breakOne) {
-      margin: 0 0 .5rem;
+      // margin: 0 0 .5rem;
     }
 
     @media (max-width: $breakFour) {
-      flex-direction: column;
+      // flex-direction: column;
+    }
+
+    p {
+      // display: block;
+      font-size: .9em;
+      line-height: 1.4em;
+      letter-spacing: 0.05em;
+      color: white;
+      font-weight: 500;
+      //
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      text-align: left;
+
     }
   }
 
-  p {
-    // display: block;
-    font-size: .9em;
-    line-height: 1.4em;
-    letter-spacing: 0.05em;
-    color: white;
-    font-weight: 500;
-    //
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    text-align: left;
-  }
-
-  .corp .skillsBubble {
+  // Other templates
+  body.corp .tooltip {
     @include box-shadow(0px, 0px, 3px, -1px, hsla(0, 14%, 22%, 0.5));
     border-radius: 2px;
     font-family: Alegreya;
   }
 
-  .punk .skillsBubble {
+  body.punk .tooltip {
     //
     p {
       margin: .25rem auto;
     }
   }
 
-  .corp .skillsBubble {
+  body.corp .tooltip {
     //
     p {
       font-family: Alegreya, "Times New Roman", Times, serif !important;
@@ -87,7 +88,7 @@
     }
   }
 
-  .modern .skillsBubble {
+  body.modern .tooltip {
     width: 45%;
     margin: auto;
     padding: 1rem 1.5rem;

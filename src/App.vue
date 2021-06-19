@@ -12,7 +12,8 @@
 </template>
 
 <script>
-  import Tabs from '@/components/Tabs.vue'
+  import Tabs from '@/components/Tabs'
+
   export default {
     name: 'App',
     components: {
@@ -29,15 +30,15 @@
   $backer: #fffae4;
   $backBlack: #1f1f1f;
 
-
   .wrapper {
     max-width: 1024px;
     margin: 0 auto;
+    position: relative;
   }
 
   // #############################
   // BOURBON
-  .bourbon {
+  body.bourbon {
     background: $backBlack;
 
     .wrapper {
@@ -96,20 +97,32 @@
 
 // #############################
   // MODERN
-  .modern {
+  body.modern {
+    height: calc(100%);
     background: hsl(320, 100%, 9%);
 
     .wrapper {
-      background: #110e1d;
-      background-image: url(./template-modern/assets/img/bg/bg_bak_dk4.jpeg);
-      background-size: 100vw 100vh;
-      min-height: 780px;
       display: flex;
       flex-direction: column;
       flex-grow: 1;
+      //
+      background: hsl(320, 100%, 9%);
+      background-image: url(./template-modern/assets/img/bg/bg_bak_dk4.jpeg);
+      background-size: cover;
+      min-height: 780px;
+      max-width: 1024px;
+      padding-bottom: 3.5rem;
 
       @media (max-width: $breakOne) {
-        //
+        // height: 100vh;
+        // min-height: 100vh;
+        // max-height: 100vh;
+        // background-size: 100% calc(100%);
+        // //
+        // width: 100%;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
       }
 
       header,
@@ -147,7 +160,7 @@
 
   // #############################
   // GROOVY
-  .groovy {
+  body.groovy {
     background: $backBlack;
 
     .wrapper {
@@ -194,7 +207,7 @@
 
   // #############################
   // TECHY
-  .techy {
+  body.techy {
     background: $backBlack;
 
     .wrapper {
@@ -250,7 +263,7 @@
 
   // #############################
   // CORP
-  .corp {
+  body.corp {
     background: $backBlack;
 
     .wrapper {
@@ -289,7 +302,7 @@
 
   // #############################
   // PUNK
-  .punk {
+  body.punk {
     background: $backBlack;
 
     .wrapper {

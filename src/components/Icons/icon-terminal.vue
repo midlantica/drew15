@@ -27,5 +27,5 @@
     // height: 60px;
 
   }
-
+  svg g { cursor: pointer; }
 </style>

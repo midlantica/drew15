@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import ModernRoot from './template-modern/pages/ModernRoot.vue'
-import ModernCarousel from './template-modern/pages/ModernCarousel.vue'
+import ModernProjects from './template-modern/pages/ModernProjects.vue'
 import ModernSkills from './template-modern/pages/ModernSkills.vue'
 import ModernAbout from './template-modern/pages/ModernAbout.vue'
 import HomeBourbon from './template-bourbon/pages/HomeBourbon.vue'
@@ -32,15 +32,15 @@ const routes = [
     children: [
       {
         path: '',
-        redirect: '/Modern/Carousel', // default child path
+        redirect: '/Modern/Projects', // default child path
       },
       {
-        path: 'Carousel',
-        name: 'ModernCarousel',
-        component: ModernCarousel,
+        path: 'Projects',
+        name: 'ModernProjects',
+        component: ModernProjects,
         meta: {
-          bodyClass: 'carousel',
-          title: 'Drew Harper – UI/UX Designer Carousel',
+          bodyClass: 'projects',
+          title: 'Drew Harper – UI/UX Designer Projects',
           metaTags: [
             // {
             //   name: 'description',

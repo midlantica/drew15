@@ -17,9 +17,17 @@ html, html a {
   font-size: $base-font-size;
 }
 
-body {
+html, body {
   font-family: 'Spartan', Helvetica, Arial, sans-serif;
   font-size: $base-font-size;
-  background: rgb(20, 20, 20) !important;
-  margin: 0;
+}
+
+html {
+  // background: rgb(20, 20, 20) !important;
+  background: hsl(320, 100%, 9%);
+  background: url(/img/bg/bg_bak_dk4.jpeg) no-repeat center center fixed !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

@@ -1,3 +1,5 @@
+// See vue.config for auto import
+
 // SETTINGS
 @import '~breakpoint-sass/stylesheets/breakpoint';
 // @import 'vendor/html5Boilerplate';
@@ -6,8 +8,8 @@
 @import './dh-common/_dh-main';
 @import '_drewShake';
 @import 'transitions';
+@import 'tooltip';
 @import 'tryout';
-// @import 'tooltip';
 
 * {
   box-sizing: border-box;

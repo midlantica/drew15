@@ -65,11 +65,6 @@
       About,
       Skills,
       Quotes,
-    },
-    data() {
-      return {
-        show: true
-      }
     }
   }
 </script>
@@ -141,23 +136,6 @@
     @media (max-width: $breakTwo) {
       grid-column: 1 / 3;
       grid-row: 3;
-    }
-  }
-
-  .skillsGrid {
-    grid-column: 1 / 2;
-    grid-row: 2 / 4;
-
-    @media (max-width: $breakThou) {
-      grid-row: 2;
-    }
-
-    @media (max-width: $breakOne) {
-      grid-row: 2;
-    }
-
-    @media (max-width: $breakTwo) {
-      grid-row: 2;
     }
   }
 

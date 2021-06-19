@@ -1,6 +1,6 @@
 <template>
   <div class="modernTabs">
-    <router-link to="/Modern/Carousel" class="carouselTab">Carousel</router-link>
+    <router-link to="/Modern/Projects" class="projectsTab">Projects</router-link>
     <router-link to="/Modern/Skills" class="skillsTab">Skills</router-link>
     <router-link to="/Modern/About" class="aboutTab">About</router-link>
   </div>
@@ -9,7 +9,7 @@
 <style lang='scss' scoped>
   @import '@/template-modern/assets/css/modern-main.scss';
 
-  body.modern.carousel a.carouselTab,
+  body.modern.projects a.projectsTab,
   body.modern.skills a.skillsTab,
   body.modern.about a.aboutTab {
     color: white !important;

@@ -19,6 +19,7 @@
     justify-items: start;
     align-items: center;
     margin-bottom: 1rem;
+    gap: .5rem;
 
     a.drewhead {
       margin-right: 1em;
@@ -86,7 +87,7 @@
     font-size: clamp(0.8rem, 0.95rem, 1.35rem);
     line-height: clamp(1.5rem, 2.2rem, 2.6rem);
     font-weight: 300;
-    margin: 0 !important;
+    margin: 0rem !important;
     // margin: 0.0rem auto 1rem !important;
     letter-spacing: 0.03rem;
 

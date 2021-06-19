@@ -1,7 +1,7 @@
 <template>
   <svg viewBox="0 0 88 60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>UI/UX Design</title>
-      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g class="uiux" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Actual" transform="translate(-21.000000, -16.000000)">
             <g id="uiux" transform="translate(38.832246, 26.459350)">
                 <path d="M28.8371746,0.892537376 L49.6062733,9.15296811 C51.2421053,9.80358262 52.3157438,11.3860376 52.3157438,13.146505 L52.3157438,27.9436623 C52.3157438,29.7041297 51.2421053,31.2865846 49.6062733,31.9371991 L27.9704966,40.5423311 C26.9504637,40.9480257 25.8138549,40.9480257 24.793822,40.5423311 L18.0962895,37.8785417 L28.8371746,0.892537376 Z" id="Combined-Shape" fill="#46B4AB"></path>
@@ -39,5 +39,7 @@
       fill: white;
     }
   }
+
+  svg g { cursor: pointer; }
 
 </style>
