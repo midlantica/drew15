@@ -1,12 +1,12 @@
 <template>
-  <div class="tooltip" v-if="tooltip">
+  <div class="tooltip">
     <p>{{ tooltipText }}</p>
   </div>
 </template>
 
 <script>
   export default {
-    props: ['tooltip', 'tooltipText'],
+    // props: ['tooltipText'],
   }
 </script>
 

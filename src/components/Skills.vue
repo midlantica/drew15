@@ -1,8 +1,9 @@
 <template>
   <div class="skillsGrid">
-    <iconUiux class="icon uiux" @mouseover="onHover(uiux)" @mouseout="onLeave()">
-      <Tooltip :tooltip="tooltip" />
-    </iconUiux>
+    <div v-if="tooltip" class="tooltip">
+      <p>{{ tooltipText }}</p>
+    </div>
+    <iconUiux class="icon uiux" @mouseover="onHover(uiux)" @mouseout="onLeave()" />
     <iconHtml5 class="icon html5" @mouseover="onHover(html5)" @mouseout="onLeave()" />
     <iconCss3 class="icon css3" @mouseover="onHover(css3)" @mouseout="onLeave()" />
     <iconJs class="icon js" @mouseover="onHover(js)" @mouseout="onLeave()" />
@@ -32,7 +33,7 @@
   import iconFigma from '@/components/Icons/icon-figma'
   import iconNuxt from '@/components/Icons/icon-nuxt'
   import iconChelsea from '@/components/Icons/icon-chelsea'
-  import Tooltip from '@/components/Tooltip'
+  // import Tooltip from '@/components/Tooltip'
 
   export default {
     components: {
@@ -48,12 +49,12 @@
       iconFigma,
       iconNuxt,
       iconChelsea,
-      Tooltip
+      // Tooltip
     },
-    props: ['tooltipText'],
     data: () => {
       return {
         tooltip: false,
+        tooltipText: '',
         baseText: `UX Design: My first love. Grocking the industry. Humility before the User. Cracking the flow. Coding requirements have exploded in recent years, coding is a part of design in many companies, my skillset has expanded; I'm doing this site in Vue 💚`,
         uiux: `UX Design: My first love. It's often not enough to be just a Designer anymore, coding requirements have exploded in recent years. Over the years my skillset has expanded, I produced this site with Vue 💚`,
         html5: `HTML5: the bones of the Internet. As few divs and spans as possible if you please.`,
@@ -71,26 +72,70 @@
     },
     methods: {
       onHover(e) {
-        e.tooltip = true
-        e.tooltipText = e
-        console.log('innnnn', e)
+        this.tooltip = true
+        this.tooltipText = e
       },
       onLeave() {
         this.tooltip = false
-        console.log('out', e)
       },
-    },
-    computed: {
-
-    },
-    mounted: function() {
-      console.log(`Yooooooo!!!`)
     }
   }
 
 </script>
 
 <style lang="scss" scoped>
+  @import '@/template-modern/assets/css/modern-main.scss';
+
+  .tooltip {
+    // background: #d71d5b;
+    background: linear-gradient(180deg,
+        darken($ruby, 0),
+        darken($ruby, 15)
+      );
+    font-family: Spartan, "Times New Roman", Times, serif !important;
+    box-shadow: 0 2px 10px 0px black;
+    padding: 1rem 1.25rem;
+    width: 40ch;
+    border-radius: .5rem;
+    //
+    // position: fixed;
+    position: absolute;
+    top: -9rem;
+    left: calc(100% - 75%);
+    // right: 50%;
+    z-index: 10;
+    margin: 0 auto;
+    place-content: center center;
+
+    @media (max-width: $breakThou) {
+      // margin: 0rem 0 .5rem;
+    }
+
+    @media (max-width: $breakOne) {
+      // margin: 0 0 .5rem;
+    }
+
+    @media (max-width: $breakFour) {
+      // flex-direction: column;
+    }
+
+    p {
+      // display: block;
+      font-size: .8em;
+      line-height: 1.7em;
+      letter-spacing: 0.07em;
+      color: white;
+      font-weight: 500;
+      text-shadow: 10px 10px 10px 0px black !important;
+      // text-shadow: -1px -1px 2px 0px white;
+      //
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      text-align: left;
+    }
+  }
 
   .skillsGrid {
     display: grid;
@@ -141,40 +186,27 @@
   }
 
   body.modern .skillsGrid {
-    width: 60%;
+    width: 70%;
     grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
     justify-content: center;
     margin: 1rem auto;
 
-    @media (min-width: 701px) {
-      width: 50%;
-      grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    @media (min-width: 770px) {
+      width: 60%;
+      // grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
     }
-
-    // @media (min-width: 563px) and (max-width: 1025px) {
-    //   grid-template-columns: repeat(auto-fit, minmax(calc(33.3%), 1fr));
-    //   width: 70%;
-    // }
-
-    // @media (min-width: 701px) and (max-width: 1025px) {
-    //   grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
-    //   width: 60%;
-    // }
 
     @media (max-width: 700px) {
       grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
       width: 80%;
-      // background: rgba(255, 0, 0, 0.144);
     }
 
     svg {
       width: 100px;
-      // stroke: $accent;
-      // margin-bottom: 1rem;
       margin: 0rem auto .75rem;
 
       &:hover {
-        background: hsla(0, 100%, 25%, 0.25);
+        // background: hsla(0, 100%, 25%, 0.25);
         // fill: red;
       }
 
