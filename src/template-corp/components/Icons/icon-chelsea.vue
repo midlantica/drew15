@@ -79,5 +79,6 @@
     // }
   }
 
-</style>
+  svg g { cursor: pointer; }
 
+</style>

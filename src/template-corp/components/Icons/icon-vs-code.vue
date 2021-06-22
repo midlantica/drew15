@@ -23,7 +23,8 @@
   svg {
     width: 88px;
     height: 60px;
-
   }
+
+  svg g { cursor: pointer; }
 
 </style>

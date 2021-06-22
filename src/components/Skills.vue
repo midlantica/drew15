@@ -80,7 +80,6 @@
 </template>
 
 <script>
-  // import { defineComponent } from 'vue'
   import Popper from 'vue3-popper'
   // import 'vue-popperjs/dist/vue-popper.css'
 
@@ -296,7 +295,7 @@
       width: 88px;
     }
 
-    svg g { cursor: progress; }
+    svg g { cursor: pointer; }
   }
 
   body.modern .skillsGrid {

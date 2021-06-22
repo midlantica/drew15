@@ -25,4 +25,6 @@
 
   }
 
+  svg g { cursor: pointer; }
+
 </style>
