@@ -2,6 +2,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router.js'
-import VTooltip from 'v-tooltip'
 
-createApp(App).use(VTooltip).use(router).mount('#app')
+import Popper from 'vue3-popper'
+// import 'vue-popperjs/dist/vue-popper.css'
+
+createApp(App).use(Popper).use(router).mount('#app')
