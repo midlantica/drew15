@@ -163,7 +163,7 @@
     }
 
     p {
-      font-family: Spartan, "Times New Roman", Times, serif !important;
+      font-family: Spartan, "Helvetica Neue", Helvetica, sans-serif !important;
       font-size: clamp(.75rem, .8rem, 1.15rem) !important;
       letter-spacing: .000rem;
       line-height: 1.5rem;

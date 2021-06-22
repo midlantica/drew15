@@ -25,7 +25,7 @@
     // justify-content: space-between;
     // justify-content: space-evenly;
     // justify-content: space-around;
-    font-family: 'Spartan', Helvetica, Arial, sans-serif !important;
+    font-family: Spartan, "Helvetica Neue", Helvetica, sans-serif !important;
 
 
     a {

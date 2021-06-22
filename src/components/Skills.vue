@@ -143,7 +143,7 @@
   :deep(.popper) {
     color: white !important;
     // width: 30ch;
-    font-family: Spartan;
+    font-family: Spartan, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 500;
     font-size: .85rem;
     margin: auto !important;
@@ -151,13 +151,15 @@
     line-height: 1.5rem;
     border-radius: .5em;
     // text-transform: uppercase;
+    width: 30ch;
     background: linear-gradient(180deg,
         darken($ruby, 0),
         darken($ruby, 7)
       ) !important;
     z-index: 200000;
-    top: -1.5rem !important;
-    // margin: 6rem;
+    top: -1.25rem !important;
+    margin: 0 2rem !important;
+    box-shadow: 0px 1px 8px -2px hsla(0, 0%, 0%, 1);
   }
 
   :deep(.popper #arrow::before) {
@@ -230,10 +232,10 @@
   }
 
   .popper p {
-    font-family: Spartan, "Times New Roman", Times, serif !important;
+    font-family: Spartan, "Helvetica Neue", Helvetica, sans-serif !important;
     font-size: .7em;
     line-height: 1.75em;
-    font-weight: 500;
+    font-weight: 600;
     // color: white;
     // background: #d71d5b;
     // background: linear-gradient(180deg,

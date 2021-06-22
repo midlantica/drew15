@@ -112,7 +112,7 @@
     p {
       // display: block;
       // width: 50%;
-      font-family: Spartan, "Times New Roman", Times, serif !important;
+      font-family: Spartan, "Helvetica Neue", Helvetica, sans-serif !important;
       font-size: .85em;
       line-height: 1.75em;
       letter-spacing: 0.025em;

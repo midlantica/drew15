@@ -146,7 +146,7 @@
         padding-top: 1em;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
-        font-family: 'Spartan', Helvetica, Arial, sans-serif;
+        font-family: Spartan, "Helvetica Neue", Helvetica, sans-serif;
         font-weight: 300;
       }
     }

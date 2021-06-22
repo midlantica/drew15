@@ -13,7 +13,7 @@
 <style lang="scss" scoped>
   .tooltip {
     background: #d71d5b;
-    font-family: Spartan, "Times New Roman", Times, serif !important;
+    font-family: Spartan, "Helvetica Neue", Helvetica, sans-serif !important;
     box-shadow: 0 2px 20px 0px black;
     padding: .5rem 1.5rem;
     width: 30ch;
@@ -94,7 +94,7 @@
     padding: 1rem 1.5rem;
 
     p {
-      font-family: Spartan, "Times New Roman", Times, serif !important;
+      font-family: Spartan, "Helvetica Neue", Helvetica, sans-serif !important;
       font-size: .85rem;
       letter-spacing: .000rem;
       line-height: 1.4rem;
