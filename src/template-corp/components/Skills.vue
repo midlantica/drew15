@@ -139,13 +139,13 @@
     // width: 30ch;
     font-family: Spartan, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 500;
-    font-size: .85rem;
+    font-size: .75rem;
     margin: auto !important;
     padding: .5rem 1rem !important;
     line-height: 1.5rem;
     border-radius: .5em;
     // text-transform: uppercase;
-    width: 30ch;
+    max-width: 26ch;
     background: linear-gradient(180deg,
         darken($blue-dark, 0),
         darken($blue-dark, 7)
@@ -154,6 +154,7 @@
     top: -1.25rem !important;
     margin: 0 2rem !important;
     box-shadow: 0px 1px 8px -2px hsla(0, 0%, 0%, 1);
+    left: -30px !important;
   }
 
   :deep(.popper #arrow::before) {

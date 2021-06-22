@@ -144,13 +144,13 @@
     // width: 30ch;
     font-family: Spartan, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 500;
-    font-size: .85rem;
+    font-size: .75rem;
     margin: auto !important;
     padding: .5rem 1rem !important;
     line-height: 1.5rem;
     border-radius: .5em;
     // text-transform: uppercase;
-    width: 30ch;
+    max-width: 26ch;
     background: linear-gradient(180deg,
         darken($ruby, 0),
         darken($ruby, 7)
@@ -159,10 +159,11 @@
     top: -1.25rem !important;
     margin: 0 2rem !important;
     box-shadow: 0px 1px 8px -2px hsla(0, 0%, 0%, 1);
+    left: -30px !important;
   }
 
   :deep(.popper #arrow::before) {
-    background: red !important;
+    // background: red !important;
   }
 
   .popper {
@@ -352,6 +353,14 @@
     svg {
       width: 88px;
     }
+
+    :deep(.popper) {
+      // background: #932213 !important;
+      background: linear-gradient(180deg,
+        darken(#932213, 0),
+        darken(#932213, 7)
+      ) !important;
+    }
   }
 
   body.techy .skillsGrid {
@@ -374,6 +383,14 @@
 
     svg {
       width: 88px;
+    }
+
+    :deep(.popper) {
+      // background: #932213 !important;
+      background: linear-gradient(180deg,
+        darken(#423BA0, 0),
+        darken(#423BA0, 7)
+      ) !important;
     }
   }
 
@@ -399,6 +416,14 @@
 
     svg {
       width: 88px;
+    }
+
+    :deep(.popper) {
+      // background: #932213 !important;
+      background: linear-gradient(180deg,
+        darken( #ff1a22, 0),
+        darken( #ff1a22, 7)
+      ) !important;
     }
   }
 
@@ -446,6 +471,14 @@
 
     svg {
       width: 88px;
+    }
+
+    :deep(.popper) {
+      // background: #932213 !important;
+      background: linear-gradient(180deg,
+        darken(#b100a7, 0),
+        darken(#b100a7, 7)
+      ) !important;
     }
 
   }
