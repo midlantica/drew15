@@ -98,6 +98,7 @@
       align-items: center;
       text-decoration: none;
       margin: 0em 1em;
+      color: black;
 
       img.portThumbs {
         width: 400px;
@@ -121,6 +122,7 @@
         margin-top: 0.5em;
         padding-bottom: 0;
         font-size: 0.85em;
+        color: black;
         border-bottom: 1px solid transparent;
         @include clearfix;
         &:hover {

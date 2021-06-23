@@ -46,6 +46,7 @@
     line-height: 2rem;
     font-size: 1.5rem;
     margin-bottom: .85rem;
+    margin-top: 2rem;
     color: $blueTech;
 
     @media (min-width: $breakThou) {
@@ -79,7 +80,7 @@
   p {
     font-family: $font-copy;
     font-size: 1.3rem;
-    line-height: 2.85rem;
+    line-height: 3rem;
     color: transparentize($blueTech, .2);
     letter-spacing: 0.06em;
 

@@ -32,19 +32,23 @@
 
   h1 {
     font-family: $font-head;
-    font-weight: 500;
+    // font-weight: 500;
     color: $blue-dark;
     text-transform: none;
-    font-size: 1.5em;
+    // font-size: 1.5em;
     margin: 0em 0em .5em;
     padding: 0;
     line-height: 2rem;
     transition: 0.25s ease-in;
     letter-spacing: 0.01rem;
     width: 100%;
+    //
+    font-weight: 600;
+    max-width: 28ch;
+    font-size: 1.4rem;
 
     @media (min-width: $breakThou) {
-      max-width: 26ch;
+      max-width: 28ch;
     }
 
     @media (max-width: $breakThou) {
@@ -56,7 +60,7 @@
     }
 
     @media (max-width: $breakTwo) {
-      max-width: 26ch;
+      max-width: 28ch;
     }
 
     @media (max-width: $breakThree) {

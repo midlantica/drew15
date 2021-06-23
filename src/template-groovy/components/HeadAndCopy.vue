@@ -36,8 +36,8 @@
   h1 {
     font-family: $font-head;
     text-transform: initial;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
     font-weight: 500;
     letter-spacing: 0.00rem;
     margin-bottom:.5rem;
@@ -68,7 +68,7 @@
     color: $grey;
     font-size: 1.125rem;
     letter-spacing: 0.009rem;
-    line-height: 2.4rem;
+    line-height: 2.6rem;
 
     @media (max-width: $breakThou) {
       columns: 2 200px;

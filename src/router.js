@@ -14,7 +14,7 @@ import VueBodyClass from 'vue-body-class'
 const routes = [
   {
     path: '/',
-    redirect: 'Bourbon',
+    redirect: 'Modern',
   },
   {
     path: '/Modern',

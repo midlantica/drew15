@@ -284,7 +284,7 @@
       display: inline;
 
       &:nth-child(1) {
-        //
+        // margin-left: 1rem;
       }
 
       &:nth-child(2) {

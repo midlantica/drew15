@@ -16,6 +16,6 @@
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   @import '@/template-modern/assets/css/modern-main.scss';
 </style>

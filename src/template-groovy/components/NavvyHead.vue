@@ -78,7 +78,7 @@
       border-radius: 10em;
       position: relative;
       top: -2em;
-      left: -2.7em;
+      left: -2.75em;
       z-index: 5;
       grid-row: 1 / 3;
       margin-right: -3em;

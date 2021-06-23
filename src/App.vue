@@ -141,6 +141,12 @@
 
     &.extras {
       background: #2e001f;
+
+      .flexxy a p {
+        font-family: Spartan, "Helvetica Neue", Helvetica, sans-serif !important;
+        color: white;
+        border-bottom: 1px solid hsla(0, 0%, 100%, 0.5);
+      }
     }
 
     &.extras .extrasWrapper {
@@ -204,6 +210,7 @@
         font-family: $font-groovy;
         font-weight: 300;
         text-transform: capitalize;
+        color: black;
       }
       p {
         font-family: $font-groovy;
@@ -365,10 +372,12 @@
         font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
         font-weight: 300;
         text-transform: capitalize;
+        color: black;
       }
 
       p {
         font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        color: black;
       }
     }
 
