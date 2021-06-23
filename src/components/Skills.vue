@@ -479,6 +479,7 @@
         darken(#b100a7, 0),
         darken(#b100a7, 7)
       ) !important;
+      border: 3px dashed white !important;
     }
 
   }

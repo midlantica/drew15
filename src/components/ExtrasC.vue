@@ -88,7 +88,7 @@
   }
 
   .flexxy {
-    padding: 0 4em;
+    padding: 0 0em;
 
     a {
       flex-basis: auto;

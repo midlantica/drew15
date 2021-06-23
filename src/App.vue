@@ -139,15 +139,22 @@
       margin: 0 auto;
     }
 
+    &.extras {
+      background: #2e001f;
+    }
+
     &.extras .extrasWrapper {
       //
       h1 {
-        font-size: clamp(1rem, 1.3rem, 0.75rem) !important;
+        font-size: clamp(.85rem, 1.3rem, 1.6rem) !important;
+        font-family: Spartan, "Helvetica Neue", Helvetica, sans-serif !important;
+        color: #d71d5b;
         padding-top: 1em;
+        font-weight: 600;
+        line-height: 1.5;
+        text-transform: capitalize;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
-        font-family: Spartan, "Helvetica Neue", Helvetica, sans-serif;
-        font-weight: 300;
       }
     }
 

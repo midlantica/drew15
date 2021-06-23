@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import ModernRoot from './template-modern/pages/ModernRoot.vue'
+import ModernExtras from './template-modern/pages/ModernExtras.vue'
 import ModernProjects from './template-modern/pages/ModernProjects.vue'
 import ModernSkills from './template-modern/pages/ModernSkills.vue'
 import ModernAbout from './template-modern/pages/ModernAbout.vue'
@@ -79,6 +80,21 @@ const routes = [
           ],
         },
       },
+      {
+        path: 'Extras',
+        name: 'ModernExtras',
+        component: ModernExtras,
+        meta: {
+          bodyClass: 'extras',
+          title: 'Drew Harper – UI/UX Designer Projects',
+          metaTags: [
+            // {
+            //   name: 'description',
+            //   content: 'The home page of our example app.',
+            // }
+          ],
+        },
+      },
       // ...other sub routes
     ],
   },
@@ -150,34 +166,34 @@ const routes = [
       bodyClass: 'punk',
       title: 'Drew Harper – UI/UX Designer',
       metaTags: [
-        // {
+        // {./template-modern/pages/ModernExtras.vue
         //   name: 'description',
         //   content: 'The home page of our example app.',
         // }
       ],
     },
   },
-  {
-    path: '/Modern/Extras',
-    name: 'ExtrasModern',
-    // route level code-splitting
-    // this generates a separate chunk (Extras.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(
-        /* webpackChunkName: 'ExtrasBourbon' */ './template-modern/pages/Extras.vue'
-      ),
-    meta: {
-      bodyClass: 'bourbon extras',
-      title: 'Drew Harper – UI/UX Designer',
-      metaTags: [
-        // {
-        //   name: 'description',
-        //   content: 'The home page of our example app.',
-        // }
-      ],
-    },
-  },
+  // {
+  //   path: '/Modern/Extras',
+  //   name: 'ExtrasModern',
+  //   // route level code-splitting
+  //   // this generates a separate chunk (Extras.[hash].js) for this route
+  //   // which is lazy-loaded when the route is visited.
+  //   component: () =>
+  //     import(
+  //       /* webpackChunkName: 'ExtrasBourbon' */ './template-modern/pages/ModernExtras.vue'
+  //     ),
+  //   meta: {
+  //     bodyClass: 'modern extras',
+  //     title: 'Drew Harper–UI/UX Designer',
+  //     metaTags: [
+  //       // {
+  //       //   name: 'description',
+  //       //   content: 'The home page of our example app.',
+  //       // }
+  //     ],
+  //   },
+  // },
   {
     path: '/Bourbon/Extras',
     name: 'ExtrasBourbon',
