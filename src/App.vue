@@ -146,9 +146,9 @@
     &.extras .extrasWrapper {
       //
       h1 {
-        font-size: clamp(.85rem, 1.3rem, 1.6rem) !important;
+        font-size: clamp(.85rem, 1.2rem, 1.4rem) !important;
         font-family: Spartan, "Helvetica Neue", Helvetica, sans-serif !important;
-        color: #d71d5b;
+        color: white;
         padding-top: 1em;
         font-weight: 600;
         line-height: 1.5;

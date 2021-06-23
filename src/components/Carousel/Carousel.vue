@@ -264,9 +264,14 @@
 
   // ########################
 
+  p.projectHead {
+    color: lighten($black, 20) !important;
+  }
+
   body.bourbon .projectHead,
   body.bourbon .box p {
     font-family: Dosis, 'Helvetica Neue', Arial, sans-serif !important;
+    // color: $black !important;
   }
 
   body.bourbon .box {
@@ -281,6 +286,7 @@
   body.groovy .projectHead,
   body.groovy .box p {
     font-family: Dosis, 'Helvetica Neue', Arial, sans-serif !important;
+    // color: red !important;
   }
 
   body.groovy .box {
@@ -291,6 +297,7 @@
   body.techy .projectHead,
   body.techy .box p {
     font-family: Dosis, 'Helvetica Neue', Arial, sans-serif !important;
+    // color: red !important;
   }
 
   body.techy .box {
@@ -302,6 +309,7 @@
   body.corp .box p {
     font-family: cormorantGaramond-Semi-Bold, 'Times New Roman', Times, serif !important;
     letter-spacing: 0em;
+    // color: red !important;
   }
 
   body.corp .box {
@@ -390,6 +398,7 @@
   body.punk .projectHead,
   body.punk .box p {
     font-family: Poppins, 'Helvetica Neue', Arial, sans-serif !important;
+
   }
 
   body.punk .box {
@@ -403,6 +412,7 @@
     text-transform: uppercase;
     // margin-right: 3.5em;
     margin: auto;
+    // color: red !important;
 
     a {
       cursor: pointer;

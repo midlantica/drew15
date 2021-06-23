@@ -117,7 +117,7 @@
         uiux: `UX Design is my first love. Humility before the User. Crack the flow!`,
         html5: `HTML5: the bones of the Internet. As few divs and spans as possible if you please.`,
         css3: `CSS3: Engineers just love CSS haha! Let me do that for you 🙂 I enjoy its declarative cascading infuriating novelty.`,
-        js: `JavaScript: I design, do all my HTML & CSS, JS I'm still mastering. Continuous learning, Love me some Vue 💚.`,
+        js: `JavaScript: I design, do all my HTML & CSS, JS I'm still mastering. Continuous learning, Love me some Vue 💚, like this site`,
         sass: `SASS has made CSS so much more fun to use. CSS's new --vars make CSS more robust, but there's along way to go.`,
         vue: `Vue.js is my favorite JS framework, a great balance of Angular's ease and React's abilities.`,
         nuxt: `The Next framework for Vue: SSR, routes by dir, SEO; it's jam-packed with crunchy goodness. Digging Gridsome.js too.`,
