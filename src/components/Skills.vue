@@ -144,10 +144,10 @@
     // width: 30ch;
     font-family: Spartan, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 500;
-    font-size: .75rem;
     margin: auto !important;
     padding: .5rem 1rem !important;
-    line-height: 1.5rem;
+    font-size: 0.7rem;
+    line-height: 1.8;
     border-radius: .5em;
     // text-transform: uppercase;
     max-width: 26ch;
