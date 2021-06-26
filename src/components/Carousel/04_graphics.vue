@@ -35,6 +35,15 @@
       // const imgPath = ('/public/img/portfolio/01_uiux/')
       let slides = ref([
         {
+          image: require('/public/img/portfolio/04_graphics/Wild_Card_logo_study_01.png')
+        },
+        {
+          image: require('/public/img/portfolio/04_graphics/Wild_Card_logo_study_02.png')
+        },
+        {
+          image: require('/public/img/portfolio/04_graphics/Tank_font.png')
+        },
+        {
           image: require('/public/img/portfolio/04_graphics/jpay_app_logos.jpg')
         },
         {

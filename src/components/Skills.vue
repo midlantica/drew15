@@ -160,6 +160,8 @@
     margin: 0 2rem !important;
     box-shadow: 0px 1px 8px -2px hsla(0, 0%, 0%, 1);
     left: -30px !important;
+    max-height: fit-content !important;
+    min-height: fit-content !important;
   }
 
   :deep(.popper #arrow::before) {
@@ -172,6 +174,7 @@
     display: inline-block;
     position: absolute;
     z-index: 200000;
+    max-height: fit-content !important;
   }
   .popper .inline-block {
     background: linear-gradient(180deg,

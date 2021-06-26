@@ -17,7 +17,7 @@
 
   .modernTabs {
     // margin: 0.75rem 0 0.5rem;
-    margin: 1.25rem 0 .5rem;
+    margin: 1.25rem 0 1.5rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

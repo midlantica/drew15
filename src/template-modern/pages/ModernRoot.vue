@@ -90,7 +90,7 @@
       }
 
     @media (max-width: $breakOne) {
-      width: 80%;
+      width: 90%;
       margin: 0rem;
     }
 
@@ -104,7 +104,7 @@
     grid-row: 1;
     align-content: center;
     max-width: 500px;
-    width: 85%;
+    width: 100%;
     justify-self: center;
 
     @media (max-width: $breakThou) {
