@@ -387,8 +387,4 @@
       letter-spacing: 0.05rem;
     }
   }
-
-  .crazytown {
-    color: red;
-  }
 </style>
