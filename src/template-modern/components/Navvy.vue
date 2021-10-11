@@ -10,8 +10,8 @@
       <p class=''>
         <a href='mailto:druharper@gmail.com'>druharper@gmail.com</a>
         &nbsp;&nbsp;resume:
-        <a href='resume/drew_harper_resume_portfolio.pdf'>pdf</a> /
-        <a href='resume/drew_harper_resume_portfolio.docx'>word</a>
+        <a href='https://drewharper.com/resume/drew_harper_resume_portfolio.pdf'>pdf</a> /
+        <a href='https://drewharper.com/resume/drew_harper_resume_portfolio.docx'>word</a>
       </p>
     </section>
   </nav>
