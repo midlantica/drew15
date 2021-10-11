@@ -13,7 +13,6 @@
     <vueper-slide
       v-for='(slide, i) in slides' :key='i'
       :image='slide.image'
-
     >
       <template v-slot:loader>
         <i class="icon icon-loader spinning"></i>
@@ -37,6 +36,9 @@
       // let title = ref('')
       // const imgPath = ('/public/img/portfolio/01_uiux/')
       let slides = ref([
+        {
+          image: require('/public/img/portfolio/01_uiux/Zander_screenshot_v1.png')
+        },
         {
           image: require('/public/img/portfolio/01_uiux/tdoe/tn_doc_01.jpg')
         },
