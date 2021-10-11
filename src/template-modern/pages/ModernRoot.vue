@@ -20,10 +20,6 @@
         </main>
       </transition>
 
-      <!-- <footer>
-        <NavvyEmpty />
-      </footer> -->
-
     </div>
   </transition>
 </template>
@@ -31,14 +27,11 @@
 <script>
   import Navvy from '../components/Navvy'
   import ModernTabs from '../components/ModernTabs'
-  // import NavvyEmpty from '../components/NavvyEmpty'
 
   export default {
-    // layout: 'default',
     name: 'ModernRoot',
     components: {
       Navvy,
-      // NavvyEmpty,
       ModernTabs
     },
     data() {

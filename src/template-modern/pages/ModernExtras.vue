@@ -1,9 +1,7 @@
 <template>
-  <!-- <transition name="bounce" appear> -->
-    <transition name="bounce2" appear>
-      <ExtrasC />
-    </transition>
-  <!-- </transition> -->
+  <transition name="bounce2" appear>
+    <ExtrasC />
+  </transition>
 </template>
 
 <script>

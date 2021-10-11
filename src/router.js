@@ -98,6 +98,7 @@ const routes = [
       // ...other sub routes
     ],
   },
+  // />> END MODERN
   {
     path: '/Bourbon',
     name: 'Bourbon',
@@ -173,27 +174,6 @@ const routes = [
       ],
     },
   },
-  // {
-  //   path: '/Modern/Extras',
-  //   name: 'ExtrasModern',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (Extras.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () =>
-  //     import(
-  //       /* webpackChunkName: 'ExtrasBourbon' */ './template-modern/pages/ModernExtras.vue'
-  //     ),
-  //   meta: {
-  //     bodyClass: 'modern extras',
-  //     title: 'Drew Harper–UI/UX Designer',
-  //     metaTags: [
-  //       // {
-  //       //   name: 'description',
-  //       //   content: 'The home page of our example app.',
-  //       // }
-  //     ],
-  //   },
-  // },
   {
     path: '/Bourbon/Extras',
     name: 'ExtrasBourbon',

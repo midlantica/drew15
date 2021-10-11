@@ -6,12 +6,10 @@
   </div>
 </template>
 
-
 <script>
   import Carousel from '@/components/Carousel/Carousel'
 
   export default {
-    // layout: 'default',
     name: 'ModernProjects',
     components: {
       Carousel,
@@ -26,5 +24,4 @@
 
 <style lang='scss' scoped>
   @import '@/template-modern/assets/css/modern-main.scss';
-
 </style>
