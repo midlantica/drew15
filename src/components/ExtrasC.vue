@@ -5,10 +5,10 @@
 
       <div class="flexxy flexRowWrap center-flex align-content-start">
 
-        <a href="/img/portfolio/extras/Zzander.png" target="_BLANK">
-          <img class="portThumbs" src="/img/portfolio/extras/Zzander_sm@2x.png" />
+        <a href="/img/portfolio/extras/zander.png" target="_BLANK">
+          <img class="portThumbs" src="/img/portfolio/extras/zander_sm@2x.png" />
           <div class="text-center">
-            <p>A Service Request page</p>
+            <p>Zander Insurance</p>
           </div>
         </a>
 

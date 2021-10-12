@@ -2,75 +2,123 @@
   <div class="skillsGrid">
 
     <Popper trigger="hover">
-      <iconUiux class="icon uiux" />
+      <iconUiux class="icon uiux"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ uiux }}
       </template>
     </Popper>
     <Popper trigger="hover">
-      <iconHtml5 class="icon html5" />
+      <iconHtml5 class="icon html5"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ html5 }}
       </template>
     </Popper>
     <Popper trigger="hover">
-      <iconCss3 class="icon css3" />
+      <iconCss3 class="icon css3"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ css3 }}
       </template>
     </Popper>
     <Popper trigger="hover">
-      <iconJs class="icon js" />
+      <iconJs class="icon js"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ js }}
       </template>
     </Popper>
     <!--  -->
     <Popper trigger="hover">
-      <iconSketch class="icon sketch" />
+      <iconSketch class="icon sketch"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ sketch }}
       </template>
     </Popper>
     <Popper trigger="hover">
-      <iconSass class="icon sass" />
+      <iconSass class="icon sass"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ sass }}
       </template>
     </Popper>
     <Popper trigger="hover">
-      <iconVue class="icon vue" />
+      <iconVue class="icon vue"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ vue }}
       </template>
     </Popper>
     <Popper trigger="hover">
-      <iconSvg class="icon svg" />
+      <iconSvg class="icon svg"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ svg }}
       </template>
     </Popper>
     <!--  -->
     <Popper trigger="hover">
-      <iconVSCode class="icon vsCode" />
+      <iconVSCode class="icon vsCode"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ vsCode }}
       </template>
     </Popper>
     <Popper trigger="hover">
-      <iconFigma class="icon figma" />
+      <iconFigma class="icon figma"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ figma }}
       </template>
     </Popper>
     <Popper trigger="hover">
-      <iconNuxt class="icon nuxt" />
+      <iconNuxt class="icon nuxt"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ nuxt }}
       </template>
     </Popper>
     <Popper trigger="hover">
-      <iconChelsea class="icon chelsea" />
+      <iconChelsea class="icon chelsea"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ chelsea }}
       </template>
@@ -81,7 +129,6 @@
 
 <script>
   import Popper from 'vue3-popper'
-  // import 'vue-popperjs/dist/vue-popper.css'
 
   import iconUiux from '@/components/Icons/icon-uiux'
   import iconHtml5 from '@/components/Icons/icon-html5'
@@ -114,10 +161,12 @@
     },
     data: () => {
       return {
-        hover: true,
+        hover: false,
         placement: top,
         offsetY: 25,
         arrow: true,
+        openDelay: 0,
+        interactive: true,
         uiux: `UX Design is my first love. Humility before the User. Crack the flow!`,
         html5: `HTML5: the bones of the Internet. As few divs and spans as possible if you please.`,
         css3: `CSS3: Engineers just love CSS haha! Let me do that for you 🙂 I enjoy its declarative cascading infuriating novelty.`,
@@ -138,6 +187,11 @@
 
 <style lang="scss" scoped>
   @import '@/template-modern/assets/css/modern-main.scss';
+
+  // .active:hover {
+  //   // background: red;
+  //   box-shadow: 0px 0px 10px red;
+  // }
 
   :deep(.popper) {
     color: white !important;
@@ -297,6 +351,12 @@
 
     svg {
       width: 88px;
+
+      &:hover {
+        // background: red !important;
+        animation: shimmy .25s;
+        // animation-duration: .25s;
+      }
     }
 
     svg g { cursor: pointer; }
@@ -482,7 +542,7 @@
         darken(#b100a7, 0),
         darken(#b100a7, 7)
       ) !important;
-      border: 3px dashed white !important;
+      border: 2px dashed white !important;
     }
 
   }
