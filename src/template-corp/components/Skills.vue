@@ -1,75 +1,123 @@
 <template>
   <div class='skillsGrid'>
     <Popper trigger="hover">
-      <iconUiuxBlue class="icon uiux" />
+      <iconUiuxBlue class="icon uiux"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ uiux }}
       </template>
     </Popper>
     <Popper trigger="hover">
-      <iconHtml5Blue class="icon html5" />
+      <iconHtml5Blue class="icon html5"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ html5 }}
       </template>
     </Popper>
     <Popper trigger="hover">
-      <iconCss3Blue class="icon css3" />
+      <iconCss3Blue class="icon css3"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ css3 }}
       </template>
     </Popper>
     <Popper trigger="hover">
-      <iconJsBlue class="icon js" />
+      <iconJsBlue class="icon js"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ js }}
       </template>
     </Popper>
     <!--  -->
     <Popper trigger="hover">
-      <iconSketchBlue class="icon sketch" />
+      <iconSketchBlue class="icon sketch"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ sketch }}
       </template>
     </Popper>
     <Popper trigger="hover">
-      <iconSassBlue class="icon sass" />
+      <iconSassBlue class="icon sass"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ sass }}
       </template>
     </Popper>
     <Popper trigger="hover">
-      <iconVueBlue class="icon vue" />
+      <iconVueBlue class="icon vue"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ vue }}
       </template>
     </Popper>
     <Popper trigger="hover">
-      <iconSvgBlue class="icon svg" />
+      <iconSvgBlue class="icon svg"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ svg }}
       </template>
     </Popper>
     <!--  -->
     <Popper trigger="hover">
-      <iconVSCodeBlue class="icon vsCode" />
+      <iconVSCodeBlue class="icon vsCode"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ vsCode }}
       </template>
     </Popper>
     <Popper trigger="hover">
-      <iconFigmaBlue class="icon figma" />
+      <iconFigmaBlue class="icon figma"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ figma }}
       </template>
     </Popper>
     <Popper trigger="hover">
-      <iconNuxtBlue class="icon nuxt" />
+      <iconNuxtBlue class="icon nuxt"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ nuxt }}
       </template>
     </Popper>
     <Popper trigger="hover">
-      <iconChelseaBlue class="icon chelsea" />
+      <iconChelseaBlue class="icon chelsea"
+        @mouseover="hover = true"
+        @mouseleave="hover = false"
+        :class="{ active: hover }"
+      />
       <template #content class="popper">
         {{ chelsea }}
       </template>
@@ -110,14 +158,16 @@
     },
     data: () => {
       return {
-        hover: true,
+        hover: false,
         placement: top,
         offsetY: 25,
         arrow: true,
+        openDelay: 0,
+        interactive: true,
         uiux: `UX Design is my first love. Humility before the User. Crack the flow!`,
         html5: `HTML5: the bones of the Internet. As few divs and spans as possible if you please.`,
         css3: `CSS3: Engineers just love CSS haha! Let me do that for you 🙂 I enjoy its declarative cascading infuriating novelty.`,
-        js: `JavaScript: I design, do all my HTML & CSS, JS I'm still mastering. Continuous learning, Love me some Vue 💚, like this site`,
+        js: `JavaScript: I design, do all my HTML & CSS, I'm still mastering JS. Continuous learning, Love me some Vue 💚, like this site`,
         sass: `SASS has made CSS so much more fun to use. CSS's new --vars make CSS more robust, but there's along way to go.`,
         vue: `Vue.js is my favorite JS framework, a great balance of Angular's ease and React's abilities.`,
         nuxt: `The Next framework for Vue: SSR, routes by dir, SEO; it's jam-packed with crunchy goodness. Digging Gridsome.js too.`,
@@ -134,6 +184,11 @@
 <style lang='scss' scoped>
   @import '@/template-corp/assets/css/corp-main.scss';
 
+  // .active:hover {
+  //   // background: red;
+  //   box-shadow: 0px 0px 10px red;
+  // }
+
   :deep(.popper) {
     color: white !important;
     // width: 30ch;
@@ -145,7 +200,7 @@
     line-height: 1.8;
     border-radius: .5em;
     // text-transform: uppercase;
-    max-width: 50ch;
+    max-width: 26ch;
     background: linear-gradient(180deg,
         darken($blue-dark, 0),
         darken($blue-dark, 7)
@@ -156,10 +211,11 @@
     box-shadow: 0px 1px 8px -2px hsla(0, 0%, 0%, 1);
     left: -30px !important;
     max-height: fit-content !important;
+    min-height: fit-content !important;
   }
 
   :deep(.popper #arrow::before) {
-    background: red !important;
+    // background: red !important;
   }
 
   .popper {
@@ -280,6 +336,24 @@
     }
 
     svg g { cursor: pointer; }
+
+    svg {
+      width: 88px;
+
+      &:hover {
+        // background: red !important;
+        animation: shimmy .25s !important;
+        // animation-duration: .25s;
+      }
+    }
+
+    :deep(.popper) {
+      // background: #932213 !important;
+      background: linear-gradient(180deg,
+        darken( #01487f, 0),
+        darken( #01345c, 7)
+      ) !important;
+    }
   }
 
 </style>

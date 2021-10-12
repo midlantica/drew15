@@ -1,6 +1,5 @@
 <template>
   <div class="skillsGrid">
-
     <Popper trigger="hover">
       <iconUiux class="icon uiux"
         @mouseover="hover = true"
@@ -170,7 +169,7 @@
         uiux: `UX Design is my first love. Humility before the User. Crack the flow!`,
         html5: `HTML5: the bones of the Internet. As few divs and spans as possible if you please.`,
         css3: `CSS3: Engineers just love CSS haha! Let me do that for you 🙂 I enjoy its declarative cascading infuriating novelty.`,
-        js: `JavaScript: I design, do all my HTML & CSS, JS I'm still mastering. Continuous learning, Love me some Vue 💚, like this site`,
+        js: `JavaScript: I design, do all my HTML & CSS, I'm still mastering JS. Continuous learning, Love me some Vue 💚, like this site`,
         sass: `SASS has made CSS so much more fun to use. CSS's new --vars make CSS more robust, but there's along way to go.`,
         vue: `Vue.js is my favorite JS framework, a great balance of Angular's ease and React's abilities.`,
         nuxt: `The Next framework for Vue: SSR, routes by dir, SEO; it's jam-packed with crunchy goodness. Digging Gridsome.js too.`,
@@ -354,7 +353,7 @@
 
       &:hover {
         // background: red !important;
-        animation: shimmy .25s;
+        animation: shimmy .25s !important;
         // animation-duration: .25s;
       }
     }
@@ -507,6 +506,24 @@
 
     @media (max-width: 470px) {
       grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+    }
+
+    svg {
+      width: 88px;
+
+      &:hover {
+        // background: red !important;
+        animation: shimmy .25s !important;
+        // animation-duration: .25s;
+      }
+    }
+
+    :deep(.popper) {
+      // background: #932213 !important;
+      background: linear-gradient(180deg,
+        darken( #01487f, 0),
+        darken( #01345c, 7)
+      ) !important;
     }
   }
 
