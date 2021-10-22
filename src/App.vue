@@ -76,6 +76,7 @@
       }
     }
 
+
     &.extras .extrasWrapper {
       //
       h1 {
@@ -387,4 +388,5 @@
       letter-spacing: 0.05rem;
     }
   }
+
 </style>
