@@ -9,12 +9,10 @@
     </section>
     <section class='contact'>
       <p class='email'>
-        <a href='mailto:druharper@gmail.com'>DRUHARPER@GMAIL.COM</a>
+        <a href='mailto:druharper@gmail.com'>dmailer@gmail.com</a>
       </p>
       <p class='resume'>
-        Resume:
-        <a href='resume/drew_harper_resume_portfolio.pdf'>PDF</a> or
-        <a href='resume/drew_harper_resume_portfolio.docx'>WORD</a>
+        <a href='resume/drew_harper_resume_portfolio.pdf'>PDF Resume</a>
       </p>
     </section>
   </nav>
@@ -154,7 +152,7 @@
 
   section.contact {
     text-transform: uppercase;
-    margin-top: 0.2em;
+    margin-top: 0.75em;
     margin-left: 1em;
     margin-bottom: 4px;
     z-index: 10;
@@ -176,18 +174,22 @@
     }
 
     p {
-      font-family: $font-subhead;
-      letter-spacing: 5rem;
+      font-family: $font-copy;
+      letter-spacing: 0.05rem;
       font-size: 1.2rem;
+      line-height: 1.25;
+      text-transform: lowercase;
       @include font-smoothing;
 
       &:nth-child(1) {
-        font-size: 1.375em;
-        letter-spacing: 0.13rem;
+        font-size: 1.25em;
+        // letter-spacing: 0.05rem;
+        // margin-top: .5rem;
       }
 
       &:nth-child(2) {
-        letter-spacing: 0.25rem;
+        font-size: 1.25em;
+        // letter-spacing: 0.05rem;
       }
 
       @media (max-width: $breakOne) {

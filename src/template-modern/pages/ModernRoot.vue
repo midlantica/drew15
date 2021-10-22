@@ -32,7 +32,7 @@
     name: 'ModernRoot',
     components: {
       Navvy,
-      ModernTabs
+      ModernTabs,
     },
     data() {
       return {

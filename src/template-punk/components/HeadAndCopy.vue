@@ -8,9 +8,7 @@
       </div>
 
       <div class="resumeLinks">
-        <p class='resume rOne'>Resume:</p>
-        <a class='resume rThree' href="resume/drew_harper_resume_portfolio_short.docx">Word</a>
-        <a class='resume rTwo' href="resume/drew_harper_resume_portfolio.pdf">PDF</a>
+        <a class='resume rOne' href="resume/drew_harper_resume_portfolio.pdf">PDF Resume</a>
       </div>
 
     </div>

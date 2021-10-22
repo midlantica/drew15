@@ -11,9 +11,8 @@
         </router-link>
       </div>
       <section class='contact'>
-        <p class='resume'>Resume: <a href='resume/drew_harper_resume_portfolio.pdf'>PDF</a>
-        or
-        <a href='resume/drew_harper_resume_portfolio.docx'>Word</a>
+        <p class='resume'>
+          <a href='resume/drew_harper_resume_portfolio.pdf'>PDF Resume</a>
         </p>
         <p class='email'><a href='mailto:druharper@gmail.com'>druharper@gmail.com</a></p>
       </section>
