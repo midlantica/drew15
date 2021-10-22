@@ -55,7 +55,7 @@
   body.corp .tooltip {
     @include box-shadow(0px, 0px, 3px, -1px, hsla(0, 14%, 22%, 0.5));
     border-radius: 2px;
-    font-family: Alegreya;
+    font-family: 'Bodoni Moda', Times, serif !important;
   }
 
   body.punk .tooltip {
@@ -68,7 +68,7 @@
   body.corp .tooltip {
     //
     p {
-      font-family: Alegreya, "Times New Roman", Times, serif !important;
+      font-family: 'Bodoni Moda', Times, serif !important;
       font-size: 1rem;
       letter-spacing: .001rem;
       line-height: 1.4rem;

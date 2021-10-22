@@ -72,7 +72,7 @@
           <img class="portThumbs" src="/img/portfolio/extras/JPay_Extras@2x.png" />
           <div class="text-center">
             <p>
-              JPay Extras: Web, Mobile, Corp ID, Print Ads, Newslatters,
+              JPay Extras: Web, Mobile, Corp ID, Print Ads, Newsletters,
               <br />Brochures, Package Design, PDF forms, Kiosk Design, Murals
             </p>
           </div>

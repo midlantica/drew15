@@ -45,7 +45,7 @@
     //
     font-weight: 600;
     max-width: 28ch;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 
     @media (min-width: $breakThou) {
       max-width: 28ch;
@@ -72,7 +72,7 @@
   p.smallCaps {
     font-family: $font-caps;
     font-variant: small-caps;
-    font-size: 80%;
+    font-size: 75%;
     font-weight: 500;
   }
 
@@ -80,7 +80,7 @@
     color: transparentize($black, 0.15);
     font-family: $font-copy;
     font-weight: normal;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 2.6rem;
     padding-left: 1.7rem;
     text-align: justify;

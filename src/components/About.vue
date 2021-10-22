@@ -69,7 +69,6 @@
     align-self: center;
     width: 100px;
     height: 60px;
-
   }
 
   p {
@@ -102,8 +101,8 @@
   .corp .about {
     //
     p {
-      font-family: Alegreya, "Times New Roman", Times, serif !important;
-      font-size: 1rem;
+      font-family: 'Bodoni Moda', Times, serif !important;
+      font-size: .85rem;
       letter-spacing: .001rem;
       line-height: 1.4rem;
       margin: 0;

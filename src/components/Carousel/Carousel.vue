@@ -307,7 +307,7 @@
   //////////
   body.corp .projectHead,
   body.corp .box p {
-    font-family: cormorantGaramond-Semi-Bold, 'Times New Roman', Times, serif !important;
+    font-family: 'Bodoni Moda', Times, serif !important;
     letter-spacing: 0em;
     // color: red !important;
   }

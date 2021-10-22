@@ -294,22 +294,22 @@
     &.extras .extrasWrapper {
       //
       h1 {
-        font-size: 1.75em;
+        font-size: 1.5em;
         padding-top: 1em;
-        font-family: "Alegreya SC", "Times New Roman", Times, serif !important;
-        font-weight: 300;
+        font-family: 'Bodoni Moda', Times, serif !important;
+        font-weight: 600;
         color: #01487F !important;
         text-transform: capitalize;
       }
 
       p {
-        font-family: Alegreya, "Times New Roman", Times, serif !important;
+        font-family: 'Bodoni Moda', Times, serif !important;
         font-size: 1em;
       }
     }
 
     .about p {
-      font-family: Alegreya, "Times New Roman", Times, serif !important;
+      font-family: 'Bodoni Moda', Times, serif !important;
       font-size: 1em;
     }
 

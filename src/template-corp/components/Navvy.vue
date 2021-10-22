@@ -223,14 +223,14 @@
 
     p {
       font-family: $font-copy;
-      font-size: 1em;
+      font-size: 1.15em;
       letter-spacing: 0.01em;
       align-items: center;
       text-align: center;
       line-height: 1.5em;
       flex-grow: 1;
-      font-weight: 500;
-      text-transform: uppercase;
+      font-weight: 600;
+      text-transform: lowercase;
 
       a {
         border-bottom: 2px dotted lighten($blue-dark, 20);
