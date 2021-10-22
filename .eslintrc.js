@@ -1,25 +1,30 @@
 module.exports = {
-  'env': {
-    'browser': true,
-    'node': true,
-    'es6': true
-  },
+  'env': [
+    'eslint:recommended',
+    'plugin:vue/essential',
+    'plugin:vue/vue3-essential'
+  ],
+
   'extends': [
     'eslint:recommended',
     'plugin:vue/essential'
   ],
+
   'globals': {
     'Atomics': 'readonly',
     'SharedArrayBuffer': 'readonly'
   },
+
   'parserOptions': {
     'ecmaVersion': 2018,
     'sourceType': 'module',
     "parser": "babel-eslint",
   },
+
   'plugins': [
     'vue'
   ],
+
   'rules': {
     'indent': [
       'error',
@@ -46,6 +51,7 @@ module.exports = {
       // "ignores": []
     }],
   },
+
   "overrides": [
     {
       "files": ["*.vue"],
@@ -53,5 +59,52 @@ module.exports = {
         "indent": "off"
       }
     }
-  ]
+  ],
+
+  root: true,
+
+  env: {
+    browser: true,
+    node: true,
+    es6: true
+  },
+
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+    parser: 'babel-eslint'
+  },
+
+  rules: {
+    indent: [
+      'error',
+      2
+    ],
+    'linebreak-style': [
+      'error',
+      'unix'
+    ],
+    quotes: [
+      'error',
+      'single',
+      {
+        avoidEscape: true,
+        allowTemplateLiterals: true
+      }
+    ],
+    semi: [
+      'error',
+      'never'
+    ],
+    'vue/script-indent': [
+      'error',
+      2,
+      {
+        baseIndent: 1,
+        switchCase: 0
+      }
+    ],
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+  }
 }
