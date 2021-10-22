@@ -380,6 +380,7 @@
         color: black;
       }
     }
+
     .smallCaps {
       font-variant: small-caps !important;
       font-size: 95% !important;
