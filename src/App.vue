@@ -34,6 +34,7 @@
     max-width: 1024px;
     margin: 0 auto;
     position: relative;
+    // color: inherit;
   }
 
   // #############################
