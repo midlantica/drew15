@@ -4,7 +4,7 @@
 
       <div class="jobTitles">
         <p>UI/UX Designer</p>
-        <p>Front-End Dev</p>
+        <p>Visual Designer</p>
       </div>
 
       <div class="resumeLinks">

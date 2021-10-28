@@ -5,7 +5,7 @@
     </h1>
     <section class='jobDesc'>
       <h2>UI/UX Designer</h2>
-      <h2>FRONT&nbsp;END&nbsp;DEV</h2>
+      <h2>VISUAL DESIGNER</h2>
     </section>
     <section class='contact'>
       <p class='email'>
@@ -129,7 +129,7 @@
       @include font-smoothing;
 
       &:nth-child(2) {
-        font-size: 1.65em;
+        font-size: 1.45em;
         margin-bottom: 0.1em;
       }
 

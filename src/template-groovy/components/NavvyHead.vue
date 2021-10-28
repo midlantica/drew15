@@ -11,7 +11,7 @@
       </router-link>
 
       <div class='jobDesc'>
-        <h2>ui/ux designer + front&#8209;end&nbsp;dev</h2>
+        <h2>ui/ux designer + visual designer</h2>
       </div>
 
       <div class='contact'>

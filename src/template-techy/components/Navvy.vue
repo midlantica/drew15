@@ -16,7 +16,7 @@
 
         <div class='jobDesc block'>
           <h2>ui/ux designer +</h2>
-          <h2 class='marLH'>front&nbsp;end&nbsp;dev</h2>
+          <h2 class='marLH'>visual designer</h2>
         </div>
       </div>
 

@@ -6,7 +6,8 @@
           <router-link :to="{ name: 'ExtrasCorp' }" class='drewhead jelloHorizontal' />
           <drewHarper class='drewHarper marTH' />
           <div class='flexRow just-center marTH'>
-            <uiux class='uiux' />
+            <!-- <uiux class='uiux' /> -->
+            <h3>UI/UX Designer + Visual Designer</h3>
           </div>
         </router-link>
       </div>
@@ -22,11 +23,11 @@
 
 <script>
   import drewHarper from '@/template-corp/components/navvyArt/drewHarper'
-  import uiux from '@/template-corp/components/navvyArt/uiux'
+  // import uiux from '@/template-corp/components/navvyArt/uiux'
   export default {
     components: {
       drewHarper,
-      uiux
+      // uiux
     }
   }
 </script>
@@ -123,6 +124,37 @@
     letter-spacing: -0.025em;
     transition: 0.25s ease-in;
     font-weight: medium;
+
+    a:hover {
+      color: initial !important;
+      // background: orange !important;
+      // border-bottom: 2px dashed transparentize(navy, .75);
+    }
+
+    @media (max-width: $breakOne) {
+      // font-size: 4.5em;
+      // flex-grow: 0;
+      // text-align: right;
+    }
+
+    @media (max-width: $breakTwo) {
+      // font-size: 3.5em;
+      // flex-grow: 0;
+      // text-align: center;
+    }
+
+    @media (max-width: $breakThree) {
+      // font-size: 2.5em;
+      // margin-bottom: -9px;
+    }
+  }
+
+  h3 {
+    font-family: $font-copy;
+    font-size: 1.25rem;
+    letter-spacing: -0.025em;
+    transition: 0.25s ease-in;
+    font-weight: bold;
 
     a:hover {
       color: initial !important;

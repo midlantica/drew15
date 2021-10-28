@@ -4,7 +4,7 @@
       <router-link :to="'About'">&nbsp;drew harper</router-link>
     </h1>
     <section class='jobDesc'>
-      <h2>ui/ux designer / front-end&nbsp;dev</h2>
+      <h2>ui/ux designer / visual designer</h2>
     </section>
     <section class='contact'>
       <p class=''>
