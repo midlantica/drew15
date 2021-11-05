@@ -11,9 +11,9 @@
   </transition>
 </template>
 
-<script>
-  import HeadAndCopy from '../components/HeadAndCopy'
-  import About from '@/components/About'
+<script lang="ts">
+  import HeadAndCopy from '../components/HeadAndCopy.vue'
+  import About from '@/components/About.vue'
 
   export default {
     // layout: 'default',

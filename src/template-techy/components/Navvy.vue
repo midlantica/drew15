@@ -35,7 +35,7 @@
   </nav>
 </template>
 
-<script>
+<script lang="ts">
   import mastDrew from './masthead/mastDrew'
   import mastHarper from './masthead/mastHarper'
   export default {

@@ -14,7 +14,7 @@
   </transition>
 </template>
 
-<script>
+<script lang="ts">
   import Navvy from '../components/Navvy'
   import Quotes from '../components/Quote'
   import ExtrasC from '@/components/ExtrasC'

@@ -13,7 +13,7 @@
   </transition>
 </template>
 
-<script>
+<script lang="ts">
   import Navvy from '../components/Navvy'
   import ExtrasC from '@/components/ExtrasC'
 

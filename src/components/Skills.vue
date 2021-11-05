@@ -126,7 +126,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
   import Popper from 'vue3-popper'
 
   import iconUiux from '@/components/Icons/icon-uiux'

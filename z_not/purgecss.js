@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Purgecss from 'purgecss'
 
 let purgecss = new Purgecss({

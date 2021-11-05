@@ -45,7 +45,7 @@
   </transition>
 </template>
 
-<script>
+<script lang="ts">
   import Navvy from '../components/Navvy'
   import NavvyEmpty from '../components/NavvyEmpty'
   import HeadAndCopy from '../components/HeadAndCopy'

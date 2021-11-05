@@ -18,7 +18,7 @@
   </transition>
 </template>
 
-<script>
+<script lang="ts">
   import Navvy from '../components/Navvy'
   import Footy from '../components/Footy'
   import ExtrasC from '@/components/ExtrasC'

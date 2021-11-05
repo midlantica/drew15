@@ -51,7 +51,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
   // import Carousel from '@/components/Carousel/Carousel'
   // import { defineAsyncComponent } from 'vue'
   import Uiux from '@/components/Carousel/01_uiux'

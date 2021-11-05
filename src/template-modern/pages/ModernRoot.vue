@@ -24,7 +24,7 @@
   </transition>
 </template>
 
-<script>
+<script lang="ts">
   import Navvy from '../components/Navvy'
   import ModernTabs from '../components/ModernTabs'
 

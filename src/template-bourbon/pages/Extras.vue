@@ -16,7 +16,7 @@
   </transition>
 </template>
 
-<script>
+<script lang="ts">
   import Navvy from '@/template-bourbon/components/Navvy'
   import NavvyEmpty from '@/template-bourbon/components/NavvyEmpty'
   import ExtrasC from '@/components/ExtrasC'

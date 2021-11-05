@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
   import Carousel from '@/components/Carousel/Carousel'
 
   export default {

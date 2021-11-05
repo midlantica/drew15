@@ -12,7 +12,7 @@
   </svg>
 </template>
 
-<script>
+<script lang="ts">
 
 </script>
 

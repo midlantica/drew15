@@ -1,3 +1,12 @@
+<script setup lang="ts">
+  import { defineComponent } from 'vue'
+  import Tabs from '../src/components/Tabs.vue'
+
+  export default defineComponent<({
+    name: 'App'
+  })>
+</script>
+
 <template>
   <transition name="fade" appear>
     <div class="wrapper">
@@ -11,16 +20,7 @@
   </transition>
 </template>
 
-<script>
-  import Tabs from '@/components/Tabs'
 
-  export default {
-    name: 'App',
-    components: {
-      Tabs,
-    }
-  }
-</script>
 
 <style lang="scss">
   @import '@/assets/css/_colors.scss';

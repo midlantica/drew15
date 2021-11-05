@@ -14,7 +14,7 @@
   </transition>
 </template>
 
-<script>
+<script lang="ts">
   import NavvyHead from '../components/NavvyHead'
   import Footer from '../components/Footer'
   import ExtrasC from '@/components/ExtrasC'

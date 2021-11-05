@@ -21,7 +21,7 @@
   </nav>
 </template>
 
-<script>
+<script lang="ts">
   import drewHarper from '@/template-corp/components/navvyArt/drewHarper'
   // import uiux from '@/template-corp/components/navvyArt/uiux'
   export default {

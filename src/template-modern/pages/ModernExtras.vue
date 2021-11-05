@@ -4,7 +4,7 @@
   </transition>
 </template>
 
-<script>
+<script lang="ts">
   import ExtrasC from '@/components/ExtrasC'
   export default {
     name: 'Extras',
