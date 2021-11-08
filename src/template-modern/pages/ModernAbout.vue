@@ -11,23 +11,18 @@
   </transition>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+  import { ref, defineComponent } from 'vue'
   import HeadAndCopy from '../components/HeadAndCopy.vue'
   import About from '@/components/About.vue'
 
-  export default {
-    // layout: 'default',
-    name: 'ModernAbout',
-    components: {
-      HeadAndCopy,
-      About
-    },
+  defineComponent ({
     data() {
       return {
         show: true
       }
     }
-  }
+  })
 </script>
 
 <style lang='scss' scoped>

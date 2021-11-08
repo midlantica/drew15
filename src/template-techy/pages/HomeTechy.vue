@@ -42,25 +42,13 @@
 
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
   import Navvy from '../components/Navvy'
   import HeadAndCopy from '../components/HeadAndCopy'
   import Skills from '@/components/Skills'
   import About from '@/components/About'
   import Footy from '../components/Footy'
   import Carousel from '@/components/Carousel/Carousel'
-
-  export default {
-    name: 'HomeTechy',
-    components: {
-      Navvy,
-      HeadAndCopy,
-      Carousel,
-      About,
-      Skills,
-      Footy
-    },
-  }
 </script>
 
 <style lang="scss" scoped>

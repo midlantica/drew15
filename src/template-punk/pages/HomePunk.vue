@@ -38,24 +38,12 @@
   </transition>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
   import Navvy from '../components/Navvy'
   import HeadAndCopy from '../components/HeadAndCopy'
   import Skills from '@/components/Skills'
   import About from '@/components/About'
   import Carousel from '@/components/Carousel/Carousel'
-
-  export default {
-    name: 'HomePunk',
-    components: {
-      Navvy,
-      HeadAndCopy,
-      Carousel,
-      About,
-      Skills
-    // Quotes
-    },
-  }
 </script>
 
 <style lang='scss' scoped>

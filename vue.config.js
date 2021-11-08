@@ -8,6 +8,7 @@ module.exports = {
       }
     }
   },
+  // transpileDependencies: ['@vue/reactivity'],
   devServer: {
     compress: true,
     disableHostCheck: true,

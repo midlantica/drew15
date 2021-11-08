@@ -6,20 +6,17 @@
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+  import { ref, defineComponent } from 'vue'
   import Carousel from '@/components/Carousel/Carousel'
 
-  export default {
-    name: 'ModernProjects',
-    components: {
-      Carousel,
-    },
+  defineComponent ({
     data() {
       return {
         show: true
       }
     }
-  }
+  })
 </script>
 
 <style lang='scss' scoped>

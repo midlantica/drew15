@@ -1,10 +1,5 @@
 <script setup lang="ts">
-  import { defineComponent } from 'vue'
   import Tabs from '../src/components/Tabs.vue'
-
-  export default defineComponent<({
-    name: 'App'
-  })>
 </script>
 
 <template>
@@ -19,8 +14,6 @@
     </div>
   </transition>
 </template>
-
-
 
 <style lang="scss">
   @import '@/assets/css/_colors.scss';
@@ -97,7 +90,7 @@
     }
   }
 
-// #############################
+  // #############################
   // MODERN
   body.modern {
     height: calc(100%);

@@ -5,9 +5,6 @@
   </div>
 </template>
 
-<script lang="ts">
-</script>
-
 <style lang="scss" scoped>
 
   @import "@/template-corp/assets/css/corp-main.scss";

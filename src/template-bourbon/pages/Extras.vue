@@ -16,18 +16,11 @@
   </transition>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
   import Navvy from '@/template-bourbon/components/Navvy'
   import NavvyEmpty from '@/template-bourbon/components/NavvyEmpty'
   import ExtrasC from '@/components/ExtrasC'
-  export default {
-    name: 'Extras',
-    components: {
-      Navvy,
-      NavvyEmpty,
-      ExtrasC
-    }
-  }
+
 </script>
 
 <style lang="scss">

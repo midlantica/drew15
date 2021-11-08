@@ -20,16 +20,12 @@
   </vueper-slides>
 </template>
 
-<script lang="ts">
-  import { ref } from 'vue'
+<script setup lang="ts">
+  import { ref, defineComponent } from 'vue'
   import { VueperSlides, VueperSlide } from 'vueperslides'
   import 'vueperslides/dist/vueperslides.css'
 
-  export default {
-    components: {
-      VueperSlides,
-      VueperSlide
-    },
+  export default defineComponent ({
     setup() {
       // let title = ref('')
       // const imgPath = ('/public/img/portfolio/01_uiux/')
@@ -57,10 +53,7 @@
         },
 
       ])
-
-      return { slides }
-    }
-  }
+  })
 </script>
 
 <style lang="scss">

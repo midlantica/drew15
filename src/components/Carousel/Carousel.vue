@@ -51,9 +51,9 @@
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
   // import Carousel from '@/components/Carousel/Carousel'
-  // import { defineAsyncComponent } from 'vue'
+  import { defineComponent } from 'vue'
   import Uiux from '@/components/Carousel/01_uiux'
   import Mobile from '@/components/Carousel/02_mobile'
   import Kiosk from '@/components/Carousel/03_kiosk'
@@ -68,22 +68,7 @@
   import IconPrint from '@/components/Carousel/icons/icon-print'
   import IconMisc from '@/components/Carousel/icons/icon-misc'
 
-  export default {
-    name: 'CarouselShow',
-    components: {
-      Uiux,
-      Mobile,
-      Kiosk,
-      Graphics,
-      Print,
-      Misc,
-      IconUiux,
-      IconMobile,
-      IconKiosk,
-      IconGraphics,
-      IconPrint,
-      IconMisc
-    },
+  defineComponent ({
     data() {
       return {
         selectedView: 'Carousel',
@@ -109,7 +94,7 @@
       }
 
     }
-  }
+  })
 </script>
 
 <style lang='scss' scoped>

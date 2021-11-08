@@ -4,10 +4,8 @@
   </div>
 </template>
 
-<script lang="ts">
-  export default {
-    // props: ['tooltipText'],
-  }
+<script setup lang="ts">
+
 </script>
 
 <style lang="scss" scoped>

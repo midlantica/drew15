@@ -125,7 +125,8 @@
     </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+  import { ref, defineComponent } from 'vue'
   import Popper from 'vue3-popper'
 
   import iconUiuxBlue from '@/template-corp/components/Icons/icon-uiux'
@@ -140,22 +141,7 @@
   import iconFigmaBlue from '@/template-corp/components/Icons/icon-figma'
   import iconNuxtBlue from '@/template-corp/components/Icons/icon-nuxt'
   import iconChelseaBlue from '@/template-corp/components/Icons/icon-chelsea'
-  export default {
-    components: {
-      iconUiuxBlue,
-      iconHtml5Blue,
-      iconCss3Blue,
-      iconJsBlue,
-      iconSketchBlue,
-      iconSassBlue,
-      iconVueBlue,
-      iconSvgBlue,
-      iconVSCodeBlue,
-      iconFigmaBlue,
-      iconNuxtBlue,
-      iconChelseaBlue,
-      Popper
-    },
+  export default defineComponent ({
     data: () => {
       return {
         hover: false,
@@ -177,8 +163,8 @@
         svg: `SVG: Vector is best because it scales and rasters don't, and it's editable, but it still cannot replace a photograph.`,
         chelsea: `Blue is the color! Chelsea is the name! We're all together... and We're the only team in London with the European Cup! x2! 💙`,
       }
-    },
-  }
+    }
+  })
 </script>
 
 <style lang='scss' scoped>

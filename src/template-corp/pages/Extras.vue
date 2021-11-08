@@ -14,19 +14,10 @@
   </transition>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
   import Navvy from '../components/Navvy'
   import Quotes from '../components/Quote'
   import ExtrasC from '@/components/ExtrasC'
-
-  export default {
-    name: 'Extras',
-    components: {
-      Navvy,
-      Quotes,
-      ExtrasC
-    }
-  }
 </script>
 
 <style lang="scss" scoped>

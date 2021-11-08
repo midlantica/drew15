@@ -24,22 +24,18 @@
   </transition>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
   import Navvy from '../components/Navvy'
   import ModernTabs from '../components/ModernTabs'
+  import { defineComponent } from 'vue'
 
-  export default {
-    name: 'ModernRoot',
-    components: {
-      Navvy,
-      ModernTabs,
-    },
+  defineComponent ({
     data() {
       return {
         show: true,
       }
     }
-  }
+  })
 </script>
 
 <style lang='scss' scoped>

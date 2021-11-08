@@ -44,7 +44,7 @@
   </transition>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
   import NavvyHead from '../components/NavvyHead'
   import HeadAndCopy from '../components/HeadAndCopy'
   import Skills from '@/components/Skills'
@@ -52,18 +52,6 @@
   // import Quotes from "../components/Quote"
   import Footer from '../components/Footer'
   import Carousel from '@/components/Carousel/Carousel'
-
-  export default {
-    // layout: "default",
-    components: {
-      NavvyHead,
-      HeadAndCopy,
-      About,
-      Skills,
-      Footer,
-      Carousel
-    }
-  }
 </script>
 
 <style lang="scss" scoped>

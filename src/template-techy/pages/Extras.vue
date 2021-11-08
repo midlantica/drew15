@@ -18,19 +18,10 @@
   </transition>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
   import Navvy from '../components/Navvy'
   import Footy from '../components/Footy'
   import ExtrasC from '@/components/ExtrasC'
-
-  export default {
-    name: 'Extras',
-    components: {
-      Navvy,
-      Footy,
-      ExtrasC
-    }
-  }
 </script>
 
 <style lang="scss" scoped>

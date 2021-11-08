@@ -8,7 +8,6 @@
 </template>
 
 <style lang="scss" scoped>
-
   .about {
     background: #fbf3bb;
     padding: 1.25rem 1.75rem;
