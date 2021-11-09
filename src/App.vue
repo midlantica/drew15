@@ -11,15 +11,8 @@
   </transition>
 </template>
 
-<script>
+<script setup>
   import Tabs from '@/components/Tabs'
-
-  export default {
-    name: 'App',
-    components: {
-      Tabs,
-    }
-  }
 </script>
 
 <style lang="scss">
