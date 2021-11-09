@@ -14,19 +14,10 @@
   </transition>
 </template>
 
-<script>
+<script setup>
   import NavvyHead from '../components/NavvyHead'
   import Footer from '../components/Footer'
   import ExtrasC from '@/components/ExtrasC'
-
-  export default {
-    name: 'Extras',
-    components: {
-      NavvyHead,
-      Footer,
-      ExtrasC
-    }
-  }
 </script>
 
 <style lang="scss" scoped>

@@ -17,15 +17,9 @@
   </nav>
 </template>
 
-<script>
+<script setup>
   import mastDrew from './masthead/mastDrew'
   import mastHarper from './masthead/mastHarper'
-  export default {
-    components: {
-      mastDrew,
-      mastHarper
-    }
-  }
 </script>
 
 <style lang="scss" scoped>

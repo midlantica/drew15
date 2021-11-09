@@ -21,15 +21,8 @@
   </nav>
 </template>
 
-<script>
+<script setup>
   import drewHarper from '@/template-corp/components/navvyArt/drewHarper'
-  // import uiux from '@/template-corp/components/navvyArt/uiux'
-  export default {
-    components: {
-      drewHarper,
-      // uiux
-    }
-  }
 </script>
 
 <style lang='scss' scoped>

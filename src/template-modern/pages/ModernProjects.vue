@@ -6,20 +6,8 @@
   </div>
 </template>
 
-<script>
+<script setup>
   import Carousel from '@/components/Carousel/Carousel'
-
-  export default {
-    name: 'ModernProjects',
-    components: {
-      Carousel,
-    },
-    data() {
-      return {
-        show: true
-      }
-    }
-  }
 </script>
 
 <style lang='scss' scoped>

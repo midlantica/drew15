@@ -4,10 +4,9 @@
   </div>
 </template>
 
-<script>
-  export default {
-    // props: ['tooltipText'],
-  }
+<script setup>
+  import { ref } from 'vue'
+  let tooltipText = ref('tooltipText')
 </script>
 
 <style lang="scss" scoped>

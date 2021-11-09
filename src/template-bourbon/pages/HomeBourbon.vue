@@ -45,7 +45,7 @@
   </transition>
 </template>
 
-<script>
+<script setup>
   import Navvy from '../components/Navvy'
   import NavvyEmpty from '../components/NavvyEmpty'
   import HeadAndCopy from '../components/HeadAndCopy'
@@ -53,20 +53,6 @@
   import Skills from '@/components/Skills'
   import Quotes from '../components/Quote'
   import Carousel from '@/components/Carousel/Carousel'
-
-  export default {
-    // layout: 'default',
-    name: 'HomeBourbon',
-    components: {
-      Navvy,
-      NavvyEmpty,
-      HeadAndCopy,
-      Carousel,
-      About,
-      Skills,
-      Quotes,
-    }
-  }
 </script>
 
 <style lang='scss' scoped>

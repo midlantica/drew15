@@ -11,23 +11,9 @@
   </transition>
 </template>
 
-<script>
+<script setup>
   import HeadAndCopy from '../components/HeadAndCopy'
   import About from '@/components/About'
-
-  export default {
-    // layout: 'default',
-    name: 'ModernAbout',
-    components: {
-      HeadAndCopy,
-      About
-    },
-    data() {
-      return {
-        show: true
-      }
-    }
-  }
 </script>
 
 <style lang='scss' scoped>

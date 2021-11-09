@@ -125,7 +125,8 @@
     </div>
 </template>
 
-<script>
+<script setup>
+  import { ref } from 'vue'
   import Popper from 'vue3-popper'
 
   import iconUiuxBlue from '@/template-corp/components/Icons/icon-uiux'
@@ -140,45 +141,25 @@
   import iconFigmaBlue from '@/template-corp/components/Icons/icon-figma'
   import iconNuxtBlue from '@/template-corp/components/Icons/icon-nuxt'
   import iconChelseaBlue from '@/template-corp/components/Icons/icon-chelsea'
-  export default {
-    components: {
-      iconUiuxBlue,
-      iconHtml5Blue,
-      iconCss3Blue,
-      iconJsBlue,
-      iconSketchBlue,
-      iconSassBlue,
-      iconVueBlue,
-      iconSvgBlue,
-      iconVSCodeBlue,
-      iconFigmaBlue,
-      iconNuxtBlue,
-      iconChelseaBlue,
-      Popper
-    },
-    data: () => {
-      return {
-        hover: false,
-        placement: top,
-        offsetY: 25,
-        arrow: true,
-        openDelay: 0,
-        interactive: true,
-        uiux: `UX Design is my first love. Humility before the User. Crack the flow!`,
-        html5: `HTML5: the bones of the Internet. As few divs and spans as possible if you please.`,
-        css3: `CSS3: Engineers just love CSS haha! Let me do that for you 🙂 I enjoy its declarative cascading infuriating novelty.`,
-        js: `JavaScript: I design, do all my HTML & CSS, I'm still mastering JS. Continuous learning, Love me some Vue 💚, like this site`,
-        sass: `SASS has made CSS so much more fun to use. CSS's new --vars make CSS more robust, but there's along way to go.`,
-        vue: `Vue.js is my favorite JS framework, a great balance of Angular's ease and React's abilities.`,
-        nuxt: `The Next framework for Vue: SSR, routes by dir, SEO; it's jam-packed with crunchy goodness. Digging Gridsome.js too.`,
-        vsCode: `VS Code: Used to be into Sublime Text but I'm all VS Code these days. MS better late than never.`,
-        sketch: `Sketch used to be the king of UX prototyping, now there are many alternatives.`,
-        figma: `Figma is the new king of UX prototyping. It ain't Illustrator but UX rarely requires such sophistication.`,
-        svg: `SVG: Vector is best because it scales and rasters don't, and it's editable, but it still cannot replace a photograph.`,
-        chelsea: `Blue is the color! Chelsea is the name! We're all together... and We're the only team in London with the European Cup! x2! 💙`,
-      }
-    },
-  }
+
+  const hover = ref(false)
+  // const placement = ref('top')
+  // const offsetY = ref(25)
+  // const arrow = ref(true)
+  // const openDelay = ref(0)
+  // const interactive = ref(true)
+  const uiux = ref(`UX Design is my first love. Humility before the User. Crack the flow!`)
+  const html5 = ref(`HTML5: the bones of the Internet. As few divs and spans as possible if you please.`)
+  const css3 = ref(`CSS3: Engineers just love CSS haha! Let me do that for you 🙂 I enjoy its declarative cascading infuriating novelty.`)
+  const js = ref(`JavaScript: I design, do all my HTML & CSS, I'm still mastering JS. Continuous learning, Love me some Vue 💚, like this site`)
+  const sass = ref(`SASS has made CSS so much more fun to use. CSS's new --vars make CSS more robust, but there's along way to go.`)
+  const vue = ref(`Vue.js is my favorite JS framework, a great balance of Angular's ease and React's abilities.`)
+  const nuxt = ref(`The Next framework for Vue: SSR, routes by dir, SEO; it's jam-packed with crunchy goodness. Digging Gridsome.js too.`)
+  const vsCode = ref(`VS Code: Used to be into Sublime Text but I'm all VS Code these days. MS better late than never.`)
+  const sketch = ref(`Sketch used to be the king of UX prototyping, now there are many alternatives.`)
+  const figma = ref(`Figma is the new king of UX prototyping. It ain't Illustrator but UX rarely requires such sophistication.`)
+  const svg = ref(`SVG: Vector is best because it scales and rasters don't, and it's editable, but it still cannot replace a photograph.`)
+  const chelsea = ref(`Blue is the color! Chelsea is the name! We're all together... and We're the only team in London with the European Cup! x2! 💙 `)
 </script>
 
 <style lang='scss' scoped>

@@ -6,20 +6,8 @@
   </div>
 </template>
 
-<script>
+<script setup>
   import Skills from '@/components/Skills'
-
-  export default {
-    name: 'ModernSkills',
-    components: {
-      Skills
-    },
-    data: () => {
-      return {
-        //
-      }
-    },
-  }
 </script>
 
 <style lang='scss' scoped>

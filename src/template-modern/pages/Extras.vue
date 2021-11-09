@@ -16,18 +16,10 @@
   </transition>
 </template>
 
-<script>
+<script setup>
   import Navvy from '@/template-modern/components/Navvy'
   import NavvyEmpty from '@/template-modern/components/NavvyEmpty'
   import ExtrasC from '@/components/ExtrasC'
-  export default {
-    name: 'Extras',
-    components: {
-      Navvy,
-      NavvyEmpty,
-      ExtrasC
-    }
-  }
 </script>
 
 <style lang="scss">

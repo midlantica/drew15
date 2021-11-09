@@ -4,14 +4,8 @@
   </transition>
 </template>
 
-<script>
+<script setup>
   import ExtrasC from '@/components/ExtrasC'
-  export default {
-    name: 'Extras',
-    components: {
-      ExtrasC
-    }
-  }
 </script>
 
 <style lang="scss" scoped>

@@ -24,22 +24,9 @@
   </transition>
 </template>
 
-<script>
+<script setup>
   import Navvy from '../components/Navvy'
   import ModernTabs from '../components/ModernTabs'
-
-  export default {
-    name: 'ModernRoot',
-    components: {
-      Navvy,
-      ModernTabs,
-    },
-    data() {
-      return {
-        show: true,
-      }
-    }
-  }
 </script>
 
 <style lang='scss' scoped>
