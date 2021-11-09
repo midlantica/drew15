@@ -1,6 +1,5 @@
 <template>
-  <nav>
-  </nav>
+  <nav></nav>
 </template>
 
 <style lang='scss' scoped>

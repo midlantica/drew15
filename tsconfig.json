@@ -1,12 +1,38 @@
 // https://v3.vuejs.org/guide/typescript-support.html#webpack-configuration
 // tsconfig.json
 {
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.vue",
+    "test/**/*.ts",
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "files": [
+    "ts-shim.d.ts"
+  ],
+  "types": [
+    "jest"
+  ],
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
     // this enables stricter inference for data properties on `this`
     "strict": true,
     "jsx": "preserve",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "paths": {
+      "@/*": [
+       "./*"
+      ]
+    },
+    "outDir": "./dist/",
+    "esModuleInterop": true,
+    "noImplicitReturns": true,
+    "allowJs": false,
+    "sourceMap": true,
+    "pretty": true,
+    "removeComments": true,
   }
 }

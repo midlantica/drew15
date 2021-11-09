@@ -27,8 +27,8 @@
 </template>
 
 <script lang="ts">
-  import mastDrew from './masthead/mastDrew'
-  import mastHarper from './masthead/mastHarper'
+  import mastDrew from './masthead/mastDrew.vue'
+  import mastHarper from './masthead/mastHarper.vue'
   export default {
     components: {
       mastDrew,

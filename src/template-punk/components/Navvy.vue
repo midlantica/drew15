@@ -1,6 +1,5 @@
 <template>
   <nav>
-
     <div class="greenBar">&nbsp;</div>
     <p class='email'><a href="mailto:druharper@gmail.com">druharper@gmail.com</a></p>
 
@@ -13,7 +12,6 @@
       </router-link>
       <router-link :to="{ name: 'ExtrasPunk' }" class="DrewHead jelloHorizontal">&nbsp;</router-link>
     </div>
-
   </nav>
 </template>
 

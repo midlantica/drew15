@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-  import ExtrasC from '@/components/ExtrasC'
+  import ExtrasC from '@/components/ExtrasC.vue'
 </script>
 
 <style lang="scss" scoped>

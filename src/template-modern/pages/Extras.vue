@@ -17,9 +17,9 @@
 </template>
 
 <script setup lang="ts">
-  import Navvy from '@/template-modern/components/Navvy'
-  import NavvyEmpty from '@/template-modern/components/NavvyEmpty'
-  import ExtrasC from '@/components/ExtrasC'
+  import Navvy from '@/template-modern/components/Navvy.vue'
+  import NavvyEmpty from '@/template-modern/components/NavvyEmpty.vue'
+  import ExtrasC from '@/components/ExtrasC.vue'
 </script>
 
 <style lang="scss">

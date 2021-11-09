@@ -12,17 +12,11 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, defineComponent } from 'vue'
+  // import { ref } from 'vue'
   import HeadAndCopy from '../components/HeadAndCopy.vue'
   import About from '@/components/About.vue'
 
-  defineComponent ({
-    data() {
-      return {
-        show: true
-      }
-    }
-  })
+  // let show = ref(true)
 </script>
 
 <style lang='scss' scoped>

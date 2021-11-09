@@ -1,13 +1,13 @@
 module.exports = {
   'env': [
     'eslint:recommended',
-    'plugin:vue/essential',
+    'plugin:vue/vue3-essential',
     'plugin:vue/vue3-essential'
   ],
 
   'extends': [
     'eslint:recommended',
-    'plugin:vue/essential'
+    'plugin:vue/vue3-essential'
   ],
 
   'globals': {

@@ -45,13 +45,13 @@
 </template>
 
 <script setup lang="ts">
-  import NavvyHead from '../components/NavvyHead'
-  import HeadAndCopy from '../components/HeadAndCopy'
-  import Skills from '@/components/Skills'
-  import About from '@/components/About'
-  // import Quotes from "../components/Quote"
-  import Footer from '../components/Footer'
-  import Carousel from '@/components/Carousel/Carousel'
+  import NavvyHead from '../components/NavvyHead.vue'
+  import HeadAndCopy from '../components/HeadAndCopy.vue'
+  import Skills from '@/components/Skills.vue'
+  import About from '@/components/About.vue'
+  // import Quotes from "../components/Quote.vue"
+  import Footer from '../components/Footer.vue'
+  import Carousel from '@/components/Carousel/Carousel.vue'
 </script>
 
 <style lang="scss" scoped>

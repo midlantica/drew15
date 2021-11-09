@@ -1,17 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import ModernRoot from './template-modern/pages/ModernRoot.vue'
-import ModernExtras from './template-modern/pages/ModernExtras.vue'
-import ModernProjects from './template-modern/pages/ModernProjects.vue'
-import ModernSkills from './template-modern/pages/ModernSkills.vue'
-import ModernAbout from './template-modern/pages/ModernAbout.vue'
-import HomeBourbon from './template-bourbon/pages/HomeBourbon.vue'
-import HomeGroovy from './template-groovy/pages/HomeGroovy.vue'
-import HomeTechy from './template-techy/pages/HomeTechy.vue'
-import HomeCorp from './template-corp/pages/HomeCorp.vue'
-import HomePunk from './template-punk/pages/HomePunk.vue'
+// import ModernRoot from './template-modern/pages/ModernRoot.vue'
+import ModernRoot from '@/template-modern/pages/ModernRoot.vue'
+import ModernExtras from '@/template-modern/pages/ModernExtras.vue'
+import ModernProjects from '@/template-modern/pages/ModernProjects.vue'
+import ModernSkills from '@/template-modern/pages/ModernSkills.vue'
+import ModernAbout from '@/template-modern/pages/ModernAbout.vue'
+import HomeBourbon from '@/template-bourbon/pages/HomeBourbon.vue'
+import HomeGroovy from '@/template-groovy/pages/HomeGroovy.vue'
+import HomeTechy from '@/template-techy/pages/HomeTechy.vue'
+import HomeCorp from '@/template-corp/pages/HomeCorp.vue'
+import HomePunk from '@/template-punk/pages/HomePunk.vue'
 import VueBodyClass from 'vue-body-class'
 
-const routes = [
+const routes = ([
   {
     path: '/',
     redirect: 'Modern',
@@ -180,10 +181,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(
-        /* webpackChunkName: 'ExtrasBourbon' */ './template-bourbon/pages/Extras.vue'
-      ),
+    component: () => import( /* webpackChunkName: 'ExtrasBourbon' */ '@/template-bourbon/pages/Extras.vue' ),
     meta: {
       bodyClass: 'bourbon extras',
       title: 'Drew Harper – UI/UX Designer',
@@ -201,10 +199,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(
-        /* webpackChunkName: 'ExtrasCorp' */ './template-corp/pages/Extras.vue'
-      ),
+    component: () => import( /* webpackChunkName: 'ExtrasCorp' */ '@/template-corp/pages/Extras.vue' ),
     meta: {
       bodyClass: 'corp extras',
       title: 'Drew Harper – UI/UX Designer',
@@ -222,10 +217,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(
-        /* webpackChunkName: 'ExtrasGroovy' */ './template-groovy/pages/Extras.vue'
-      ),
+    component: () => import( /* webpackChunkName: 'ExtrasGroovy' */ '@/template-groovy/pages/Extras.vue' ),
     meta: {
       bodyClass: 'groovy extras',
       title: 'Drew Harper – UI/UX Designer',
@@ -243,10 +235,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(
-        /* webpackChunkName: 'ExtrasPunk' */ './template-punk/pages/Extras.vue'
-      ),
+    component: () => import( /* webpackChunkName: 'ExtrasPunk' */ '@/template-punk/pages/Extras.vue' ),
     meta: {
       bodyClass: 'punk extras',
       title: 'Drew Harper – UI/UX Designer',
@@ -264,10 +253,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(
-        /* webpackChunkName: 'ExtrasTechy' */ './template-techy/pages/Extras.vue'
-      ),
+    component: () => import( /* webpackChunkName: 'ExtrasTechy' */ '@/template-techy/pages/Extras.vue' ),
     meta: {
       bodyClass: 'techy extras',
       title: 'Drew Harper – UI/UX Designer',
@@ -287,7 +273,7 @@ const routes = [
     path: '/404',
     redirect: '/',
   },
-]
+])
 
 const vueBodyClass = new VueBodyClass(routes)
 

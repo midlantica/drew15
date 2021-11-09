@@ -25,8 +25,8 @@
 </template>
 
 <script setup lang="ts">
-  import Navvy from '../components/Navvy'
-  import ModernTabs from '../components/ModernTabs'
+  import Navvy from '../components/Navvy.vue'
+  import ModernTabs from '../components/ModernTabs.vue'
   import { defineComponent } from 'vue'
 
   defineComponent ({

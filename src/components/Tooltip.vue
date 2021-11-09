@@ -5,7 +5,9 @@
 </template>
 
 <script setup lang="ts">
+  import { ref } from 'vue'
 
+  let tooltipText = ref()
 </script>
 
 <style lang="scss" scoped>

@@ -3,44 +3,44 @@
     <div class="projectBox__top">
       <a class='carouselArrow'
         v-if="backButtonView"
-        @click='viewCarousel(); backButtonState();'
+        @click='viewCarousel(selectedView); backButtonState();'
       >﹤ back</a>
       <p class='projectHead'>Projects - {{ selectedView }}</p>
     </div>
 
     <component :is='selectedView'>
       <div class='miniGallery'>
-        <a @click='selectedView = `Uiux`; backButtonState();' >
+        <a @click='selectedView = UiuxV; backButtonState();' >
           <div class='box Uiux'>
             <IconUiux />
             <p>UI/UX Design</p>
           </div>
         </a>
-        <a @click='selectedView = `Mobile`; backButtonState();' >
+        <a @click='selectedView = MobileV; backButtonState();' >
           <div class='box Mobile'>
             <IconMobile />
             <p>Mobile</p>
           </div>
         </a>
-        <a @click='selectedView = `Kiosk`; backButtonState();' >
+        <a @click='selectedView = KioskV; backButtonState();' >
           <div class='box Kiosk'>
             <IconKiosk />
             <p>Kiosk</p>
           </div>
         </a>
-        <a @click='selectedView = `Graphics`; backButtonState();' >
+        <a @click='selectedView = GraphicsV; backButtonState();' >
           <div class='box Graphics'>
             <IconGraphics />
             <p>Graphics</p>
           </div>
         </a>
-        <a @click='selectedView = `Print`; backButtonState();' >
+        <a @click='selectedView = PrintV; backButtonState();' >
           <div class='box Print'>
             <IconPrint />
             <p>Print</p>
           </div>
         </a>
-        <a @click='selectedView = `Misc`; backButtonState();' >
+        <a @click='selectedView = MiscV; backButtonState();' >
           <div class='box Misc'>
             <IconMisc />
             <p>Misc.</p>
@@ -52,49 +52,55 @@
 </template>
 
 <script setup lang="ts">
-  // import Carousel from '@/components/Carousel/Carousel'
-  import { defineComponent } from 'vue'
-  import Uiux from '@/components/Carousel/01_uiux'
-  import Mobile from '@/components/Carousel/02_mobile'
-  import Kiosk from '@/components/Carousel/03_kiosk'
-  import Graphics from '@/components/Carousel/04_graphics'
-  import Print from '@/components/Carousel/05_print'
-  import Misc from '@/components/Carousel/06_misc'
+  import { ref, defineAsyncComponent } from 'vue'
 
-  import IconUiux from '@/components/Carousel/icons/icon-uiux'
-  import IconMobile from '@/components/Carousel/icons/icon-mobile'
-  import IconKiosk from '@/components/Carousel/icons/icon-kiosk'
-  import IconGraphics from '@/components/Carousel/icons/icon-graphics'
-  import IconPrint from '@/components/Carousel/icons/icon-print'
-  import IconMisc from '@/components/Carousel/icons/icon-misc'
+  import IconUiux from '@/components/Carousel/icons/icon-uiux.vue'
+  import IconMobile from '@/components/Carousel/icons/icon-mobile.vue'
+  import IconKiosk from '@/components/Carousel/icons/icon-kiosk.vue'
+  import IconGraphics from '@/components/Carousel/icons/icon-graphics.vue'
+  import IconPrint from '@/components/Carousel/icons/icon-print.vue'
+  import IconMisc from '@/components/Carousel/icons/icon-misc.vue'
 
-  defineComponent ({
-    data() {
-      return {
-        selectedView: 'Carousel',
-        uiux: 'UI/UX',
-        mobile: 'Mobile',
-        kiosk: 'Kiosk',
-        graphics: 'Graphics',
-        print: 'Print',
-        misc: 'Misc.',
-        backButtonView: false,
-      }
-    },
-    methods: {
-      carouselBack: function() {
-        this.selectedView = `Carousel`
-        this.backButtonView = !this.backButtonView
-      },
-      viewCarousel: function() {
-        this.selectedView = `Carousel`
-      },
-      backButtonState: function() {
-        this.backButtonView = !this.backButtonView
-      }
+  // Load 'em up!
+  const Uiux = defineAsyncComponent(() => import('@/components/Carousel/01_uiux.vue'))
+  const Mobile = defineAsyncComponent(() => import('@/components/Carousel/02_mobile.vue'))
+  const Kiosk = defineAsyncComponent(() => import('@/components/Carousel/03_kiosk.vue'))
+  const Graphics = defineAsyncComponent(() => import('@/components/Carousel/04_graphics.vue'))
+  const Print = defineAsyncComponent(() => import('@/components/Carousel/05_print.vue'))
+  const Misc = defineAsyncComponent(() => import('@/components/Carousel/06_misc.vue'))
 
-    }
+  // import( /* webpackChunkName: '01_uiux' */ '@/components/Carousel/01_uiux.vue' )
+  // import( /* webpackChunkName: '02_mobile' */ '@/components/Carousel/02_mobile.vue' )
+  // import( /* webpackChunkName: '03_kiosk' */ '@/components/Carousel/03_kiosk.vue' )
+  // import( /* webpackChunkName: '04_graphics' */ '@/components/Carousel/04_graphics.vue' )
+  // import( /* webpackChunkName: '05_print' */ '@/components/Carousel/05_print.vue' )
+  // import( /* webpackChunkName: '06_misc' */ '@/components/Carousel/06_misc.vue' )
+
+  // import Uiux from '@/components/Carousel/01_uiux.vue'
+  // import Mobile from '@/components/Carousel/02_mobile.vue'
+  // import Kiosk from '@/components/Carousel/03_kiosk.vue'
+  // import Graphics from '@/components/Carousel/04_graphics.vue'
+  // import Print from '@/components/Carousel/05_print.vue'
+  // import Misc from '@/components/Carousel/06_misc.vue'
+
+  let selectedView = ref()
+  let UiuxV = ref(Uiux)
+  let MobileV = ref(Mobile)
+  let KioskV = ref(Kiosk)
+  let GraphicsV = ref(Graphics)
+  let PrintV = ref(Print)
+  let MiscV = ref(Misc)
+
+  let backButtonView = ref(false)
+
+  let viewCarousel = ((daView: string) => {
+    selectedView.value = daView
   })
+
+  let backButtonState = () => {
+    backButtonView.value = !backButtonView.value
+  }
+
 </script>
 
 <style lang='scss' scoped>

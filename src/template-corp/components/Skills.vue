@@ -128,28 +128,36 @@
 <script setup lang="ts">
   import { ref, defineComponent } from 'vue'
   import Popper from 'vue3-popper'
+  //
+  import iconUiuxBlue from '@/template-corp/components/Icons/icon-uiux.vue'
+  import iconHtml5Blue from '@/template-corp/components/Icons/icon-html5.vue'
+  import iconCss3Blue from '@/template-corp/components/Icons/icon-css3.vue'
+  import iconJsBlue from '@/template-corp/components/Icons/icon-js.vue'
+  import iconSketchBlue from '@/template-corp/components/Icons/icon-sketch.vue'
+  import iconSassBlue from '@/template-corp/components/Icons/icon-sass.vue'
+  import iconVueBlue from '@/template-corp/components/Icons/icon-vue.vue'
+  import iconSvgBlue from '@/template-corp/components/Icons/icon-svg.vue'
+  import iconVSCodeBlue from '@/template-corp/components/Icons/icon-vs-code.vue'
+  import iconFigmaBlue from '@/template-corp/components/Icons/icon-figma.vue'
+  import iconNuxtBlue from '@/template-corp/components/Icons/icon-nuxt.vue'
+  import iconChelseaBlue from '@/template-corp/components/Icons/icon-chelsea.vue'
 
-  import iconUiuxBlue from '@/template-corp/components/Icons/icon-uiux'
-  import iconHtml5Blue from '@/template-corp/components/Icons/icon-html5'
-  import iconCss3Blue from '@/template-corp/components/Icons/icon-css3'
-  import iconJsBlue from '@/template-corp/components/Icons/icon-js'
-  import iconSketchBlue from '@/template-corp/components/Icons/icon-sketch'
-  import iconSassBlue from '@/template-corp/components/Icons/icon-sass'
-  import iconVueBlue from '@/template-corp/components/Icons/icon-vue'
-  import iconSvgBlue from '@/template-corp/components/Icons/icon-svg'
-  import iconVSCodeBlue from '@/template-corp/components/Icons/icon-vs-code'
-  import iconFigmaBlue from '@/template-corp/components/Icons/icon-figma'
-  import iconNuxtBlue from '@/template-corp/components/Icons/icon-nuxt'
-  import iconChelseaBlue from '@/template-corp/components/Icons/icon-chelsea'
-  export default defineComponent ({
+  const hover = ref(false)
+  // const placement = ref(top)
+  // const offsetY = ref(25)
+  // const arrow = ref(true)
+  // const openDelay = ref(0)
+  // const interactive = ref(true)
+
+  defineComponent ({
     data: () => {
       return {
-        hover: false,
-        placement: top,
-        offsetY: 25,
-        arrow: true,
-        openDelay: 0,
-        interactive: true,
+        // hover: false,
+        // placement: top,
+        // offsetY: 25,
+        // arrow: true,
+        // openDelay: 0,
+        // interactive: true,
         uiux: `UX Design is my first love. Humility before the User. Crack the flow!`,
         html5: `HTML5: the bones of the Internet. As few divs and spans as possible if you please.`,
         css3: `CSS3: Engineers just love CSS haha! Let me do that for you 🙂 I enjoy its declarative cascading infuriating novelty.`,

@@ -15,9 +15,9 @@
 </template>
 
 <script setup lang="ts">
-  import NavvyHead from '../components/NavvyHead'
-  import Footer from '../components/Footer'
-  import ExtrasC from '@/components/ExtrasC'
+  import NavvyHead from '../components/NavvyHead.vue'
+  import Footer from '../components/Footer.vue'
+  import ExtrasC from '@/components/ExtrasC.vue'
 </script>
 
 <style lang="scss" scoped>

@@ -127,30 +127,45 @@
 </template>
 
 <script setup lang="ts">
+  import { ref, defineComponent } from 'vue'
   import Popper from 'vue3-popper'
-  import iconUiux from '@/components/Icons/icon-uiux'
-  import iconHtml5 from '@/components/Icons/icon-html5'
-  import iconCss3 from '@/components/Icons/icon-css3'
-  import iconJs from '@/components/Icons/icon-js'
-  import iconSketch from '@/components/Icons/icon-sketch'
-  import iconSass from '@/components/Icons/icon-sass'
-  import iconVue from '@/components/Icons/icon-vue'
-  import iconSvg from '@/components/Icons/icon-svg'
-  import iconVSCode from '@/components/Icons/icon-vs-code'
-  import iconFigma from '@/components/Icons/icon-figma'
-  import iconNuxt from '@/components/Icons/icon-nuxt'
-  import iconChelsea from '@/components/Icons/icon-chelsea'
-  import { defineComponent } from 'vue'
+  //
+  import iconUiux from '@/components/Icons/icon-uiux.vue'
+  import iconHtml5 from '@/components/Icons/icon-html5.vue'
+  import iconCss3 from '@/components/Icons/icon-css3.vue'
+  import iconJs from '@/components/Icons/icon-js.vue'
+  import iconSketch from '@/components/Icons/icon-sketch.vue'
+  import iconSass from '@/components/Icons/icon-sass.vue'
+  import iconVue from '@/components/Icons/icon-vue.vue'
+  import iconSvg from '@/components/Icons/icon-svg.vue'
+  import iconVSCode from '@/components/Icons/icon-vs-code.vue'
+  import iconFigma from '@/components/Icons/icon-figma.vue'
+  import iconNuxt from '@/components/Icons/icon-nuxt.vue'
+  import iconChelsea from '@/components/Icons/icon-chelsea.vue'
+
+  const hover = ref(false)
+  // const placement = ref(top)
+  // const offsetY = ref(25)
+  // const arrow = ref(true)
+  // const openDelay = ref(0)
+  // const interactive = ref(true)
+
+  const uiux = ref()
+  const html5 = ref()
+  const css3 = ref()
+  const js = ref()
+  const sketch = ref()
+  const sass = ref()
+  const vue = ref()
+  const svg = ref()
+  const vsCode = ref()
+  const figma = ref()
+  const nuxt = ref()
+  const chelsea = ref()
 
   defineComponent ({
     data: () => {
       return {
-        hover: false,
-        placement: top,
-        offsetY: 25,
-        arrow: true,
-        openDelay: 0,
-        interactive: true,
         uiux: `UX Design is my first love. Humility before the User. Crack the flow!`,
         html5: `HTML5: the bones of the Internet. As few divs and spans as possible if you please.`,
         css3: `CSS3: Engineers just love CSS haha! Let me do that for you 🙂 I enjoy its declarative cascading infuriating novelty.`,

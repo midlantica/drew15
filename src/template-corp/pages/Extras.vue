@@ -15,9 +15,9 @@
 </template>
 
 <script setup lang="ts">
-  import Navvy from '../components/Navvy'
-  import Quotes from '../components/Quote'
-  import ExtrasC from '@/components/ExtrasC'
+  import Navvy from '../components/Navvy.vue'
+  import Quotes from '../components/Quote.vue'
+  import ExtrasC from '@/components/ExtrasC.vue'
 </script>
 
 <style lang="scss" scoped>

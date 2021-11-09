@@ -21,32 +21,26 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, defineComponent } from 'vue'
+  import { ref } from 'vue'
   import { VueperSlides, VueperSlide } from 'vueperslides'
   import 'vueperslides/dist/vueperslides.css'
 
-  export default defineComponent ({
-    setup() {
-      // let title = ref('')
-      // const imgPath = ('/public/img/portfolio/01_uiux/')
-      let slides = ref([
-        {
-          image: require('/public/img/portfolio/05_print/jpay/jpay_newsletters.png')
-        },
-        {
-          image: require('/public/img/portfolio/05_print/mlotto_brochure.jpg')
-        },
-        {
-          image: require('/public/img/portfolio/05_print/celebrity_cruise_lines_brochure.jpg')
-        },
-        {
-          image: require('/public/img/portfolio/05_print/starclippers_email_panel.png')
-        },
-
-      ])
-
-    }
-  })
+  // let title = ref('')
+  // const imgPath = ('/public/img/portfolio/01_uiux/')
+  let slides = ref([
+    {
+      image: require('/public/img/portfolio/05_print/jpay/jpay_newsletters.png')
+    },
+    {
+      image: require('/public/img/portfolio/05_print/mlotto_brochure.jpg')
+    },
+    {
+      image: require('/public/img/portfolio/05_print/celebrity_cruise_lines_brochure.jpg')
+    },
+    {
+      image: require('/public/img/portfolio/05_print/starclippers_email_panel.png')
+    },
+  ])
 </script>
 
 <style lang="scss">

@@ -42,12 +42,12 @@
 </template>
 
 <script setup lang="ts">
-  import Navvy from '../components/Navvy'
-  import HeadAndCopy from '../components/HeadAndCopy'
-  import Skills from '../components/Skills'
-  import About from '@/components/About'
-  import Quotes from '../components/Quote'
-  import Carousel from '@/components/Carousel/Carousel'
+  import Navvy from '../components/Navvy.vue'
+  import HeadAndCopy from '../components/HeadAndCopy.vue'
+  import Skills from '../components/Skills.vue'
+  import About from '@/components/About.vue'
+  import Quotes from '../components/Quote.vue'
+  import Carousel from '@/components/Carousel/Carousel.vue'
 </script>
 
 <style lang="scss" scoped>

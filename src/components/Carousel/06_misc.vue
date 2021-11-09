@@ -21,39 +21,35 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, defineComponent } from 'vue'
+  import { ref } from 'vue'
   import { VueperSlides, VueperSlide } from 'vueperslides'
   import 'vueperslides/dist/vueperslides.css'
 
-  export default defineComponent ({
-    setup() {
-      // let title = ref('')
-      // const imgPath = ('/public/img/portfolio/01_uiux/')
-      let slides = ref([
-        {
-          image: require('/public/img/portfolio/06_misc/booth/jpay_tradeshow_booth2.png')
-        },
-        {
-          image: require('/public/img/portfolio/06_misc/email/jpay_email_jp4.jpg')
-        },
-        {
-          image: require('/public/img/portfolio/06_misc/email/jpay_email.jpg')
-        },
-        {
-          image: require('/public/img/portfolio/06_misc/mural/atlanta_tree_pro_truck.jpg')
-        },
-        {
-          image: require('/public/img/portfolio/06_misc/mural/jpay_mural.jpg')
-        },
-        {
-          image: require('/public/img/portfolio/06_misc/packaging/jp3_package.jpg')
-        },
-        {
-          image: require('/public/img/portfolio/06_misc/JP3_many.jpg')
-        },
-
-      ])
-  })
+  // let title = ref('')
+  // const imgPath = ('/public/img/portfolio/01_uiux/')
+  let slides = ref([
+    {
+      image: require('/public/img/portfolio/06_misc/booth/jpay_tradeshow_booth2.png')
+    },
+    {
+      image: require('/public/img/portfolio/06_misc/email/jpay_email_jp4.jpg')
+    },
+    {
+      image: require('/public/img/portfolio/06_misc/email/jpay_email.jpg')
+    },
+    {
+      image: require('/public/img/portfolio/06_misc/mural/atlanta_tree_pro_truck.jpg')
+    },
+    {
+      image: require('/public/img/portfolio/06_misc/mural/jpay_mural.jpg')
+    },
+    {
+      image: require('/public/img/portfolio/06_misc/packaging/jp3_package.jpg')
+    },
+    {
+      image: require('/public/img/portfolio/06_misc/JP3_many.jpg')
+    },
+  ])
 </script>
 
 <style lang="scss">

@@ -7,16 +7,10 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, defineComponent } from 'vue'
-  import Carousel from '@/components/Carousel/Carousel'
+  // import { ref } from 'vue'
+  import Carousel from '@/components/Carousel/Carousel.vue'
 
-  defineComponent ({
-    data() {
-      return {
-        show: true
-      }
-    }
-  })
+  // const show = ref(true)
 </script>
 
 <style lang='scss' scoped>
