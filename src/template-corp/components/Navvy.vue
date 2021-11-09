@@ -22,7 +22,7 @@
 </template>
 
 <script setup lang="ts">
-  import drewHarper from '@/template-corp/components/navvyArt/drewHarper'
+  import drewHarper from '@/template-corp/components/navvyArt/drewHarper.vue'
   // import uiux from '@/template-corp/components/navvyArt/uiux'
 </script>
 

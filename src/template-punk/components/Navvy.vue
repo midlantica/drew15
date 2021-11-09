@@ -16,8 +16,10 @@
 </template>
 
 <script setup lang="ts">
-  import mastDrew from './masthead/mastDrew.vue'
-  import mastHarper from './masthead/mastHarper.vue'
+  // import mastDrew from './masthead/mastDrew.vue'
+  const mastDrew = './masthead/mastDrew.vue'
+  // import mastHarper from './masthead/mastHarper.vue'
+  const mastHarper = './masthead/mastHarper.vue'
 </script>
 
 <style lang="scss" scoped>
