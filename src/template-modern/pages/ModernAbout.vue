@@ -11,9 +11,9 @@
   </transition>
 </template>
 
-<script setup>
-  import HeadAndCopy from '../components/HeadAndCopy'
-  import About from '@/components/About'
+<script setup lang="ts">
+  import HeadAndCopy from '../components/HeadAndCopy.vue'
+  import About from '../../components/About.vue'
 </script>
 
 <style lang='scss' scoped>

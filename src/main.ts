@@ -1,7 +1,7 @@
 // /* eslint-disable prettier/prettier */
 import { createApp } from 'vue'
 import App from './App.vue'
-import router from './router.js'
+import router from './router'
 
 createApp(App)
   .use(router)

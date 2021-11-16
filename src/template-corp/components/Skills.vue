@@ -125,22 +125,22 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
   import { ref } from 'vue'
   import Popper from 'vue3-popper'
 
-  import iconUiuxBlue from '@/template-corp/components/Icons/icon-uiux'
-  import iconHtml5Blue from '@/template-corp/components/Icons/icon-html5'
-  import iconCss3Blue from '@/template-corp/components/Icons/icon-css3'
-  import iconJsBlue from '@/template-corp/components/Icons/icon-js'
-  import iconSketchBlue from '@/template-corp/components/Icons/icon-sketch'
-  import iconSassBlue from '@/template-corp/components/Icons/icon-sass'
-  import iconVueBlue from '@/template-corp/components/Icons/icon-vue'
-  import iconSvgBlue from '@/template-corp/components/Icons/icon-svg'
-  import iconVSCodeBlue from '@/template-corp/components/Icons/icon-vs-code'
-  import iconFigmaBlue from '@/template-corp/components/Icons/icon-figma'
-  import iconNuxtBlue from '@/template-corp/components/Icons/icon-nuxt'
-  import iconChelseaBlue from '@/template-corp/components/Icons/icon-chelsea'
+  import iconUiuxBlue from '@/template-corp/components/Icons/iconUiux.vue'
+  import iconHtml5Blue from '@/template-corp/components/Icons/iconHtml5.vue'
+  import iconCss3Blue from '@/template-corp/components/Icons/iconCss3.vue'
+  import iconJsBlue from '@/template-corp/components/Icons/iconJs.vue'
+  import iconSketchBlue from '@/template-corp/components/Icons/iconSketch.vue'
+  import iconSassBlue from '@/template-corp/components/Icons/iconSass.vue'
+  import iconVueBlue from '@/template-corp/components/Icons/iconVue.vue'
+  import iconSvgBlue from '@/template-corp/components/Icons/iconSvg.vue'
+  import iconVSCodeBlue from '@/template-corp/components/Icons/iconVscode.vue'
+  import iconFigmaBlue from '@/template-corp/components/Icons/iconFigma.vue'
+  import iconNuxtBlue from '@/template-corp/components/Icons/iconNuxt.vue'
+  import iconChelseaBlue from '@/template-corp/components/Icons/iconChelsea.vue'
 
   const hover = ref(false)
   // const placement = ref('top')

@@ -4,8 +4,8 @@
   </transition>
 </template>
 
-<script setup>
-  import ExtrasC from '@/components/ExtrasC'
+<script setup lang="ts">
+  import ExtrasC from '../../components/ExtrasC.vue'
 </script>
 
 <style lang="scss" scoped>

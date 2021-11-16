@@ -126,25 +126,26 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
   import { ref } from 'vue'
   import Popper from 'vue3-popper'
 
-  import iconUiux from '@/components/Icons/icon-uiux'
-  import iconHtml5 from '@/components/Icons/icon-html5'
-  import iconCss3 from '@/components/Icons/icon-css3'
-  import iconJs from '@/components/Icons/icon-js'
-  import iconSketch from '@/components/Icons/icon-sketch'
-  import iconSass from '@/components/Icons/icon-sass'
-  import iconVue from '@/components/Icons/icon-vue'
-  import iconSvg from '@/components/Icons/icon-svg'
-  import iconVSCode from '@/components/Icons/icon-vs-code'
-  import iconFigma from '@/components/Icons/icon-figma'
-  import iconNuxt from '@/components/Icons/icon-nuxt'
-  import iconChelsea from '@/components/Icons/icon-chelsea'
+  import '@/components/Icons/iconUiux.vue'
+  import '@/components/Icons/iconHtml5.vue'
+  import '@/components/Icons/iconCss3.vue'
+  import '@/components/Icons/iconJs.vue'
+  import '@/components/Icons/iconSketch.vue'
+  import '@/components/Icons/iconSass.vue'
+  import '@/components/Icons/iconVue.vue'
+  import '@/components/Icons/iconSvg.vue'
+  import '@/components/Icons/iconVscode.vue'
+  import '@/components/Icons/iconFigma.vue'
+  import '@/components/Icons/iconNuxt.vue'
+  import '@/components/Icons/iconChelsea.vue'
 
   const hover = ref(false)
-  // const placement = ref('top')
+  // const(false)
+  // const placemNt = ref('top')
   // const offsetY = ref(25)
   // const arrow = ref(true)
   // const openDelay = ref(0)
@@ -161,7 +162,6 @@
   const figma = ref(`Figma is the new king of UX prototyping. It ain't Illustrator but UX rarely requires such sophistication.`)
   const svg = ref(`SVG: Vector is best because it scales and rasters don't, and it's editable, but it still cannot replace a photograph.`)
   const chelsea = ref(`Blue is the color! Chelsea is the name! We're all together... and We're the only team in London with the European Cup! x2! 💙 `)
-
 </script>
 
 <style lang="scss" scoped>

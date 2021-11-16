@@ -45,14 +45,14 @@
   </transition>
 </template>
 
-<script setup>
-  import Navvy from '../components/Navvy'
-  import NavvyEmpty from '../components/NavvyEmpty'
-  import HeadAndCopy from '../components/HeadAndCopy'
-  import About from '@/components/About'
-  import Skills from '@/components/Skills'
-  import Quotes from '../components/Quote'
-  import Carousel from '@/components/Carousel/Carousel'
+<script setup lang="ts">
+  import Navvy from '../components/Navvy.vue'
+  import NavvyEmpty from '../components/NavvyEmpty.vue'
+  import HeadAndCopy from '../components/HeadAndCopy.vue'
+  import About from '@/components/About.vue'
+  import Skills from '@/components/Skills.vue'
+  import Quotes from '../components/Quote.vue'
+  import Carousel from '@/components/Carousel/Carousel.vue'
 </script>
 
 <style lang='scss' scoped>

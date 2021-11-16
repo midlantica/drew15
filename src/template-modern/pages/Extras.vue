@@ -16,10 +16,10 @@
   </transition>
 </template>
 
-<script setup>
-  import Navvy from '@/template-modern/components/Navvy'
-  import NavvyEmpty from '@/template-modern/components/NavvyEmpty'
-  import ExtrasC from '@/components/ExtrasC'
+<script setup lang="ts">
+  import '../template-modern/components/Navvy.vue'
+  import '../template-modern/components/NavvyEmpty.vue'
+  import '../../components/ExtrasC.vue'
 </script>
 
 <style lang="scss">
