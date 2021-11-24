@@ -1,7 +1,6 @@
 <template>
-  <svg width="88px" height="60px" viewBox="0 0 88 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <title>Node</title>
-    <title>NPM</title>
+  <svg viewBox="0 0 88 60" xmlns="http://www.w3.org/2000/svg">
+    <title>Node</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Artboard-Copy" transform="translate(-158.000000, -202.000000)">
             <path d="M182.605374,219.827325 C181.920268,220.216745 181.5,220.935674 181.5,221.712802 L181.5,242.539486 C181.5,243.317042 181.920268,244.035543 182.605374,244.424963 L200.897882,254.839161 C201.581686,255.227297 202.424827,255.227297 203.107762,254.839161 L221.397231,244.424963 C222.078864,244.035543 222.5,243.316614 222.5,242.539486 L222.5,221.712802 C222.5,220.935674 222.078864,220.216745 221.392889,219.827325 L203.106025,209.421258 C202.763038,209.227404 202.380976,209.130263 201.998915,209.130263 C201.616853,209.130263 201.234791,209.227404 200.891804,209.421258 L182.605374,219.827325 Z" id="Combined-Shape" fill="#7CAF00"></path>
@@ -18,13 +17,26 @@
   </svg>
 </template>
 
+<script lang="ts">
+
+</script>
+
 <style lang="scss" scoped>
   // @import '~/assets/css/_colors.scss';
 
   svg {
-    width: 88px;
-    height: 60px;
+    // width: 88px;
+    // height: 60px;
+
+    .darkGreen {
+      fill: rgba(12, 42, 13, 1.00);
+    }
+
+    .greens {
+      fill: rgba(106, 175, 97, 1.00);
+    }
   }
 
   svg g { cursor: pointer; }
+
 </style>

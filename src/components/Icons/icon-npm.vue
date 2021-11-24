@@ -1,5 +1,5 @@
 <template>
-  <svg width="88px" height="60px" viewBox="0 0 88 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <svg viewBox="0 0 88 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <title>Node</title>
     <title>NPM</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -18,13 +18,16 @@
   </svg>
 </template>
 
+<script lang="ts">
+
+</script>
+
 <style lang="scss" scoped>
   // @import '~/assets/css/_colors.scss';
 
   svg {
-    width: 88px;
-    height: 60px;
+    // width: 88px;
+    // height: 60px;
   }
-
   svg g { cursor: pointer; }
 </style>
