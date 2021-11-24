@@ -55,22 +55,29 @@
   /*eslint no-unused-vars: ["error", { "varsIgnorePattern": "[iI]gnored" }]*/
   import { ref } from 'vue'
 
-  import '@/components/Carousel/icons/iconUiux'
-  import '@/components/Carousel/icons/iconMobile'
-  import '@/components/Carousel/icons/iconKiosk'
-  import '@/components/Carousel/icons/iconGraphics'
-  import '@/components/Carousel/icons/iconPrint'
-  import '@/components/Carousel/icons/iconMisc'
+  import '@/components/Carousel/icons/iconUiux.vue'
+  import '@/components/Carousel/icons/iconMobile.vue'
+  import '@/components/Carousel/icons/iconKiosk.vue'
+  import '@/components/Carousel/icons/iconGraphics.vue'
+  import '@/components/Carousel/icons/iconPrint.vue'
+  import '@/components/Carousel/icons/iconMisc.vue'
 
-  import uiux01 from '@/components/Carousel/uiux01.vue'
-  import mobile02 from '@/components/Carousel/mobile02.vue'
-  import kiosk03 from '@/components/Carousel/kiosk03.vue'
-  import graphics04 from '@/components/Carousel/graphics04.vue'
-  import print05 from '@/components/Carousel/print05.vue'
-  import misc06 from '@/components/Carousel/misc06.vue'
+  import '@/components/Carousel/uiux01.vue'
+  import '@/components/Carousel/mobile02.vue'
+  import '@/components/Carousel/kiosk03.vue'
+  import '@/components/Carousel/graphics04.vue'
+  import '@/components/Carousel/print05.vue'
+  import '@/components/Carousel/misc06.vue'
 
   let backButtonView = ref(false)
+
   let selectedView = ref('Carousel')
+  let uiux01 = ref('uiux01')
+  let mobile02 = ref('mobile02')
+  let kiosk03 = ref('kiosk03')
+  let graphics04 = ref('graphics04')
+  let print05 = ref('print05')
+  let misc06 = ref('misc06')
 
   // let Uiux = ref(`UI/UX`)
   // let Mobile = ref(`Mobile`)
@@ -80,7 +87,7 @@
   // let Misc = ref(`Misc`)
 
   function selectCarousel(i) {
-    selectedView.value = i.value
+    selectedView = i.value
     backButtonView.value = !backButtonView.value
   }
 
@@ -88,9 +95,9 @@
     selectedView.value = `Carousel`
   }
 
-  // function backButtonState() {
-  //   backButtonView.value = !backButtonView
-  // }
+  function backButtonState() {
+    backButtonView.value = !backButtonView
+  }
 
 </script>
 

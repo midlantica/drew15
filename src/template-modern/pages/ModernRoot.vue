@@ -15,7 +15,9 @@
       <transition name="bounce3" appear>
         <main class='mainGrid'>
 
-          <router-view></router-view>
+          <router-view v-slot="{ Component }">
+            <component :is="Component" />
+          </router-view>
 
         </main>
       </transition>
