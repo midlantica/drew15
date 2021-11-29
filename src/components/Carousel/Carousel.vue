@@ -3,44 +3,44 @@
     <div class="projectBox__top">
       <a class='carouselArrow'
         v-if="backButtonView"
-        @click='viewCarousel(); backButtonState();'
+        @click='viewCarousel()'
       >﹤ back</a>
-      <p class='projectHead'>Projects - {{ selectedView }}</p>
+      <p class='projectHead' @click='viewCarousel()'>Projects - {{ selectedViewTxt }}</p>
     </div>
 
     <component :is='selectedView'>
       <div class='miniGallery'>
-        <a @click='selectCarousel(uiux01);' >
+        <a @click='selectCarousel(uiux01, uiux01Txt);' >
           <div class='box Uiux'>
             <IconUiux />
             <p>UI/UX Design</p>
           </div>
         </a>
-        <a @click='selectCarousel(mobile02);' >
+        <a @click='selectCarousel(mobile02, mobile02Txt);' >
           <div class='box Mobile'>
             <IconMobile />
             <p>Mobile</p>
           </div>
         </a>
-        <a @click='selectCarousel(kiosk03);' >
+        <a @click='selectCarousel(kiosk03, kiosk03Txt);' >
           <div class='box Kiosk'>
             <IconKiosk />
             <p>Kiosk</p>
           </div>
         </a>
-        <a @click='selectCarousel(graphics04);' >
+        <a @click='selectCarousel(graphics04, graphics04Txt);' >
           <div class='box Graphics'>
             <IconGraphics />
             <p>Graphics</p>
           </div>
         </a>
-        <a @click='selectCarousel(print05);' >
+        <a @click='selectCarousel(print05, print05Txt);' >
           <div class='box Print'>
             <IconPrint />
             <p>Print</p>
           </div>
         </a>
-        <a @click='selectCarousel(misc06);' >
+        <a @click='selectCarousel(misc06, misc06Txt);' >
           <div class='box Misc'>
             <IconMisc />
             <p>Misc.</p>
@@ -52,51 +52,44 @@
 </template>
 
 <script setup lang="ts">
-  /*eslint no-unused-vars: ["error", { "varsIgnorePattern": "[iI]gnored" }]*/
+
   import { ref } from 'vue'
 
-  import '@/components/Carousel/icons/iconUiux.vue'
-  import '@/components/Carousel/icons/iconMobile.vue'
-  import '@/components/Carousel/icons/iconKiosk.vue'
-  import '@/components/Carousel/icons/iconGraphics.vue'
-  import '@/components/Carousel/icons/iconPrint.vue'
-  import '@/components/Carousel/icons/iconMisc.vue'
+  import IconUiux from '@/components/Carousel/icons/iconUiux.vue'
+  import IconMobile from '@/components/Carousel/icons/iconMobile.vue'
+  import IconKiosk from '@/components/Carousel/icons/iconKiosk.vue'
+  import IconGraphics from '@/components/Carousel/icons/iconGraphics.vue'
+  import IconPrint from '@/components/Carousel/icons/iconPrint.vue'
+  import IconMisc from '@/components/Carousel/icons/iconMisc.vue'
 
-  import '@/components/Carousel/uiux01.vue'
-  import '@/components/Carousel/mobile02.vue'
-  import '@/components/Carousel/kiosk03.vue'
-  import '@/components/Carousel/graphics04.vue'
-  import '@/components/Carousel/print05.vue'
-  import '@/components/Carousel/misc06.vue'
+  import uiux01 from '@/components/Carousel/uiux01.vue'
+  import mobile02 from '@/components/Carousel/mobile02.vue'
+  import kiosk03 from '@/components/Carousel/kiosk03.vue'
+  import graphics04 from '@/components/Carousel/graphics04.vue'
+  import print05 from '@/components/Carousel/print05.vue'
+  import misc06 from '@/components/Carousel/misc06.vue'
 
   let backButtonView = ref(false)
-
   let selectedView = ref('Carousel')
-  let uiux01 = ref('uiux01')
-  let mobile02 = ref('mobile02')
-  let kiosk03 = ref('kiosk03')
-  let graphics04 = ref('graphics04')
-  let print05 = ref('print05')
-  let misc06 = ref('misc06')
+  let selectedViewTxt = ref('Select one...')
 
-  // let Uiux = ref(`UI/UX`)
-  // let Mobile = ref(`Mobile`)
-  // let Kiosk = ref(`Kiosk`)
-  // let Graphics = ref(`Graphics`)
-  // let Print = ref(`Print`)
-  // let Misc = ref(`Misc`)
+  let uiux01Txt = ref(`UI/UX`)
+  let mobile02Txt = ref(`Mobile`)
+  let kiosk03Txt = ref(`Kiosk`)
+  let graphics04Txt = ref(`Graphics`)
+  let print05Txt = ref(`Print`)
+  let misc06Txt = ref(`Misc`)
 
-  function selectCarousel(i) {
-    selectedView = i.value
-    backButtonView.value = !backButtonView.value
+  function selectCarousel(i, x) {
+    selectedView.value = i
+    selectedViewTxt.value = x
+    backButtonView.value = true
   }
 
   function viewCarousel() {
     selectedView.value = `Carousel`
-  }
-
-  function backButtonState() {
-    backButtonView.value = !backButtonView
+    selectedViewTxt.value = `Select one...`
+    backButtonView.value = false
   }
 
 </script>
@@ -255,6 +248,7 @@
 
   p.projectHead {
     color: lighten($black, 20) !important;
+    cursor: pointer;
   }
 
   body.bourbon .projectHead,
