@@ -11,15 +11,8 @@
   </transition>
 </template>
 
-<script>
-  import Tabs from '@/components/Tabs'
-
-  export default {
-    name: 'App',
-    components: {
-      Tabs,
-    }
-  }
+<script setup lang="ts">
+  import Tabs from '@/components/Tabs.vue'
 </script>
 
 <style lang="scss">
@@ -97,7 +90,7 @@
     }
   }
 
-// #############################
+  // #############################
   // MODERN
   body.modern {
     height: calc(100%);

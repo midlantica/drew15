@@ -11,23 +11,9 @@
   </transition>
 </template>
 
-<script>
-  import HeadAndCopy from '../components/HeadAndCopy'
-  import About from '@/components/About'
-
-  export default {
-    // layout: 'default',
-    name: 'ModernAbout',
-    components: {
-      HeadAndCopy,
-      About
-    },
-    data() {
-      return {
-        show: true
-      }
-    }
-  }
+<script setup lang="ts">
+  import HeadAndCopy from '../components/HeadAndCopy.vue'
+  import About from '../../components/About.vue'
 </script>
 
 <style lang='scss' scoped>

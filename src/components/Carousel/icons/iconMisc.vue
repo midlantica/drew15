@@ -14,6 +14,9 @@
     </g>
   </svg>
 </template>
+<script setup lang="ts">
+
+</script>
 
 <style lang="scss" scoped>
   // @import '~/assets/css/_colors.scss';

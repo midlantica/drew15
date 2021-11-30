@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import ModernRoot from './template-modern/pages/ModernRoot.vue'
-import ModernExtras from './template-modern/pages/ModernExtras.vue'
-import ModernProjects from './template-modern/pages/ModernProjects.vue'
-import ModernSkills from './template-modern/pages/ModernSkills.vue'
-import ModernAbout from './template-modern/pages/ModernAbout.vue'
-import HomeBourbon from './template-bourbon/pages/HomeBourbon.vue'
-import HomeGroovy from './template-groovy/pages/HomeGroovy.vue'
-import HomeTechy from './template-techy/pages/HomeTechy.vue'
-import HomeCorp from './template-corp/pages/HomeCorp.vue'
-import HomePunk from './template-punk/pages/HomePunk.vue'
+import ModernRoot from '@/template-modern/pages/ModernRoot.vue'
+import ModernExtras from '@/template-modern/pages/ModernExtras.vue'
+import ModernProjects from '@/template-modern/pages/ModernProjects.vue'
+import ModernSkills from '@/template-modern/pages/ModernSkills.vue'
+import ModernAbout from '@/template-modern/pages/ModernAbout.vue'
+import HomeBourbon from '@/template-bourbon/pages/HomeBourbon.vue'
+import HomeGroovy from '@/template-groovy/pages/HomeGroovy.vue'
+import HomeTechy from '@/template-techy/pages/HomeTechy.vue'
+import HomeCorp from '@/template-corp/pages/HomeCorp.vue'
+import HomePunk from '@/template-punk/pages/HomePunk.vue'
 import VueBodyClass from 'vue-body-class'
 
 const routes = [
@@ -223,9 +223,7 @@ const routes = [
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(
-        /* webpackChunkName: 'ExtrasGroovy' */ './template-groovy/pages/Extras.vue'
-      ),
+      import( /* webpackChunkName: 'ExtrasGroovy' */ './template-groovy/pages/Extras.vue'),
     meta: {
       bodyClass: 'groovy extras',
       title: 'Drew Harper – UI/UX Designer',

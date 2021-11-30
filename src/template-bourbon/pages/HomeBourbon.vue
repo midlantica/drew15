@@ -45,28 +45,14 @@
   </transition>
 </template>
 
-<script>
-  import Navvy from '../components/Navvy'
-  import NavvyEmpty from '../components/NavvyEmpty'
-  import HeadAndCopy from '../components/HeadAndCopy'
-  import About from '@/components/About'
-  import Skills from '@/components/Skills'
-  import Quotes from '../components/Quote'
-  import Carousel from '@/components/Carousel/Carousel'
-
-  export default {
-    // layout: 'default',
-    name: 'HomeBourbon',
-    components: {
-      Navvy,
-      NavvyEmpty,
-      HeadAndCopy,
-      Carousel,
-      About,
-      Skills,
-      Quotes,
-    }
-  }
+<script setup lang="ts">
+  import Navvy from '../components/Navvy.vue'
+  import NavvyEmpty from '../components/NavvyEmpty.vue'
+  import HeadAndCopy from '../components/HeadAndCopy.vue'
+  import About from '@/components/About.vue'
+  import Skills from '@/components/Skills.vue'
+  import Quotes from '../components/Quote.vue'
+  import Carousel from '@/components/Carousel/Carousel.vue'
 </script>
 
 <style lang='scss' scoped>

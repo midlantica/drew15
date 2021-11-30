@@ -15,7 +15,9 @@
       <transition name="bounce3" appear>
         <main class='mainGrid'>
 
-          <router-view></router-view>
+          <router-view v-slot="{ Component }">
+            <component :is="Component" />
+          </router-view>
 
         </main>
       </transition>
@@ -24,22 +26,9 @@
   </transition>
 </template>
 
-<script>
-  import Navvy from '../components/Navvy'
-  import ModernTabs from '../components/ModernTabs'
-
-  export default {
-    name: 'ModernRoot',
-    components: {
-      Navvy,
-      ModernTabs,
-    },
-    data() {
-      return {
-        show: true,
-      }
-    }
-  }
+<script setup lang="ts">
+  import Navvy from '../components/Navvy.vue'
+  import ModernTabs from '../components/ModernTabs.vue'
 </script>
 
 <style lang='scss' scoped>

@@ -6,20 +6,8 @@
   </div>
 </template>
 
-<script>
-  import Carousel from '@/components/Carousel/Carousel'
-
-  export default {
-    name: 'ModernProjects',
-    components: {
-      Carousel,
-    },
-    data() {
-      return {
-        show: true
-      }
-    }
-  }
+<script setup lang="ts">
+  import Carousel from '../../components/Carousel/Carousel.vue'
 </script>
 
 <style lang='scss' scoped>

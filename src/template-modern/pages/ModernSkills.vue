@@ -6,20 +6,8 @@
   </div>
 </template>
 
-<script>
-  import Skills from '@/components/Skills'
-
-  export default {
-    name: 'ModernSkills',
-    components: {
-      Skills
-    },
-    data: () => {
-      return {
-        //
-      }
-    },
-  }
+<script setup lang="ts">
+  import Skills from '../../components/Skills.vue'
 </script>
 
 <style lang='scss' scoped>

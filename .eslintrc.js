@@ -2,7 +2,7 @@ module.exports = {
   'env': [
     'eslint:recommended',
     'plugin:vue/essential',
-    'plugin:vue/vue3-essential'
+    '@vue/typescript'
   ],
 
   'extends': [
@@ -72,7 +72,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
-    parser: 'babel-eslint'
+    parser: '@typescript-eslint/parser'
   },
 
   rules: {
