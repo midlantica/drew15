@@ -8,7 +8,7 @@
       </div>
 
       <div class="resumeLinks">
-        <a class='resume rOne' href="resume/drew_harper_resume_portfolio.pdf">PDF Resume</a>
+        <a class='resume rOne' href="resume/drew_harper_resume_portfolio.pdf" target="_BLANK">PDF Resume</a>
       </div>
 
     </div>

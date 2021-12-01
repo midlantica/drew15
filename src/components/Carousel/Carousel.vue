@@ -1,10 +1,12 @@
 <template>
   <div class='projectBox'>
     <div class="projectBox__top">
-      <a class='carouselArrow'
-        v-if="backButtonView"
-        @click='viewCarousel()'
-      >﹤ back</a>
+      <transition name="bounce3" appear>
+        <a class='carouselArrow flash'
+          v-if="backButtonView"
+          @click='viewCarousel()'
+        >﹤ back</a>
+      </transition>
       <p class='projectHead' @click='viewCarousel()'>Projects - {{ selectedViewTxt }}</p>
     </div>
 
@@ -99,6 +101,15 @@
 
   $mortar: .25rem;
 
+  .carouselArrow {
+    color: hsla(0, 0%, 100%, 1);
+    background: hsla(0, 0%, 0%, 0.3);
+
+    &:hover {
+      color: hsla(0, 0%, 100%, 1);
+      background: hsla(0, 0%, 0%, 0.5);
+    }
+  }
   .projectBox {
     background: lighten(lightgrey, 12);
     // background: transparentize($color: white, $amount: .25);

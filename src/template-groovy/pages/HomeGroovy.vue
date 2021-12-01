@@ -23,11 +23,11 @@
             </div>
           </transition>
 
-          <transition name="bounce7" appear>
+          <transition name="bounce6" appear>
             <About />
           </transition>
 
-          <transition name="bounce9" appear>
+          <transition name="bounce8" appear>
             <Skills />
           </transition>
 
