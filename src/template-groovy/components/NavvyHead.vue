@@ -19,7 +19,7 @@
           <a href='mailto:druharper@gmail.com'>druharper@gmail.com</a>
         </p>
         <p class='resume'>
-          <a href='resume/drew_harper_resume_portfolio.pdf'>PDF Resume</a>
+          <a href='resume/drew_harper_resume_portfolio.pdf' target="_blank">PDF Resume</a>
         </p>
       </div>
     </div>

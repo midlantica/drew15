@@ -9,8 +9,7 @@
     <section class='contact'>
       <p class=''>
         <a href='mailto:druharper@gmail.com'>druharper@gmail.com</a>
-        &nbsp;&nbsp;&nbsp;
-        <a href='https://drewharper.com/resume/drew_harper_resume_portfolio.pdf'>PDF Resume</a>
+        <a href='https://drewharper.com/resume/drew_harper_resume_portfolio.pdf' target='_blank'>PDF Resume</a>
       </p>
     </section>
   </nav>
@@ -192,13 +191,16 @@
       margin-top: .5rem;
       text-shadow: 1px 1px 4px $black;
       line-height: 1.5rem;
+      letter-spacing: 0.05rem;
       @include font-smoothing;
 
       a {
         // border-bottom: 1px solid $yellow-red;
         // color: $white;
         // font: 1rem !important;
-        // padding: .25rem;
+        padding: .3rem .6rem .2rem;
+        border-radius: 2rem;
+        margin: 0 .5rem;
         // background: transparentize($white, .65);
 
         &:hover {
@@ -232,10 +234,6 @@
 
       }
     }
-  }
-
-  section.contact p a {
-    font-size: 1rem;
   }
 
   h1 {

@@ -152,7 +152,7 @@
   const html5 = ref(`HTML5: the bones of the Internet. As few divs and spans as possible if you please.`)
   const css3 = ref(`CSS3: Engineers just love CSS haha! Let me do that for you 🙂 I enjoy its declarative cascading infuriating novelty.`)
   const js = ref(`JavaScript: I design, do all my HTML & CSS, I'm still mastering JS. Continuous learning, Love me some Vue 💚, like this site`)
-  const sass = ref(`SASS has made CSS so much more fun to use. CSS's new --vars make CSS more robust, but there's along way to go.`)
+  const sass = ref(`SASS has made CSS so much more fun to use. CSS's new --vars make CSS more robust, but there's a long way to go.`)
   const vue = ref(`Vue.js is my favorite JS framework, a great balance of Angular's ease and React's abilities.`)
   const nuxt = ref(`The Next framework for Vue: SSR, routes by dir, SEO; it's jam-packed with crunchy goodness. Digging Gridsome.js too.`)
   const vsCode = ref(`VS Code: Used to be into Sublime Text but I'm all VS Code these days. MS better late than never.`)

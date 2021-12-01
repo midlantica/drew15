@@ -6,7 +6,6 @@
           <router-link :to="{ name: 'ExtrasCorp' }" class='drewhead jelloHorizontal' />
           <drewHarper class='drewHarper marTH' />
           <div class='flexRow just-center marTH'>
-            <!-- <uiux class='uiux' /> -->
             <h3>UI/UX Designer + Visual Designer</h3>
           </div>
         </router-link>
@@ -15,7 +14,7 @@
         <p class='resume'>
           <a href='resume/drew_harper_resume_portfolio.pdf'>PDF Resume</a>
         </p>
-        <p class='email'><a href='mailto:druharper@gmail.com'>druharper@gmail.com</a></p>
+        <p class='email'><a href='mailto:druharper@gmail.com' target='_blank'>druharper@gmail.com</a></p>
       </section>
     </section>
   </nav>
