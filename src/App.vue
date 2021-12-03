@@ -1,18 +1,33 @@
 <template>
   <transition name="fade" appear>
     <div class="wrapper">
+
       <Tabs />
+
+      <div class="flexCol flex-grow-1 text-center">
+        <h1>{{ name }} is {{ counter }} years old.</h1>
+        <button @click="main.addOne()">New Number</button>
+      </div>
+
       <router-view v-slot="{ Component }">
         <transition name="fade" appear>
           <component :is="Component" />
         </transition>
       </router-view>
+
     </div>
   </transition>
 </template>
 
 <script setup lang="ts">
   import Tabs from '@/components/Tabs.vue'
+  import { storeToRefs } from 'pinia'
+  import { useCounterStore } from './store/useCounter'
+
+  const main = useCounterStore()
+
+  const { counter, name } = storeToRefs(main)
+
 </script>
 
 <style lang="scss">

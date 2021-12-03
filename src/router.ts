@@ -1,20 +1,25 @@
+// /* eslint-disable prettier/prettier */
 import { createRouter, createWebHistory } from 'vue-router'
-import ModernRoot from './template-modern/pages/ModernRoot.vue'
-import ModernExtras from './template-modern/pages/ModernExtras.vue'
-import ModernProjects from './template-modern/pages/ModernProjects.vue'
-import ModernSkills from './template-modern/pages/ModernSkills.vue'
-import ModernAbout from './template-modern/pages/ModernAbout.vue'
-import HomeBourbon from './template-bourbon/pages/HomeBourbon.vue'
-import HomeGroovy from './template-groovy/pages/HomeGroovy.vue'
-import HomeTechy from './template-techy/pages/HomeTechy.vue'
-import HomeCorp from './template-corp/pages/HomeCorp.vue'
-import HomePunk from './template-punk/pages/HomePunk.vue'
+import ModernRoot from '@/template-modern/pages/ModernRoot.vue'
+import ModernExtras from '@/template-modern/pages/ModernExtras.vue'
+import ModernProjects from '@/template-modern/pages/ModernProjects.vue'
+import ModernSkills from '@/template-modern/pages/ModernSkills.vue'
+import ModernAbout from '@/template-modern/pages/ModernAbout.vue'
+import HomeBourbon from '@/template-bourbon/pages/HomeBourbon.vue'
+import HomeGroovy from '@/template-groovy/pages/HomeGroovy.vue'
+import HomeTechy from '@/template-techy/pages/HomeTechy.vue'
+import HomeCorp from '@/template-corp/pages/HomeCorp.vue'
+import HomePunk from '@/template-punk/pages/HomePunk.vue'
 import VueBodyClass from 'vue-body-class'
 
 const routes = [
   {
     path: '/',
     redirect: 'Modern',
+  },
+  {
+    path: '/:pathMatch(.*)',
+    component: ModernRoot
   },
   {
     path: '/Modern',
@@ -223,9 +228,7 @@ const routes = [
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(
-        /* webpackChunkName: 'ExtrasGroovy' */ './template-groovy/pages/Extras.vue'
-      ),
+      import( /* webpackChunkName: 'ExtrasGroovy' */ './template-groovy/pages/Extras.vue'),
     meta: {
       bodyClass: 'groovy extras',
       title: 'Drew Harper – UI/UX Designer',
@@ -292,57 +295,10 @@ const routes = [
 const vueBodyClass = new VueBodyClass(routes)
 
 const router = createRouter({
-  // eslint-disable-next-line no-undef
-  history: createWebHistory(process.env.BASE_URL),
-  // eslint-disable-next-line no-undef
-  base: process.env.BASE_URL,
+  history: createWebHistory(),
   routes,
 })
 
-router.beforeEach((to, from, next) => {
-  // This goes through the matched routes from last to first, finding the closest route with a title.
-  // e.g., if we have `/some/deep/nested/route` and `/some`, `/deep`, and `/nested` have titles,
-  // `/nested`'s will be chosen.
-  const nearestWithTitle = to.matched
-    .slice()
-    .reverse()
-    .find((r) => r.meta && r.meta.title)
+router.beforeEach((to, from, next) => { vueBodyClass.guard(to, next) })
 
-  // Find the nearest route element with meta tags.
-  const nearestWithMeta = to.matched
-    .slice()
-    .reverse()
-    .find((r) => r.meta && r.meta.metaTags)
-
-  // If a route with a title was found, set the document (page) title to that value.
-  if (nearestWithTitle) document.title = nearestWithTitle.meta.title
-
-  // Remove any stale meta tags from the document using the key attribute we set below.
-  Array.from(
-    document.querySelectorAll('[data-vue-router-controlled]')
-  ).map((el) => el.parentNode.removeChild(el))
-
-  // Skip rendering meta tags if there are none.
-  if (!nearestWithMeta) return next()
-
-  // Turn the meta tag definitions into actual elements in the head.
-  nearestWithMeta.meta.metaTags
-    .map((tagDef) => {
-      const tag = document.createElement('meta')
-
-      Object.keys(tagDef).forEach((key) => {
-        tag.setAttribute(key, tagDef[key])
-      })
-
-      // We use this to track which meta tags we create so we don't interfere with other ones.
-      tag.setAttribute('data-vue-router-controlled', '')
-
-      return tag
-    })
-    // Add the meta tags to the document head.
-    .forEach((tag) => document.head.appendChild(tag))
-
-  vueBodyClass.guard(to, from, next())
-  // next()
-})
 export default router
