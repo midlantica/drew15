@@ -181,9 +181,8 @@ const routes = [
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(
-        /* webpackChunkName: 'ExtrasBourbon' */ './template-bourbon/pages/Extras.vue'
-      ),
+
+      import( /* webpackChunkName: 'ExtrasBourbon' */ './template-bourbon/pages/Extras.vue' ),
     meta: {
       bodyClass: 'bourbon extras',
       title: 'Drew Harper – UI/UX Designer',
@@ -202,9 +201,8 @@ const routes = [
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(
-        /* webpackChunkName: 'ExtrasCorp' */ './template-corp/pages/Extras.vue'
-      ),
+
+      import( /* webpackChunkName: 'ExtrasCorp' */ './template-corp/pages/Extras.vue' ),
     meta: {
       bodyClass: 'corp extras',
       title: 'Drew Harper – UI/UX Designer',
@@ -223,7 +221,8 @@ const routes = [
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import( /* webpackChunkName: 'ExtrasGroovy' */ './template-groovy/pages/Extras.vue'),
+
+      import( /* webpackChunkName: 'ExtrasGroovy' */ './template-groovy/pages/Extras.vue' ),
     meta: {
       bodyClass: 'groovy extras',
       title: 'Drew Harper – UI/UX Designer',
@@ -242,9 +241,8 @@ const routes = [
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(
-        /* webpackChunkName: 'ExtrasPunk' */ './template-punk/pages/Extras.vue'
-      ),
+
+      import( /* webpackChunkName: 'ExtrasPunk' */ './template-punk/pages/Extras.vue' ),
     meta: {
       bodyClass: 'punk extras',
       title: 'Drew Harper – UI/UX Designer',
@@ -263,9 +261,8 @@ const routes = [
     // this generates a separate chunk (Extras.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(
-        /* webpackChunkName: 'ExtrasTechy' */ './template-techy/pages/Extras.vue'
-      ),
+
+      import( /* webpackChunkName: 'ExtrasTechy' */ './template-techy/pages/Extras.vue' ),
     meta: {
       bodyClass: 'techy extras',
       title: 'Drew Harper – UI/UX Designer',
@@ -294,6 +291,7 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   // eslint-disable-next-line no-undef
   base: process.env.BASE_URL,
+
   routes,
 })
 
@@ -313,6 +311,7 @@ router.beforeEach((to, from, next) => {
     .find((r) => r.meta && r.meta.metaTags)
 
   // If a route with a title was found, set the document (page) title to that value.
+
   if (nearestWithTitle) document.title = nearestWithTitle.meta.title
 
   // Remove any stale meta tags from the document using the key attribute we set below.
@@ -325,6 +324,7 @@ router.beforeEach((to, from, next) => {
 
   // Turn the meta tag definitions into actual elements in the head.
   nearestWithMeta.meta.metaTags
+
     .map((tagDef) => {
       const tag = document.createElement('meta')
 
@@ -339,6 +339,7 @@ router.beforeEach((to, from, next) => {
     })
     // Add the meta tags to the document head.
     .forEach((tag) => document.head.appendChild(tag))
+
 
   vueBodyClass.guard(to, from, next())
   // next()
