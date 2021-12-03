@@ -1,9 +1,16 @@
 <template>
   <section>
-    <h1>When UX design is done right the design seems inevitable</h1>
-    <p>Whether it’s a prototype, a responsive website, a wireframe, an interactive <span class="smallCaps">PDF</span>, a new mobile app <span class="smallCaps">UI</span>, a quick skin job, a few more buttons, a dialog box, filling up a bucket, or getting in the trenches with  <span class="smallCaps">HTML</span> and <span class="smallCaps">CSS</span>, I can deliver. I don’t let ‘design’ get in the way. Oh and I’m a coder groupie 😃</p>
+    <h1>{{ state.state.druHead }}</h1>
+    <p v-html="state.state.druCopy"></p>
   </section>
 </template>
+
+<script lang="ts" setup>
+  // import { defineComponent } from 'vue'
+  import { inject } from 'vue'
+
+  const state = inject('state')
+</script>
 
 <style lang="scss" scoped>
   @import '@/template-techy/assets/css/techy-main.scss';

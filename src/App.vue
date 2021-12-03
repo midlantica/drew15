@@ -11,8 +11,12 @@
   </transition>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
+  import { provide } from 'vue'
+  import state from '@/store'
   import Tabs from '@/components/Tabs.vue'
+
+  provide('state', state)
 </script>
 
 <style lang="scss">
