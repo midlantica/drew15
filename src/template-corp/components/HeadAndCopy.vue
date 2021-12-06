@@ -6,7 +6,6 @@
 </template>
 
 <script lang="ts" setup>
-  // import { defineComponent } from 'vue'
   import { inject } from 'vue'
 
   const state = inject('state')

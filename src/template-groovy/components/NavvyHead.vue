@@ -11,7 +11,7 @@
       </router-link>
 
       <div class='jobDesc'>
-        <h2>ui/ux designer + visual designer</h2>
+        <h2>{{ state.state.uiuxDesigner }} + {{ state.state.vizDesigner }}</h2>
       </div>
 
       <div class='contact'>
@@ -26,9 +26,13 @@
   </nav>
 </template>
 
-<script setup>
-  import mastDrew from './masthead/mastDrew'
-  import mastHarper from './masthead/mastHarper'
+<script setup lang="ts">
+  import mastDrew from './masthead/mastDrew.vue'
+  import mastHarper from './masthead/mastHarper.vue'
+
+  import { inject } from 'vue'
+
+  const state = inject('state')
 </script>
 
 <style lang='scss' scoped>

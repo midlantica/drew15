@@ -4,8 +4,8 @@
       <router-link :to="{ name: 'Bourbon' }">DREW HARPER</router-link>
     </h1>
     <section class='jobDesc'>
-      <h2>UI/UX Designer</h2>
-      <h2>VISUAL DESIGNER</h2>
+      <h2>{{ state.state.uiuxDesigner }}</h2>
+      <h2>{{ state.state.vizDesigner }}</h2>
     </section>
     <section class='contact'>
       <p class='email'>
@@ -17,6 +17,12 @@
     </section>
   </nav>
 </template>
+
+<script lang="ts" setup>
+  import { inject } from 'vue'
+
+  const state = inject('state')
+</script>
 
 <style lang='scss' scoped>
   @import '@/template-bourbon/assets/css/bourbon-main.scss';

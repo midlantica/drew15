@@ -9,6 +9,12 @@
   </transition>
 </template>
 
+<script lang="ts" setup>
+  // import { inject } from 'vue'
+
+  // const state = inject('state')
+</script>
+
 <style lang='scss' scoped>
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
 

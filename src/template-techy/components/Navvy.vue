@@ -15,8 +15,8 @@
         </div>
 
         <div class='jobDesc block'>
-          <h2>ui/ux designer +</h2>
-          <h2 class='marLH'>visual designer</h2>
+          <h2>{{ state.state.uiuxDesigner }} +</h2>
+          <h2 class='marLH'>{{ state.state.vizDesigner }}</h2>
         </div>
       </div>
 
@@ -35,9 +35,13 @@
   </nav>
 </template>
 
-<script setup>
-  import mastDrew from './masthead/mastDrew'
-  import mastHarper from './masthead/mastHarper'
+<script setup lang="ts">
+  import mastDrew from './masthead/mastDrew.vue'
+  import mastHarper from './masthead/mastHarper.vue'
+
+  import { inject } from 'vue'
+
+  const state = inject('state')
 </script>
 
 <style lang='scss' scoped>

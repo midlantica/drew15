@@ -3,8 +3,8 @@
     <div class="flexbox">
 
       <div class="jobTitles">
-        <p>UI/UX Designer</p>
-        <p>Visual Designer</p>
+        <p>{{ state.state.uiuxDesigner }}</p>
+        <p>{{ state.state.vizDesigner }}</p>
       </div>
 
       <div class="resumeLinks">

@@ -4,7 +4,7 @@
       <router-link :to="'About'">&nbsp;drew harper</router-link>
     </h1>
     <section class='jobDesc'>
-      <h2>ui/ux designer / visual designer</h2>
+      <h2>{{ state.state.uiuxDesigner }} / {{ state.state.vizDesigner }}</h2>
     </section>
     <section class='contact'>
       <p class=''>
@@ -14,6 +14,12 @@
     </section>
   </nav>
 </template>
+
+<script lang="ts" setup>
+  import { inject } from 'vue'
+
+  const state = inject('state')
+</script>
 
 <style lang='scss' scoped>
   @import '@/template-modern/assets/css/modern-main.scss';
@@ -109,6 +115,7 @@
     // margin-left: 1em;
     margin-top: 1rem;
     transition: 0.25s ease-in;
+    text-decoration: lowercase;
 
     @media (max-width: $breakTwo) {
       // flex-grow: 0;
@@ -143,6 +150,7 @@
       color: hsla(0, 0%, 100%, 0.85) !important;
       text-align: center;
       text-shadow: 1px 1px 4px$black;
+      text-transform: lowercase !important;
       @include font-smoothing;
 
       @media (max-width: $breakTwo) {

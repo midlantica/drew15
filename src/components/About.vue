@@ -3,9 +3,15 @@
     <div class="flagBox">
       <div class="flag">&nbsp;</div>
     </div>
-    <p>I’m half-English/half-American, worked in Advertising most my life, switched to web in late ’90s. Travelled the world, enjoy reading history, love NFL, Rugby, Footy.</p>
+    <p>{{ state.state.aboutCopy }}</p>
   </div>
 </template>
+
+<script lang="ts" setup>
+  import { inject } from 'vue'
+
+  const state = inject('state')
+</script>
 
 <style lang="scss" scoped>
 

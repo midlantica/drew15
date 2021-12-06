@@ -2,7 +2,6 @@
   <div class="marT1 marL1H marRH">
     <div class="headBlock">
       <router-link :to="{ name: 'ExtrasBourbon' }" class="drewhead jelloHorizontal" />
-      <!-- <h1>When UX design is done right the design seems inevitable</h1> -->
       <h1>{{ state.state.druHead }}</h1>
     </div>
     <p v-html="state.state.druCopy"></p>
@@ -10,7 +9,6 @@
 </template>
 
 <script lang="ts" setup>
-  // import { defineComponent } from 'vue'
   import { inject } from 'vue'
 
   const state = inject('state')
