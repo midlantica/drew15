@@ -1,7 +1,24 @@
 $mortar: .25rem;
 
 .vueperslides__arrow {
-  color: hsl(0deg 0% 0% / 80%);
+  color: rgb(67, 67, 67);
+  // text-shadow: 2px 2px 2px red;
+  // >>>>
+  // fill: none;
+  // stroke: red;
+  // stroke-width: 10px;
+  // stroke-linejoin: round;
+  stroke-linejoin: round;
+  filter:
+    drop-shadow(-1px -1px 1px hsla(0, 0%, 100%, 0.5))
+    drop-shadow(1px -1px 1px hsla(0, 0%, 100%, 0.5))
+    drop-shadow(1px 1px 1px hsla(0, 0%, 100%, 0.5))
+    drop-shadow(-1px 1px 1px hsla(0, 0%, 100%, 0.5));
+
+  &:hover {
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2px;
+  }
 }
 
 .vueperslides__arrow svg {
@@ -10,9 +27,26 @@ $mortar: .25rem;
   // fill: none;
   width: 3em;
   // padding: 1em;
-  stroke-width: 1;
   // -webkit-box-sizing: border-box;
   // box-sizing: border-box;
+  // stroke: black;
+  // stroke-width: 1px;
+
+  &:hover {
+    // color: white !important;
+    // stroke-width: 2px;
+  }
+
+}
+
+.vueperslides__arrow svg:hover path {
+  stroke: rgb(211, 0, 0);
+  stroke-width: 2px;
+
+  &:hover {
+    // stroke: greenyellow;
+    stroke-width: 2px;
+  }
 }
 
 .vueperslides__progress {
@@ -56,6 +90,7 @@ $mortar: .25rem;
   cursor: pointer;
   position: absolute;
   // z-index: 100;
+  box-shadow: 2px 2px 2px white;
 
   &:hover {
     // background: grey;
