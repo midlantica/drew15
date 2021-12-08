@@ -1,6 +1,6 @@
 import { reactive } from 'vue'
 
-const quotes = reactive([
+const copy = reactive([
   {
     quote: `A user experience is like a joke: if you have to explain it, it's not that good`,
     author: `Martin LeBlanc`,
@@ -151,4 +151,4 @@ const quotes = reactive([
   },
 ])
 
-export default { quotes }
+export default { copy }

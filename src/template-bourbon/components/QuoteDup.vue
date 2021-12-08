@@ -1,48 +1,18 @@
 <template>
-  <div>
-    <transition name='fade'>
-      <div
-        v-for='number in [currentNumber]'
-        :key='number'
-      >
-        <img :src='currentQuote'
-          v-on:mouseover='stopRotation()'
-          v-on:mouseout='startRotation()'
-        />
+  <transition name="bounce7" appear>
+    <div class='quoteBlock'>
+      <div class='quotePad'>
+        <p>&ldquo;{{ quotes.copy[0].quote }}&rdquo;</p>
+        <cite>&ndash; {{ quotes.copy[0].author }}</cite>
       </div>
-    </transition>
-  </div>
+    </div>
+  </transition>
 </template>
 
-<script script lang='ts'>
-  import { inject, reactive, computed, ref, onMounted } from 'vue'
+<script lang="ts" setup>
+  import { inject } from 'vue'
 
   const quotes: any = inject('quotes')
-  const currentNumber: number = ref(0)
-  const timer: number = ref(0)
-
-  const startRotation = (() {
-    timer.value = setInterval(next, 3000);
-  })
-
-  const stopRotation = (() {
-    clearTimeout(timer.value)
-    timer.value = null
-  })
-  const next = (() {
-    currentNumber.value += 1
-  })
-  const prev = (() {
-    currentNumber.value -= 1
-  })
-
-  const currentQuote = computed(() => {
-    return quotes.value[Math.abs(currentNumber.value) % quotes.length.value]
-    }
-  })
-
-  onMounted(startRotation())
-
 </script>
 
 <style lang='scss' scoped>

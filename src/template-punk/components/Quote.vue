@@ -1,20 +1,26 @@
 <template>
   <div class="quoteBlock">
-    <p>&ldquo;Everything should be made as simple as possible, but not simpler.&rdquo;</p>
-    <cite>&ndash; Albert Einstein</cite>
+    <p>&ldquo;{{ quotes.copy.quote }}&rdquo;</p>
+    <cite>&ndash; {{ quotes.copy.author }}</cite>
   </div>
 </template>
+
+<script lang="ts" setup>
+  import { inject } from 'vue'
+
+  const quotes: any = inject('quotes')
+</script>
 
 <style lang="scss" scoped>
   @import '@/template-punk/assets/css/punk-main.scss';
 
   .quoteBlock {
-    background: rgba(7, 97, 7, 0.79);
+    background: rgba(218, 0, 0, 0.79);
     // background: transparentize($purple, .35);
     // margin-bottom: .5em;
     padding: 1em 2em 1em;
     // @include shadow;
-    // @include clearfix;
+    @include clearfix;
     text-align: center;
 
     p {

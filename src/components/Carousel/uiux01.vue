@@ -27,8 +27,6 @@
   import { VueperSlides, VueperSlide } from 'vueperslides'
   import 'vueperslides/dist/vueperslides.css'
 
-  // let title = ref('')
-  // const imgPath = ('/public/img/portfolio/01_uiux/')
   let slides = ref([
     {
       image: require('/public/img/portfolio/01_uiux/Zander_screenshot_v1.png')
