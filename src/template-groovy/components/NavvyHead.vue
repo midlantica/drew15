@@ -16,7 +16,7 @@
 
       <div class='contact'>
         <p class='email'>
-          <a href='mailto:druharper@gmail.com'>druharper@gmail.com</a>
+          <a :href='`mailto:`+`${store.copy.druEmail}`'>{{ store.copy.druEmail }}</a>
         </p>
         <p class='resume'>
           <a href='resume/drew_harper_resume_portfolio.pdf' target="_blank">PDF Resume</a>

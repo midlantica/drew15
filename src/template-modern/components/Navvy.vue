@@ -8,7 +8,7 @@
     </section>
     <section class='contact'>
       <p class=''>
-        <a href='mailto:druharper@gmail.com'>druharper@gmail.com</a>
+        <a :href='`mailto:`+`${store.copy.druEmail}`'>{{ store.copy.druEmail }}</a>
         <a href='https://drewharper.com/resume/drew_harper_resume_portfolio.pdf' target='_blank'>PDF Resume</a>
       </p>
     </section>

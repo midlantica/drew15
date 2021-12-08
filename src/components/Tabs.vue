@@ -1,13 +1,20 @@
 <template>
   <div class="tabs">
-    <router-link :to="{ name: 'ModernProjects' }" class="modern">Modern</router-link>
-    <router-link :to="{ name: 'Bourbon' }" class="bourbon">Bourbon</router-link>
-    <router-link :to="{ name: 'Groovy' }" class="groovy">Groovy</router-link>
-    <router-link :to="{ name: 'Techy' }" class="techy">Techy</router-link>
-    <router-link :to="{ name: 'Corp' }" class="corp">Corp</router-link>
-    <router-link :to="{ name: 'Punk' }" class="punk">Punk</router-link>
+    <router-link :to="{ name: 'ModernProjects' }" class="modern">{{ store.copy.modern }}</router-link>
+    <router-link :to="{ name: 'Bourbon' }" class="bourbon">{{ store.copy.bourbon }}</router-link>
+    <router-link :to="{ name: 'Groovy' }" class="groovy">{{ store.copy.groovy }}</router-link>
+    <router-link :to="{ name: 'Techy' }" class="techy">{{ store.copy.techy }}</router-link>
+    <router-link :to="{ name: 'Corp' }" class="corp">{{ store.copy.corp }}</router-link>
+    <router-link :to="{ name: 'Punk' }" class="punk">{{ store.copy.punk }}</router-link>
   </div>
 </template>
+
+<script lang="ts" setup>
+  // import { defineComponent } from 'vue'
+  import { inject } from 'vue'
+
+  const store: any = inject('store')
+</script>
 
 <style lang="scss" scoped>
   .tabs {

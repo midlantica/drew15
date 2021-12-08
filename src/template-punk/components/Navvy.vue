@@ -2,7 +2,7 @@
   <nav>
 
     <div class="greenBar">&nbsp;</div>
-    <p class='email'><a href="mailto:druharper@gmail.com">druharper@gmail.com</a></p>
+    <p class='email'><a :href='`mailto:`+`${store.copy.druEmail}`'>{{ store.copy.druEmail }}</a></p>
 
     <div class="mastMain">
       <router-link :to="{ name: 'Punk' }">
@@ -18,8 +18,11 @@
 </template>
 
 <script setup lang="ts">
+  import { inject } from 'vue'
   import mastDrew from './masthead/mastDrew.vue'
   import mastHarper from './masthead/mastHarper.vue'
+
+  const store: any = inject('store')
 </script>
 
 <style lang="scss" scoped>
