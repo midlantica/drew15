@@ -74,7 +74,7 @@ const quotes = reactive([
   },
   {
     quote: `Usability is like love. You have to care, you have to listen, and you have to be willing to change. You'll make mistakes along the way, but that's where growth and forgiveness come in.`,
-  author: `Jeffrey Zeldman`
+    author: `Jeffrey Zeldman`
   },
   {
     quote: `Good design is about effective communication, not decoration at the expense of legibility.`,

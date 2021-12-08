@@ -16,7 +16,7 @@
   import state from '@/store'
   import Tabs from '@/components/Tabs.vue'
 
-  provide('state', state)
+  provide('state', state) as any
 </script>
 
 <style lang="scss">
