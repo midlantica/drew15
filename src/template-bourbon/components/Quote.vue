@@ -12,7 +12,7 @@
 <script lang="ts" setup>
   // import { inject } from 'vue'
 
-  // const state = inject('state')
+  // const store: any = inject('store')
 </script>
 
 <style lang='scss' scoped>

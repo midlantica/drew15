@@ -1,6 +1,6 @@
 import { reactive } from 'vue'
 
-const state = reactive({
+const copy = reactive({
   drewHarper: `Drew Harper`,
   uiuxDesigner: `UI/UX Designer`,
   vizDesigner: `Visual Designer`,
@@ -14,4 +14,4 @@ const state = reactive({
   punk: `Punk`,
 })
 
-export default { state }
+export default { copy }

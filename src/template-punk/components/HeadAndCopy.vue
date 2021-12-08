@@ -3,8 +3,8 @@
     <div class="flexbox">
 
       <div class="jobTitles">
-        <p>{{ state.state.uiuxDesigner }}</p>
-        <p>{{ state.state.vizDesigner }}</p>
+        <p>{{ store.copy.uiuxDesigner }}</p>
+        <p>{{ store.copy.vizDesigner }}</p>
       </div>
 
       <div class="resumeLinks">
@@ -15,8 +15,8 @@
 
     <div class="copyGrid">
       <div class="mainBody">
-        <h1>{{ state.state.druHead }}</h1>
-        <p v-html="state.state.druCopy"></p>
+        <h1>{{ store.copy.druHead }}</h1>
+        <p v-html="store.copy.druCopy"></p>
       </div>
     </div>
   </div>
@@ -26,7 +26,7 @@
   // import { defineComponent } from 'vue'
   import { inject } from 'vue'
 
-  const state = inject('state')
+  const store: any = inject('store')
 </script>
 
 <style lang="scss" scoped>

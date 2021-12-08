@@ -2,16 +2,16 @@
   <div class="marT1 marL1H marRH">
     <div class="headBlock">
       <router-link :to="{ name: 'ExtrasBourbon' }" class="drewhead jelloHorizontal" />
-      <h1>{{ state.state.druHead }}</h1>
+      <h1>{{ store.copy.druHead }}</h1>
     </div>
-    <p v-html="state.state.druCopy"></p>
+    <p v-html="store.copy.druCopy"></p>
   </div>
 </template>
 
 <script lang="ts" setup>
   import { inject } from 'vue'
 
-  const state = inject('state')
+  const store: any = inject('store')
 </script>
 
 <style lang="scss" scoped>

@@ -6,7 +6,7 @@
           <router-link :to="{ name: 'ExtrasCorp' }" class='drewhead jelloHorizontal' />
           <drewHarper class='drewHarper marTH' />
           <div class='flexRow just-center marTH'>
-            <h3>{{ state.state.uiuxDesigner }} + {{ state.state.vizDesigner }}</h3>
+            <h3>{{ store.copy.uiuxDesigner }} + {{ store.copy.vizDesigner }}</h3>
           </div>
         </router-link>
       </div>
@@ -24,7 +24,7 @@
   import drewHarper from '@/template-corp/components/navvyArt/drewHarper.vue'
   import { inject } from 'vue'
 
-  const state = inject('state')
+  const store: any = inject('store')
 </script>
 
 <style lang='scss' scoped>

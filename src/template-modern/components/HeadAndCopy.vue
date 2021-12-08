@@ -2,9 +2,9 @@
   <div>
     <div class="headBlock">
       <router-link :to="{ name: 'ModernExtras' }" class="drewhead jelloHorizontal" />
-      <h1>{{ state.state.druHead }}</h1>
+      <h1>{{ store.copy.druHead }}</h1>
     </div>
-    <p v-html="state.state.druCopy"></p>
+    <p v-html="store.copy.druCopy"></p>
   </div>
 </template>
 
@@ -12,7 +12,7 @@
   // import { defineComponent } from 'vue'
   import { inject } from 'vue'
 
-  const state = inject('state')
+  const store: any = inject('store')
 </script>
 
 <style lang="scss" scoped>

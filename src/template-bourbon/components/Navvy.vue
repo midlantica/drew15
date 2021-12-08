@@ -4,8 +4,8 @@
       <router-link :to="{ name: 'Bourbon' }">DREW HARPER</router-link>
     </h1>
     <section class='jobDesc'>
-      <h2>{{ state.state.uiuxDesigner }}</h2>
-      <h2>{{ state.state.vizDesigner }}</h2>
+      <h2>{{ store.copy.uiuxDesigner }}</h2>
+      <h2>{{ store.copy.vizDesigner }}</h2>
     </section>
     <section class='contact'>
       <p class='email'>
@@ -21,7 +21,7 @@
 <script lang="ts" setup>
   import { inject } from 'vue'
 
-  const state = inject('state')
+  const store: any = inject('store')
 </script>
 
 <style lang='scss' scoped>

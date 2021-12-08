@@ -13,10 +13,10 @@
 
 <script lang="ts" setup>
   import { provide } from 'vue'
-  import state from '@/store'
+  import store from '@/store/index'
   import Tabs from '@/components/Tabs.vue'
 
-  provide('state', state) as any
+  provide('store', store) as any
 </script>
 
 <style lang="scss">

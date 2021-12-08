@@ -1,7 +1,7 @@
 <template>
   <section>
-    <h1>{{ state.state.druHead }}</h1>
-    <p v-html="state.state.druCopy"></p>
+    <h1>{{ store.copy.druHead }}</h1>
+    <p v-html="store.copy.druCopy"></p>
   </section>
 </template>
 
@@ -9,7 +9,7 @@
   // import { defineComponent } from 'vue'
   import { inject } from 'vue'
 
-  const state = inject('state')
+  const store: any = inject('store')
 </script>
 
 <style lang="scss" scoped>

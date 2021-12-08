@@ -1,14 +1,14 @@
 <template>
   <div class="wrap">
-    <h1>{{ state.state.druHead }}</h1>
-    <p v-html="state.state.druCopy"></p>
+    <h1>{{ store.copy.druHead }}</h1>
+    <p v-html="store.copy.druCopy"></p>
   </div>
 </template>
 
 <script lang="ts" setup>
   import { inject } from 'vue'
 
-  const state = inject('state')
+  const store: any = inject('store')
 </script>
 
 <style lang="scss" scoped>

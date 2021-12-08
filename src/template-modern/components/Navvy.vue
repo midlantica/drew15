@@ -4,7 +4,7 @@
       <router-link :to="'About'">&nbsp;drew harper</router-link>
     </h1>
     <section class='jobDesc'>
-      <h2>{{ state.state.uiuxDesigner }} / {{ state.state.vizDesigner }}</h2>
+      <h2>{{ store.copy.uiuxDesigner }} / {{ store.copy.vizDesigner }}</h2>
     </section>
     <section class='contact'>
       <p class=''>
@@ -18,7 +18,7 @@
 <script lang="ts" setup>
   import { inject } from 'vue'
 
-  const state = inject('state')
+  const store: any = inject('store')
 </script>
 
 <style lang='scss' scoped>

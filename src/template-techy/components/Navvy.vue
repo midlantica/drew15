@@ -15,8 +15,8 @@
         </div>
 
         <div class='jobDesc block'>
-          <h2>{{ state.state.uiuxDesigner }} +</h2>
-          <h2 class='marLH'>{{ state.state.vizDesigner }}</h2>
+          <h2>{{ store.copy.uiuxDesigner }} +</h2>
+          <h2 class='marLH'>{{ store.copy.vizDesigner }}</h2>
         </div>
       </div>
 
@@ -41,7 +41,7 @@
 
   import { inject } from 'vue'
 
-  const state = inject('state')
+  const store: any = inject('store')
 </script>
 
 <style lang='scss' scoped>
