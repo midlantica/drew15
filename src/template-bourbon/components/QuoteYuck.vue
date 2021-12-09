@@ -1,18 +1,52 @@
 <template>
-  <transition name="bounce7" appear>
-    <div class='quoteBlock'>
-      <div class='quotePad'>
-        <p>&ldquo;{{ quotes.copy[0].quote }}&rdquo;</p>
-        <cite>&ndash; {{ quotes.copy[0].author }}</cite>
-      </div>
+  <transition name='fade'>
+    <div
+      v-for='number in [currentNumber]'
+      :key='number'
+    >
+      <div :src='currentQuote'
+        v-on:mouseover='stopRotation()'
+        v-on:mouseout='startRotation()'
+      />
     </div>
   </transition>
 </template>
 
-<script lang="ts" setup>
-  import { inject } from 'vue'
+<script script lang='ts'>
+  import { inject, reactive, computed, ref, onMounted } from 'vue'
 
   const quotes: any = inject('quotes')
+
+  let currentNumber: any = ref(0)
+  let currentQuote: text = ref('')
+  let timer: any = ref(0)
+  // let startRotation: number = ref()
+
+  const startRotation = (() => {
+    timer.value = setInterval(next, 3000)
+  })
+
+  const stopRotation = (() => {
+    clearTimeout(timer)
+    timer.value = 0
+  })
+  const next = (() => {
+    currentNumber += 1
+  })
+  const prev = (() => {
+    currentNumber -= 1
+  })
+
+  const currentQuote = computed(() => {
+    return quotes.quote.value[Math.abs(currentNumber.value) % quotes.quote.length.value]
+      &&
+      quotes.author.value[Math.abs(currentNumber.value) % quotes.author.length.value]
+  })
+
+  onMounted(() => {
+    startRotation()
+  })
+
 </script>
 
 <style lang='scss' scoped>

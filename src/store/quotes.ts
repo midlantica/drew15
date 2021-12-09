@@ -27,10 +27,7 @@ const copy = reactive([
   },
   {
     quote: `It is vain to do with more what can be done with fewer`,
-  },
-  {
-    quote: `Of all of our inventions for mass communication, pictures still speak the most universally understood language.`,
-    author: `Walt Disney`
+    author: `unknown`
   },
   {
     quote: `Design is not just what it looks like and feels like. Design is how it works`,
@@ -46,19 +43,11 @@ const copy = reactive([
   },
   {
     quote: `Measure twice, cut once`,
-    author: `Unknown`
-  },
-  {
-    quote: `The dumbest mistake is viewing design as something you do at the end of the process to 'tidy up' the mess, as opposed to understanding it's a 'day one' issue and part of everything.`,
-    author: `Tom Peters`
+    author: `unknown`
   },
   {
     quote: `You can use an eraser on the drafting table or a sledge hammer on the construction site.`,
     author: `Frank Lloyd Wright`
-  },
-  {
-    quote: `Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away`,
-    author: `Antoine de Saint-Exupery`
   },
   {
     quote: `Design should never say, 'Look at me.' It should always say, 'Look at this.'`,
@@ -66,14 +55,6 @@ const copy = reactive([
   },
   {
     quote: `Good web design is about the character of the content, not the character of the designer.`,
-    author: `Jeffrey Zeldman`
-  },
-  {
-    quote: `Good design, when it's done well, becomes invisible. It's only when it's done poorly that we notice it.`,
-    author: `Jared Spool`
-  },
-  {
-    quote: `Usability is like love. You have to care, you have to listen, and you have to be willing to change. You'll make mistakes along the way, but that's where growth and forgiveness come in.`,
     author: `Jeffrey Zeldman`
   },
   {
@@ -88,7 +69,6 @@ const copy = reactive([
     quote: `Good designers want to be proved wrong, bad designers hope to be proved right.`,
     author: `Andy Budd`
   },
-
   {
     quote: `The ability to simplify means to eliminate the unnecessary so that the necessary may speak.`,
     author: `Hans Hofmann`
@@ -106,16 +86,8 @@ const copy = reactive([
     author: `Jonathan Ive`
   },
   {
-    quote: `Don't make something unless it's both necessary and useful. But if it is both necessary and useful, don't hesitate to make it beautiful.`,
-    author: `Josh Porter`
-  },
-  {
-    quote: `A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.`,
-    author: `Douglas Adams`
-  },
-  {
     quote: `It's art if can't be explained. It's fashion if no one asks for an explanation.`,
-    author: ``,
+    author: `unknown`,
   },
   {
     quote: `It's design if it doesn't need explanation.`,
@@ -134,20 +106,16 @@ const copy = reactive([
     author: `Alan Cooper`
   },
   {
-    quote: `If the user can't use it, it doesn't work`,
-    author: `Susan Dray`
-  },
-  {
     quote: `If there's a 'trick' to it, the UI is broken`,
     author: `Douglas Anderson`
   },
   {
     quote: `Know the user, and You are not the user.`,
-    author: `Unknown`
+    author: `unknown`
   },
   {
     quote: `Usability is like oxygen, you don't notice it until it's missing`,
-    author: `Unknown`
+    author: `unknown`
   },
 ])
 

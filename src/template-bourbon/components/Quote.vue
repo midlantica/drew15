@@ -1,47 +1,34 @@
 <template>
-  <div>
-    <transition name='fade'>
-      <div
-        v-for='number in [currentNumber]'
-        :key='number'
-      >
-        <img :src='currentQuote'
-          v-on:mouseover='stopRotation()'
-          v-on:mouseout='startRotation()'
-        />
+  <transition name="bounce7" appear>
+    <div class='quoteBlock'>
+      <div class='quotePad'>
+        <p>&ldquo;{{ quotes.copy[quoteNumber].quote }}&rdquo;</p>
+        <cite>&ndash; {{ quotes.copy[quoteNumber].author }}</cite>
       </div>
-    </transition>
-  </div>
+    </div>
+  </transition>
 </template>
 
-<script script lang='ts'>
-  import { inject, reactive, computed, ref, onMounted } from 'vue'
-
+<script lang="ts" setup>
+  import { inject, ref, onMounted} from 'vue'
   const quotes: any = inject('quotes')
-  const currentNumber: number = ref(0)
-  const timer: number = ref(0)
 
-  const startRotation = (() {
-    timer.value = setInterval(next, 3000);
-  })
+  let quoteNumber = ref(0)
+  let quotesLength = ref(quotes.copy.length)
 
-  const stopRotation = (() {
-    clearTimeout(timer.value)
-    timer.value = null
-  })
-  const next = (() {
-    currentNumber.value += 1
-  })
-  const prev = (() {
-    currentNumber.value -= 1
-  })
-
-  const currentQuote = computed(() => {
-    return quotes.value[Math.abs(currentNumber.value) % quotes.length.value]
+  onMounted(()=>{
+    // console.log('quotesLength -> ', quotesLength)
+    if (quoteNumber.value == quotesLength.value) {
+      setInterval(() => {
+        quotes.copy[quoteNumber.value++]
+      }, 3000)
+    } else {
+      quoteNumber.value == 0
+      setInterval(() => {
+        quotes.copy[quoteNumber.value++]
+      }, 3000)
     }
   })
-
-  onMounted(startRotation())
 
 </script>
 
@@ -50,10 +37,12 @@
 
   .quoteBlock {
     background: darken($accent-red, 10);
+    min-height: 5.5rem;
+    max-height: 5.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.75em 2em 1em;
+    padding: 0.75em 2em .5em;
     text-align: center;
     border-radius: 2px;
     @include box-shadow(0px, 1px, 2px, 0px, hsla(0, 0%, 0%, 0.5));
@@ -87,13 +76,13 @@
 
     cite {
       font-family: $font-copy;
-      font-size: 0.9em;
+      font-size: 0.85em;
       color: $ivory;
       font-style: italic;
       // margin: 0 4em 0 0;
       display: block;
       text-align: right;
-      letter-spacing: 0.02em;
+      letter-spacing: 0.0em;
 
       @media only screen and (min-device-width: 700px) and (max-device-width: $breakThou) {
         // font-size: 1.5vw;
@@ -102,7 +91,7 @@
 
       @media only screen and (min-device-width: 0px) and (max-device-width: 700px) {
         // font-size: 3vw;
-        font-size: 0.9em;
+        font-size: 0.8em;
       }
     }
   }
