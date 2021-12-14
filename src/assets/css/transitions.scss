@@ -227,3 +227,16 @@ $timeBase: 1;
 .flash {
   animation-name: flash;
 }
+
+// fadey animation
+.fadey-enter-active, .fadey-leave-active {
+  transition: all 0.8s ease;
+  overflow: hidden;
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
+}
+.fadey-enter, .fadey-leave-to {
+  opacity: 0;
+  visibility: hidden;
+}

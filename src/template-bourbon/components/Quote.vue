@@ -1,10 +1,18 @@
 <template>
   <transition name='bounce7' appear>
     <div class='quoteBlock'>
-      <div class='quotePad'>
-        <p>&ldquo;{{ quotes.test[quoteNumber].quote }}&rdquo;</p>
-        <cite>&ndash; {{ quotes.test[quoteNumber].author }}</cite>
-      </div>
+      <transition-group name='fadey' tag='quotePad'>
+        <div class='quotePad'
+          v-for="x in [quoteNumber]"
+          :key='x'
+          :mouseover="stopRotation"
+          :mouseout="startRotation"
+        >
+          <p>&ldquo;{{ quotes.test[quoteNumber].quote }}&rdquo;</p>
+          <cite>&ndash; {{ quotes.test[quoteNumber].author }}</cite>
+          <a class='text-white' @click="prev">Previous</a>    ||    <a class='text-white' @click="next">Next</a>
+        </div>
+      </transition-group>
     </div>
   </transition>
 </template>
@@ -12,25 +20,41 @@
 <script lang="ts" setup>
   import { inject, ref, onMounted} from 'vue'
   const quotes: any = inject('quotes')
-  const quoteNumber = ref(0)
-  const quotesLength = ref(quotes.test.length)
 
-  const animate = () => {
-    quoteNumber.value++
-    setTimeout(() => { return quoteNumber.value }, 0)
+  const quoteNumber = ref(0)
+  // const quotesLength = ref(quotes.test.length)
+  const timer: any = ref(null)
+
+  const startRotation = () => {
+    timer.value = setInterval(timer.value.next, 3000)
+  }
+
+  const stopRotation = () => {
+    clearTimeout(timer.value)
+    timer.value = null
+  }
+
+  const next = () => {
+    quoteNumber.value += 1
+  }
+
+  const prev = () => {
+    quoteNumber.value -= 1
   }
 
   onMounted(() => {
-    setTimeout(() => {
-      let intervalState = setInterval(() => {
-        if (quoteNumber.value <= quotesLength.value) {
-          animate()
-        } else {
-          clearInterval(intervalState)
-          return quoteNumber.value = 0
-        }
-      }, 7500) //this sets the speed of the animation
-    }, 0)
+    startRotation()
+
+    // setTimeout(() => {
+    //   let intervalState = setInterval(() => {
+    //     if (quoteNumber.value <= quotesLength.value) {
+    //       animate()
+    //     } else {
+    //       clearInterval(intervalState)
+    //       return quoteNumber.value = 0
+    //     }
+    //   }, 7500) //this sets the speed of the animation
+    // }, 0)
   })
 
 </script>
@@ -57,12 +81,22 @@
       grid-row-gap: 0em;
     }
 
-    &:hover {
-      cursor: pointer;
-    }
+    // &:hover {
+    //   cursor: pointer;
+    // }
 
     .quotePad {
       text-align: center !important;
+      color: white;
+    }
+
+    .quotePad a {
+      color: white !important;
+      cursor: pointer;
+
+      &:hover {
+        color: yellow !important;
+      }
     }
 
     p {
