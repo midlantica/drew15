@@ -1,5 +1,5 @@
 <template>
-  <transition name="bounce7" appear>
+  <transition name='bounce7' appear>
     <div class='quoteBlock'>
       <div class='quotePad'>
         <p>&ldquo;{{ quotes.test[quoteNumber].quote }}&rdquo;</p>
@@ -12,32 +12,25 @@
 <script lang="ts" setup>
   import { inject, ref, onMounted} from 'vue'
   const quotes: any = inject('quotes')
+  const quoteNumber = ref(0)
+  const quotesLength = ref(quotes.test.length)
 
-  let timer = ref(null)
-  let quoteNumber = ref(0)
-  let quotesLength = ref(quotes.test.length)
-
-  const animateQuotes = setInterval(() => {
-    quotes.test[quoteNumber.value++]
-  }, 2000)
-
-
-  const quoteAni = () => {
-    if (quoteNumber.value < quotesLength) {
-      animateQuotes
-      // console.log('quoteNumber if -->> ', quoteNumber.value)
-    } else {
-      quoteNumber.value = 0
-      // console.log('quoteNumber else -->> ', quoteNumber.value)
-      // clearInterval(animateQuotes)
-      animateQuotes
-    }
+  const animate = () => {
+    quoteNumber.value++
+    setTimeout(() => { return quoteNumber.value }, 0)
   }
 
-  onMounted(()=>{
-    // console.log('quoteNumber before-Ani -->> ', quoteNumber.value)
-    quoteAni()
-    // console.log('quoteNumber post-Ani -->> ', quoteNumber.value)
+  onMounted(() => {
+    setTimeout(() => {
+      let intervalState = setInterval(() => {
+        if (quoteNumber.value <= quotesLength.value) {
+          animate()
+        } else {
+          clearInterval(intervalState)
+          return quoteNumber.value = 0
+        }
+      }, 7500) //this sets the speed of the animation
+    }, 0)
   })
 
 </script>
@@ -64,6 +57,10 @@
       grid-row-gap: 0em;
     }
 
+    &:hover {
+      cursor: pointer;
+    }
+
     .quotePad {
       text-align: center !important;
     }
@@ -74,6 +71,10 @@
       letter-spacing: 0.05em;
       line-height: 1.5em;
       text-align: center;
+      // transition-property: width;
+      // transition-duration: 2s;
+      // transition-timing-function: linear;
+      // transition-delay: 1s;
 
       @media only screen and (min-device-width: 700px) and (max-device-width: $breakThou) {
         font-size: 0.9em;
