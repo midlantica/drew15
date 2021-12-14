@@ -2,44 +2,17 @@
   <transition name="bounce7" appear>
     <div class='quoteBlock'>
       <div class='quotePad'>
-        <p>&ldquo;{{ quotes.test[quoteNumber].quote }}&rdquo;</p>
-        <cite>&ndash; {{ quotes.test[quoteNumber].author }}</cite>
+        <p>&ldquo;{{ quotes.copy[0].quote }}&rdquo;</p>
+        <cite>&ndash; {{ quotes.copy[0].author }}</cite>
       </div>
     </div>
   </transition>
 </template>
 
 <script lang="ts" setup>
-  import { inject, ref, onMounted} from 'vue'
+  import { inject } from 'vue'
+
   const quotes: any = inject('quotes')
-
-  let timer = ref(null)
-  let quoteNumber = ref(0)
-  let quotesLength = ref(quotes.test.length)
-
-  const animateQuotes = setInterval(() => {
-    quotes.test[quoteNumber.value++]
-  }, 2000)
-
-
-  const quoteAni = () => {
-    if (quoteNumber.value < quotesLength) {
-      animateQuotes
-      // console.log('quoteNumber if -->> ', quoteNumber.value)
-    } else {
-      quoteNumber.value = 0
-      // console.log('quoteNumber else -->> ', quoteNumber.value)
-      // clearInterval(animateQuotes)
-      animateQuotes
-    }
-  }
-
-  onMounted(()=>{
-    // console.log('quoteNumber before-Ani -->> ', quoteNumber.value)
-    quoteAni()
-    // console.log('quoteNumber post-Ani -->> ', quoteNumber.value)
-  })
-
 </script>
 
 <style lang='scss' scoped>
@@ -47,12 +20,10 @@
 
   .quoteBlock {
     background: darken($accent-red, 10);
-    min-height: 5.5rem;
-    max-height: 5.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.75em 2em .5em;
+    padding: 0.75em 2em 1em;
     text-align: center;
     border-radius: 2px;
     @include box-shadow(0px, 1px, 2px, 0px, hsla(0, 0%, 0%, 0.5));
@@ -86,13 +57,13 @@
 
     cite {
       font-family: $font-copy;
-      font-size: 0.85em;
+      font-size: 0.9em;
       color: $ivory;
       font-style: italic;
       // margin: 0 4em 0 0;
       display: block;
       text-align: right;
-      letter-spacing: 0.0em;
+      letter-spacing: 0.02em;
 
       @media only screen and (min-device-width: 700px) and (max-device-width: $breakThou) {
         // font-size: 1.5vw;
@@ -101,7 +72,7 @@
 
       @media only screen and (min-device-width: 0px) and (max-device-width: 700px) {
         // font-size: 3vw;
-        font-size: 0.8em;
+        font-size: 0.9em;
       }
     }
   }
