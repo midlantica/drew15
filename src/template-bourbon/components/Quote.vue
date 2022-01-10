@@ -2,15 +2,10 @@
   <transition name='bounce7' appear>
     <div class='quoteBlock'>
       <transition-group name='fadey' tag='quotePad'>
-        <div class='quotePad'
-          v-for="x in [quoteNumber]"
-          :key='x'
-          :mouseover="stopRotation"
-          :mouseout="startRotation"
-        >
-          <p>&ldquo;{{ quotes.test[quoteNumber].quote }}&rdquo;</p>
-          <cite>&ndash; {{ quotes.test[quoteNumber].author }}</cite>
-          <a class='text-white' @click="prev">Previous</a>    ||    <a class='text-white' @click="next">Next</a>
+        <div class='quotePad' v-for='x in [quotes]' :key='x'>
+          <p>&ldquo;{{ quotes.test[newQuoteNumber].quote }}&rdquo;</p>
+          <cite>&ndash; {{ quotes.test[newQuoteNumber].author }}</cite>
+          <!-- <a class='text-white' @click="prev">Previous</a>    ||    <a class='text-white' @click="next">Next</a> -->
         </div>
       </transition-group>
     </div>
@@ -18,45 +13,19 @@
 </template>
 
 <script lang="ts" setup>
-  import { inject, ref, onMounted} from 'vue'
-  const quotes: any = inject('quotes')
+  import { inject, ref, onMounted } from 'vue'
 
-  const quoteNumber = ref(0)
-  // const quotesLength = ref(quotes.test.length)
-  const timer: any = ref(null)
-
-  const startRotation = () => {
-    timer.value = setInterval(timer.value.next, 3000)
-  }
-
-  const stopRotation = () => {
-    clearTimeout(timer.value)
-    timer.value = null
-  }
-
-  const next = () => {
-    quoteNumber.value += 1
-  }
-
-  const prev = () => {
-    quoteNumber.value -= 1
-  }
+  let quotes: any = inject('quotes')
+  let newQuoteNumber: any = ref([0])
+  let count: any = ref(0)
 
   onMounted(() => {
-    startRotation()
-
-    // setTimeout(() => {
-    //   let intervalState = setInterval(() => {
-    //     if (quoteNumber.value <= quotesLength.value) {
-    //       animate()
-    //     } else {
-    //       clearInterval(intervalState)
-    //       return quoteNumber.value = 0
-    //     }
-    //   }, 7500) //this sets the speed of the animation
-    // }, 0)
+    setInterval(() => {
+      let randomNumber = ref(Math.floor(Math.random()*11))
+      let countUpdate = ref((count.value + randomNumber.value) % quotes.length)
+      newQuoteNumber = countUpdate.value
+    }, 10000)
   })
-
 </script>
 
 <style lang='scss' scoped>

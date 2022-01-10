@@ -56,7 +56,7 @@
 
     .about > p {
       font-family: "AmericanTypewriterStd-Med";
-      font-size: 0.85em;
+      font-size: 0.84em;
       margin: 0.25rem auto;
 
       @media (max-width: $breakThou) {
