@@ -2,6 +2,7 @@
   <transition name='bounce7' appear>
     <div class='quoteBlock'>
       <transition-group name='fadey' tag='quotePad'>
+        <li v-show="quotes.length">Object Length = {{ quotes.length }}</li>
         <div class='quotePad' v-for='x in [quotes]' :key='x'>
           <p>&ldquo;{{ quotes.test[newQuoteNumber].quote }}&rdquo;</p>
           <cite>&ndash; {{ quotes.test[newQuoteNumber].author }}</cite>
@@ -16,16 +17,21 @@
   import { inject, ref, onMounted } from 'vue'
 
   let quotes: any = inject('quotes')
-  let newQuoteNumber: any = ref([0])
-  let count: any = ref(0)
+  let quotesNum: any = ref(Object.keys(quotes).length)
+  // let quotesNumTotal = ref(Object.keys(quotesNum).length)
+  // let newQuoteNumber: any = ref([0])
+  // let count: any = ref(0)
+
+  console.log('quotesNum Total is: ' + Object.keys(quotesNum).length)
 
   onMounted(() => {
-    setInterval(() => {
-      let randomNumber = ref(Math.floor(Math.random()*11))
-      let countUpdate = ref((count.value + randomNumber.value) % quotes.length)
-      newQuoteNumber = countUpdate.value
-    }, 10000)
+  //   setInterval(() => {
+  //     let randomNumber = ref(Math.floor(Math.random()*11))
+  //     let countUpdate = ref((count.value + randomNumber.value) % quotes.length)
+  //     newQuoteNumber = countUpdate.value
+  //   }, 10000)
   })
+
 </script>
 
 <style lang='scss' scoped>
