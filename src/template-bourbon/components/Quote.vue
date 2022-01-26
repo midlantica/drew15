@@ -3,11 +3,10 @@
     <div class='quoteBlock'>
       <transition-group name='fadey' tag='quotePad'>
         <li v-show="quotes.length">Object Length = {{ quotes.length }}</li>
-        <div class='quotePad' v-for='x in [quotes]' :key='x'>
-          <p>&ldquo;{{ quotes.test[newQuoteNumber].quote }}&rdquo;</p>
-          <cite>&ndash; {{ quotes.test[newQuoteNumber].author }}</cite>
-          <!-- <a class='text-white' @click="prev">Previous</a>    ||    <a class='text-white' @click="next">Next</a> -->
-        </div>
+        <div class='quotePad'>
+          <p>&ldquo;{{ quotes.copy[slideNum].quote }}&rdquo;</p>
+          <cite>&ndash; {{ quotes.copy[slideNum].author }}</cite>
+      </div>
       </transition-group>
     </div>
   </transition>
@@ -15,21 +14,23 @@
 
 <script lang="ts" setup>
   import { inject, ref, onMounted } from 'vue'
+  const quotes: any = inject('quotes')
 
-  let quotes: any = inject('quotes')
-  let quotesNum: any = ref(Object.keys(quotes).length)
-  // let quotesNumTotal = ref(Object.keys(quotesNum).length)
-  // let newQuoteNumber: any = ref([0])
-  // let count: any = ref(0)
+  let quotesLength: any = ref(quotes.length)
+  let slideNum = ref(0)
 
-  console.log('quotesNum Total is: ' + Object.keys(quotesNum).length)
+  const slideNumber = () => {
+    if (slideNum <= quotesLength) {
+      console.log('##### IF IF IF')
+      return slideNum.value % 3
+    } else {
+      console.log('##### ELSE')
+      slideNum.value = 0
+    }
+  }
 
   onMounted(() => {
-  //   setInterval(() => {
-  //     let randomNumber = ref(Math.floor(Math.random()*11))
-  //     let countUpdate = ref((count.value + randomNumber.value) % quotes.length)
-  //     newQuoteNumber = countUpdate.value
-  //   }, 10000)
+    return slideNumber
   })
 
 </script>
