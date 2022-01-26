@@ -1,8 +1,7 @@
 <template>
   <transition name='bounce7' appear>
     <div class='quoteBlock'>
-      <transition-group name='fadey' tag='quotePad'>
-        <li v-show="quotes.length">Object Length = {{ quotes.length }}</li>
+      <transition-group name='fadeTexter' tag='quotePad'>
         <div class='quotePad'>
           <p>&ldquo;{{ quotes.copy[slideNum].quote }}&rdquo;</p>
           <cite>&ndash; {{ quotes.copy[slideNum].author }}</cite>
@@ -16,21 +15,20 @@
   import { inject, ref, onMounted } from 'vue'
   const quotes: any = inject('quotes')
 
-  let quotesLength: any = ref(quotes.length)
-  let slideNum = ref(0)
+  // let quotesLength: any = ref(quotes.length.value)
+  let slideNum: any = ref(1)
+  let rolls: any = ref([])
 
-  const slideNumber = () => {
-    if (slideNum <= quotesLength) {
-      console.log('##### IF IF IF')
-      return slideNum.value % 3
-    } else {
-      console.log('##### ELSE')
-      slideNum.value = 0
-    }
+  function roll() {
+    setInterval(() => {
+      slideNum.value = Math.floor(Math.random() * Math.floor(24)) + 1
+      rolls.value.unshift(slideNum)
+    }, 7500)
   }
 
   onMounted(() => {
-    return slideNumber
+    console.log(`She's a-runnin'!`)
+    roll()
   })
 
 </script>
@@ -61,9 +59,30 @@
     //   cursor: pointer;
     // }
 
+    // @keyframes fadeTexter {
+    //   from { opacity: 0;}
+    //   to   { opacity: 1;}
+    // }
+
+    .fadeTexter-enter-active {
+      transition: all 0.3s ease-out;
+      opacity: 1;
+    }
+
+    .fadeTexter-leave-active {
+      transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+      opacity: 1;
+    }
+
+    .fadeTexter-enter-from,
+    .fadeTexter-leave-to {
+      transform: translateX(20px);
+      opacity: 0;
+    }
+
     .quotePad {
       text-align: center !important;
-      color: white;
+      // color: white;
     }
 
     .quotePad a {
@@ -75,16 +94,32 @@
       }
     }
 
+    // @keyframes moveToRight {
+    //   0% {
+    //     transform: translateX(0px);
+    //   }
+    //   100% {
+    //     transform: translateX(300px);
+    //   }
+    // }
+
     p {
       font-size: 0.9em;
       color: $ivory !important;
       letter-spacing: 0.05em;
       line-height: 1.5em;
       text-align: center;
+      //
+      animation: fadeTexter 2s forwards;
+      //
+      // transition: 1ms ease-in-out all;
+      // animation: moveToRight 10s ease-in-out;
+      // animation-delay: 1000ms;
       // transition-property: width;
-      // transition-duration: 2s;
+      // transition-duration: 1s;
       // transition-timing-function: linear;
       // transition-delay: 1s;
+      // transform: scale(1.1);
 
       @media only screen and (min-device-width: 700px) and (max-device-width: $breakThou) {
         font-size: 0.9em;
