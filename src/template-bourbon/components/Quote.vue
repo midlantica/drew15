@@ -1,10 +1,10 @@
 <template>
   <transition name='bounce7' appear>
     <div class='quoteBlock'>
-      <transition-group name='fadeTexter' tag='quotePad'>
+      <transition-group name='zoomQuote' tag='quotePad'>
         <div class='quotePad'>
-          <p>&ldquo;{{ quotes.copy[slideNum].quote }}&rdquo;</p>
-          <cite>&ndash; {{ quotes.copy[slideNum].author }}</cite>
+          <p class='fadeTexter'>&ldquo;{{ quotes.copy[slideNum].quote }}&rdquo;</p>
+          <cite class='fadeTexter'>&ndash; {{ quotes.copy[slideNum].author }}</cite>
       </div>
       </transition-group>
     </div>
@@ -16,6 +16,7 @@
   const quotes: any = inject('quotes')
 
   // let quotesLength: any = ref(quotes.length.value)
+  // const quoteViz = ref(false)
   let slideNum: any = ref(1)
   let rolls: any = ref([])
 
@@ -23,7 +24,9 @@
     setInterval(() => {
       slideNum.value = Math.floor(Math.random() * Math.floor(24)) + 1
       rolls.value.unshift(slideNum)
+      // quoteViz.value = true
     }, 7500)
+    // quoteViz.value = false
   }
 
   onMounted(() => {
@@ -35,6 +38,32 @@
 
 <style lang='scss' scoped>
   @import '@/template-bourbon/assets/css/bourbon-main.scss';
+
+  /* Zoom animation */
+  .zoomQuote-enter-active,
+  .zoomQuote-leave-active {
+    transition: transform 300ms ease;
+  }
+  .zoomQuote-enter-from,
+  .zoomQuote-leave-to {
+    transform: scale(0.9);
+  }
+
+  .fadeTexter-enter-active {
+    transition: all 0.3s ease-out;
+    opacity: 1;
+  }
+
+  .fadeTexter-leave-active {
+    transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+    opacity: 1;
+  }
+
+  .fadeTexter-enter-from,
+  .fadeTexter-leave-to {
+    transform: translateX(20px);
+    opacity: 0;
+  }
 
   .quoteBlock {
     background: darken($accent-red, 10);
@@ -63,22 +92,6 @@
     //   from { opacity: 0;}
     //   to   { opacity: 1;}
     // }
-
-    .fadeTexter-enter-active {
-      transition: all 0.3s ease-out;
-      opacity: 1;
-    }
-
-    .fadeTexter-leave-active {
-      transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
-      opacity: 1;
-    }
-
-    .fadeTexter-enter-from,
-    .fadeTexter-leave-to {
-      transform: translateX(20px);
-      opacity: 0;
-    }
 
     .quotePad {
       text-align: center !important;
