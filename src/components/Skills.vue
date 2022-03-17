@@ -150,18 +150,18 @@
   // const arrow = ref(true)
   // const openDelay = ref(0)
   // const interactive = ref(true)
-  const uiux = ref(`UX Design is my first love. Humility before the User. Crack the flow!`)
-  const html5 = ref(`HTML5: the bones of the Internet. As few divs and spans as possible if you please.`)
-  const css3 = ref(`CSS3: Engineers just love CSS haha! Let me do that for you 🙂 I enjoy its declarative cascading infuriating novelty.`)
-  const js = ref(`JavaScript: I design, do all my HTML & CSS, I'm still mastering JS. Continuous learning, Love me some Vue 💚, like this site`)
-  const sass = ref(`SASS has made CSS so much more fun to use. CSS's new --vars make CSS more robust, but there's a long way to go.`)
-  const vue = ref(`Vue.js is my favorite JS framework, a great balance of Angular's ease and React's abilities.`)
-  const nuxt = ref(`The Next framework for Vue: SSR, routes by dir, SEO; it's jam-packed with crunchy goodness. Digging Gridsome.js too.`)
-  const vsCode = ref(`VS Code: Used to be into Sublime Text but I'm all VS Code these days. MS better late than never.`)
-  const sketch = ref(`Sketch used to be the king of UX prototyping, now there are many alternatives.`)
-  const figma = ref(`Figma is the new king of UX prototyping. It ain't Illustrator but UX rarely requires such sophistication.`)
-  const svg = ref(`SVG: Vector is best because it scales and rasters don't, and it's editable, but it still cannot replace a photograph.`)
-  const chelsea = ref(`Blue is the color! Chelsea is the name! We're all together... and We're the only team in London with the European Cup! x2! 💙 `)
+  const uiux = ref(`UX Design is my first love. Humility before the User. Crack the flow!`),
+        html5 = ref(`HTML5: the bones of the Internet. As few divs and spans as possible if you please.`),
+        css3 = ref(`CSS3: Engineers just love CSS haha! Let me do that for you 🙂 I enjoy its declarative cascading infuriating novelty.`),
+        js = ref(`JavaScript: I design, do all my HTML & CSS, I'm still mastering JS. Continuous learning, Love me some Vue 💚, like this site`),
+        sass = ref(`SASS has made CSS so much more fun to use. CSS's new --vars make CSS more robust, but there's a long way to go.`),
+        vue = ref(`Vue.js is my favorite JS framework, a great balance of Angular's ease and React's abilities.`),
+        nuxt = ref(`The Next framework for Vue: SSR, routes by dir, SEO; it's jam-packed with crunchy goodness. Digging Gridsome.js too.`),
+        vsCode = ref(`VS Code: Used to be into Sublime Text but I'm all VS Code these days. MS better late than never.`),
+        sketch = ref(`Sketch used to be the king of UX prototyping, now there are many alternatives.`),
+        figma = ref(`Figma is the new king of UX prototyping. It ain't Illustrator but UX rarely requires such sophistication.`),
+        svg = ref(`SVG: Vector is best because it scales and rasters don't, and it's editable, but it still cannot replace a photograph.`),
+        chelsea = ref(`Blue is the color! Chelsea is the name! We're all together... and We're the only team in London with the European Cup! x2! 💙 `)
 </script>
 
 <style lang="scss" scoped>
